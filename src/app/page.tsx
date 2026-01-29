@@ -40,11 +40,6 @@ export default function Home() {
             Your trusted partner for innovative and reliable filtration solutions, serving industries worldwide from India.
           </p>
           <div className="mt-8 flex justify-center gap-4">
-            <Button asChild size="lg" className="font-bold">
-              <Link href="/contact">
-                Get a Quote <ArrowRight className="ml-2" />
-              </Link>
-            </Button>
             <Button asChild size="lg" variant="secondary" className="font-bold">
               <Link href="/products">Explore Products</Link>
             </Button>

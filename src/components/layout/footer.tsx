@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Logo, WhatsappIcon } from '@/components/icons';
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Mail, MapPin, Phone, Twitter, Facebook, Linkedin, Instagram } from 'lucide-react';
 
 const navLinks = [
   { href: '/about', label: 'About Us' },
@@ -13,7 +13,7 @@ export function Footer() {
   return (
     <footer className="bg-card border-t">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <Logo className="w-48" />
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
@@ -75,6 +75,24 @@ export function Footer() {
                 </div>
               </li>
             </ul>
+          </div>
+
+          <div>
+            <p className="font-headline font-semibold text-foreground">Follow Us</p>
+            <div className="mt-4 flex space-x-4">
+              <Link href="#" aria-label="Twitter" className="text-muted-foreground transition hover:text-primary">
+                <Twitter className="h-6 w-6" />
+              </Link>
+              <Link href="#" aria-label="Facebook" className="text-muted-foreground transition hover:text-primary">
+                <Facebook className="h-6 w-6" />
+              </Link>
+              <Link href="#" aria-label="LinkedIn" className="text-muted-foreground transition hover:text-primary">
+                <Linkedin className="h-6 w-6" />
+              </Link>
+              <Link href="#" aria-label="Instagram" className="text-muted-foreground transition hover:text-primary">
+                <Instagram className="h-6 w-6" />
+              </Link>
+            </div>
           </div>
         </div>
 

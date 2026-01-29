@@ -48,9 +48,6 @@ export function Header() {
         </div>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button asChild className="hidden md:inline-flex">
-            <Link href="/contact">Get a Quote</Link>
-          </Button>
           <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" className="px-0 text-base md:hidden">
