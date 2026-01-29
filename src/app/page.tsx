@@ -48,6 +48,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-center py-20 md:py-32">
             {/* Left side: Text content */}
             <div className="text-foreground">
+              <p className="text-lg text-muted-foreground font-medium">We are Manufacturer & Supplier of</p>
               <h1 className="font-headline text-5xl md:text-6xl font-bold text-primary mt-2 uppercase">
                 Stainless Steel
                 <br />
