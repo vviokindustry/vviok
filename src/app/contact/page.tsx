@@ -138,21 +138,21 @@ export default function ContactPage() {
                 <ul className="mt-4 space-y-4 text-sm">
                   <li className="flex items-start gap-3">
                     <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Plot 123, Industrial Area, Ahmedabad, Gujarat, India - 380001</span>
+                    <span className="text-muted-foreground">45- puskar cottage, NR Ramol Toll plaza, Ahmedabad- 382415, Gujarat, India</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                    <a href="mailto:sales@vviokindustry.com" className="text-muted-foreground transition hover:text-primary">sales@vviokindustry.com</a>
+                    <a href="mailto:vviokindustry2021@gmail.com" className="text-muted-foreground transition hover:text-primary">vviokindustry2021@gmail.com</a>
                   </li>
                   <li className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                    <a href="tel:+919876543210" className="text-muted-foreground transition hover:text-primary">+91 987 654 3210</a>
+                    <a href="tel:+919106472588" className="text-muted-foreground transition hover:text-primary">+91 91064 72588</a>
                   </li>
                 </ul>
               </div>
                <div>
                   <Button asChild className="w-full bg-[#25D366] hover:bg-[#128C7E] text-white">
-                    <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/919106472588" target="_blank" rel="noopener noreferrer">
                       <WhatsappIcon className="mr-2 h-5 w-5"/>
                       Inquire on WhatsApp
                     </a>

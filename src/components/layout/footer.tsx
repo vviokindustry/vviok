@@ -44,31 +44,31 @@ export function Footer() {
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Plot 123, Industrial Area, Ahmedabad, Gujarat, India - 380001
+                    45- puskar cottage, NR Ramol Toll plaza, Ahmedabad- 382415, Gujarat, India
                   </span>
                 </div>
               </li>
               <li>
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                  <a href="mailto:sales@vviokindustry.com" className="text-muted-foreground transition hover:text-primary">
-                    sales@vviokindustry.com
+                  <a href="mailto:vviokindustry2021@gmail.com" className="text-muted-foreground transition hover:text-primary">
+                    vviokindustry2021@gmail.com
                   </a>
                 </div>
               </li>
               <li>
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                  <a href="tel:+919876543210" className="text-muted-foreground transition hover:text-primary">
-                    +91 987 654 3210
+                  <a href="tel:+919106472588" className="text-muted-foreground transition hover:text-primary">
+                    +91 91064 72588
                   </a>
                 </div>
               </li>
               <li>
                  <div className="flex items-center gap-3">
                   <WhatsappIcon className="h-5 w-5 text-primary flex-shrink-0" />
-                  <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition hover:text-primary">
-                    +91 987 654 3210
+                  <a href="https://wa.me/919106472588" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition hover:text-primary">
+                    +91 91064 72588
                   </a>
                 </div>
               </li>

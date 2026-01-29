@@ -29,19 +29,19 @@ export function Header() {
             <Logo className="w-48" />
           </Link>
           <div className="flex items-center space-x-4">
-            <a href="mailto:sales@vviokindustry.com" className="flex items-center gap-3 text-muted-foreground transition hover:text-primary">
+            <a href="mailto:vviokindustry2021@gmail.com" className="flex items-center gap-3 text-muted-foreground transition hover:text-primary">
               <Mail className="h-8 w-8 text-primary" />
               <div>
                 <p className="font-semibold text-sm text-foreground">E-mail Address</p>
-                <p className="text-xs">sales@vviokindustry.com</p>
+                <p className="text-xs">vviokindustry2021@gmail.com</p>
               </div>
             </a>
             <div className="h-10 w-px bg-border" />
-            <a href="tel:+919876543210" className="flex items-center gap-3 text-muted-foreground transition hover:text-primary">
+            <a href="tel:+919106472588" className="flex items-center gap-3 text-muted-foreground transition hover:text-primary">
               <Phone className="h-8 w-8 text-primary" />
               <div>
                 <p className="font-semibold text-sm text-foreground">Contact Us</p>
-                <p className="text-xs">+91 987 654 3210</p>
+                <p className="text-xs">+91 91064 72588</p>
               </div>
             </a>
             <div className="h-10 w-px bg-border" />
