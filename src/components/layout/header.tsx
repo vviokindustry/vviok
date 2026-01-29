@@ -8,7 +8,6 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { Logo } from '@/components/icons';
-import Image from 'next/image';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -45,8 +44,9 @@ export function Header() {
               </div>
             </a>
             <div className="h-10 w-px bg-border" />
-            <div className="w-[120px]">
-              <Image src="https://upload.wikimedia.org/wikipedia/en/4/41/Make_in_India.png" alt="Make in India" width={100} height={40} className="object-contain" />
+            <div className="w-[120px] flex items-center justify-center">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Make_in_India.png" alt="Make in India" className="object-contain h-10" />
             </div>
           </div>
         </div>
