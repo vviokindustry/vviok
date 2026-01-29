@@ -20,35 +20,76 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[80vh] w-full flex items-center justify-center text-center text-white">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-        )}
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 max-w-4xl px-4">
-          <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-            High-Quality Industrial Filtration Products Manufacturer & Exporter
-          </h1>
-          <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
-            Your trusted partner for innovative and reliable filtration solutions, serving industries worldwide from India.
-          </p>
-          <div className="mt-8 flex justify-center gap-4">
-            <Button asChild size="lg" variant="secondary" className="font-bold">
-              <Link href="/products">Explore Products</Link>
-            </Button>
+      <section className="relative w-full bg-background overflow-hidden">
+        <div 
+          className="absolute inset-y-0 right-0 w-3/5"
+          style={{
+            backgroundColor: 'hsl(var(--primary))',
+            clipPath: 'ellipse(80% 100% at 100% 50%)'
+          }}
+        />
+         <div className="absolute top-1/2 left-1/4 transform -translate-y-1/2 h-80 w-80 opacity-[0.03]">
+            <svg viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
+              <text
+                x="10"
+                y="35"
+                fontFamily="var(--font-headline), sans-serif"
+                fontSize="30"
+                fontWeight="bold"
+                fill="hsl(var(--primary))"
+              >
+                VVIOK
+              </text>
+            </svg>
+         </div>
+
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid md:grid-cols-2 gap-8 items-center py-20 md:py-32">
+            {/* Left side: Text content */}
+            <div className="text-foreground">
+              <p className="text-lg md:text-xl">We are Manufacturer & Supplier of</p>
+              <h1 className="font-headline text-5xl md:text-6xl font-bold text-primary mt-2 uppercase">
+                Bag Filter
+                <br />
+                Housing
+              </h1>
+              <div className="mt-6">
+                 <svg width="80" height="15" viewBox="0 0 105 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.58301 10.915C2.58301 10.915 22.4163 0.914979 49.9997 10.915C77.583 20.915 102.416 10.915 102.416 10.915" stroke="currentColor" className="text-primary" strokeWidth="5" strokeLinecap="round"/>
+                    <path d="M2.58301 19.915C2.58301 19.915 22.4163 9.91498 49.9997 19.915C77.583 29.915 102.416 19.915 102.416 19.915" stroke="currentColor" className="text-primary" strokeWidth="5" strokeLinecap="round"/>
+                </svg>
+              </div>
+            </div>
+            {/* Right side: Image */}
+            <div className="relative flex justify-center md:justify-end">
+              <div className="relative">
+                {heroImage && (
+                  <div className="bg-white p-2 rounded-lg shadow-2xl">
+                      <Image
+                        src={heroImage.imageUrl}
+                        alt={heroImage.description}
+                        width={450}
+                        height={450}
+                        className="object-contain"
+                        data-ai-hint={heroImage.imageHint}
+                        priority
+                      />
+                  </div>
+                )}
+                <div className="absolute -top-4 -right-4 h-20 w-20 z-20 hidden lg:grid grid-cols-6 gap-2">
+                      {Array.from({ length: 36 }).map((_, i) => (
+                          <div key={i} className="h-1.5 w-1.5 rounded-full bg-white"></div>
+                      ))}
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Intro Section */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-card">
         <div className="container mx-auto px-4 text-center max-w-3xl">
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
             Welcome to VVIOK Industry
@@ -109,7 +150,7 @@ export default function Home() {
       </section>
 
       {/* Industries Served */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-card">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-headline text-3xl md:text-4xl font-bold">
