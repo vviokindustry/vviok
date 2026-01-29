@@ -48,11 +48,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-center py-20 md:py-32">
             {/* Left side: Text content */}
             <div className="text-foreground">
-              <p className="text-lg md:text-xl">We are Manufacturer & Supplier of</p>
               <h1 className="font-headline text-5xl md:text-6xl font-bold text-primary mt-2 uppercase">
-                Bag Filter
+                Stainless Steel
                 <br />
-                Housing
+                Water Storage Tank
               </h1>
               <div className="mt-6">
                  <svg width="80" height="15" viewBox="0 0 105 23" fill="none" xmlns="http://www.w3.org/2000/svg">
