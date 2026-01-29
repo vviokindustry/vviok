@@ -46,7 +46,7 @@ export function Header() {
             </a>
             <div className="h-10 w-px bg-border" />
             <div className="w-[120px]">
-              <Image src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Make_in_India_logo.png" alt="Make in India" width={100} height={40} className="object-contain w-full h-auto" />
+              <Image src="https://upload.wikimedia.org/wikipedia/en/4/4b/Make_in_India_logo.png" alt="Make in India" width={100} height={40} className="object-contain w-full h-auto" />
             </div>
           </div>
         </div>
