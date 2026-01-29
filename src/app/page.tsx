@@ -7,6 +7,9 @@ import {
   Globe,
   Package,
   Ship,
+  Goal,
+  Eye,
+  ThumbsUp,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -84,6 +87,47 @@ export default function Home() {
                   </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Vision, Mission, Satisfaction Section */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="text-center p-8">
+              <div className="flex justify-center mb-4">
+                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-primary/10 text-primary">
+                  <Goal className="h-10 w-10" />
+                </div>
+              </div>
+              <h3 className="font-headline text-2xl font-bold mb-2">Our Vision</h3>
+              <p className="text-muted-foreground">
+                To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers across various industries.
+              </p>
+            </Card>
+            <Card className="text-center p-8">
+              <div className="flex justify-center mb-4">
+                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-primary/10 text-primary">
+                  <Eye className="h-10 w-10" />
+                </div>
+              </div>
+              <h3 className="font-headline text-2xl font-bold mb-2">Our Mission</h3>
+              <p className="text-muted-foreground">
+                To be the leading provider of innovative, high-quality filtration solutions that improve the efficiency.
+              </p>
+            </Card>
+            <Card className="text-center p-8">
+              <div className="flex justify-center mb-4">
+                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-primary/10 text-primary">
+                  <ThumbsUp className="h-10 w-10" />
+                </div>
+              </div>
+              <h3 className="font-headline text-2xl font-bold mb-2">Customer Satisfaction</h3>
+              <p className="text-muted-foreground">
+                To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers across various industries.
+              </p>
+            </Card>
           </div>
         </div>
       </section>
