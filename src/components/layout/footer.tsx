@@ -5,8 +5,6 @@ import { Mail, MapPin, Phone, Twitter, Facebook, Linkedin, Instagram } from 'luc
 const navLinks = [
   { href: '/about', label: 'About Us' },
   { href: '/products', label: 'Products' },
-  { href: '/industries', label: 'Industries We Serve' },
-  { href: '/export', label: 'Export Markets' },
 ];
 
 export function Footer() {

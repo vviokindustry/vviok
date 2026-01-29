@@ -13,11 +13,7 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About Us' },
   { href: '/products', label: 'Products' },
-  { href: '/industries', label: 'Industries' },
-  { href: '/manufacturing-quality', label: 'Manufacturing' },
-  { href: '/export', label: 'Export' },
   { href: '/contact', label: 'Contact Us' },
-  { href: '/seo-enhancer', label: 'SEO Enhancer' },
 ];
 
 export function Header() {
