@@ -99,8 +99,8 @@ export const productCategories: Category[] = [
     description: 'High-efficiency duplex filtration systems designed for continuous, uninterrupted industrial operation.',
     imageId: 'product-industrial-filter',
     subcategories: [
-      { name: 'Standard Duplex Filter', slug: 'standard-duplex-filter' },
-      { name: 'Automated Duplex Filter', slug: 'automated-duplex-filter' },
+      { name: 'Ss Duplex Filter Housing', slug: 'ss-duplex-filter-housing' },
+      { name: 'Stainless Steel Basket Filter', slug: 'ss-basket-filter' },
     ]
   },
   {
@@ -186,8 +186,8 @@ export const products: Record<string, { name: string; application: string; image
   'industrial-filter-housing': [{ name: 'Industrial Filter Housing', application: 'Heavy-duty industrial fluid purification', imageId: 'product-industrial-filter' }],
   'ss-multi-cartridge-filter-housing': [{ name: 'Ss Multi Cartridge Filter Housing', application: 'Large volume liquid clarification in manufacturing', imageId: 'product-industrial-filter' }],
   'industrial-filter-cartridge': [{ name: 'Industrial Filter Cartridge', application: 'Process water and chemical filtration', imageId: 'product-industrial-filter' }],
-  'standard-duplex-filter': [{ name: 'Standard Duplex Filter', application: 'Hydraulic systems, Oil refineries', imageId: 'product-industrial-filter' }],
-  'automated-duplex-filter': [{ name: 'Automated Duplex Filter', application: 'Automated industrial processing lines', imageId: 'product-industrial-filter' }],
+  'ss-duplex-filter-housing': [{ name: 'Ss Duplex Filter Housing', application: 'Continuous flow industrial systems', imageId: 'product-industrial-filter' }],
+  'ss-basket-filter': [{ name: 'Stainless Steel Basket Filter', application: 'Coarse and fine particulate removal', imageId: 'product-industrial-filter' }],
   'horizontal-ss-tank': [{ name: 'Horizontal SS Tank', application: 'Space-restricted water storage', imageId: 'hero-background' }],
   'vertical-ss-tank': [{ name: 'Vertical SS Tank', application: 'Industrial cooling towers, Bulk storage', imageId: 'hero-background' }],
   'low-pressure-tank': [{ name: 'Low Pressure Tank', application: 'Air compression, Surge suppression', imageId: 'hero-background' }],
