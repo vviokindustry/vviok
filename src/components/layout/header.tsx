@@ -53,17 +53,6 @@ export function Header() {
                 <p className="text-sm font-semibold">+91 91064 72588</p>
               </div>
             </a>
-            <div className="h-10 w-px bg-border mx-2" />
-            <div className="flex items-center">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Make_In_India.png/400px-Make_In_India.png" 
-                alt="Make in India" 
-                className="h-12 w-auto object-contain"
-                referrerPolicy="no-referrer"
-                loading="eager"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -135,15 +124,6 @@ export function Header() {
                   <div className="flex items-start gap-3">
                     <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-xs text-muted-foreground">45- puskar cottage, Ahmedabad- 382415</span>
-                  </div>
-                  <div className="mt-4 flex justify-center">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img 
-                      src="https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Make_In_India.png/400px-Make_In_India.png" 
-                      alt="Make in India" 
-                      className="h-16 w-auto object-contain"
-                      referrerPolicy="no-referrer"
-                    />
                   </div>
                 </div>
               </SheetContent>
