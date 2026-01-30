@@ -166,8 +166,7 @@ export const productCategories: Category[] = [
     description: 'Precision-engineered SS 316 and sanitary ferrules for leak-proof, high-pressure connections.',
     imageId: 'product-custom-filter',
     subcategories: [
-      { name: 'SS 316 Ferrule', slug: 'ss-316-ferrule' },
-      { name: 'Sanitary Ferrule', slug: 'sanitary-ferrule' },
+      { name: 'Stainless Steel Ferrule', slug: 'ss-ferrule' },
     ]
   },
 ];
@@ -197,6 +196,7 @@ export const products: Record<string, { name: string; application: string; image
   'ss-duplex-filter-housing-type': [{ name: 'SS Duplex Filter Housing', application: 'Advanced industrial process filtration requiring zero downtime', imageId: 'product-industrial-filter' }],
   'ss-basket-strainers-valve': [{ name: 'Stainless Steel Basket Strainers', application: 'Efficient coarse filtration and flow control', imageId: 'product-custom-filter' }],
   'ss-dairy-fittings': [{ name: 'Stainless Steel Dairy Fittings', application: 'Sanitary flow control and connection in dairy and food processing', imageId: 'product-custom-filter' }],
+  'ss-ferrule': [{ name: 'Stainless Steel Ferrule', application: 'Precision connections for leak-proof industrial piping', imageId: 'product-custom-filter' }],
   'filter-housing-connection': [{ name: 'Filter Housing Connection', application: 'Industrial piping systems', imageId: 'product-industrial-filter' }],
   'pp-filter-cartridge': [{ name: 'PP Filter Cartridge', application: 'Sediment and particulate filtration', imageId: 'product-industrial-filter' }],
   'pp-spun-filter-cartridge': [{ name: 'PP Spun Filter Cartridge', application: 'Pre-filtration for RO systems', imageId: 'product-industrial-filter' }],
@@ -208,8 +208,6 @@ export const products: Record<string, { name: string; application: string; image
   'ss-filter-cartridges': [{ name: 'Stainless Steel Filter Cartridges', application: 'Aggressive chemicals and steam', imageId: 'product-industrial-filter' }],
   'conical-filter': [{ name: 'Conical Filter', application: 'Pipeline commissioning and protection', imageId: 'product-industrial-filter' }],
   'steam-filter-housing': [{ name: 'Steam Filter Housing', application: 'Sterile culinary and industrial steam', imageId: 'product-industrial-filter' }],
-  'ss-316-ferrule': [{ name: 'SS 316 Ferrule', application: 'High pressure industrial fittings', imageId: 'product-custom-filter' }],
-  'sanitary-ferrule': [{ name: 'Sanitary Ferrule', application: 'Food, Beverage, and Bio-pharma piping', imageId: 'product-custom-filter' }],
 };
 
 export const industries = [
