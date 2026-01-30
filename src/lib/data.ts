@@ -32,10 +32,11 @@ export const productCategories: Category[] = [
     description: 'Robust housings for industrial filtration systems.',
     imageId: 'product-industrial-filter',
     subcategories: [
+      { name: 'SS Filter Housing', slug: 'ss-filter-housing' },
+      { name: 'Basket Strainer / Housing', slug: 'basket-strainer' },
+      { name: 'Duplex Type Filter', slug: 'duplex-filter' },
       { name: 'Cartridge Filter Housing', slug: 'cartridge-filter-housing' },
       { name: 'Bag Filter Housing', slug: 'bag-filter-housing' },
-      { name: 'Basket Filter Housing', slug: 'basket-filter-housing' },
-      { name: 'Duplex Filter Housing', slug: 'duplex-filter-housing' },
       { name: 'Carbon/Catalyst Filter Housing', slug: 'carbon-catalyst-filter-housing' },
       { name: 'Self Cleaning Filter Housing', slug: 'self-cleaning-filter-housing' },
       { name: 'Non-Metalic Filter Housing', slug: 'non-metalic-filter-housing' },
@@ -62,6 +63,27 @@ export const productCategories: Category[] = [
     ]
   },
   {
+    name: 'Storage Tanks & Vessels',
+    slug: 'storage-tanks-vessels',
+    description: 'High-quality stainless steel storage solutions.',
+    imageId: 'hero-background',
+    subcategories: [
+      { name: 'Water Storage Tank', slug: 'water-storage-tank' },
+      { name: 'Pressure Tank', slug: 'pressure-tank' },
+    ]
+  },
+  {
+    name: 'Valves & Fittings',
+    slug: 'valves-fittings',
+    description: 'Precision industrial valves and sanitary fittings.',
+    imageId: 'product-custom-filter',
+    subcategories: [
+      { name: 'Ball Valve', slug: 'ball-valve' },
+      { name: 'Butterfly Valve', slug: 'butterfly-valve' },
+      { name: 'Stainless Steel Ferrule', slug: 'ss-ferrule' },
+    ]
+  },
+  {
     name: 'Air Filters',
     slug: 'air-filters',
     description: 'High-efficiency particulate air (HEPA) filters for clean environments.',
@@ -71,22 +93,37 @@ export const productCategories: Category[] = [
       { name: 'Carbon Filters', slug: 'carbon-filters' },
     ]
   },
-  {
-    name: 'Filter Bags',
-    slug: 'filter-bags',
-    description: 'Durable filter bags for dust and liquid separation.',
-    imageId: 'product-liquid-filter',
-  },
-  {
-    name: 'Customized Solutions',
-    slug: 'customized-filtration',
-    description: 'Bespoke filtration systems designed to your exact specifications.',
-    imageId: 'product-custom-filter',
-  },
 ];
 
 export const products: Record<string, { name: string; application: string; imageId: string }[]> = {
   // Subcategory slugs
+  'ss-filter-housing': [
+    { name: 'High Polish SS Housing', application: 'Sanitary water, food grade liquids', imageId: 'product-industrial-filter' },
+    { name: 'Industrial Grade SS Housing', application: 'Chemical processing, industrial water', imageId: 'product-industrial-filter' },
+  ],
+  'basket-strainer': [
+    { name: 'Simplex Basket Strainer', application: 'Coarse filtration, pump protection', imageId: 'product-industrial-filter' },
+    { name: 'Multi-Basket Strainer', application: 'High flow pipeline systems', imageId: 'product-industrial-filter' },
+  ],
+  'duplex-filter': [
+    { name: 'Continuous Flow Duplex Filter', application: 'Uninterrupted flow, oil & fuel lines', imageId: 'product-industrial-filter' },
+  ],
+  'water-storage-tank': [
+    { name: 'SS304 Water Tank', application: 'Domestic water storage, industrial cooling', imageId: 'hero-background' },
+    { name: 'SS316 Water Tank', application: 'Pharmaceutical storage, high purity water', imageId: 'hero-background' },
+  ],
+  'pressure-tank': [
+    { name: 'Stainless Steel Pressure Vessel', application: 'Process chemistry, air compression', imageId: 'hero-background' },
+  ],
+  'ball-valve': [
+    { name: 'Stainless Steel Ball Valve', application: 'Flow control, pipeline isolation', imageId: 'product-custom-filter' },
+  ],
+  'butterfly-valve': [
+    { name: 'Sanitary Butterfly Valve', application: 'Food & Beverage processing, dairy', imageId: 'product-custom-filter' },
+  ],
+  'ss-ferrule': [
+    { name: 'Sanitary Tri-Clover Ferrule', application: 'Food & Pharma pipe fittings', imageId: 'product-custom-filter' },
+  ],
   'cartridge-filter-housing': [
     { name: 'Single Cartridge Housing', application: 'Low flow water, chemical dosing', imageId: 'product-industrial-filter' },
     { name: 'Multi-Cartridge Housing', application: 'High flow industrial water, beverages', imageId: 'product-industrial-filter' },
@@ -94,13 +131,6 @@ export const products: Record<string, { name: string; application: string; image
   'bag-filter-housing': [
     { name: 'Single Bag Housing', application: 'Paint, resins, pre-filtration', imageId: 'product-industrial-filter' },
     { name: 'Multi-Bag Housing', application: 'Bulk liquid processing, cooling towers', imageId: 'product-industrial-filter' },
-  ],
-  'basket-filter-housing': [
-    { name: 'Single Basket Strainer', application: 'Coarse filtration, pump protection', imageId: 'product-industrial-filter' },
-    { name: 'Multi-Basket Strainer', application: 'High volume process fluids', imageId: 'product-industrial-filter' },
-  ],
-  'duplex-filter-housing': [
-    { name: 'Continuous Flow Duplex', application: 'Uninterrupted systems, oil filtration', imageId: 'product-industrial-filter' },
   ],
   'carbon-catalyst-filter-housing': [
     { name: 'Active Carbon Vessel', application: 'Chlorine removal, organic pollutants', imageId: 'product-industrial-filter' },
@@ -154,10 +184,6 @@ export const products: Record<string, { name: string; application: string; image
   'filter-bags': [
     { name: 'Nomex Filter Bag', application: 'High temperature dust collection', imageId: 'product-liquid-filter' },
     { name: 'Polyester Filter Bag', application: 'General purpose liquid filtration', imageId: 'product-liquid-filter' },
-  ],
-  'customized-filtration': [
-    { name: 'OEM Filter Units', application: 'Custom machine integration', imageId: 'product-custom-filter' },
-    { name: 'Skid Mounted Systems', application: 'Turnkey filtration solutions', imageId: 'product-custom-filter' },
   ],
 };
 
