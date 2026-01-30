@@ -3,9 +3,10 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, Mail, Phone, ChevronDown } from 'lucide-react';
+import { Menu, Mail, Phone, ChevronDown, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { ScrollArea } from '@/components/ui/scroll-area';
 import { cn } from '@/lib/utils';
 import { Logo } from '@/components/icons';
 import {
@@ -44,9 +45,11 @@ export function Header() {
       {/* Top Bar - Desktop Only */}
       <div className="hidden border-b bg-muted/30 md:block">
         <div className="container flex items-center justify-between py-3">
-          <Link href="/" className="flex items-center">
-            <Logo className="w-48" />
-          </Link>
+          <div className="flex items-center space-x-6">
+            <Link href="/" className="flex items-center">
+              <Logo className="w-48" />
+            </Link>
+          </div>
           <div className="flex items-center space-x-8">
             <a 
               href="mailto:vviokindustry2021@gmail.com" 
@@ -97,33 +100,47 @@ export function Header() {
                   )}>
                     {link.label} <ChevronDown className="h-4 w-4" />
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent align="start" className="w-72">
-                    {link.categories.map((cat) => (
-                      cat.subcategories ? (
-                        <DropdownMenuSub key={cat.slug}>
-                          <DropdownMenuSubTrigger className="cursor-pointer">
-                            {cat.name}
-                          </DropdownMenuSubTrigger>
-                          <DropdownMenuPortal>
-                            <DropdownMenuSubContent className="w-72 max-h-[70vh] overflow-y-auto">
-                              {cat.subcategories.map((sub) => (
-                                <DropdownMenuItem key={sub.slug} asChild>
-                                  <Link href={`/products/${cat.slug}/${sub.slug}`} className="w-full cursor-pointer">
-                                    {sub.name}
-                                  </Link>
-                                </DropdownMenuItem>
-                              ))}
-                            </DropdownMenuSubContent>
-                          </DropdownMenuPortal>
-                        </DropdownMenuSub>
-                      ) : (
-                        <DropdownMenuItem key={cat.slug} asChild>
-                          <Link href={`/products/${cat.slug}`} className="w-full cursor-pointer">
-                            {cat.name}
-                          </Link>
-                        </DropdownMenuItem>
-                      )
-                    ))}
+                  <DropdownMenuContent align="start" className="w-[350px] p-0 overflow-hidden shadow-2xl border-slate-200">
+                    <div className="bg-slate-50 px-4 py-3 border-b">
+                      <h3 className="font-bold text-slate-900 text-base uppercase tracking-tight">Our Products</h3>
+                    </div>
+                    <ScrollArea className="h-[500px]">
+                      <div className="flex flex-col">
+                        {link.categories.map((cat) => (
+                          cat.subcategories ? (
+                            <DropdownMenuSub key={cat.slug}>
+                              <DropdownMenuSubTrigger className="flex items-center justify-between p-4 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors cursor-pointer outline-none data-[state=open]:bg-slate-50 group">
+                                <div className="flex flex-col text-left">
+                                  <span className="font-bold text-slate-900 text-[15px] group-hover:text-primary transition-colors">{cat.name}</span>
+                                  <span className="text-xs text-muted-foreground mt-0.5">{cat.subcategories.length} {cat.subcategories.length === 1 ? 'product' : 'products'} available</span>
+                                </div>
+                                <ChevronRight className="h-4 w-4 text-slate-300 group-hover:text-primary transition-colors" />
+                              </DropdownMenuSubTrigger>
+                              <DropdownMenuPortal>
+                                <DropdownMenuSubContent className="w-72 max-h-[70vh] overflow-y-auto">
+                                  {cat.subcategories.map((sub) => (
+                                    <DropdownMenuItem key={sub.slug} asChild>
+                                      <Link href={`/products/${cat.slug}/${sub.slug}`} className="w-full cursor-pointer py-2.5 px-3">
+                                        {sub.name}
+                                      </Link>
+                                    </DropdownMenuItem>
+                                  ))}
+                                </DropdownMenuSubContent>
+                              </DropdownMenuPortal>
+                            </DropdownMenuSub>
+                          ) : (
+                            <DropdownMenuItem key={cat.slug} asChild className="flex items-center justify-between p-4 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors cursor-pointer outline-none group">
+                              <Link href={`/products/${cat.slug}`} className="w-full">
+                                <div className="flex flex-col text-left">
+                                  <span className="font-bold text-slate-900 text-[15px] group-hover:text-primary transition-colors">{cat.name}</span>
+                                  <span className="text-xs text-muted-foreground mt-0.5">1 product available</span>
+                                </div>
+                              </Link>
+                            </DropdownMenuItem>
+                          )
+                        ))}
+                      </div>
+                    </ScrollArea>
                   </DropdownMenuContent>
                 </DropdownMenu>
               ) : (
@@ -142,7 +159,7 @@ export function Header() {
           </nav>
 
           <div className="flex flex-1 items-center justify-end gap-4">
-            <Button asChild className="hidden md:flex bg-primary hover:bg-primary/90 rounded-full font-bold uppercase tracking-wide">
+            <Button asChild className="hidden md:flex bg-primary hover:bg-primary/90 rounded-full font-bold uppercase tracking-wide px-6">
               <Link href="/contact">Get a Quote</Link>
             </Button>
 
@@ -176,9 +193,12 @@ export function Header() {
                                      <Accordion type="single" collapsible className="w-full">
                                         <AccordionItem value={cat.slug} className="border-none">
                                           <AccordionTrigger className="py-0 text-base font-bold text-foreground hover:no-underline">
-                                            {cat.name}
+                                            <div className="flex flex-col text-left">
+                                              <span>{cat.name}</span>
+                                              <span className="text-[10px] text-muted-foreground lowercase mt-0.5">{cat.subcategories.length} products available</span>
+                                            </div>
                                           </AccordionTrigger>
-                                          <AccordionContent className="flex flex-col space-y-2 pt-2 pl-4 pb-0">
+                                          <AccordionContent className="flex flex-col space-y-2 pt-2 pl-4 pb-0 border-l-2 border-slate-100 ml-1">
                                             {cat.subcategories.map(sub => (
                                               <Link
                                                 key={sub.slug}

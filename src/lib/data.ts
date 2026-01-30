@@ -27,20 +27,6 @@ export interface Category {
 
 export const productCategories: Category[] = [
   {
-    name: 'Filter Systems & Housings',
-    slug: 'filter-systems-housings',
-    description: 'Robust housings for industrial filtration systems.',
-    imageId: 'product-industrial-filter',
-    subcategories: [
-      { name: 'SS Filter Housing', slug: 'ss-filter-housing' },
-      { name: 'Basket Strainer / Housing', slug: 'basket-strainer' },
-      { name: 'Filter Housing', slug: 'filter-housing' },
-      { name: 'Stainless Steel Filter Housing', slug: 'stainless-steel-filter-housing' },
-      { name: 'Duplex Filter', slug: 'duplex-filter' },
-      { name: 'Duplex Type Filter', slug: 'duplex-type-filter' },
-    ]
-  },
-  {
     name: 'Filter Cartridge',
     slug: 'filter-cartridge',
     description: 'Precision filter cartridges for liquid and gas processing.',
@@ -52,6 +38,7 @@ export const productCategories: Category[] = [
       { name: 'PP Pleated Filter Cartridges', slug: 'pp-pleated-filter-cartridges' },
       { name: 'Paper Pleated Filter Cartridge', slug: 'paper-pleated-filter-cartridge' },
       { name: 'Sintered Ss316 Filter Cartridges', slug: 'sintered-ss316-filter-cartridges' },
+      { name: 'Stainless Steel Single Bag Filter Housing', slug: 'ss-single-bag-filter-housing' },
       { name: 'Filter Cartridges Code 7', slug: 'filter-cartridges-code-7' },
       { name: 'Stainless Steel Filter Cartridges', slug: 'ss-filter-cartridges' },
       { name: 'Conical Filter', slug: 'conical-filter' },
@@ -59,123 +46,156 @@ export const productCategories: Category[] = [
     ]
   },
   {
-    name: 'Storage Tanks & Vessels',
-    slug: 'storage-tanks-vessels',
-    description: 'High-quality stainless steel storage solutions.',
+    name: 'Ss Filter Housing',
+    slug: 'ss-filter-housing',
+    description: 'High-quality stainless steel housings for diverse applications.',
+    imageId: 'product-industrial-filter',
+    subcategories: [
+      { name: 'High Polish SS Housing', slug: 'high-polish-ss-housing' },
+      { name: 'Sanitary SS Housing', slug: 'sanitary-ss-housing' },
+      { name: 'Industrial SS Housing', slug: 'industrial-ss-housing' },
+      { name: 'Chemical Grade SS Housing', slug: 'chemical-grade-ss-housing' },
+    ]
+  },
+  {
+    name: 'Basket Strainer',
+    slug: 'basket-strainer',
+    description: 'Reliable basket strainers for coarse filtration.',
+    imageId: 'product-industrial-filter',
+    subcategories: [
+      { name: 'Simplex Basket Strainer', slug: 'simplex-basket-strainer' },
+      { name: 'Duplex Basket Strainer', slug: 'duplex-basket-strainer' },
+      { name: 'Multi-Basket Strainer', slug: 'multi-basket-strainer' },
+    ]
+  },
+  {
+    name: 'Filter Housing',
+    slug: 'filter-housing',
+    description: 'Standard and custom filter housings for industrial use.',
+    imageId: 'product-industrial-filter',
+    subcategories: [
+      { name: 'Single Cartridge Housing', slug: 'single-cartridge-housing' },
+      { name: 'Multi-Cartridge Housing', slug: 'multi-cartridge-housing' },
+      { name: 'Custom Filter Housing', slug: 'custom-filter-housing' },
+    ]
+  },
+  {
+    name: 'Stainless Steel Filter Housing',
+    slug: 'stainless-steel-filter-housing',
+    description: 'Specialized SS housings for pharmaceutical and food industries.',
+    imageId: 'product-industrial-filter',
+    subcategories: [
+      { name: 'SS 304 Housing', slug: 'ss-304-housing' },
+      { name: 'SS 316 Housing', slug: 'ss-316-housing' },
+      { name: 'SS 316L Housing', slug: 'ss-316l-housing' },
+    ]
+  },
+  {
+    name: 'Duplex Filter',
+    slug: 'duplex-filter',
+    description: 'Duplex filtration systems for continuous operation.',
+    imageId: 'product-industrial-filter',
+    subcategories: [
+      { name: 'Standard Duplex Filter', slug: 'standard-duplex-filter' },
+      { name: 'Automated Duplex Filter', slug: 'automated-duplex-filter' },
+    ]
+  },
+  {
+    name: 'Water Storage Tank',
+    slug: 'water-storage-tank',
+    description: 'Stainless steel water storage solutions for domestic and industrial use.',
     imageId: 'hero-background',
     subcategories: [
-      { name: 'Water Storage Tank', slug: 'water-storage-tank' },
-      { name: 'Pressure Tank', slug: 'pressure-tank' },
+      { name: 'Horizontal SS Tank', slug: 'horizontal-ss-tank' },
+      { name: 'Vertical SS Tank', slug: 'vertical-ss-tank' },
     ]
   },
   {
-    name: 'Valves & Fittings',
-    slug: 'valves-fittings',
-    description: 'Precision industrial valves and sanitary fittings.',
-    imageId: 'product-custom-filter',
+    name: 'Pressure Tank',
+    slug: 'pressure-tank',
+    description: 'Industrial grade pressure tanks for liquid and gas processing.',
+    imageId: 'hero-background',
     subcategories: [
-      { name: 'Ball Valve', slug: 'ball-valve' },
-      { name: 'Butterfly Valve', slug: 'butterfly-valve' },
-      { name: 'Stainless Steel Ferrule', slug: 'ss-ferrule' },
+      { name: 'Low Pressure Tank', slug: 'low-pressure-tank' },
+      { name: 'High Pressure Tank', slug: 'high-pressure-tank' },
     ]
   },
   {
-    name: 'Air Filters',
-    slug: 'air-filters',
-    description: 'High-efficiency particulate air (HEPA) filters for clean environments.',
+    name: 'Air Filter',
+    slug: 'air-filter',
+    description: 'High-efficiency air filtration products for clean environments.',
     imageId: 'product-air-filter',
     subcategories: [
-      { name: 'Air Filter', slug: 'air-filter' },
-      { name: 'HEPA Filters', slug: 'hepa-filters' },
-      { name: 'Carbon Filters', slug: 'carbon-filters' },
+      { name: 'Pre-Filter', slug: 'pre-filter' },
+      { name: 'HEPA Filter', slug: 'hepa-filter' },
+    ]
+  },
+  {
+    name: 'Duplex Type Filter',
+    slug: 'duplex-type-filter',
+    description: 'Advanced duplex type filters for critical processes.',
+    imageId: 'product-industrial-filter',
+    subcategories: [
+      { name: 'Advanced Duplex System', slug: 'advanced-duplex-system' },
+    ]
+  },
+  {
+    name: 'Ball Valve',
+    slug: 'ball-valve',
+    description: 'Stainless steel ball valves for precise flow control.',
+    imageId: 'product-custom-filter',
+    subcategories: [
+      { name: 'SS Ball Valve', slug: 'ss-ball-valve' },
+    ]
+  },
+  {
+    name: 'Butterfly Valve',
+    slug: 'butterfly-valve',
+    description: 'Industrial butterfly valves for efficient flow isolation.',
+    imageId: 'product-custom-filter',
+    subcategories: [
+      { name: 'SS Butterfly Valve', slug: 'ss-butterfly-valve' },
     ]
   },
 ];
 
 export const products: Record<string, { name: string; application: string; imageId: string }[]> = {
-  'ss-filter-housing': [
-    { name: 'High Polish SS Housing', application: 'Sanitary water, food grade liquids', imageId: 'product-industrial-filter' },
-    { name: 'Industrial Grade SS Housing', application: 'Chemical processing, industrial water', imageId: 'product-industrial-filter' },
-  ],
-  'basket-strainer': [
-    { name: 'Simplex Basket Strainer', application: 'Coarse filtration, pump protection', imageId: 'product-industrial-filter' },
-    { name: 'Multi-Basket Strainer', application: 'High flow pipeline systems', imageId: 'product-industrial-filter' },
-  ],
-  'filter-housing': [
-    { name: 'Standard Filter Housing', application: 'General purpose industrial filtration', imageId: 'product-industrial-filter' },
-  ],
-  'stainless-steel-filter-housing': [
-    { name: 'Grade 316L SS Housing', application: 'Pharmaceutical and high-purity systems', imageId: 'product-industrial-filter' },
-  ],
-  'duplex-filter': [
-    { name: 'Continuous Flow Duplex Filter', application: 'Uninterrupted flow, oil & fuel lines', imageId: 'product-industrial-filter' },
-  ],
-  'duplex-type-filter': [
-    { name: 'Advanced Duplex Filter', application: 'Critical process filtration with redundancy', imageId: 'product-industrial-filter' },
-  ],
-  'water-storage-tank': [
-    { name: 'SS304 Water Tank', application: 'Domestic water storage, industrial cooling', imageId: 'hero-background' },
-    { name: 'SS316 Water Tank', application: 'Pharmaceutical storage, high purity water', imageId: 'hero-background' },
-  ],
-  'pressure-tank': [
-    { name: 'Stainless Steel Pressure Vessel', application: 'Process chemistry, air compression', imageId: 'hero-background' },
-  ],
-  'ball-valve': [
-    { name: 'Stainless Steel Ball Valve', application: 'Flow control, pipeline isolation', imageId: 'product-custom-filter' },
-  ],
-  'butterfly-valve': [
-    { name: 'Sanitary Butterfly Valve', application: 'Food & Beverage processing, dairy', imageId: 'product-custom-filter' },
-  ],
-  'ss-ferrule': [
-    { name: 'Sanitary Tri-Clover Ferrule', application: 'Food & Pharma pipe fittings', imageId: 'product-custom-filter' },
-  ],
-  'air-filter': [
-    { name: 'Standard Industrial Air Filter', application: 'Dust and particulate removal in factories', imageId: 'product-air-filter' },
-  ],
-  'cartridge-filter-housing': [
-    { name: 'Single Cartridge Housing', application: 'Low flow water, chemical dosing', imageId: 'product-industrial-filter' },
-    { name: 'Multi-Cartridge Housing', application: 'High flow industrial water, beverages', imageId: 'product-industrial-filter' },
-  ],
-  'bag-filter-housing': [
-    { name: 'Single Bag Housing', application: 'Paint, resins, pre-filtration', imageId: 'product-industrial-filter' },
-    { name: 'Multi-Bag Housing', application: 'Bulk liquid processing, cooling towers', imageId: 'product-industrial-filter' },
-  ],
-  'filter-housing-connection': [
-    { name: 'Standard Connection Kit', application: 'General piping integration', imageId: 'product-industrial-filter' },
-  ],
-  'pp-filter-cartridge': [
-    { name: 'Standard PP Cartridge', application: 'Domestic and industrial water', imageId: 'product-industrial-filter' },
-  ],
-  'pp-spun-filter-cartridge': [
-    { name: 'Melt Blown Spun', application: 'Prefiltration, sediment removal', imageId: 'product-industrial-filter' },
-  ],
-  'pp-pleated-filter-cartridges': [
-    { name: 'High Area Pleated PP', application: 'Final filtration, pharma grade', imageId: 'product-industrial-filter' },
-  ],
-  'paper-pleated-filter-cartridge': [
-    { name: 'Disposable Paper Pleated', application: 'Lube oil, coolant filtration', imageId: 'product-industrial-filter' },
-  ],
-  'sintered-ss316-filter-cartridges': [
-    { name: 'Porous SS316 Sintered', application: 'Extreme high temp, catalyst recovery', imageId: 'product-industrial-filter' },
-  ],
-  'filter-cartridges-code-7': [
-    { name: 'Code 7 Sanitary Cartridge', application: 'Aseptic filtration, pharma standard', imageId: 'product-industrial-filter' },
-  ],
-  'ss-filter-cartridges': [
-    { name: 'Cylindrical SS Cartridge', application: 'Aggressive fluids, high pressure', imageId: 'product-industrial-filter' },
-  ],
-  'conical-filter': [
-    { name: 'Temporary Conical Strainer', application: 'New pipeline commissioning', imageId: 'product-industrial-filter' },
-  ],
-  'steam-filter-housing': [
-    { name: 'High Temp Steam Filter', application: 'Culinary steam, sterilization', imageId: 'product-industrial-filter' },
-  ],
-  'hepa-filters': [
-    { name: 'H13 HEPA Filter', application: 'Cleanrooms, hospital surgery rooms', imageId: 'product-air-filter' },
-  ],
-  'carbon-filters': [
-    { name: 'Activated Carbon Block', application: 'Odor and VOC removal', imageId: 'product-air-filter' },
-  ],
+  // Products are mapped by subcategory slug
+  'high-polish-ss-housing': [{ name: 'High Polish SS Housing', application: 'Sanitary water', imageId: 'product-industrial-filter' }],
+  'sanitary-ss-housing': [{ name: 'Sanitary SS Housing', application: 'Food grade liquids', imageId: 'product-industrial-filter' }],
+  'industrial-ss-housing': [{ name: 'Industrial SS Housing', application: 'Chemical processing', imageId: 'product-industrial-filter' }],
+  'chemical-grade-ss-housing': [{ name: 'Chemical Grade SS Housing', application: 'Industrial water', imageId: 'product-industrial-filter' }],
+  'simplex-basket-strainer': [{ name: 'Simplex Basket Strainer', application: 'Coarse filtration', imageId: 'product-industrial-filter' }],
+  'duplex-basket-strainer': [{ name: 'Duplex Basket Strainer', application: 'Oil & fuel lines', imageId: 'product-industrial-filter' }],
+  'multi-basket-strainer': [{ name: 'Multi-Basket Strainer', application: 'High flow pipelines', imageId: 'product-industrial-filter' }],
+  'single-cartridge-housing': [{ name: 'Single Cartridge Housing', application: 'General purpose', imageId: 'product-industrial-filter' }],
+  'multi-cartridge-housing': [{ name: 'Multi-Cartridge Housing', application: 'Bulk liquid processing', imageId: 'product-industrial-filter' }],
+  'custom-filter-housing': [{ name: 'Custom Filter Housing', application: 'Special requirements', imageId: 'product-industrial-filter' }],
+  'ss-304-housing': [{ name: 'SS 304 Housing', application: 'Domestic water', imageId: 'product-industrial-filter' }],
+  'ss-316-housing': [{ name: 'SS 316 Housing', application: 'Industrial chemical', imageId: 'product-industrial-filter' }],
+  'ss-316l-housing': [{ name: 'SS 316L Housing', application: 'Pharmaceutical', imageId: 'product-industrial-filter' }],
+  'standard-duplex-filter': [{ name: 'Standard Duplex Filter', application: 'Uninterrupted flow', imageId: 'product-industrial-filter' }],
+  'automated-duplex-filter': [{ name: 'Automated Duplex Filter', application: 'Automated processing', imageId: 'product-industrial-filter' }],
+  'horizontal-ss-tank': [{ name: 'Horizontal SS Tank', application: 'Space-saving storage', imageId: 'hero-background' }],
+  'vertical-ss-tank': [{ name: 'Vertical SS Tank', application: 'Industrial cooling', imageId: 'hero-background' }],
+  'low-pressure-tank': [{ name: 'Low Pressure Tank', application: 'Air compression', imageId: 'hero-background' }],
+  'high-pressure-tank': [{ name: 'High Pressure Tank', application: 'Process chemistry', imageId: 'hero-background' }],
+  'pre-filter': [{ name: 'Pre-Filter', application: 'Dust removal', imageId: 'product-air-filter' }],
+  'hepa-filter': [{ name: 'HEPA Filter', application: 'Cleanrooms', imageId: 'product-air-filter' }],
+  'advanced-duplex-system': [{ name: 'Advanced Duplex System', application: 'Critical filtration', imageId: 'product-industrial-filter' }],
+  'ss-ball-valve': [{ name: 'SS Ball Valve', application: 'Flow control', imageId: 'product-custom-filter' }],
+  'ss-butterfly-valve': [{ name: 'SS Butterfly Valve', application: 'Flow isolation', imageId: 'product-custom-filter' }],
+  'filter-housing-connection': [{ name: 'Filter Housing Connection', application: 'General piping', imageId: 'product-industrial-filter' }],
+  'pp-filter-cartridge': [{ name: 'PP Filter Cartridge', application: 'Water filtration', imageId: 'product-industrial-filter' }],
+  'pp-spun-filter-cartridge': [{ name: 'PP Spun Filter Cartridge', application: 'Sediment removal', imageId: 'product-industrial-filter' }],
+  'pp-pleated-filter-cartridges': [{ name: 'PP Pleated Filter Cartridges', application: 'Final filtration', imageId: 'product-industrial-filter' }],
+  'paper-pleated-filter-cartridge': [{ name: 'Paper Pleated Filter Cartridge', application: 'Lube oil', imageId: 'product-industrial-filter' }],
+  'sintered-ss316-filter-cartridges': [{ name: 'Sintered Ss316 Filter Cartridges', application: 'High temp fluids', imageId: 'product-industrial-filter' }],
+  'ss-single-bag-filter-housing': [{ name: 'SS Single Bag Filter Housing', application: 'Bulk liquid', imageId: 'product-industrial-filter' }],
+  'filter-cartridges-code-7': [{ name: 'Filter Cartridges Code 7', application: 'Pharmaceutical', imageId: 'product-industrial-filter' }],
+  'ss-filter-cartridges': [{ name: 'Stainless Steel Filter Cartridges', application: 'Aggressive fluids', imageId: 'product-industrial-filter' }],
+  'conical-filter': [{ name: 'Conical Filter', application: 'Pipeline commissioning', imageId: 'product-industrial-filter' }],
+  'steam-filter-housing': [{ name: 'Steam Filter Housing', application: 'Culinary steam', imageId: 'product-industrial-filter' }],
 };
 
 export const industries = [
