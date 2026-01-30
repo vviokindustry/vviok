@@ -54,10 +54,10 @@ export const productCategories: Category[] = [
     description: 'High-quality stainless steel housings designed for high-polish, sanitary, and industrial environments.',
     imageId: 'product-industrial-filter',
     subcategories: [
-      { name: 'High Polish SS Housing', slug: 'high-polish-ss-housing' },
-      { name: 'Sanitary SS Housing', slug: 'sanitary-ss-housing' },
-      { name: 'Industrial SS Housing', slug: 'industrial-ss-housing' },
-      { name: 'Chemical Grade SS Housing', slug: 'chemical-grade-ss-housing' },
+      { name: 'Stainless Steel Industrial Duplex Filter Housing', slug: 'ss-industrial-duplex-filter-housing' },
+      { name: 'Water Filter Housing', slug: 'water-filter-housing' },
+      { name: 'Ss Cartridge Filter Housing', slug: 'ss-cartridge-filter-housing' },
+      { name: 'SS Single Cartridge Filter Housing', slug: 'ss-single-cartridge-filter-housing' },
     ]
   },
   {
@@ -173,10 +173,10 @@ export const productCategories: Category[] = [
 ];
 
 export const products: Record<string, { name: string; application: string; imageId: string }[]> = {
-  'high-polish-ss-housing': [{ name: 'High Polish SS Housing', application: 'Sanitary water, Beverage processing', imageId: 'product-industrial-filter' }],
-  'sanitary-ss-housing': [{ name: 'Sanitary SS Housing', application: 'Food grade liquids, Pharmaceuticals', imageId: 'product-industrial-filter' }],
-  'industrial-ss-housing': [{ name: 'Industrial SS Housing', application: 'Chemical processing, Wastewater', imageId: 'product-industrial-filter' }],
-  'chemical-grade-ss-housing': [{ name: 'Chemical Grade SS Housing', application: 'Aggressive fluids, Industrial acids', imageId: 'product-industrial-filter' }],
+  'ss-industrial-duplex-filter-housing': [{ name: 'Stainless Steel Industrial Duplex Filter Housing', application: 'Continuous flow systems, industrial refineries', imageId: 'product-industrial-filter' }],
+  'water-filter-housing': [{ name: 'Water Filter Housing', application: 'Municipal water, commercial buildings', imageId: 'product-industrial-filter' }],
+  'ss-cartridge-filter-housing': [{ name: 'Ss Cartridge Filter Housing', application: 'General process liquid filtration', imageId: 'product-industrial-filter' }],
+  'ss-single-cartridge-filter-housing': [{ name: 'SS Single Cartridge Filter Housing', application: 'Small batch processing, point-of-use filtration', imageId: 'product-industrial-filter' }],
   'simplex-basket-strainer': [{ name: 'Simplex Basket Strainer', application: 'Coarse particulate removal in pipelines', imageId: 'product-industrial-filter' }],
   'duplex-basket-strainer': [{ name: 'Duplex Basket Strainer', application: 'Oil lines, Continuous flow systems', imageId: 'product-industrial-filter' }],
   'multi-basket-strainer': [{ name: 'Multi-Basket Strainer', application: 'High flow rate industrial pipelines', imageId: 'product-industrial-filter' }],
