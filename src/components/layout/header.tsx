@@ -95,21 +95,18 @@ export function Header() {
               link.categories ? (
                 <DropdownMenu key={link.label}>
                   <DropdownMenuTrigger className={cn(
-                    'flex items-center gap-1 text-sm font-bold uppercase tracking-wider transition-colors hover:text-primary outline-none',
+                    'flex items-center gap-1 text-sm font-bold uppercase tracking-wider transition-colors hover:text-primary outline-none focus:ring-0',
                     pathname.startsWith(link.href) ? 'text-primary' : 'text-muted-foreground'
                   )}>
                     {link.label} <ChevronDown className="h-4 w-4" />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="start" className="w-[350px] p-0 overflow-hidden shadow-2xl border-slate-200">
-                    <div className="bg-slate-50 px-4 py-3 border-b">
-                      <h3 className="font-bold text-slate-900 text-base uppercase tracking-tight">Our Products</h3>
-                    </div>
                     <ScrollArea className="h-[500px]">
-                      <div className="flex flex-col">
+                      <div className="flex flex-col py-1">
                         {link.categories.map((cat) => (
                           cat.subcategories ? (
                             <DropdownMenuSub key={cat.slug}>
-                              <DropdownMenuSubTrigger className="flex items-center justify-between p-4 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors cursor-pointer outline-none data-[state=open]:bg-slate-50 group">
+                              <DropdownMenuSubTrigger className="flex items-center justify-between p-4 border-b border-slate-50 last:border-0 hover:bg-slate-50 transition-colors cursor-pointer outline-none data-[state=open]:bg-slate-50 group">
                                 <div className="flex flex-col text-left">
                                   <span className="font-bold text-slate-900 text-[15px] group-hover:text-primary transition-colors">{cat.name}</span>
                                   <span className="text-xs text-muted-foreground mt-0.5">{cat.subcategories.length} {cat.subcategories.length === 1 ? 'product' : 'products'} available</span>
@@ -129,7 +126,7 @@ export function Header() {
                               </DropdownMenuPortal>
                             </DropdownMenuSub>
                           ) : (
-                            <DropdownMenuItem key={cat.slug} asChild className="flex items-center justify-between p-4 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors cursor-pointer outline-none group">
+                            <DropdownMenuItem key={cat.slug} asChild className="flex items-center justify-between p-4 border-b border-slate-50 last:border-0 hover:bg-slate-50 transition-colors cursor-pointer outline-none group">
                               <Link href={`/products/${cat.slug}`} className="w-full">
                                 <div className="flex flex-col text-left">
                                   <span className="font-bold text-slate-900 text-[15px] group-hover:text-primary transition-colors">{cat.name}</span>

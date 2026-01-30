@@ -157,6 +157,16 @@ export const productCategories: Category[] = [
       { name: 'SS Butterfly Valve', slug: 'ss-butterfly-valve' },
     ]
   },
+  {
+    name: 'Stainless Steel Ferrule',
+    slug: 'stainless-steel-ferrule',
+    description: 'Precision engineered SS ferrules for secure connections.',
+    imageId: 'product-custom-filter',
+    subcategories: [
+      { name: 'SS 316 Ferrule', slug: 'ss-316-ferrule' },
+      { name: 'Sanitary Ferrule', slug: 'sanitary-ferrule' },
+    ]
+  },
 ];
 
 export const products: Record<string, { name: string; application: string; imageId: string }[]> = {
@@ -196,6 +206,8 @@ export const products: Record<string, { name: string; application: string; image
   'ss-filter-cartridges': [{ name: 'Stainless Steel Filter Cartridges', application: 'Aggressive fluids', imageId: 'product-industrial-filter' }],
   'conical-filter': [{ name: 'Conical Filter', application: 'Pipeline commissioning', imageId: 'product-industrial-filter' }],
   'steam-filter-housing': [{ name: 'Steam Filter Housing', application: 'Culinary steam', imageId: 'product-industrial-filter' }],
+  'ss-316-ferrule': [{ name: 'SS 316 Ferrule', application: 'High pressure connections', imageId: 'product-custom-filter' }],
+  'sanitary-ferrule': [{ name: 'Sanitary Ferrule', application: 'Hygienic piping', imageId: 'product-custom-filter' }],
 };
 
 export const industries = [
