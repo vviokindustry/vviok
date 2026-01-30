@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ChevronRight, Home } from 'lucide-react';
 
 export async function generateStaticParams() {
   return productCategories.map((cat) => ({
@@ -21,32 +21,48 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
     return notFound();
   }
 
-  // If the category has subcategories, display subcategory cards
-  if (currentCategory.subcategories && currentCategory.subcategories.length > 0) {
-    return (
-      <div>
-        <section className="bg-primary/5 py-12 md:py-20 text-center">
-          <div className="container">
-            <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">{currentCategory.name}</h1>
-            <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-              Choose a specific subcategory to view our specialized products.
-            </p>
-          </div>
-        </section>
+  return (
+    <div>
+      {/* Breadcrumbs */}
+      <div className="bg-slate-50 border-b">
+        <div className="container py-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
+          <Link href="/" className="hover:text-primary flex items-center gap-1">
+            <Home className="h-3 w-3" /> Home
+          </Link>
+          <ChevronRight className="h-3 w-3" />
+          <Link href="/products" className="hover:text-primary">Products</Link>
+          <ChevronRight className="h-3 w-3" />
+          <span className="text-primary">{currentCategory.name}</span>
+        </div>
+      </div>
 
-        <section className="py-16 md:py-24">
-          <div className="container">
+      {/* Page Header */}
+      <section className="bg-white py-12 md:py-20 border-b">
+        <div className="container text-center max-w-4xl">
+          <h1 className="font-headline text-4xl md:text-5xl font-bold text-slate-900">{currentCategory.name}</h1>
+          <p className="mt-4 text-lg text-muted-foreground">
+            {currentCategory.description}
+          </p>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-slate-50/50">
+        <div className="container">
+          {/* If the category has subcategories, display subcategory cards */}
+          {currentCategory.subcategories && currentCategory.subcategories.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {currentCategory.subcategories.map((sub) => (
-                <Card key={sub.slug} className="group hover:shadow-lg transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="font-headline text-2xl">{sub.name}</CardTitle>
+                <Card key={sub.slug} className="group hover:shadow-xl transition-all border-slate-200">
+                  <CardHeader className="bg-white border-b p-6">
+                    <CardTitle className="font-headline text-2xl font-bold group-hover:text-primary transition-colors">
+                      {sub.name}
+                    </CardTitle>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="p-6">
                     <p className="text-muted-foreground mb-6">
-                      Explore our high-performance solutions for {sub.name.toLowerCase()}.
+                      Explore our specialized high-performance solutions for {sub.name.toLowerCase()}. Engineered for reliability and precision.
                     </p>
-                    <Button asChild className="w-full">
+                    <Button asChild className="w-full font-bold uppercase tracking-wide">
                       <Link href={`/products/${currentCategory.slug}/${sub.slug}`}>
                         View Products <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
@@ -55,67 +71,49 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
                 </Card>
               ))}
             </div>
-          </div>
-        </section>
-      </div>
-    );
-  }
-
-  // Otherwise, display products for this category (e.g., Filter Bags)
-  const categoryProducts = products[category] || [];
-
-  return (
-    <div>
-      <section className="bg-primary/5 py-12 md:py-20 text-center">
-        <div className="container">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">{currentCategory.name}</h1>
-          <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-            {currentCategory.description}
-          </p>
-        </div>
-      </section>
-
-      <section className="py-16 md:py-24">
-        <div className="container">
-          {categoryProducts.length > 0 ? (
+          ) : (
+            /* Otherwise, display products for this category directly */
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {categoryProducts.map((product) => {
+              {(products[currentCategory.slug] || []).map((product) => {
                 const image = PlaceHolderImages.find((img) => img.id === product.imageId);
                 return (
-                  <Card key={product.name} className="flex flex-col">
+                  <Card key={product.name} className="flex flex-col border-slate-200 hover:shadow-lg transition-all">
                     <CardHeader className="p-0">
-                      <div className="aspect-w-4 aspect-h-3 relative">
+                      <div className="aspect-w-4 aspect-h-3 relative overflow-hidden">
                         {image && (
                           <Image
                             src={image.imageUrl}
                             alt={product.name}
                             fill
-                            className="object-cover rounded-t-lg"
+                            className="object-cover rounded-t-lg transition-transform duration-500 hover:scale-105"
                             data-ai-hint={image.imageHint}
                           />
                         )}
                       </div>
                     </CardHeader>
                     <CardContent className="p-6 flex-1 flex flex-col">
-                      <h3 className="font-headline text-xl font-semibold">{product.name}</h3>
-                      <p className="text-sm text-muted-foreground mt-2 flex-1">
-                        <span className="font-semibold text-foreground">Applications:</span> {product.application}
+                      <h3 className="font-headline text-xl font-bold text-slate-900">{product.name}</h3>
+                      <p className="text-sm text-muted-foreground mt-3 flex-1">
+                        <span className="font-bold text-slate-700 uppercase tracking-wider text-[10px]">Primary Applications:</span>
+                        <br />
+                        {product.application}
                       </p>
-                      <Button asChild className="mt-4 w-full" variant="outline">
-                        <Link href="/contact">Inquire Now</Link>
+                      <Button asChild className="mt-6 w-full font-bold" variant="outline">
+                        <Link href="/contact">Request Information</Link>
                       </Button>
                     </CardContent>
                   </Card>
                 );
               })}
-            </div>
-          ) : (
-            <div className="text-center py-20">
-              <p className="text-muted-foreground">No products found in this category.</p>
+              {(products[currentCategory.slug] || []).length === 0 && (
+                <div className="col-span-full text-center py-20 bg-white rounded-lg border border-dashed">
+                  <p className="text-muted-foreground font-medium">No products listed for this specific category yet. Please contact us for specialized requirements.</p>
+                </div>
+              )}
             </div>
           )}
-          <div className="mt-12 text-center">
-            <Button asChild variant="secondary">
+          <div className="mt-16 text-center">
+            <Button asChild variant="secondary" className="px-8 font-bold">
               <Link href="/products">View All Product Categories</Link>
             </Button>
           </div>
