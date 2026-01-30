@@ -157,7 +157,7 @@ export const productCategories: Category[] = [
     description: 'High-quality industrial butterfly valves for efficient and reliable flow regulation.',
     imageId: 'product-custom-filter',
     subcategories: [
-      { name: 'SS Butterfly Valve', slug: 'ss-butterfly-valve' },
+      { name: 'Stainless Steel Dairy Fittings', slug: 'ss-dairy-fittings' },
     ]
   },
   {
@@ -196,7 +196,7 @@ export const products: Record<string, { name: string; application: string; image
   'sintered-stainless-steel-filter': [{ name: 'Sintered Stainless Steel Filter', application: 'High-temperature and high-pressure liquid and gas filtration', imageId: 'product-industrial-filter' }],
   'ss-duplex-filter-housing-type': [{ name: 'SS Duplex Filter Housing', application: 'Advanced industrial process filtration requiring zero downtime', imageId: 'product-industrial-filter' }],
   'ss-basket-strainers-valve': [{ name: 'Stainless Steel Basket Strainers', application: 'Efficient coarse filtration and flow control', imageId: 'product-custom-filter' }],
-  'ss-butterfly-valve': [{ name: 'SS Butterfly Valve', application: 'Throttling and shut-off in large pipelines', imageId: 'product-custom-filter' }],
+  'ss-dairy-fittings': [{ name: 'Stainless Steel Dairy Fittings', application: 'Sanitary flow control and connection in dairy and food processing', imageId: 'product-custom-filter' }],
   'filter-housing-connection': [{ name: 'Filter Housing Connection', application: 'Industrial piping systems', imageId: 'product-industrial-filter' }],
   'pp-filter-cartridge': [{ name: 'PP Filter Cartridge', application: 'Sediment and particulate filtration', imageId: 'product-industrial-filter' }],
   'pp-spun-filter-cartridge': [{ name: 'PP Spun Filter Cartridge', application: 'Pre-filtration for RO systems', imageId: 'product-industrial-filter' }],
