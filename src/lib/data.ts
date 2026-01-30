@@ -106,11 +106,11 @@ export const productCategories: Category[] = [
   {
     name: 'Water Storage Tank',
     slug: 'water-storage-tank',
-    description: 'Premium stainless steel water storage solutions, available in vertical and horizontal configurations.',
+    description: 'Premium stainless steel water storage solutions, available in various specialized configurations.',
     imageId: 'hero-background',
     subcategories: [
-      { name: 'Horizontal SS Tank', slug: 'horizontal-ss-tank' },
-      { name: 'Vertical SS Tank', slug: 'vertical-ss-tank' },
+      { name: '1000L Stainless Steel Water Storage Tank', slug: '1000l-ss-water-storage-tank' },
+      { name: 'Ss Insulated Storage Tanks', slug: 'ss-insulated-storage-tanks' },
     ]
   },
   {
@@ -188,8 +188,8 @@ export const products: Record<string, { name: string; application: string; image
   'industrial-filter-cartridge': [{ name: 'Industrial Filter Cartridge', application: 'Process water and chemical filtration', imageId: 'product-industrial-filter' }],
   'ss-duplex-filter-housing': [{ name: 'Ss Duplex Filter Housing', application: 'Continuous flow industrial systems', imageId: 'product-industrial-filter' }],
   'ss-basket-filter': [{ name: 'Stainless Steel Basket Filter', application: 'Coarse and fine particulate removal', imageId: 'product-industrial-filter' }],
-  'horizontal-ss-tank': [{ name: 'Horizontal SS Tank', application: 'Space-restricted water storage', imageId: 'hero-background' }],
-  'vertical-ss-tank': [{ name: 'Vertical SS Tank', application: 'Industrial cooling towers, Bulk storage', imageId: 'hero-background' }],
+  '1000l-ss-water-storage-tank': [{ name: '1000L Stainless Steel Water Storage Tank', application: 'Bulk water storage for residential and industrial use', imageId: 'hero-background' }],
+  'ss-insulated-storage-tanks': [{ name: 'Ss Insulated Storage Tanks', application: 'Temperature-controlled liquid storage for pharmaceutical and food processing', imageId: 'hero-background' }],
   'low-pressure-tank': [{ name: 'Low Pressure Tank', application: 'Air compression, Surge suppression', imageId: 'hero-background' }],
   'high-pressure-tank': [{ name: 'High Pressure Tank', application: 'Process chemistry, High-pressure gas', imageId: 'hero-background' }],
   'pre-filter': [{ name: 'Pre-Filter', application: 'HVAC intake, Dust removal', imageId: 'product-air-filter' }],
