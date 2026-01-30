@@ -38,8 +38,6 @@ export const productCategories: Category[] = [
       { name: 'Stainless Steel Filter Housing', slug: 'stainless-steel-filter-housing' },
       { name: 'Duplex Filter', slug: 'duplex-filter' },
       { name: 'Duplex Type Filter', slug: 'duplex-type-filter' },
-      { name: 'Cartridge Filter Housing', slug: 'cartridge-filter-housing' },
-      { name: 'Bag Filter Housing', slug: 'bag-filter-housing' },
     ]
   },
   {

@@ -29,8 +29,9 @@ const navLinks = [
     href: '/products',
     categories: productCategories,
   },
-  { href: '#', label: 'Clientele' },
-  { href: '#', label: 'Projects' },
+  { href: '/industries', label: 'Industries' },
+  { href: '/manufacturing-quality', label: 'Quality' },
+  { href: '/export', label: 'Export' },
   { href: '/contact', label: 'Contact' },
 ];
 
