@@ -173,7 +173,6 @@ export const productCategories: Category[] = [
 ];
 
 export const products: Record<string, { name: string; application: string; imageId: string }[]> = {
-  // Products mapped by subcategory slug
   'high-polish-ss-housing': [{ name: 'High Polish SS Housing', application: 'Sanitary water, Beverage processing', imageId: 'product-industrial-filter' }],
   'sanitary-ss-housing': [{ name: 'Sanitary SS Housing', application: 'Food grade liquids, Pharmaceuticals', imageId: 'product-industrial-filter' }],
   'industrial-ss-housing': [{ name: 'Industrial SS Housing', application: 'Chemical processing, Wastewater', imageId: 'product-industrial-filter' }],

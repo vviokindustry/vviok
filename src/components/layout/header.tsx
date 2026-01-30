@@ -101,20 +101,20 @@ export function Header() {
                     {link.label} <ChevronDown className="h-4 w-4" />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="start" className="w-[350px] p-0 overflow-hidden shadow-2xl border-slate-200">
-                    <ScrollArea className="h-[500px]">
-                      <div className="flex flex-col py-1">
+                    <ScrollArea className="h-[600px]">
+                      <div className="flex flex-col">
                         {link.categories.map((cat) => (
                           cat.subcategories ? (
                             <DropdownMenuSub key={cat.slug}>
-                              <DropdownMenuSubTrigger className="flex items-center justify-between p-4 border-b border-slate-50 last:border-0 hover:bg-slate-50 transition-colors cursor-pointer outline-none data-[state=open]:bg-slate-50 group">
+                              <DropdownMenuSubTrigger className="flex items-center justify-between p-4 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors cursor-pointer outline-none data-[state=open]:bg-slate-50 group">
                                 <div className="flex flex-col text-left">
                                   <span className="font-bold text-slate-900 text-[15px] group-hover:text-primary transition-colors">{cat.name}</span>
-                                  <span className="text-xs text-muted-foreground mt-0.5">{cat.subcategories.length} {cat.subcategories.length === 1 ? 'product' : 'products'} available</span>
+                                  <span className="text-xs text-muted-foreground mt-0.5">{cat.subcategories.length} products available</span>
                                 </div>
                                 <ChevronRight className="h-4 w-4 text-slate-300 group-hover:text-primary transition-colors" />
                               </DropdownMenuSubTrigger>
                               <DropdownMenuPortal>
-                                <DropdownMenuSubContent className="w-72 max-h-[70vh] overflow-y-auto">
+                                <DropdownMenuSubContent className="w-72 max-h-[80vh] overflow-y-auto">
                                   {cat.subcategories.map((sub) => (
                                     <DropdownMenuItem key={sub.slug} asChild>
                                       <Link href={`/products/${cat.slug}/${sub.slug}`} className="w-full cursor-pointer py-2.5 px-3">
@@ -126,12 +126,13 @@ export function Header() {
                               </DropdownMenuPortal>
                             </DropdownMenuSub>
                           ) : (
-                            <DropdownMenuItem key={cat.slug} asChild className="flex items-center justify-between p-4 border-b border-slate-50 last:border-0 hover:bg-slate-50 transition-colors cursor-pointer outline-none group">
-                              <Link href={`/products/${cat.slug}`} className="w-full">
+                            <DropdownMenuItem key={cat.slug} asChild className="flex items-center justify-between p-4 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors cursor-pointer outline-none group">
+                              <Link href={`/products/${cat.slug}`} className="w-full flex items-center justify-between">
                                 <div className="flex flex-col text-left">
                                   <span className="font-bold text-slate-900 text-[15px] group-hover:text-primary transition-colors">{cat.name}</span>
                                   <span className="text-xs text-muted-foreground mt-0.5">1 product available</span>
                                 </div>
+                                <ChevronRight className="h-4 w-4 text-slate-300 group-hover:text-primary transition-colors" />
                               </Link>
                             </DropdownMenuItem>
                           )
