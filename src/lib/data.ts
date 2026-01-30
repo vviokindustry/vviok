@@ -119,8 +119,8 @@ export const productCategories: Category[] = [
     description: 'Industrial-grade pressure vessels engineered for safe and efficient liquid and gas processing.',
     imageId: 'hero-background',
     subcategories: [
-      { name: 'Low Pressure Tank', slug: 'low-pressure-tank' },
-      { name: 'High Pressure Tank', slug: 'high-pressure-tank' },
+      { name: 'Stainless Steel Pressure Vessel Tank', slug: 'ss-pressure-vessel-tank' },
+      { name: 'SS Hot Water Storage Tank', slug: 'ss-hot-water-storage-tank' },
     ]
   },
   {
@@ -190,8 +190,8 @@ export const products: Record<string, { name: string; application: string; image
   'ss-basket-filter': [{ name: 'Stainless Steel Basket Filter', application: 'Coarse and fine particulate removal', imageId: 'product-industrial-filter' }],
   '1000l-ss-water-storage-tank': [{ name: '1000L Stainless Steel Water Storage Tank', application: 'Bulk water storage for residential and industrial use', imageId: 'hero-background' }],
   'ss-insulated-storage-tanks': [{ name: 'Ss Insulated Storage Tanks', application: 'Temperature-controlled liquid storage for pharmaceutical and food processing', imageId: 'hero-background' }],
-  'low-pressure-tank': [{ name: 'Low Pressure Tank', application: 'Air compression, Surge suppression', imageId: 'hero-background' }],
-  'high-pressure-tank': [{ name: 'High Pressure Tank', application: 'Process chemistry, High-pressure gas', imageId: 'hero-background' }],
+  'ss-pressure-vessel-tank': [{ name: 'Stainless Steel Pressure Vessel Tank', application: 'Industrial process pressure control, chemical storage', imageId: 'hero-background' }],
+  'ss-hot-water-storage-tank': [{ name: 'SS Hot Water Storage Tank', application: 'Domestic and industrial hot water supply systems', imageId: 'hero-background' }],
   'pre-filter': [{ name: 'Pre-Filter', application: 'HVAC intake, Dust removal', imageId: 'product-air-filter' }],
   'hepa-filter': [{ name: 'HEPA Filter', application: 'Cleanrooms, Medical facilities', imageId: 'product-air-filter' }],
   'advanced-duplex-system': [{ name: 'Advanced Duplex System', application: 'Critical process filtration', imageId: 'product-industrial-filter' }],
