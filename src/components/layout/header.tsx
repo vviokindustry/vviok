@@ -107,10 +107,10 @@ export function Header() {
                           cat.subcategories ? (
                             <DropdownMenuSub key={cat.slug}>
                               <DropdownMenuSubTrigger className="flex items-center justify-between p-4 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors cursor-pointer outline-none data-[state=open]:bg-slate-50 group">
-                                <div className="flex flex-col text-left">
+                                <Link href={`/products/${cat.slug}`} className="flex flex-col text-left flex-1">
                                   <span className="font-bold text-slate-900 text-[15px] group-hover:text-primary transition-colors">{cat.name}</span>
                                   <span className="text-xs text-muted-foreground mt-0.5">{cat.subcategories.length} products available</span>
-                                </div>
+                                </Link>
                                 <ChevronRight className="h-4 w-4 text-slate-300 group-hover:text-primary transition-colors" />
                               </DropdownMenuSubTrigger>
                               <DropdownMenuPortal>
@@ -191,10 +191,10 @@ export function Header() {
                                      <Accordion type="single" collapsible className="w-full">
                                         <AccordionItem value={cat.slug} className="border-none">
                                           <AccordionTrigger className="py-0 text-base font-bold text-foreground hover:no-underline">
-                                            <div className="flex flex-col text-left">
+                                            <Link href={`/products/${cat.slug}`} onClick={() => setMobileMenuOpen(false)} className="flex flex-col text-left">
                                               <span>{cat.name}</span>
                                               <span className="text-[10px] text-muted-foreground lowercase mt-0.5">{cat.subcategories.length} products available</span>
-                                            </div>
+                                            </Link>
                                           </AccordionTrigger>
                                           <AccordionContent className="flex flex-col space-y-2 pt-2 pl-4 pb-0 border-l-2 border-slate-100 ml-1">
                                             {cat.subcategories.map(sub => (
