@@ -35,6 +35,11 @@ export const productCategories: Category[] = [
       { name: 'Cartridge Filter Housing', slug: 'cartridge-filter-housing' },
       { name: 'Bag Filter Housing', slug: 'bag-filter-housing' },
       { name: 'Basket Filter Housing', slug: 'basket-filter-housing' },
+      { name: 'Duplex Filter Housing', slug: 'duplex-filter-housing' },
+      { name: 'Carbon/Catalyst Filter Housing', slug: 'carbon-catalyst-filter-housing' },
+      { name: 'Self Cleaning Filter Housing', slug: 'self-cleaning-filter-housing' },
+      { name: 'Non-Metalic Filter Housing', slug: 'non-metalic-filter-housing' },
+      { name: 'Y Type & T Type Strainer', slug: 'y-t-strainer' },
     ]
   },
   {
@@ -43,10 +48,17 @@ export const productCategories: Category[] = [
     description: 'Precision filter cartridges for liquid and gas processing.',
     imageId: 'product-industrial-filter',
     subcategories: [
-      { name: 'Filter Housing', slug: 'filter-housing' },
-      { name: 'Connection', slug: 'connection' },
-      { name: 'Polypropylene Cartridge', slug: 'pp-cartridge' },
-      { name: 'Stainless Steel Cartridge', slug: 'ss-cartridge' },
+      { name: 'Filter Housing and Connection', slug: 'filter-housing-connection' },
+      { name: 'PP Filter Cartridge', slug: 'pp-filter-cartridge' },
+      { name: 'PP Spun Filter Cartridge', slug: 'pp-spun-filter-cartridge' },
+      { name: 'PP Pleated Filter Cartridges', slug: 'pp-pleated-filter-cartridges' },
+      { name: 'Paper Pleated Filter Cartridge', slug: 'paper-pleated-filter-cartridge' },
+      { name: 'Sintered Ss316 Filter Cartridges', slug: 'sintered-ss316-filter-cartridges' },
+      { name: 'Stainless Steel Single Bag Filter Housing', slug: 'ss-single-bag-filter-housing' },
+      { name: 'Filter Cartridges Code 7', slug: 'filter-cartridges-code-7' },
+      { name: 'Stainless Steel Filter Cartridges', slug: 'ss-filter-cartridges' },
+      { name: 'Conical Filter', slug: 'conical-filter' },
+      { name: 'Steam Filter Housing', slug: 'steam-filter-housing' },
     ]
   },
   {
@@ -83,28 +95,62 @@ export const products: Record<string, { name: string; application: string; image
     { name: 'Single Bag Housing', application: 'Paint, resins, pre-filtration', imageId: 'product-industrial-filter' },
     { name: 'Multi-Bag Housing', application: 'Bulk liquid processing, cooling towers', imageId: 'product-industrial-filter' },
   ],
-  'filter-housing': [
-    { name: 'Industrial Cartridge Housing', application: 'General manufacturing, process water', imageId: 'product-industrial-filter' },
-    { name: 'Sanitary Housing', application: 'Pharma, food and beverage compliance', imageId: 'product-industrial-filter' },
+  'basket-filter-housing': [
+    { name: 'Single Basket Strainer', application: 'Coarse filtration, pump protection', imageId: 'product-industrial-filter' },
+    { name: 'Multi-Basket Strainer', application: 'High volume process fluids', imageId: 'product-industrial-filter' },
   ],
-  'connection': [
-    { name: 'Flange Connections', application: 'High pressure pipelines, heavy industry', imageId: 'product-industrial-filter' },
-    { name: 'Threaded Connections', application: 'Compact systems, instrumentation', imageId: 'product-industrial-filter' },
-    { name: 'Tri-Clamp Fittings', application: 'Hygienic and sanitary applications', imageId: 'product-industrial-filter' },
+  'duplex-filter-housing': [
+    { name: 'Continuous Flow Duplex', application: 'Uninterrupted systems, oil filtration', imageId: 'product-industrial-filter' },
   ],
-  'pp-cartridge': [
-    { name: 'Spun Bound PP', application: 'Sediment removal, pre-filtration', imageId: 'product-industrial-filter' },
-    { name: 'Pleated PP Cartridge', application: 'High surface area filtration', imageId: 'product-industrial-filter' },
+  'carbon-catalyst-filter-housing': [
+    { name: 'Active Carbon Vessel', application: 'Chlorine removal, organic pollutants', imageId: 'product-industrial-filter' },
   ],
-  'ss-cartridge': [
-    { name: 'Sintered Mesh Cartridge', application: 'High temp gas, chemical recovery', imageId: 'product-industrial-filter' },
-    { name: 'Pleated SS Filter', application: 'Aggressive solvents, steam', imageId: 'product-industrial-filter' },
+  'self-cleaning-filter-housing': [
+    { name: 'Automatic Scraper Filter', application: 'High viscosity fluids, cooling water', imageId: 'product-industrial-filter' },
+  ],
+  'non-metalic-filter-housing': [
+    { name: 'UPVC Filter Housing', application: 'Desalination, plating, sea water', imageId: 'product-industrial-filter' },
+  ],
+  'y-t-strainer': [
+    { name: 'Industrial Y-Strainer', application: 'Pipeline protection, steam lines', imageId: 'product-industrial-filter' },
+  ],
+  'filter-housing-connection': [
+    { name: 'Standard Connection Kit', application: 'General piping integration', imageId: 'product-industrial-filter' },
+  ],
+  'pp-filter-cartridge': [
+    { name: 'Standard PP Cartridge', application: 'Domestic and industrial water', imageId: 'product-industrial-filter' },
+  ],
+  'pp-spun-filter-cartridge': [
+    { name: 'Melt Blown Spun', application: 'Prefiltration, sediment removal', imageId: 'product-industrial-filter' },
+  ],
+  'pp-pleated-filter-cartridges': [
+    { name: 'High Area Pleated PP', application: 'Final filtration, pharma grade', imageId: 'product-industrial-filter' },
+  ],
+  'paper-pleated-filter-cartridge': [
+    { name: 'Disposable Paper Pleated', application: 'Lube oil, coolant filtration', imageId: 'product-industrial-filter' },
+  ],
+  'sintered-ss316-filter-cartridges': [
+    { name: 'Porous SS316 Sintered', application: 'Extreme high temp, catalyst recovery', imageId: 'product-industrial-filter' },
+  ],
+  'ss-single-bag-filter-housing': [
+    { name: 'Compact Bag Housing', application: 'Small batch processing, paints', imageId: 'product-industrial-filter' },
+  ],
+  'filter-cartridges-code-7': [
+    { name: 'Code 7 Sanitary Cartridge', application: 'Aseptic filtration, pharma standard', imageId: 'product-industrial-filter' },
+  ],
+  'ss-filter-cartridges': [
+    { name: 'Cylindrical SS Cartridge', application: 'Aggressive fluids, high pressure', imageId: 'product-industrial-filter' },
+  ],
+  'conical-filter': [
+    { name: 'Temporary Conical Strainer', application: 'New pipeline commissioning', imageId: 'product-industrial-filter' },
+  ],
+  'steam-filter-housing': [
+    { name: 'High Temp Steam Filter', application: 'Culinary steam, sterilization', imageId: 'product-industrial-filter' },
   ],
   'hepa-filters': [
     { name: 'H13 HEPA Filter', application: 'Cleanrooms, hospital surgery rooms', imageId: 'product-air-filter' },
     { name: 'H14 HEPA Filter', application: 'Electronics manufacturing, labs', imageId: 'product-air-filter' },
   ],
-  // Category slugs (for those without subcategories)
   'filter-bags': [
     { name: 'Nomex Filter Bag', application: 'High temperature dust collection', imageId: 'product-liquid-filter' },
     { name: 'Polyester Filter Bag', application: 'General purpose liquid filtration', imageId: 'product-liquid-filter' },

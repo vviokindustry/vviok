@@ -23,13 +23,15 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About Us' },
+  { href: '/about', label: 'About' },
   {
     label: 'Products',
     href: '/products',
     categories: productCategories,
   },
-  { href: '/contact', label: 'Contact Us' },
+  { href: '#', label: 'Clientele' },
+  { href: '#', label: 'Projects' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export function Header() {
@@ -102,7 +104,7 @@ export function Header() {
                             {cat.name}
                           </DropdownMenuSubTrigger>
                           <DropdownMenuPortal>
-                            <DropdownMenuSubContent className="w-64">
+                            <DropdownMenuSubContent className="w-64 max-h-[70vh] overflow-y-auto">
                               {cat.subcategories.map((sub) => (
                                 <DropdownMenuItem key={sub.slug} asChild>
                                   <Link href={`/products/${cat.slug}/${sub.slug}`} className="w-full cursor-pointer">
@@ -138,7 +140,11 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="flex flex-1 items-center justify-end">
+          <div className="flex flex-1 items-center justify-end gap-4">
+            <Button asChild className="hidden md:flex bg-primary hover:bg-primary/90 rounded-full font-bold uppercase tracking-wide">
+              <Link href="/contact">Get a Quote</Link>
+            </Button>
+
             <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="md:hidden">
@@ -216,6 +222,9 @@ export function Header() {
                   </nav>
                 </div>
                 <div className="border-t bg-muted/20 p-6 space-y-4">
+                  <Button asChild className="w-full bg-primary font-bold">
+                    <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Get a Quote</Link>
+                  </Button>
                   <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-primary" />
                     <span className="text-sm font-semibold">+91 91064 72588</span>
@@ -223,10 +232,6 @@ export function Header() {
                   <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-primary" />
                     <span className="text-sm font-semibold truncate">vviokindustry2021@gmail.com</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-xs text-muted-foreground">45- puskar cottage, Ahmedabad- 382415</span>
                   </div>
                 </div>
               </SheetContent>
