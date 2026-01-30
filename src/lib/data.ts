@@ -139,7 +139,7 @@ export const productCategories: Category[] = [
     description: 'Advanced duplex-type filtration units for critical process fluid purification.',
     imageId: 'product-industrial-filter',
     subcategories: [
-      { name: 'Advanced Duplex System', slug: 'advanced-duplex-system' },
+      { name: 'SS Duplex Filter Housing', slug: 'ss-duplex-filter-housing-type' },
     ]
   },
   {
@@ -194,7 +194,7 @@ export const products: Record<string, { name: string; application: string; image
   'ss-hot-water-storage-tank': [{ name: 'SS Hot Water Storage Tank', application: 'Domestic and industrial hot water supply systems', imageId: 'hero-background' }],
   'hydraulic-oil-filters': [{ name: 'Hydraulic Oil Filters', application: 'Removing contaminants from hydraulic fluid in industrial machinery', imageId: 'product-industrial-filter' }],
   'sintered-stainless-steel-filter': [{ name: 'Sintered Stainless Steel Filter', application: 'High-temperature and high-pressure liquid and gas filtration', imageId: 'product-industrial-filter' }],
-  'advanced-duplex-system': [{ name: 'Advanced Duplex System', application: 'Critical process filtration', imageId: 'product-industrial-filter' }],
+  'ss-duplex-filter-housing-type': [{ name: 'SS Duplex Filter Housing', application: 'Advanced industrial process filtration requiring zero downtime', imageId: 'product-industrial-filter' }],
   'ss-ball-valve': [{ name: 'SS Ball Valve', application: 'Precise flow isolation and control', imageId: 'product-custom-filter' }],
   'ss-butterfly-valve': [{ name: 'SS Butterfly Valve', application: 'Throttling and shut-off in large pipelines', imageId: 'product-custom-filter' }],
   'filter-housing-connection': [{ name: 'Filter Housing Connection', application: 'Industrial piping systems', imageId: 'product-industrial-filter' }],
