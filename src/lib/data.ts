@@ -145,10 +145,10 @@ export const productCategories: Category[] = [
   {
     name: 'Ball Valve',
     slug: 'ball-valve',
-    description: 'Durable stainless steel ball valves for precise flow control and isolation in industrial piping.',
+    description: 'Durable stainless steel valves for precise flow control and isolation in industrial piping.',
     imageId: 'product-custom-filter',
     subcategories: [
-      { name: 'SS Ball Valve', slug: 'ss-ball-valve' },
+      { name: 'Stainless Steel Basket Strainers', slug: 'ss-basket-strainers-valve' },
     ]
   },
   {
@@ -195,7 +195,7 @@ export const products: Record<string, { name: string; application: string; image
   'hydraulic-oil-filters': [{ name: 'Hydraulic Oil Filters', application: 'Removing contaminants from hydraulic fluid in industrial machinery', imageId: 'product-industrial-filter' }],
   'sintered-stainless-steel-filter': [{ name: 'Sintered Stainless Steel Filter', application: 'High-temperature and high-pressure liquid and gas filtration', imageId: 'product-industrial-filter' }],
   'ss-duplex-filter-housing-type': [{ name: 'SS Duplex Filter Housing', application: 'Advanced industrial process filtration requiring zero downtime', imageId: 'product-industrial-filter' }],
-  'ss-ball-valve': [{ name: 'SS Ball Valve', application: 'Precise flow isolation and control', imageId: 'product-custom-filter' }],
+  'ss-basket-strainers-valve': [{ name: 'Stainless Steel Basket Strainers', application: 'Efficient coarse filtration and flow control', imageId: 'product-custom-filter' }],
   'ss-butterfly-valve': [{ name: 'SS Butterfly Valve', application: 'Throttling and shut-off in large pipelines', imageId: 'product-custom-filter' }],
   'filter-housing-connection': [{ name: 'Filter Housing Connection', application: 'Industrial piping systems', imageId: 'product-industrial-filter' }],
   'pp-filter-cartridge': [{ name: 'PP Filter Cartridge', application: 'Sediment and particulate filtration', imageId: 'product-industrial-filter' }],
