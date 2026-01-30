@@ -34,13 +34,12 @@ export const productCategories: Category[] = [
     subcategories: [
       { name: 'SS Filter Housing', slug: 'ss-filter-housing' },
       { name: 'Basket Strainer / Housing', slug: 'basket-strainer' },
-      { name: 'Duplex Type Filter', slug: 'duplex-filter' },
+      { name: 'Filter Housing', slug: 'filter-housing' },
+      { name: 'Stainless Steel Filter Housing', slug: 'stainless-steel-filter-housing' },
+      { name: 'Duplex Filter', slug: 'duplex-filter' },
+      { name: 'Duplex Type Filter', slug: 'duplex-type-filter' },
       { name: 'Cartridge Filter Housing', slug: 'cartridge-filter-housing' },
       { name: 'Bag Filter Housing', slug: 'bag-filter-housing' },
-      { name: 'Carbon/Catalyst Filter Housing', slug: 'carbon-catalyst-filter-housing' },
-      { name: 'Self Cleaning Filter Housing', slug: 'self-cleaning-filter-housing' },
-      { name: 'Non-Metalic Filter Housing', slug: 'non-metalic-filter-housing' },
-      { name: 'Y Type & T Type Strainer', slug: 'y-t-strainer' },
     ]
   },
   {
@@ -55,7 +54,6 @@ export const productCategories: Category[] = [
       { name: 'PP Pleated Filter Cartridges', slug: 'pp-pleated-filter-cartridges' },
       { name: 'Paper Pleated Filter Cartridge', slug: 'paper-pleated-filter-cartridge' },
       { name: 'Sintered Ss316 Filter Cartridges', slug: 'sintered-ss316-filter-cartridges' },
-      { name: 'Stainless Steel Single Bag Filter Housing', slug: 'ss-single-bag-filter-housing' },
       { name: 'Filter Cartridges Code 7', slug: 'filter-cartridges-code-7' },
       { name: 'Stainless Steel Filter Cartridges', slug: 'ss-filter-cartridges' },
       { name: 'Conical Filter', slug: 'conical-filter' },
@@ -89,6 +87,7 @@ export const productCategories: Category[] = [
     description: 'High-efficiency particulate air (HEPA) filters for clean environments.',
     imageId: 'product-air-filter',
     subcategories: [
+      { name: 'Air Filter', slug: 'air-filter' },
       { name: 'HEPA Filters', slug: 'hepa-filters' },
       { name: 'Carbon Filters', slug: 'carbon-filters' },
     ]
@@ -96,7 +95,6 @@ export const productCategories: Category[] = [
 ];
 
 export const products: Record<string, { name: string; application: string; imageId: string }[]> = {
-  // Subcategory slugs
   'ss-filter-housing': [
     { name: 'High Polish SS Housing', application: 'Sanitary water, food grade liquids', imageId: 'product-industrial-filter' },
     { name: 'Industrial Grade SS Housing', application: 'Chemical processing, industrial water', imageId: 'product-industrial-filter' },
@@ -105,8 +103,17 @@ export const products: Record<string, { name: string; application: string; image
     { name: 'Simplex Basket Strainer', application: 'Coarse filtration, pump protection', imageId: 'product-industrial-filter' },
     { name: 'Multi-Basket Strainer', application: 'High flow pipeline systems', imageId: 'product-industrial-filter' },
   ],
+  'filter-housing': [
+    { name: 'Standard Filter Housing', application: 'General purpose industrial filtration', imageId: 'product-industrial-filter' },
+  ],
+  'stainless-steel-filter-housing': [
+    { name: 'Grade 316L SS Housing', application: 'Pharmaceutical and high-purity systems', imageId: 'product-industrial-filter' },
+  ],
   'duplex-filter': [
     { name: 'Continuous Flow Duplex Filter', application: 'Uninterrupted flow, oil & fuel lines', imageId: 'product-industrial-filter' },
+  ],
+  'duplex-type-filter': [
+    { name: 'Advanced Duplex Filter', application: 'Critical process filtration with redundancy', imageId: 'product-industrial-filter' },
   ],
   'water-storage-tank': [
     { name: 'SS304 Water Tank', application: 'Domestic water storage, industrial cooling', imageId: 'hero-background' },
@@ -124,6 +131,9 @@ export const products: Record<string, { name: string; application: string; image
   'ss-ferrule': [
     { name: 'Sanitary Tri-Clover Ferrule', application: 'Food & Pharma pipe fittings', imageId: 'product-custom-filter' },
   ],
+  'air-filter': [
+    { name: 'Standard Industrial Air Filter', application: 'Dust and particulate removal in factories', imageId: 'product-air-filter' },
+  ],
   'cartridge-filter-housing': [
     { name: 'Single Cartridge Housing', application: 'Low flow water, chemical dosing', imageId: 'product-industrial-filter' },
     { name: 'Multi-Cartridge Housing', application: 'High flow industrial water, beverages', imageId: 'product-industrial-filter' },
@@ -131,18 +141,6 @@ export const products: Record<string, { name: string; application: string; image
   'bag-filter-housing': [
     { name: 'Single Bag Housing', application: 'Paint, resins, pre-filtration', imageId: 'product-industrial-filter' },
     { name: 'Multi-Bag Housing', application: 'Bulk liquid processing, cooling towers', imageId: 'product-industrial-filter' },
-  ],
-  'carbon-catalyst-filter-housing': [
-    { name: 'Active Carbon Vessel', application: 'Chlorine removal, organic pollutants', imageId: 'product-industrial-filter' },
-  ],
-  'self-cleaning-filter-housing': [
-    { name: 'Automatic Scraper Filter', application: 'High viscosity fluids, cooling water', imageId: 'product-industrial-filter' },
-  ],
-  'non-metalic-filter-housing': [
-    { name: 'UPVC Filter Housing', application: 'Desalination, plating, sea water', imageId: 'product-industrial-filter' },
-  ],
-  'y-t-strainer': [
-    { name: 'Industrial Y-Strainer', application: 'Pipeline protection, steam lines', imageId: 'product-industrial-filter' },
   ],
   'filter-housing-connection': [
     { name: 'Standard Connection Kit', application: 'General piping integration', imageId: 'product-industrial-filter' },
@@ -162,9 +160,6 @@ export const products: Record<string, { name: string; application: string; image
   'sintered-ss316-filter-cartridges': [
     { name: 'Porous SS316 Sintered', application: 'Extreme high temp, catalyst recovery', imageId: 'product-industrial-filter' },
   ],
-  'ss-single-bag-filter-housing': [
-    { name: 'Compact Bag Housing', application: 'Small batch processing, paints', imageId: 'product-industrial-filter' },
-  ],
   'filter-cartridges-code-7': [
     { name: 'Code 7 Sanitary Cartridge', application: 'Aseptic filtration, pharma standard', imageId: 'product-industrial-filter' },
   ],
@@ -179,11 +174,9 @@ export const products: Record<string, { name: string; application: string; image
   ],
   'hepa-filters': [
     { name: 'H13 HEPA Filter', application: 'Cleanrooms, hospital surgery rooms', imageId: 'product-air-filter' },
-    { name: 'H14 HEPA Filter', application: 'Electronics manufacturing, labs', imageId: 'product-air-filter' },
   ],
-  'filter-bags': [
-    { name: 'Nomex Filter Bag', application: 'High temperature dust collection', imageId: 'product-liquid-filter' },
-    { name: 'Polyester Filter Bag', application: 'General purpose liquid filtration', imageId: 'product-liquid-filter' },
+  'carbon-filters': [
+    { name: 'Activated Carbon Block', application: 'Odor and VOC removal', imageId: 'product-air-filter' },
   ],
 };
 

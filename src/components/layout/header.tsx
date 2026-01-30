@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, Mail, Phone, MapPin, ChevronDown, ChevronRight } from 'lucide-react';
+import { Menu, Mail, Phone, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -96,7 +96,7 @@ export function Header() {
                   )}>
                     {link.label} <ChevronDown className="h-4 w-4" />
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent align="start" className="w-64">
+                  <DropdownMenuContent align="start" className="w-72">
                     {link.categories.map((cat) => (
                       cat.subcategories ? (
                         <DropdownMenuSub key={cat.slug}>
@@ -104,7 +104,7 @@ export function Header() {
                             {cat.name}
                           </DropdownMenuSubTrigger>
                           <DropdownMenuPortal>
-                            <DropdownMenuSubContent className="w-64 max-h-[70vh] overflow-y-auto">
+                            <DropdownMenuSubContent className="w-72 max-h-[70vh] overflow-y-auto">
                               {cat.subcategories.map((sub) => (
                                 <DropdownMenuItem key={sub.slug} asChild>
                                   <Link href={`/products/${cat.slug}/${sub.slug}`} className="w-full cursor-pointer">
