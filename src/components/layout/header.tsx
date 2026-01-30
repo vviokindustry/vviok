@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, Mail, Phone, MapPin, ChevronDown } from 'lucide-react';
+import { Menu, Mail, Phone, MapPin, ChevronDown, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -13,6 +13,10 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSub,
+  DropdownMenuSubTrigger,
+  DropdownMenuSubContent,
+  DropdownMenuPortal,
 } from '@/components/ui/dropdown-menu';
 import { productCategories } from '@/lib/data';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -23,10 +27,7 @@ const navLinks = [
   {
     label: 'Products',
     href: '/products',
-    categories: productCategories.map(cat => ({
-      label: cat.name,
-      href: `/products/${cat.slug}`,
-    })),
+    categories: productCategories,
   },
   { href: '/contact', label: 'Contact Us' },
 ];
@@ -93,13 +94,32 @@ export function Header() {
                   )}>
                     {link.label} <ChevronDown className="h-4 w-4" />
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent align="start" className="w-56">
+                  <DropdownMenuContent align="start" className="w-64">
                     {link.categories.map((cat) => (
-                      <DropdownMenuItem key={cat.href} asChild>
-                        <Link href={cat.href} className="w-full cursor-pointer">
-                          {cat.label}
-                        </Link>
-                      </DropdownMenuItem>
+                      cat.subcategories ? (
+                        <DropdownMenuSub key={cat.slug}>
+                          <DropdownMenuSubTrigger className="cursor-pointer">
+                            {cat.name}
+                          </DropdownMenuSubTrigger>
+                          <DropdownMenuPortal>
+                            <DropdownMenuSubContent className="w-64">
+                              {cat.subcategories.map((sub) => (
+                                <DropdownMenuItem key={sub.slug} asChild>
+                                  <Link href={`/products/${cat.slug}/${sub.slug}`} className="w-full cursor-pointer">
+                                    {sub.name}
+                                  </Link>
+                                </DropdownMenuItem>
+                              ))}
+                            </DropdownMenuSubContent>
+                          </DropdownMenuPortal>
+                        </DropdownMenuSub>
+                      ) : (
+                        <DropdownMenuItem key={cat.slug} asChild>
+                          <Link href={`/products/${cat.slug}`} className="w-full cursor-pointer">
+                            {cat.name}
+                          </Link>
+                        </DropdownMenuItem>
+                      )
                     ))}
                   </DropdownMenuContent>
                 </DropdownMenu>
@@ -142,16 +162,39 @@ export function Header() {
                             )}>
                               {link.label}
                             </AccordionTrigger>
-                            <AccordionContent className="flex flex-col space-y-2 pt-4 pb-0">
+                            <AccordionContent className="flex flex-col space-y-4 pt-4 pb-0">
                               {link.categories.map((cat) => (
-                                <Link
-                                  key={cat.href}
-                                  href={cat.href}
-                                  onClick={() => setMobileMenuOpen(false)}
-                                  className="text-base font-semibold text-muted-foreground hover:text-primary"
-                                >
-                                  {cat.label}
-                                </Link>
+                                <div key={cat.slug} className="flex flex-col space-y-2">
+                                  {cat.subcategories ? (
+                                     <Accordion type="single" collapsible className="w-full">
+                                        <AccordionItem value={cat.slug} className="border-none">
+                                          <AccordionTrigger className="py-0 text-base font-bold text-foreground hover:no-underline">
+                                            {cat.name}
+                                          </AccordionTrigger>
+                                          <AccordionContent className="flex flex-col space-y-2 pt-2 pl-4 pb-0">
+                                            {cat.subcategories.map(sub => (
+                                              <Link
+                                                key={sub.slug}
+                                                href={`/products/${cat.slug}/${sub.slug}`}
+                                                onClick={() => setMobileMenuOpen(false)}
+                                                className="text-sm font-semibold text-muted-foreground hover:text-primary"
+                                              >
+                                                {sub.name}
+                                              </Link>
+                                            ))}
+                                          </AccordionContent>
+                                        </AccordionItem>
+                                     </Accordion>
+                                  ) : (
+                                    <Link
+                                      href={`/products/${cat.slug}`}
+                                      onClick={() => setMobileMenuOpen(false)}
+                                      className="text-base font-bold text-foreground hover:text-primary"
+                                    >
+                                      {cat.name}
+                                    </Link>
+                                  )}
+                                </div>
                               ))}
                             </AccordionContent>
                           </AccordionItem>

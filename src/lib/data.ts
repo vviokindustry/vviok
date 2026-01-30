@@ -12,29 +12,57 @@ import {
   Building,
 } from 'lucide-react';
 
-export const productCategories = [
+export interface Subcategory {
+  name: string;
+  slug: string;
+}
+
+export interface Category {
+  name: string;
+  slug: string;
+  description: string;
+  imageId: string;
+  subcategories?: Subcategory[];
+}
+
+export const productCategories: Category[] = [
   {
-    name: 'Industrial Filters',
-    slug: 'industrial-filters',
-    description: 'Robust filters for heavy-duty industrial applications.',
+    name: 'Filter Systems & Housings',
+    slug: 'filter-systems-housings',
+    description: 'Robust housings for industrial filtration systems.',
     imageId: 'product-industrial-filter',
+    subcategories: [
+      { name: 'Cartridge Filter Housing', slug: 'cartridge-filter-housing' },
+      { name: 'Bag Filter Housing', slug: 'bag-filter-housing' },
+      { name: 'Basket Filter Housing', slug: 'basket-filter-housing' },
+    ]
   },
   {
-    name: 'Filter Cartridges',
+    name: 'Filter Cartridge',
     slug: 'filter-cartridge',
-    description: 'High-performance cartridges for precise micron filtration.',
+    description: 'Precision filter cartridges for liquid and gas processing.',
     imageId: 'product-industrial-filter',
+    subcategories: [
+      { name: 'Filter Housing', slug: 'filter-housing' },
+      { name: 'Connection', slug: 'connection' },
+      { name: 'Polypropylene Cartridge', slug: 'pp-cartridge' },
+      { name: 'Stainless Steel Cartridge', slug: 'ss-cartridge' },
+    ]
   },
   {
     name: 'Air Filters',
     slug: 'air-filters',
     description: 'High-efficiency particulate air (HEPA) filters for clean environments.',
     imageId: 'product-air-filter',
+    subcategories: [
+      { name: 'HEPA Filters', slug: 'hepa-filters' },
+      { name: 'Carbon Filters', slug: 'carbon-filters' },
+    ]
   },
   {
-    name: 'Liquid Filters',
-    slug: 'liquid-filters',
-    description: 'Precision filters for fluid processing and purification.',
+    name: 'Filter Bags',
+    slug: 'filter-bags',
+    description: 'Durable filter bags for dust and liquid separation.',
     imageId: 'product-liquid-filter',
   },
   {
@@ -45,32 +73,45 @@ export const productCategories = [
   },
 ];
 
-export const products = {
-  'industrial-filters': [
-    { name: 'Bag Filters', application: 'Dust collection, chemical processing', imageId: 'product-industrial-filter' },
-    { name: 'Cartridge Filters', application: 'Water treatment, pharmaceuticals', imageId: 'product-industrial-filter' },
-    { name: 'Panel Filters', application: 'HVAC systems, pre-filtration', imageId: 'product-industrial-filter' },
+export const products: Record<string, { name: string; application: string; imageId: string }[]> = {
+  // Subcategory slugs
+  'cartridge-filter-housing': [
+    { name: 'Single Cartridge Housing', application: 'Low flow water, chemical dosing', imageId: 'product-industrial-filter' },
+    { name: 'Multi-Cartridge Housing', application: 'High flow industrial water, beverages', imageId: 'product-industrial-filter' },
   ],
-  'filter-cartridge': [
-    { name: 'Polypropylene Cartridge', application: 'Chemicals, water filtration', imageId: 'product-industrial-filter' },
-    { name: 'Resin-Bonded Filter Cartridge', application: 'Paints, resins, oils, inks', imageId: 'product-industrial-filter' },
-    { name: 'Stainless Steel Cartridge', application: 'High temperature, steam filtration', imageId: 'product-industrial-filter' },
-    { name: 'Wound Filter Cartridge', application: 'Sediment removal, pre-filtration', imageId: 'product-industrial-filter' },
+  'bag-filter-housing': [
+    { name: 'Single Bag Housing', application: 'Paint, resins, pre-filtration', imageId: 'product-industrial-filter' },
+    { name: 'Multi-Bag Housing', application: 'Bulk liquid processing, cooling towers', imageId: 'product-industrial-filter' },
   ],
-  'air-filters': [
-    { name: 'HEPA Filters', application: 'Cleanrooms, hospitals, electronics', imageId: 'product-air-filter' },
-    { name: 'Carbon Filters', application: 'Odor control, gas purification', imageId: 'product-air-filter' },
-    { name: 'Pleated Filters', application: 'General ventilation, air handling units', imageId: 'product-air-filter' },
+  'filter-housing': [
+    { name: 'Industrial Cartridge Housing', application: 'General manufacturing, process water', imageId: 'product-industrial-filter' },
+    { name: 'Sanitary Housing', application: 'Pharma, food and beverage compliance', imageId: 'product-industrial-filter' },
   ],
-  'liquid-filters': [
-    { name: 'Micron Filters', application: 'RO water pre-filtration, beverage industry', imageId: 'product-liquid-filter' },
-    { name: 'Strainers', application: 'Pipeline protection, process fluids', imageId: 'product-liquid-filter' },
-    { name: 'Filter Press', application: 'Wastewater treatment, sludge dewatering', imageId: 'product-liquid-filter' },
+  'connection': [
+    { name: 'Flange Connections', application: 'High pressure pipelines, heavy industry', imageId: 'product-industrial-filter' },
+    { name: 'Threaded Connections', application: 'Compact systems, instrumentation', imageId: 'product-industrial-filter' },
+    { name: 'Tri-Clamp Fittings', application: 'Hygienic and sanitary applications', imageId: 'product-industrial-filter' },
+  ],
+  'pp-cartridge': [
+    { name: 'Spun Bound PP', application: 'Sediment removal, pre-filtration', imageId: 'product-industrial-filter' },
+    { name: 'Pleated PP Cartridge', application: 'High surface area filtration', imageId: 'product-industrial-filter' },
+  ],
+  'ss-cartridge': [
+    { name: 'Sintered Mesh Cartridge', application: 'High temp gas, chemical recovery', imageId: 'product-industrial-filter' },
+    { name: 'Pleated SS Filter', application: 'Aggressive solvents, steam', imageId: 'product-industrial-filter' },
+  ],
+  'hepa-filters': [
+    { name: 'H13 HEPA Filter', application: 'Cleanrooms, hospital surgery rooms', imageId: 'product-air-filter' },
+    { name: 'H14 HEPA Filter', application: 'Electronics manufacturing, labs', imageId: 'product-air-filter' },
+  ],
+  // Category slugs (for those without subcategories)
+  'filter-bags': [
+    { name: 'Nomex Filter Bag', application: 'High temperature dust collection', imageId: 'product-liquid-filter' },
+    { name: 'Polyester Filter Bag', application: 'General purpose liquid filtration', imageId: 'product-liquid-filter' },
   ],
   'customized-filtration': [
-    { name: 'OEM Filter Manufacturing', application: 'Integration into client machinery', imageId: 'product-custom-filter' },
-    { name: 'High-Temp Filters', application: 'Furnaces, power generation', imageId: 'product-custom-filter' },
-    { name: 'Corrosion-Resistant Filters', application: 'Chemical plants, marine environments', imageId: 'product-custom-filter' },
+    { name: 'OEM Filter Units', application: 'Custom machine integration', imageId: 'product-custom-filter' },
+    { name: 'Skid Mounted Systems', application: 'Turnkey filtration solutions', imageId: 'product-custom-filter' },
   ],
 };
 
