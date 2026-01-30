@@ -94,11 +94,6 @@ export function Header() {
                     {link.label} <ChevronDown className="h-4 w-4" />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="start" className="w-56">
-                    <DropdownMenuItem asChild>
-                      <Link href={link.href} className="w-full cursor-pointer font-bold">
-                        All {link.label}
-                      </Link>
-                    </DropdownMenuItem>
                     {link.categories.map((cat) => (
                       <DropdownMenuItem key={cat.href} asChild>
                         <Link href={cat.href} className="w-full cursor-pointer">
@@ -148,13 +143,6 @@ export function Header() {
                               {link.label}
                             </AccordionTrigger>
                             <AccordionContent className="flex flex-col space-y-2 pt-4 pb-0">
-                              <Link
-                                href={link.href}
-                                onClick={() => setMobileMenuOpen(false)}
-                                className="text-base font-semibold text-muted-foreground hover:text-primary"
-                              >
-                                All {link.label}
-                              </Link>
                               {link.categories.map((cat) => (
                                 <Link
                                   key={cat.href}
