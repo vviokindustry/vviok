@@ -88,9 +88,9 @@ export const productCategories: Category[] = [
     description: 'Specialized SS 304, 316, and 316L housings for demanding pharmaceutical and food grade applications.',
     imageId: 'product-industrial-filter',
     subcategories: [
-      { name: 'SS 304 Housing', slug: 'ss-304-housing' },
-      { name: 'SS 316 Housing', slug: 'ss-316-housing' },
-      { name: 'SS 316L Housing', slug: 'ss-316l-housing' },
+      { name: 'Industrial Filter Housing', slug: 'industrial-filter-housing' },
+      { name: 'Ss Multi Cartridge Filter Housing', slug: 'ss-multi-cartridge-filter-housing' },
+      { name: 'Industrial Filter Cartridge', slug: 'industrial-filter-cartridge' },
     ]
   },
   {
@@ -183,9 +183,9 @@ export const products: Record<string, { name: string; application: string; image
   'code-7-filter-housing': [{ name: 'Code 7 Filter Housing', application: 'Pharmaceutical and biotechnology grade sterile filtration', imageId: 'product-industrial-filter' }],
   'ss-304-bag-filter-housing': [{ name: 'SS 304 Bag Filter Housing', application: 'Industrial liquid clarification, batch filtration', imageId: 'product-industrial-filter' }],
   'cartridge-filter-housing': [{ name: 'Cartridge Filter Housing', application: 'General purpose liquid and gas filtration', imageId: 'product-industrial-filter' }],
-  'ss-304-housing': [{ name: 'SS 304 Housing', application: 'Domestic water storage and filtration', imageId: 'product-industrial-filter' }],
-  'ss-316-housing': [{ name: 'SS 316 Housing', application: 'Corrosive chemical processing', imageId: 'product-industrial-filter' }],
-  'ss-316l-housing': [{ name: 'SS 316L Housing', application: 'Sterile pharmaceutical manufacturing', imageId: 'product-industrial-filter' }],
+  'industrial-filter-housing': [{ name: 'Industrial Filter Housing', application: 'Heavy-duty industrial fluid purification', imageId: 'product-industrial-filter' }],
+  'ss-multi-cartridge-filter-housing': [{ name: 'Ss Multi Cartridge Filter Housing', application: 'Large volume liquid clarification in manufacturing', imageId: 'product-industrial-filter' }],
+  'industrial-filter-cartridge': [{ name: 'Industrial Filter Cartridge', application: 'Process water and chemical filtration', imageId: 'product-industrial-filter' }],
   'standard-duplex-filter': [{ name: 'Standard Duplex Filter', application: 'Hydraulic systems, Oil refineries', imageId: 'product-industrial-filter' }],
   'automated-duplex-filter': [{ name: 'Automated Duplex Filter', application: 'Automated industrial processing lines', imageId: 'product-industrial-filter' }],
   'horizontal-ss-tank': [{ name: 'Horizontal SS Tank', application: 'Space-restricted water storage', imageId: 'hero-background' }],
