@@ -66,9 +66,9 @@ export const productCategories: Category[] = [
     description: 'Reliable simplex, duplex, and multi-basket strainers for effective coarse filtration in pipelines.',
     imageId: 'product-industrial-filter',
     subcategories: [
-      { name: 'Simplex Basket Strainer', slug: 'simplex-basket-strainer' },
-      { name: 'Duplex Basket Strainer', slug: 'duplex-basket-strainer' },
-      { name: 'Multi-Basket Strainer', slug: 'multi-basket-strainer' },
+      { name: 'Stainless Steel Filter Housing', slug: 'ss-filter-housing-bs' },
+      { name: 'Multi Cartridge Filter Housing', slug: 'multi-cartridge-housing-bs' },
+      { name: 'Basket Filter And Strainers', slug: 'basket-filter-strainers' },
     ]
   },
   {
@@ -177,11 +177,11 @@ export const products: Record<string, { name: string; application: string; image
   'water-filter-housing': [{ name: 'Water Filter Housing', application: 'Municipal water, commercial buildings', imageId: 'product-industrial-filter' }],
   'ss-cartridge-filter-housing': [{ name: 'Ss Cartridge Filter Housing', application: 'General process liquid filtration', imageId: 'product-industrial-filter' }],
   'ss-single-cartridge-filter-housing': [{ name: 'SS Single Cartridge Filter Housing', application: 'Small batch processing, point-of-use filtration', imageId: 'product-industrial-filter' }],
-  'simplex-basket-strainer': [{ name: 'Simplex Basket Strainer', application: 'Coarse particulate removal in pipelines', imageId: 'product-industrial-filter' }],
-  'duplex-basket-strainer': [{ name: 'Duplex Basket Strainer', application: 'Oil lines, Continuous flow systems', imageId: 'product-industrial-filter' }],
-  'multi-basket-strainer': [{ name: 'Multi-Basket Strainer', application: 'High flow rate industrial pipelines', imageId: 'product-industrial-filter' }],
+  'ss-filter-housing-bs': [{ name: 'Stainless Steel Filter Housing', application: 'Particulate removal in industrial water and chemicals', imageId: 'product-industrial-filter' }],
+  'multi-cartridge-housing-bs': [{ name: 'Multi Cartridge Filter Housing', application: 'Large scale liquid clarification and filtration', imageId: 'product-industrial-filter' }],
+  'basket-filter-strainers': [{ name: 'Basket Filter And Strainers', application: 'Coarse and fine particulate removal in high-flow pipelines', imageId: 'product-industrial-filter' }],
   'single-cartridge-housing': [{ name: 'Single Cartridge Housing', application: 'General purpose liquid filtration', imageId: 'product-industrial-filter' }],
-  'multi-cartridge-housing': [{ name: 'Multi-Cartridge Housing', application: 'Bulk industrial liquid processing', imageId: 'product-industrial-filter' }],
+  'multi-cartridge-housing': [{ name: 'Multi Cartridge Housing', application: 'Bulk industrial liquid processing', imageId: 'product-industrial-filter' }],
   'custom-filter-housing': [{ name: 'Custom Filter Housing', application: 'Bespoke engineering requirements', imageId: 'product-industrial-filter' }],
   'ss-304-housing': [{ name: 'SS 304 Housing', application: 'Domestic water storage and filtration', imageId: 'product-industrial-filter' }],
   'ss-316-housing': [{ name: 'SS 316 Housing', application: 'Corrosive chemical processing', imageId: 'product-industrial-filter' }],
