@@ -46,7 +46,11 @@ export function Header() {
             <div className="h-10 w-px bg-border" />
             <div className="w-[120px] flex items-center justify-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX///8AAAA/Pz/8/Pz5+fn09PSfn5+np6fIyMjx8fGTk5N6enq3t7cWFhbf39+EhISioqKpqamwsLCgoKCMjIyOjo44ODhVVVXBwcEpKSk+Pj5BQUFEREQUFBQyMjJcXFwuLi4sLCxISEgYGBhubm5dXV1ISEgLCwtubm6AgIBmZmaZmZkAAAC23oYSAAACXklEQVR4nO3d63KqQBCFYRSChhQQp0xERERNKW3//4+a6gqBC7hDE+zMvWc+A0/Yw8pCTwMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgXw3hB3nS+5zIu0s70/sY9p1bL7qA254vG6FvJ17bxf2zhX7H/S+E/e+F99/Hj+1n2H7zPZ33/f3D+x12fR/2/T7u+32k/Q77v/e5T/wKyzx/w+p9fP/H7t/h+78P+/4P+z7fX8v7/o93uU943/e5v3z/p/jY/U/1s/s/6/s9hP0Hfa//8v0f+wn/xR/7xT/zWf9f3ef/8v2f4bP9n+Rj+78p7/d/iv3D/+aP/t//wf+xP/KP/mP/oP/1//a/+c/8d/6n/5L/xH/if/Kf+k/9h/6j/1L/pv/E/8j/6n/t//G/8//xv/d/+f/7//wH//v9p//8//W//1/+p/8L/4X/wn/hf/F/+v/w//P/5D/1X/r/8p/7z/zX/h/9R/5f/pv/g/+X/7f/7P/p/5f/h/8/xT/yn/t/y//5H/2/hP/s/xn//t/f/P9v+Rj+3+J9/s/yv7h+/N73Odx3++p/y/f/yH//R3uUx7wff/H7v9v+f4Pez6+P+e9/u+/y/c9hP0HfZ/vb/H9H4b7fV/r/R72H3u313/x/d/hff/H93+Hff+X33/f7xMe9v1e/q/9/x+ef/+nP/s/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+V38B4tM4w5Q0wz0AAAAASUVORK5CYII=" alt="Make in India" className="object-contain h-10" />
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Make_In_India.png/640px-Make_In_India.png" 
+                alt="Make in India" 
+                className="object-contain h-12" 
+              />
             </div>
           </div>
         </div>
