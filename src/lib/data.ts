@@ -15,21 +15,31 @@ import {
 export const productCategories = [
   {
     name: 'Industrial Filters',
+    slug: 'industrial-filters',
     description: 'Robust filters for heavy-duty industrial applications.',
     imageId: 'product-industrial-filter',
   },
   {
+    name: 'Filter Cartridges',
+    slug: 'filter-cartridge',
+    description: 'High-performance cartridges for precise micron filtration.',
+    imageId: 'product-industrial-filter',
+  },
+  {
     name: 'Air Filters',
+    slug: 'air-filters',
     description: 'High-efficiency particulate air (HEPA) filters for clean environments.',
     imageId: 'product-air-filter',
   },
   {
     name: 'Liquid Filters',
+    slug: 'liquid-filters',
     description: 'Precision filters for fluid processing and purification.',
     imageId: 'product-liquid-filter',
   },
   {
     name: 'Customized Solutions',
+    slug: 'customized-filtration',
     description: 'Bespoke filtration systems designed to your exact specifications.',
     imageId: 'product-custom-filter',
   },
@@ -40,6 +50,12 @@ export const products = {
     { name: 'Bag Filters', application: 'Dust collection, chemical processing', imageId: 'product-industrial-filter' },
     { name: 'Cartridge Filters', application: 'Water treatment, pharmaceuticals', imageId: 'product-industrial-filter' },
     { name: 'Panel Filters', application: 'HVAC systems, pre-filtration', imageId: 'product-industrial-filter' },
+  ],
+  'filter-cartridge': [
+    { name: 'Polypropylene Cartridge', application: 'Chemicals, water filtration', imageId: 'product-industrial-filter' },
+    { name: 'Resin-Bonded Filter Cartridge', application: 'Paints, resins, oils, inks', imageId: 'product-industrial-filter' },
+    { name: 'Stainless Steel Cartridge', application: 'High temperature, steam filtration', imageId: 'product-industrial-filter' },
+    { name: 'Wound Filter Cartridge', application: 'Sediment removal, pre-filtration', imageId: 'product-industrial-filter' },
   ],
   'air-filters': [
     { name: 'HEPA Filters', application: 'Cleanrooms, hospitals, electronics', imageId: 'product-air-filter' },

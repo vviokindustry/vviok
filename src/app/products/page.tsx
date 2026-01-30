@@ -3,17 +3,8 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { products } from '@/lib/data';
+import { products, productCategories } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-
-type ProductKey = keyof typeof products;
-
-const productTabs: { value: ProductKey; label: string }[] = [
-  { value: 'industrial-filters', label: 'Industrial Filters' },
-  { value: 'air-filters', label: 'Air Filters' },
-  { value: 'liquid-filters', label: 'Liquid Filters' },
-  { value: 'customized-filtration', label: 'Customized Solutions' },
-];
 
 export default function ProductsPage() {
   return (
@@ -31,21 +22,21 @@ export default function ProductsPage() {
       {/* Products Section */}
       <section className="py-16 md:py-24">
         <div className="container">
-          <Tabs defaultValue="industrial-filters" className="w-full">
+          <Tabs defaultValue={productCategories[0].slug} className="w-full">
             <div className="flex justify-center">
-              <TabsList className="grid w-full max-w-2xl grid-cols-2 md:grid-cols-4 h-auto">
-                {productTabs.map((tab) => (
-                  <TabsTrigger key={tab.value} value={tab.value} className="py-2.5">
-                    {tab.label}
+              <TabsList className="grid w-full max-w-4xl grid-cols-2 md:grid-cols-5 h-auto">
+                {productCategories.map((cat) => (
+                  <TabsTrigger key={cat.slug} value={cat.slug} className="py-2.5">
+                    {cat.name}
                   </TabsTrigger>
                 ))}
               </TabsList>
             </div>
 
-            {productTabs.map((tab) => (
-              <TabsContent key={tab.value} value={tab.value} className="mt-12">
+            {productCategories.map((cat) => (
+              <TabsContent key={cat.slug} value={cat.slug} className="mt-12">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {products[tab.value].map((product) => {
+                  {products[cat.slug as keyof typeof products].map((product) => {
                     const image = PlaceHolderImages.find((img) => img.id === product.imageId);
                     return (
                       <Card key={product.name} className="flex flex-col">

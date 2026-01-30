@@ -3,16 +3,31 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, Mail, Phone, MapPin } from 'lucide-react';
+import { Menu, Mail, Phone, MapPin, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { Logo } from '@/components/icons';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+import { productCategories } from '@/lib/data';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About Us' },
-  { href: '/products', label: 'Products' },
+  {
+    label: 'Products',
+    href: '/products',
+    categories: productCategories.map(cat => ({
+      label: cat.name,
+      href: `/products/${cat.slug}`,
+    })),
+  },
   { href: '/contact', label: 'Contact Us' },
 ];
 
@@ -70,16 +85,41 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden items-center space-x-8 md:flex">
             {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  'text-sm font-bold uppercase tracking-wider transition-colors hover:text-primary',
-                  pathname === link.href ? 'text-primary' : 'text-muted-foreground'
-                )}
-              >
-                {link.label}
-              </Link>
+              link.categories ? (
+                <DropdownMenu key={link.label}>
+                  <DropdownMenuTrigger className={cn(
+                    'flex items-center gap-1 text-sm font-bold uppercase tracking-wider transition-colors hover:text-primary outline-none',
+                    pathname.startsWith(link.href) ? 'text-primary' : 'text-muted-foreground'
+                  )}>
+                    {link.label} <ChevronDown className="h-4 w-4" />
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="start" className="w-56">
+                    <DropdownMenuItem asChild>
+                      <Link href={link.href} className="w-full cursor-pointer font-bold">
+                        All {link.label}
+                      </Link>
+                    </DropdownMenuItem>
+                    {link.categories.map((cat) => (
+                      <DropdownMenuItem key={cat.href} asChild>
+                        <Link href={cat.href} className="w-full cursor-pointer">
+                          {cat.label}
+                        </Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={cn(
+                    'text-sm font-bold uppercase tracking-wider transition-colors hover:text-primary',
+                    pathname === link.href ? 'text-primary' : 'text-muted-foreground'
+                  )}
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
           </nav>
 
@@ -98,17 +138,49 @@ export function Header() {
                 <div className="flex-1 overflow-y-auto p-6">
                   <nav className="flex flex-col space-y-4">
                     {navLinks.map((link) => (
-                      <Link
-                        key={link.href}
-                        href={link.href}
-                        onClick={() => setMobileMenuOpen(false)}
-                        className={cn(
-                          'text-lg font-bold uppercase tracking-wider transition-colors hover:text-primary',
-                          pathname === link.href ? 'text-primary' : 'text-muted-foreground'
-                        )}
-                      >
-                        {link.label}
-                      </Link>
+                      link.categories ? (
+                        <Accordion type="single" collapsible key={link.label} className="w-full">
+                          <AccordionItem value="products" className="border-none">
+                            <AccordionTrigger className={cn(
+                              'py-0 text-lg font-bold uppercase tracking-wider transition-colors hover:no-underline hover:text-primary',
+                              pathname.startsWith(link.href) ? 'text-primary' : 'text-muted-foreground'
+                            )}>
+                              {link.label}
+                            </AccordionTrigger>
+                            <AccordionContent className="flex flex-col space-y-2 pt-4 pb-0">
+                              <Link
+                                href={link.href}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="text-base font-semibold text-muted-foreground hover:text-primary"
+                              >
+                                All {link.label}
+                              </Link>
+                              {link.categories.map((cat) => (
+                                <Link
+                                  key={cat.href}
+                                  href={cat.href}
+                                  onClick={() => setMobileMenuOpen(false)}
+                                  className="text-base font-semibold text-muted-foreground hover:text-primary"
+                                >
+                                  {cat.label}
+                                </Link>
+                              ))}
+                            </AccordionContent>
+                          </AccordionItem>
+                        </Accordion>
+                      ) : (
+                        <Link
+                          key={link.href}
+                          href={link.href}
+                          onClick={() => setMobileMenuOpen(false)}
+                          className={cn(
+                            'text-lg font-bold uppercase tracking-wider transition-colors hover:text-primary',
+                            pathname === link.href ? 'text-primary' : 'text-muted-foreground'
+                          )}
+                        >
+                          {link.label}
+                        </Link>
+                      )
                     ))}
                   </nav>
                 </div>
