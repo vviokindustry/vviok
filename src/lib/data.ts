@@ -126,11 +126,11 @@ export const productCategories: Category[] = [
   {
     name: 'Air Filter',
     slug: 'air-filter',
-    description: 'High-performance pre-filters and HEPA filters for maintaining clean air in critical environments.',
+    description: 'High-performance filtration solutions for industrial and hydraulic systems.',
     imageId: 'product-air-filter',
     subcategories: [
-      { name: 'Pre-Filter', slug: 'pre-filter' },
-      { name: 'HEPA Filter', slug: 'hepa-filter' },
+      { name: 'Hydraulic Oil Filters', slug: 'hydraulic-oil-filters' },
+      { name: 'Sintered Stainless Steel Filter', slug: 'sintered-stainless-steel-filter' },
     ]
   },
   {
@@ -192,8 +192,8 @@ export const products: Record<string, { name: string; application: string; image
   'ss-insulated-storage-tanks': [{ name: 'Ss Insulated Storage Tanks', application: 'Temperature-controlled liquid storage for pharmaceutical and food processing', imageId: 'hero-background' }],
   'ss-pressure-vessel-tank': [{ name: 'Stainless Steel Pressure Vessel Tank', application: 'Industrial process pressure control, chemical storage', imageId: 'hero-background' }],
   'ss-hot-water-storage-tank': [{ name: 'SS Hot Water Storage Tank', application: 'Domestic and industrial hot water supply systems', imageId: 'hero-background' }],
-  'pre-filter': [{ name: 'Pre-Filter', application: 'HVAC intake, Dust removal', imageId: 'product-air-filter' }],
-  'hepa-filter': [{ name: 'HEPA Filter', application: 'Cleanrooms, Medical facilities', imageId: 'product-air-filter' }],
+  'hydraulic-oil-filters': [{ name: 'Hydraulic Oil Filters', application: 'Removing contaminants from hydraulic fluid in industrial machinery', imageId: 'product-industrial-filter' }],
+  'sintered-stainless-steel-filter': [{ name: 'Sintered Stainless Steel Filter', application: 'High-temperature and high-pressure liquid and gas filtration', imageId: 'product-industrial-filter' }],
   'advanced-duplex-system': [{ name: 'Advanced Duplex System', application: 'Critical process filtration', imageId: 'product-industrial-filter' }],
   'ss-ball-valve': [{ name: 'SS Ball Valve', application: 'Precise flow isolation and control', imageId: 'product-custom-filter' }],
   'ss-butterfly-valve': [{ name: 'SS Butterfly Valve', application: 'Throttling and shut-off in large pipelines', imageId: 'product-custom-filter' }],
