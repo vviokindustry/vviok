@@ -1,14 +1,12 @@
 import { products, productCategories } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { Badge } from '@/components/ui/badge';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ChevronRight, Home, Star, Check, Package, Share2, Facebook, Twitter, Linkedin, ChevronLeft } from 'lucide-react';
-import { cn } from '@/lib/utils';
+import { ChevronRight, Home, Package, Share2, Facebook, Twitter, Linkedin, ChevronLeft } from 'lucide-react';
 
 export async function generateStaticParams() {
   const params: { category: string; subcategory: string }[] = [];
@@ -90,61 +88,29 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
 
             {/* Product Details Section */}
             <div className="flex flex-col">
-              <div className="mb-4">
-                <Badge variant="outline" className="text-[10px] font-bold tracking-widest uppercase text-primary border-primary">
-                  10% OFF ON BULK
-                </Badge>
-              </div>
-              <h1 className="font-headline text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight mb-4 uppercase">
+              <h1 className="font-headline text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight mb-6 uppercase">
                 {product.name}
               </h1>
               
-              <div className="flex items-center gap-4 mb-6">
-                <p className="text-2xl font-bold text-primary">Inquiry Only</p>
-                <p className="text-sm text-muted-foreground line-through">Contact for MSRP</p>
-              </div>
-
-              <div className="prose prose-slate mb-8">
-                <p className="text-muted-foreground leading-relaxed">
+              <div className="prose prose-slate mb-8 max-w-none">
+                <p className="text-muted-foreground text-lg leading-relaxed">
                   High-performance industrial solution designed for {product.application.toLowerCase()}. 
                   Engineered with premium stainless steel components to ensure durability and precision in demanding environments.
                 </p>
               </div>
 
-              <div className="grid grid-cols-3 gap-6 py-6 border-y border-slate-100 mb-8">
-                <div>
-                  <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-1">Rating</p>
-                  <div className="flex text-orange-400">
-                    {[...Array(5)].map((_, i) => <Star key={i} className="h-3 w-3 fill-current" />)}
-                  </div>
-                </div>
-                <div>
-                  <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-1">Availability</p>
-                  <p className="text-sm font-bold text-green-600">In Stock</p>
-                </div>
-                <div>
-                  <p className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-1">SKU</p>
-                  <p className="text-sm font-bold text-slate-700">VV-{subcategory.substring(0, 3).toUpperCase()}-2024</p>
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <div className="flex items-center border rounded-sm h-12">
-                  <button className="px-4 h-full hover:bg-slate-50 font-bold">-</button>
-                  <input type="text" value="1" readOnly className="w-12 text-center font-bold text-sm bg-transparent" />
-                  <button className="px-4 h-full hover:bg-slate-50 font-bold">+</button>
-                </div>
-                <Button asChild size="lg" className="flex-1 bg-[#ff5a00] hover:bg-[#e65100] text-white font-bold uppercase tracking-wider rounded-sm h-12 shadow-md">
+              <div className="flex flex-col sm:flex-row gap-4 mb-10 pt-6 border-t">
+                <Button asChild size="lg" className="flex-1 bg-[#ff5a00] hover:bg-[#e65100] text-white font-bold uppercase tracking-wider rounded-sm h-14 shadow-md">
                   <Link href="/contact">
                     <Package className="mr-2 h-5 w-5" /> Inquire Now
                   </Link>
                 </Button>
-                <Button variant="outline" size="icon" className="h-12 w-12 rounded-sm border-slate-200">
+                <Button variant="outline" size="icon" className="h-14 w-14 rounded-sm border-slate-200">
                   <Share2 className="h-5 w-5 text-slate-400" />
                 </Button>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-4 pt-4 border-t border-slate-100">
                 <div className="flex items-center gap-2">
                   <span className="text-[11px] font-bold text-slate-900 uppercase tracking-widest min-w-[80px]">Categories:</span>
                   <span className="text-[11px] text-muted-foreground">{currentCategory.name}, {currentSubcategory.name}</span>
@@ -171,7 +137,6 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
               <TabsList className="w-full justify-start bg-transparent border-b rounded-none h-auto p-0 gap-8">
                 <TabsTrigger value="description" className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none font-bold uppercase tracking-widest text-xs py-4 px-0">Description</TabsTrigger>
                 <TabsTrigger value="info" className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none font-bold uppercase tracking-widest text-xs py-4 px-0">Additional Information</TabsTrigger>
-                <TabsTrigger value="reviews" className="rounded-none border-b-2 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none font-bold uppercase tracking-widest text-xs py-4 px-0">Reviews (0)</TabsTrigger>
               </TabsList>
               <div className="py-10">
                 <TabsContent value="description" className="mt-0">
@@ -192,12 +157,6 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                       <li>Warranty: 12 Months Manufacturing Warranty</li>
                       <li>Origin: Proudly Manufactured in India</li>
                     </ul>
-                  </div>
-                </TabsContent>
-                <TabsContent value="reviews" className="mt-0">
-                  <div className="text-center py-10 bg-slate-50 border border-dashed rounded-sm">
-                    <p className="text-muted-foreground font-medium">There are no reviews for this product yet.</p>
-                    <Button variant="outline" className="mt-4 font-bold text-xs">Be the first to review</Button>
                   </div>
                 </TabsContent>
               </div>
@@ -238,7 +197,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                           <h3 className="font-headline text-[15px] font-bold text-slate-900 group-hover:text-primary transition-colors line-clamp-2 min-h-[40px] uppercase">
                             {sub.name}
                           </h3>
-                          <p className="text-xs font-bold text-primary mt-4 tracking-widest">INQUIRE FOR PRICE</p>
+                          <p className="text-xs font-bold text-primary mt-4 tracking-widest">INQUIRE FOR DETAILS</p>
                         </div>
                       </Card>
                     </Link>
