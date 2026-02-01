@@ -89,41 +89,41 @@ export function Header() {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center space-x-8 md:flex">
+          <nav className="hidden items-center space-x-4 md:flex">
             {navLinks.map((link) => (
               link.categories ? (
                 <DropdownMenu key={link.label}>
                   <DropdownMenuTrigger className={cn(
-                    'flex items-center gap-1 text-sm font-bold uppercase tracking-wider transition-colors hover:text-primary outline-none focus:ring-0 px-4 h-16 data-[state=open]:bg-slate-100',
-                    pathname.startsWith(link.href) ? 'text-primary' : 'text-muted-foreground'
+                    'flex items-center gap-1 text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-primary outline-none focus:ring-0 px-3 h-16 data-[state=open]:bg-slate-100',
+                    pathname.startsWith(link.href) ? 'text-primary' : 'text-slate-700'
                   )}>
                     {link.label} <ChevronDown className="h-4 w-4" />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent 
                     align="start" 
                     sideOffset={0}
-                    className="w-[300px] p-0 shadow-2xl border-t-[3px] border-[#c41e3a] rounded-none overflow-visible"
+                    className="w-[280px] p-0 shadow-2xl border-t-[3px] border-primary rounded-none overflow-visible"
                   >
                     <div className="flex flex-col py-2 bg-white">
                       {link.categories.map((cat) => (
                         <DropdownMenuSub key={cat.slug}>
                           <DropdownMenuSubTrigger 
-                            className="flex items-center justify-between py-3 px-6 hover:bg-transparent data-[state=open]:text-[#c41e3a] text-slate-600 font-semibold text-base cursor-pointer group outline-none"
+                            className="flex items-center justify-between py-3 px-6 hover:bg-transparent data-[state=open]:text-primary text-slate-700 font-bold text-[14px] cursor-pointer group outline-none uppercase tracking-wide"
                           >
                             <span>{cat.name}</span>
-                            <ChevronRight className="h-4 w-4 text-slate-300 group-data-[state=open]:text-[#c41e3a]" />
+                            <ChevronRight className="h-4 w-4 text-slate-300 group-data-[state=open]:text-primary" />
                           </DropdownMenuSubTrigger>
                           <DropdownMenuPortal>
                             <DropdownMenuSubContent 
                               sideOffset={0}
-                              className="w-[320px] p-0 border-none shadow-none bg-[#f4f4f4] rounded-none min-h-full py-4 px-6"
+                              className="w-[340px] p-0 border-none shadow-none bg-slate-50 rounded-none min-h-full py-4 px-8 border-l"
                             >
-                              <div className="flex flex-col space-y-3">
+                              <div className="flex flex-col space-y-4">
                                 {cat.subcategories?.map((sub) => (
                                   <DropdownMenuItem key={sub.slug} asChild className="p-0 focus:bg-transparent">
                                     <Link 
                                       href={`/products/${cat.slug}/${sub.slug}`} 
-                                      className="text-[#1a2b3c] hover:text-[#c41e3a] font-medium text-sm transition-colors cursor-pointer flex items-start gap-1"
+                                      className="text-slate-800 hover:text-primary font-semibold text-[13px] transition-colors cursor-pointer flex items-start gap-1"
                                     >
                                       <span className="shrink-0">–</span>
                                       <span>{sub.name}</span>
@@ -143,8 +143,8 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    'text-sm font-bold uppercase tracking-wider transition-colors hover:text-primary h-16 flex items-center px-4',
-                    pathname === link.href ? 'text-primary' : 'text-muted-foreground'
+                    'text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-primary h-16 flex items-center px-3',
+                    pathname === link.href ? 'text-primary' : 'text-slate-700'
                   )}
                 >
                   {link.label}
@@ -154,7 +154,7 @@ export function Header() {
           </nav>
 
           <div className="flex flex-1 items-center justify-end gap-4">
-            <Button asChild className="hidden md:flex bg-[#c41e3a] hover:bg-[#a01830] text-white rounded-full font-bold uppercase tracking-wide px-8 h-12">
+            <Button asChild className="hidden md:flex bg-primary hover:bg-primary/90 text-white rounded-full font-bold uppercase tracking-wide px-8 h-12">
               <Link href="/contact">Get a Quote</Link>
             </Button>
 
@@ -237,7 +237,7 @@ export function Header() {
                   </nav>
                 </div>
                 <div className="border-t bg-muted/20 p-6 space-y-4">
-                  <Button asChild className="w-full bg-[#c41e3a] font-bold">
+                  <Button asChild className="w-full bg-primary font-bold">
                     <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Get a Quote</Link>
                   </Button>
                   <div className="flex items-center gap-3">
