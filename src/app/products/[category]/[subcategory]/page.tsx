@@ -6,7 +6,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ChevronRight, Home } from 'lucide-react';
-import { cn } from '@/lib/utils';
 
 export async function generateStaticParams() {
   const params: { category: string; subcategory: string }[] = [];
@@ -19,13 +18,6 @@ export async function generateStaticParams() {
   });
   return params;
 }
-
-const BADGES = [
-  { label: 'BEST SELLER', className: 'bg-[#001b3d] text-white' },
-  { label: 'NEW RELEASE', className: 'bg-[#001b3d] text-white' },
-  { label: 'LIMITED STOCK', className: 'bg-[#22c55e] text-white' },
-  { label: 'JUST IN', className: 'bg-[#7c3aed] text-white' },
-];
 
 export default async function SubcategoryPage({ params }: { params: Promise<{ category: string; subcategory: string }> }) {
   const { category, subcategory } = await params;
@@ -64,15 +56,11 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {subcategoryProducts.length > 0 ? (
-              subcategoryProducts.map((product, idx) => {
-                const badge = BADGES[idx % BADGES.length];
+              subcategoryProducts.map((product) => {
                 const image = PlaceHolderImages.find((img) => img.id === product.imageId);
                 return (
                   <Link key={product.name} href="/contact" className="group">
                     <Card className="relative h-full border-slate-200 shadow-none hover:border-primary/50 transition-colors flex flex-col items-center p-6 rounded-none">
-                      <div className={cn("absolute top-4 right-0 px-3 py-1 text-[10px] font-bold tracking-tighter", badge.className)}>
-                        {badge.label}
-                      </div>
                       <div className="aspect-square relative w-full mb-6 flex items-center justify-center p-4">
                         {image && (
                           <Image
