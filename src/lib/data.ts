@@ -35,17 +35,11 @@ export const productCategories: Category[] = [
     description: 'Precision filter cartridges for liquid and gas processing, sediment removal, and fine filtration.',
     imageId: 'product-industrial-filter',
     subcategories: [
-      { name: 'Filter Housing and Connection', slug: 'filter-housing-connection' },
-      { name: 'PP Filter Cartridge', slug: 'pp-filter-cartridge' },
       { name: 'PP Spun Filter Cartridge', slug: 'pp-spun-filter-cartridge' },
-      { name: 'PP Pleated Filter Cartridges', slug: 'pp-pleated-filter-cartridges' },
-      { name: 'Paper Pleated Filter Cartridge', slug: 'paper-pleated-filter-cartridge' },
-      { name: 'Sintered Ss316 Filter Cartridges', slug: 'sintered-ss316-filter-cartridges' },
-      { name: 'Stainless Steel Single Bag Filter Housing', slug: 'ss-single-bag-filter-housing' },
-      { name: 'Filter Cartridges Code 7', slug: 'filter-cartridges-code-7' },
-      { name: 'Stainless Steel Filter Cartridges', slug: 'ss-filter-cartridges' },
-      { name: 'Conical Filter', slug: 'conical-filter' },
-      { name: 'Steam Filter Housing', slug: 'steam-filter-housing' },
+      { name: 'PP Pleated Filter Cartridge', slug: 'pp-pleated-filter-cartridge' },
+      { name: 'PTFE Pleated Filter Cartridge', slug: 'ptfe-pleated-filter-cartridge' },
+      { name: 'SS Wire Mesh Cartridge', slug: 'ss-wire-mesh-cartridge' },
+      { name: 'SS Sintered Powder Cartridge', slug: 'ss-sintered-powder-cartridge' },
     ]
   },
   {
@@ -172,6 +166,11 @@ export const productCategories: Category[] = [
 ];
 
 export const products: Record<string, { name: string; application: string; imageId: string }[]> = {
+  'pp-spun-filter-cartridge': [{ name: 'PP Spun Filter Cartridge', application: 'Sediment and particulate removal, pre-filtration for RO systems', imageId: 'product-industrial-filter' }],
+  'pp-pleated-filter-cartridge': [{ name: 'PP Pleated Filter Cartridge', application: 'High clarity liquid filtration, chemical and solvent processing', imageId: 'product-industrial-filter' }],
+  'ptfe-pleated-filter-cartridge': [{ name: 'PTFE Pleated Filter Cartridge', application: 'Aggressive chemicals, solvents, and sterile air filtration', imageId: 'product-industrial-filter' }],
+  'ss-wire-mesh-cartridge': [{ name: 'SS Wire Mesh Cartridge', application: 'High temperature and high pressure liquid filtration in industrial pipelines', imageId: 'product-industrial-filter' }],
+  'ss-sintered-powder-cartridge': [{ name: 'SS Sintered Powder Cartridge', application: 'Fine filtration for steam, polymers, and aggressive process fluids', imageId: 'product-industrial-filter' }],
   'ss-industrial-duplex-filter-housing': [{ name: 'Stainless Steel Industrial Duplex Filter Housing', application: 'Continuous flow systems, industrial refineries', imageId: 'product-industrial-filter' }],
   'water-filter-housing': [{ name: 'Water Filter Housing', application: 'Municipal water, commercial buildings', imageId: 'product-industrial-filter' }],
   'ss-cartridge-filter-housing': [{ name: 'Ss Cartridge Filter Housing', application: 'General process liquid filtration', imageId: 'product-industrial-filter' }],
@@ -197,17 +196,6 @@ export const products: Record<string, { name: string; application: string; image
   'ss-basket-strainers-valve': [{ name: 'Stainless Steel Basket Strainers', application: 'Efficient coarse filtration and flow control', imageId: 'product-custom-filter' }],
   'ss-dairy-fittings': [{ name: 'Stainless Steel Dairy Fittings', application: 'Sanitary flow control and connection in dairy and food processing', imageId: 'product-custom-filter' }],
   'ss-ferrule': [{ name: 'Stainless Steel Ferrule', application: 'Precision connections for leak-proof industrial piping', imageId: 'product-custom-filter' }],
-  'filter-housing-connection': [{ name: 'Filter Housing Connection', application: 'Industrial piping systems', imageId: 'product-industrial-filter' }],
-  'pp-filter-cartridge': [{ name: 'PP Filter Cartridge', application: 'Sediment and particulate filtration', imageId: 'product-industrial-filter' }],
-  'pp-spun-filter-cartridge': [{ name: 'PP Spun Filter Cartridge', application: 'Pre-filtration for RO systems', imageId: 'product-industrial-filter' }],
-  'pp-pleated-filter-cartridges': [{ name: 'PP Pleated Filter Cartridges', application: 'Fine clarity liquid filtration', imageId: 'product-industrial-filter' }],
-  'paper-pleated-filter-cartridge': [{ name: 'Paper Pleated Filter Cartridge', application: 'Lube oil and fuel filtration', imageId: 'product-industrial-filter' }],
-  'sintered-ss316-filter-cartridges': [{ name: 'Sintered Ss316 Filter Cartridges', application: 'High temperature / Pressure fluids', imageId: 'product-industrial-filter' }],
-  'ss-single-bag-filter-housing': [{ name: 'SS Single Bag Filter Housing', application: 'Bulk industrial liquid clarification', imageId: 'product-industrial-filter' }],
-  'filter-cartridges-code-7': [{ name: 'Filter Cartridges Code 7', application: 'Sterile pharmaceutical filtration', imageId: 'product-industrial-filter' }],
-  'ss-filter-cartridges': [{ name: 'Stainless Steel Filter Cartridges', application: 'Aggressive chemicals and steam', imageId: 'product-industrial-filter' }],
-  'conical-filter': [{ name: 'Conical Filter', application: 'Pipeline commissioning and protection', imageId: 'product-industrial-filter' }],
-  'steam-filter-housing': [{ name: 'Steam Filter Housing', application: 'Sterile culinary and industrial steam', imageId: 'product-industrial-filter' }],
 };
 
 export const industries = [
