@@ -55,8 +55,8 @@ export const productCategories: Category[] = [
     ]
   },
   {
-    name: 'Basket Strainer',
-    slug: 'basket-strainer',
+    name: 'Strainer',
+    slug: 'strainer',
     description: 'Reliable simplex, duplex, and multi-basket strainers for effective coarse filtration in pipelines.',
     imageId: 'product-industrial-filter',
     subcategories: [
@@ -67,7 +67,7 @@ export const productCategories: Category[] = [
   },
   {
     name: 'Housing',
-    slug: 'filter-housing',
+    slug: 'housing',
     description: 'A wide range of specialized housings built to standard and custom industrial specifications.',
     imageId: 'product-industrial-filter',
     subcategories: [
