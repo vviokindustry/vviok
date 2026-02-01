@@ -76,6 +76,8 @@ export const productCategories: Category[] = [
       { name: 'Stainer filter housing', slug: 'stainer-filter-housing' },
       { name: 'Vent filter housing', slug: 'vent-filter-housing' },
       { name: 'Duplex filter housing', slug: 'duplex-filter-housing' },
+      { name: 'Multi-Bag Filter Housing', slug: 'multi-bag-filter-housing' },
+      { name: 'Multi-Cartridge filter housing', slug: 'multi-cartridge-housing' },
     ]
   },
   {
@@ -185,6 +187,8 @@ export const products: Record<string, { name: string; application: string; image
   'stainer-filter-housing': [{ name: 'Stainer filter housing', application: 'Pipeline debris removal and coarse filtration protection', imageId: 'product-industrial-filter' }],
   'vent-filter-housing': [{ name: 'Vent filter housing', application: 'Sterile air and gas filtration for storage tank venting', imageId: 'product-industrial-filter' }],
   'duplex-filter-housing': [{ name: 'Duplex filter housing', application: 'Continuous flow filtration with zero downtime for maintenance', imageId: 'product-industrial-filter' }],
+  'multi-bag-filter-housing': [{ name: 'Multi-Bag Filter Housing', application: 'High-volume liquid clarification for large industrial processes', imageId: 'product-industrial-filter' }],
+  'multi-cartridge-housing': [{ name: 'Multi-Cartridge filter housing', application: 'High-precision large-scale liquid filtration and clarification', imageId: 'product-industrial-filter' }],
   'industrial-filter-housing': [{ name: 'Industrial Filter Housing', application: 'Heavy-duty industrial fluid purification', imageId: 'product-industrial-filter' }],
   'ss-multi-cartridge-filter-housing': [{ name: 'Ss Multi Cartridge Filter Housing', application: 'Large volume liquid clarification in manufacturing', imageId: 'product-industrial-filter' }],
   'industrial-filter-cartridge': [{ name: 'Industrial Filter Cartridge', application: 'Process water and chemical filtration', imageId: 'product-industrial-filter' }],
