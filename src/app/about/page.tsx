@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Filter, Globe, ShieldCheck, RefreshCw, MousePointerClick, CheckCircle, Goal, Eye } from 'lucide-react';
+import { Filter, Globe, ShieldCheck, RefreshCw, MousePointerClick, CheckCircle, Goal, Eye, Award } from 'lucide-react';
 
 const technicalParameters = [
   'Service temperature [Operating, design]',
@@ -26,28 +26,28 @@ const impactFactors = [
     icon: Globe,
     color: 'text-blue-600',
     borderColor: 'border-blue-600',
-    description: 'Economics is very important in micron filtration and we, being an experience team of engineers, recommend long-term economical solution to the problems.',
+    description: 'We prioritize long-term cost-efficiency in micron filtration, offering economical engineering solutions without compromising on performance.',
   },
   {
     title: 'RELIABILITY',
     icon: ShieldCheck,
     color: 'text-teal-600',
     borderColor: 'border-teal-600',
-    description: 'Reliability is most important in micron filtration. Giving micron rating to the media is an arbitrary micrometer value indicated by the filter manufacturer.',
+    description: 'Reliability is our cornerstone. We provide precise micron ratings verified by rigorous testing to ensure your systems never fail.',
   },
   {
     title: 'CONSISTENCY',
     icon: RefreshCw,
     color: 'text-pink-600',
     borderColor: 'border-pink-600',
-    description: 'Consistency and re-productivity is must in filter media. We give Nominal, absolute Beta or up to 1000 Bacterial Aerosol Challenge tested cartridges depend upon the application.',
+    description: 'Our media offers industry-leading reproducibility, ranging from Nominal to Absolute Beta 1000 ratings for critical applications.',
   },
   {
     title: 'EASE OF USE',
     icon: MousePointerClick,
     color: 'text-orange-600',
     borderColor: 'border-orange-600',
-    description: 'Ease of use is being considered during sizing and designing of the system. We give quick opening of the housing to replace/remove the cartridge within no time.',
+    description: 'Smart design facilitates quick housing access, allowing for seamless cartridge replacement and minimal maintenance downtime.',
   },
 ];
 
@@ -59,7 +59,7 @@ export default function AboutPage() {
       {/* Page Header */}
       <section className="bg-white py-12 border-b">
         <div className="container text-center">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold text-slate-900">About Us</h1>
+          <h1 className="font-headline text-4xl md:text-5xl font-bold text-slate-900">About VVIOK Industry</h1>
           <p className="mt-2 text-muted-foreground flex items-center justify-center gap-2">
             <span>Home</span>
             <span>&raquo;</span>
@@ -68,17 +68,27 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Intro Section */}
+      {/* Intro Section - SEO Optimized */}
       <section className="py-16">
         <div className="container relative">
           <div className="bg-white p-8 md:p-12 shadow-xl rounded-sm border-l-8 border-primary relative z-10">
             <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed">
-              <p>
-                We take pleasure to introduce our self as a team of qualified and experience team of engineers involved in filtration business. Most of our engineers are trained and having more than 15-23 years of experience in providing industrial and hydraulic filter to the Indian industry. Based on fluid parameters, we design and select the filter cartridge from our wide range and manufacture required filter housing in C.S., M.S., M.S.R.L., S.S. 316, S.S. 304, <strong>Industrial Filter</strong>, Filter Housing Exporter, Resin-Bonded Filter Cartridge, <strong>Industrial Filter Supplier</strong>, Polypropylene Cartridge Manufacturer, Bag Filter Housing India and give total solution to the end users, OEM or traders.
+              <h2 className="text-3xl font-bold text-slate-900 mb-6">Leading Manufacturer of Industrial Filtration & Water Storage Solutions</h2>
+              <p className="text-lg">
+                Established in the year <strong>2021</strong>, <strong>VVIOK Industry</strong> has quickly positioned itself as a premier manufacturer of a wide range of <strong>Stainless Steel Filter Housing</strong>, <strong>Stainless Steel Water Storage Tanks</strong>, and <strong>Industrial Duplex Filters</strong>. Based in India, we leverage a qualified team of engineers with 15-23 years of specialized experience to provide total filtration solutions to global markets.
               </p>
               <p>
-                We have been able to offer filters for most demanding applications from single source. To effectively select and specify any optimum filter element for a given application, several guidelines should be followed. Many variables need to be considered.
+                We direct all our activities to cater to the evolving expectations of our customers. By providing excellent quality products engineered for peak performance, we ensure total customer gratification. Furthermore, we follow moral business policies and maintain crystal-pure transparency in all our transactions to foster healthy, long-term relationships with our global clientele.
               </p>
+              <div className="mt-10 p-6 bg-slate-50 rounded-lg border border-slate-100 flex items-start gap-4">
+                <Award className="h-10 w-10 text-primary flex-shrink-0" />
+                <div>
+                  <h3 className="font-bold text-slate-900 text-xl">Our Leadership</h3>
+                  <p className="mt-2 text-slate-600 italic">
+                    "For our accomplishment story, we are grateful to <strong>Mr. Rajesh Panchal</strong>, whose continual backing and direction have been instrumental in our attaining exponential development in the current industrial market."
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           {/* Accent Box */}
@@ -90,7 +100,7 @@ export default function AboutPage() {
       <section className="py-12 bg-white border-y">
         <div className="container">
           <div className="max-w-4xl mx-auto bg-slate-50 p-8 md:p-12 rounded-sm border shadow-sm">
-            <h2 className="font-headline text-3xl font-bold text-center mb-10">These Includes</h2>
+            <h2 className="font-headline text-3xl font-bold text-center mb-10">Core Engineering Parameters</h2>
             <div className="grid md:grid-cols-2 gap-x-12 gap-y-4">
               {technicalParameters.map((param, index) => (
                 <div key={index} className="flex items-start gap-3">
@@ -108,7 +118,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="font-headline text-3xl md:text-4xl font-bold max-w-2xl mx-auto leading-tight">
-              Any Combination Of These Factors Can Impact Final Selection
+              Strategic Factors Influencing Our Filtration Design
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -140,8 +150,8 @@ export default function AboutPage() {
                 </div>
                 <h2 className="font-headline text-2xl font-bold">Our Vision</h2>
               </div>
-              <p className="text-slate-700 leading-relaxed italic">
-                "To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers across various industries, while maintaining the highest standards of engineering excellence."
+              <p className="text-slate-700 leading-relaxed">
+                To design, develop, and manufacture high-performance <strong>Stainless Steel Water Storage Tanks</strong> and filtration systems that meet the diverse, critical needs of our customers across global industries while maintaining engineering excellence.
               </p>
             </div>
             <div className="bg-white p-10 rounded-sm shadow-lg border-t-4 border-primary">
@@ -152,34 +162,34 @@ export default function AboutPage() {
                 <h2 className="font-headline text-2xl font-bold">Our Mission</h2>
               </div>
               <p className="text-slate-700 leading-relaxed">
-                "To be the leading provider of innovative, high-quality filtration solutions that improve efficiency, protect equipment, and contribute to a cleaner environment for our global partners."
+                To be the leading global supplier of <strong>industrial filter housing</strong> solutions, delivering innovative products that improve operational efficiency, protect equipment, and ensure absolute safety for our partners.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Quality Standards (kept as a value-add) */}
+      {/* Quality Standards */}
       <section className="py-20 bg-white">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="prose prose-lg max-w-none">
-              <h2 className="font-headline text-3xl font-bold">Quality & Excellence</h2>
+              <h2 className="font-headline text-3xl font-bold">Manufacturing Quality & Excellence</h2>
               <p>
-                Our manufacturing infrastructure is designed to deliver reliability and precision. We adhere to stringent quality management systems to ensure that every filter leaving our facility meets international performance standards.
+                Our manufacturing infrastructure is designed to deliver reliability and precision. We adhere to stringent quality management systems to ensure that every filter and tank leaving our facility meets international performance standards.
               </p>
               <ul className="list-none p-0 space-y-4">
-                <li className="flex items-center gap-3">
-                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0" />
-                  <span className="font-medium">ISO Certified Manufacturing Processes</span>
-                </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0" />
                   <span className="font-medium">ASME and CE Standard Compliance</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0" />
-                  <span className="font-medium">100% In-house Performance Testing</span>
+                  <span className="font-medium">Specialized SS 316, SS 304 Fabrication</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0" />
+                  <span className="font-medium">100% In-house Quality Performance Testing</span>
                 </li>
               </ul>
             </div>
@@ -187,11 +197,11 @@ export default function AboutPage() {
               <div className="aspect-w-16 aspect-h-10 rounded-sm overflow-hidden shadow-2xl">
                 <Image
                   src={aboutImage.imageUrl}
-                  alt={aboutImage.description}
+                  alt="VVIOK Industry Manufacturing Facility"
                   width={800}
                   height={500}
                   className="object-cover"
-                  data-ai-hint={aboutImage.imageHint}
+                  data-ai-hint="manufacturing plant"
                 />
               </div>
             )}
