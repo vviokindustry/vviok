@@ -2,12 +2,10 @@ import { products, productCategories } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ChevronRight, Home, LayoutGrid, List, Search } from 'lucide-react';
+import { ChevronRight, Home } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export async function generateStaticParams() {
@@ -39,7 +37,6 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
   }
 
   const subcategoryProducts = products[subcategory] || [];
-  const itemCount = subcategoryProducts.length;
 
   return (
     <div className="bg-white min-h-screen">
@@ -60,36 +57,9 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
 
       <section className="py-8 md:py-12">
         <div className="container">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
-            <div>
-              <h1 className="font-headline text-3xl font-bold text-slate-900">{currentSubcategory.name}</h1>
-              <p className="text-sm text-muted-foreground mt-1">Specialized industrial solutions for {currentSubcategory.name.toLowerCase()}.</p>
-            </div>
-            
-            {/* Filter Bar */}
-            <div className="flex flex-wrap items-center gap-4">
-              <div className="flex items-center gap-2 bg-slate-50 p-1 rounded-md border">
-                <Button variant="ghost" size="icon" className="h-8 w-8 bg-white shadow-sm"><LayoutGrid className="h-4 w-4" /></Button>
-                <Button variant="ghost" size="icon" className="h-8 w-8 text-muted-foreground"><List className="h-4 w-4" /></Button>
-              </div>
-              <p className="text-sm text-muted-foreground whitespace-nowrap">
-                Showing 1-{itemCount} of {itemCount} results
-              </p>
-              <Select defaultValue="default">
-                <SelectTrigger className="w-[140px] h-10">
-                  <SelectValue placeholder="Sort By" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="default">Default sorting</SelectItem>
-                  <SelectItem value="latest">Sort by latest</SelectItem>
-                  <SelectItem value="popular">Sort by popularity</SelectItem>
-                </SelectContent>
-              </Select>
-              <div className="relative w-full sm:w-64">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                <Input placeholder="Search from here..." className="pl-10 h-10" />
-              </div>
-            </div>
+          <div className="mb-10">
+            <h1 className="font-headline text-3xl font-bold text-slate-900">{currentSubcategory.name}</h1>
+            <p className="text-sm text-muted-foreground mt-1">Specialized industrial solutions for {currentSubcategory.name.toLowerCase()}.</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
