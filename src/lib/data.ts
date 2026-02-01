@@ -66,7 +66,7 @@ export const productCategories: Category[] = [
     ]
   },
   {
-    name: 'Filter Housing',
+    name: 'Housing',
     slug: 'filter-housing',
     description: 'A wide range of specialized housings built to standard and custom industrial specifications.',
     imageId: 'product-industrial-filter',
