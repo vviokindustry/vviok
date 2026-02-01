@@ -46,7 +46,7 @@ export const productCategories: Category[] = [
     imageId: 'product-industrial-filter',
     subcategories: [
       { name: 'Bag Filter Housing', slug: 'bag-filter-housing' },
-      { name: 'Cartridge Filter Housing', slug: 'catridge-filter-housing' },
+      { name: 'Catridge Filter Housing', slug: 'catridge-filter-housing' },
       { name: 'Strainer Filter Housing', slug: 'stainer-filter-housing' },
       { name: 'Vent Filter Housing', slug: 'vent-filter-housing' },
       { name: 'Duplex Filter Housing', slug: 'duplex-filter-housing' },
@@ -72,7 +72,11 @@ export const productCategories: Category[] = [
     description: 'High-performance industrial vessels and specialized tanks for critical storage and process requirements.',
     imageId: 'product-custom-filter',
     subcategories: [
-      { name: 'Stainless Steel Dairy Fittings', slug: 'ss-dairy-fittings' },
+      { name: 'Storage Tank', slug: 'storage-tank' },
+      { name: 'Pressure vessel', slug: 'pressure-vessel' },
+      { name: 'Air reciver tank', slug: 'air-reciver-tank' },
+      { name: 'Purified water storage tank', slug: 'purified-water-storage-tank' },
+      { name: 'SS pendants', slug: 'ss-pendants' },
     ]
   },
   {
@@ -139,8 +143,12 @@ export const products: Record<string, { name: string; application: string; image
   'conical-strainers': [{ name: 'Conical Strainers', application: 'Temporary or permanent protection for pumps, valves, and other equipment', imageId: 'product-industrial-filter' }],
   'pleated-strainers': [{ name: 'Pleated Strainers', application: 'Increased surface area for extended service life in critical filtration tasks', imageId: 'product-industrial-filter' }],
   
-  // Vessels (formerly Butterfly Valve subcategories)
-  'ss-dairy-fittings': [{ name: 'Stainless Steel Dairy Fittings', application: 'Sanitary flow control and connection in dairy and food processing', imageId: 'product-custom-filter' }],
+  // Vessels
+  'storage-tank': [{ name: 'Storage Tank', application: 'Industrial liquid storage and containment for chemical and process industries', imageId: 'product-custom-filter' }],
+  'pressure-vessel': [{ name: 'Pressure vessel', application: 'Safe processing and storage of liquids and gases under high pressure', imageId: 'product-custom-filter' }],
+  'air-reciver-tank': [{ name: 'Air reciver tank', application: 'Compressed air storage and pressure stabilization for industrial systems', imageId: 'product-custom-filter' }],
+  'purified-water-storage-tank': [{ name: 'Purified water storage tank', application: 'Sterile water storage for pharmaceutical and food processing', imageId: 'product-custom-filter' }],
+  'ss-pendants': [{ name: 'SS pendants', application: 'Sanitary support systems for industrial equipment and piping', imageId: 'product-custom-filter' }],
   
   // SS Ferrule
   'ss-ferrule': [{ name: 'Stainless Steel Ferrule', application: 'Precision connections for leak-proof industrial piping', imageId: 'product-custom-filter' }],
