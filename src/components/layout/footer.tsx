@@ -44,7 +44,7 @@ export function Footer() {
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    45- puskar cottage, NR Ramol Toll plaza, Ahmedabad- 382415, Gujarat, India
+                    45, Pushkar Cottage, Near Ramol Toll Plaza, Ahmedabad - 382415, Gujarat, India
                   </span>
                 </div>
               </li>

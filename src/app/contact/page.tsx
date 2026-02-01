@@ -12,8 +12,6 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { submitContactForm } from '@/app/actions';
 import { WhatsappIcon } from '@/components/icons';
 import { Mail, MapPin, Phone } from 'lucide-react';
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -45,8 +43,9 @@ export default function ContactPage() {
       });
     }
   }
-  
-  const mapImage = PlaceHolderImages.find((img) => img.id === 'contact-map');
+
+  const encodedAddress = encodeURIComponent("45, Pushkar Cottage, Near Ramol Toll Plaza, Ahmedabad - 382415, Gujarat, India");
+  const mapUrl = `https://maps.google.com/maps?q=${encodedAddress}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
   return (
     <div>
@@ -138,7 +137,7 @@ export default function ContactPage() {
                 <ul className="mt-4 space-y-4 text-sm">
                   <li className="flex items-start gap-3">
                     <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">45- puskar cottage, NR Ramol Toll plaza, Ahmedabad- 382415, Gujarat, India</span>
+                    <span className="text-muted-foreground">45, Pushkar Cottage, Near Ramol Toll Plaza, Ahmedabad - 382415, Gujarat, India</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-primary flex-shrink-0" />
@@ -160,18 +159,18 @@ export default function ContactPage() {
                </div>
               <div>
                 <h3 className="font-headline text-2xl font-semibold">Our Location</h3>
-                 {mapImage && (
-                    <div className="mt-4 aspect-w-4 aspect-h-3 rounded-lg overflow-hidden shadow-md">
-                        <Image
-                            src={mapImage.imageUrl}
-                            alt={mapImage.description}
-                            width={800}
-                            height={600}
-                            className="object-cover"
-                            data-ai-hint={mapImage.imageHint}
-                        />
-                    </div>
-                )}
+                <div className="mt-4 aspect-video rounded-lg overflow-hidden shadow-md border bg-slate-50">
+                  <iframe
+                    src={mapUrl}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="VVIOK Industry Location"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
