@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation';
 import { Menu, Mail, Phone, ChevronDown, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { ScrollArea } from '@/components/ui/scroll-area';
 import { cn } from '@/lib/utils';
 import { Logo } from '@/components/icons';
 import {
@@ -95,50 +94,48 @@ export function Header() {
               link.categories ? (
                 <DropdownMenu key={link.label}>
                   <DropdownMenuTrigger className={cn(
-                    'flex items-center gap-1 text-sm font-bold uppercase tracking-wider transition-colors hover:text-primary outline-none focus:ring-0',
+                    'flex items-center gap-1 text-sm font-bold uppercase tracking-wider transition-colors hover:text-primary outline-none focus:ring-0 px-4 h-16 data-[state=open]:bg-slate-100',
                     pathname.startsWith(link.href) ? 'text-primary' : 'text-muted-foreground'
                   )}>
                     {link.label} <ChevronDown className="h-4 w-4" />
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent align="start" className="w-[350px] p-0 overflow-hidden shadow-2xl border-slate-200">
-                    <ScrollArea className="h-[600px]">
-                      <div className="flex flex-col">
-                        {link.categories.map((cat) => (
-                          cat.subcategories ? (
-                            <DropdownMenuSub key={cat.slug}>
-                              <DropdownMenuSubTrigger className="flex items-center justify-between p-4 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors cursor-pointer outline-none data-[state=open]:bg-slate-50 group">
-                                <Link href={`/products/${cat.slug}`} className="flex flex-col text-left flex-1">
-                                  <span className="font-bold text-slate-900 text-[15px] group-hover:text-primary transition-colors">{cat.name}</span>
-                                  <span className="text-xs text-muted-foreground mt-0.5">{cat.subcategories.length} products available</span>
-                                </Link>
-                                <ChevronRight className="h-4 w-4 text-slate-300 group-hover:text-primary transition-colors" />
-                              </DropdownMenuSubTrigger>
-                              <DropdownMenuPortal>
-                                <DropdownMenuSubContent className="w-72 max-h-[80vh] overflow-y-auto">
-                                  {cat.subcategories.map((sub) => (
-                                    <DropdownMenuItem key={sub.slug} asChild>
-                                      <Link href={`/products/${cat.slug}/${sub.slug}`} className="w-full cursor-pointer py-2.5 px-3">
-                                        {sub.name}
-                                      </Link>
-                                    </DropdownMenuItem>
-                                  ))}
-                                </DropdownMenuSubContent>
-                              </DropdownMenuPortal>
-                            </DropdownMenuSub>
-                          ) : (
-                            <DropdownMenuItem key={cat.slug} asChild className="flex items-center justify-between p-4 border-b border-slate-100 last:border-0 hover:bg-slate-50 transition-colors cursor-pointer outline-none group">
-                              <Link href={`/products/${cat.slug}`} className="w-full flex items-center justify-between">
-                                <div className="flex flex-col text-left">
-                                  <span className="font-bold text-slate-900 text-[15px] group-hover:text-primary transition-colors">{cat.name}</span>
-                                  <span className="text-xs text-muted-foreground mt-0.5">1 product available</span>
-                                </div>
-                                <ChevronRight className="h-4 w-4 text-slate-300 group-hover:text-primary transition-colors" />
-                              </Link>
-                            </DropdownMenuItem>
-                          )
-                        ))}
-                      </div>
-                    </ScrollArea>
+                  <DropdownMenuContent 
+                    align="start" 
+                    sideOffset={0}
+                    className="w-[300px] p-0 shadow-2xl border-t-[3px] border-[#c41e3a] rounded-none overflow-visible"
+                  >
+                    <div className="flex flex-col py-2 bg-white">
+                      {link.categories.map((cat) => (
+                        <DropdownMenuSub key={cat.slug}>
+                          <DropdownMenuSubTrigger 
+                            className="flex items-center justify-between py-3 px-6 hover:bg-transparent data-[state=open]:text-[#c41e3a] text-slate-600 font-semibold text-base cursor-pointer group outline-none"
+                          >
+                            <span>{cat.name}</span>
+                            <ChevronRight className="h-4 w-4 text-slate-300 group-data-[state=open]:text-[#c41e3a]" />
+                          </DropdownMenuSubTrigger>
+                          <DropdownMenuPortal>
+                            <DropdownMenuSubContent 
+                              sideOffset={0}
+                              className="w-[320px] p-0 border-none shadow-none bg-[#f4f4f4] rounded-none min-h-full py-4 px-6"
+                            >
+                              <div className="flex flex-col space-y-3">
+                                {cat.subcategories?.map((sub) => (
+                                  <DropdownMenuItem key={sub.slug} asChild className="p-0 focus:bg-transparent">
+                                    <Link 
+                                      href={`/products/${cat.slug}/${sub.slug}`} 
+                                      className="text-[#1a2b3c] hover:text-[#c41e3a] font-medium text-sm transition-colors cursor-pointer flex items-start gap-1"
+                                    >
+                                      <span className="shrink-0">–</span>
+                                      <span>{sub.name}</span>
+                                    </Link>
+                                  </DropdownMenuItem>
+                                ))}
+                              </div>
+                            </DropdownMenuSubContent>
+                          </DropdownMenuPortal>
+                        </DropdownMenuSub>
+                      ))}
+                    </div>
                   </DropdownMenuContent>
                 </DropdownMenu>
               ) : (
@@ -146,7 +143,7 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    'text-sm font-bold uppercase tracking-wider transition-colors hover:text-primary',
+                    'text-sm font-bold uppercase tracking-wider transition-colors hover:text-primary h-16 flex items-center px-4',
                     pathname === link.href ? 'text-primary' : 'text-muted-foreground'
                   )}
                 >
@@ -157,7 +154,7 @@ export function Header() {
           </nav>
 
           <div className="flex flex-1 items-center justify-end gap-4">
-            <Button asChild className="hidden md:flex bg-primary hover:bg-primary/90 rounded-full font-bold uppercase tracking-wide px-6">
+            <Button asChild className="hidden md:flex bg-[#c41e3a] hover:bg-[#a01830] text-white rounded-full font-bold uppercase tracking-wide px-8 h-12">
               <Link href="/contact">Get a Quote</Link>
             </Button>
 
@@ -193,7 +190,6 @@ export function Header() {
                                           <AccordionTrigger className="py-0 text-base font-bold text-foreground hover:no-underline">
                                             <Link href={`/products/${cat.slug}`} onClick={() => setMobileMenuOpen(false)} className="flex flex-col text-left">
                                               <span>{cat.name}</span>
-                                              <span className="text-[10px] text-muted-foreground lowercase mt-0.5">{cat.subcategories.length} products available</span>
                                             </Link>
                                           </AccordionTrigger>
                                           <AccordionContent className="flex flex-col space-y-2 pt-2 pl-4 pb-0 border-l-2 border-slate-100 ml-1">
@@ -204,7 +200,7 @@ export function Header() {
                                                 onClick={() => setMobileMenuOpen(false)}
                                                 className="text-sm font-semibold text-muted-foreground hover:text-primary"
                                               >
-                                                {sub.name}
+                                                – {sub.name}
                                               </Link>
                                             ))}
                                           </AccordionContent>
@@ -241,7 +237,7 @@ export function Header() {
                   </nav>
                 </div>
                 <div className="border-t bg-muted/20 p-6 space-y-4">
-                  <Button asChild className="w-full bg-primary font-bold">
+                  <Button asChild className="w-full bg-[#c41e3a] font-bold">
                     <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Get a Quote</Link>
                   </Button>
                   <div className="flex items-center gap-3">
