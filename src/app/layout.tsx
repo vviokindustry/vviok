@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
+import { WhatsAppFab } from '@/components/whatsapp-fab';
 
 export const metadata: Metadata = {
   title: 'VVIOK Industry - Filtration Products Manufacturer & Exporter',
@@ -33,6 +34,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <Toaster />
+        <WhatsAppFab />
       </body>
     </html>
   );
