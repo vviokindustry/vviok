@@ -67,9 +67,9 @@ export const productCategories: Category[] = [
     ]
   },
   {
-    name: 'Butterfly Valve',
-    slug: 'butterfly-valve',
-    description: 'High-quality industrial butterfly valves for efficient and reliable flow regulation.',
+    name: 'Vessels',
+    slug: 'vessels',
+    description: 'High-performance industrial vessels and specialized tanks for critical storage and process requirements.',
     imageId: 'product-custom-filter',
     subcategories: [
       { name: 'Stainless Steel Dairy Fittings', slug: 'ss-dairy-fittings' },
@@ -139,7 +139,7 @@ export const products: Record<string, { name: string; application: string; image
   'conical-strainers': [{ name: 'Conical Strainers', application: 'Temporary or permanent protection for pumps, valves, and other equipment', imageId: 'product-industrial-filter' }],
   'pleated-strainers': [{ name: 'Pleated Strainers', application: 'Increased surface area for extended service life in critical filtration tasks', imageId: 'product-industrial-filter' }],
   
-  // Butterfly Valve
+  // Vessels (formerly Butterfly Valve subcategories)
   'ss-dairy-fittings': [{ name: 'Stainless Steel Dairy Fittings', application: 'Sanitary flow control and connection in dairy and food processing', imageId: 'product-custom-filter' }],
   
   // SS Ferrule
