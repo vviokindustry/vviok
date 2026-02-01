@@ -68,12 +68,14 @@ export const productCategories: Category[] = [
   {
     name: 'Filter Housing',
     slug: 'filter-housing',
-    description: 'A wide range of single and multi-cartridge housings built to standard and custom industrial specifications.',
+    description: 'A wide range of specialized housings built to standard and custom industrial specifications.',
     imageId: 'product-industrial-filter',
     subcategories: [
-      { name: 'Code 7 Filter Housing', slug: 'code-7-filter-housing' },
-      { name: 'SS 304 Bag Filter Housing', slug: 'ss-304-bag-filter-housing' },
-      { name: 'Cartridge Filter Housing', slug: 'cartridge-filter-housing' },
+      { name: 'Bag filter housing', slug: 'bag-filter-housing' },
+      { name: 'Catridge filter housing', slug: 'catridge-filter-housing' },
+      { name: 'Stainer filter housing', slug: 'stainer-filter-housing' },
+      { name: 'Vent filter housing', slug: 'vent-filter-housing' },
+      { name: 'Duplex filter housing', slug: 'duplex-filter-housing' },
     ]
   },
   {
@@ -178,9 +180,11 @@ export const products: Record<string, { name: string; application: string; image
   'ss-filter-housing-bs': [{ name: 'Stainless Steel Filter Housing', application: 'Particulate removal in industrial water and chemicals', imageId: 'product-industrial-filter' }],
   'multi-cartridge-housing-bs': [{ name: 'Multi Cartridge Filter Housing', application: 'Large scale liquid clarification and filtration', imageId: 'product-industrial-filter' }],
   'basket-filter-strainers': [{ name: 'Basket Filter And Strainers', application: 'Coarse and fine particulate removal in high-flow pipelines', imageId: 'product-industrial-filter' }],
-  'code-7-filter-housing': [{ name: 'Code 7 Filter Housing', application: 'Pharmaceutical and biotechnology grade sterile filtration', imageId: 'product-industrial-filter' }],
-  'ss-304-bag-filter-housing': [{ name: 'SS 304 Bag Filter Housing', application: 'Industrial liquid clarification, batch filtration', imageId: 'product-industrial-filter' }],
-  'cartridge-filter-housing': [{ name: 'Cartridge Filter Housing', application: 'General purpose liquid and gas filtration', imageId: 'product-industrial-filter' }],
+  'bag-filter-housing': [{ name: 'Bag filter housing', application: 'High-volume liquid clarification and bulk filtration', imageId: 'product-industrial-filter' }],
+  'catridge-filter-housing': [{ name: 'Catridge filter housing', application: 'Precision liquid and gas processing in sanitary environments', imageId: 'product-industrial-filter' }],
+  'stainer-filter-housing': [{ name: 'Stainer filter housing', application: 'Pipeline debris removal and coarse filtration protection', imageId: 'product-industrial-filter' }],
+  'vent-filter-housing': [{ name: 'Vent filter housing', application: 'Sterile air and gas filtration for storage tank venting', imageId: 'product-industrial-filter' }],
+  'duplex-filter-housing': [{ name: 'Duplex filter housing', application: 'Continuous flow filtration with zero downtime for maintenance', imageId: 'product-industrial-filter' }],
   'industrial-filter-housing': [{ name: 'Industrial Filter Housing', application: 'Heavy-duty industrial fluid purification', imageId: 'product-industrial-filter' }],
   'ss-multi-cartridge-filter-housing': [{ name: 'Ss Multi Cartridge Filter Housing', application: 'Large volume liquid clarification in manufacturing', imageId: 'product-industrial-filter' }],
   'industrial-filter-cartridge': [{ name: 'Industrial Filter Cartridge', application: 'Process water and chemical filtration', imageId: 'product-industrial-filter' }],
