@@ -78,45 +78,6 @@ export const productCategories: Category[] = [
       { name: 'Purified water storage tank', slug: 'purified-water-storage-tank' },
       { name: 'SS pendants', slug: 'ss-pendants' },
     ]
-  },
-  {
-    name: 'Stainless Steel Ferrule',
-    slug: 'stainless-steel-ferrule',
-    description: 'Precision-engineered SS 316 and sanitary ferrules for leak-proof, high-pressure connections.',
-    imageId: 'product-custom-filter',
-    subcategories: [
-      { name: 'Stainless Steel Ferrule', slug: 'ss-ferrule' },
-    ]
-  },
-  {
-    name: 'Water Storage Tank',
-    slug: 'water-storage-tank',
-    description: 'Premium stainless steel water storage solutions, available in various specialized configurations.',
-    imageId: 'hero-background',
-    subcategories: [
-      { name: '1000L Stainless Steel Water Storage Tank', slug: '1000l-ss-water-storage-tank' },
-      { name: 'Ss Insulated Storage Tanks', slug: 'ss-insulated-storage-tanks' },
-    ]
-  },
-  {
-    name: 'Pressure Tank',
-    slug: 'pressure-tank',
-    description: 'Industrial-grade pressure vessels engineered for safe and efficient liquid and gas processing.',
-    imageId: 'hero-background',
-    subcategories: [
-      { name: 'Stainless Steel Pressure Vessel Tank', slug: 'ss-pressure-vessel-tank' },
-      { name: 'SS Hot Water Storage Tank', slug: 'ss-hot-water-storage-tank' },
-    ]
-  },
-  {
-    name: 'Air Filter',
-    slug: 'air-filter',
-    description: 'High-performance filtration solutions for industrial and hydraulic systems.',
-    imageId: 'product-air-filter',
-    subcategories: [
-      { name: 'Hydraulic Oil Filters', slug: 'hydraulic-oil-filters' },
-      { name: 'Sintered Stainless Steel Filter', slug: 'sintered-stainless-steel-filter' },
-    ]
   }
 ];
 
@@ -149,21 +110,6 @@ export const products: Record<string, { name: string; application: string; image
   'air-reciver-tank': [{ name: 'Air reciver tank', application: 'Compressed air storage and pressure stabilization for industrial systems', imageId: 'product-custom-filter' }],
   'purified-water-storage-tank': [{ name: 'Purified water storage tank', application: 'Sterile water storage for pharmaceutical and food processing', imageId: 'product-custom-filter' }],
   'ss-pendants': [{ name: 'SS pendants', application: 'Sanitary support systems for industrial equipment and piping', imageId: 'product-custom-filter' }],
-  
-  // SS Ferrule
-  'ss-ferrule': [{ name: 'Stainless Steel Ferrule', application: 'Precision connections for leak-proof industrial piping', imageId: 'product-custom-filter' }],
-  
-  // Water Storage Tank
-  '1000l-ss-water-storage-tank': [{ name: '1000L Stainless Steel Water Storage Tank', application: 'Bulk water storage for residential and industrial use', imageId: 'hero-background' }],
-  'ss-insulated-storage-tanks': [{ name: 'SS Insulated Storage Tanks', application: 'Temperature-controlled liquid storage for pharmaceutical and food processing', imageId: 'hero-background' }],
-  
-  // Pressure Tank
-  'ss-pressure-vessel-tank': [{ name: 'Stainless Steel Pressure Vessel Tank', application: 'Industrial process pressure control, chemical storage', imageId: 'hero-background' }],
-  'ss-hot-water-storage-tank': [{ name: 'SS Hot Water Storage Tank', application: 'Domestic and industrial hot water supply systems', imageId: 'hero-background' }],
-  
-  // Air Filter
-  'hydraulic-oil-filters': [{ name: 'Hydraulic Oil Filters', application: 'Removing contaminants from hydraulic fluid in industrial machinery', imageId: 'product-industrial-filter' }],
-  'sintered-stainless-steel-filter': [{ name: 'Sintered Stainless Steel Filter', application: 'High-temperature and high-pressure liquid and gas filtration', imageId: 'product-industrial-filter' }],
 };
 
 export const industries = [
