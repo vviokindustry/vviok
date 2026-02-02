@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, Mail, Phone, ChevronDown, ChevronRight } from 'lucide-react';
+import { Menu, Mail, Phone, ChevronDown, ChevronRight, Search, ArrowRight, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -23,16 +23,16 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/about', label: 'About' },
+  { href: '/about', label: 'About Us' },
   {
     label: 'Products',
     href: '/products',
     categories: productCategories,
   },
-  { href: '/industries', label: 'Industries' },
+  { href: '/industries', label: 'Services' },
   { href: '/manufacturing-quality', label: 'Quality' },
   { href: '/export', label: 'Export' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/contact', label: 'Contacts' },
 ];
 
 export function Header() {
@@ -41,60 +41,35 @@ export function Header() {
 
   return (
     <>
-      {/* Top Bar - Desktop Only */}
-      <div className="hidden border-b bg-muted/30 md:block">
-        <div className="container flex items-center justify-between py-3">
-          <div className="flex items-center space-x-6">
-            <Link href="/" className="flex items-center">
-              <Logo className="w-48" />
-            </Link>
+      {/* Top Contact Bar */}
+      <div className="bg-[#4a2e82] text-white py-2 text-xs font-bold hidden md:block">
+        <div className="container flex justify-between items-center px-4">
+          <div className="flex gap-8">
+            <span className="flex items-center gap-2">Office: <a href="tel:+919106472588" className="hover:underline">+91 91064 72588</a></span>
+            <span className="flex items-center gap-2">Factory: <a href="tel:+919106472588" className="hover:underline">+91 91064 72588</a></span>
           </div>
-          <div className="flex items-center space-x-8">
-            <a 
-              href="mailto:vviokindustry2021@gmail.com" 
-              className="flex items-center gap-3 transition-colors hover:text-primary"
-            >
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                <Mail className="h-5 w-5 text-primary" />
-              </div>
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">E-mail Address</p>
-                <p className="text-sm font-semibold">vviokindustry2021@gmail.com</p>
-              </div>
-            </a>
-            <a 
-              href="tel:+919106472588" 
-              className="flex items-center gap-3 transition-colors hover:text-primary"
-            >
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
-                <Phone className="h-5 w-5 text-primary" />
-              </div>
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground">Contact Us</p>
-                <p className="text-sm font-semibold">+91 91064 72588</p>
-              </div>
-            </a>
+          <div className="flex items-center gap-4">
+            <Search className="h-4 w-4 cursor-pointer hover:text-white/80" />
           </div>
         </div>
       </div>
 
-      {/* Main Header / Mobile Header */}
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center">
-          {/* Mobile Logo Visibility */}
-          <div className="mr-4 flex md:hidden">
+      {/* Main Header */}
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
+        <div className="container flex h-20 items-center justify-between px-4">
+          <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center">
-              <Logo className="w-36" />
+              <Logo className="w-48" />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden items-center space-x-4 md:flex">
+          <nav className="hidden items-center space-x-1 md:flex">
             {navLinks.map((link) => (
               link.categories ? (
                 <DropdownMenu key={link.label}>
                   <DropdownMenuTrigger className={cn(
-                    'flex items-center gap-1 text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-primary outline-none focus:ring-0 px-3 h-16 data-[state=open]:bg-slate-100',
+                    'flex items-center gap-1 text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-primary outline-none focus:ring-0 px-4 h-20 data-[state=open]:bg-slate-50',
                     pathname.startsWith(link.href) ? 'text-primary' : 'text-slate-700'
                   )}>
                     {link.label} <ChevronDown className="h-4 w-4" />
@@ -102,13 +77,13 @@ export function Header() {
                   <DropdownMenuContent 
                     align="start" 
                     sideOffset={0}
-                    className="w-[280px] p-0 shadow-2xl border-t-[3px] border-primary rounded-none overflow-visible"
+                    className="w-[280px] p-0 shadow-2xl border-t-[3px] border-primary rounded-none"
                   >
                     <div className="flex flex-col py-2 bg-white">
                       {link.categories.map((cat) => (
                         <DropdownMenuSub key={cat.slug}>
                           <DropdownMenuSubTrigger 
-                            className="flex items-center justify-between py-3 px-6 hover:bg-transparent data-[state=open]:text-primary text-slate-700 font-bold text-[14px] cursor-pointer group outline-none uppercase tracking-wide"
+                            className="flex items-center justify-between py-3 px-6 hover:bg-slate-50 data-[state=open]:text-primary text-slate-700 font-bold text-[14px] cursor-pointer group outline-none uppercase tracking-wide"
                           >
                             <span>{cat.name}</span>
                             <ChevronRight className="h-4 w-4 text-slate-300 group-data-[state=open]:text-primary" />
@@ -143,7 +118,7 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   className={cn(
-                    'text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-primary h-16 flex items-center px-3',
+                    'text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-primary h-20 flex items-center px-4',
                     pathname === link.href ? 'text-primary' : 'text-slate-700'
                   )}
                 >
@@ -153,9 +128,9 @@ export function Header() {
             ))}
           </nav>
 
-          <div className="flex flex-1 items-center justify-end gap-4">
-            <Button asChild className="hidden md:flex bg-primary hover:bg-primary/90 text-white rounded-full font-bold uppercase tracking-wide px-8 h-12">
-              <Link href="/contact">Get a Quote</Link>
+          <div className="flex items-center gap-4">
+            <Button asChild className="hidden lg:flex bg-primary hover:bg-primary/90 text-white rounded-full font-bold uppercase tracking-wide px-8 h-12">
+              <Link href="/contact">Get a Quote <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
 
             <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -165,89 +140,68 @@ export function Header() {
                   <span className="sr-only">Toggle Menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="left" className="flex flex-col p-0">
-                <div className="border-b p-6">
+              <SheetContent side="left" className="flex flex-col p-0 w-80">
+                <div className="border-b p-6 flex justify-between items-center">
                   <Logo className="w-40" />
                 </div>
                 <div className="flex-1 overflow-y-auto p-6">
-                  <nav className="flex flex-col space-y-4">
+                  <Accordion type="single" collapsible className="w-full">
                     {navLinks.map((link) => (
                       link.categories ? (
-                        <Accordion type="single" collapsible key={link.label} className="w-full">
-                          <AccordionItem value="products" className="border-none">
-                            <AccordionTrigger className={cn(
-                              'py-0 text-lg font-bold uppercase tracking-wider transition-colors hover:no-underline hover:text-primary',
-                              pathname.startsWith(link.href) ? 'text-primary' : 'text-muted-foreground'
-                            )}>
-                              {link.label}
-                            </AccordionTrigger>
-                            <AccordionContent className="flex flex-col space-y-4 pt-4 pb-0">
+                        <AccordionItem key={link.label} value={link.label} className="border-none">
+                          <AccordionTrigger className="text-sm font-bold uppercase tracking-wider py-4 hover:no-underline">
+                            {link.label}
+                          </AccordionTrigger>
+                          <AccordionContent className="pb-2">
+                            <div className="flex flex-col space-y-4 pl-4 border-l ml-2">
                               {link.categories.map((cat) => (
-                                <div key={cat.slug} className="flex flex-col space-y-2">
-                                  {cat.subcategories ? (
-                                     <Accordion type="single" collapsible className="w-full">
-                                        <AccordionItem value={cat.slug} className="border-none">
-                                          <AccordionTrigger className="py-0 text-base font-bold text-foreground hover:no-underline">
-                                            <Link href={`/products/${cat.slug}`} onClick={() => setMobileMenuOpen(false)} className="flex flex-col text-left">
-                                              <span>{cat.name}</span>
-                                            </Link>
-                                          </AccordionTrigger>
-                                          <AccordionContent className="flex flex-col space-y-2 pt-2 pl-4 pb-0 border-l-2 border-slate-100 ml-1">
-                                            {cat.subcategories.map(sub => (
-                                              <Link
-                                                key={sub.slug}
-                                                href={`/products/${cat.slug}/${sub.slug}`}
-                                                onClick={() => setMobileMenuOpen(false)}
-                                                className="text-sm font-semibold text-muted-foreground hover:text-primary"
-                                              >
-                                                – {sub.name}
-                                              </Link>
-                                            ))}
-                                          </AccordionContent>
-                                        </AccordionItem>
-                                     </Accordion>
-                                  ) : (
-                                    <Link
-                                      href={`/products/${cat.slug}`}
-                                      onClick={() => setMobileMenuOpen(false)}
-                                      className="text-base font-bold text-foreground hover:text-primary"
-                                    >
-                                      {cat.name}
-                                    </Link>
-                                  )}
+                                <div key={cat.slug} className="space-y-2">
+                                  <Link 
+                                    href={`/products/${cat.slug}`}
+                                    className="text-sm font-bold text-primary block uppercase"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                  >
+                                    {cat.name}
+                                  </Link>
+                                  <div className="flex flex-col space-y-2 pl-4">
+                                    {cat.subcategories?.map((sub) => (
+                                      <Link 
+                                        key={sub.slug} 
+                                        href={`/products/${cat.slug}/${sub.slug}`}
+                                        className="text-sm text-slate-600 hover:text-primary transition-colors"
+                                        onClick={() => setMobileMenuOpen(false)}
+                                      >
+                                        – {sub.name}
+                                      </Link>
+                                    ))}
+                                  </div>
                                 </div>
                               ))}
-                            </AccordionContent>
-                          </AccordionItem>
-                        </Accordion>
+                            </div>
+                          </AccordionContent>
+                        </AccordionItem>
                       ) : (
-                        <Link
-                          key={link.href}
-                          href={link.href}
-                          onClick={() => setMobileMenuOpen(false)}
-                          className={cn(
-                            'text-lg font-bold uppercase tracking-wider transition-colors hover:text-primary',
-                            pathname === link.href ? 'text-primary' : 'text-muted-foreground'
-                          )}
-                        >
-                          {link.label}
-                        </Link>
+                        <div key={link.href} className="py-4 border-b">
+                          <Link
+                            href={link.href}
+                            className="text-sm font-bold uppercase tracking-wider hover:text-primary transition-colors"
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            {link.label}
+                          </Link>
+                        </div>
                       )
                     ))}
-                  </nav>
+                  </Accordion>
                 </div>
-                <div className="border-t bg-muted/20 p-6 space-y-4">
-                  <Button asChild className="w-full bg-primary font-bold">
+                <div className="p-6 border-t bg-slate-50 space-y-4">
+                  <div className="flex items-center gap-3 text-sm font-bold">
+                    <Phone className="h-4 w-4 text-primary" />
+                    <a href="tel:+919106472588">+91 91064 72588</a>
+                  </div>
+                  <Button asChild className="w-full bg-primary rounded-full uppercase font-bold tracking-wide">
                     <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Get a Quote</Link>
                   </Button>
-                  <div className="flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-primary" />
-                    <span className="text-sm font-semibold">+91 91064 72588</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Mail className="h-5 w-5 text-primary" />
-                    <span className="text-sm font-semibold truncate">vviokindustry2021@gmail.com</span>
-                  </div>
                 </div>
               </SheetContent>
             </Sheet>

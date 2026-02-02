@@ -2,14 +2,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import {
   ArrowRight,
-  CheckCircle,
-  Factory,
-  Globe,
+  Settings,
+  ShieldCheck,
   Package,
-  Ship,
   Goal,
   Eye,
   ThumbsUp,
+  Factory,
+  Database,
+  Container,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -18,78 +19,89 @@ import { productCategories, industries, whyChooseUs } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
+  const heroImage = PlaceHolderImages.find((img) => img.id === 'about-us-manufacturing');
 
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative w-full bg-background overflow-hidden">
-        <div 
-          className="absolute inset-y-0 right-0 w-3/5"
-          style={{
-            backgroundColor: 'hsl(var(--primary))',
-            clipPath: 'ellipse(80% 100% at 100% 50%)'
-          }}
-        />
-         <div className="absolute top-1/2 left-1/4 transform -translate-y-1/2 h-80 w-80 opacity-[0.03]">
-            <svg viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg" className="h-full w-full">
-              <text
-                x="10"
-                y="35"
-                fontFamily="var(--font-headline), sans-serif"
-                fontSize="30"
-                fontWeight="bold"
-                fill="hsl(var(--primary))"
-              >
-                VVIOK
-              </text>
-            </svg>
-         </div>
+      <section className="relative min-h-[600px] w-full flex flex-col justify-center items-center text-center text-white overflow-hidden">
+        {/* Background Image */}
+        {heroImage && (
+          <div className="absolute inset-0 z-0">
+            <Image
+              src={heroImage.imageUrl}
+              alt="Industrial Background"
+              fill
+              className="object-cover"
+              priority
+            />
+            {/* Multi-tone Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/40 to-cyan-600/60 mix-blend-multiply" />
+          </div>
+        )}
 
+        {/* Hero Content */}
+        <div className="container relative z-10 py-20 px-4">
+          <h1 className="font-headline text-4xl md:text-6xl font-extrabold uppercase tracking-tight max-w-4xl mx-auto leading-tight">
+            We are experts in Industrial Filtration products
+          </h1>
+          <p className="mt-6 text-lg md:text-xl max-w-2xl mx-auto opacity-90 font-medium">
+            We are committed to supplying our customers with robust filtration components and reliable services through our international commercial and production network.
+          </p>
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-10 h-14 font-bold uppercase tracking-wide">
+              <Link href="/about">
+                In Details <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white/50 rounded-full px-10 h-14 font-bold uppercase tracking-wide backdrop-blur-sm">
+              <Link href="/contact">
+                Get a Quote <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
 
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-8 items-center py-20 md:py-32">
-            {/* Left side: Text content */}
-            <div className="text-foreground">
-              <p className="text-lg text-muted-foreground font-medium">We are Manufacturer & Supplier of</p>
-              <h1 className="font-headline text-5xl md:text-6xl font-bold text-primary mt-2 uppercase">
-                Stainless Steel
-                <br />
-                Water Storage Tank
-              </h1>
-              <div className="mt-6">
-                 <svg width="80" height="15" viewBox="0 0 105 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.58301 10.915C2.58301 10.915 22.4163 0.914979 49.9997 10.915C77.583 20.915 102.416 10.915 102.416 10.915" stroke="currentColor" className="text-primary" strokeWidth="5" strokeLinecap="round"/>
-                    <path d="M2.58301 19.915C2.58301 19.915 22.4163 9.91498 49.9997 19.915C77.583 29.915 102.416 19.915 102.416 19.915" stroke="currentColor" className="text-primary" strokeWidth="5" strokeLinecap="round"/>
-                </svg>
+        {/* Feature Boxes */}
+        <div className="absolute bottom-0 left-0 w-full hidden lg:block">
+          <div className="container grid grid-cols-3">
+            <div className="bg-cyan-500 p-8 flex items-center gap-6 transition-colors hover:bg-cyan-600">
+              <Settings className="h-12 w-12 text-white shrink-0" />
+              <div className="text-left">
+                <h3 className="font-bold text-lg uppercase leading-tight">Industrial Housings</h3>
               </div>
             </div>
-            {/* Right side: Image */}
-            <div className="relative flex justify-center md:justify-end">
-              <div className="relative">
-                {heroImage && (
-                  <div className="bg-white p-2 rounded-lg shadow-2xl">
-                      <Image
-                        src={heroImage.imageUrl}
-                        alt={heroImage.description}
-                        width={450}
-                        height={450}
-                        className="object-contain"
-                        data-ai-hint={heroImage.imageHint}
-                        priority
-                      />
-                  </div>
-                )}
-                <div className="absolute -top-4 -right-4 h-20 w-20 z-20 hidden lg:grid grid-cols-6 gap-2">
-                      {Array.from({ length: 36 }).map((_, i) => (
-                          <div key={i} className="h-1.5 w-1.5 rounded-full bg-white"></div>
-                      ))}
-                  </div>
+            <div className="bg-cyan-500/90 p-8 flex items-center gap-6 border-x border-white/10 transition-colors hover:bg-cyan-600">
+              <Database className="h-12 w-12 text-white shrink-0" />
+              <div className="text-left">
+                <h3 className="font-bold text-lg uppercase leading-tight">Filtration Cartridges</h3>
+              </div>
+            </div>
+            <div className="bg-cyan-500/80 p-8 flex items-center gap-6 transition-colors hover:bg-cyan-600">
+              <Container className="h-12 w-12 text-white shrink-0" />
+              <div className="text-left">
+                <h3 className="font-bold text-lg uppercase leading-tight">Stainless Steel Tanks</h3>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Mobile Feature Boxes */}
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:hidden">
+        <div className="bg-cyan-500 p-8 flex items-center gap-6 text-white">
+          <Settings className="h-10 w-10 shrink-0" />
+          <h3 className="font-bold uppercase">Industrial Housings</h3>
+        </div>
+        <div className="bg-cyan-600 p-8 flex items-center gap-6 text-white">
+          <Database className="h-10 w-10 shrink-0" />
+          <h3 className="font-bold uppercase">Filtration Cartridges</h3>
+        </div>
+        <div className="bg-cyan-700 p-8 flex items-center gap-6 text-white">
+          <Container className="h-10 w-10 shrink-0" />
+          <h3 className="font-bold uppercase">Stainless Steel Tanks</h3>
+        </div>
+      </div>
       
       {/* Vision, Mission, Satisfaction Section */}
       <section className="py-16 md:py-24 bg-background">
