@@ -14,6 +14,8 @@ import {
   Lightbulb,
   Award,
   Mountain,
+  CircleCheckBig,
+  Globe,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -173,90 +175,72 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Product Categories Section - Redesigned per screenshot */}
+      {/* Product Categories Section - Focused 4-Grid Redesign */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-headline text-5xl md:text-6xl font-black text-slate-800 mb-4">
+            <h2 className="font-headline text-5xl md:text-6xl font-black text-slate-800 mb-4 uppercase tracking-tighter">
               Product Categories
             </h2>
+            <div className="w-24 h-2 bg-primary mx-auto rounded-full" />
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Filter Cartridge - Wide */}
-            <div className="lg:col-span-2 rounded-[2rem] bg-[#f3f4f6] p-10 md:p-12 flex flex-col md:flex-row relative overflow-hidden group">
-              <div className="flex-1 z-10 relative">
-                <span className="text-[#64748b] text-sm font-bold uppercase tracking-widest block mb-2">Industrial Filtration</span>
-                <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-slate-800 mb-8">Filter<br/>Cartridge</h3>
-                <Button asChild className="bg-slate-900 hover:bg-slate-800 text-white rounded-md px-6 h-12 font-bold uppercase text-xs tracking-widest mt-auto w-fit shadow-lg">
-                  <Link href={`/products/${productCategories[0].slug}`}>
-                    Shop Now <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:auto-rows-[280px]">
+            {/* 1. Filter Cartridge - Large Feature 2x2 */}
+            <div className="lg:col-span-2 lg:row-span-2 rounded-[3.5rem] bg-slate-900 p-12 flex flex-col justify-between group relative overflow-hidden text-white shadow-2xl shadow-slate-200">
+              <div className="relative z-10">
+                <span className="text-[#00bcd4] text-sm font-bold uppercase tracking-[0.3em] block mb-6">Master Solutions</span>
+                <h3 className="text-5xl md:text-7xl font-black uppercase leading-[0.85] tracking-tighter">
+                  Filter<br/><span className="text-[#00bcd4]">Cartridge</span>
+                </h3>
+                <p className="mt-8 text-slate-400 text-lg max-w-xs font-medium">Precision engineered for high-purity liquid and gas processing.</p>
               </div>
-              <div className="relative w-full h-64 md:h-full md:w-1/2 mt-8 md:mt-0 transition-transform duration-500 group-hover:scale-110">
-                <Image
-                  src={PlaceHolderImages.find(img => img.id === productCategories[0].imageId)?.imageUrl || ''}
-                  alt="Filter Cartridge"
-                  fill
-                  className="object-contain"
-                />
+              <Button asChild className="relative z-10 bg-primary hover:bg-primary/90 text-white rounded-2xl px-10 h-16 font-bold uppercase text-sm tracking-widest w-fit mt-12 shadow-lg shadow-primary/20">
+                <Link href={`/products/${productCategories[0].slug}`}>
+                  Shop Now <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              {/* Decorative Watermark */}
+              <div className="absolute -bottom-10 -right-10 opacity-[0.03] pointer-events-none">
+                <Settings className="w-80 h-80 rotate-12" />
               </div>
             </div>
 
-            {/* Housing - Square */}
-            <div className="rounded-[2rem] bg-[#e0f2fe] p-10 flex flex-col relative overflow-hidden group">
-              <div className="z-10 relative">
-                <span className="text-[#0284c7] text-sm font-bold uppercase tracking-widest block mb-2">Process Systems</span>
-                <h3 className="text-3xl font-black uppercase tracking-tight text-[#0c4a6e] mb-4">Housing</h3>
+            {/* 2. Housing - Wide Feature 2x1 */}
+            <div className="lg:col-span-2 rounded-[3.5rem] bg-[#00bcd4] p-10 flex flex-col justify-between group relative overflow-hidden text-white shadow-xl shadow-cyan-100">
+              <div className="flex justify-between items-start relative z-10">
+                <h3 className="text-4xl font-black uppercase tracking-tighter leading-none">
+                  Industrial<br/>Housing
+                </h3>
+                <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center backdrop-blur-md">
+                  <Database className="w-6 h-6 text-white" />
+                </div>
               </div>
-              <div className="relative flex-1 mt-4 transition-transform duration-500 group-hover:scale-110">
-                <Image
-                  src={PlaceHolderImages.find(img => img.id === productCategories[1].imageId)?.imageUrl || ''}
-                  alt="Housing"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <Link href={`/products/${productCategories[1].slug}`} className="absolute inset-0 z-20" />
+              <Link href={`/products/${productCategories[1].slug}`} className="relative z-10 group/link text-white font-bold uppercase text-xs tracking-[0.2em] flex items-center mt-8">
+                Explore Collection <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/link:translate-x-2" />
+              </Link>
+              {/* Decorative Glow */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
             </div>
 
-            {/* Strainer - Square */}
-            <div className="rounded-[2rem] bg-[#fef9c3] p-10 flex flex-col relative overflow-hidden group">
-              <div className="z-10 relative">
-                <span className="text-[#ca8a04] text-sm font-bold uppercase tracking-widest block mb-2">Technical Design</span>
-                <h3 className="text-3xl font-black uppercase tracking-tight text-[#713f12] mb-4">Strainer</h3>
-              </div>
-              <div className="relative flex-1 mt-4 transition-transform duration-500 group-hover:scale-110">
-                <Image
-                  src={PlaceHolderImages.find(img => img.id === productCategories[2].imageId)?.imageUrl || ''}
-                  alt="Strainer"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <Link href={`/products/${productCategories[2].slug}`} className="absolute inset-0 z-20" />
+            {/* 3. Strainer - Square 1x1 */}
+            <div className="rounded-[3.5rem] bg-white border-2 border-slate-100 p-10 flex flex-col justify-between group hover:border-primary/30 transition-all duration-500 shadow-lg shadow-slate-100">
+              <h3 className="text-3xl font-black uppercase tracking-tighter text-slate-900 leading-none">
+                Technical<br/><span className="text-primary">Strainer</span>
+              </h3>
+              <Link href={`/products/${productCategories[2].slug}`} className="text-slate-400 group-hover:text-primary font-bold uppercase text-[10px] tracking-widest flex items-center transition-colors">
+                View Details <ArrowRight className="ml-2 h-3 w-3" />
+              </Link>
             </div>
 
-            {/* Empty space filler / Vessels - Wide */}
-            <div className="lg:col-span-2 rounded-[2rem] bg-[#fce7f3] p-10 md:p-12 flex flex-col md:flex-row relative overflow-hidden group">
-              <div className="flex-1 z-10 relative">
-                <span className="text-[#db2777] text-sm font-bold uppercase tracking-widest block mb-2">Storage & Pressure</span>
-                <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-[#831843] mb-8">Vessels<br/>& Tanks</h3>
-                <Button asChild className="bg-primary hover:bg-primary/90 text-white rounded-md px-6 h-12 font-bold uppercase text-xs tracking-widest mt-auto w-fit shadow-lg">
-                  <Link href={`/products/${productCategories[3].slug}`}>
-                    Shop Now <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-              <div className="relative w-full h-64 md:h-full md:w-1/2 mt-8 md:mt-0 transition-transform duration-500 group-hover:scale-110">
-                <Image
-                  src={PlaceHolderImages.find(img => img.id === productCategories[3].imageId)?.imageUrl || ''}
-                  alt="Vessels"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+            {/* 4. Vessels - Square 1x1 */}
+            <div className="rounded-[3.5rem] bg-slate-50 border-2 border-slate-100 p-10 flex flex-col justify-between group hover:border-[#00bcd4]/30 transition-all duration-500 shadow-lg shadow-slate-100">
+              <h3 className="text-3xl font-black uppercase tracking-tighter text-slate-900 leading-none">
+                Vessels<br/><span className="text-[#00bcd4]">& Tanks</span>
+              </h3>
+              <Link href={`/products/${productCategories[3].slug}`} className="text-slate-400 group-hover:text-[#00bcd4] font-bold uppercase text-[10px] tracking-widest flex items-center transition-colors">
+                Configure <ArrowRight className="ml-2 h-3 w-3" />
+              </Link>
             </div>
           </div>
         </div>
