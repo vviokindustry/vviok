@@ -63,7 +63,7 @@ export default function Home() {
         </div>
 
         {/* Feature Boxes */}
-        <div className="absolute bottom-0 left-0 w-full hidden lg:block">
+        <div className="absolute bottom-0 left-0 w-full hidden lg:block translate-y-1/2 z-20">
           <div className="container grid grid-cols-3">
             <div className="bg-cyan-500 p-8 flex items-center gap-6 transition-colors hover:bg-cyan-600">
               <Settings className="h-12 w-12 text-white shrink-0" />
@@ -104,7 +104,7 @@ export default function Home() {
       </div>
       
       {/* Vision, Mission, Satisfaction Section */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 pt-24 md:pt-32 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="text-center p-8">
