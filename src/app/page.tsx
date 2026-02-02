@@ -11,6 +11,9 @@ import {
   Factory,
   Database,
   Container,
+  Lightbulb,
+  Award,
+  Mountain,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -103,43 +106,69 @@ export default function Home() {
         </div>
       </div>
       
-      {/* Vision, Mission Section */}
-      <section className="py-16 md:py-24 pt-32 md:pt-40 bg-background relative z-0">
+      {/* Vision, Mission Section - Redesigned to match request */}
+      <section className="py-20 md:py-32 pt-32 md:pt-48 bg-background relative z-0">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center p-8 border-slate-100 shadow-lg">
-              <div className="flex justify-center mb-4">
-                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-primary/10 text-primary">
-                  <Goal className="h-10 w-10" />
+          <div className="grid grid-cols-1 md:grid-cols-3 items-start">
+            
+            {/* Our Mission */}
+            <div className="flex flex-col items-center text-center px-6 mb-16 md:mb-0 relative">
+              <div className="relative mb-10 flex justify-center items-center">
+                <div className="w-32 h-32 rounded-full border-[1px] border-slate-200 flex items-center justify-center relative">
+                  {/* Colored dual-tone ring effect */}
+                  <div className="absolute inset-0 rounded-full border-[4px] border-transparent border-t-primary border-b-primary rotate-[45deg]"></div>
+                  <div className="absolute inset-0 rounded-full border-[4px] border-transparent border-l-slate-100 border-r-slate-100 rotate-[45deg]"></div>
+                  <Mountain className="w-12 h-12 text-primary" />
                 </div>
               </div>
-              <h3 className="font-headline text-2xl font-bold mb-2">Our Vision</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers across various industries.
-              </p>
-            </Card>
-            <Card className="text-center p-8 border-slate-100 shadow-lg">
-              <div className="flex justify-center mb-4">
-                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-primary/10 text-primary">
-                  <Eye className="h-10 w-10" />
-                </div>
-              </div>
-              <h3 className="font-headline text-2xl font-bold mb-2">Our Mission</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <h3 className="font-headline text-xl font-black uppercase tracking-tight mb-4">
+                Our <span className="text-primary">Mission</span>
+              </h3>
+              <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">
                 To be the leading provider of innovative, high-quality filtration solutions that improve the efficiency.
               </p>
-            </Card>
-            <Card className="text-center p-8 border-slate-100 shadow-lg">
-              <div className="flex justify-center mb-4">
-                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-primary/10 text-primary">
-                  <ThumbsUp className="h-10 w-10" />
+              {/* Vertical Divider for desktop */}
+              <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-20 w-[1px] bg-slate-200"></div>
+            </div>
+
+            {/* Our Vision */}
+            <div className="flex flex-col items-center text-center px-6 mb-16 md:mb-0 relative">
+              <div className="relative mb-10 flex justify-center items-center">
+                <div className="w-32 h-32 rounded-full border-[1px] border-slate-200 flex items-center justify-center relative">
+                  {/* Colored dual-tone ring effect */}
+                  <div className="absolute inset-0 rounded-full border-[4px] border-transparent border-t-[#00bcd4] border-b-[#00bcd4] rotate-[45deg]"></div>
+                  <div className="absolute inset-0 rounded-full border-[4px] border-transparent border-l-slate-100 border-r-slate-100 rotate-[45deg]"></div>
+                  <Lightbulb className="w-12 h-12 text-[#00bcd4]" />
                 </div>
               </div>
-              <h3 className="font-headline text-2xl font-bold mb-2">Customer Satisfaction</h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <h3 className="font-headline text-xl font-black uppercase tracking-tight mb-4">
+                Our <span className="text-[#00bcd4]">Vision</span>
+              </h3>
+              <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">
+                To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers across various industries.
+              </p>
+              {/* Vertical Divider for desktop */}
+              <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-20 w-[1px] bg-slate-200"></div>
+            </div>
+
+            {/* Customer Satisfaction */}
+            <div className="flex flex-col items-center text-center px-6 relative">
+              <div className="relative mb-10 flex justify-center items-center">
+                <div className="w-32 h-32 rounded-full border-[1px] border-slate-200 flex items-center justify-center relative">
+                  {/* Colored dual-tone ring effect */}
+                  <div className="absolute inset-0 rounded-full border-[4px] border-transparent border-t-[#ffc107] border-b-[#ffc107] rotate-[45deg]"></div>
+                  <div className="absolute inset-0 rounded-full border-[4px] border-transparent border-l-slate-100 border-r-slate-100 rotate-[45deg]"></div>
+                  <Award className="w-12 h-12 text-[#ffc107]" />
+                </div>
+              </div>
+              <h3 className="font-headline text-xl font-black uppercase tracking-tight mb-4">
+                Customer <span className="text-[#ffc107]">Satisfaction</span>
+              </h3>
+              <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">
                 To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers.
               </p>
-            </Card>
+            </div>
+
           </div>
         </div>
       </section>
