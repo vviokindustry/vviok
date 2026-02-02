@@ -1,103 +1,133 @@
 import Link from 'next/link';
 import { Logo, WhatsappIcon } from '@/components/icons';
-import { Mail, MapPin, Phone, Twitter, Facebook, Linkedin, Instagram } from 'lucide-react';
+import { Mail, MapPin, Phone, Twitter, Facebook, Linkedin, Instagram, ArrowRight } from 'lucide-react';
 
-const navLinks = [
-  { href: '/about', label: 'About Us' },
-  { href: '/products', label: 'Products' },
+const companyLinks = [
+  { href: '/about', label: 'About VVIOK' },
+  { href: '/products', label: 'Product Catalog' },
+  { href: '/industries', label: 'Industries Served' },
+  { href: '/manufacturing-quality', label: 'Quality Standards' },
+  { href: '/export', label: 'Export Global' },
+];
+
+const resourceLinks = [
+  { href: '/contact', label: 'Get a Quote' },
+  { href: '/contact', label: 'Technical Support' },
+  { href: '/contact', label: 'Contact Us' },
 ];
 
 export function Footer() {
   return (
-    <footer className="bg-card border-t">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="lg:col-span-1">
-            <Logo className="w-48" />
-            <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-              Leading manufacturer and exporter of high-quality industrial filtration products.
+    <footer className="bg-slate-950 text-slate-300">
+      <div className="container mx-auto px-4 pt-16 pb-8">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-4 md:grid-cols-2">
+          {/* Brand Column */}
+          <div className="space-y-6">
+            <div className="bg-white p-2 rounded-sm inline-block">
+              <Logo className="w-40" />
+            </div>
+            <p className="text-sm leading-relaxed max-w-xs">
+              VVIOK Industry is a global leader in high-precision industrial filtration and storage solutions, committed to engineering excellence and reliable performance.
             </p>
+            <div className="flex space-x-4">
+              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary transition-colors duration-300">
+                <Facebook className="h-5 w-5 text-white" />
+              </Link>
+              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary transition-colors duration-300">
+                <Twitter className="h-5 w-5 text-white" />
+              </Link>
+              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary transition-colors duration-300">
+                <Linkedin className="h-5 w-5 text-white" />
+              </Link>
+              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary transition-colors duration-300">
+                <Instagram className="h-5 w-5 text-white" />
+              </Link>
+            </div>
           </div>
 
+          {/* Navigation Column */}
           <div>
-            <p className="font-headline font-semibold text-foreground">Company</p>
-            <ul className="mt-4 space-y-2 text-sm">
-              {navLinks.map((link) => (
+            <h3 className="text-white font-headline font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-primary pl-3">
+              Company
+            </h3>
+            <ul className="space-y-4">
+              {companyLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-muted-foreground transition hover:text-primary">
+                  <Link href={link.href} className="group flex items-center text-sm hover:text-white transition-colors">
+                    <ArrowRight className="h-3 w-3 mr-2 text-primary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
                     {link.label}
                   </Link>
                 </li>
               ))}
-               <li>
-                <Link href="/contact" className="text-muted-foreground transition hover:text-primary">
-                    Contact Us
-                </Link>
-              </li>
             </ul>
           </div>
 
+          {/* Quick Support Column */}
           <div>
-            <p className="font-headline font-semibold text-foreground">Contact Us</p>
-            <ul className="mt-4 space-y-3 text-sm">
-              <li>
-                <div className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">
-                    45, Pushkar Cottage, Near Ramol Toll Plaza, Ahmedabad - 382415, Gujarat, India
-                  </span>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 text-primary flex-shrink-0" />
-                  <a href="mailto:vviokindustry2021@gmail.com" className="text-muted-foreground transition hover:text-primary">
-                    vviokindustry2021@gmail.com
-                  </a>
-                </div>
-              </li>
-              <li>
-                <div className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-primary flex-shrink-0" />
-                  <a href="tel:+919106472588" className="text-muted-foreground transition hover:text-primary">
-                    +91 91064 72588
-                  </a>
-                </div>
-              </li>
-              <li>
-                 <div className="flex items-center gap-3">
-                  <WhatsappIcon className="h-5 w-5 text-primary flex-shrink-0" />
-                  <a href="https://wa.me/919106472588" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition hover:text-primary">
-                    +91 91064 72588
-                  </a>
-                </div>
-              </li>
+            <h3 className="text-white font-headline font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-primary pl-3">
+              Resources
+            </h3>
+            <ul className="space-y-4">
+              {resourceLinks.map((link) => (
+                <li key={link.label}>
+                  <Link href={link.href} className="group flex items-center text-sm hover:text-white transition-colors">
+                    <ArrowRight className="h-3 w-3 mr-2 text-primary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
+          {/* Contact Column */}
           <div>
-            <p className="font-headline font-semibold text-foreground">Follow Us</p>
-            <div className="mt-4 flex space-x-4">
-              <Link href="#" aria-label="Twitter" className="text-muted-foreground transition hover:text-primary">
-                <Twitter className="h-6 w-6" />
-              </Link>
-              <Link href="#" aria-label="Facebook" className="text-muted-foreground transition hover:text-primary">
-                <Facebook className="h-6 w-6" />
-              </Link>
-              <Link href="#" aria-label="LinkedIn" className="text-muted-foreground transition hover:text-primary">
-                <Linkedin className="h-6 w-6" />
-              </Link>
-              <Link href="#" aria-label="Instagram" className="text-muted-foreground transition hover:text-primary">
-                <Instagram className="h-6 w-6" />
-              </Link>
-            </div>
+            <h3 className="text-white font-headline font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-primary pl-3">
+              Contact Info
+            </h3>
+            <ul className="space-y-5">
+              <li className="flex items-start gap-4">
+                <div className="mt-1 h-8 w-8 rounded bg-slate-900 flex items-center justify-center shrink-0">
+                  <MapPin className="h-4 w-4 text-primary" />
+                </div>
+                <span className="text-sm">
+                  45, Pushkar Cottage, Near Ramol Toll Plaza, Ahmedabad - 382415, Gujarat, India
+                </span>
+              </li>
+              <li className="flex items-center gap-4">
+                <div className="h-8 w-8 rounded bg-slate-900 flex items-center justify-center shrink-0">
+                  <Mail className="h-4 w-4 text-primary" />
+                </div>
+                <a href="mailto:vviokindustry2021@gmail.com" className="text-sm hover:text-white transition-colors">
+                  vviokindustry2021@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center gap-4">
+                <div className="h-8 w-8 rounded bg-slate-900 flex items-center justify-center shrink-0">
+                  <Phone className="h-4 w-4 text-primary" />
+                </div>
+                <a href="tel:+919106472588" className="text-sm hover:text-white transition-colors font-bold">
+                  +91 91064 72588
+                </a>
+              </li>
+              <li className="flex items-center gap-4">
+                <div className="h-8 w-8 rounded bg-slate-900 flex items-center justify-center shrink-0">
+                  <WhatsappIcon className="h-4 w-4 text-primary fill-current" />
+                </div>
+                <a href="https://wa.me/919106472588" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors font-bold">
+                  WhatsApp Support
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div className="mt-8 border-t pt-8">
-          <p className="text-center text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} VVIOK Industry. All rights reserved.
-          </p>
+        {/* Bottom Bar */}
+        <div className="mt-16 pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium uppercase tracking-widest text-slate-500">
+          <p>&copy; {new Date().getFullYear()} VVIOK Industry. All rights reserved.</p>
+          <div className="flex gap-8">
+            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+          </div>
         </div>
       </div>
     </footer>
