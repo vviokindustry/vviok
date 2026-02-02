@@ -173,51 +173,91 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Product Categories Section */}
-      <section className="py-16 md:py-24 bg-white">
+      {/* Product Categories Section - Redesigned per screenshot */}
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-headline text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Our Product Categories
+            <h2 className="font-headline text-5xl md:text-6xl font-black text-slate-800 mb-4">
+              Product Categories
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto">
-              A wide range of filters designed for performance, reliability, and efficiency.
-            </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {productCategories.map((category) => {
-              const image = PlaceHolderImages.find((img) => img.id === category.imageId);
-              return (
-                <Card key={category.name} className="overflow-hidden group flex flex-col border-none shadow-xl rounded-lg">
-                  <CardHeader className="p-0">
-                    <div className="relative aspect-[4/3] overflow-hidden">
-                      {image && (
-                        <Image
-                          src={image.imageUrl}
-                          alt={category.name}
-                          fill
-                          className="object-cover transition-transform duration-500 group-hover:scale-110"
-                          data-ai-hint={image.imageHint}
-                        />
-                      )}
-                    </div>
-                  </CardHeader>
-                  <CardContent className="p-8 flex-1 flex flex-col">
-                    <CardTitle className="font-headline text-2xl font-bold mb-4 text-slate-900">
-                      {category.name}
-                    </CardTitle>
-                    <p className="text-muted-foreground mb-8 flex-1 text-sm leading-relaxed">
-                      {category.description}
-                    </p>
-                    <Button asChild variant="link" className="p-0 h-auto justify-start font-bold text-primary uppercase text-sm tracking-widest group/link">
-                      <Link href={`/products/${category.slug}`} className="flex items-center">
-                        Learn More <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/link:translate-x-1" />
-                      </Link>
-                    </Button>
-                  </CardContent>
-                </Card>
-              );
-            })}
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Filter Cartridge - Wide */}
+            <div className="lg:col-span-2 rounded-[2rem] bg-[#f3f4f6] p-10 md:p-12 flex flex-col md:flex-row relative overflow-hidden group">
+              <div className="flex-1 z-10 relative">
+                <span className="text-[#64748b] text-sm font-bold uppercase tracking-widest block mb-2">Industrial Filtration</span>
+                <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-slate-800 mb-8">Filter<br/>Cartridge</h3>
+                <Button asChild className="bg-slate-900 hover:bg-slate-800 text-white rounded-md px-6 h-12 font-bold uppercase text-xs tracking-widest mt-auto w-fit shadow-lg">
+                  <Link href={`/products/${productCategories[0].slug}`}>
+                    Shop Now <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+              <div className="relative w-full h-64 md:h-full md:w-1/2 mt-8 md:mt-0 transition-transform duration-500 group-hover:scale-110">
+                <Image
+                  src={PlaceHolderImages.find(img => img.id === productCategories[0].imageId)?.imageUrl || ''}
+                  alt="Filter Cartridge"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Housing - Square */}
+            <div className="rounded-[2rem] bg-[#e0f2fe] p-10 flex flex-col relative overflow-hidden group">
+              <div className="z-10 relative">
+                <span className="text-[#0284c7] text-sm font-bold uppercase tracking-widest block mb-2">Process Systems</span>
+                <h3 className="text-3xl font-black uppercase tracking-tight text-[#0c4a6e] mb-4">Housing</h3>
+              </div>
+              <div className="relative flex-1 mt-4 transition-transform duration-500 group-hover:scale-110">
+                <Image
+                  src={PlaceHolderImages.find(img => img.id === productCategories[1].imageId)?.imageUrl || ''}
+                  alt="Housing"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <Link href={`/products/${productCategories[1].slug}`} className="absolute inset-0 z-20" />
+            </div>
+
+            {/* Strainer - Square */}
+            <div className="rounded-[2rem] bg-[#fef9c3] p-10 flex flex-col relative overflow-hidden group">
+              <div className="z-10 relative">
+                <span className="text-[#ca8a04] text-sm font-bold uppercase tracking-widest block mb-2">Technical Design</span>
+                <h3 className="text-3xl font-black uppercase tracking-tight text-[#713f12] mb-4">Strainer</h3>
+              </div>
+              <div className="relative flex-1 mt-4 transition-transform duration-500 group-hover:scale-110">
+                <Image
+                  src={PlaceHolderImages.find(img => img.id === productCategories[2].imageId)?.imageUrl || ''}
+                  alt="Strainer"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <Link href={`/products/${productCategories[2].slug}`} className="absolute inset-0 z-20" />
+            </div>
+
+            {/* Empty space filler / Vessels - Wide */}
+            <div className="lg:col-span-2 rounded-[2rem] bg-[#fce7f3] p-10 md:p-12 flex flex-col md:flex-row relative overflow-hidden group">
+              <div className="flex-1 z-10 relative">
+                <span className="text-[#db2777] text-sm font-bold uppercase tracking-widest block mb-2">Storage & Pressure</span>
+                <h3 className="text-4xl md:text-5xl font-black uppercase tracking-tight text-[#831843] mb-8">Vessels<br/>& Tanks</h3>
+                <Button asChild className="bg-primary hover:bg-primary/90 text-white rounded-md px-6 h-12 font-bold uppercase text-xs tracking-widest mt-auto w-fit shadow-lg">
+                  <Link href={`/products/${productCategories[3].slug}`}>
+                    Shop Now <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+              <div className="relative w-full h-64 md:h-full md:w-1/2 mt-8 md:mt-0 transition-transform duration-500 group-hover:scale-110">
+                <Image
+                  src={PlaceHolderImages.find(img => img.id === productCategories[3].imageId)?.imageUrl || ''}
+                  alt="Vessels"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -246,7 +286,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us - Redesigned per screenshot */}
+      {/* Why Choose Us */}
       <section className="py-24 bg-white overflow-hidden relative">
         <div className="container mx-auto px-4">
           <div className="text-center mb-24 relative">
