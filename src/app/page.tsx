@@ -106,7 +106,7 @@ export default function Home() {
         </div>
       </div>
       
-      {/* Vision, Mission Section - Redesigned to match request */}
+      {/* Vision, Mission Section */}
       <section className="py-20 md:py-32 pt-32 md:pt-48 bg-background relative z-0">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 items-start">
@@ -173,7 +173,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Product Categories Section - Redesigned per screenshot */}
+      {/* Product Categories Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -246,27 +246,53 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      {/* Why Choose Us - Redesigned per screenshot */}
+      <section className="py-24 bg-white overflow-hidden relative">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">
-              Why Choose VVIOK Industry?
+          <div className="text-center mb-24 relative">
+            {/* Decorative Dots Pattern */}
+            <div className="absolute -top-10 -right-4 hidden lg:block opacity-40">
+              <div className="grid grid-cols-3 gap-2">
+                {[...Array(9)].map((_, i) => (
+                  <div key={i} className="w-1.5 h-1.5 rounded-full bg-[#00bcd4]"></div>
+                ))}
+              </div>
+            </div>
+            
+            <h2 className="font-headline text-4xl md:text-5xl font-black text-[#00bcd4] mb-6">
+              Why You Choose Us?
             </h2>
-            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-              Our commitment to excellence sets us apart as a trusted filtration partner.
+            <p className="text-slate-500 max-w-3xl mx-auto leading-relaxed">
+              VVIOK Industry stands as a beacon of reliability in the global filtration market. We combine decades of engineering expertise with cutting-edge manufacturing to deliver absolute precision in every component.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {whyChooseUs.map((item) => (
-              <div key={item.title} className="p-8 bg-white border border-slate-100 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-primary text-primary-foreground mb-6">
-                  <item.icon className="h-6 w-6" />
-                </div>
-                <h3 className="font-headline text-xl font-bold mb-3 uppercase text-slate-900">{item.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
+
+          <div className="relative max-w-6xl mx-auto">
+            {/* Dark Container Box */}
+            <div className="bg-slate-900 rounded-[40px] p-12 md:p-20 md:pb-24 shadow-2xl relative overflow-visible">
+              {/* Subtle background element (Lightbulb watermark style) */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
+                <Lightbulb className="w-[500px] h-[500px] text-white" />
               </div>
-            ))}
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-12 relative z-10">
+                {whyChooseUs.slice(0, 3).map((item) => (
+                  <div key={item.title} className="flex flex-col items-center text-center">
+                    {/* Floating Square Icon */}
+                    <div className="w-20 h-20 bg-[#00bcd4] rounded-2xl flex items-center justify-center mb-8 -mt-20 md:-mt-28 shadow-xl shadow-[#00bcd4]/30 transform transition-transform hover:scale-110">
+                      <item.icon className="w-10 h-10 text-white" />
+                    </div>
+                    
+                    <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-tight">
+                      {item.title}
+                    </h3>
+                    <p className="text-slate-400 text-sm leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
