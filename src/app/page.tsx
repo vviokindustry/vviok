@@ -24,10 +24,10 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative min-h-[600px] w-full flex flex-col justify-center items-center text-center text-white overflow-hidden">
+      <section className="relative min-h-[600px] w-full flex flex-col justify-center items-center text-center text-white">
         {/* Background Image */}
         {heroImage && (
-          <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 z-0 overflow-hidden">
             <Image
               src={heroImage.imageUrl}
               alt="Industrial Background"
@@ -65,19 +65,19 @@ export default function Home() {
         {/* Feature Boxes */}
         <div className="absolute bottom-0 left-0 w-full hidden lg:block translate-y-1/2 z-20">
           <div className="container grid grid-cols-3">
-            <div className="bg-cyan-500 p-8 flex items-center gap-6 transition-colors hover:bg-cyan-600">
+            <div className="bg-cyan-500 p-8 flex items-center gap-6 transition-colors hover:bg-cyan-600 shadow-xl">
               <Settings className="h-12 w-12 text-white shrink-0" />
               <div className="text-left">
                 <h3 className="font-bold text-lg uppercase leading-tight">Industrial Housings</h3>
               </div>
             </div>
-            <div className="bg-cyan-500/90 p-8 flex items-center gap-6 border-x border-white/10 transition-colors hover:bg-cyan-600">
+            <div className="bg-cyan-500/90 p-8 flex items-center gap-6 border-x border-white/10 transition-colors hover:bg-cyan-600 shadow-xl">
               <Database className="h-12 w-12 text-white shrink-0" />
               <div className="text-left">
                 <h3 className="font-bold text-lg uppercase leading-tight">Filtration Cartridges</h3>
               </div>
             </div>
-            <div className="bg-cyan-500/80 p-8 flex items-center gap-6 transition-colors hover:bg-cyan-600">
+            <div className="bg-cyan-500/80 p-8 flex items-center gap-6 transition-colors hover:bg-cyan-600 shadow-xl">
               <Container className="h-12 w-12 text-white shrink-0" />
               <div className="text-left">
                 <h3 className="font-bold text-lg uppercase leading-tight">Stainless Steel Tanks</h3>
