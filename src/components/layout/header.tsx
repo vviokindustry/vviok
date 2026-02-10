@@ -3,11 +3,11 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, Mail, Phone, ChevronDown, ChevronRight, Search, ArrowRight, X } from 'lucide-react';
+import { Menu, Mail, Phone, ChevronDown, ChevronRight, Search, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { Logo, MakeInIndiaLogo } from '@/components/icons';
+import { Logo } from '@/components/icons';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -64,8 +64,6 @@ export function Header() {
           <div className="flex items-center gap-6">
             <Link href="/" className="flex items-center gap-4">
               <Logo className="w-40" />
-              <div className="hidden sm:block h-10 w-[1px] bg-slate-200" />
-              <MakeInIndiaLogo className="hidden sm:block w-16 text-slate-800" />
             </Link>
           </div>
 
