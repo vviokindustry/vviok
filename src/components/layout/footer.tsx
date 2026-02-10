@@ -30,31 +30,31 @@ export function Footer() {
               VVIOK Industry is a global leader in high-precision industrial filtration and storage solutions, committed to engineering excellence and reliable performance.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary transition-colors duration-300">
-                <Facebook className="h-5 w-5 text-white" />
+              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300">
+                <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary transition-colors duration-300">
-                <Twitter className="h-5 w-5 text-white" />
+              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300">
+                <Twitter className="h-5 w-5" />
               </Link>
-              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary transition-colors duration-300">
-                <Linkedin className="h-5 w-5 text-white" />
+              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300">
+                <Linkedin className="h-5 w-5" />
               </Link>
-              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary transition-colors duration-300">
-                <Instagram className="h-5 w-5 text-white" />
+              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300">
+                <Instagram className="h-5 w-5" />
               </Link>
             </div>
           </div>
 
           {/* Navigation Column */}
           <div>
-            <h3 className="text-white font-headline font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-primary pl-3">
+            <h3 className="text-white font-headline font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-[#ffc107] pl-3">
               Company
             </h3>
             <ul className="space-y-4">
               {companyLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="group flex items-center text-sm hover:text-white transition-colors">
-                    <ArrowRight className="h-3 w-3 mr-2 text-primary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
+                    <ArrowRight className="h-3 w-3 mr-2 text-[#ffc107] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
                     {link.label}
                   </Link>
                 </li>
@@ -64,14 +64,14 @@ export function Footer() {
 
           {/* Quick Support Column */}
           <div>
-            <h3 className="text-white font-headline font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-primary pl-3">
+            <h3 className="text-white font-headline font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-[#ffc107] pl-3">
               Resources
             </h3>
             <ul className="space-y-4">
               {resourceLinks.map((link) => (
                 <li key={link.label}>
                   <Link href={link.href} className="group flex items-center text-sm hover:text-white transition-colors">
-                    <ArrowRight className="h-3 w-3 mr-2 text-primary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
+                    <ArrowRight className="h-3 w-3 mr-2 text-[#ffc107] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
                     {link.label}
                   </Link>
                 </li>
@@ -81,13 +81,13 @@ export function Footer() {
 
           {/* Contact Column */}
           <div>
-            <h3 className="text-white font-headline font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-primary pl-3">
+            <h3 className="text-white font-headline font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-[#ffc107] pl-3">
               Contact Info
             </h3>
             <ul className="space-y-5">
               <li className="flex items-start gap-4">
                 <div className="mt-1 h-8 w-8 rounded bg-slate-900 flex items-center justify-center shrink-0">
-                  <MapPin className="h-4 w-4 text-primary" />
+                  <MapPin className="h-4 w-4 text-[#ffc107]" />
                 </div>
                 <span className="text-sm">
                   45, Pushkar Cottage, Near Ramol Toll Plaza, Ahmedabad - 382415, Gujarat, India
@@ -95,7 +95,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-4">
                 <div className="h-8 w-8 rounded bg-slate-900 flex items-center justify-center shrink-0">
-                  <Mail className="h-4 w-4 text-primary" />
+                  <Mail className="h-4 w-4 text-[#ffc107]" />
                 </div>
                 <a href="mailto:vviokindustry2021@gmail.com" className="text-sm hover:text-white transition-colors">
                   vviokindustry2021@gmail.com
@@ -103,7 +103,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-4">
                 <div className="h-8 w-8 rounded bg-slate-900 flex items-center justify-center shrink-0">
-                  <Phone className="h-4 w-4 text-primary" />
+                  <Phone className="h-4 w-4 text-[#ffc107]" />
                 </div>
                 <a href="tel:+919106472588" className="text-sm hover:text-white transition-colors font-bold">
                   +91 91064 72588
@@ -111,7 +111,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-4">
                 <div className="h-8 w-8 rounded bg-slate-900 flex items-center justify-center shrink-0">
-                  <WhatsappIcon className="h-4 w-4 text-primary fill-current" />
+                  <WhatsappIcon className="h-4 w-4 text-[#ffc107] fill-current" />
                 </div>
                 <a href="https://wa.me/919106472588" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors font-bold">
                   WhatsApp Support

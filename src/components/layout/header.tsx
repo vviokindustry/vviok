@@ -7,7 +7,7 @@ import { Menu, Mail, Phone, ChevronDown, ChevronRight, Search, ArrowRight, X } f
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { Logo } from '@/components/icons';
+import { Logo, MakeInIndiaLogo } from '@/components/icons';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -42,14 +42,18 @@ export function Header() {
   return (
     <>
       {/* Top Contact Bar */}
-      <div className="bg-[#4a2e82] text-white py-2 text-xs font-bold hidden md:block">
+      <div className="bg-[#4a2e82] text-white py-2.5 text-[11px] font-bold hidden md:block">
         <div className="container flex justify-between items-center px-4">
           <div className="flex gap-8">
-            <span className="flex items-center gap-2">Office: <a href="tel:+919106472588" className="hover:underline">+91 91064 72588</a></span>
-            <span className="flex items-center gap-2">Factory: <a href="tel:+919106472588" className="hover:underline">+91 91064 72588</a></span>
+            <span className="flex items-center gap-2">
+              <Phone className="h-3 w-3" /> Office: <a href="tel:+919106472588" className="hover:text-yellow-400">+91 91064 72588</a>
+            </span>
+            <span className="flex items-center gap-2">
+              <Mail className="h-3 w-3" /> Email: <a href="mailto:vviokindustry2021@gmail.com" className="hover:text-yellow-400">vviokindustry2021@gmail.com</a>
+            </span>
           </div>
           <div className="flex items-center gap-4">
-            <Search className="h-4 w-4 cursor-pointer hover:text-white/80" />
+            <Search className="h-3.5 w-3.5 cursor-pointer hover:text-yellow-400 transition-colors" />
           </div>
         </div>
       </div>
@@ -57,9 +61,11 @@ export function Header() {
       {/* Main Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
         <div className="container flex h-20 items-center justify-between px-4">
-          <div className="flex items-center gap-8">
-            <Link href="/" className="flex items-center">
-              <Logo className="w-48" />
+          <div className="flex items-center gap-6">
+            <Link href="/" className="flex items-center gap-4">
+              <Logo className="w-40" />
+              <div className="hidden sm:block h-10 w-[1px] bg-slate-200" />
+              <MakeInIndiaLogo className="hidden sm:block w-16 text-slate-800" />
             </Link>
           </div>
 
