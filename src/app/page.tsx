@@ -121,10 +121,10 @@ export default function Home() {
                   <Mountain className="w-12 h-12 text-primary" />
                 </div>
               </div>
-              <h3 className="font-headline text-xl font-black uppercase tracking-tight mb-4">
+              <h3 className="font-headline text-2xl font-black uppercase tracking-tight mb-4">
                 Our <span className="text-primary">Mission</span>
               </h3>
-              <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">
+              <p className="text-slate-500 text-base leading-relaxed max-w-xs mx-auto">
                 To be the leading provider of innovative, high-quality filtration solutions that improve the efficiency.
               </p>
               {/* Vertical Divider for desktop */}
@@ -141,10 +141,10 @@ export default function Home() {
                   <Lightbulb className="w-12 h-12 text-[#00bcd4]" />
                 </div>
               </div>
-              <h3 className="font-headline text-xl font-black uppercase tracking-tight mb-4">
+              <h3 className="font-headline text-2xl font-black uppercase tracking-tight mb-4">
                 Our <span className="text-[#00bcd4]">Vision</span>
               </h3>
-              <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">
+              <p className="text-slate-500 text-base leading-relaxed max-w-xs mx-auto">
                 To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers across various industries.
               </p>
               {/* Vertical Divider for desktop */}
@@ -161,10 +161,10 @@ export default function Home() {
                   <Award className="w-12 h-12 text-[#ffc107]" />
                 </div>
               </div>
-              <h3 className="font-headline text-xl font-black uppercase tracking-tight mb-4 text-[#ffc107] flex items-center gap-2">
-                Industries We Serve <ArrowRight className="h-5 w-5" />
+              <h3 className="font-headline text-2xl font-black uppercase tracking-tight mb-4 text-[#ffc107] flex items-center gap-2">
+                Industries We Serve <ArrowRight className="h-6 w-6" />
               </h3>
-              <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">
+              <p className="text-slate-500 text-base leading-relaxed max-w-xs mx-auto">
                 Providing specialized filtration solutions to meet the unique challenges of diverse industrial sectors globally.
               </p>
             </div>
@@ -284,7 +284,7 @@ export default function Home() {
             <h2 className="font-headline text-4xl md:text-5xl font-black text-[#00bcd4] mb-6">
               Why You Choose Us?
             </h2>
-            <p className="text-slate-500 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-slate-500 text-base max-w-3xl mx-auto leading-relaxed">
               VVIOK Industry stands as a beacon of reliability in the global filtration market. We combine decades of engineering expertise with cutting-edge manufacturing to deliver absolute precision in every component.
             </p>
           </div>
@@ -308,7 +308,7 @@ export default function Home() {
                     <h3 className="text-xl font-bold text-white mb-4 uppercase tracking-tight">
                       {item.title}
                     </h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">
+                    <p className="text-slate-400 text-base leading-relaxed">
                       {item.description}
                     </p>
                   </div>
