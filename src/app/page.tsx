@@ -151,7 +151,7 @@ export default function Home() {
               <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-20 w-[1px] bg-slate-200"></div>
             </div>
 
-            {/* Customer Satisfaction */}
+            {/* Industries We Serve Card */}
             <div className="flex flex-col items-center text-center px-6 relative">
               <div className="relative mb-10 flex justify-center items-center">
                 <div className="w-32 h-32 rounded-full border-[1px] border-slate-200 flex items-center justify-center relative">
@@ -161,11 +161,11 @@ export default function Home() {
                   <Award className="w-12 h-12 text-[#ffc107]" />
                 </div>
               </div>
-              <h3 className="font-headline text-xl font-black uppercase tracking-tight mb-4">
-                Customer <span className="text-[#ffc107]">Satisfaction</span>
+              <h3 className="font-headline text-xl font-black uppercase tracking-tight mb-4 text-[#ffc107] flex items-center gap-2">
+                Industries We Serve <ArrowRight className="h-5 w-5" />
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">
-                To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers.
+                Providing specialized filtration solutions to meet the unique challenges of diverse industrial sectors globally.
               </p>
             </div>
 
@@ -248,8 +248,8 @@ export default function Home() {
       <section className="py-20 md:py-28 bg-[#0f172a] text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-headline text-4xl md:text-5xl font-bold mb-4">
-              Industries We Serve
+            <h2 className="font-headline text-4xl md:text-5xl font-bold mb-4 flex items-center justify-center gap-4 text-[#ffc107]">
+              Industries We Serve <ArrowRight className="h-10 w-10" />
             </h2>
             <p className="text-lg opacity-60 max-w-2xl mx-auto">
               Providing critical filtration solutions to diverse industrial sectors globally.
@@ -258,7 +258,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 text-center">
             {industries.map((industry) => (
               <div key={industry.name} className="flex flex-col items-center group">
-                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-white/5 text-white mb-6 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-white/5 text-white mb-6 transition-all duration-300 group-hover:bg-[#ffc107] group-hover:scale-110">
                   <industry.icon className="h-10 w-10" />
                 </div>
                 <h3 className="font-bold text-sm uppercase tracking-wider text-white/90">{industry.name}</h3>

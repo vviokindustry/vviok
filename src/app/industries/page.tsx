@@ -1,5 +1,6 @@
 import { industries } from '@/lib/data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { ArrowRight } from 'lucide-react';
 
 export default function IndustriesPage() {
   return (
@@ -7,7 +8,9 @@ export default function IndustriesPage() {
       {/* Page Header */}
       <section className="bg-primary/5 py-12 md:py-20 text-center">
         <div className="container">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">Industries We Serve</h1>
+          <h1 className="font-headline text-4xl md:text-5xl font-bold text-[#ffc107] flex items-center justify-center gap-4">
+            Industries We Serve <ArrowRight className="h-10 w-10" />
+          </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
             We provide specialized filtration solutions to meet the unique challenges of diverse industrial sectors, ensuring operational excellence and compliance.
           </p>
