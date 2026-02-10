@@ -6,7 +6,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ChevronRight, Home, Package, Share2, Facebook, Twitter, Linkedin, ChevronLeft } from 'lucide-react';
+import { ChevronRight, Home, Package, Share2, Facebook, Twitter, Linkedin, ChevronLeft, CheckCircle2 } from 'lucide-react';
+import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
 
 export async function generateStaticParams() {
   const params: { category: string; subcategory: string }[] = [];
@@ -94,9 +95,19 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
               
               <div className="prose prose-slate mb-8 max-w-none">
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  High-performance industrial solution designed for {product.application.toLowerCase()}. 
-                  Engineered with premium stainless steel components to ensure durability and precision in demanding environments.
+                  {product.description || `High-performance industrial solution designed for ${product.application.toLowerCase()}. Engineered with premium stainless steel components to ensure durability and precision in demanding environments.`}
                 </p>
+                {product.features && (
+                  <div className="mt-6 space-y-2">
+                    <p className="font-bold text-slate-900 uppercase text-xs tracking-widest mb-3">Key Features:</p>
+                    {product.features.slice(0, 4).map((feature, idx) => (
+                      <div key={idx} className="flex items-center gap-2 text-sm text-slate-600">
+                        <CheckCircle2 className="h-4 w-4 text-primary flex-shrink-0" />
+                        <span>{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-10 pt-6 border-t">
@@ -141,22 +152,60 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
               <div className="py-10">
                 <TabsContent value="description" className="mt-0">
                   <div className="prose prose-slate max-w-4xl text-slate-600">
-                    <p className="mb-4">
+                    <p className="mb-6">
                       The {product.name} represents the pinnacle of industrial filtration technology. Specifically engineered for {product.application.toLowerCase()}, this system offers unparalleled reliability and efficiency. 
                     </p>
+                    {product.features && (
+                      <div className="mb-6">
+                        <h4 className="font-bold text-slate-900 mb-4">Key Advantages:</h4>
+                        <ul className="list-disc pl-5 space-y-2">
+                          {product.features.map((feature, idx) => (
+                            <li key={idx}>{feature}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                     <p>
-                      Each unit is manufactured using high-grade stainless steel, ensuring long-term resistance to corrosion and wear. The precision-engineered design allows for quick maintenance and minimal downtime, making it an essential component for critical process environments.
+                      Each unit is manufactured using high-grade materials, ensuring long-term resistance to corrosion and wear. The precision-engineered design allows for quick maintenance and minimal downtime, making it an essential component for critical process environments.
                     </p>
                   </div>
                 </TabsContent>
                 <TabsContent value="info" className="mt-0">
-                  <div className="prose prose-slate max-w-4xl text-slate-600">
-                    <ul className="list-disc pl-5 space-y-2">
-                      <li>Material: High Grade Stainless Steel (SS304/SS316)</li>
-                      <li>Standard: ASME / CE Compliant</li>
-                      <li>Warranty: 12 Months Manufacturing Warranty</li>
-                      <li>Origin: Proudly Manufactured in India</li>
-                    </ul>
+                  <div className="max-w-3xl">
+                    <h4 className="font-bold text-slate-900 mb-6 uppercase tracking-wider text-sm">Technical Specifications</h4>
+                    <Card className="rounded-none shadow-none border-slate-100">
+                      <Table>
+                        <TableBody>
+                          {product.specifications ? (
+                            Object.entries(product.specifications).map(([key, value]) => (
+                              <TableRow key={key} className="hover:bg-transparent border-slate-50">
+                                <TableCell className="font-bold text-slate-900 bg-slate-50/50 w-1/3 py-4">{key}</TableCell>
+                                <TableCell className="text-slate-600 py-4">{value}</TableCell>
+                              </TableRow>
+                            ))
+                          ) : (
+                            <>
+                              <TableRow className="hover:bg-transparent border-slate-50">
+                                <TableCell className="font-bold text-slate-900 bg-slate-50/50 w-1/3 py-4">Material</TableCell>
+                                <TableCell className="text-slate-600 py-4">High Grade Stainless Steel (SS304/SS316)</TableCell>
+                              </TableRow>
+                              <TableRow className="hover:bg-transparent border-slate-50">
+                                <TableCell className="font-bold text-slate-900 bg-slate-50/50 w-1/3 py-4">Standard</TableCell>
+                                <TableCell className="text-slate-600 py-4">ASME / CE Compliant</TableCell>
+                              </TableRow>
+                              <TableRow className="hover:bg-transparent border-slate-50">
+                                <TableCell className="font-bold text-slate-900 bg-slate-50/50 w-1/3 py-4">Warranty</TableCell>
+                                <TableCell className="text-slate-600 py-4">12 Months Manufacturing Warranty</TableCell>
+                              </TableRow>
+                              <TableRow className="hover:bg-transparent border-slate-50">
+                                <TableCell className="font-bold text-slate-900 bg-slate-50/50 w-1/3 py-4">Origin</TableCell>
+                                <TableCell className="text-slate-600 py-4">Proudly Manufactured in India</TableCell>
+                              </TableRow>
+                            </>
+                          )}
+                        </TableBody>
+                      </Table>
+                    </Card>
                   </div>
                 </TabsContent>
               </div>

@@ -25,6 +25,15 @@ export interface Category {
   subcategories?: Subcategory[];
 }
 
+export interface ProductDetail {
+  name: string;
+  application: string;
+  imageId: string;
+  description?: string;
+  features?: string[];
+  specifications?: Record<string, string>;
+}
+
 export const productCategories: Category[] = [
   {
     name: 'Filter Cartridge',
@@ -81,9 +90,31 @@ export const productCategories: Category[] = [
   }
 ];
 
-export const products: Record<string, { name: string; application: string; imageId: string }[]> = {
+export const products: Record<string, ProductDetail[]> = {
   // Filter Cartridge
-  'pp-spun-filter-cartridge': [{ name: 'PP Spun Filter Cartridge', application: 'Sediment and particulate removal, pre-filtration for RO systems', imageId: 'product-industrial-filter' }],
+  'pp-spun-filter-cartridge': [{ 
+    name: 'PP Spun Filter Cartridge', 
+    application: 'Sediment and particulate removal, pre-filtration for RO systems', 
+    imageId: 'product-industrial-filter',
+    description: 'PP Spun Filter Cartridges are made of 100% food-grade polypropylene. These melt-blown cartridges feature a multi-layer structure that provides graduated filtration from the outside to the inside, ensuring high dirt holding capacity and long service life. They are widely used for sediment and particulate removal in various industrial and domestic water treatment processes.',
+    features: [
+      '100% Polypropylene construction for wide chemical compatibility',
+      'Multi-layer depth filtration structure',
+      'High dirt holding capacity and low pressure drop',
+      'No surfactants, binders, or adhesives used',
+      'Food grade materials (FDA compliant)',
+      'Excellent removal of sand, silt, dirt, and rust particles'
+    ],
+    specifications: {
+      'Micron Rating': '1, 5, 10, 20, 50, 100 Micron',
+      'Length': '10", 20", 30", 40", 50"',
+      'Inner Diameter': '28mm',
+      'Outer Diameter': '63mm (Standard), 110mm (Jumbo)',
+      'Material': '100% Polypropylene',
+      'Max Operating Temp': '60°C',
+      'Core': 'Polypropylene or No Core options available'
+    }
+  }],
   'pp-pleated-filter-cartridge': [{ name: 'PP Pleated Filter Cartridge', application: 'High clarity liquid filtration, chemical and solvent processing', imageId: 'product-industrial-filter' }],
   'ptfe-pleated-filter-cartridge': [{ name: 'PTFE Pleated Filter Cartridge', application: 'Aggressive chemicals, solvents, and sterile air filtration', imageId: 'product-industrial-filter' }],
   'ss-wire-mesh-cartridge': [{ name: 'SS Wire Mesh Cartridge', application: 'High temperature and high pressure liquid filtration in industrial pipelines', imageId: 'product-industrial-filter' }],
