@@ -1,4 +1,3 @@
-
 import {
   Factory,
   CheckCircle,
@@ -187,7 +186,29 @@ export const products: Record<string, ProductDetail[]> = {
       'Max Differential Pressure': '10 Bar'
     }
   }],
-  'ss-sintered-powder-cartridge': [{ name: 'SS Sintered Powder Cartridge', application: 'Fine filtration for steam, polymers, and aggressive process fluids', imageId: 'product-industrial-filter' }],
+  'ss-sintered-powder-cartridge': [{ 
+    name: 'SS Sintered Powder Cartridge', 
+    application: 'Fine filtration for steam, polymers, and aggressive process fluids', 
+    imageId: 'product-ss-sintered-1',
+    imageIds: ['product-ss-sintered-1', 'product-ss-sintered-2', 'product-ss-sintered-3'],
+    description: 'SS Sintered Powder Cartridges are manufactured by sintering high-quality stainless steel powder. This process creates a porous structure with high mechanical strength and exceptional thermal resistance. These cartridges are designed for fine filtration of liquids and gases in extreme environments where polymer media would fail. They are widely used for steam filtration, catalyst recovery, and processing corrosive chemicals.',
+    features: [
+      'Exceptional mechanical strength and integrity',
+      'High temperature and pressure resistance',
+      'Uniform pore size distribution for precise filtration',
+      'Excellent chemical compatibility with aggressive fluids',
+      'Back-washable and ultrasonically cleanable',
+      'No media migration or fiber shedding'
+    ],
+    specifications: {
+      'Micron Rating': '0.5, 1, 3, 5, 10, 20, 50 Micron',
+      'Length': '10", 20", 30"',
+      'Material': 'SS 316L Sintered Powder',
+      'Max Operating Temp': 'Up to 600°C (in inert atmosphere)',
+      'Porosity': '35% to 50%',
+      'End Caps': 'DOE, Threaded, 222, 226'
+    }
+  }],
   
   // Housing
   'bag-filter-housing': [{ name: 'Bag Filter Housing', application: 'High-volume liquid clarification and bulk filtration', imageId: 'product-industrial-filter' }],
