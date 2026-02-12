@@ -235,7 +235,29 @@ export const products: Record<string, ProductDetail[]> = {
       'Connection Types': 'ANSI/DIN Flanged, NPT/BSP Threaded'
     }
   }],
-  'catridge-filter-housing': [{ name: 'Cartridge Filter Housing', application: 'Precision liquid and gas processing in sanitary environments', imageId: 'product-industrial-filter' }],
+  'catridge-filter-housing': [{ 
+    name: 'Cartridge Filter Housing', 
+    application: 'Precision liquid and gas processing in sanitary environments', 
+    imageId: 'product-cartridge-housing-1',
+    imageIds: ['product-cartridge-housing-1', 'product-cartridge-housing-2'],
+    description: 'Cartridge Filter Housings are designed to meet the most demanding requirements of the process industry. These housings are ideal for high-purity liquid and gas applications where precision and reliability are paramount. Available in a wide range of sizes, from single to multi-cartridge configurations, to handle various flow rates and pressure requirements.',
+    features: [
+      'High-quality Stainless Steel construction (SS304/SS316/SS316L)',
+      'Sanitary design with electropolished surfaces available',
+      'Suitable for standard DOE or 222/226 code 7 cartridges',
+      'Easy access for cleaning and maintenance',
+      'Robust sealing with high-performance O-rings',
+      'Compliance with ASME/CE standards'
+    ],
+    specifications: {
+      'Material': 'SS 304, SS 316, SS 316L',
+      'No. of Cartridges': '1 to 50+',
+      'Cartridge Lengths': '10\", 20\", 30\", 40\"',
+      'Operating Pressure': 'Up to 10 Bar (Custom up to 25 Bar)',
+      'Operating Temperature': 'Up to 150°C',
+      'Connection': 'Flanged, Threaded, Tri-clover'
+    }
+  }],
   'stainer-filter-housing': [{ name: 'Strainer Filter Housing', application: 'Pipeline debris removal and coarse filtration protection', imageId: 'product-industrial-filter' }],
   'vent-filter-housing': [{ name: 'Vent Filter Housing', application: 'Sterile air and gas filtration for storage tank venting', imageId: 'product-industrial-filter' }],
   'duplex-filter-housing': [{ name: 'Duplex Filter Housing', application: 'Continuous flow filtration with zero downtime for maintenance', imageId: 'product-industrial-filter' }],
@@ -261,8 +283,8 @@ export const industries = [
   { name: 'Chemical Industry', icon: FlaskConical, description: 'Providing robust and corrosion-resistant filters for separating and purifying aggressive chemicals, solvents, and polymers.', imageId: 'industry-chemical' },
   { name: 'Pharmaceutical', icon: HeartPulse, description: 'Delivering sterile and high-purity filtration solutions that meet the stringent standards of pharmaceutical manufacturing.', imageId: 'industry-pharmaceutical' },
   { name: 'Food & Beverage', icon: Grape, description: 'Maintaining product quality and safety with food-grade filters for liquids, ingredients, and air purification.', imageId: 'industry-food-beverage' },
+  { name: 'Water Storage', icon: Droplets, description: 'Providing safe and reliable water storage solutions with our high-quality stainless steel tanks.', imageId: 'industry-water-treatment' },
   { name: 'Oil & Gas', icon: Fuel, description: 'Offering reliable filtration for refineries and processing plants to remove contaminants from hydrocarbons and process fluids.', imageId: 'industry-oil-gas' },
-  { name: 'Manufacturing', icon: Building, description: 'Improving air quality and protecting equipment with our durable filters for various manufacturing environments.', imageId: 'industry-manufacturing' },
 ];
 
 export const whyChooseUs = [
