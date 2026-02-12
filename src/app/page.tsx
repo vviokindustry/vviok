@@ -239,30 +239,30 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white overflow-hidden relative">
+      <section className="py-24 md:py-32 bg-white overflow-hidden relative">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 relative">
-            <h2 className="font-headline text-2xl md:text-4xl font-black text-[#00bcd4] mb-4">
+          <div className="text-center mb-20 relative">
+            <h2 className="font-headline text-3xl md:text-5xl font-black text-[#00bcd4] mb-6 uppercase tracking-tight">
               Why You Choose Us?
             </h2>
-            <p className="text-slate-500 text-sm max-w-4xl mx-auto leading-relaxed">
+            <p className="text-slate-500 text-base max-w-4xl mx-auto leading-relaxed font-medium">
               VVIOK Industry stands as a beacon of reliability in the global filtration market.
             </p>
           </div>
 
-          <div className="relative max-w-5xl mx-auto">
-            <div className="bg-slate-900 rounded-[2.5rem] p-12 shadow-2xl relative overflow-visible">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
+          <div className="relative max-w-6xl mx-auto">
+            <div className="bg-slate-900 rounded-[3rem] p-16 md:p-20 shadow-2xl relative overflow-visible">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-16 relative z-10">
                 {whyChooseUs.slice(0, 3).map((item) => (
                   <div key={item.title} className="flex flex-col items-center text-center">
-                    <div className="w-14 h-14 bg-[#00bcd4] rounded-xl flex items-center justify-center mb-6 -mt-20 md:-mt-24 shadow-xl">
-                      <item.icon className="w-6 h-6 text-white" />
+                    <div className="w-20 h-20 bg-[#00bcd4] rounded-2xl flex items-center justify-center mb-8 -mt-24 md:-mt-28 shadow-2xl transition-transform hover:scale-110">
+                      <item.icon className="w-8 h-8 text-white" />
                     </div>
                     
-                    <h3 className="text-base font-bold text-white mb-3 uppercase tracking-tight">
+                    <h3 className="text-lg md:text-xl font-bold text-white mb-4 uppercase tracking-tight">
                       {item.title}
                     </h3>
-                    <p className="text-slate-400 text-sm leading-relaxed">
+                    <p className="text-slate-400 text-base leading-relaxed">
                       {item.description}
                     </p>
                   </div>
