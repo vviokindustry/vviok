@@ -330,7 +330,30 @@ export const products: Record<string, ProductDetail[]> = {
       'Compliance': 'ASME / CE Standard Construction'
     }
   }],
-  'multi-bag-filter-housing': [{ name: 'Multi-Bag Filter Housing', application: 'High-volume liquid clarification for large industrial processes', imageId: 'product-industrial-filter' }],
+  'multi-bag-filter-housing': [{ 
+    name: 'Multi-Bag Filter Housing', 
+    application: 'Large-scale high-volume liquid clarification for industrial processes', 
+    imageId: 'product-multi-bag-1',
+    imageIds: ['product-multi-bag-1', 'product-multi-bag-2'],
+    description: 'Multi-Bag Filter Housings are specifically designed for applications requiring high flow rates and high dirt-holding capacity. These robust systems utilize multiple filter bags within a single housing, significantly increasing the filtration area. Ideal for large-scale water treatment, chemical processing, and refinery operations where efficiency and minimal downtime are critical.',
+    features: [
+      'High flow capacity with multiple bag configurations (2 to 24 bags)',
+      'Robust and durable Stainless Steel construction (SS304/SS316)',
+      'Low pressure drop at high flow rates',
+      'Quick-opening cover designs (Davit arm / Spring assisted) for easy maintenance',
+      'Positive bag sealing technology ensures zero bypass',
+      'Versatile inlet and outlet configurations'
+    ],
+    specifications: {
+      'Housing Material': 'SS 304, SS 316, SS 316L',
+      'No. of Bags': '2 to 24 Bags',
+      'Bag Size': 'Size 2 (7" x 32")',
+      'Design Pressure': 'Up to 10 Bar (Custom up to 20 Bar)',
+      'Flow Rate': 'Up to 1000 m³/hr',
+      'Connection': '3" to 14" Flanged (ANSI/DIN)',
+      'Closure Type': 'Swing Bolt / Davit Arm'
+    }
+  }],
   'multi-cartridge-housing': [{ name: 'Multi-Cartridge Filter Housing', application: 'High-precision large-scale liquid filtration and clarification', imageId: 'product-industrial-filter' }],
   
   // Strainer

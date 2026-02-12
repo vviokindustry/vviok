@@ -163,6 +163,18 @@
       "imageHint": "duplex filter housing"
     },
     {
+      "id": "product-multi-bag-1",
+      "description": "Multi-Bag Filter Housing - High Capacity Industrial Filtration",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1NP1hBX1MOK0lqsBAiCyh3cgP9SSFULxu",
+      "imageHint": "multi bag filter"
+    },
+    {
+      "id": "product-multi-bag-2",
+      "description": "Multi-Bag Filter Housing - Secondary Industrial View",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1kY4QfAKXWis1L8gPtvYYs9e02-N98rTO",
+      "imageHint": "multi bag filter"
+    },
+    {
       "id": "product-custom-filter",
       "description": "Engineer designing a custom filtration solution.",
       "imageUrl": "https://images.unsplash.com/photo-1485965373059-f07657e9f841?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlbmdpbmVlcmluZyUyMGRlc2lnbnxlbnwwfHx8fDE3NzA4MTM3NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
