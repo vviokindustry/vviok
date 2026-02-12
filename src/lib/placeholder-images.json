@@ -44,9 +44,9 @@
     },
     {
       "id": "about-us-manufacturing",
-      "description": "VVIOK Industry's state-of-the-art manufacturing facility.",
-      "imageUrl": "https://images.unsplash.com/photo-1496247749665-49cf5b1022e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW51ZmFjdHVyaW5nJTIwZmFjaWxpdHl8ZW58MHx8fHwxNzcwODEzNzQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "manufacturing facility"
+      "description": "VVIOK Industry's main background image.",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1Ok6PZS-sa8Slw8RbZn1tG8AjND23Mtoo",
+      "imageHint": "industrial background"
     },
     {
       "id": "manufacturing-process",
