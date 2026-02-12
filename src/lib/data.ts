@@ -380,7 +380,27 @@ export const products: Record<string, ProductDetail[]> = {
   }],
   
   // Strainer
-  'basket-strainers': [{ name: 'Basket Strainers', application: 'Removing large particulates and debris from liquid process streams', imageId: 'product-industrial-filter' }],
+  'basket-strainers': [{ 
+    name: 'Basket Strainers', 
+    application: 'Removing large particulates and debris from liquid process streams', 
+    imageId: 'product-vent-filter-1',
+    imageIds: ['product-vent-filter-1'],
+    description: 'High-quality industrial Basket Strainers designed for effective removal of large particulates and debris from liquid process streams. Built with heavy-duty materials to ensure reliability in demanding environments.',
+    features: [
+      'Heavy-duty construction for industrial durability',
+      'Easy access cover for quick cleaning',
+      'Large basket area for minimal pressure drop',
+      'Precision mesh or perforated screen options',
+      'Corrosion resistant materials (SS304/SS316)'
+    ],
+    specifications: {
+      'Body Material': 'SS 304 / SS 316 / SS 316L',
+      'Inlet/Outlet': '1" to 24" Flanged',
+      'Mesh Range': '20 to 400 Mesh',
+      'Max Pressure': '10 Bar (Standard)',
+      'Gasket': 'EPDM / Viton / PTFE'
+    }
+  }],
   'taper-basket-strainers': [{ name: 'Taper Basket Strainers', application: 'Efficient coarse filtration in high-flow pipelines with tapered design', imageId: 'product-industrial-filter' }],
   'conical-strainers': [{ name: 'Conical Strainers', application: 'Temporary or permanent protection for pumps, valves, and other equipment', imageId: 'product-industrial-filter' }],
   'pleated-strainers': [{ name: 'Pleated Strainers', application: 'Increased surface area for extended service life in critical filtration tasks', imageId: 'product-industrial-filter' }],
