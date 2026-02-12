@@ -354,7 +354,30 @@ export const products: Record<string, ProductDetail[]> = {
       'Closure Type': 'Swing Bolt / Davit Arm'
     }
   }],
-  'multi-cartridge-housing': [{ name: 'Multi-Cartridge Filter Housing', application: 'High-precision large-scale liquid filtration and clarification', imageId: 'product-industrial-filter' }],
+  'multi-cartridge-housing': [{ 
+    name: 'Multi-Cartridge Filter Housing', 
+    application: 'High-precision large-scale liquid filtration and clarification', 
+    imageId: 'product-multi-cartridge-1',
+    imageIds: ['product-multi-cartridge-1', 'product-multi-cartridge-2', 'product-multi-cartridge-3'],
+    description: 'Multi-Cartridge Filter Housings are engineered for high-purity liquid filtration at industrial scales. These systems accommodate multiple filter cartridges within a single high-grade stainless steel vessel, providing a large surface area for fine filtration with minimal pressure loss. They are the ideal choice for final filtration and clarification in pharmaceutical, chemical, and advanced water treatment processes.',
+    features: [
+      'Accommodates 3 to 100+ cartridges for varied flow requirements',
+      'High-grade Stainless Steel construction (SS304/SS316/SS316L)',
+      'Compatible with standard DOE or 222/226 (Code 7) cartridge adapters',
+      'Advanced sealing mechanisms ensure zero contaminant bypass',
+      'Davit arm or spring-assisted lids for safe and easy handling of larger models',
+      'Designed for high thermal and chemical stability'
+    ],
+    specifications: {
+      'Housing Material': 'SS 304 / SS 316 / SS 316L',
+      'No. of Cartridges': '3 to 100+ Cartridges',
+      'Cartridge Lengths': '10\", 20\", 30\", 40\"',
+      'Design Pressure': 'Up to 10 Bar (Custom up to 25 Bar)',
+      'Inlet/Outlet Connections': '2" to 12" Flanged (ANSI/DIN)',
+      'Surface Finish': 'Industrial Polish / Electropolish available',
+      'Design Temperature': 'Up to 150°C'
+    }
+  }],
   
   // Strainer
   'basket-strainers': [{ name: 'Basket Strainers', application: 'Removing large particulates and debris from liquid process streams', imageId: 'product-industrial-filter' }],
