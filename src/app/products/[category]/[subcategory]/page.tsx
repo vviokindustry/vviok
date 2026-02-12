@@ -3,12 +3,12 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ChevronRight, Home, Package, Share2, CheckCircle2 } from 'lucide-react';
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
 import { resolveImageSource } from '@/lib/utils';
+import { ProductImageGallery } from '@/components/product-image-gallery';
 
 export async function generateStaticParams() {
   const params: { category: string; subcategory: string }[] = [];
@@ -43,8 +43,6 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
     ? product.imageIds.map(id => resolveImageSource(id, PlaceHolderImages))
     : [primaryImage];
 
-  const relatedSubcategories = currentCategory.subcategories?.filter(sub => sub.slug !== subcategory).slice(0, 3) || [];
-
   return (
     <div className="bg-white min-h-screen">
       <div className="bg-slate-50 border-b">
@@ -64,25 +62,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-            <div className="space-y-8">
-              <div className="aspect-square relative bg-white rounded-[3rem] border-2 border-slate-100 overflow-hidden flex items-center justify-center p-12 group shadow-2xl shadow-slate-200/50">
-                <Image
-                  src={primaryImage.imageUrl}
-                  alt={product.name}
-                  width={800}
-                  height={800}
-                  className="object-contain transition-transform duration-700 group-hover:scale-110"
-                  priority
-                />
-              </div>
-              <div className="grid grid-cols-4 gap-6">
-                 {galleryImages.map((img, idx) => (
-                   <div key={idx} className="aspect-square relative bg-white border-2 border-slate-100 rounded-3xl p-3 cursor-pointer hover:border-primary transition-all shadow-md hover:shadow-lg">
-                      <Image src={img.imageUrl} alt={`thumbnail-${idx}`} fill className="object-contain p-2" />
-                   </div>
-                 ))}
-              </div>
-            </div>
+            <ProductImageGallery images={galleryImages} alt={product.name} />
 
             <div className="flex flex-col">
               <span className="text-primary font-black uppercase tracking-[0.4em] text-xs mb-6">Industrial Grade Excellence</span>
