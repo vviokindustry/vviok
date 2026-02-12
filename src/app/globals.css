@@ -37,19 +37,19 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground text-base md:text-lg leading-relaxed font-body antialiased;
+    @apply bg-background text-foreground text-sm md:text-base leading-relaxed font-body antialiased;
   }
   h1 {
-    @apply text-4xl md:text-6xl font-black uppercase tracking-tighter leading-tight;
+    @apply text-3xl md:text-5xl font-black uppercase tracking-tighter leading-tight;
   }
   h2 {
-    @apply text-3xl md:text-5xl font-black uppercase tracking-tight leading-tight;
-  }
-  h3 {
     @apply text-2xl md:text-4xl font-black uppercase tracking-tight leading-tight;
   }
+  h3 {
+    @apply text-xl md:text-2xl font-black uppercase tracking-tight leading-tight;
+  }
   p {
-    @apply mb-4 text-slate-700 text-base md:text-lg leading-relaxed font-medium;
+    @apply mb-4 text-slate-700 text-sm md:text-base leading-relaxed font-medium;
   }
 }
 

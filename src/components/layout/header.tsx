@@ -84,6 +84,17 @@ export function Header() {
                     className="w-[280px] p-0 shadow-2xl border-t-[3px] border-primary rounded-none"
                   >
                     <div className="flex flex-col py-2 bg-white">
+                      {/* Main Products Overview Link */}
+                      <DropdownMenuItem asChild className="p-0">
+                        <Link 
+                          href="/products" 
+                          className="flex items-center justify-between py-3 px-6 hover:bg-slate-50 text-primary font-black text-[13px] cursor-pointer uppercase tracking-widest border-b"
+                        >
+                          All Product Categories
+                          <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      </DropdownMenuItem>
+
                       {link.categories.map((cat) => (
                         <DropdownMenuSub key={cat.slug}>
                           <DropdownMenuSubTrigger 
@@ -98,6 +109,17 @@ export function Header() {
                               className="w-[340px] p-0 border-none shadow-none bg-slate-50 rounded-none min-h-full py-4 px-8 border-l"
                             >
                               <div className="flex flex-col space-y-4">
+                                {/* Category Overview Link */}
+                                <DropdownMenuItem asChild className="p-0 focus:bg-transparent">
+                                  <Link 
+                                    href={`/products/${cat.slug}`} 
+                                    className="text-primary font-black text-[11px] uppercase tracking-[0.2em] border-b border-primary/10 pb-2 mb-2 flex items-center justify-between group/all"
+                                  >
+                                    View All {cat.name}
+                                    <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover/all:translate-x-1" />
+                                  </Link>
+                                </DropdownMenuItem>
+
                                 {cat.subcategories?.map((sub) => (
                                   <DropdownMenuItem key={sub.slug} asChild className="p-0 focus:bg-transparent">
                                     <Link 
