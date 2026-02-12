@@ -258,7 +258,30 @@ export const products: Record<string, ProductDetail[]> = {
       'Connection': 'Flanged, Threaded, Tri-clover'
     }
   }],
-  'stainer-filter-housing': [{ name: 'Strainer Filter Housing', application: 'Pipeline debris removal and coarse filtration protection', imageId: 'product-industrial-filter' }],
+  'stainer-filter-housing': [{ 
+    name: 'Strainer Filter Housing', 
+    application: 'Pipeline debris removal and coarse filtration protection', 
+    imageId: 'product-strainer-housing-1',
+    imageIds: ['product-strainer-housing-1', 'product-strainer-housing-2', 'product-strainer-housing-3'],
+    description: 'Strainer Filter Housings are robust components designed for the effective removal of unwanted debris and large particulates from industrial pipelines. These housings protect critical downstream equipment such as pumps, valves, and flow meters from damage and clogging. Engineered with a focus on durability and low maintenance, our strainers are suitable for a wide range of process fluids and operating conditions.',
+    features: [
+      'Heavy-duty Stainless Steel construction (SS304/SS316/SS316L)',
+      'Large internal volume for minimal pressure drop',
+      'Quick-opening cover designs for fast cleaning and maintenance',
+      'Wide range of mesh and perforation sizes available',
+      'Available in Simplex, Duplex, and Y-strainer configurations',
+      'Custom designs available for high-pressure and high-temperature services'
+    ],
+    specifications: {
+      'Housing Material': 'SS 304, SS 316, SS 316L',
+      'Closure Type': 'Swing Bolt / Bolted / Quick Release',
+      'Inlet/Outlet Connections': '1" to 24" (ANSI/DIN/BS Flanged)',
+      'Design Pressure': 'Up to 10 Bar (Custom up to 40 Bar)',
+      'Design Temperature': 'Up to 150°C',
+      'Screen/Basket Material': 'Stainless Steel 304/316',
+      'Filtration Range': '20 Micron to 10mm Perforation'
+    }
+  }],
   'vent-filter-housing': [{ name: 'Vent Filter Housing', application: 'Sterile air and gas filtration for storage tank venting', imageId: 'product-industrial-filter' }],
   'duplex-filter-housing': [{ name: 'Duplex Filter Housing', application: 'Continuous flow filtration with zero downtime for maintenance', imageId: 'product-industrial-filter' }],
   'multi-bag-filter-housing': [{ name: 'Multi-Bag Filter Housing', application: 'High-volume liquid clarification for large industrial processes', imageId: 'product-industrial-filter' }],

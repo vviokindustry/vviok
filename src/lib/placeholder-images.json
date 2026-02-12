@@ -109,6 +109,24 @@
       "imageHint": "cartridge filter housing"
     },
     {
+      "id": "product-strainer-housing-1",
+      "description": "Strainer Filter Housing - Image 1",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1yZ9NSRoif61DxxY0ZLRDOFL2xu1SZ1uO",
+      "imageHint": "strainer housing"
+    },
+    {
+      "id": "product-strainer-housing-2",
+      "description": "Strainer Filter Housing - Image 2",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1cwazagv8aUw30Wox_xzIZmcI40lHdXbw",
+      "imageHint": "strainer housing"
+    },
+    {
+      "id": "product-strainer-housing-3",
+      "description": "Strainer Filter Housing - Image 3",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1sZwwsal9UY360pxPnvRYt9c9F2AOOYeB",
+      "imageHint": "strainer housing"
+    },
+    {
       "id": "product-custom-filter",
       "description": "Engineer designing a custom filtration solution.",
       "imageUrl": "https://images.unsplash.com/photo-1485965373059-f07657e9f841?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlbmdpbmVlcmluZyUyMGRlc2lnbnxlbnwwfHx8fDE3NzA4MTM3NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
