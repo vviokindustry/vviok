@@ -78,56 +78,56 @@ export default function Home() {
       </div>
       
       {/* Vision, Mission Section */}
-      <section className="py-20 md:py-32 pt-32 md:pt-48 bg-background relative z-0">
+      <section className="py-24 md:py-32 pt-32 md:pt-48 bg-background relative z-0">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 items-start">
             
             {/* Our Mission */}
-            <div className="flex flex-col items-center text-center px-6 mb-12 md:mb-0 relative">
-              <div className="relative mb-8 flex justify-center items-center">
-                <div className="w-20 h-20 rounded-full border-[1px] border-slate-200 flex items-center justify-center relative">
-                  <div className="absolute inset-0 rounded-full border-[3px] border-transparent border-t-primary border-b-primary rotate-[45deg]"></div>
-                  <Mountain className="w-6 h-6 text-primary" />
+            <div className="flex flex-col items-center text-center px-10 mb-16 md:mb-0 relative">
+              <div className="relative mb-10 flex justify-center items-center">
+                <div className="w-28 h-28 rounded-full border-[1.5px] border-slate-200 flex items-center justify-center relative">
+                  <div className="absolute inset-0 rounded-full border-[4px] border-transparent border-t-primary border-b-primary rotate-[45deg]"></div>
+                  <Mountain className="w-10 h-10 text-primary" />
                 </div>
               </div>
-              <h3 className="font-headline text-xl font-black uppercase tracking-tight mb-4">
+              <h3 className="font-headline text-2xl font-black uppercase tracking-tight mb-5">
                 Our <span className="text-primary">Mission</span>
               </h3>
-              <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">
+              <p className="text-slate-500 text-base leading-relaxed max-w-xs mx-auto">
                 To be the leading provider of innovative, high-quality filtration solutions that improve efficiency.
               </p>
-              <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-16 w-[1px] bg-slate-200"></div>
+              <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-24 w-[1px] bg-slate-200"></div>
             </div>
 
             {/* Our Vision */}
-            <div className="flex flex-col items-center text-center px-6 mb-12 md:mb-0 relative">
-              <div className="relative mb-8 flex justify-center items-center">
-                <div className="w-20 h-20 rounded-full border-[1px] border-slate-200 flex items-center justify-center relative">
-                  <div className="absolute inset-0 rounded-full border-[3px] border-transparent border-t-[#00bcd4] border-b-[#00bcd4] rotate-[45deg]"></div>
-                  <Lightbulb className="w-6 h-6 text-[#00bcd4]" />
+            <div className="flex flex-col items-center text-center px-10 mb-16 md:mb-0 relative">
+              <div className="relative mb-10 flex justify-center items-center">
+                <div className="w-28 h-28 rounded-full border-[1.5px] border-slate-200 flex items-center justify-center relative">
+                  <div className="absolute inset-0 rounded-full border-[4px] border-transparent border-t-[#00bcd4] border-b-[#00bcd4] rotate-[45deg]"></div>
+                  <Lightbulb className="w-10 h-10 text-[#00bcd4]" />
                 </div>
               </div>
-              <h3 className="font-headline text-xl font-black uppercase tracking-tight mb-4">
+              <h3 className="font-headline text-2xl font-black uppercase tracking-tight mb-5">
                 Our <span className="text-[#00bcd4]">Vision</span>
               </h3>
-              <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">
+              <p className="text-slate-500 text-base leading-relaxed max-w-xs mx-auto">
                 To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers.
               </p>
-              <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-16 w-[1px] bg-slate-200"></div>
+              <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-24 w-[1px] bg-slate-200"></div>
             </div>
 
             {/* Industries We Serve Card */}
-            <div className="flex flex-col items-center text-center px-6 relative">
-              <div className="relative mb-8 flex justify-center items-center">
-                <div className="w-20 h-20 rounded-full border-[1px] border-slate-200 flex items-center justify-center relative">
-                  <div className="absolute inset-0 rounded-full border-[3px] border-transparent border-t-[#ffc107] border-b-[#ffc107] rotate-[45deg]"></div>
-                  <Award className="w-6 h-6 text-[#ffc107]" />
+            <div className="flex flex-col items-center text-center px-10 relative">
+              <div className="relative mb-10 flex justify-center items-center">
+                <div className="w-28 h-28 rounded-full border-[1.5px] border-slate-200 flex items-center justify-center relative">
+                  <div className="absolute inset-0 rounded-full border-[4px] border-transparent border-t-[#ffc107] border-b-[#ffc107] rotate-[45deg]"></div>
+                  <Award className="w-10 h-10 text-[#ffc107]" />
                 </div>
               </div>
-              <h3 className="font-headline text-xl font-black uppercase tracking-tight mb-4 text-[#ffc107] flex items-center gap-2">
-                Industries We Serve <ArrowRight className="h-5 w-5" />
+              <h3 className="font-headline text-2xl font-black uppercase tracking-tight mb-5 text-[#ffc107] flex items-center gap-3">
+                Industries We Serve <ArrowRight className="h-7 w-7" />
               </h3>
-              <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">
+              <p className="text-slate-500 text-base leading-relaxed max-w-xs mx-auto">
                 Providing specialized filtration solutions to meet the unique challenges of diverse industrial sectors globally.
               </p>
             </div>
