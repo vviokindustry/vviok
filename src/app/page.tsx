@@ -3,23 +3,15 @@ import Link from 'next/link';
 import {
   ArrowRight,
   Settings,
-  ShieldCheck,
-  Package,
-  Goal,
-  Eye,
-  ThumbsUp,
-  Factory,
   Database,
   Container,
+  Mountain,
   Lightbulb,
   Award,
-  Mountain,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { productCategories, industries, whyChooseUs } from '@/lib/data';
-import { cn } from '@/lib/utils';
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
@@ -38,32 +30,14 @@ export default function Home() {
               className="object-cover"
               priority
             />
-            {/* Very Subtle Overlay for Text Readability - Keeping Banner Clear */}
-            <div className="absolute inset-0 bg-black/10" />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
+            {/* Very Minimal Overlay for depth */}
+            <div className="absolute inset-0 bg-black/5" />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent" />
           </div>
         )}
 
-        {/* Hero Content */}
+        {/* Hero Content - Removed as requested to highlight the banner */}
         <div className="container relative z-10 py-16 px-4">
-          <h1 className="font-headline text-3xl md:text-5xl font-extrabold uppercase tracking-tight max-w-4xl mx-auto leading-tight drop-shadow-lg">
-            We are experts in Industrial Filtration products
-          </h1>
-          <p className="mt-6 text-base md:text-lg max-w-2xl mx-auto opacity-95 font-bold drop-shadow-md">
-            We are committed to supplying our customers with robust filtration components and reliable services through our international commercial and production network.
-          </p>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-10 h-14 font-bold uppercase tracking-wide shadow-xl">
-              <Link href="/about">
-                In Details <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="bg-white/20 hover:bg-white/30 text-white border-white/50 rounded-full px-10 h-14 font-bold uppercase tracking-wide backdrop-blur-md shadow-xl">
-              <Link href="/contact">
-                Get a Quote <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-          </div>
         </div>
 
         {/* Feature Boxes */}
@@ -124,7 +98,7 @@ export default function Home() {
                 Our <span className="text-primary">Mission</span>
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">
-                To be the leading provider of innovative, high-quality filtration solutions that improve the efficiency.
+                To be the leading provider of innovative, high-quality filtration solutions that improve efficiency.
               </p>
               <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-16 w-[1px] bg-slate-200"></div>
             </div>
@@ -141,7 +115,7 @@ export default function Home() {
                 Our <span className="text-[#00bcd4]">Vision</span>
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed max-w-xs mx-auto">
-                To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers across various industries.
+                To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers.
               </p>
               <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-16 w-[1px] bg-slate-200"></div>
             </div>
