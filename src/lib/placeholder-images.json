@@ -2,14 +2,14 @@
   "placeholderImages": [
     {
       "id": "hero-background",
-      "description": "Stainless steel water storage tank.",
-      "imageUrl": "https://images.unsplash.com/photo-1685376594043-844022374fe6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMHRhbmt8ZW58MHx8fHwxNzcwODEzNzQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "steel tank"
+      "description": "VVIOK Industry primary background image.",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1Ok6PZS-sa8Slw8RbZn1tG8AjND23Mtoo",
+      "imageHint": "industrial background"
     },
     {
       "id": "product-air-filter",
       "description": "Close-up of an industrial air filter.",
-      "imageUrl": "https://images.unsplash.com/photo-1713981234047-520a91c89a64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhaXIlMjBmaWx0ZXJ8ZW58MHx8fHwxNzcwNzQxMjc5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1713981234047-520a91c89a64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhaXIlMjBmaWx0ZXJ8ZW58MHx8fHwxNzcwNzI1MTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "air filter"
     },
     {
@@ -26,7 +26,7 @@
     },
     {
       "id": "product-pp-spun-1",
-      "description": "White PP Spun Melt Blown Filter Cartridges of varying lengths.",
+      "description": "White PP Spun Melt Blown Filter Cartridges.",
       "imageUrl": "https://drive.google.com/uc?export=view&id=1eDRjBSiyhaqfVAunmYnfSWUPl9wW665F",
       "imageHint": "melt blown filter"
     },
