@@ -38,9 +38,9 @@ export default function Home() {
               className="object-cover"
               priority
             />
-            {/* Subtle Overlay for Text Readability */}
-            <div className="absolute inset-0 bg-black/30" />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
+            {/* Very Subtle Overlay for Text Readability - Keeping Banner Clear */}
+            <div className="absolute inset-0 bg-black/10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
           </div>
         )}
 
@@ -166,12 +166,27 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Welcome Section */}
+      <section className="py-16 md:py-24 bg-slate-50">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="font-headline text-3xl md:text-4xl font-black text-[#0056b3] mb-8 uppercase tracking-tight">
+            Welcome to VVIOK Industry
+          </h2>
+          <p className="text-slate-600 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-medium">
+            VVIOK Industry is a premier manufacturer, supplier, and exporter of a comprehensive range of 
+            industrial filtration products. Based in India, we leverage state-of-the-art manufacturing 
+            facilities and a commitment to quality to deliver solutions that meet the rigorous demands of 
+            our domestic and international clients.
+          </p>
+        </div>
+      </section>
+
       {/* Product Categories Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-headline text-2xl md:text-4xl font-black text-slate-800 mb-4 uppercase tracking-tighter">
-              Product Categories
+              Our Product Categories
             </h2>
             <div className="w-16 h-1.5 bg-primary mx-auto rounded-full" />
           </div>
