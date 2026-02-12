@@ -1,4 +1,3 @@
-
 import {
   Factory,
   CheckCircle,
@@ -98,7 +97,7 @@ export const products: Record<string, ProductDetail[]> = {
     name: 'PP Spun Filter Cartridge', 
     application: 'Sediment and particulate removal, pre-filtration for RO systems', 
     imageId: 'product-pp-spun-1',
-    imageIds: ['product-pp-spun-1', 'product-pp-spun-2'], // Multiple images for this product
+    imageIds: ['product-pp-spun-1', 'product-pp-spun-2'], // Showing the two specific drive images
     description: 'PP Spun Filter Cartridges are made of 100% food-grade polypropylene. These melt-blown cartridges feature a multi-layer structure that provides graduated filtration from the outside to the inside, ensuring high dirt holding capacity and long service life. They are widely used for sediment and particulate removal in various industrial and domestic water treatment processes.',
     features: [
       '100% Polypropylene construction for wide chemical compatibility',
