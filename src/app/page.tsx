@@ -30,15 +30,11 @@ export default function Home() {
               className="object-cover"
               priority
             />
-            {/* Minimal Overlay for clarity as requested */}
+            {/* Minimal Overlay for clarity */}
             <div className="absolute inset-0 bg-black/5" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent" />
           </div>
         )}
-
-        {/* Hero Content - Removed per user request */}
-        <div className="container relative z-10 py-16 px-4">
-        </div>
 
         {/* Feature Boxes */}
         <div className="absolute bottom-0 left-0 w-full hidden lg:block translate-y-1/2 z-30">
@@ -140,13 +136,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Welcome Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
+      {/* Welcome Section - Matches visual reference for sizing */}
+      <section className="py-20 md:py-24 bg-slate-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-headline text-3xl md:text-4xl font-black text-[#00bcd4] mb-8 uppercase tracking-tight">
+          <h2 className="font-headline text-2xl md:text-4xl font-black text-[#00bcd4] mb-10 uppercase tracking-tight">
             Welcome to VVIOK Industry
           </h2>
-          <p className="text-slate-600 text-sm md:text-base max-w-4xl mx-auto leading-relaxed font-medium">
+          <p className="text-slate-500 text-sm md:text-lg max-w-5xl mx-auto leading-relaxed font-medium">
             VVIOK Industry is a premier manufacturer, supplier, and exporter of a comprehensive range of 
             industrial filtration products. Based in India, we leverage state-of-the-art manufacturing 
             facilities and a commitment to quality to deliver solutions that meet the rigorous demands of 
