@@ -22,7 +22,7 @@ import { productCategories, industries, whyChooseUs } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'about-us-manufacturing');
+  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
 
   return (
     <div className="flex flex-col">
