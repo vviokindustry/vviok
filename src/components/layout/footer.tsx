@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Logo, WhatsappIcon } from '@/components/icons';
-import { Mail, MapPin, Phone, Twitter, Facebook, Linkedin, Instagram, ArrowRight } from 'lucide-react';
+import { Mail, MapPin, Phone, Twitter, Facebook, Linkedin, Instagram, ArrowRight, Settings } from 'lucide-react';
 
 const companyLinks = [
   { href: '/about', label: 'About VVIOK' },
@@ -12,7 +12,7 @@ const companyLinks = [
 
 const resourceLinks = [
   { href: '/contact', label: 'Get a Quote' },
-  { href: '/contact', label: 'Technical Support' },
+  { href: '/admin/media', label: 'Media Manager' },
   { href: '/contact', label: 'Contact Us' },
 ];
 
@@ -125,8 +125,10 @@ export function Footer() {
         <div className="mt-16 pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium uppercase tracking-widest text-slate-500">
           <p>&copy; {new Date().getFullYear()} VVIOK Industry. All rights reserved.</p>
           <div className="flex gap-8">
+            <Link href="/admin/media" className="hover:text-white transition-colors flex items-center gap-1">
+              <Settings className="h-3 w-3" /> Admin
+            </Link>
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

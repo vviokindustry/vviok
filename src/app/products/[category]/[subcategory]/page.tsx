@@ -1,4 +1,3 @@
-
 import { products, productCategories } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
@@ -7,8 +6,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ChevronRight, Home, Package, Share2, Facebook, Twitter, Linkedin, ChevronLeft, CheckCircle2 } from 'lucide-react';
+import { ChevronRight, Home, Package, Share2, CheckCircle2 } from 'lucide-react';
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
+import { resolveImageSource } from '@/lib/utils';
 
 export async function generateStaticParams() {
   const params: { category: string; subcategory: string }[] = [];
@@ -32,214 +32,161 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
   }
 
   const subcategoryProducts = products[subcategory] || [];
-  const product = subcategoryProducts[0]; // Display the primary product for this sub-category
+  const product = subcategoryProducts[0];
 
   if (!product) {
     return notFound();
   }
 
-  const primaryImage = PlaceHolderImages.find((img) => img.id === product.imageId);
+  const primaryImage = resolveImageSource(product.imageId, PlaceHolderImages);
   const galleryImages = product.imageIds 
-    ? product.imageIds.map(id => PlaceHolderImages.find(img => img.id === id)).filter(Boolean)
+    ? product.imageIds.map(id => resolveImageSource(id, PlaceHolderImages))
     : [primaryImage];
 
   const relatedSubcategories = currentCategory.subcategories?.filter(sub => sub.slug !== subcategory).slice(0, 3) || [];
 
   return (
     <div className="bg-white min-h-screen">
-      {/* Breadcrumbs */}
       <div className="bg-slate-50 border-b">
-        <div className="container py-4 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground overflow-x-auto whitespace-nowrap">
-          <Link href="/" className="hover:text-primary flex items-center gap-1 transition-colors">
-            <Home className="h-3.3 w-3.3" /> Home
+        <div className="container py-6 flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-muted-foreground overflow-x-auto whitespace-nowrap">
+          <Link href="/" className="hover:text-primary flex items-center gap-2 transition-colors">
+            <Home className="h-4 w-4" /> Home
           </Link>
-          <ChevronRight className="h-3 w-3" />
+          <ChevronRight className="h-4 w-4 opacity-30" />
           <Link href="/products" className="hover:text-primary transition-colors">Products</Link>
-          <ChevronRight className="h-3 w-3" />
+          <ChevronRight className="h-4 w-4 opacity-30" />
           <Link href={`/products/${currentCategory.slug}`} className="hover:text-primary transition-colors">{currentCategory.name}</Link>
-          <ChevronRight className="h-3 w-3" />
+          <ChevronRight className="h-4 w-4 opacity-30" />
           <span className="text-primary">{currentSubcategory.name}</span>
         </div>
       </div>
 
-      <section className="py-12 md:py-20">
+      <section className="py-16 md:py-24">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            {/* Product Image Section */}
-            <div className="space-y-6">
-              <div className="aspect-square relative bg-slate-50 rounded-sm border overflow-hidden flex items-center justify-center p-8 group">
-                {primaryImage && (
-                  <Image
-                    src={primaryImage.imageUrl}
-                    alt={product.name}
-                    width={600}
-                    height={600}
-                    className="object-contain transition-transform duration-500 group-hover:scale-110"
-                    priority
-                  />
-                )}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+            <div className="space-y-8">
+              <div className="aspect-square relative bg-white rounded-[3rem] border-2 border-slate-100 overflow-hidden flex items-center justify-center p-12 group shadow-2xl shadow-slate-200/50">
+                <Image
+                  src={primaryImage.imageUrl}
+                  alt={product.name}
+                  width={800}
+                  height={800}
+                  className="object-contain transition-transform duration-700 group-hover:scale-110"
+                  priority
+                />
               </div>
-              <div className="grid grid-cols-4 gap-4">
+              <div className="grid grid-cols-4 gap-6">
                  {galleryImages.map((img, idx) => (
-                   <div key={idx} className="aspect-square relative bg-slate-50 border rounded-sm p-2 cursor-pointer hover:border-primary transition-colors">
-                      {img && <Image src={img.imageUrl} alt={`thumbnail-${idx}`} fill className="object-contain p-1" />}
+                   <div key={idx} className="aspect-square relative bg-white border-2 border-slate-100 rounded-3xl p-3 cursor-pointer hover:border-primary transition-all shadow-md hover:shadow-lg">
+                      <Image src={img.imageUrl} alt={`thumbnail-${idx}`} fill className="object-contain p-2" />
                    </div>
                  ))}
               </div>
             </div>
 
-            {/* Product Details Section */}
             <div className="flex flex-col">
-              <h1 className="font-headline text-4xl md:text-5xl font-black text-slate-900 leading-tight mb-8 uppercase tracking-tight">
+              <span className="text-primary font-black uppercase tracking-[0.4em] text-xs mb-6">Industrial Grade Excellence</span>
+              <h1 className="font-headline text-5xl md:text-7xl font-black text-slate-900 leading-[0.9] mb-10 uppercase tracking-tighter">
                 {product.name}
               </h1>
               
-              <div className="prose prose-slate mb-10 max-w-none">
-                <p className="text-muted-foreground text-xl md:text-2xl leading-relaxed font-medium">
-                  {product.description || `High-performance industrial solution designed for ${product.application.toLowerCase()}. Engineered with premium stainless steel components to ensure durability and precision in demanding environments.`}
-                </p>
+              <div className="space-y-12">
+                <div className="prose prose-slate max-w-none">
+                  <p className="text-slate-600 text-2xl md:text-3xl leading-relaxed font-medium">
+                    {product.description || `High-performance industrial solution designed for ${product.application.toLowerCase()}. Engineered with premium materials to ensure durability and precision in demanding environments.`}
+                  </p>
+                </div>
+
                 {product.features && (
-                  <div className="mt-8 space-y-3">
-                    <p className="font-black text-slate-900 uppercase text-sm tracking-widest mb-4">Key Features:</p>
-                    {product.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-start gap-3 text-lg md:text-xl text-slate-700 font-medium">
-                        <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                        <span>{feature}</span>
-                      </div>
-                    ))}
+                  <div className="space-y-4 pt-10 border-t">
+                    <p className="font-black text-slate-900 uppercase text-sm tracking-widest mb-6">Core Performance Features</p>
+                    <div className="grid gap-4">
+                      {product.features.map((feature, idx) => (
+                        <div key={idx} className="flex items-start gap-4 text-xl md:text-2xl text-slate-700 font-bold">
+                          <div className="h-8 w-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
+                            <CheckCircle2 className="h-5 w-5 text-primary" />
+                          </div>
+                          <span>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 )}
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-10 pt-8 border-t">
-                <Button asChild size="lg" className="flex-1 bg-primary hover:bg-primary/90 text-white font-black uppercase tracking-widest rounded-sm h-16 shadow-xl text-sm">
+              <div className="flex flex-col sm:flex-row gap-6 mt-16 pt-12 border-t">
+                <Button asChild size="lg" className="flex-1 bg-primary hover:bg-primary/90 text-white font-black uppercase tracking-widest rounded-2xl h-20 shadow-2xl shadow-primary/20 text-base">
                   <Link href="/contact">
-                    <Package className="mr-2 h-6 w-6" /> Inquire Now
+                    <Package className="mr-3 h-6 w-6" /> Send Quick Inquiry
                   </Link>
                 </Button>
-                <Button variant="outline" size="icon" className="h-16 w-16 rounded-sm border-slate-200">
-                  <Share2 className="h-6 w-6 text-slate-400" />
+                <Button variant="outline" size="icon" className="h-20 w-20 rounded-2xl border-2 border-slate-100 hover:bg-slate-50 transition-colors">
+                  <Share2 className="h-7 w-7 text-slate-400" />
                 </Button>
-              </div>
-
-              <div className="space-y-4 pt-6 border-t border-slate-100">
-                <div className="flex items-center gap-3">
-                  <span className="text-xs font-black text-slate-900 uppercase tracking-widest min-w-[100px]">Categories:</span>
-                  <span className="text-sm font-bold text-muted-foreground uppercase">{currentCategory.name}, {currentSubcategory.name}</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <span className="text-xs font-black text-slate-900 uppercase tracking-widest min-w-[100px]">Tags:</span>
-                  <span className="text-sm font-bold text-muted-foreground uppercase">Industrial, Stainless Steel, Premium</span>
-                </div>
               </div>
             </div>
           </div>
 
-          {/* Product Tabs Section */}
-          <div className="mt-24">
+          <div className="mt-32">
             <Tabs defaultValue="description" className="w-full">
-              <TabsList className="w-full justify-start bg-transparent border-b rounded-none h-auto p-0 gap-12">
-                <TabsTrigger value="description" className="rounded-none border-b-4 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none font-black uppercase tracking-widest text-sm py-5 px-0">Description</TabsTrigger>
-                <TabsTrigger value="info" className="rounded-none border-b-4 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none font-black uppercase tracking-widest text-sm py-5 px-0">Additional Information</TabsTrigger>
+              <TabsList className="w-full justify-start bg-transparent border-b-2 border-slate-100 rounded-none h-auto p-0 gap-16">
+                <TabsTrigger value="description" className="rounded-none border-b-4 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none font-black uppercase tracking-[0.2em] text-xs py-8 px-0">Detailed Specs</TabsTrigger>
+                <TabsTrigger value="info" className="rounded-none border-b-4 border-transparent data-[state=active]:border-primary data-[state=active]:bg-transparent data-[state=active]:shadow-none font-black uppercase tracking-[0.2em] text-xs py-8 px-0">Technical Info</TabsTrigger>
               </TabsList>
-              <div className="py-12">
-                <TabsContent value="description" className="mt-0">
-                  <div className="prose prose-slate max-w-4xl text-slate-700 text-lg md:text-xl leading-relaxed">
-                    <p className="mb-8 font-medium">
-                      The {product.name} represents the pinnacle of industrial filtration technology. Specifically engineered for {product.application.toLowerCase()}, this system offers unparalleled reliability and efficiency. 
+              <div className="py-16">
+                <TabsContent value="description" className="mt-0 outline-none">
+                  <div className="max-w-4xl space-y-10">
+                    <p className="text-slate-600 text-2xl font-medium leading-relaxed">
+                      The {product.name} is the pinnacle of engineering for {product.application.toLowerCase()}. 
+                      Designed to withstand rigorous industrial cycles while maintaining absolute precision.
                     </p>
                     {product.features && (
-                      <div className="mb-8 bg-slate-50 p-8 rounded-xl border">
-                        <h4 className="font-black text-slate-900 mb-6 uppercase tracking-tight text-2xl">Key Advantages:</h4>
-                        <ul className="list-disc pl-6 space-y-4 font-medium">
+                      <div className="bg-slate-50 p-12 rounded-[3rem] border-2 border-slate-100">
+                        <h4 className="font-black text-slate-900 mb-8 uppercase tracking-tight text-3xl">Technical Advantages</h4>
+                        <ul className="grid md:grid-cols-2 gap-6 list-none p-0">
                           {product.features.map((feature, idx) => (
-                            <li key={idx}>{feature}</li>
+                            <li key={idx} className="flex gap-3 text-xl font-bold text-slate-600">
+                              <span className="text-primary">–</span> {feature}
+                            </li>
                           ))}
                         </ul>
                       </div>
                     )}
-                    <p className="font-medium">
-                      Each unit is manufactured using high-grade materials, ensuring long-term resistance to corrosion and wear. The precision-engineered design allows for quick maintenance and minimal downtime, making it an essential component for critical process environments.
-                    </p>
                   </div>
                 </TabsContent>
-                <TabsContent value="info" className="mt-0">
+                <TabsContent value="info" className="mt-0 outline-none">
                   <div className="max-w-4xl">
-                    <h4 className="font-black text-slate-900 mb-8 uppercase tracking-widest text-lg">Technical Specifications</h4>
-                    <Card className="rounded-none shadow-xl border-slate-100 overflow-hidden">
+                    <h4 className="font-black text-slate-900 mb-10 uppercase tracking-widest text-lg">Product Specifications Table</h4>
+                    <div className="rounded-[2.5rem] shadow-2xl shadow-slate-200 border-2 border-slate-100 overflow-hidden bg-white">
                       <Table>
                         <TableBody>
                           {product.specifications ? (
                             Object.entries(product.specifications).map(([key, value]) => (
-                              <TableRow key={key} className="hover:bg-transparent border-slate-100">
-                                <TableCell className="font-black text-slate-900 bg-slate-50 w-1/3 py-5 px-8 text-sm uppercase tracking-wider">{key}</TableCell>
-                                <TableCell className="text-slate-700 py-5 px-8 text-lg font-bold">{value}</TableCell>
+                              <TableRow key={key} className="hover:bg-slate-50 border-slate-100 transition-colors">
+                                <TableCell className="font-black text-slate-900 bg-slate-50/50 w-2/5 py-8 px-10 text-xs uppercase tracking-widest border-r">{key}</TableCell>
+                                <TableCell className="text-slate-700 py-8 px-10 text-xl font-bold">{value}</TableCell>
                               </TableRow>
                             ))
                           ) : (
                             <>
-                              <TableRow className="hover:bg-transparent border-slate-100">
-                                <TableCell className="font-black text-slate-900 bg-slate-50 w-1/3 py-5 px-8 text-sm uppercase tracking-wider">Material</TableCell>
-                                <TableCell className="text-slate-700 py-5 px-8 text-lg font-bold">High Grade Stainless Steel (SS304/SS316)</TableCell>
+                              <TableRow className="hover:bg-slate-50 border-slate-100 transition-colors">
+                                <TableCell className="font-black text-slate-900 bg-slate-50/50 w-2/5 py-8 px-10 text-xs uppercase tracking-widest border-r">Build Material</TableCell>
+                                <TableCell className="text-slate-700 py-8 px-10 text-xl font-bold">Industrial Stainless Steel (SS304/SS316)</TableCell>
                               </TableRow>
-                              <TableRow className="hover:bg-transparent border-slate-100">
-                                <TableCell className="font-black text-slate-900 bg-slate-50 w-1/3 py-5 px-8 text-sm uppercase tracking-wider">Standard</TableCell>
-                                <TableCell className="text-slate-700 py-5 px-8 text-lg font-bold">ASME / CE Compliant</TableCell>
+                              <TableRow className="hover:bg-slate-50 border-slate-100 transition-colors">
+                                <TableCell className="font-black text-slate-900 bg-slate-50/50 w-2/5 py-8 px-10 text-xs uppercase tracking-widest border-r">Standards</TableCell>
+                                <TableCell className="text-slate-700 py-8 px-10 text-xl font-bold">ASME / CE International Compliance</TableCell>
                               </TableRow>
                             </>
                           )}
                         </TableBody>
                       </Table>
-                    </Card>
+                    </div>
                   </div>
                 </TabsContent>
               </div>
             </Tabs>
           </div>
-
-          {/* Related Products Section */}
-          {relatedSubcategories.length > 0 && (
-            <div className="mt-32">
-              <div className="flex items-center justify-between mb-12">
-                <h2 className="font-headline text-3xl font-black text-slate-900 uppercase tracking-tighter">Related Products</h2>
-                <div className="flex gap-2">
-                  <Button variant="outline" size="icon" className="h-10 w-10 rounded-sm"><ChevronLeft className="h-5 w-5" /></Button>
-                  <Button variant="outline" size="icon" className="h-10 w-10 rounded-sm bg-primary text-white border-primary"><ChevronRight className="h-5 w-5" /></Button>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                {relatedSubcategories.map((sub) => {
-                  const subProduct = products[sub.slug]?.[0];
-                  const subImage = subProduct ? PlaceHolderImages.find(img => img.id === subProduct.imageId) : null;
-                  
-                  return (
-                    <Link key={sub.slug} href={`/products/${currentCategory.slug}/${sub.slug}`} className="group">
-                      <Card className="h-full border-slate-100 shadow-lg hover:shadow-2xl hover:border-primary/50 transition-all duration-500 rounded-xl flex flex-col items-center p-10 overflow-hidden bg-white">
-                        <div className="aspect-square relative w-full mb-10 flex items-center justify-center">
-                          {subImage && (
-                            <Image
-                              src={subImage.imageUrl}
-                              alt={sub.name}
-                              width={300}
-                              height={300}
-                              className="object-contain transition-transform duration-700 group-hover:scale-110"
-                            />
-                          )}
-                        </div>
-                        <div className="text-center mt-auto w-full">
-                          <h3 className="font-headline text-xl font-black text-slate-900 group-hover:text-primary transition-colors line-clamp-2 min-h-[50px] uppercase tracking-tight">
-                            {sub.name}
-                          </h3>
-                          <p className="text-xs font-black text-primary mt-6 tracking-[0.2em] border-t pt-4">INQUIRE FOR DETAILS</p>
-                        </div>
-                      </Card>
-                    </Link>
-                  );
-                })}
-              </div>
-            </div>
-          )}
         </div>
       </section>
     </div>
