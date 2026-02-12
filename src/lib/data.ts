@@ -1,3 +1,4 @@
+
 import {
   Factory,
   CheckCircle,
@@ -29,7 +30,7 @@ export interface ProductDetail {
   name: string;
   application: string;
   imageId: string;
-  imageIds?: string[]; // Added support for multiple images
+  imageIds?: string[];
   description?: string;
   features?: string[];
   specifications?: Record<string, string>;
@@ -97,7 +98,7 @@ export const products: Record<string, ProductDetail[]> = {
     name: 'PP Spun Filter Cartridge', 
     application: 'Sediment and particulate removal, pre-filtration for RO systems', 
     imageId: 'product-pp-spun-1',
-    imageIds: ['product-pp-spun-1', 'product-pp-spun-2'], // Showing the two specific drive images
+    imageIds: ['product-pp-spun-1', 'product-pp-spun-2'],
     description: 'PP Spun Filter Cartridges are made of 100% food-grade polypropylene. These melt-blown cartridges feature a multi-layer structure that provides graduated filtration from the outside to the inside, ensuring high dirt holding capacity and long service life. They are widely used for sediment and particulate removal in various industrial and domestic water treatment processes.',
     features: [
       '100% Polypropylene construction for wide chemical compatibility',
@@ -117,7 +118,29 @@ export const products: Record<string, ProductDetail[]> = {
       'Core': 'Polypropylene or No Core options available'
     }
   }],
-  'pp-pleated-filter-cartridge': [{ name: 'PP Pleated Filter Cartridge', application: 'High clarity liquid filtration, chemical and solvent processing', imageId: 'product-industrial-filter' }],
+  'pp-pleated-filter-cartridge': [{ 
+    name: 'PP Pleated Filter Cartridge', 
+    application: 'High clarity liquid filtration, chemical and solvent processing', 
+    imageId: 'product-pp-pleated-1',
+    imageIds: ['product-pp-pleated-1', 'product-pp-pleated-2'],
+    description: 'PP Pleated Filter Cartridges are designed for high efficiency and high surface area filtration. These cartridges are constructed with a polypropylene pleated medium, providing a large filtration area and extended service life. They are ideal for critical applications requiring fine filtration, high flow rates, and broad chemical compatibility.',
+    features: [
+      'High surface area for high flow rates and long life',
+      'Absolute and Nominal micron ratings available',
+      'All-polypropylene construction for chemical resistance',
+      'Fixed pore structure prevents unloading of contaminants',
+      'Low pressure drop ensures efficient operation',
+      'FDA compliant materials for food and beverage use'
+    ],
+    specifications: {
+      'Micron Rating': '0.1, 0.22, 0.45, 1, 5, 10, 20 Micron',
+      'Length': '10", 20", 30", 40"',
+      'Material': 'Polypropylene Pleated Media',
+      'Max Operating Temp': '80°C',
+      'Support/Cage': 'Polypropylene',
+      'End Caps': 'DOE, 222, 226 styles'
+    }
+  }],
   'ptfe-pleated-filter-cartridge': [{ name: 'PTFE Pleated Filter Cartridge', application: 'Aggressive chemicals, solvents, and sterile air filtration', imageId: 'product-industrial-filter' }],
   'ss-wire-mesh-cartridge': [{ name: 'SS Wire Mesh Cartridge', application: 'High temperature and high pressure liquid filtration in industrial pipelines', imageId: 'product-industrial-filter' }],
   'ss-sintered-powder-cartridge': [{ name: 'SS Sintered Powder Cartridge', application: 'Fine filtration for steam, polymers, and aggressive process fluids', imageId: 'product-industrial-filter' }],

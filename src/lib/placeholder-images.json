@@ -21,7 +21,7 @@
     {
       "id": "product-industrial-filter",
       "description": "A large industrial filter cartridge.",
-      "imageUrl": "https://images.unsplash.com/photo-1748182447909-dfd52d869cd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwZmlsdGVyfGVufDB8fHx8MTc3MDgxMTY5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1748182447909-dfd52d869cd1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxpbmR1c3RyaWFsJTIwZmlsdGVyfGVufDB8fHx8MTc3MDgxMTY5OHww",
       "imageHint": "industrial filter"
     },
     {
@@ -35,6 +35,18 @@
       "description": "Industrial filtration component.",
       "imageUrl": "https://drive.google.com/uc?export=view&id=1Ok6PZS-sa8Slw8RbZn1tG8AjND23Mtoo",
       "imageHint": "industrial filter"
+    },
+    {
+      "id": "product-pp-pleated-1",
+      "description": "PP Pleated Filter Cartridge - Image 1",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1OrDxV5L-G0ZUAC3sLFp-7DWGfj58nBnT",
+      "imageHint": "pleated filter"
+    },
+    {
+      "id": "product-pp-pleated-2",
+      "description": "PP Pleated Filter Cartridge - Image 2",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1_-0Oyn-AVdfKgfafl3p1ASeo-N1qLGj8",
+      "imageHint": "pleated filter"
     },
     {
       "id": "product-custom-filter",
@@ -75,7 +87,7 @@
     {
       "id": "contact-map",
       "description": "Map showing the location of VVIOK Industry.",
-      "imageUrl": "https://images.unsplash.com/photo-1717343824623-06293a62a70d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaXR5JTIwbWFwfGVufDB8fHx8MTc3MDgxNDA5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1717343824623-06293a62a70d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaXR5JTIwbWFwfGVufDB8fHx8MTc3MDgxNDA5NHww",
       "imageHint": "city map"
     },
     {
