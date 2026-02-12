@@ -136,7 +136,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Welcome Section - Matches visual reference for sizing */}
+      {/* Welcome Section */}
       <section className="py-20 md:py-24 bg-slate-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-headline text-2xl md:text-4xl font-black text-[#00bcd4] mb-10 uppercase tracking-tight">
@@ -228,8 +228,8 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
             {industries.map((industry) => (
               <div key={industry.name} className="flex flex-col items-center group">
-                <div className="flex items-center justify-center h-14 w-14 rounded-full bg-white/5 text-white mb-4 transition-all duration-300 group-hover:bg-[#ffc107] group-hover:scale-110">
-                  <industry.icon className="h-6 w-6" />
+                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-white/5 text-white mb-4 transition-all duration-300 group-hover:bg-[#ffc107] group-hover:scale-110">
+                  <industry.icon className="h-10 w-10" />
                 </div>
                 <h3 className="font-bold text-[10px] uppercase tracking-wider text-white/90">{industry.name}</h3>
               </div>
