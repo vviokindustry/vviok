@@ -1,3 +1,4 @@
+
 import {
   Factory,
   CheckCircle,
@@ -163,7 +164,29 @@ export const products: Record<string, ProductDetail[]> = {
       'Filtration Efficiency': '99.99% Absolute'
     }
   }],
-  'ss-wire-mesh-cartridge': [{ name: 'SS Wire Mesh Cartridge', application: 'High temperature and high pressure liquid filtration in industrial pipelines', imageId: 'product-industrial-filter' }],
+  'ss-wire-mesh-cartridge': [{ 
+    name: 'SS Wire Mesh Cartridge', 
+    application: 'High temperature and high pressure liquid filtration in industrial pipelines', 
+    imageId: 'product-ss-wire-mesh-1',
+    imageIds: ['product-ss-wire-mesh-1', 'product-ss-wire-mesh-2'],
+    description: 'Stainless Steel Wire Mesh Cartridges are designed for high-temperature and high-pressure filtration applications. Constructed from premium SS304 or SS316 wire cloth, these cartridges offer exceptional durability, back-washability, and reuse potential. They are ideal for removing large particles, protecting downstream equipment, and filtering aggressive fluids that would damage polymer-based media.',
+    features: [
+      'High mechanical strength and pressure resistance',
+      'Wide chemical and thermal compatibility',
+      'Cleanable and reusable for long-term cost savings',
+      'Precise filtration with uniform pore size',
+      'No media migration into the process stream',
+      'Available in multi-layer sintered or single-layer cloth'
+    ],
+    specifications: {
+      'Micron Rating': '5, 10, 25, 40, 75, 100, 200, 500 Micron',
+      'Length': '10", 20", 30", 40"',
+      'Material': 'SS 304 / SS 316 / SS 316L',
+      'Max Operating Temp': 'Up to 300°C',
+      'End Caps': 'DOE, 222, 226, NPT/BSP Threaded',
+      'Max Differential Pressure': '10 Bar'
+    }
+  }],
   'ss-sintered-powder-cartridge': [{ name: 'SS Sintered Powder Cartridge', application: 'Fine filtration for steam, polymers, and aggressive process fluids', imageId: 'product-industrial-filter' }],
   
   // Housing
