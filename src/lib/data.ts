@@ -306,7 +306,30 @@ export const products: Record<string, ProductDetail[]> = {
       'Drain/Vent Ports': '1/2" Tri-Clamp / NPT'
     }
   }],
-  'duplex-filter-housing': [{ name: 'Duplex Filter Housing', application: 'Continuous flow filtration with zero downtime for maintenance', imageId: 'product-industrial-filter' }],
+  'duplex-filter-housing': [{ 
+    name: 'Duplex Filter Housing', 
+    application: 'Continuous flow filtration with zero downtime for maintenance', 
+    imageId: 'product-duplex-housing-1',
+    imageIds: ['product-duplex-housing-1', 'product-duplex-housing-2'],
+    description: 'Duplex Filter Housings are designed for applications where the process flow cannot be interrupted for filter maintenance. These systems consist of two identical filter housings connected by a three-way or four-way valve system, allowing the operator to switch between housings seamlessly. While one housing is in operation, the other can be cleaned or serviced without stopping the main process.',
+    features: [
+      'Continuous operation with zero process downtime',
+      'Seamless switch-over via high-quality valve system',
+      'Heavy-duty Stainless Steel construction (SS304/SS316/SS316L)',
+      'Pressure balance line for safe and smooth transitions',
+      'Independent venting and draining for each housing',
+      'Customizable for bag, cartridge, or basket filter media'
+    ],
+    specifications: {
+      'Housing Material': 'SS 304 / SS 316 / SS 316L',
+      'Switch-over Valve': '3-Way / 4-Way Ball or Butterfly Valve',
+      'Design Pressure': 'Up to 10 Bar (Custom up to 25 Bar)',
+      'Design Temperature': 'Up to 150°C',
+      'Connection Size': '1" to 12" (Flanged / Threaded)',
+      'Seal Material': 'EPDM / Viton / PTFE',
+      'Compliance': 'ASME / CE Standard Construction'
+    }
+  }],
   'multi-bag-filter-housing': [{ name: 'Multi-Bag Filter Housing', application: 'High-volume liquid clarification for large industrial processes', imageId: 'product-industrial-filter' }],
   'multi-cartridge-housing': [{ name: 'Multi-Cartridge Filter Housing', application: 'High-precision large-scale liquid filtration and clarification', imageId: 'product-industrial-filter' }],
   
