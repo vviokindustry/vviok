@@ -30,13 +30,13 @@ export default function Home() {
               className="object-cover"
               priority
             />
-            {/* Very Minimal Overlay for depth */}
+            {/* Minimal Overlay for clarity as requested */}
             <div className="absolute inset-0 bg-black/5" />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent" />
           </div>
         )}
 
-        {/* Hero Content - Removed as requested to highlight the banner */}
+        {/* Hero Content - Removed per user request */}
         <div className="container relative z-10 py-16 px-4">
         </div>
 
@@ -146,7 +146,7 @@ export default function Home() {
           <h2 className="font-headline text-3xl md:text-4xl font-black text-[#00bcd4] mb-8 uppercase tracking-tight">
             Welcome to VVIOK Industry
           </h2>
-          <p className="text-slate-600 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-medium">
+          <p className="text-slate-600 text-sm md:text-base max-w-4xl mx-auto leading-relaxed font-medium">
             VVIOK Industry is a premier manufacturer, supplier, and exporter of a comprehensive range of 
             industrial filtration products. Based in India, we leverage state-of-the-art manufacturing 
             facilities and a commitment to quality to deliver solutions that meet the rigorous demands of 
@@ -190,7 +190,7 @@ export default function Home() {
                 </h3>
                 <Database className="w-6 h-6 text-white opacity-40" />
               </div>
-              <Link href={`/products/${productCategories[1].slug}`} className="relative z-10 text-white font-bold uppercase text-[9px] tracking-[0.2em] flex items-center mt-6">
+              <Link href={`/products/${productCategories[1].slug}`} className="relative z-10 text-white font-bold uppercase text-xs tracking-[0.2em] flex items-center mt-6">
                 Explore Collection <ArrowRight className="ml-2 h-3 w-3" />
               </Link>
             </div>
@@ -200,7 +200,7 @@ export default function Home() {
               <h3 className="text-xl font-black uppercase tracking-tighter text-slate-900 leading-none">
                 Technical<br/><span className="text-primary">Strainer</span>
               </h3>
-              <Link href={`/products/${productCategories[2].slug}`} className="text-slate-400 font-bold uppercase text-[9px] tracking-widest flex items-center">
+              <Link href={`/products/${productCategories[2].slug}`} className="text-slate-400 font-bold uppercase text-xs tracking-widest flex items-center">
                 View Details <ArrowRight className="ml-2 h-3 w-3" />
               </Link>
             </div>
@@ -210,7 +210,7 @@ export default function Home() {
               <h3 className="text-xl font-black uppercase tracking-tighter text-slate-900 leading-none">
                 Vessels<br/><span className="text-[#00bcd4]">& Tanks</span>
               </h3>
-              <Link href={`/products/${productCategories[3].slug}`} className="text-slate-400 font-bold uppercase text-[9px] tracking-widest flex items-center">
+              <Link href={`/products/${productCategories[3].slug}`} className="text-slate-400 font-bold uppercase text-xs tracking-widest flex items-center">
                 Configure <ArrowRight className="ml-2 h-3 w-3" />
               </Link>
             </div>
@@ -266,7 +266,7 @@ export default function Home() {
                     <h3 className="text-base font-bold text-white mb-3 uppercase tracking-tight">
                       {item.title}
                     </h3>
-                    <p className="text-slate-400 text-xs leading-relaxed">
+                    <p className="text-slate-400 text-sm leading-relaxed">
                       {item.description}
                     </p>
                   </div>
