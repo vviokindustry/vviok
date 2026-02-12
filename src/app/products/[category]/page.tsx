@@ -28,44 +28,60 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
     <div className="bg-white min-h-screen">
       {/* Breadcrumbs */}
       <div className="bg-slate-50 border-b">
-        <div className="container py-3 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
-          <Link href="/" className="hover:text-primary flex items-center gap-1">
-            <Home className="h-3 w-3" /> Home
+        <div className="container py-6 flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-muted-foreground overflow-x-auto whitespace-nowrap">
+          <Link href="/" className="hover:text-primary flex items-center gap-2 transition-colors">
+            <Home className="h-4 w-4" /> Home
           </Link>
-          <ChevronRight className="h-3 w-3" />
-          <Link href="/products" className="hover:text-primary">Products</Link>
-          <ChevronRight className="h-3 w-3" />
+          <ChevronRight className="h-4 w-4 opacity-30" />
+          <Link href="/products" className="hover:text-primary transition-colors">Products</Link>
+          <ChevronRight className="h-4 w-4 opacity-30" />
           <span className="text-primary">{currentCategory.name}</span>
         </div>
       </div>
 
-      <section className="py-8 md:py-12">
+      <section className="py-16 md:py-24">
         <div className="container">
-          <div className="mb-10">
-            <h1 className="font-headline text-3xl font-bold text-slate-900">{currentCategory.name}</h1>
-            <p className="text-sm text-muted-foreground mt-1">{currentCategory.description}</p>
+          <div className="mb-16 border-l-8 border-primary pl-8">
+            <h1 className="font-headline text-5xl md:text-7xl font-black text-slate-900 uppercase tracking-tighter leading-[0.9]">
+              {currentCategory.name}
+            </h1>
+            <p className="text-xl md:text-2xl text-slate-500 mt-4 font-medium max-w-3xl">
+              {currentCategory.description}
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
             {subItems.length > 0 ? (
               subItems.map((sub) => {
+                // Try to find the specific image for this subcategory from the products data
+                const subProduct = products[sub.slug]?.[0];
+                const imageId = subProduct?.imageId || currentCategory.imageId;
+                const image = PlaceHolderImages.find(img => img.id === imageId);
+                
                 return (
                   <Link key={sub.slug} href={`/products/${currentCategory.slug}/${sub.slug}`} className="group">
-                    <Card className="relative h-full border-slate-200 shadow-none hover:border-primary/50 transition-colors flex flex-col items-center p-6 rounded-none">
-                      <div className="aspect-square relative w-full mb-6 flex items-center justify-center p-4">
-                        <Image
-                          src={PlaceHolderImages.find(img => img.id === currentCategory.imageId)?.imageUrl || ''}
-                          alt={sub.name}
-                          width={300}
-                          height={300}
-                          className="object-contain transition-transform duration-300 group-hover:scale-105"
-                        />
+                    <Card className="relative h-full border-2 border-slate-100 shadow-xl shadow-slate-200/50 hover:border-primary/50 transition-all duration-500 flex flex-col items-center p-8 rounded-[3rem] bg-white overflow-hidden">
+                      <div className="aspect-square relative w-full mb-8 flex items-center justify-center p-6 bg-slate-50 rounded-[2.5rem] group-hover:bg-white transition-colors duration-500">
+                        {image ? (
+                          <Image
+                            src={image.imageUrl}
+                            alt={sub.name}
+                            width={400}
+                            height={400}
+                            className="object-contain transition-transform duration-700 group-hover:scale-110"
+                          />
+                        ) : (
+                          <div className="text-slate-200 uppercase font-black tracking-widest text-xs">No Image</div>
+                        )}
                       </div>
-                      <div className="text-center mt-auto">
-                        <h3 className="font-headline text-[15px] font-bold text-slate-900 group-hover:text-primary transition-colors line-clamp-2 min-h-[40px]">
+                      <div className="text-center mt-auto w-full">
+                        <span className="text-[10px] font-black uppercase tracking-[0.3em] text-primary mb-2 block">Technical Series</span>
+                        <h3 className="font-headline text-2xl md:text-3xl font-black text-slate-900 group-hover:text-primary transition-colors leading-tight uppercase tracking-tight">
                           {sub.name}
                         </h3>
-                        <p className="text-[13px] font-bold text-slate-500 mt-2">Technical Specification Available</p>
+                        <div className="mt-6 pt-6 border-t border-slate-50 flex items-center justify-center gap-2 text-slate-400 group-hover:text-primary transition-colors font-black uppercase text-[10px] tracking-widest">
+                          View Specifications <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        </div>
                       </div>
                     </Card>
                   </Link>
@@ -76,23 +92,23 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
                 const image = PlaceHolderImages.find((img) => img.id === product.imageId);
                 return (
                   <Link key={product.name} href="/contact" className="group">
-                    <Card className="relative h-full border-slate-200 shadow-none hover:border-primary/50 transition-colors flex flex-col items-center p-6 rounded-none">
-                      <div className="aspect-square relative w-full mb-6 flex items-center justify-center p-4">
+                    <Card className="relative h-full border-2 border-slate-100 shadow-xl shadow-slate-200/50 hover:border-primary/50 transition-all duration-500 flex flex-col items-center p-8 rounded-[3rem] bg-white overflow-hidden">
+                      <div className="aspect-square relative w-full mb-8 flex items-center justify-center p-6 bg-slate-50 rounded-[2.5rem] group-hover:bg-white transition-colors duration-500">
                         {image && (
                           <Image
                             src={image.imageUrl}
                             alt={product.name}
-                            width={300}
-                            height={300}
-                            className="object-contain transition-transform duration-300 group-hover:scale-105"
+                            width={400}
+                            height={400}
+                            className="object-contain transition-transform duration-700 group-hover:scale-110"
                           />
                         )}
                       </div>
-                      <div className="text-center mt-auto">
-                        <h3 className="font-headline text-[15px] font-bold text-slate-900 group-hover:text-primary transition-colors line-clamp-2 min-h-[40px]">
+                      <div className="text-center mt-auto w-full">
+                        <h3 className="font-headline text-2xl md:text-3xl font-black text-slate-900 group-hover:text-primary transition-colors leading-tight uppercase tracking-tight">
                           {product.name}
                         </h3>
-                        <p className="text-[13px] font-bold text-slate-500 mt-2 uppercase tracking-wide">Inquire for Details</p>
+                        <p className="text-xs font-black text-slate-400 mt-4 uppercase tracking-[0.2em]">Inquire for Details</p>
                       </div>
                     </Card>
                   </Link>
@@ -102,10 +118,10 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
           </div>
           
           {(subItems.length === 0 && displayProducts.length === 0) && (
-            <div className="text-center py-20 bg-slate-50 border border-dashed rounded-md">
-              <p className="text-muted-foreground font-medium">No specialized products listed for this category yet.</p>
-              <Button asChild variant="outline" className="mt-4">
-                <Link href="/contact">Contact for Custom Quote</Link>
+            <div className="text-center py-24 bg-slate-50 border-4 border-dashed rounded-[4rem] border-slate-100">
+              <p className="text-slate-400 font-black uppercase tracking-widest text-sm">No specialized products listed for this category yet.</p>
+              <Button asChild size="lg" className="mt-8 rounded-2xl font-black uppercase tracking-widest h-16 px-12">
+                <Link href="/contact">Request Custom Quote</Link>
               </Button>
             </div>
           )}
