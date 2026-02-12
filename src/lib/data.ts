@@ -211,11 +211,34 @@ export const products: Record<string, ProductDetail[]> = {
   }],
   
   // Housing
-  'bag-filter-housing': [{ name: 'Bag Filter Housing', application: 'High-volume liquid clarification and bulk filtration', imageId: 'product-industrial-filter' }],
+  'bag-filter-housing': [{ 
+    name: 'Bag Filter Housing', 
+    application: 'High-volume liquid clarification and bulk filtration', 
+    imageId: 'product-bag-housing-1',
+    imageIds: ['product-bag-housing-1'],
+    description: 'Our Bag Filter Housings are engineered for high-performance liquid filtration across diverse industrial applications. Designed for durability and ease of maintenance, these housings provide a reliable solution for bulk filtration and clarification. Available in various sizes and materials to suit specific flow rates and chemical compatibility requirements.',
+    features: [
+      'Robust construction in SS 304, SS 316, or Carbon Steel',
+      'High dirt-holding capacity for extended operation',
+      'Easy-to-open swing bolt or V-clamp closures for quick bag replacement',
+      'Positive bag sealing to prevent bypass',
+      'Suitable for high flow rates with low pressure drop',
+      'Corrosion-resistant exterior finish'
+    ],
+    specifications: {
+      'Housing Material': 'SS 304 / SS 316 / SS 316L',
+      'Design Pressure': 'Up to 10 Bar (Custom up to 25 Bar)',
+      'Design Temperature': 'Up to 120°C',
+      'Closure Type': 'Swing Bolt / V-Clamp',
+      'Bag Sizes Supported': 'Size 1, Size 2, Size 3, Size 4',
+      'Flow Rate Capacity': 'Up to 200 m³/hr per housing',
+      'Connection Types': 'ANSI/DIN Flanged, NPT/BSP Threaded'
+    }
+  }],
   'catridge-filter-housing': [{ name: 'Cartridge Filter Housing', application: 'Precision liquid and gas processing in sanitary environments', imageId: 'product-industrial-filter' }],
   'stainer-filter-housing': [{ name: 'Strainer Filter Housing', application: 'Pipeline debris removal and coarse filtration protection', imageId: 'product-industrial-filter' }],
   'vent-filter-housing': [{ name: 'Vent Filter Housing', application: 'Sterile air and gas filtration for storage tank venting', imageId: 'product-industrial-filter' }],
-  'tx-duplex-filter-housing': [{ name: 'Duplex Filter Housing', application: 'Continuous flow filtration with zero downtime for maintenance', imageId: 'product-industrial-filter' }],
+  'duplex-filter-housing': [{ name: 'Duplex Filter Housing', application: 'Continuous flow filtration with zero downtime for maintenance', imageId: 'product-industrial-filter' }],
   'multi-bag-filter-housing': [{ name: 'Multi-Bag Filter Housing', application: 'High-volume liquid clarification for large industrial processes', imageId: 'product-industrial-filter' }],
   'multi-cartridge-housing': [{ name: 'Multi-Cartridge Filter Housing', application: 'High-precision large-scale liquid filtration and clarification', imageId: 'product-industrial-filter' }],
   
