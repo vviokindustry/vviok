@@ -49,6 +49,18 @@
       "imageHint": "pleated filter"
     },
     {
+      "id": "product-ptfe-pleated-1",
+      "description": "PTFE Pleated Filter Cartridge - Image 1",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1YVBybfVtiVKGKdaTBYbFqd2J8M3rkZrj",
+      "imageHint": "ptfe filter"
+    },
+    {
+      "id": "product-ptfe-pleated-2",
+      "description": "PTFE Pleated Filter Cartridge - Image 2",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1W_vtF9RUHGvQBIQ7JJ41vLI3oncogWhU",
+      "imageHint": "ptfe filter"
+    },
+    {
       "id": "product-custom-filter",
       "description": "Engineer designing a custom filtration solution.",
       "imageUrl": "https://images.unsplash.com/photo-1485965373059-f07657e9f841?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxlbmdpbmVlcmluZyUyMGRlc2lnbnxlbnwwfHx8fDE3NzA4MTM3NDB8MA&ixlib=rb-4.1.0&q=80&w=1080",

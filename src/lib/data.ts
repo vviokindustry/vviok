@@ -1,4 +1,3 @@
-
 import {
   Factory,
   CheckCircle,
@@ -141,7 +140,29 @@ export const products: Record<string, ProductDetail[]> = {
       'End Caps': 'DOE, 222, 226 styles'
     }
   }],
-  'ptfe-pleated-filter-cartridge': [{ name: 'PTFE Pleated Filter Cartridge', application: 'Aggressive chemicals, solvents, and sterile air filtration', imageId: 'product-industrial-filter' }],
+  'ptfe-pleated-filter-cartridge': [{ 
+    name: 'PTFE Pleated Filter Cartridge', 
+    application: 'Aggressive chemicals, solvents, and sterile air filtration', 
+    imageId: 'product-ptfe-pleated-1',
+    imageIds: ['product-ptfe-pleated-1', 'product-ptfe-pleated-2'],
+    description: 'PTFE Pleated Filter Cartridges are constructed with a naturally hydrophobic PTFE membrane. These cartridges are specifically designed for the filtration of aggressive chemicals, solvents, and air/gas streams. They offer exceptional chemical resistance and high thermal stability, making them the preferred choice for critical applications in chemical and pharmaceutical manufacturing.',
+    features: [
+      'Naturally hydrophobic PTFE membrane',
+      'Superior chemical resistance to acids and solvents',
+      'High thermal stability for demanding environments',
+      'Absolute micron ratings for reliable performance',
+      'High flow rates with low pressure differential',
+      '100% integrity tested during manufacturing'
+    ],
+    specifications: {
+      'Micron Rating': '0.1, 0.22, 0.45 Micron',
+      'Length': '10", 20", 30", 40"',
+      'Membrane Material': 'Hydrophobic PTFE',
+      'Support Material': 'Polypropylene',
+      'Max Operating Temp': '90°C',
+      'Filtration Efficiency': '99.99% Absolute'
+    }
+  }],
   'ss-wire-mesh-cartridge': [{ name: 'SS Wire Mesh Cartridge', application: 'High temperature and high pressure liquid filtration in industrial pipelines', imageId: 'product-industrial-filter' }],
   'ss-sintered-powder-cartridge': [{ name: 'SS Sintered Powder Cartridge', application: 'Fine filtration for steam, polymers, and aggressive process fluids', imageId: 'product-industrial-filter' }],
   
@@ -150,7 +171,7 @@ export const products: Record<string, ProductDetail[]> = {
   'catridge-filter-housing': [{ name: 'Cartridge Filter Housing', application: 'Precision liquid and gas processing in sanitary environments', imageId: 'product-industrial-filter' }],
   'stainer-filter-housing': [{ name: 'Strainer Filter Housing', application: 'Pipeline debris removal and coarse filtration protection', imageId: 'product-industrial-filter' }],
   'vent-filter-housing': [{ name: 'Vent Filter Housing', application: 'Sterile air and gas filtration for storage tank venting', imageId: 'product-industrial-filter' }],
-  'duplex-filter-housing': [{ name: 'Duplex Filter Housing', application: 'Continuous flow filtration with zero downtime for maintenance', imageId: 'product-industrial-filter' }],
+  'tx-duplex-filter-housing': [{ name: 'Duplex Filter Housing', application: 'Continuous flow filtration with zero downtime for maintenance', imageId: 'product-industrial-filter' }],
   'multi-bag-filter-housing': [{ name: 'Multi-Bag Filter Housing', application: 'High-volume liquid clarification for large industrial processes', imageId: 'product-industrial-filter' }],
   'multi-cartridge-housing': [{ name: 'Multi-Cartridge Filter Housing', application: 'High-precision large-scale liquid filtration and clarification', imageId: 'product-industrial-filter' }],
   
