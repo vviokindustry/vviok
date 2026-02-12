@@ -282,7 +282,30 @@ export const products: Record<string, ProductDetail[]> = {
       'Filtration Range': '20 Micron to 10mm Perforation'
     }
   }],
-  'vent-filter-housing': [{ name: 'Vent Filter Housing', application: 'Sterile air and gas filtration for storage tank venting', imageId: 'product-industrial-filter' }],
+  'vent-filter-housing': [{ 
+    name: 'Vent Filter Housing', 
+    application: 'Sterile air and gas filtration for storage tank venting', 
+    imageId: 'product-vent-housing-1',
+    imageIds: ['product-vent-housing-1', 'product-vent-housing-2', 'product-vent-housing-3', 'product-vent-housing-4'],
+    description: 'Vent Filter Housings are specialized components designed for the sterile venting of storage tanks and vessels. These housings ensure that as fluid is drawn from or added to a tank, the air exchanged is free from contaminants, bacteria, and moisture. They are critical for maintaining product purity and integrity in pharmaceutical, biotechnology, and food processing environments.',
+    features: [
+      'High-quality Stainless Steel construction (SS316L preferred)',
+      'Sanitary electropolished internal and external surfaces',
+      'Designed for hydrophilic and hydrophobic pleated cartridges',
+      'Easy disassembly for cleaning and sterilization',
+      'Suitable for SIP (Steam-In-Place) and CIP (Clean-In-Place) processes',
+      'Low holdup volume to prevent microbial growth'
+    ],
+    specifications: {
+      'Material': 'SS 316L / SS 304',
+      'Surface Finish': 'Ra < 0.4 μm (Electropolished)',
+      'Cartridge Fitting': '226 (Code 7) / 222 / DOE',
+      'Inlet/Outlet': 'Tri-Clamp / Flanged / NPT',
+      'Design Pressure': 'Atms / Up to 10 Bar',
+      'Design Temperature': 'Up to 150°C',
+      'Drain/Vent Ports': '1/2" Tri-Clamp / NPT'
+    }
+  }],
   'duplex-filter-housing': [{ name: 'Duplex Filter Housing', application: 'Continuous flow filtration with zero downtime for maintenance', imageId: 'product-industrial-filter' }],
   'multi-bag-filter-housing': [{ name: 'Multi-Bag Filter Housing', application: 'High-volume liquid clarification for large industrial processes', imageId: 'product-industrial-filter' }],
   'multi-cartridge-housing': [{ name: 'Multi-Cartridge Filter Housing', application: 'High-precision large-scale liquid filtration and clarification', imageId: 'product-industrial-filter' }],
