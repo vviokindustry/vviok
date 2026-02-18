@@ -221,7 +221,7 @@ export default function Home() {
             <h2 className="font-headline text-2xl md:text-3xl font-bold mb-4 flex items-center justify-center gap-4 text-[#ffc107]">
               Industries We Serve <ArrowRight className="h-6 w-6" />
             </h2>
-            <p className="text-sm opacity-60 max-w-2xl mx-auto">
+            <p className="text-sm opacity-90 max-w-2xl mx-auto">
               Providing critical filtration solutions to diverse industrial sectors globally.
             </p>
           </div>
@@ -231,7 +231,7 @@ export default function Home() {
                 <div className="flex items-center justify-center h-20 w-20 rounded-full bg-white/5 text-white mb-4 transition-all duration-300 group-hover:bg-[#ffc107] group-hover:scale-110">
                   <industry.icon className="h-10 w-10" />
                 </div>
-                <h3 className="font-bold text-xs uppercase tracking-widest text-white/90">{industry.name}</h3>
+                <h3 className="font-bold text-sm uppercase tracking-widest text-white">{industry.name}</h3>
               </div>
             ))}
           </div>
