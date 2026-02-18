@@ -85,15 +85,15 @@ export default function Home() {
             {/* Our Mission */}
             <div className="flex flex-col items-center text-center px-10 mb-16 md:mb-0 relative">
               <div className="relative mb-10 flex justify-center items-center">
-                <div className="w-32 h-32 rounded-full border-[1.5px] border-slate-200 flex items-center justify-center relative">
+                <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-200 flex items-center justify-center relative">
                   <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-primary border-b-primary rotate-[45deg]"></div>
-                  <Mountain className="w-12 h-12 text-primary" />
+                  <Mountain className="w-16 h-16 text-primary" />
                 </div>
               </div>
-              <h3 className="font-headline text-2xl md:text-3xl font-black uppercase tracking-tight mb-5">
+              <h3 className="font-headline text-3xl md:text-4xl font-black uppercase tracking-tight mb-5">
                 Our <span className="text-primary">Mission</span>
               </h3>
-              <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-xs mx-auto">
+              <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-sm mx-auto">
                 To be the leading provider of innovative, high-quality filtration solutions that improve efficiency.
               </p>
               <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-24 w-[1px] bg-slate-200"></div>
@@ -102,15 +102,15 @@ export default function Home() {
             {/* Our Vision */}
             <div className="flex flex-col items-center text-center px-10 mb-16 md:mb-0 relative">
               <div className="relative mb-10 flex justify-center items-center">
-                <div className="w-32 h-32 rounded-full border-[1.5px] border-slate-200 flex items-center justify-center relative">
+                <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-200 flex items-center justify-center relative">
                   <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-[#00bcd4] border-b-[#00bcd4] rotate-[45deg]"></div>
-                  <Lightbulb className="w-12 h-12 text-[#00bcd4]" />
+                  <Lightbulb className="w-16 h-16 text-[#00bcd4]" />
                 </div>
               </div>
-              <h3 className="font-headline text-2xl md:text-3xl font-black uppercase tracking-tight mb-5">
+              <h3 className="font-headline text-3xl md:text-4xl font-black uppercase tracking-tight mb-5">
                 Our <span className="text-[#00bcd4]">Vision</span>
               </h3>
-              <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-xs mx-auto">
+              <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-sm mx-auto">
                 To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers.
               </p>
               <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-24 w-[1px] bg-slate-200"></div>
@@ -119,15 +119,15 @@ export default function Home() {
             {/* Industries We Serve Card */}
             <div className="flex flex-col items-center text-center px-10 relative">
               <div className="relative mb-10 flex justify-center items-center">
-                <div className="w-32 h-32 rounded-full border-[1.5px] border-slate-200 flex items-center justify-center relative">
+                <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-200 flex items-center justify-center relative">
                   <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-[#ffc107] border-b-[#ffc107] rotate-[45deg]"></div>
-                  <Award className="w-12 h-12 text-[#ffc107]" />
+                  <Award className="w-16 h-16 text-[#ffc107]" />
                 </div>
               </div>
-              <h3 className="font-headline text-2xl md:text-3xl font-black uppercase tracking-tight mb-5 text-[#ffc107] flex items-center gap-3">
-                Industries We Serve <ArrowRight className="h-8 w-8" />
+              <h3 className="font-headline text-3xl md:text-4xl font-black uppercase tracking-tight mb-5 text-[#ffc107] flex items-center gap-3">
+                Industries We Serve <ArrowRight className="h-10 w-10" />
               </h3>
-              <p className="text-slate-500 text-sm md:text-base leading-relaxed max-w-xs mx-auto">
+              <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-sm mx-auto">
                 Providing specialized filtration solutions to meet the unique challenges of diverse industrial sectors globally.
               </p>
             </div>
@@ -139,10 +139,10 @@ export default function Home() {
       {/* Welcome Section */}
       <section className="py-20 md:py-24 bg-slate-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-headline text-2xl md:text-4xl font-black text-[#00bcd4] mb-10 uppercase tracking-tight">
+          <h2 className="font-headline text-3xl md:text-5xl font-black text-[#00bcd4] mb-10 uppercase tracking-tight">
             Welcome to VVIOK Industry
           </h2>
-          <p className="text-slate-500 text-sm md:text-base max-w-5xl mx-auto leading-relaxed font-medium">
+          <p className="text-slate-500 text-base md:text-lg max-w-5xl mx-auto leading-relaxed font-medium">
             VVIOK Industry is a premier manufacturer, supplier, and exporter of a comprehensive range of 
             industrial filtration products. Based in India, we leverage state-of-the-art manufacturing 
             facilities and a commitment to quality to deliver solutions that meet the rigorous demands of 
@@ -169,7 +169,7 @@ export default function Home() {
                 <h3 className="text-3xl md:text-5xl font-black uppercase leading-[0.85] tracking-tighter">
                   Filter<br/><span className="text-[#00bcd4]">Cartridge</span>
                 </h3>
-                <p className="mt-6 text-slate-400 text-sm max-w-xs font-medium">Precision engineered for high-purity liquid and gas processing.</p>
+                <p className="mt-6 text-slate-200 text-sm max-w-xs font-medium">Precision engineered for high-purity liquid and gas processing.</p>
               </div>
               <Button asChild className="relative z-10 bg-primary hover:bg-primary/90 text-white rounded-xl px-8 h-12 font-bold uppercase text-[10px] tracking-widest w-fit mt-8">
                 <Link href={`/products/${productCategories[0].slug}`}>
@@ -231,7 +231,7 @@ export default function Home() {
                 <div className="flex items-center justify-center h-20 w-20 rounded-full bg-white/5 text-white mb-4 transition-all duration-300 group-hover:bg-[#ffc107] group-hover:scale-110">
                   <industry.icon className="h-10 w-10" />
                 </div>
-                <h3 className="font-bold text-[12px] uppercase tracking-widest text-white">{industry.name}</h3>
+                <h3 className="font-bold text-sm uppercase tracking-widest text-white">{industry.name}</h3>
               </div>
             ))}
           </div>
@@ -245,24 +245,24 @@ export default function Home() {
             <h2 className="font-headline text-3xl md:text-5xl font-black text-[#00bcd4] mb-6 uppercase tracking-tight">
               Why You Choose Us?
             </h2>
-            <p className="text-slate-500 text-sm md:text-base max-w-4xl mx-auto leading-relaxed font-medium">
+            <p className="text-slate-500 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-medium">
               VVIOK Industry stands as a beacon of reliability in the global filtration market.
             </p>
           </div>
 
-          <div className="relative max-w-7xl mx-auto">
+          <div className="relative max-w-[1400px] mx-auto">
             <div className="bg-slate-900 rounded-[3rem] p-16 md:p-24 shadow-2xl relative overflow-visible">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-16 relative z-10">
                 {whyChooseUs.slice(0, 3).map((item) => (
                   <div key={item.title} className="flex flex-col items-center text-center">
-                    <div className="w-24 h-24 bg-[#00bcd4] rounded-2xl flex items-center justify-center mb-10 -mt-24 md:-mt-32 shadow-2xl transition-transform hover:scale-110">
-                      <item.icon className="w-10 h-10 text-white" />
+                    <div className="w-32 h-32 bg-[#00bcd4] rounded-3xl flex items-center justify-center mb-10 -mt-24 md:-mt-32 shadow-2xl transition-transform hover:scale-110">
+                      <item.icon className="w-14 h-14 text-white" />
                     </div>
                     
-                    <h3 className="text-lg md:text-xl font-bold text-white mb-5 uppercase tracking-tight whitespace-nowrap">
+                    <h3 className="text-xl md:text-2xl font-bold text-white mb-5 uppercase tracking-tight whitespace-nowrap">
                       {item.title}
                     </h3>
-                    <p className="text-slate-400 text-sm md:text-base leading-relaxed">
+                    <p className="text-slate-400 text-base md:text-lg leading-relaxed">
                       {item.description}
                     </p>
                   </div>
