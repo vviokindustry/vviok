@@ -250,8 +250,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="relative max-w-6xl mx-auto">
-            <div className="bg-slate-900 rounded-[3rem] p-16 md:p-20 shadow-2xl relative overflow-visible">
+          <div className="relative max-w-7xl mx-auto">
+            <div className="bg-slate-900 rounded-[3rem] p-16 md:p-24 shadow-2xl relative overflow-visible">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-16 relative z-10">
                 {whyChooseUs.slice(0, 3).map((item) => (
                   <div key={item.title} className="flex flex-col items-center text-center">
@@ -259,7 +259,7 @@ export default function Home() {
                       <item.icon className="w-10 h-10 text-white" />
                     </div>
                     
-                    <h3 className="text-xl md:text-2xl font-bold text-white mb-5 uppercase tracking-tight">
+                    <h3 className="text-lg md:text-xl font-bold text-white mb-5 uppercase tracking-tight whitespace-nowrap">
                       {item.title}
                     </h3>
                     <p className="text-slate-400 text-sm md:text-base leading-relaxed">
