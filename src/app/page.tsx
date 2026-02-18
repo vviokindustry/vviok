@@ -231,7 +231,7 @@ export default function Home() {
                 <div className="flex items-center justify-center h-20 w-20 rounded-full bg-white/5 text-white mb-4 transition-all duration-300 group-hover:bg-[#ffc107] group-hover:scale-110">
                   <industry.icon className="h-10 w-10" />
                 </div>
-                <h3 className="font-bold text-[10px] uppercase tracking-wider text-white/90">{industry.name}</h3>
+                <h3 className="font-bold text-xs uppercase tracking-widest text-white/90">{industry.name}</h3>
               </div>
             ))}
           </div>
