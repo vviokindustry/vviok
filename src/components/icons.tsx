@@ -1,34 +1,18 @@
 import { cn } from '@/lib/utils';
-import type { SVGProps } from 'react';
+import Image from 'next/image';
+import type { HTMLAttributes, SVGProps } from 'react';
 
-export function Logo(props: SVGProps<SVGSVGElement>) {
+export function Logo({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 200 50"
-      className={cn('h-auto', props.className)}
-      {...props}
-    >
-      <text
-        x="10"
-        y="35"
-        fontFamily="var(--font-headline), sans-serif"
-        fontSize="30"
-        fontWeight="bold"
-        fill="hsl(var(--primary))"
-      >
-        VVIOK
-      </text>
-      <text
-        x="115"
-        y="35"
-        fontFamily="var(--font-body), sans-serif"
-        fontSize="28"
-        fill="hsl(var(--accent))"
-      >
-        Industry
-      </text>
-    </svg>
+    <div className={cn('relative h-10 w-40', className)} {...props}>
+      <Image
+        src="/uploads/Vviok industry logo.png"
+        alt="VVIOK Industry Logo"
+        fill
+        className="object-contain"
+        priority
+      />
+    </div>
   );
 }
 
