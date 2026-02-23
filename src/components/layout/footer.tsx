@@ -24,7 +24,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="space-y-6">
             <div className="bg-white p-2 rounded-sm inline-block">
-              <Logo className="w-40" />
+              <Logo className="w-52" />
             </div>
             <p className="text-sm leading-relaxed max-w-xs text-slate-200">
               VVIOK Industry is a global leader in high-precision industrial filtration and storage solutions, committed to engineering excellence and reliable performance.

@@ -144,7 +144,7 @@ export function Header() {
         <div className="container flex h-20 items-center justify-between px-4 mx-auto">
           <div className="flex items-center gap-6">
             <Link href="/" className="flex items-center gap-4">
-              <Logo className="w-40" />
+              <Logo className="w-52" />
             </Link>
           </div>
 
@@ -164,7 +164,7 @@ export function Header() {
               </SheetTrigger>
               <SheetContent side="left" className="flex flex-col p-0 w-80">
                 <div className="border-b p-6 flex justify-between items-center">
-                  <Logo className="w-40" />
+                  <Logo className="w-52" />
                 </div>
                 <div className="flex-1 overflow-y-auto p-6">
                   <Accordion type="single" collapsible className="w-full">

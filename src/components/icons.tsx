@@ -4,7 +4,7 @@ import type { HTMLAttributes, SVGProps } from 'react';
 
 export function Logo({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div className={cn('relative h-10 w-40', className)} {...props}>
+    <div className={cn('relative h-14 w-52', className)} {...props}>
       <Image
         src="/uploads/Vviok industry logo.png"
         alt="VVIOK Industry Logo"
