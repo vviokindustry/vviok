@@ -409,7 +409,7 @@ export const products: Record<string, ProductDetail[]> = {
   'storage-tank': [{ name: 'Storage Tank', application: 'Industrial liquid storage and containment for chemical and process industries', imageId: '/uploads/Storage Tank Manufacturer -Vviok industry.png' }],
   'pressure-vessel': [{ name: 'Pressure vessel', application: 'Safe processing and storage of liquids and gases under high pressure', imageId: '/uploads/pressure tank.jpeg' }],
   'air-reciver-tank': [{ name: 'Air reciver tank', application: 'Compressed air storage and pressure stabilization for industrial systems', imageId: '/uploads/Air receiver tank manufacturer supplier in india -vviok industry.jpeg' }],
-  'purified-water-storage-tank': [{ name: 'Purified water storage tank', application: 'Sterile water storage for pharmaceutical and food processing', imageId: 'product-custom-filter' }],
+  'purified-water-storage-tank': [{ name: 'Purified water storage tank', application: 'Sterile water storage for pharmaceutical and food processing', imageId: 'product-purified-water-tank' }],
   'ss-pendants': [{ name: 'SS pendants', application: 'Sanitary support systems for industrial equipment and piping', imageId: 'product-custom-filter' }],
 };
 

@@ -275,6 +275,12 @@
       "description": "A busy general manufacturing floor.",
       "imageUrl": "https://images.unsplash.com/photo-1568561586426-10f4ce2dafc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYWN0b3J5JTIwZmxvb3J8ZW58MHx8fHwxNzcwODExNjk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "factory floor"
+    },
+    {
+      "id": "product-purified-water-tank",
+      "description": "Purified water storage tank for pharmaceutical and food processing.",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1qTwEl86Wkwp8PKbqwfHgOIcomigYAlU2",
+      "imageHint": "water tank"
     }
   ]
 }
