@@ -287,6 +287,12 @@
       "description": "Conical Strainer for industrial pipelines.",
       "imageUrl": "https://drive.google.com/uc?export=view&id=1UslYthjyuZ_D63T4JJVrteE9wXC5HnAG",
       "imageHint": "conical strainer"
+    },
+    {
+      "id": "product-pleated-strainer",
+      "description": "Pleated Strainer for increased surface area filtration.",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1dEa2Yy21c_H57fl4D-zI1kDj2nD1tuCP",
+      "imageHint": "pleated strainer"
     }
   ]
 }

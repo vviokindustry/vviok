@@ -403,7 +403,7 @@ export const products: Record<string, ProductDetail[]> = {
   }],
   'taper-basket-strainers': [{ name: 'Taper Basket Strainers', application: 'Efficient coarse filtration in high-flow pipelines with tapered design', imageId: '/uploads/SS Basket.jpg' }],
   'conical-strainers': [{ name: 'Conical Strainers', application: 'Temporary or permanent protection for pumps, valves, and other equipment', imageId: 'product-conical-strainer' }],
-  'pleated-strainers': [{ name: 'Pleated Strainers', application: 'Increased surface area for extended service life in critical filtration tasks', imageId: 'product-industrial-filter' }],
+  'pleated-strainers': [{ name: 'Pleated Strainers', application: 'Increased surface area for extended service life in critical filtration tasks', imageId: 'product-pleated-strainer' }],
   
   // Vessels
   'storage-tank': [{ name: 'Storage Tank', application: 'Industrial liquid storage and containment for chemical and process industries', imageId: '/uploads/Storage Tank Manufacturer -Vviok industry.png' }],
