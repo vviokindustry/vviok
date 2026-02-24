@@ -63,7 +63,6 @@ export function Header() {
                     'flex items-center gap-1 text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-primary outline-none focus:ring-0 px-4 h-20',
                     pathname.startsWith(link.href) ? 'text-primary' : 'text-slate-800'
                   )}
-                  onClick={() => router.push(link.href)}
                 >
                   {link.label} <ChevronDown className={cn("h-4 w-4 transition-transform", isProductsOpen && "rotate-180")} />
                 </button>
