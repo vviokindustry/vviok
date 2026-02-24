@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Menu, Mail, Phone, ChevronDown, ChevronRight, ArrowRight } from 'lucide-react';
+import { Menu, Mail, Phone, ChevronDown, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -95,9 +95,6 @@ export function Header() {
                           sideOffset={2}
                           className="w-[350px] p-0 border-none shadow-2xl bg-white rounded-none min-h-full py-6 px-8 border-l-2 border-primary/10 animate-in slide-in-from-left-2 duration-200"
                         >
-                          <div className="mb-4">
-                            <h4 className="font-headline text-[10px] font-black uppercase text-primary tracking-[0.3em] mb-4">Specialized Series</h4>
-                          </div>
                           <div className="flex flex-col space-y-4">
                             {cat.subcategories?.map((sub) => (
                               <DropdownMenuItem key={sub.slug} asChild className="p-0 focus:bg-transparent">
