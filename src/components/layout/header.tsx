@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Menu, Mail, Phone, ChevronDown, ChevronRight, Search, ArrowRight } from 'lucide-react';
+import { Menu, Mail, Phone, ChevronDown, ChevronRight, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -153,9 +153,6 @@ export function Header() {
               <Mail className="h-3 w-3 text-yellow-400" /> Email: <a href="mailto:vviokindustry2021@gmail.com" className="hover:text-yellow-400 font-bold transition-colors">vviokindustry2021@gmail.com</a>
             </span>
           </div>
-          <div className="flex items-center">
-            <Search className="h-4 w-4 cursor-pointer hover:text-yellow-400 transition-colors" />
-          </div>
         </div>
       </div>
 
@@ -173,10 +170,6 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Button asChild className="hidden lg:flex bg-primary hover:bg-primary/90 text-white rounded-full font-black uppercase tracking-widest px-8 h-12 text-[12px] shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95">
-              <Link href="/contact">Get a Quote <ArrowRight className="ml-2 h-4 w-4" /></Link>
-            </Button>
-
             <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="lg:hidden">
@@ -243,9 +236,6 @@ export function Header() {
                     <Phone className="h-4 w-4 text-primary" />
                     <a href="tel:+919106472588">+91 91064 72588</a>
                   </div>
-                  <Button asChild className="w-full bg-primary rounded-full uppercase font-bold tracking-wide">
-                    <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Get a Quote</Link>
-                  </Button>
                 </div>
               </SheetContent>
             </Sheet>
