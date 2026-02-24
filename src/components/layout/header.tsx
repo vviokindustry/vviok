@@ -45,17 +45,16 @@ export function Header() {
     setMounted(true);
   }, []);
 
-  // Avoid hydration mismatch by rendering a consistent structure
   const renderNav = () => (
-    <nav className="hidden items-center space-x-1 md:flex">
+    <nav className="hidden items-center lg:flex">
       {navLinks.map((link) => (
         link.categories ? (
           <DropdownMenu key={link.label}>
             <DropdownMenuTrigger asChild>
               <button 
                 className={cn(
-                  'flex items-center gap-1 text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-primary outline-none focus:ring-0 px-4 h-20 data-[state=open]:bg-slate-50',
-                  pathname.startsWith(link.href) ? 'text-primary' : 'text-slate-700'
+                  'flex items-center gap-1 text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-primary outline-none focus:ring-0 px-4 h-20',
+                  pathname.startsWith(link.href) ? 'text-primary' : 'text-slate-800'
                 )}
                 onClick={() => router.push(link.href)}
               >
@@ -110,7 +109,7 @@ export function Header() {
             href={link.href}
             className={cn(
               'text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-primary h-20 flex items-center px-4',
-              pathname === link.href ? 'text-primary' : 'text-slate-700'
+              pathname === link.href ? 'text-primary' : 'text-slate-800'
             )}
           >
             {link.label}
@@ -127,37 +126,39 @@ export function Header() {
         <div className="container flex justify-between items-center px-4 mx-auto">
           <div className="flex gap-8">
             <span className="flex items-center gap-2">
-              <Phone className="h-3 w-3" /> Office: <a href="tel:+919106472588" className="hover:text-yellow-400">+91 91064 72588</a>
+              <Phone className="h-3 w-3" /> Office: <a href="tel:+919106472588" className="hover:text-yellow-400 font-bold transition-colors">+91 91064 72588</a>
             </span>
             <span className="flex items-center gap-2">
-              <Mail className="h-3 w-3" /> Email: <a href="mailto:vviokindustry2021@gmail.com" className="hover:text-yellow-400">vviokindustry2021@gmail.com</a>
+              <Mail className="h-3 w-3" /> Email: <a href="mailto:vviokindustry2021@gmail.com" className="hover:text-yellow-400 font-bold transition-colors">vviokindustry2021@gmail.com</a>
             </span>
           </div>
-          <div className="flex items-center gap-4">
-            <Search className="h-3.5 w-3.5 cursor-pointer hover:text-yellow-400 transition-colors" />
+          <div className="flex items-center">
+            <Search className="h-4 w-4 cursor-pointer hover:text-yellow-400 transition-colors" />
           </div>
         </div>
       </div>
 
       {/* Main Header */}
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
+      <header className="sticky top-0 z-50 w-full border-b bg-white">
         <div className="container flex h-20 items-center justify-between px-4 mx-auto">
-          <div className="flex items-center gap-6">
-            <Link href="/" className="flex items-center gap-4">
-              <Logo className="w-52" />
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center">
+              <Logo className="w-64" />
             </Link>
           </div>
 
-          {mounted ? renderNav() : <div className="hidden md:flex items-center space-x-8 px-4 h-20 text-[13px] font-bold text-slate-400">Loading...</div>}
+          <div className="flex-1 flex justify-center">
+            {mounted ? renderNav() : <div className="hidden lg:flex items-center space-x-8 px-4 h-20 text-[13px] font-bold text-slate-400">Loading...</div>}
+          </div>
 
           <div className="flex items-center gap-4">
-            <Button asChild className="hidden lg:flex bg-primary hover:bg-primary/90 text-white rounded-full font-bold uppercase tracking-wide px-8 h-12">
+            <Button asChild className="hidden lg:flex bg-primary hover:bg-primary/90 text-white rounded-full font-bold uppercase tracking-widest px-8 h-12 text-[12px] shadow-lg shadow-primary/20">
               <Link href="/contact">Get a Quote <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
 
             <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
+                <Button variant="ghost" size="icon" className="lg:hidden">
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Toggle Menu</span>
                 </Button>
