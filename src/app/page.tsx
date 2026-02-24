@@ -103,12 +103,12 @@ export default function Home() {
             <div className="flex flex-col items-center text-center px-10 mb-16 md:mb-0 relative">
               <div className="relative mb-10 flex justify-center items-center">
                 <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-100 flex items-center justify-center relative">
-                  <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-[#00bcd4] border-b-[#00bcd4] rotate-[45deg]"></div>
-                  <Lightbulb className="w-16 h-16 text-[#00bcd4]" />
+                  <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-primary border-b-primary rotate-[45deg]"></div>
+                  <Lightbulb className="w-16 h-16 text-primary" />
                 </div>
               </div>
               <h3 className="font-headline text-3xl md:text-4xl font-black uppercase tracking-tight mb-5">
-                OUR <span className="text-[#00bcd4]">VISION</span>
+                OUR <span className="text-primary">VISION</span>
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
                 To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers.
@@ -139,7 +139,7 @@ export default function Home() {
       {/* Welcome Section */}
       <section className="py-20 md:py-24 bg-slate-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-headline text-3xl md:text-5xl font-black text-[#00bcd4] mb-10 uppercase tracking-tight">
+          <h2 className="font-headline text-3xl md:text-5xl font-black text-primary mb-10 uppercase tracking-tight">
             Welcome to VVIOK Industry
           </h2>
           <p className="text-slate-500 text-base md:text-lg max-w-5xl mx-auto leading-relaxed font-medium">
@@ -165,9 +165,9 @@ export default function Home() {
             {/* 1. Filter Cartridge */}
             <div className="lg:col-span-2 lg:row-span-2 rounded-[2.5rem] bg-slate-900 p-10 flex flex-col justify-between group relative overflow-hidden text-white shadow-2xl shadow-slate-200">
               <div className="relative z-10">
-                <span className="text-[#00bcd4] text-[10px] font-bold uppercase tracking-[0.3em] block mb-4">Master Solutions</span>
+                <span className="text-primary text-[10px] font-bold uppercase tracking-[0.3em] block mb-4">Master Solutions</span>
                 <h3 className="text-3xl md:text-5xl font-black uppercase leading-[0.85] tracking-tighter">
-                  Filter<br/><span className="text-[#00bcd4]">Cartridge</span>
+                  Filter<br/><span className="text-primary">Cartridge</span>
                 </h3>
                 <p className="mt-6 text-slate-200 text-sm max-w-xs font-medium">Precision engineered for high-purity liquid and gas processing.</p>
               </div>
@@ -179,7 +179,7 @@ export default function Home() {
             </div>
 
             {/* 2. Housing */}
-            <div className="lg:col-span-2 rounded-[2.5rem] bg-[#00bcd4] p-8 flex flex-col justify-between group relative overflow-hidden text-white shadow-xl shadow-cyan-100">
+            <div className="lg:col-span-2 rounded-[2.5rem] bg-primary p-8 flex flex-col justify-between group relative overflow-hidden text-white shadow-xl shadow-cyan-100">
               <div className="flex justify-between items-start relative z-10">
                 <h3 className="text-2xl font-black uppercase tracking-tighter leading-none">
                   Industrial<br/>Housing
@@ -202,9 +202,9 @@ export default function Home() {
             </div>
 
             {/* 4. Vessels */}
-            <div className="rounded-[2.5rem] bg-slate-50 border-2 border-slate-100 p-8 flex flex-col justify-between group hover:border-[#00bcd4]/30 transition-all duration-500 shadow-lg shadow-slate-100">
+            <div className="rounded-[2.5rem] bg-slate-50 border-2 border-slate-100 p-8 flex flex-col justify-between group hover:border-primary/30 transition-all duration-500 shadow-lg shadow-slate-100">
               <h3 className="text-xl font-black uppercase tracking-tighter text-slate-900 leading-none">
-                Vessels<br/><span className="text-[#00bcd4]">& Tanks</span>
+                Vessels<br/><span className="text-primary">& Tanks</span>
               </h3>
               <Link href={`/products/${productCategories[3].slug}`} className="text-slate-400 font-bold uppercase text-xs tracking-widest flex items-center">
                 Configure <ArrowRight className="ml-2 h-3 w-3" />
@@ -242,7 +242,7 @@ export default function Home() {
       <section className="py-24 md:py-32 bg-white overflow-hidden relative">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20 relative">
-            <h2 className="font-headline text-3xl md:text-5xl font-black text-[#00bcd4] mb-6 uppercase tracking-tight">
+            <h2 className="font-headline text-3xl md:text-5xl font-black text-primary mb-6 uppercase tracking-tight">
               Why You Choose Us?
             </h2>
             <p className="text-slate-500 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-medium">
@@ -255,7 +255,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-16 relative z-10">
                 {whyChooseUs.slice(0, 3).map((item) => (
                   <div key={item.title} className="flex flex-col items-center text-center">
-                    <div className="w-32 h-32 bg-[#00bcd4] rounded-3xl flex items-center justify-center mb-10 -mt-24 md:-mt-32 shadow-2xl transition-transform hover:scale-110">
+                    <div className="w-32 h-32 bg-primary rounded-3xl flex items-center justify-center mb-10 -mt-24 md:-mt-32 shadow-2xl transition-transform hover:scale-110">
                       <item.icon className="w-14 h-14 text-white" />
                     </div>
                     
