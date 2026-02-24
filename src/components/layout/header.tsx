@@ -167,6 +167,9 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-4">
+            <Button asChild className="hidden lg:flex bg-primary hover:bg-primary/90 text-white font-black uppercase text-[12px] tracking-widest px-6 rounded-none h-12 shadow-md">
+              <Link href="/contact">Get a Quote</Link>
+            </Button>
             <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="lg:hidden">

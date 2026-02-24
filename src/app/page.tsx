@@ -83,51 +83,51 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 items-start">
             
             {/* Our Mission */}
-            <div className="flex flex-col items-center text-center px-10 mb-16 md:mb-0 relative">
+            <div className="flex flex-col items-center text-center px-10 mb-16 md:mb-0 relative group">
               <div className="relative mb-10 flex justify-center items-center">
-                <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-200 flex items-center justify-center relative">
-                  <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-primary border-b-primary rotate-[45deg]"></div>
+                <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-100 flex items-center justify-center relative">
+                  <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-primary border-r-primary border-b-primary rotate-[45deg]"></div>
                   <Mountain className="w-16 h-16 text-primary" />
                 </div>
               </div>
               <h3 className="font-headline text-3xl md:text-4xl font-black uppercase tracking-tight mb-5">
-                Our <span className="text-primary">Mission</span>
+                OUR <span className="text-primary">MISSION</span>
               </h3>
-              <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-sm mx-auto">
+              <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
                 To be the leading provider of innovative, high-quality filtration solutions that improve efficiency.
               </p>
-              <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-24 w-[1px] bg-slate-200"></div>
+              <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-24 w-[1px] bg-slate-100"></div>
             </div>
 
             {/* Our Vision */}
             <div className="flex flex-col items-center text-center px-10 mb-16 md:mb-0 relative">
               <div className="relative mb-10 flex justify-center items-center">
-                <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-200 flex items-center justify-center relative">
+                <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-100 flex items-center justify-center relative">
                   <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-[#00bcd4] border-b-[#00bcd4] rotate-[45deg]"></div>
                   <Lightbulb className="w-16 h-16 text-[#00bcd4]" />
                 </div>
               </div>
               <h3 className="font-headline text-3xl md:text-4xl font-black uppercase tracking-tight mb-5">
-                Our <span className="text-[#00bcd4]">Vision</span>
+                OUR <span className="text-[#00bcd4]">VISION</span>
               </h3>
-              <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-sm mx-auto">
+              <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
                 To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers.
               </p>
-              <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-24 w-[1px] bg-slate-200"></div>
+              <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-24 w-[1px] bg-slate-100"></div>
             </div>
 
             {/* Industries We Serve Card */}
             <div className="flex flex-col items-center text-center px-10 relative">
               <div className="relative mb-10 flex justify-center items-center">
-                <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-200 flex items-center justify-center relative">
+                <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-100 flex items-center justify-center relative">
                   <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-[#ffc107] border-b-[#ffc107] rotate-[45deg]"></div>
                   <Award className="w-16 h-16 text-[#ffc107]" />
                 </div>
               </div>
-              <h3 className="font-headline text-3xl md:text-4xl font-black uppercase tracking-tight mb-5 text-[#ffc107] flex items-center gap-3">
-                Industries We Serve <ArrowRight className="h-10 w-10" />
+              <h3 className="font-headline text-3xl md:text-4xl font-black uppercase tracking-tight mb-5 text-[#ffc107] flex items-center gap-3 justify-center">
+                INDUSTRIES WE SERVE <ArrowRight className="h-10 w-10" />
               </h3>
-              <p className="text-slate-500 text-base md:text-lg leading-relaxed max-w-sm mx-auto">
+              <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
                 Providing specialized filtration solutions to meet the unique challenges of diverse industrial sectors globally.
               </p>
             </div>
