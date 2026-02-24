@@ -281,6 +281,12 @@
       "description": "Purified water storage tank for pharmaceutical and food processing.",
       "imageUrl": "https://drive.google.com/uc?export=view&id=1qTwEl86Wkwp8PKbqwfHgOIcomigYAlU2",
       "imageHint": "water tank"
+    },
+    {
+      "id": "product-conical-strainer",
+      "description": "Conical Strainer for industrial pipelines.",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1UslYthjyuZ_D63T4JJVrteE9wXC5HnAG",
+      "imageHint": "conical strainer"
     }
   ]
 }
