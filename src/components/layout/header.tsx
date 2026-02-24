@@ -60,9 +60,13 @@ export function Header() {
               <DropdownMenuTrigger asChild>
                 <button 
                   className={cn(
-                    'flex items-center gap-1 text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-primary outline-none focus:ring-0 px-4 h-20',
+                    'font-headline flex items-center gap-1 text-[13px] font-extrabold uppercase tracking-widest transition-colors hover:text-primary outline-none focus:ring-0 px-4 h-20',
                     pathname.startsWith(link.href) ? 'text-primary' : 'text-slate-800'
                   )}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsProductsOpen(!isProductsOpen);
+                  }}
                 >
                   {link.label} <ChevronDown className={cn("h-4 w-4 transition-transform", isProductsOpen && "rotate-180")} />
                 </button>
@@ -77,13 +81,13 @@ export function Header() {
                   {link.categories.map((cat) => (
                     <DropdownMenuSub key={cat.slug}>
                       <DropdownMenuSubTrigger 
-                        className="flex items-center justify-between py-4 px-6 hover:bg-slate-50 data-[state=open]:text-primary text-slate-700 font-bold text-[13px] cursor-pointer group outline-none uppercase tracking-widest border-b border-slate-50 last:border-0"
+                        className="flex items-center justify-between py-4 px-6 hover:bg-slate-50 data-[state=open]:text-primary text-slate-700 font-black text-[12px] cursor-pointer group outline-none uppercase tracking-widest border-b border-slate-50 last:border-0"
                         onClick={() => {
                           router.push(`/products/${cat.slug}`);
                           setIsProductsOpen(false);
                         }}
                       >
-                        <span>{cat.name}</span>
+                        <span className="font-headline">{cat.name}</span>
                         <ChevronRight className="h-4 w-4 text-slate-300 group-data-[state=open]:text-primary transition-transform group-hover:translate-x-1" />
                       </DropdownMenuSubTrigger>
                       <DropdownMenuPortal>
@@ -92,17 +96,17 @@ export function Header() {
                           className="w-[350px] p-0 border-none shadow-2xl bg-white rounded-none min-h-full py-6 px-8 border-l-2 border-primary/10 animate-in slide-in-from-left-2 duration-200"
                         >
                           <div className="mb-4">
-                            <h4 className="text-[10px] font-black uppercase text-primary tracking-[0.3em] mb-4">Specialized Series</h4>
+                            <h4 className="font-headline text-[10px] font-black uppercase text-primary tracking-[0.3em] mb-4">Specialized Series</h4>
                           </div>
                           <div className="flex flex-col space-y-4">
                             {cat.subcategories?.map((sub) => (
                               <DropdownMenuItem key={sub.slug} asChild className="p-0 focus:bg-transparent">
                                 <Link 
                                   href={`/products/${cat.slug}/${sub.slug}`} 
-                                  className="text-slate-600 hover:text-primary font-bold text-[12px] transition-all cursor-pointer flex items-center gap-3 group"
+                                  className="font-headline text-slate-600 hover:text-primary font-bold text-[12px] transition-all cursor-pointer flex items-center gap-3 group"
                                   onClick={() => setIsProductsOpen(false)}
                                 >
-                                  <span className="h-1 w-1 rounded-full bg-slate-300 group-hover:bg-primary transition-colors"></span>
+                                  <span className="h-1.5 w-1.5 rounded-full bg-slate-300 group-hover:bg-primary transition-colors"></span>
                                   <span>{sub.name}</span>
                                 </Link>
                               </DropdownMenuItem>
@@ -121,7 +125,7 @@ export function Header() {
             key={link.href}
             href={link.href}
             className={cn(
-              'text-[13px] font-bold uppercase tracking-wider transition-colors hover:text-primary h-20 flex items-center px-4 relative group',
+              'font-headline text-[13px] font-extrabold uppercase tracking-widest transition-colors hover:text-primary h-20 flex items-center px-4 relative group',
               pathname === link.href ? 'text-primary' : 'text-slate-800'
             )}
           >
@@ -169,7 +173,7 @@ export function Header() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Button asChild className="hidden lg:flex bg-primary hover:bg-primary/90 text-white rounded-full font-bold uppercase tracking-widest px-8 h-12 text-[12px] shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95">
+            <Button asChild className="hidden lg:flex bg-primary hover:bg-primary/90 text-white rounded-full font-black uppercase tracking-widest px-8 h-12 text-[12px] shadow-lg shadow-primary/20 transition-all hover:scale-105 active:scale-95">
               <Link href="/contact">Get a Quote <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
 
@@ -189,7 +193,7 @@ export function Header() {
                     {navLinks.map((link) => (
                       link.categories ? (
                         <AccordionItem key={link.label} value={link.label} className="border-none">
-                          <AccordionTrigger className="text-sm font-bold uppercase tracking-wider py-4 hover:no-underline">
+                          <AccordionTrigger className="font-headline text-sm font-bold uppercase tracking-wider py-4 hover:no-underline">
                             {link.label}
                           </AccordionTrigger>
                           <AccordionContent className="pb-2">
@@ -198,7 +202,7 @@ export function Header() {
                                 <div key={cat.slug} className="space-y-2">
                                   <Link 
                                     href={`/products/${cat.slug}`}
-                                    className="text-sm font-bold text-primary block uppercase"
+                                    className="font-headline text-sm font-bold text-primary block uppercase"
                                     onClick={() => setMobileMenuOpen(false)}
                                   >
                                     {cat.name}
@@ -208,7 +212,7 @@ export function Header() {
                                       <Link 
                                         key={sub.slug} 
                                         href={`/products/${cat.slug}/${sub.slug}`}
-                                        className="text-sm text-slate-600 hover:text-primary transition-colors"
+                                        className="font-headline text-sm text-slate-600 hover:text-primary transition-colors"
                                         onClick={() => setMobileMenuOpen(false)}
                                       >
                                         – {sub.name}
@@ -224,7 +228,7 @@ export function Header() {
                         <div key={link.href} className="py-4 border-b">
                           <Link
                             href={link.href}
-                            className="text-sm font-bold uppercase tracking-wider hover:text-primary transition-colors"
+                            className="font-headline text-sm font-bold uppercase tracking-wider hover:text-primary transition-colors"
                             onClick={() => setMobileMenuOpen(false)}
                           >
                             {link.label}
