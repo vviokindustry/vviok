@@ -139,7 +139,7 @@ export default function Home() {
       {/* Welcome Section */}
       <section className="py-20 md:py-24 bg-slate-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-headline text-3xl md:text-5xl font-black text-primary mb-10 uppercase tracking-tight">
+          <h2 className="font-headline text-3xl md:text-5xl font-black text-[#a5be1d] mb-10 uppercase tracking-tight">
             Welcome to VVIOK Industry
           </h2>
           <p className="text-slate-500 text-base md:text-lg max-w-5xl mx-auto leading-relaxed font-medium">
