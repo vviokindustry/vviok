@@ -140,7 +140,7 @@ export function Header() {
   return (
     <div className="w-full">
       {/* Top Contact Bar */}
-      <div className="bg-[#4a2e82] text-white py-2.5 text-[11px] font-bold hidden md:block">
+      <div className="bg-[#a5be1d] text-white py-2.5 text-[11px] font-bold hidden md:block">
         <div className="container flex justify-between items-center px-4 mx-auto">
           <div className="flex gap-8">
             <span className="flex items-center gap-2">
