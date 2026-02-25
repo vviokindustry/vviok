@@ -210,7 +210,7 @@ export default function Home() {
             {/* 3. Strainer */}
             <div className="rounded-[3rem] bg-white border-2 border-slate-50 p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl hover:border-[#a5be1d]/20">
               {cat3Img && (
-                <div className="absolute inset-0 z-0 opacity-[0.05] transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
+                <div className="absolute inset-0 z-0 opacity-[0.15] transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
                   <Image src={cat3Img.imageUrl} alt="Strainer Bg" fill className="object-cover" />
                 </div>
               )}
@@ -225,7 +225,7 @@ export default function Home() {
             {/* 4. Vessels */}
             <div className="rounded-[3rem] bg-slate-50/50 border-2 border-slate-50 p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl hover:border-[#a5be1d]/20">
               {cat4Img && (
-                <div className="absolute inset-0 z-0 opacity-[0.05] transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
+                <div className="absolute inset-0 z-0 opacity-[0.15] transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
                   <Image src={cat4Img.imageUrl} alt="Vessels Bg" fill className="object-cover" />
                 </div>
               )}
