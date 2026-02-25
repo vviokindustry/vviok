@@ -179,7 +179,7 @@ export default function Home() {
             </div>
 
             {/* 2. Housing */}
-            <div className="lg:col-span-2 rounded-[2.5rem] bg-primary p-8 flex flex-col justify-between group relative overflow-hidden text-white shadow-xl shadow-cyan-100">
+            <div className="lg:col-span-2 rounded-[2.5rem] bg-primary p-8 flex flex-col justify-between group relative overflow-hidden text-white shadow-xl shadow-slate-100">
               <div className="flex justify-between items-start relative z-10">
                 <h3 className="text-2xl font-black uppercase tracking-tighter leading-none">
                   Industrial<br/>Housing
@@ -192,21 +192,21 @@ export default function Home() {
             </div>
 
             {/* 3. Strainer */}
-            <div className="rounded-[2.5rem] bg-white border-2 border-slate-100 p-8 flex flex-col justify-between group hover:border-primary/30 transition-all duration-500 shadow-lg shadow-slate-100">
+            <div className="rounded-[2.5rem] bg-white border-2 border-slate-100 p-8 flex flex-col justify-between group hover:border-primary transition-all duration-500 shadow-lg shadow-slate-100">
               <h3 className="text-xl font-black uppercase tracking-tighter text-slate-900 leading-none">
                 Technical<br/><span className="text-primary">Strainer</span>
               </h3>
-              <Link href={`/products/${productCategories[2].slug}`} className="text-slate-400 font-bold uppercase text-xs tracking-widest flex items-center">
+              <Link href={`/products/${productCategories[2].slug}`} className="text-slate-400 font-bold uppercase text-xs tracking-widest flex items-center group-hover:text-primary transition-colors">
                 View Details <ArrowRight className="ml-2 h-3 w-3" />
               </Link>
             </div>
 
             {/* 4. Vessels */}
-            <div className="rounded-[2.5rem] bg-slate-50 border-2 border-slate-100 p-8 flex flex-col justify-between group hover:border-primary/30 transition-all duration-500 shadow-lg shadow-slate-100">
+            <div className="rounded-[2.5rem] bg-slate-50 border-2 border-slate-100 p-8 flex flex-col justify-between group hover:border-primary transition-all duration-500 shadow-lg shadow-slate-100">
               <h3 className="text-xl font-black uppercase tracking-tighter text-slate-900 leading-none">
                 Vessels<br/><span className="text-primary">& Tanks</span>
               </h3>
-              <Link href={`/products/${productCategories[3].slug}`} className="text-slate-400 font-bold uppercase text-xs tracking-widest flex items-center">
+              <Link href={`/products/${productCategories[3].slug}`} className="text-slate-400 font-bold uppercase text-xs tracking-widest flex items-center group-hover:text-primary transition-colors">
                 Configure <ArrowRight className="ml-2 h-3 w-3" />
               </Link>
             </div>
