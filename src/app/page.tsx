@@ -38,20 +38,20 @@ export default function Home() {
 
         {/* Feature Boxes */}
         <div className="absolute bottom-0 left-0 w-full hidden lg:block translate-y-1/2 z-30">
-          <div className="container grid grid-cols-3">
-            <div className="bg-[#00acc1] p-8 flex items-center gap-6 transition-transform hover:-translate-y-1 shadow-2xl">
+          <div className="container grid grid-cols-3 px-0">
+            <div className="bg-[#00897b] p-8 flex items-center gap-6 transition-transform hover:-translate-y-1 shadow-2xl">
               <Settings className="h-10 w-10 text-white shrink-0" />
               <div className="text-left">
                 <h3 className="font-bold text-base uppercase leading-tight tracking-wide text-white">Industrial Housings</h3>
               </div>
             </div>
-            <div className="bg-[#0097a7] p-8 flex items-center gap-6 border-x border-white/10 transition-transform hover:-translate-y-1 shadow-2xl">
+            <div className="bg-[#00796b] p-8 flex items-center gap-6 border-x border-white/10 transition-transform hover:-translate-y-1 shadow-2xl">
               <Database className="h-10 w-10 text-white shrink-0" />
               <div className="text-left">
                 <h3 className="font-bold text-base uppercase leading-tight tracking-wide text-white">Filtration Cartridges</h3>
               </div>
             </div>
-            <div className="bg-[#00838f] p-8 flex items-center gap-6 transition-transform hover:-translate-y-1 shadow-2xl">
+            <div className="bg-[#00695c] p-8 flex items-center gap-6 transition-transform hover:-translate-y-1 shadow-2xl">
               <Container className="h-10 w-10 text-white shrink-0" />
               <div className="text-left">
                 <h3 className="font-bold text-base uppercase leading-tight tracking-wide text-white">Stainless Steel Tanks</h3>
@@ -63,15 +63,15 @@ export default function Home() {
 
       {/* Mobile Feature Boxes */}
       <div className="grid grid-cols-1 md:grid-cols-3 lg:hidden relative z-10">
-        <div className="bg-[#00acc1] p-6 flex items-center gap-4 text-white border-b border-white/10">
+        <div className="bg-[#00897b] p-6 flex items-center gap-4 text-white border-b border-white/10">
           <Settings className="h-8 w-8 shrink-0" />
           <h3 className="font-bold uppercase tracking-wide text-white text-sm">Industrial Housings</h3>
         </div>
-        <div className="bg-[#0097a7] p-6 flex items-center gap-4 text-white border-b border-white/10">
+        <div className="bg-[#00796b] p-6 flex items-center gap-4 text-white border-b border-white/10">
           <Database className="h-8 w-8 shrink-0" />
           <h3 className="font-bold uppercase tracking-wide text-white text-sm">Filtration Cartridges</h3>
         </div>
-        <div className="bg-[#00838f] p-6 flex items-center gap-4 text-white">
+        <div className="bg-[#00695c] p-6 flex items-center gap-4 text-white">
           <Container className="h-8 w-8 shrink-0" />
           <h3 className="font-bold uppercase tracking-wide text-white text-sm">Stainless Steel Tanks</h3>
         </div>
