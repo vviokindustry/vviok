@@ -112,12 +112,12 @@ export default function Home() {
             <div className="flex flex-col items-center text-center px-6 md:px-4 lg:px-10 mb-16 md:mb-0 relative">
               <div className="relative mb-10 flex justify-center items-center">
                 <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-100 flex items-center justify-center relative">
-                  <div className={`absolute inset-0 rounded-full border-[5px] border-transparent border-t-[#0284c7] border-b-[#0284c7] rotate-[45deg]`}></div>
-                  <Lightbulb className={`w-16 h-16 text-[#0284c7]`} />
+                  <div className={`absolute inset-0 rounded-full border-[5px] border-transparent border-t-[#a5be1d] border-b-[#a5be1d] rotate-[45deg]`}></div>
+                  <Lightbulb className={`w-16 h-16 text-[#a5be1d]`} />
                 </div>
               </div>
               <h3 className="font-headline text-3xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight mb-5 whitespace-nowrap">
-                <span className="text-slate-900">OUR</span> <span className={`text-[#0284c7]`}>VISION</span>
+                <span className="text-slate-900">OUR</span> <span className={`text-[#a5be1d]`}>VISION</span>
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
                 To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers.
