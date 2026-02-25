@@ -210,7 +210,7 @@ export default function Home() {
             {/* 3. Strainer - Yellow Theme */}
             <div className="rounded-[3rem] bg-[#ffc107] p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl text-slate-900">
               {cat3Img && (
-                <div className="absolute inset-0 z-0 opacity-[0.25] transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
+                <div className="absolute inset-0 z-0 opacity-40 transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
                   <Image src={cat3Img.imageUrl} alt="Strainer Bg" fill className="object-cover brightness-0" />
                 </div>
               )}
@@ -225,7 +225,7 @@ export default function Home() {
             {/* 4. Vessels - Green Theme */}
             <div className="rounded-[3rem] bg-[#a5be1d] p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl text-white">
               {cat4Img && (
-                <div className="absolute inset-0 z-0 opacity-[0.25] transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
+                <div className="absolute inset-0 z-0 opacity-40 transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
                   <Image src={cat4Img.imageUrl} alt="Vessels Bg" fill className="object-cover brightness-0 invert" />
                 </div>
               )}
