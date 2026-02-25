@@ -16,7 +16,7 @@ import { productCategories, industries, whyChooseUs } from '@/lib/data';
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
 
-  // Find images for background effects
+  // Specific images for category backgrounds
   const cat1Img = PlaceHolderImages.find(img => img.id === 'product-pp-spun-1');
   const cat2Img = PlaceHolderImages.find(img => img.id === 'product-cartridge-housing-1');
   const cat3Img = PlaceHolderImages.find(img => img.id === 'product-strainer-housing-1');
@@ -171,7 +171,7 @@ export default function Home() {
             {/* 1. Filter Cartridge */}
             <div className="lg:col-span-2 lg:row-span-2 rounded-[3rem] bg-slate-950 p-10 md:p-14 flex flex-col justify-between group relative overflow-hidden text-white shadow-2xl">
               {cat1Img && (
-                <div className="absolute inset-0 z-0 opacity-20 transition-transform duration-1000 group-hover:scale-110">
+                <div className="absolute inset-0 z-0 opacity-20 transition-transform duration-1000 group-hover:scale-110 blur-sm">
                   <Image src={cat1Img.imageUrl} alt="Filter Cartridge Bg" fill className="object-cover grayscale" />
                 </div>
               )}
@@ -192,7 +192,7 @@ export default function Home() {
             {/* 2. Housing */}
             <div className="lg:col-span-2 rounded-[3rem] bg-[#a5be1d] p-10 flex flex-col justify-between group relative overflow-hidden text-white shadow-xl">
               {cat2Img && (
-                <div className="absolute inset-0 z-0 opacity-15 transition-transform duration-1000 group-hover:scale-110">
+                <div className="absolute inset-0 z-0 opacity-15 transition-transform duration-1000 group-hover:scale-110 blur-[2px]">
                   <Image src={cat2Img.imageUrl} alt="Housing Bg" fill className="object-cover brightness-0 invert" />
                 </div>
               )}
@@ -210,7 +210,7 @@ export default function Home() {
             {/* 3. Strainer */}
             <div className="rounded-[3rem] bg-white border-2 border-slate-50 p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl hover:border-[#a5be1d]/20">
               {cat3Img && (
-                <div className="absolute inset-0 z-0 opacity-[0.03] transition-transform duration-1000 group-hover:scale-110">
+                <div className="absolute inset-0 z-0 opacity-[0.05] transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
                   <Image src={cat3Img.imageUrl} alt="Strainer Bg" fill className="object-cover" />
                 </div>
               )}
@@ -225,7 +225,7 @@ export default function Home() {
             {/* 4. Vessels */}
             <div className="rounded-[3rem] bg-slate-50/50 border-2 border-slate-50 p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl hover:border-[#a5be1d]/20">
               {cat4Img && (
-                <div className="absolute inset-0 z-0 opacity-[0.03] transition-transform duration-1000 group-hover:scale-110">
+                <div className="absolute inset-0 z-0 opacity-[0.05] transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
                   <Image src={cat4Img.imageUrl} alt="Vessels Bg" fill className="object-cover" />
                 </div>
               )}
