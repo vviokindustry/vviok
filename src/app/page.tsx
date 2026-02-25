@@ -48,19 +48,19 @@ export default function Home() {
         {/* Feature Boxes */}
         <div className="absolute bottom-0 left-0 w-full hidden lg:block translate-y-1/2 z-30">
           <div className="container grid grid-cols-3 px-0">
-            <div className={`bg-[${brandGreen}] p-8 flex items-center gap-6 transition-transform hover:-translate-y-1 shadow-2xl`}>
+            <div className={`bg-[#a5be1d] p-8 flex items-center gap-6 transition-transform hover:-translate-y-1 shadow-2xl`}>
               <Settings className="h-10 w-10 text-white shrink-0" />
               <div className="text-left">
                 <h3 className="font-bold text-base uppercase leading-tight tracking-wide text-white">Industrial Housings</h3>
               </div>
             </div>
-            <div className={`bg-[${brandGreen}] p-8 flex items-center gap-6 border-x border-white/10 opacity-90 transition-transform hover:-translate-y-1 shadow-2xl`}>
+            <div className={`bg-[#a5be1d] p-8 flex items-center gap-6 border-x border-white/10 opacity-90 transition-transform hover:-translate-y-1 shadow-2xl`}>
               <Database className="h-10 w-10 text-white shrink-0" />
               <div className="text-left">
                 <h3 className="font-bold text-base uppercase leading-tight tracking-wide text-white">Filtration Cartridges</h3>
               </div>
             </div>
-            <div className={`bg-[${brandGreen}] p-8 flex items-center gap-6 opacity-80 transition-transform hover:-translate-y-1 shadow-2xl`}>
+            <div className={`bg-[#a5be1d] p-8 flex items-center gap-6 opacity-80 transition-transform hover:-translate-y-1 shadow-2xl`}>
               <Container className="h-10 w-10 text-white shrink-0" />
               <div className="text-left">
                 <h3 className="font-bold text-base uppercase leading-tight tracking-wide text-white">Stainless Steel Tanks</h3>
@@ -72,15 +72,15 @@ export default function Home() {
 
       {/* Mobile Feature Boxes */}
       <div className="grid grid-cols-1 md:grid-cols-3 lg:hidden relative z-10">
-        <div className={`bg-[${brandGreen}] p-6 flex items-center gap-4 text-white border-b border-white/10`}>
+        <div className={`bg-[#a5be1d] p-6 flex items-center gap-4 text-white border-b border-white/10`}>
           <Settings className="h-8 w-8 shrink-0" />
           <h3 className="font-bold uppercase tracking-wide text-white text-sm">Industrial Housings</h3>
         </div>
-        <div className={`bg-[${brandGreen}] p-6 flex items-center gap-4 text-white border-b border-white/10 opacity-90`}>
+        <div className={`bg-[#a5be1d] p-6 flex items-center gap-4 text-white border-b border-white/10 opacity-90`}>
           <Database className="h-8 w-8 shrink-0" />
           <h3 className="font-bold uppercase tracking-wide text-white text-sm">Filtration Cartridges</h3>
         </div>
-        <div className={`bg-[${brandGreen}] p-6 flex items-center gap-4 text-white opacity-80`}>
+        <div className={`bg-[#a5be1d] p-6 flex items-center gap-4 text-white opacity-80`}>
           <Container className="h-8 w-8 shrink-0" />
           <h3 className="font-bold uppercase tracking-wide text-white text-sm">Stainless Steel Tanks</h3>
         </div>
@@ -95,12 +95,12 @@ export default function Home() {
             <div className="flex flex-col items-center text-center px-6 md:px-4 lg:px-10 mb-16 md:mb-0 relative group">
               <div className="relative mb-10 flex justify-center items-center">
                 <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-100 flex items-center justify-center relative">
-                  <div className={`absolute inset-0 rounded-full border-[5px] border-transparent border-t-[${brandBlue}] border-r-[${brandBlue}] border-b-[${brandBlue}] rotate-[45deg]`}></div>
-                  <Mountain className={`w-16 h-16 text-[${brandBlue}]`} />
+                  <div className={`absolute inset-0 rounded-full border-[5px] border-transparent border-t-[#0284c7] border-r-[#0284c7] border-b-[#0284c7] rotate-[45deg]`}></div>
+                  <Mountain className={`w-16 h-16 text-[#0284c7]`} />
                 </div>
               </div>
               <h3 className="font-headline text-3xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight mb-5 whitespace-nowrap">
-                <span className="text-slate-900">OUR</span> <span className={`text-[${brandBlue}]`}>MISSION</span>
+                <span className="text-slate-900">OUR</span> <span className={`text-[#0284c7]`}>MISSION</span>
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
                 To be the leading provider of innovative, high-quality filtration solutions that improve efficiency.
@@ -112,12 +112,12 @@ export default function Home() {
             <div className="flex flex-col items-center text-center px-6 md:px-4 lg:px-10 mb-16 md:mb-0 relative">
               <div className="relative mb-10 flex justify-center items-center">
                 <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-100 flex items-center justify-center relative">
-                  <div className={`absolute inset-0 rounded-full border-[5px] border-transparent border-t-[${brandBlue}] border-b-[${brandBlue}] rotate-[45deg]`}></div>
-                  <Lightbulb className={`w-16 h-16 text-[${brandBlue}]`} />
+                  <div className={`absolute inset-0 rounded-full border-[5px] border-transparent border-t-[#0284c7] border-b-[#0284c7] rotate-[45deg]`}></div>
+                  <Lightbulb className={`w-16 h-16 text-[#0284c7]`} />
                 </div>
               </div>
               <h3 className="font-headline text-3xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight mb-5 whitespace-nowrap">
-                <span className="text-slate-900">OUR</span> <span className={`text-[${brandBlue}]`}>VISION</span>
+                <span className="text-slate-900">OUR</span> <span className={`text-[#0284c7]`}>VISION</span>
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
                 To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers.
@@ -148,7 +148,7 @@ export default function Home() {
       {/* Welcome Section */}
       <section className="py-20 md:py-24 bg-slate-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className={`font-headline text-3xl md:text-5xl font-black text-[${brandGreen}] mb-10 uppercase tracking-tight`}>
+          <h2 className={`font-headline text-3xl md:text-5xl font-black text-[#a5be1d] mb-10 uppercase tracking-tight`}>
             Welcome to VVIOK Industry
           </h2>
           <p className="text-slate-500 text-base md:text-lg max-w-5xl mx-auto leading-relaxed font-medium">
@@ -167,7 +167,7 @@ export default function Home() {
             <h2 className="font-headline text-2xl md:text-4xl font-black text-slate-900 mb-4 uppercase tracking-tighter">
               Our Product Categories
             </h2>
-            <div className={`w-16 h-1.5 bg-[${brandGreen}] mx-auto rounded-full`} />
+            <div className={`w-16 h-1.5 bg-[#a5be1d] mx-auto rounded-full`} />
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:auto-rows-[280px]">
@@ -179,13 +179,13 @@ export default function Home() {
                 </div>
               )}
               <div className="relative z-10">
-                <span className={`text-[${brandGreen}] text-[10px] font-bold uppercase tracking-[0.3em] block mb-6`}>Master Solutions</span>
+                <span className={`text-[#a5be1d] text-[10px] font-bold uppercase tracking-[0.3em] block mb-6`}>Master Solutions</span>
                 <h3 className="text-4xl md:text-6xl font-black uppercase leading-[0.85] tracking-tighter">
-                  Filter<br/><span className={`text-[${brandGreen}]`}>Cartridge</span>
+                  Filter<br/><span className={`text-[#a5be1d]`}>Cartridge</span>
                 </h3>
                 <p className="mt-8 text-slate-300 text-sm md:text-base max-w-xs font-medium leading-relaxed">Precision engineered for high-purity liquid and gas processing.</p>
               </div>
-              <Button asChild className={`relative z-10 bg-[${brandGreen}] hover:bg-[#94ab1a] text-white rounded-2xl px-10 h-14 font-black uppercase text-[11px] tracking-widest w-fit mt-10`}>
+              <Button asChild className={`relative z-10 bg-[#a5be1d] hover:bg-[#94ab1a] text-white rounded-2xl px-10 h-14 font-black uppercase text-[11px] tracking-widest w-fit mt-10`}>
                 <Link href={`/products/${productCategories[0].slug}`}>
                   Shop Now <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -193,7 +193,7 @@ export default function Home() {
             </div>
 
             {/* 2. Housing */}
-            <div className={`lg:col-span-2 rounded-[3rem] bg-[${brandGreen}] p-10 flex flex-col justify-between group relative overflow-hidden text-white shadow-xl`}>
+            <div className={`lg:col-span-2 rounded-[3rem] bg-[#a5be1d] p-10 flex flex-col justify-between group relative overflow-hidden text-white shadow-xl`}>
               {cat2Img && (
                 <div className="absolute inset-0 z-0 opacity-40 transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
                   <Image src={cat2Img.imageUrl} alt="Housing Bg" fill className="object-cover" />
@@ -213,7 +213,7 @@ export default function Home() {
             {/* 3. Strainer - Yellow Theme */}
             <div className="rounded-[3rem] bg-[#ffc107] p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl text-slate-900">
               {cat3Img && (
-                <div className="absolute inset-0 z-0 opacity-50 transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
+                <div className="absolute inset-0 z-0 opacity-80 transition-transform duration-1000 group-hover:scale-110">
                   <Image src={cat3Img.imageUrl} alt="Strainer Bg" fill className="object-cover" />
                 </div>
               )}
@@ -226,9 +226,9 @@ export default function Home() {
             </div>
 
             {/* 4. Vessels - Green Theme */}
-            <div className={`rounded-[3rem] bg-[${brandGreen}] p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl text-white`}>
+            <div className={`rounded-[3rem] bg-[#a5be1d] p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl text-white`}>
               {cat4Img && (
-                <div className="absolute inset-0 z-0 opacity-50 transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
+                <div className="absolute inset-0 z-0 opacity-80 transition-transform duration-1000 group-hover:scale-110">
                   <Image src={cat4Img.imageUrl} alt="Vessels Bg" fill className="object-cover" />
                 </div>
               )}
@@ -271,7 +271,7 @@ export default function Home() {
       <section className="py-24 md:py-32 bg-white overflow-hidden relative">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20 relative">
-            <h2 className={`font-headline text-3xl md:text-5xl font-black text-[${brandBlue}] mb-6 uppercase tracking-tight`}>
+            <h2 className={`font-headline text-3xl md:text-5xl font-black text-[#0284c7] mb-6 uppercase tracking-tight`}>
               Why You Choose Us?
             </h2>
             <p className="text-slate-500 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-medium">
@@ -284,7 +284,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-16 relative z-10">
                 {whyChooseUs.slice(0, 3).map((item) => (
                   <div key={item.title} className="flex flex-col items-center text-center">
-                    <div className={`w-32 h-32 bg-[${brandBlue}] rounded-3xl flex items-center justify-center mb-10 -mt-24 md:-mt-32 shadow-2xl transition-transform hover:scale-110`}>
+                    <div className={`w-32 h-32 bg-[#0284c7] rounded-3xl flex items-center justify-center mb-10 -mt-24 md:-mt-32 shadow-2xl transition-transform hover:scale-110`}>
                       <item.icon className="w-14 h-14 text-white" />
                     </div>
                     
