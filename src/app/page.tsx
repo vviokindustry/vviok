@@ -86,12 +86,12 @@ export default function Home() {
             <div className="flex flex-col items-center text-center px-6 md:px-4 lg:px-10 mb-16 md:mb-0 relative group">
               <div className="relative mb-10 flex justify-center items-center">
                 <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-100 flex items-center justify-center relative">
-                  <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-primary border-r-primary border-b-primary rotate-[45deg]"></div>
-                  <Mountain className="w-16 h-16 text-primary" />
+                  <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-red-600 border-r-red-600 border-b-red-600 rotate-[45deg]"></div>
+                  <Mountain className="w-16 h-16 text-red-600" />
                 </div>
               </div>
               <h3 className="font-headline text-3xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight mb-5 whitespace-nowrap">
-                <span className="text-slate-900">OUR</span> <span className="text-primary">MISSION</span>
+                <span className="text-slate-900">OUR</span> <span className="text-red-600">MISSION</span>
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
                 To be the leading provider of innovative, high-quality filtration solutions that improve efficiency.
