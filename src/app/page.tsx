@@ -124,8 +124,8 @@ export default function Home() {
                   <Award className="w-16 h-16 text-[#ffc107]" />
                 </div>
               </div>
-              <h3 className="font-headline text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-black uppercase tracking-tight mb-5 text-slate-900 flex items-center gap-3 justify-center whitespace-nowrap">
-                INDUSTRIES WE SERVE <ArrowRight className="h-8 w-8 md:h-10 md:w-10 text-[#ffc107]" />
+              <h3 className="font-headline text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-black uppercase tracking-tight mb-5 flex items-center gap-3 justify-center whitespace-nowrap">
+                <span className="text-slate-900">INDUSTRIES</span> <span className="text-[#ffc107]">WE SERVE</span> <ArrowRight className="h-8 w-8 md:h-10 md:w-10 text-[#ffc107]" />
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
                 Providing specialized filtration solutions to meet the unique challenges of diverse industrial sectors globally.
