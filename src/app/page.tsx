@@ -83,14 +83,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 items-start">
             
             {/* Our Mission */}
-            <div className="flex flex-col items-center text-center px-10 mb-16 md:mb-0 relative group">
+            <div className="flex flex-col items-center text-center px-6 md:px-4 lg:px-10 mb-16 md:mb-0 relative group">
               <div className="relative mb-10 flex justify-center items-center">
                 <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-100 flex items-center justify-center relative">
                   <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-primary border-r-primary border-b-primary rotate-[45deg]"></div>
                   <Mountain className="w-16 h-16 text-primary" />
                 </div>
               </div>
-              <h3 className="font-headline text-3xl md:text-4xl font-black uppercase tracking-tight mb-5">
+              <h3 className="font-headline text-3xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight mb-5 whitespace-nowrap">
                 OUR <span className="text-primary">MISSION</span>
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
@@ -100,14 +100,14 @@ export default function Home() {
             </div>
 
             {/* Our Vision */}
-            <div className="flex flex-col items-center text-center px-10 mb-16 md:mb-0 relative">
+            <div className="flex flex-col items-center text-center px-6 md:px-4 lg:px-10 mb-16 md:mb-0 relative">
               <div className="relative mb-10 flex justify-center items-center">
                 <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-100 flex items-center justify-center relative">
                   <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-primary border-b-primary rotate-[45deg]"></div>
                   <Lightbulb className="w-16 h-16 text-primary" />
                 </div>
               </div>
-              <h3 className="font-headline text-3xl md:text-4xl font-black uppercase tracking-tight mb-5">
+              <h3 className="font-headline text-3xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight mb-5 whitespace-nowrap">
                 OUR <span className="text-primary">VISION</span>
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
@@ -117,15 +117,15 @@ export default function Home() {
             </div>
 
             {/* Industries We Serve Card */}
-            <div className="flex flex-col items-center text-center px-10 relative">
+            <div className="flex flex-col items-center text-center px-6 md:px-4 lg:px-10 relative">
               <div className="relative mb-10 flex justify-center items-center">
                 <div className="w-40 h-40 rounded-full border-[1.5px] border-slate-100 flex items-center justify-center relative">
                   <div className="absolute inset-0 rounded-full border-[5px] border-transparent border-t-[#ffc107] border-b-[#ffc107] rotate-[45deg]"></div>
                   <Award className="w-16 h-16 text-[#ffc107]" />
                 </div>
               </div>
-              <h3 className="font-headline text-3xl md:text-4xl font-black uppercase tracking-tight mb-5 text-[#ffc107] flex items-center gap-3 justify-center">
-                INDUSTRIES WE SERVE <ArrowRight className="h-10 w-10" />
+              <h3 className="font-headline text-2xl md:text-2xl lg:text-3xl xl:text-4xl font-black uppercase tracking-tight mb-5 text-slate-900 flex items-center gap-3 justify-center whitespace-nowrap">
+                INDUSTRIES WE SERVE <ArrowRight className="h-8 w-8 md:h-10 md:w-10 text-[#ffc107]" />
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
                 Providing specialized filtration solutions to meet the unique challenges of diverse industrial sectors globally.
