@@ -51,13 +51,13 @@ export default function Home() {
                 <h3 className="font-bold text-base uppercase leading-tight tracking-wide text-white">Industrial Housings</h3>
               </div>
             </div>
-            <div className="bg-[#94ab1a] p-8 flex items-center gap-6 border-x border-white/10 transition-transform hover:-translate-y-1 shadow-2xl">
+            <div className="bg-[#a5be1d] p-8 flex items-center gap-6 border-x border-white/10 opacity-90 transition-transform hover:-translate-y-1 shadow-2xl">
               <Database className="h-10 w-10 text-white shrink-0" />
               <div className="text-left">
                 <h3 className="font-bold text-base uppercase leading-tight tracking-wide text-white">Filtration Cartridges</h3>
               </div>
             </div>
-            <div className="bg-[#839817] p-8 flex items-center gap-6 transition-transform hover:-translate-y-1 shadow-2xl">
+            <div className="bg-[#a5be1d] p-8 flex items-center gap-6 opacity-80 transition-transform hover:-translate-y-1 shadow-2xl">
               <Container className="h-10 w-10 text-white shrink-0" />
               <div className="text-left">
                 <h3 className="font-bold text-base uppercase leading-tight tracking-wide text-white">Stainless Steel Tanks</h3>
@@ -73,11 +73,11 @@ export default function Home() {
           <Settings className="h-8 w-8 shrink-0" />
           <h3 className="font-bold uppercase tracking-wide text-white text-sm">Industrial Housings</h3>
         </div>
-        <div className="bg-[#94ab1a] p-6 flex items-center gap-4 text-white border-b border-white/10">
+        <div className="bg-[#a5be1d] p-6 flex items-center gap-4 text-white border-b border-white/10 opacity-90">
           <Database className="h-8 w-8 shrink-0" />
           <h3 className="font-bold uppercase tracking-wide text-white text-sm">Filtration Cartridges</h3>
         </div>
-        <div className="bg-[#839817] p-6 flex items-center gap-4 text-white">
+        <div className="bg-[#a5be1d] p-6 flex items-center gap-4 text-white opacity-80">
           <Container className="h-8 w-8 shrink-0" />
           <h3 className="font-bold uppercase tracking-wide text-white text-sm">Stainless Steel Tanks</h3>
         </div>
@@ -192,7 +192,7 @@ export default function Home() {
             {/* 2. Housing */}
             <div className="lg:col-span-2 rounded-[3rem] bg-[#a5be1d] p-10 flex flex-col justify-between group relative overflow-hidden text-white shadow-xl">
               {cat2Img && (
-                <div className="absolute inset-0 z-0 opacity-15 transition-transform duration-1000 group-hover:scale-110 blur-[2px]">
+                <div className="absolute inset-0 z-0 opacity-20 transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
                   <Image src={cat2Img.imageUrl} alt="Housing Bg" fill className="object-cover brightness-0 invert" />
                 </div>
               )}
@@ -207,32 +207,32 @@ export default function Home() {
               </Link>
             </div>
 
-            {/* 3. Strainer */}
-            <div className="rounded-[3rem] bg-white border-2 border-slate-50 p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl hover:border-[#a5be1d]/20">
+            {/* 3. Strainer - Yellow Theme */}
+            <div className="rounded-[3rem] bg-[#ffc107] p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl text-slate-900">
               {cat3Img && (
-                <div className="absolute inset-0 z-0 opacity-[0.15] transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
-                  <Image src={cat3Img.imageUrl} alt="Strainer Bg" fill className="object-cover" />
+                <div className="absolute inset-0 z-0 opacity-[0.25] transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
+                  <Image src={cat3Img.imageUrl} alt="Strainer Bg" fill className="object-cover brightness-0" />
                 </div>
               )}
-              <h3 className="text-2xl font-black uppercase tracking-tighter text-slate-900 leading-none relative z-10">
-                Technical<br/><span className="text-[#a5be1d]">Strainer</span>
+              <h3 className="text-2xl font-black uppercase tracking-tighter leading-none relative z-10">
+                Technical<br/>Strainer
               </h3>
-              <Link href={`/products/${productCategories[2].slug}`} className="relative z-10 text-slate-400 font-black uppercase text-xs tracking-widest flex items-center group-hover:text-[#a5be1d] transition-colors mt-6">
+              <Link href={`/products/${productCategories[2].slug}`} className="relative z-10 text-slate-900/60 font-black uppercase text-xs tracking-widest flex items-center group-hover:text-slate-900 transition-colors mt-6">
                 View Details <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-2" />
               </Link>
             </div>
 
-            {/* 4. Vessels */}
-            <div className="rounded-[3rem] bg-slate-50/50 border-2 border-slate-50 p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl hover:border-[#a5be1d]/20">
+            {/* 4. Vessels - Green Theme */}
+            <div className="rounded-[3rem] bg-[#a5be1d] p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl text-white">
               {cat4Img && (
-                <div className="absolute inset-0 z-0 opacity-[0.15] transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
-                  <Image src={cat4Img.imageUrl} alt="Vessels Bg" fill className="object-cover" />
+                <div className="absolute inset-0 z-0 opacity-[0.25] transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
+                  <Image src={cat4Img.imageUrl} alt="Vessels Bg" fill className="object-cover brightness-0 invert" />
                 </div>
               )}
-              <h3 className="text-2xl font-black uppercase tracking-tighter text-slate-900 leading-none relative z-10">
-                Vessels<br/><span className="text-[#a5be1d]">& Tanks</span>
+              <h3 className="text-2xl font-black uppercase tracking-tighter leading-none relative z-10">
+                Vessels<br/>& Tanks
               </h3>
-              <Link href={`/products/${productCategories[3].slug}`} className="relative z-10 text-slate-400 font-black uppercase text-xs tracking-widest flex items-center group-hover:text-[#a5be1d] transition-colors mt-6">
+              <Link href={`/products/${productCategories[3].slug}`} className="relative z-10 text-white/60 font-black uppercase text-xs tracking-widest flex items-center group-hover:text-white transition-colors mt-6">
                 Configure <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-2" />
               </Link>
             </div>
