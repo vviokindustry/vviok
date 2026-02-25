@@ -140,14 +140,14 @@ export function Header() {
   return (
     <div className="w-full">
       {/* Top Contact Bar */}
-      <div className="bg-[#a5be1d] text-white py-2.5 text-[11px] font-bold hidden md:block">
+      <div className="bg-[#a5be1d] text-white py-2 text-sm font-bold hidden md:block">
         <div className="container flex justify-between items-center px-4 mx-auto">
           <div className="flex gap-8">
             <span className="flex items-center gap-2">
-              <Phone className="h-3 w-3 text-yellow-400" /> Office: <a href="tel:+919106472588" className="hover:text-yellow-400 font-bold transition-colors">+91 91064 72588</a>
+              <Phone className="h-4 w-4 text-yellow-400" /> Office: <a href="tel:+919106472588" className="hover:text-yellow-400 font-bold transition-colors">+91 91064 72588</a>
             </span>
             <span className="flex items-center gap-2">
-              <Mail className="h-3 w-3 text-yellow-400" /> Email: <a href="mailto:vviokindustry2021@gmail.com" className="hover:text-yellow-400 font-bold transition-colors">vviokindustry2021@gmail.com</a>
+              <Mail className="h-4 w-4 text-yellow-400" /> Email: <a href="mailto:vviokindustry2021@gmail.com" className="hover:text-yellow-400 font-bold transition-colors">vviokindustry2021@gmail.com</a>
             </span>
           </div>
         </div>
