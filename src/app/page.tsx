@@ -91,7 +91,7 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="font-headline text-3xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight mb-5 whitespace-nowrap">
-                OUR <span className="text-primary">MISSION</span>
+                <span className="text-slate-900">OUR</span> <span className="text-primary">MISSION</span>
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
                 To be the leading provider of innovative, high-quality filtration solutions that improve efficiency.
@@ -108,7 +108,7 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="font-headline text-3xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight mb-5 whitespace-nowrap">
-                OUR <span className="text-primary">VISION</span>
+                <span className="text-slate-900">OUR</span> <span className="text-primary">VISION</span>
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
                 To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers.
