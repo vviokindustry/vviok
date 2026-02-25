@@ -268,7 +268,7 @@ export default function Home() {
       <section className="py-24 md:py-32 bg-white overflow-hidden relative">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20 relative">
-            <h2 className="font-headline text-3xl md:text-5xl font-black text-primary mb-6 uppercase tracking-tight">
+            <h2 className="font-headline text-3xl md:text-5xl font-black text-[#0284c7] mb-6 uppercase tracking-tight">
               Why You Choose Us?
             </h2>
             <p className="text-slate-500 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-medium">
@@ -281,7 +281,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-16 relative z-10">
                 {whyChooseUs.slice(0, 3).map((item) => (
                   <div key={item.title} className="flex flex-col items-center text-center">
-                    <div className="w-32 h-32 bg-primary rounded-3xl flex items-center justify-center mb-10 -mt-24 md:-mt-32 shadow-2xl transition-transform hover:scale-110">
+                    <div className="w-32 h-32 bg-[#0284c7] rounded-3xl flex items-center justify-center mb-10 -mt-24 md:-mt-32 shadow-2xl transition-transform hover:scale-110">
                       <item.icon className="w-14 h-14 text-white" />
                     </div>
                     
