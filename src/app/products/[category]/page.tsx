@@ -39,13 +39,13 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
         </div>
       </div>
 
-      <section className="py-12 md:py-20">
+      <section className="py-12 md:py-16">
         <div className="container">
-          <div className="mb-12 border-l-8 border-primary pl-8">
-            <h1 className="font-headline text-2xl md:text-4xl font-black text-slate-900 uppercase tracking-tighter leading-tight">
+          <div className="mb-10 border-l-8 border-primary pl-6">
+            <h1 className="font-headline text-xl md:text-3xl font-black text-slate-900 uppercase tracking-tighter leading-tight">
               {currentCategory.name}
             </h1>
-            <p className="text-base md:text-lg text-slate-500 mt-3 font-medium max-w-3xl">
+            <p className="text-sm md:text-base text-slate-500 mt-2 font-medium max-w-3xl">
               {currentCategory.description}
             </p>
           </div>
