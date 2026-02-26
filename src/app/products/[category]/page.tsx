@@ -36,7 +36,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
   }
 
   const subItems = currentCategory.subcategories || [];
-  const displayProducts = products[currentCategory.slug] || [];
+  const displayProducts = products[category] || products[currentCategory.slug] || [];
 
   return (
     <div className="bg-white min-h-screen">
@@ -56,7 +56,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
       <section className="py-12 md:py-16">
         <div className="container">
           <div className="mb-10 border-l-8 border-primary pl-6">
-            <h1 className="font-headline text-xl md:text-3xl font-black text-slate-900 uppercase tracking-tighter leading-tight">
+            <h1 className="font-headline text-xl md:text-2xl font-black text-slate-900 uppercase tracking-tighter leading-tight">
               {currentCategory.pageH1 || currentCategory.name}
             </h1>
             <div className="text-sm md:text-base text-slate-500 mt-4 font-medium max-w-5xl whitespace-pre-wrap leading-relaxed">
