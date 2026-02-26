@@ -28,7 +28,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
     <div className="bg-white min-h-screen">
       {/* Breadcrumbs */}
       <div className="bg-slate-50 border-b">
-        <div className="container py-4 flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground overflow-x-auto whitespace-nowrap">
+        <div className="container py-3 flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground overflow-x-auto whitespace-nowrap">
           <Link href="/" className="hover:text-primary flex items-center gap-2 transition-colors">
             <Home className="h-3.5 w-3.5" /> Home
           </Link>
@@ -39,21 +39,20 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
         </div>
       </div>
 
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-20">
         <div className="container">
-          <div className="mb-16 border-l-8 border-primary pl-8">
-            <h1 className="font-headline text-3xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter leading-[1.1]">
+          <div className="mb-12 border-l-8 border-primary pl-8">
+            <h1 className="font-headline text-2xl md:text-4xl font-black text-slate-900 uppercase tracking-tighter leading-tight">
               {currentCategory.name}
             </h1>
-            <p className="text-lg md:text-xl text-slate-500 mt-4 font-medium max-w-3xl">
+            <p className="text-base md:text-lg text-slate-500 mt-3 font-medium max-w-3xl">
               {currentCategory.description}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {subItems.length > 0 ? (
               subItems.map((sub) => {
-                // Try to find the specific image for this subcategory from the products data
                 const subProduct = products[sub.slug]?.[0];
                 const imageId = subProduct?.imageId || currentCategory.imageId;
                 const image = PlaceHolderImages.find(img => img.id === imageId);
@@ -76,7 +75,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
                       </div>
                       <div className="text-center mt-auto w-full">
                         <span className="text-[10px] font-black uppercase tracking-[0.3em] text-primary mb-2 block">Technical Series</span>
-                        <h3 className="font-headline text-2xl md:text-3xl font-black text-slate-900 group-hover:text-primary transition-colors leading-tight uppercase tracking-tight">
+                        <h3 className="font-headline text-xl md:text-2xl font-black text-slate-900 group-hover:text-primary transition-colors leading-tight uppercase tracking-tight">
                           {sub.name}
                         </h3>
                         <div className="mt-6 pt-6 border-t border-slate-50 flex items-center justify-center gap-2 text-slate-400 group-hover:text-primary transition-colors font-black uppercase text-[10px] tracking-widest">
@@ -105,7 +104,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
                         )}
                       </div>
                       <div className="text-center mt-auto w-full">
-                        <h3 className="font-headline text-2xl md:text-3xl font-black text-slate-900 group-hover:text-primary transition-colors leading-tight uppercase tracking-tight">
+                        <h3 className="font-headline text-xl md:text-2xl font-black text-slate-900 group-hover:text-primary transition-colors leading-tight uppercase tracking-tight">
                           {product.name}
                         </h3>
                         <p className="text-xs font-black text-slate-400 mt-4 uppercase tracking-[0.2em]">Inquire for Details</p>

@@ -11,13 +11,9 @@ export const metadata: Metadata = {
   description:
     'VVIOK Industry is a leading manufacturer, supplier, and exporter of high-quality industrial filtration products in India, serving a global market.',
   icons: {
-    icon: [
-      { url: '/uploads/vviok%20industry%20icon.png?v=2', type: 'image/png' },
-    ],
-    shortcut: ['/uploads/vviok%20industry%20icon.png?v=2'],
-    apple: [
-      { url: '/uploads/vviok%20industry%20icon.png?v=2' },
-    ],
+    icon: '/uploads/vviok%20industry%20icon.png?v=3',
+    shortcut: '/uploads/vviok%20industry%20icon.png?v=3',
+    apple: '/uploads/vviok%20industry%20icon.png?v=3',
   },
 };
 
@@ -29,10 +25,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
-        {/* Manual Favicon insertion for maximum compatibility */}
-        <link rel="icon" href="/uploads/vviok%20industry%20icon.png?v=2" type="image/png" />
-        <link rel="shortcut icon" href="/uploads/vviok%20industry%20icon.png?v=2" />
-        <link rel="apple-touch-icon" href="/uploads/vviok%20industry%20icon.png?v=2" />
+        {/* Explicit Favicon Link Tags */}
+        <link rel="icon" href="/uploads/vviok%20industry%20icon.png?v=3" type="image/png" />
+        <link rel="shortcut icon" href="/uploads/vviok%20industry%20icon.png?v=3" />
+        <link rel="apple-touch-icon" href="/uploads/vviok%20industry%20icon.png?v=3" />
         
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
