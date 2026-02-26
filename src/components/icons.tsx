@@ -16,6 +16,19 @@ export function Logo({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
   );
 }
 
+export function BrandIcon({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div className={cn('relative h-10 w-10', className)} {...props}>
+      <Image
+        src="/uploads/vviok industry icon.png"
+        alt="VVIOK Industry Icon"
+        fill
+        className="object-contain"
+      />
+    </div>
+  );
+}
+
 export function MakeInIndiaLogo(props: SVGProps<SVGSVGElement>) {
   return (
     <svg

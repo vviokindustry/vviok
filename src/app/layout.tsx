@@ -10,6 +10,11 @@ export const metadata: Metadata = {
   title: 'VVIOK Industry - Filtration Products Manufacturer & Exporter',
   description:
     'VVIOK Industry is a leading manufacturer, supplier, and exporter of high-quality industrial filtration products in India, serving a global market.',
+  icons: {
+    icon: '/uploads/vviok industry icon.png',
+    shortcut: '/uploads/vviok industry icon.png',
+    apple: '/uploads/vviok industry icon.png',
+  },
 };
 
 export default function RootLayout({
