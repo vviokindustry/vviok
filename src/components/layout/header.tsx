@@ -139,15 +139,15 @@ export function Header() {
 
   return (
     <div className="w-full">
-      {/* Top Contact Bar - Increased font size and icon size */}
-      <div className="bg-[#a5be1d] text-white py-3 text-base md:text-lg font-bold hidden md:block">
+      {/* Top Contact Bar - Increased font size and icon size for better readability */}
+      <div className="bg-[#a5be1d] text-white py-4 text-lg md:text-xl font-bold hidden md:block">
         <div className="container flex justify-between items-center px-4 mx-auto">
-          <div className="flex gap-12">
-            <span className="flex items-center gap-3">
-              <Phone className="h-6 w-6 text-yellow-400" /> Office: <a href="tel:+919106472588" className="hover:text-yellow-400 font-bold transition-colors">+91 91064 72588</a>
+          <div className="flex gap-16">
+            <span className="flex items-center gap-4">
+              <Phone className="h-7 w-7 text-yellow-400" /> Office: <a href="tel:+919106472588" className="hover:text-yellow-400 font-bold transition-colors">+91 91064 72588</a>
             </span>
-            <span className="flex items-center gap-3">
-              <Mail className="h-6 w-6 text-yellow-400" /> Email: <a href="mailto:vviokindustry2021@gmail.com" className="hover:text-yellow-400 font-bold transition-colors">vviokindustry2021@gmail.com</a>
+            <span className="flex items-center gap-4">
+              <Mail className="h-7 w-7 text-yellow-400" /> Email: <a href="mailto:vviokindustry2021@gmail.com" className="hover:text-yellow-400 font-bold transition-colors">vviokindustry2021@gmail.com</a>
             </span>
           </div>
         </div>
