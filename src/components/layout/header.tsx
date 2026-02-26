@@ -7,7 +7,7 @@ import { Menu, Mail, Phone, ChevronDown, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
-import { Logo, BrandIcon } from '@/components/icons';
+import { Logo } from '@/components/icons';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -60,7 +60,7 @@ export function Header() {
               <DropdownMenuTrigger asChild>
                 <button 
                   className={cn(
-                    'font-headline flex items-center gap-1 text-[13px] font-extrabold uppercase tracking-widest transition-colors hover:text-primary outline-none focus:ring-0 px-4 h-20',
+                    'font-headline flex items-center gap-1 text-[13px] font-extrabold uppercase tracking-widest transition-colors hover:text-primary outline-none focus:ring-0 px-4 h-16',
                     pathname.startsWith(link.href) ? 'text-primary' : 'text-slate-800'
                   )}
                   onClick={(e) => {
@@ -122,7 +122,7 @@ export function Header() {
             key={link.href}
             href={link.href}
             className={cn(
-              'font-headline text-[13px] font-extrabold uppercase tracking-widest transition-colors hover:text-primary h-20 flex items-center px-4 relative group',
+              'font-headline text-[13px] font-extrabold uppercase tracking-widest transition-colors hover:text-primary h-16 flex items-center px-4 relative group',
               pathname === link.href ? 'text-primary' : 'text-slate-800'
             )}
           >
@@ -139,15 +139,15 @@ export function Header() {
 
   return (
     <div className="w-full">
-      {/* Top Contact Bar - More compact and readable */}
-      <div className="bg-[#a5be1d] text-white py-2 text-sm md:text-base font-bold hidden md:block">
+      {/* Top Contact Bar */}
+      <div className="bg-[#a5be1d] text-white py-1.5 text-[12px] font-bold hidden md:block">
         <div className="container flex justify-between items-center px-4 mx-auto">
-          <div className="flex gap-12">
+          <div className="flex gap-8">
             <span className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-yellow-400" /> Office: <a href="tel:+919106472588" className="hover:text-yellow-400 font-bold transition-colors">+91 91064 72588</a>
+              <Phone className="h-3.5 w-3.5 text-yellow-400" /> Office: <a href="tel:+919106472588" className="hover:text-yellow-400 transition-colors">+91 91064 72588</a>
             </span>
             <span className="flex items-center gap-2">
-              <Mail className="h-4 w-4 text-yellow-400" /> Email: <a href="mailto:vviokindustry2021@gmail.com" className="hover:text-yellow-400 font-bold transition-colors">vviokindustry2021@gmail.com</a>
+              <Mail className="h-3.5 w-3.5 text-yellow-400" /> Email: <a href="mailto:vviokindustry2021@gmail.com" className="hover:text-yellow-400 transition-colors">vviokindustry2021@gmail.com</a>
             </span>
           </div>
         </div>
@@ -155,18 +155,18 @@ export function Header() {
 
       {/* Main Header */}
       <header className="sticky top-0 z-50 w-full border-b bg-white">
-        <div className="container flex h-20 items-center justify-between px-4 mx-auto">
+        <div className="container flex h-16 items-center justify-between px-4 mx-auto">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <Logo className="w-64 md:w-72" />
+              <Logo className="w-52 md:w-64" />
             </Link>
           </div>
 
           <div className="flex-1 flex justify-center">
-            {mounted ? renderNav() : <div className="hidden lg:flex items-center space-x-8 px-4 h-20 text-[13px] font-bold text-slate-400">Loading...</div>}
+            {mounted ? renderNav() : <div className="hidden lg:flex items-center space-x-8 px-4 h-16 text-[13px] font-bold text-slate-400">Loading...</div>}
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex lg:hidden items-center gap-4">
             <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="lg:hidden">
