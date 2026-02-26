@@ -4,8 +4,9 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { ChevronRight, Home, Package, Share2, CheckCircle2 } from 'lucide-react';
+import { ChevronRight, Home, Package, Share2, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
 import { resolveImageSource } from '@/lib/utils';
 import { ProductImageGallery } from '@/components/product-image-gallery';
@@ -42,6 +43,8 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
   const galleryImages = product.imageIds 
     ? product.imageIds.map(id => resolveImageSource(id, PlaceHolderImages))
     : [primaryImage];
+
+  const relatedSubcategories = currentCategory.subcategories?.filter(sub => sub.slug !== subcategory) || [];
 
   return (
     <div className="bg-white min-h-screen">
@@ -156,6 +159,70 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                 </TabsContent>
               </div>
             </Tabs>
+          </div>
+        </div>
+      </section>
+
+      {/* Internal Linking Section - Related Products in same category */}
+      {relatedSubcategories.length > 0 && (
+        <section className="py-20 bg-slate-50 border-t">
+          <div className="container">
+            <div className="mb-12">
+              <span className="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-2 block">Related Solutions</span>
+              <h2 className="font-headline text-3xl md:text-4xl font-black text-slate-900 uppercase tracking-tighter">
+                Explore More in {currentCategory.name}
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              {relatedSubcategories.map((sub) => {
+                const subProduct = products[sub.slug]?.[0];
+                const imageId = subProduct?.imageId || currentCategory.imageId;
+                const image = resolveImageSource(imageId, PlaceHolderImages);
+                
+                return (
+                  <Link key={sub.slug} href={`/products/${currentCategory.slug}/${sub.slug}`} className="group">
+                    <Card className="h-full border-2 border-slate-100 shadow-lg shadow-slate-200/50 hover:border-primary/50 transition-all duration-500 p-8 rounded-[2.5rem] bg-white overflow-hidden">
+                      <div className="aspect-square relative w-full mb-6 flex items-center justify-center p-4 bg-slate-50 rounded-[1.5rem] group-hover:bg-white transition-colors">
+                        <Image 
+                          src={image.imageUrl} 
+                          alt={sub.name} 
+                          width={250} 
+                          height={250} 
+                          className="object-contain transition-transform duration-500 group-hover:scale-110"
+                        />
+                      </div>
+                      <div className="text-center">
+                        <h3 className="font-headline text-lg font-black text-slate-900 group-hover:text-primary transition-colors leading-tight uppercase tracking-tight">
+                          {sub.name}
+                        </h3>
+                        <div className="mt-4 flex items-center justify-center gap-2 text-primary font-black uppercase text-[9px] tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+                          View Details <ArrowRight className="h-3 w-3" />
+                        </div>
+                      </div>
+                    </Card>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Cross-Category Internal Linking */}
+      <section className="py-20 bg-white border-t">
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-headline text-2xl font-black text-slate-900 uppercase tracking-tight mb-8">
+              Discover Our Full Product Range
+            </h2>
+            <div className="flex flex-wrap justify-center gap-4">
+              {productCategories.filter(cat => cat.slug !== category).map((cat) => (
+                <Button key={cat.slug} asChild variant="outline" className="rounded-xl font-bold uppercase tracking-widest text-[11px] h-12 px-8 border-slate-200 hover:border-primary hover:text-primary">
+                  <Link href={`/products/${cat.slug}`}>{cat.name}</Link>
+                </Button>
+              ))}
+            </div>
           </div>
         </div>
       </section>
