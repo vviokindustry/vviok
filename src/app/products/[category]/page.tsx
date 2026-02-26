@@ -28,13 +28,13 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
     <div className="bg-white min-h-screen">
       {/* Breadcrumbs */}
       <div className="bg-slate-50 border-b">
-        <div className="container py-6 flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-muted-foreground overflow-x-auto whitespace-nowrap">
+        <div className="container py-4 flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground overflow-x-auto whitespace-nowrap">
           <Link href="/" className="hover:text-primary flex items-center gap-2 transition-colors">
-            <Home className="h-4 w-4" /> Home
+            <Home className="h-3.5 w-3.5" /> Home
           </Link>
-          <ChevronRight className="h-4 w-4 opacity-30" />
+          <ChevronRight className="h-3 w-3 opacity-30" />
           <Link href="/products" className="hover:text-primary transition-colors">Products</Link>
-          <ChevronRight className="h-4 w-4 opacity-30" />
+          <ChevronRight className="h-3 w-3 opacity-30" />
           <span className="text-primary">{currentCategory.name}</span>
         </div>
       </div>
@@ -42,10 +42,10 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
       <section className="py-16 md:py-24">
         <div className="container">
           <div className="mb-16 border-l-8 border-primary pl-8">
-            <h1 className="font-headline text-5xl md:text-7xl font-black text-slate-900 uppercase tracking-tighter leading-[0.9]">
+            <h1 className="font-headline text-3xl md:text-5xl font-black text-slate-900 uppercase tracking-tighter leading-[1.1]">
               {currentCategory.name}
             </h1>
-            <p className="text-xl md:text-2xl text-slate-500 mt-4 font-medium max-w-3xl">
+            <p className="text-lg md:text-xl text-slate-500 mt-4 font-medium max-w-3xl">
               {currentCategory.description}
             </p>
           </div>
