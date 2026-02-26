@@ -6,6 +6,20 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ChevronRight, Home } from 'lucide-react';
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
+  const { category } = await params;
+  const currentCategory = productCategories.find(cat => cat.slug === category);
+  
+  if (!currentCategory) return {};
+
+  return {
+    title: currentCategory.metaTitle || `${currentCategory.name} - VVIOK Industry`,
+    description: currentCategory.metaDescription || currentCategory.description,
+    keywords: currentCategory.metaKeywords,
+  };
+}
 
 export async function generateStaticParams() {
   return productCategories.map((cat) => ({
@@ -43,11 +57,11 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
         <div className="container">
           <div className="mb-10 border-l-8 border-primary pl-6">
             <h1 className="font-headline text-xl md:text-3xl font-black text-slate-900 uppercase tracking-tighter leading-tight">
-              {currentCategory.name}
+              {currentCategory.pageH1 || currentCategory.name}
             </h1>
-            <p className="text-sm md:text-base text-slate-500 mt-2 font-medium max-w-3xl">
+            <div className="text-sm md:text-base text-slate-500 mt-4 font-medium max-w-5xl whitespace-pre-wrap leading-relaxed">
               {currentCategory.description}
-            </p>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">

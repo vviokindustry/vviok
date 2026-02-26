@@ -23,6 +23,10 @@ export interface Category {
   description: string;
   imageId: string;
   subcategories?: Subcategory[];
+  metaTitle?: string;
+  metaDescription?: string;
+  metaKeywords?: string;
+  pageH1?: string;
 }
 
 export interface ProductDetail {
@@ -38,8 +42,12 @@ export interface ProductDetail {
 export const productCategories: Category[] = [
   {
     name: 'Filter Cartridge',
-    slug: 'filter-cartridge',
-    description: 'Precision filter cartridges for liquid and gas processing, sediment removal, and fine filtration.',
+    slug: 'filter-cartridge-manufacturer',
+    pageH1: 'Filter Cartridge Manufacturer & Supplier in Ahmedabad, India',
+    description: 'We are a leading filter cartridge manufacturer in Ahmedabad, India, providing high-performance filtration solutions for various industrial applications. Our range includes premium quality filter cartridges, cartridge filter housing, and customized filtration systems designed for durability and efficiency. As a trusted cartridge filter supplier in India, we serve industries such as pharmaceuticals, chemicals, food processing, water treatment, and more. Our products are manufactured using advanced technology and high-grade raw materials to ensure superior filtration performance and long service life. With competitive pricing, timely delivery, and strong technical support, we are recognized among the top cartridge filter manufacturers in India.',
+    metaTitle: 'Filter Cartridge Manufacturer in Ahmedabad, India | Industrial Cartridge Filter Supplier',
+    metaDescription: 'Trusted filter cartridge manufacturer and supplier in Ahmedabad, India offering industrial cartridge filters and filter housing solutions for multiple industries across India.',
+    metaKeywords: 'filter cartridge, filter cartridge supplier, filter cartridge manufacturer, filter cartridge manufacturer in ahmedabad, filter cartridge manufacturer in India, filter cartridge supplier in ahmedabad, filter cartridge supplier in India, cartridge filter manufacturers in india, cartridge filter housing manufacturer',
     imageId: 'product-industrial-filter',
     subcategories: [
       { name: 'PP Spun Filter Cartridge', slug: 'pp-spun-filter-cartridge' },
