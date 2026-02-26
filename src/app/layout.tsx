@@ -11,10 +11,7 @@ export const metadata: Metadata = {
   description:
     'VVIOK Industry is a leading manufacturer, supplier, and exporter of high-quality industrial filtration products in India, serving a global market.',
   icons: {
-    icon: [
-      { url: '/uploads/vviok%20industry%20icon.png', sizes: '32x32', type: 'image/png' },
-      { url: '/uploads/vviok%20industry%20icon.png', sizes: '16x16', type: 'image/png' },
-    ],
+    icon: '/uploads/vviok%20industry%20icon.png',
     shortcut: '/uploads/vviok%20industry%20icon.png',
     apple: '/uploads/vviok%20industry%20icon.png',
   },
@@ -28,8 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
-        <link rel="shortcut icon" href="/uploads/vviok%20industry%20icon.png" />
         <link rel="icon" href="/uploads/vviok%20industry%20icon.png" />
+        <link rel="shortcut icon" href="/uploads/vviok%20industry%20icon.png" />
         <link rel="apple-touch-icon" href="/uploads/vviok%20industry%20icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
