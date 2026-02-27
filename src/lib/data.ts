@@ -78,8 +78,12 @@ export const productCategories: Category[] = [
   },
   {
     name: 'Strainer',
-    slug: 'strainer',
-    description: 'Reliable simplex, duplex, and multi-basket strainers for effective coarse filtration in pipelines.',
+    slug: 'industrial-strainer-filters',
+    pageH1: 'Industrial Strainer Filter Manufacturer & Supplier in Ahmedabad, India',
+    description: 'We are a leading industrial strainer filter manufacturer in Ahmedabad, India, offering reliable and high-performance filtration solutions for various industrial applications. Our strainer filters are specially designed to remove unwanted solid particles from pipelines, protecting pumps, valves, and other critical equipment.\n\nAs a trusted strainer filter supplier in India, we manufacture a wide range of stainless steel filter products suitable for different industrial requirements. Our product range includes basket strainer filters, taper basket strainers, conical strainer filters, pleated strainer filters, and stainless steel filters. Each product is engineered for durability, efficiency, and long service life.\n\nBasket strainers are ideal for high-flow industrial filtration systems and allow easy cleaning and maintenance. Conical strainers are commonly used for temporary filtration during plant startup operations. Taper basket strainers provide enhanced dirt-holding capacity, while pleated strainer filters offer improved filtration performance due to their increased surface area.\n\nOur industrial strainer filters are widely used in industries such as chemicals, pharmaceuticals, food processing, oil & gas, water treatment, and other industrial filtration applications. Manufactured using premium-grade stainless steel, our products ensure corrosion resistance, high strength, and reliable performance under demanding operating conditions.\n\nRecognized among reliable strainer filter manufacturers in India, we focus on quality control, precision engineering, competitive pricing, and timely delivery across India.',
+    metaTitle: 'Industrial Strainer Filter Manufacturer in Ahmedabad, India | Stainless Steel Strainer Supplier',
+    metaDescription: 'Leading industrial strainer filter manufacturer in Ahmedabad, India. We supply stainless steel basket, conical, taper and pleated strainer filters across India.',
+    metaKeywords: 'Industrial Strainer Filter, strainer filter manufacturer in india, strainer filter supplier in india, strainer filter manufacturer in ahmedabad, stainless steel filter, industrial filtration, Basket Strainers filter, Taper Basket Strainers, Conical Strainers filter, Pleated Strainers filter, stainless steel filter',
     imageId: 'product-industrial-filter',
     subcategories: [
       { name: 'Basket Strainers', slug: 'basket-strainers' },
