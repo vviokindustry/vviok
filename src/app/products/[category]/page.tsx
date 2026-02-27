@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { ChevronRight, Home } from 'lucide-react';
 import type { Metadata } from 'next';
+import { resolveImageSource } from '@/lib/utils';
 
 export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
   const { category } = await params;
@@ -69,7 +70,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
               subItems.map((sub) => {
                 const subProduct = products[sub.slug]?.[0];
                 const imageId = subProduct?.imageId || currentCategory.imageId;
-                const image = PlaceHolderImages.find(img => img.id === imageId);
+                const image = resolveImageSource(imageId, PlaceHolderImages);
                 
                 return (
                   <Link key={sub.slug} href={`/products/${currentCategory.slug}/${sub.slug}`} className="group">
@@ -102,7 +103,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
               })
             ) : (
               displayProducts.map((product) => {
-                const image = PlaceHolderImages.find((img) => img.id === product.imageId);
+                const image = resolveImageSource(product.imageId, PlaceHolderImages);
                 return (
                   <Link key={product.name} href="/contact" className="group">
                     <Card className="relative h-full border-2 border-slate-100 shadow-xl shadow-slate-200/50 hover:border-primary/50 transition-all duration-500 flex flex-col items-center p-8 rounded-[3rem] bg-white overflow-hidden">
