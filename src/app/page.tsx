@@ -12,6 +12,13 @@ import {
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { productCategories, industries, whyChooseUs } from '@/lib/data';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Industrial Filtration Products Manufacturer in Ahmedabad, India | Vviok Industry',
+  description: 'Vviok Industry is a leading manufacturer and supplier of industrial filtration products in Ahmedabad, India offering filter cartridges, filter housing and strainer filters.',
+  keywords: 'industrial filtration products, filter cartridge manufacturer, filter housing manufacturer, strainer filter manufacturer, industrial filters supplier in india, filter manufacturer in Ahmedabad, industrial filters manufacturer in india, industrial water treatment equipment, industrial water filtration system, industrial liquid filtration systems, industrial water filtration equipment',
+};
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
