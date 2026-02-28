@@ -83,7 +83,7 @@ export const productCategories: Category[] = [
     imageId: 'product-industrial-filter',
     subcategories: [
       { name: 'Bag Filter Housing', slug: 'bag-filter-housing' },
-      { name: 'Catridge Filter Housing', slug: 'catridge-filter-housing' },
+      { name: 'Catridge Filter Housing', slug: 'catridge-filter-housing-supplier' },
       { name: 'Strainer Filter Housing', slug: 'stainer-filter-housing' },
       { name: 'Vent Filter Housing', slug: 'vent-filter-housing' },
       { name: 'Duplex Filter Housing', slug: 'duplex-filter-housing' },
@@ -389,20 +389,25 @@ export const products: Record<string, ProductDetail[]> = {
       { question: 'how do i choose the right size?', answer: 'size selection depends on your required flow rate and the volume of contaminants in your process fluid.' }
     ]
   }],
-  'catridge-filter-housing': [{ 
-    name: 'Cartridge Filter Housing', 
-    application: 'Precision liquid and gas processing in sanitary environments', 
+  'catridge-filter-housing-supplier': [{ 
+    name: 'Industrial Cartridge Filter Housing Manufacturer in Ahmedabad, India', 
+    application: 'Industrial and sanitary liquid filtration applications', 
     imageId: 'product-cartridge-housing-1',
     imageIds: ['product-cartridge-housing-1', 'product-cartridge-housing-2'],
-    description: 'Cartridge Filter Housings are designed to meet the most demanding requirements of the process industry. These housings are ideal for high-purity liquid and gas applications where precision and reliability are paramount. Available in a wide range of sizes, from single to multi-cartridge configurations, to handle various flow rates and pressure requirements.',
+    description: 'Our Industrial Cartridge Filter Housing is designed to provide efficient and reliable liquid filtration for various industrial applications. Manufactured using premium-grade stainless steel, the stainless steel cartridge filter housing ensures durability, corrosion resistance, and long service life.\n\nAs a trusted cartridge filter housing manufacturer in Ahmedabad, India, we supply high-performance filtration housing systems suitable for industrial and sanitary applications across India.',
     features: [
-      'High-quality Stainless Steel construction (SS304/SS316/SS316L)',
-      'Sanitary design with electropolished surfaces available',
-      'Suitable for standard DOE or 222/226 code 7 cartridges',
-      'Easy access for cleaning and maintenance',
-      'Robust sealing with high-performance O-rings',
-      'Compliance with ASME/CE standards'
+      'High-quality stainless steel cartridge filter housing',
+      'Suitable for industrial and sanitary filter housing applications',
+      'Strong and corrosion-resistant construction',
+      'Easy cartridge installation and maintenance',
+      'Designed for high pressure and flow performance',
+      'Compatible with various stainless steel cartridge filters',
+      'Long operational life with low maintenance'
     ],
+    detailedSpecs: 'Our cartridge filter stainless steel housing systems are widely used in pharmaceuticals, chemicals, food & beverage, water treatment, and other industrial filtration processes. Designed for consistent performance, our industrial cartridge filter housing ensures effective particle removal and smooth system operation.\n\nRecognized among reliable cartridge filter housing manufacturers in India, we focus on precision manufacturing, competitive pricing, and timely delivery across India.',
+    metaTitle: 'Industrial Cartridge Filter Housing Manufacturer & Supplier in Ahmedabad, India',
+    metaDescription: 'Leading cartridge filter housing manufacturer in Ahmedabad, India. We supply stainless steel industrial and sanitary cartridge filter housing solutions.',
+    metaKeywords: 'industrial cartridge filter housing, cartridge filter housing, cartridge filter housing manufacturer, cartridge filter housing supplier, stainless steel cartridge filter housing, stainless steel cartridge filter, sanitary filter housing, cartridge filter stainless steel',
     specifications: {
       'Material': 'SS 304, SS 316, SS 316L',
       'No. of Cartridges': '1 to 50+',
