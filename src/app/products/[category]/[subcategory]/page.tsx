@@ -87,7 +87,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
 
             <div className="flex flex-col">
               <span className="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-4">Industrial Grade Excellence</span>
-              <h1 className="font-headline text-3xl md:text-5xl font-black text-slate-900 leading-[1.1] mb-8 uppercase tracking-tighter">
+              <h1 className="font-headline text-3xl md:text-5xl font-black text-slate-900 leading-[1.1] mb-8 tracking-tighter">
                 {product.name}
               </h1>
               
