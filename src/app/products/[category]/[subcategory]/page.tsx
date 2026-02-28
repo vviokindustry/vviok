@@ -11,6 +11,23 @@ import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
 import { resolveImageSource } from '@/lib/utils';
 import { ProductImageGallery } from '@/components/product-image-gallery';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ category: string; subcategory: string }> }): Promise<Metadata> {
+  const { category, subcategory } = await params;
+  const currentCategory = productCategories.find(cat => cat.slug === category);
+  const currentSubcategory = currentCategory?.subcategories?.find(sub => sub.slug === subcategory);
+  const subcategoryProducts = products[subcategory] || [];
+  const product = subcategoryProducts[0];
+
+  if (!product) return {};
+
+  return {
+    title: product.metaTitle || `${product.name} - VVIOK Industry`,
+    description: product.metaDescription || product.description,
+    keywords: product.metaKeywords,
+  };
+}
 
 export async function generateStaticParams() {
   const params: { category: string; subcategory: string }[] = [];
@@ -76,9 +93,9 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
               
               <div className="space-y-8">
                 <div className="prose prose-slate max-w-none">
-                  <p className="text-slate-600 text-lg md:text-xl leading-relaxed font-medium">
+                  <div className="text-slate-600 text-lg md:text-xl leading-relaxed font-medium whitespace-pre-wrap">
                     {product.description || `High-performance industrial solution designed for ${product.application.toLowerCase()}.`}
-                  </p>
+                  </div>
                 </div>
 
                 {product.features && (
@@ -118,9 +135,9 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
               <div className="py-12">
                 <TabsContent value="description" className="mt-0 outline-none">
                   <div className="max-w-4xl space-y-8">
-                    <p className="text-slate-600 text-lg font-medium leading-relaxed">
-                      The {product.name} is the pinnacle of engineering for {product.application.toLowerCase()}.
-                    </p>
+                    <div className="text-slate-600 text-lg font-medium leading-relaxed whitespace-pre-wrap">
+                      {product.detailedSpecs || `The ${product.name} is the pinnacle of engineering for ${product.application.toLowerCase()}.`}
+                    </div>
                     {product.features && (
                       <div className="bg-slate-50 p-10 rounded-[2rem] border-2 border-slate-100">
                         <h4 className="font-black text-slate-900 mb-6 uppercase tracking-tight text-xl">Technical Advantages</h4>

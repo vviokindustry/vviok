@@ -10,6 +10,11 @@ import {
   Grape,
   Fuel,
   Building,
+  Settings,
+  Lightbulb,
+  Award,
+  Database,
+  Container,
 } from 'lucide-react';
 
 export interface Subcategory {
@@ -40,9 +45,13 @@ export interface ProductDetail {
   imageId: string;
   imageIds?: string[];
   description?: string;
+  detailedSpecs?: string;
   features?: string[];
   specifications?: Record<string, string>;
   faqs?: FAQ[];
+  metaTitle?: string;
+  metaDescription?: string;
+  metaKeywords?: string;
 }
 
 export const productCategories: Category[] = [
@@ -56,8 +65,8 @@ export const productCategories: Category[] = [
     metaKeywords: 'filter cartridge, filter cartridge supplier, filter cartridge manufacturer, filter cartridge manufacturer in ahmedabad, filter cartridge manufacturer in India, filter cartridge supplier in ahmedabad, filter cartridge supplier in India, cartridge filter manufacturers in india, cartridge filter housing manufacturer',
     imageId: 'product-industrial-filter',
     subcategories: [
-      { name: 'PP Spun Filter Cartridge', slug: 'pp-spun-filter-cartridge' },
-      { name: 'PP Pleated Filter Cartridge', slug: 'pp-pleated-filter-cartridge' },
+      { name: 'PP Spun Filter Cartridge', slug: 'pp-spun-filter-cartridge-supplier' },
+      { name: 'PP Pleated Filter Cartridge', slug: 'pp-pleated-filter-cartridge-supplier' },
       { name: 'PTFE Pleated Filter Cartridge', slug: 'ptfe-pleated-filter-cartridge' },
       { name: 'SS Wire Mesh Cartridge', slug: 'ss-wire-mesh-cartridge' },
       { name: 'SS Sintered Powder Cartridge', slug: 'ss-sintered-powder-cartridge' },
@@ -117,14 +126,84 @@ export const productCategories: Category[] = [
   }
 ];
 
+export const industries = [
+  {
+    name: 'Water Treatment',
+    description: 'Providing advanced filtration for industrial and municipal water systems.',
+    icon: Droplets,
+  },
+  {
+    name: 'Chemical',
+    description: 'Specialized solutions for aggressive chemical and solvent processing.',
+    icon: FlaskConical,
+  },
+  {
+    name: 'Pharmaceutical',
+    description: 'Sanitary filtration for sterile air and high-purity process fluids.',
+    icon: HeartPulse,
+  },
+  {
+    name: 'Food & Beverage',
+    description: 'Compliance-driven filtration for liquid processing and bottling.',
+    icon: Grape,
+  },
+  {
+    name: 'Oil & Gas',
+    description: 'Heavy-duty strainers and housings for refinery and pipeline protection.',
+    icon: Fuel,
+  },
+  {
+    name: 'Manufacturing',
+    description: 'General industrial filtration to protect equipment and optimize performance.',
+    icon: Building,
+  },
+];
+
+export const whyChooseUs = [
+  {
+    title: 'Expert Engineering',
+    description: 'Our team brings over 20 years of specialized experience in industrial filtration.',
+    icon: Settings,
+  },
+  {
+    title: 'Global Export',
+    description: 'Reliable supply chain delivering products to over 15 countries worldwide.',
+    icon: Globe,
+  },
+  {
+    title: 'Quality Standards',
+    description: 'All products adhere to strict ASME and ISO quality management protocols.',
+    icon: CheckCircle,
+  },
+  {
+    title: 'Custom Solutions',
+    description: 'Tailor-made filtration systems designed to your exact technical parameters.',
+    icon: Lightbulb,
+  },
+  {
+    title: 'Reliable Delivery',
+    description: 'Committed to on-time shipping and robust packaging for safe transit.',
+    icon: Package,
+  },
+  {
+    title: 'Award Winning',
+    description: 'Recognized for innovation and excellence in industrial manufacturing.',
+    icon: Award,
+  }
+];
+
 export const products: Record<string, ProductDetail[]> = {
   // Filter Cartridge
-  'pp-spun-filter-cartridge': [{ 
-    name: 'PP Spun Filter Cartridge', 
+  'pp-spun-filter-cartridge-supplier': [{ 
+    name: 'PP Spun Filter Cartridge Manufacturer & Supplier in India', 
     application: 'Sediment and particulate removal, pre-filtration for RO systems', 
     imageId: 'product-pp-spun-1',
     imageIds: ['product-pp-spun-1', 'product-pp-spun-2'],
-    description: 'PP Spun Filter Cartridges are made of 100% food-grade polypropylene. These melt-blown cartridges feature a multi-layer structure that provides graduated filtration from the outside to the inside, ensuring high dirt holding capacity and long service life. They are widely used for sediment and particulate removal in various industrial and domestic water treatment processes.',
+    description: 'Our PP Spun Filter Cartridge is manufactured using 100% high-grade polypropylene to deliver superior depth filtration and long service life. Designed for effective sediment and particulate removal, these spun polypropylene filter cartridges provide high dirt-holding capacity with low pressure drop.\n\nAs a trusted PP spun filter cartridge manufacturer in Ahmedabad, India, we supply reliable and cost-effective filtration solutions suitable for industrial and commercial water treatment applications.',
+    detailedSpecs: 'Our PP spun cartridge filter is widely used in water treatment plants, chemical industries, pharmaceuticals, food & beverage processing, and RO pre-filtration systems. Manufactured under strict quality standards, our spun polypropylene filter cartridges ensure consistent performance, durability, and competitive pricing across India.',
+    metaTitle: 'PP Spun Filter Cartridge Manufacturer India | Polypropylene Filter Supplier',
+    metaDescription: 'Leading PP spun filter cartridge manufacturer and supplier in Ahmedabad, India offering high-quality spun polypropylene filter cartridges at competitive prices.',
+    metaKeywords: 'pp spun filter cartridge, spun polypropylene filter cartridge, pp spun cartridge filter, pp spun filter manufacturers, pp spun filter cartridge 5 micron, spun polypropylene filter, pp spun filter cartridge price, polypropylene spun filter, pp spun cartridge',
     features: [
       '100% Polypropylene construction for wide chemical compatibility',
       'Multi-layer depth filtration structure',
@@ -143,12 +222,12 @@ export const products: Record<string, ProductDetail[]> = {
       'Core': 'Polypropylene or No Core options available'
     },
     faqs: [
-      { question: 'What is the lifespan of a PP Spun filter cartridge?', answer: 'The lifespan typically ranges from 3 to 6 months depending on the water quality and usage volume.' },
-      { question: 'Are these cartridges compatible with standard housings?', answer: 'Yes, our PP Spun cartridges are designed to fit most standard industrial and domestic filter housings.' },
-      { question: 'Can these filters be cleaned and reused?', answer: 'PP Spun filters are depth filters designed for single use to ensure maximum hygiene and filtration efficiency.' }
+      { question: 'What is the lifespan of a pp spun filter cartridge?', answer: 'The lifespan typically ranges from 3 to 6 months depending on the water quality and usage volume.' },
+      { question: 'Are these cartridges compatible with standard housings?', answer: 'Yes, our pp spun cartridges are designed to fit most standard industrial and domestic filter housings.' },
+      { question: 'Can these filters be cleaned and reused?', answer: 'PP spun filters are depth filters designed for single use to ensure maximum hygiene and filtration efficiency.' }
     ]
   }],
-  'pp-pleated-filter-cartridge': [{ 
+  'pp-pleated-filter-cartridge-supplier': [{ 
     name: 'PP Pleated Filter Cartridge', 
     application: 'High clarity liquid filtration, chemical and solvent processing', 
     imageId: 'product-pp-pleated-1',
@@ -198,7 +277,7 @@ export const products: Record<string, ProductDetail[]> = {
       'Filtration Efficiency': '99.99% Absolute'
     },
     faqs: [
-      { question: 'Can PTFE filters handle sterile air filtration?', answer: 'Yes, their hydrophobic nature makes them excellent for sterile air and gas venting applications.' },
+      { question: 'Can ptfe filters handle sterile air filtration?', answer: 'Yes, their hydrophobic nature makes them excellent for sterile air and gas venting applications.' },
       { question: 'What chemicals are these filters resistant to?', answer: 'They are resistant to almost all strong acids, bases, and organic solvents.' }
     ]
   }],
@@ -225,8 +304,8 @@ export const products: Record<string, ProductDetail[]> = {
       'Max Differential Pressure': '10 Bar'
     },
     faqs: [
-      { question: 'How do I clean an SS Wire Mesh cartridge?', answer: 'These can be cleaned using backwashing, ultrasonic cleaning, or chemical cleaning depending on the contaminant.' },
-      { question: 'What is the maximum operating temperature?', answer: 'Our SS cartridges can withstand temperatures up to 300°C depending on the seal material used.' }
+      { question: 'How do i clean an ss wire mesh cartridge?', answer: 'These can be cleaned using backwashing, ultrasonic cleaning, or chemical cleaning depending on the contaminant.' },
+      { question: 'What is the maximum operating temperature?', answer: 'Our ss cartridges can withstand temperatures up to 300°C depending on the seal material used.' }
     ]
   }],
   'ss-sintered-powder-cartridge': [{ 
@@ -283,7 +362,7 @@ export const products: Record<string, ProductDetail[]> = {
     },
     faqs: [
       { question: 'What materials are available for bag filter housings?', answer: 'We primarily manufacture them in SS 304, SS 316, and SS 316L, but custom carbon steel options are also available.' },
-      { question: 'How do I choose the right size?', answer: 'Size selection depends on your required flow rate and the volume of contaminants in your process fluid.' }
+      { question: 'How do i choose the right size?', answer: 'Size selection depends on your required flow rate and the volume of contaminants in your process fluid.' }
     ]
   }],
   'catridge-filter-housing': [{ 
@@ -363,7 +442,7 @@ export const products: Record<string, ProductDetail[]> = {
       'Drain/Vent Ports': '1/2" Tri-Clamp / NPT'
     },
     faqs: [
-      { question: 'Why is SS 316L preferred for vent housings?', answer: 'SS 316L offers superior corrosion resistance and is the standard for high-purity pharmaceutical applications.' }
+      { question: 'Why is ss 316l preferred for vent housings?', answer: 'SS 316L offers superior corrosion resistance and is the standard for high-purity pharmaceutical applications.' }
     ]
   }],
   'duplex-filter-housing': [{ 
@@ -417,7 +496,7 @@ export const products: Record<string, ProductDetail[]> = {
       'Closure Type': 'Swing Bolt / Davit Arm'
     },
     faqs: [
-      { question: 'What is a Davit Arm closure?', answer: 'It is a mechanical arm that helps lift and swing away the heavy lid of a multi-bag housing with minimal effort.' }
+      { question: 'What is a davit arm closure?', answer: 'It is a mechanical arm that helps lift and swing away the heavy lid of a multi-bag housing with minimal effort.' }
     ]
   }],
   'multi-cartridge-housing': [{ 
@@ -486,7 +565,7 @@ export const products: Record<string, ProductDetail[]> = {
     application: 'Temporary or permanent protection for pumps, valves, and other equipment', 
     imageId: 'product-conical-strainer',
     faqs: [
-      { question: 'When should I use a conical strainer?', answer: 'They are typically used during plant startup to capture welding slag or other construction debris.' }
+      { question: 'When should i use a conical strainer?', answer: 'They are typically used during plant startup to capture welding slag or other construction debris.' }
     ]
   }],
   'pleated-strainers': [{ 
@@ -512,7 +591,7 @@ export const products: Record<string, ProductDetail[]> = {
     application: 'Safe processing and storage of liquids and gases under high pressure', 
     imageId: '/uploads/pressure tank.jpeg',
     faqs: [
-      { question: 'Do your pressure vessels meet ASME standards?', answer: 'Yes, we design and manufacture all pressure vessels according to ASME Section VIII Division 1 standards.' }
+      { question: 'Do your pressure vessels meet asme standards?', answer: 'Yes, we design and manufacture all pressure vessels according to ASME Section VIII Division 1 standards.' }
     ]
   }],
   'air-reciver-tank': [{ 
@@ -536,39 +615,7 @@ export const products: Record<string, ProductDetail[]> = {
     application: 'Sanitary support systems for industrial equipment and piping', 
     imageId: 'product-ss-pendants',
     faqs: [
-      { question: 'Are these pendants suitable for cleanrooms?', answer: 'Yes, our SS pendants are designed for use in pharmaceutical cleanrooms where hygiene and ease of cleaning are mandatory.' }
+      { question: 'Are these pendants suitable for cleanrooms?', answer: 'Yes, our ss pendants are designed for use in pharmaceutical cleanrooms where hygiene and ease of cleaning are mandatory.' }
     ]
   }],
 };
-
-export const industries = [
-  { name: 'Water Treatment', icon: Droplets, description: 'Ensuring water purity and safety with our advanced filtration systems for municipal, industrial, and wastewater applications.', imageId: 'industry-water-treatment' },
-  { name: 'Chemical Industry', icon: FlaskConical, description: 'Providing robust and corrosion-resistant filters for separating and purifying aggressive chemicals, solvents, and polymers.', imageId: 'industry-chemical' },
-  { name: 'Pharmaceutical', icon: HeartPulse, description: 'Delivering sterile and high-purity filtration solutions that meet the stringent standards of pharmaceutical manufacturing.', imageId: 'industry-pharmaceutical' },
-  { name: 'Food & Beverage', icon: Grape, description: 'Maintaining product quality and safety with food-grade filters for liquids, ingredients, and air purification.', imageId: 'industry-food-beverage' },
-  { name: 'Water Storage', icon: Droplets, description: 'Providing safe and reliable water storage solutions with our high-quality stainless steel tanks.', imageId: 'industry-water-treatment' },
-  { name: 'Oil & Gas', icon: Fuel, description: 'Offering reliable filtration for refineries and processing plants to remove contaminants from hydrocarbons and process fluids.', imageId: 'industry-oil-gas' },
-];
-
-export const whyChooseUs = [
-  {
-    icon: CheckCircle,
-    title: 'Uncompromising Quality',
-    description: 'We adhere to the highest international quality standards, ensuring every product is reliable and efficient.',
-  },
-  {
-    icon: Factory,
-    title: 'Advanced Manufacturing',
-    description: 'Our state-of-the-art facility enables us to produce high-performance filters with precision and consistency.',
-  },
-  {
-    icon: Package,
-    title: 'Customization Expertise',
-    description: 'We engineer bespoke filtration solutions tailored to meet your unique operational requirements.',
-  },
-  {
-    icon: Globe,
-    title: 'Global Export Reach',
-    description: 'With robust logistics, we deliver our products on time to clients across the globe.',
-  },
-];
