@@ -29,6 +29,11 @@ export interface Category {
   pageH1?: string;
 }
 
+export interface FAQ {
+  question: string;
+  answer: string;
+}
+
 export interface ProductDetail {
   name: string;
   application: string;
@@ -37,6 +42,7 @@ export interface ProductDetail {
   description?: string;
   features?: string[];
   specifications?: Record<string, string>;
+  faqs?: FAQ[];
 }
 
 export const productCategories: Category[] = [
@@ -135,7 +141,12 @@ export const products: Record<string, ProductDetail[]> = {
       'Material': '100% Polypropylene',
       'Max Operating Temp': '60°C',
       'Core': 'Polypropylene or No Core options available'
-    }
+    },
+    faqs: [
+      { question: 'What is the lifespan of a PP Spun filter cartridge?', answer: 'The lifespan typically ranges from 3 to 6 months depending on the water quality and usage volume.' },
+      { question: 'Are these cartridges compatible with standard housings?', answer: 'Yes, our PP Spun cartridges are designed to fit most standard industrial and domestic filter housings.' },
+      { question: 'Can these filters be cleaned and reused?', answer: 'PP Spun filters are depth filters designed for single use to ensure maximum hygiene and filtration efficiency.' }
+    ]
   }],
   'pp-pleated-filter-cartridge': [{ 
     name: 'PP Pleated Filter Cartridge', 
@@ -158,7 +169,11 @@ export const products: Record<string, ProductDetail[]> = {
       'Max Operating Temp': '80°C',
       'Support/Cage': 'Polypropylene',
       'End Caps': 'DOE, 222, 226 styles'
-    }
+    },
+    faqs: [
+      { question: 'What is the difference between nominal and absolute ratings?', answer: 'Absolute ratings guarantee the removal of particles at the specified size with 99.9% efficiency, whereas nominal ratings represent a general efficiency level.' },
+      { question: 'Are these filters suitable for chemical processing?', answer: 'Yes, the all-polypropylene construction provides excellent resistance to a wide range of chemicals and solvents.' }
+    ]
   }],
   'ptfe-pleated-filter-cartridge': [{ 
     name: 'PTFE Pleated Filter Cartridge', 
@@ -181,7 +196,11 @@ export const products: Record<string, ProductDetail[]> = {
       'Support Material': 'Polypropylene',
       'Max Operating Temp': '90°C',
       'Filtration Efficiency': '99.99% Absolute'
-    }
+    },
+    faqs: [
+      { question: 'Can PTFE filters handle sterile air filtration?', answer: 'Yes, their hydrophobic nature makes them excellent for sterile air and gas venting applications.' },
+      { question: 'What chemicals are these filters resistant to?', answer: 'They are resistant to almost all strong acids, bases, and organic solvents.' }
+    ]
   }],
   'ss-wire-mesh-cartridge': [{ 
     name: 'SS Wire Mesh Cartridge', 
@@ -204,7 +223,11 @@ export const products: Record<string, ProductDetail[]> = {
       'Max Operating Temp': 'Up to 300°C',
       'End Caps': 'DOE, 222, 226, NPT/BSP Threaded',
       'Max Differential Pressure': '10 Bar'
-    }
+    },
+    faqs: [
+      { question: 'How do I clean an SS Wire Mesh cartridge?', answer: 'These can be cleaned using backwashing, ultrasonic cleaning, or chemical cleaning depending on the contaminant.' },
+      { question: 'What is the maximum operating temperature?', answer: 'Our SS cartridges can withstand temperatures up to 300°C depending on the seal material used.' }
+    ]
   }],
   'ss-sintered-powder-cartridge': [{ 
     name: 'SS Sintered Powder Cartridge', 
@@ -227,7 +250,11 @@ export const products: Record<string, ProductDetail[]> = {
       'Max Operating Temp': 'Up to 600°C (in inert atmosphere)',
       'Porosity': '35% to 50%',
       'End Caps': 'DOE, Threaded, 222, 226'
-    }
+    },
+    faqs: [
+      { question: 'What is sintering?', answer: 'Sintering is a process of compacting and forming a solid mass of material by heat or pressure without melting it to the point of liquefaction.' },
+      { question: 'Are these suitable for high-pressure gas filtration?', answer: 'Yes, they are specifically engineered for high-pressure environments and critical gas filtration.' }
+    ]
   }],
   
   // Housing
@@ -253,7 +280,11 @@ export const products: Record<string, ProductDetail[]> = {
       'Bag Sizes Supported': 'Size 1, Size 2, Size 3, Size 4',
       'Flow Rate Capacity': 'Up to 200 m³/hr per housing',
       'Connection Types': 'ANSI/DIN Flanged, NPT/BSP Threaded'
-    }
+    },
+    faqs: [
+      { question: 'What materials are available for bag filter housings?', answer: 'We primarily manufacture them in SS 304, SS 316, and SS 316L, but custom carbon steel options are also available.' },
+      { question: 'How do I choose the right size?', answer: 'Size selection depends on your required flow rate and the volume of contaminants in your process fluid.' }
+    ]
   }],
   'catridge-filter-housing': [{ 
     name: 'Cartridge Filter Housing', 
@@ -276,7 +307,10 @@ export const products: Record<string, ProductDetail[]> = {
       'Operating Pressure': 'Up to 10 Bar (Custom up to 25 Bar)',
       'Operating Temperature': 'Up to 150°C',
       'Connection': 'Flanged, Threaded, Tri-clover'
-    }
+    },
+    faqs: [
+      { question: 'Can these housings handle sanitary applications?', answer: 'Yes, we offer electropolished finishes and tri-clover connections specifically for pharmaceutical and food-grade environments.' }
+    ]
   }],
   'stainer-filter-housing': [{ 
     name: 'Strainer Filter Housing', 
@@ -300,7 +334,10 @@ export const products: Record<string, ProductDetail[]> = {
       'Design Temperature': 'Up to 150°C',
       'Screen/Basket Material': 'Stainless Steel 304/316',
       'Filtration Range': '20 Micron to 10mm Perforation'
-    }
+    },
+    faqs: [
+      { question: 'What is the benefit of a quick-opening cover?', answer: 'It reduces downtime significantly during cleaning cycles, allowing for rapid basket removal.' }
+    ]
   }],
   'vent-filter-housing': [{ 
     name: 'Vent Filter Housing', 
@@ -324,7 +361,10 @@ export const products: Record<string, ProductDetail[]> = {
       'Design Pressure': 'Atms / Up to 10 Bar',
       'Design Temperature': 'Up to 150°C',
       'Drain/Vent Ports': '1/2" Tri-Clamp / NPT'
-    }
+    },
+    faqs: [
+      { question: 'Why is SS 316L preferred for vent housings?', answer: 'SS 316L offers superior corrosion resistance and is the standard for high-purity pharmaceutical applications.' }
+    ]
   }],
   'duplex-filter-housing': [{ 
     name: 'Duplex Filter Housing', 
@@ -348,7 +388,10 @@ export const products: Record<string, ProductDetail[]> = {
       'Connection Size': '1" to 12" (Flanged / Threaded)',
       'Seal Material': 'EPDM / Viton / PTFE',
       'Compliance': 'ASME / CE Standard Construction'
-    }
+    },
+    faqs: [
+      { question: 'How does the switch-over mechanism work?', answer: 'A lever or gear-operated valve redirects the flow from the dirty housing to the clean housing instantly.' }
+    ]
   }],
   'multi-bag-filter-housing': [{ 
     name: 'Multi-Bag Filter Housing', 
@@ -372,7 +415,10 @@ export const products: Record<string, ProductDetail[]> = {
       'Flow Rate': 'Up to 1000 m³/hr',
       'Connection': '3" to 14" Flanged (ANSI/DIN)',
       'Closure Type': 'Swing Bolt / Davit Arm'
-    }
+    },
+    faqs: [
+      { question: 'What is a Davit Arm closure?', answer: 'It is a mechanical arm that helps lift and swing away the heavy lid of a multi-bag housing with minimal effort.' }
+    ]
   }],
   'multi-cartridge-housing': [{ 
     name: 'Multi-Cartridge Filter Housing', 
@@ -396,7 +442,10 @@ export const products: Record<string, ProductDetail[]> = {
       'Inlet/Outlet Connections': '2" to 12" Flanged (ANSI/DIN)',
       'Surface Finish': 'Industrial Polish / Electropolish available',
       'Design Temperature': 'Up to 150°C'
-    }
+    },
+    faqs: [
+      { question: 'Are these compatible with high-flow cartridges?', answer: 'Yes, our housings can be customized to fit specific high-flow cartridge formats.' }
+    ]
   }],
   
   // Strainer
@@ -419,18 +468,77 @@ export const products: Record<string, ProductDetail[]> = {
       'Mesh Range': '20 to 400 Mesh',
       'Max Pressure': '10 Bar (Standard)',
       'Gasket': 'EPDM / Viton / PTFE'
-    }
+    },
+    faqs: [
+      { question: 'What is the standard mesh size for basket strainers?', answer: 'Standard mesh ranges from 20 to 400 mesh, but we can provide custom perforated screens for larger debris.' }
+    ]
   }],
-  'taper-basket-strainers': [{ name: 'Taper Basket Strainers', application: 'Efficient coarse filtration in high-flow pipelines with tapered design', imageId: '/uploads/SS Basket.jpg' }],
-  'conical-strainers': [{ name: 'Conical Strainers', application: 'Temporary or permanent protection for pumps, valves, and other equipment', imageId: 'product-conical-strainer' }],
-  'pleated-strainers': [{ name: 'Pleated Strainers', application: 'Increased surface area for extended service life in critical filtration tasks', imageId: 'product-pleated-strainer' }],
+  'taper-basket-strainers': [{ 
+    name: 'Taper Basket Strainers', 
+    application: 'Efficient coarse filtration in high-flow pipelines with tapered design', 
+    imageId: '/uploads/SS Basket.jpg',
+    faqs: [
+      { question: 'Why use a tapered design?', answer: 'A tapered design allows for better flow dynamics and easier retrieval of the basket from the housing in vertical installations.' }
+    ]
+  }],
+  'conical-strainers': [{ 
+    name: 'Conical Strainers', 
+    application: 'Temporary or permanent protection for pumps, valves, and other equipment', 
+    imageId: 'product-conical-strainer',
+    faqs: [
+      { question: 'When should I use a conical strainer?', answer: 'They are typically used during plant startup to capture welding slag or other construction debris.' }
+    ]
+  }],
+  'pleated-strainers': [{ 
+    name: 'Pleated Strainers', 
+    application: 'Increased surface area for extended service life in critical filtration tasks', 
+    imageId: 'product-pleated-strainer',
+    faqs: [
+      { question: 'What are the benefits of pleating a strainer?', answer: 'Pleating increases the surface area significantly, which lowers the initial pressure drop and increases the dirt holding capacity.' }
+    ]
+  }],
   
   // Vessels
-  'storage-tank': [{ name: 'Storage Tank', application: 'Industrial liquid storage and containment for chemical and process industries', imageId: '/uploads/Storage Tank Manufacturer -Vviok industry.png' }],
-  'pressure-vessel': [{ name: 'Pressure vessel', application: 'Safe processing and storage of liquids and gases under high pressure', imageId: '/uploads/pressure tank.jpeg' }],
-  'air-reciver-tank': [{ name: 'Air reciver tank', application: 'Compressed air storage and pressure stabilization for industrial systems', imageId: '/uploads/Air receiver tank manufacturer supplier in india -vviok industry.jpeg' }],
-  'purified-water-storage-tank': [{ name: 'Purified water storage tank', application: 'Sterile water storage for pharmaceutical and food processing', imageId: 'product-purified-water-tank' }],
-  'ss-pendants': [{ name: 'SS pendants', application: 'Sanitary support systems for industrial equipment and piping', imageId: 'product-ss-pendants' }],
+  'storage-tank': [{ 
+    name: 'Storage Tank', 
+    application: 'Industrial liquid storage and containment for chemical and process industries', 
+    imageId: '/uploads/Storage Tank Manufacturer -Vviok industry.png',
+    faqs: [
+      { question: 'What is the maximum capacity you can manufacture?', answer: 'We can manufacture custom storage tanks up to 50,000 liters depending on site requirements.' }
+    ]
+  }],
+  'pressure-vessel': [{ 
+    name: 'Pressure vessel', 
+    application: 'Safe processing and storage of liquids and gases under high pressure', 
+    imageId: '/uploads/pressure tank.jpeg',
+    faqs: [
+      { question: 'Do your pressure vessels meet ASME standards?', answer: 'Yes, we design and manufacture all pressure vessels according to ASME Section VIII Division 1 standards.' }
+    ]
+  }],
+  'air-reciver-tank': [{ 
+    name: 'Air reciver tank', 
+    application: 'Compressed air storage and pressure stabilization for industrial systems', 
+    imageId: '/uploads/Air receiver tank manufacturer supplier in india -vviok industry.jpeg',
+    faqs: [
+      { question: 'Why is an air receiver tank necessary?', answer: 'It acts as a reservoir to buffer pressure surges from the compressor and helps cool the air, allowing moisture to drop out.' }
+    ]
+  }],
+  'purified-water-storage-tank': [{ 
+    name: 'Purified water storage tank', 
+    application: 'Sterile water storage for pharmaceutical and food processing', 
+    imageId: 'product-purified-water-tank',
+    faqs: [
+      { question: 'What prevents contamination in purified water tanks?', answer: 'We use sanitary vents, sterile overflow systems, and high-grade SS 316L with electropolished surfaces to prevent bio-film buildup.' }
+    ]
+  }],
+  'ss-pendants': [{ 
+    name: 'SS pendants', 
+    application: 'Sanitary support systems for industrial equipment and piping', 
+    imageId: 'product-ss-pendants',
+    faqs: [
+      { question: 'Are these pendants suitable for cleanrooms?', answer: 'Yes, our SS pendants are designed for use in pharmaceutical cleanrooms where hygiene and ease of cleaning are mandatory.' }
+    ]
+  }],
 };
 
 export const industries = [

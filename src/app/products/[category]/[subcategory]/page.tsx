@@ -6,10 +6,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { ChevronRight, Home, Package, Share2, CheckCircle2, ArrowRight } from 'lucide-react';
+import { ChevronRight, Home, Package, Share2, CheckCircle2, ArrowRight, HelpCircle } from 'lucide-react';
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
 import { resolveImageSource } from '@/lib/utils';
 import { ProductImageGallery } from '@/components/product-image-gallery';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 export async function generateStaticParams() {
   const params: { category: string; subcategory: string }[] = [];
@@ -163,9 +164,43 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
         </div>
       </section>
 
+      {/* FAQ Section */}
+      {product.faqs && product.faqs.length > 0 && (
+        <section className="py-20 bg-slate-50">
+          <div className="container">
+            <div className="max-w-3xl mx-auto">
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center justify-center p-3 rounded-2xl bg-primary/10 text-primary mb-4">
+                  <HelpCircle className="h-8 w-8" />
+                </div>
+                <h2 className="font-headline text-3xl md:text-4xl font-black text-slate-900 uppercase tracking-tighter">
+                  Frequently Asked Questions
+                </h2>
+                <p className="mt-4 text-slate-500 font-medium">Find answers to common questions about our {product.name}.</p>
+              </div>
+
+              <div className="bg-white p-8 md:p-12 rounded-[3rem] border-2 border-slate-100 shadow-xl shadow-slate-200/50">
+                <Accordion type="single" collapsible className="w-full">
+                  {product.faqs.map((faq, index) => (
+                    <AccordionItem key={index} value={`faq-${index}`} className="border-b border-slate-100 last:border-0 py-2">
+                      <AccordionTrigger className="text-left font-black uppercase tracking-tight text-slate-900 hover:text-primary transition-colors py-4">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-slate-600 text-base leading-relaxed font-medium pb-6">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                  ))}
+                </Accordion>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Internal Linking Section - Related Products in same category */}
       {relatedSubcategories.length > 0 && (
-        <section className="py-20 bg-slate-50 border-t">
+        <section className="py-20 bg-white border-t">
           <div className="container">
             <div className="mb-12">
               <span className="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-2 block">Related Solutions</span>
@@ -210,7 +245,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
       )}
 
       {/* Cross-Category Internal Linking */}
-      <section className="py-20 bg-white border-t">
+      <section className="py-20 bg-slate-50 border-t">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-headline text-2xl font-black text-slate-900 uppercase tracking-tight mb-8">
@@ -218,7 +253,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
               {productCategories.filter(cat => cat.slug !== category).map((cat) => (
-                <Button key={cat.slug} asChild variant="outline" className="rounded-xl font-bold uppercase tracking-widest text-[11px] h-12 px-8 border-slate-200 hover:border-primary hover:text-primary">
+                <Button key={cat.slug} asChild variant="outline" className="rounded-xl font-bold uppercase tracking-widest text-[11px] h-12 px-8 border-slate-200 hover:border-primary hover:text-primary bg-white">
                   <Link href={`/products/${cat.slug}`}>{cat.name}</Link>
                 </Button>
               ))}
