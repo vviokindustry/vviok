@@ -323,19 +323,24 @@ export const products: Record<string, ProductDetail[]> = {
     ]
   }],
   'ss-sintered-powder-cartridge': [{ 
-    name: 'SS Sintered Powder Cartridge', 
+    name: 'SS Sintered Powder Cartridge Manufacturer in Ahmedabad, India', 
     application: 'Fine filtration for steam, polymers, and aggressive process fluids', 
     imageId: 'product-ss-sintered-1',
     imageIds: ['product-ss-sintered-1', 'product-ss-sintered-2', 'product-ss-sintered-3'],
-    description: 'SS Sintered Powder Cartridges are manufactured by sintering high-quality stainless steel powder. This process creates a porous structure with high mechanical strength and exceptional thermal resistance. These cartridges are designed for fine filtration of liquids and gases in extreme environments where polymer media would fail. They are widely used for steam filtration, catalyst recovery, and processing corrosive chemicals.',
+    description: 'Our SS Sintered Powder Cartridge is manufactured using high-grade stainless steel powder through advanced sintering technology to ensure precise and uniform filtration. Designed for high strength and durability, the sintered powder filter cartridge provides excellent resistance to pressure, temperature, and corrosion.\n\nAs a trusted SS sintered powder cartridge manufacturer in Ahmedabad, India, we supply reliable and long-lasting filtration solutions suitable for demanding industrial applications.',
     features: [
-      'Exceptional mechanical strength and integrity',
-      'High temperature and pressure resistance',
-      'Uniform pore size distribution for precise filtration',
-      'Excellent chemical compatibility with aggressive fluids',
-      'Back-washable and ultrasonically cleanable',
-      'No media migration or fiber shedding'
+      'High-quality sintered stainless steel construction',
+      'Uniform pore structure for precise filtration',
+      'Excellent pressure and temperature resistance',
+      'Corrosion-resistant and durable design',
+      'Reusable and easy to clean',
+      'Suitable for high-performance industrial filtration',
+      'Long operational service life'
     ],
+    detailedSpecs: 'Our sintered SS filter cartridges are widely used in chemical processing, pharmaceuticals, oil & gas, food processing, and water treatment industries. The SS sintered filter cartridge offers consistent filtration accuracy and mechanical strength in harsh operating conditions.\n\nRecognized among reliable sintered powder filter cartridge manufacturers in India, we focus on quality manufacturing, competitive pricing, and timely supply across India.',
+    metaTitle: 'SS Sintered Powder Cartridge Manufacturer & Supplier in Ahmedabad, India',
+    metaDescription: 'Leading SS sintered powder cartridge manufacturer in Ahmedabad, India. We supply durable sintered stainless steel filter cartridges for industrial filtration applications.',
+    metaKeywords: 'ss sintered powder cartridge, sintered powder filter cartridge, stainless steel sintered powder filter cartridges, Sintered Filter manufacturer in India, Ss sintered powder cartridge sizes, sintered ss filter cartridges, ss sintered filter cartridge',
     specifications: {
       'Micron Rating': '0.5, 1, 3, 5, 10, 20, 50 Micron',
       'Length': '10", 20", 30"',
