@@ -94,8 +94,12 @@ export const productCategories: Category[] = [
   },
   {
     name: 'Vessels',
-    slug: 'vessels',
-    description: 'High-performance industrial vessels and specialized tanks for critical storage and process requirements.',
+    slug: 'industrial-vessels-manufacturer',
+    pageH1: 'Industrial Vessels Manufacturer & Supplier in Ahmedabad, India',
+    description: 'We are a leading industrial vessels manufacturer in Ahmedabad, India, offering high-quality and durable stainless steel vessel solutions for various industrial applications. Our industrial vessels are designed to meet strict quality standards and deliver reliable performance in demanding operating conditions.\n\nAs a trusted pressure vessels manufacturer in India, we provide a wide range of products including stainless steel pressure vessels, stainless steel mixing tanks, steel vessels, stainless water storage tanks, chemical mixing tanks with agitator, stainless steel fermentation tanks, and stainless steel mixing tanks with agitator. Each product is manufactured using premium-grade stainless steel to ensure strength, corrosion resistance, and long service life.\n\nOur stainless steel pressure vessels are widely used in chemical, pharmaceutical, food processing, beverage, and water treatment industries. Mixing tanks with agitators are ideal for uniform blending and processing of liquids, chemicals, and other materials. We also manufacture stainless steel fermentation tanks designed for hygienic and controlled processing environments.\n\nAll our industrial vessels are engineered with precision and can be customized according to capacity, pressure rating, and specific industrial requirements. Our manufacturing process focuses on quality control, durability, and safety compliance to ensure dependable performance.\n\nRecognized among reliable industrial vessels manufacturers in India, we are committed to delivering cost-effective solutions, timely delivery, and strong technical support to our clients across India.',
+    metaTitle: 'Industrial Vessels Manufacturer in Ahmedabad, India | Stainless Steel Pressure Vessel Supplier',
+    metaDescription: 'Leading industrial vessels manufacturer in Ahmedabad, India. We supply stainless steel pressure vessels, mixing tanks, fermentation tanks and water storage tanks across India.',
+    metaKeywords: 'industrial vessels manufacturer, pressure vessels manufacturers, steel vessels, stainless steel vessel, stainless water storage tank, stainless steel mixing tanks, stainless steel pressure vessel, chemical mixing tank with agitator, stainless steel fermentation tanks, stainless steel mixing tank with agitator',
     imageId: 'product-custom-filter',
     subcategories: [
       { name: 'Storage Tank', slug: 'storage-tank' },
