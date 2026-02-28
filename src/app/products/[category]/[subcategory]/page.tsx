@@ -3,7 +3,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import Link from 'next/link';
+import Link from 'link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { ChevronRight, Home, Package, Share2, CheckCircle2, ArrowRight, HelpCircle } from 'lucide-react';
@@ -190,7 +190,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                 <div className="inline-flex items-center justify-center p-3 rounded-2xl bg-primary/10 text-primary mb-4">
                   <HelpCircle className="h-8 w-8" />
                 </div>
-                <h2 className="font-headline text-3xl md:text-4xl font-black text-slate-900 uppercase tracking-tighter">
+                <h2 className="font-headline text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">
                   Frequently Asked Questions
                 </h2>
                 <p className="mt-4 text-slate-500 font-medium">Find answers to common questions about our {product.name}.</p>
@@ -219,9 +219,9 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
       {relatedSubcategories.length > 0 && (
         <section className="py-20 bg-white border-t">
           <div className="container">
-            <div className="mb-12">
+            <div className="mb-12 text-center">
               <span className="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-2 block">Related Solutions</span>
-              <h2 className="font-headline text-3xl md:text-4xl font-black text-slate-900 uppercase tracking-tighter">
+              <h2 className="font-headline text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">
                 Explore More in {currentCategory.name}
               </h2>
             </div>
@@ -265,7 +265,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
       <section className="py-20 bg-slate-50 border-t">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-headline text-2xl font-black text-slate-900 uppercase tracking-tight mb-8">
+            <h2 className="font-headline text-2xl font-black text-slate-900 tracking-tight mb-8">
               Discover Our Full Product Range
             </h2>
             <div className="flex flex-wrap justify-center gap-4">
