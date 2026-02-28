@@ -1,3 +1,4 @@
+
 import { products, productCategories } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
@@ -87,7 +88,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
 
             <div className="flex flex-col">
               <span className="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-4">Industrial Grade Excellence</span>
-              <h1 className="font-headline text-3xl md:text-5xl font-black text-slate-900 leading-[1.1] mb-8 tracking-tighter">
+              <h1 className="font-headline text-3xl md:text-5xl font-bold text-slate-900 leading-[1.1] mb-8 tracking-tighter">
                 {product.name}
               </h1>
               
@@ -138,18 +139,6 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                     <div className="text-slate-600 text-lg font-medium leading-relaxed whitespace-pre-wrap">
                       {product.detailedSpecs || `The ${product.name} is the pinnacle of engineering for ${product.application.toLowerCase()}.`}
                     </div>
-                    {product.features && (
-                      <div className="bg-slate-50 p-10 rounded-[2rem] border-2 border-slate-100">
-                        <h4 className="font-black text-slate-900 mb-6 uppercase tracking-tight text-xl">Technical Advantages</h4>
-                        <ul className="grid md:grid-cols-2 gap-4 list-none p-0">
-                          {product.features.map((feature, idx) => (
-                            <li key={idx} className="flex gap-2 text-base font-bold text-slate-600">
-                              <span className="text-primary">–</span> {feature}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
                   </div>
                 </TabsContent>
                 <TabsContent value="info" className="mt-0 outline-none">
@@ -190,7 +179,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                 <div className="inline-flex items-center justify-center p-3 rounded-2xl bg-primary/10 text-primary mb-4">
                   <HelpCircle className="h-8 w-8" />
                 </div>
-                <h2 className="font-headline text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">
+                <h2 className="font-headline text-3xl md:text-4xl font-bold text-slate-900 tracking-tighter">
                   Frequently Asked Questions
                 </h2>
                 <p className="mt-4 text-slate-500 font-medium">Find answers to common questions about our {product.name}.</p>
@@ -221,7 +210,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
           <div className="container">
             <div className="mb-12 text-center">
               <span className="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-2 block">Related Solutions</span>
-              <h2 className="font-headline text-3xl md:text-4xl font-black text-slate-900 tracking-tighter">
+              <h2 className="font-headline text-3xl md:text-4xl font-bold text-slate-900 tracking-tighter">
                 Explore More in {currentCategory.name}
               </h2>
             </div>
