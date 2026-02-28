@@ -183,7 +183,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                 <Accordion type="single" collapsible className="w-full">
                   {product.faqs.map((faq, index) => (
                     <AccordionItem key={index} value={`faq-${index}`} className="border-b border-slate-100 last:border-0 py-2">
-                      <AccordionTrigger className="text-left font-black uppercase tracking-tight text-slate-900 hover:text-primary transition-colors py-4">
+                      <AccordionTrigger className="text-left font-black tracking-tight text-slate-900 hover:text-primary transition-colors py-4">
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent className="text-slate-600 text-base leading-relaxed font-medium pb-6">
