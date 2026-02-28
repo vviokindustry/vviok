@@ -233,7 +233,7 @@ export const products: Record<string, ProductDetail[]> = {
     imageId: 'product-pp-pleated-1',
     imageIds: ['product-pp-pleated-1', 'product-pp-pleated-2'],
     description: 'Our PP Pleated Filter Cartridge is manufactured using high-quality polypropylene filter media to deliver superior surface filtration efficiency and extended service life. The pleated design provides a larger filtration area, ensuring high flow rates with low pressure drop.\n\nAs a trusted pleated filter cartridge manufacturer in Ahmedabad, India, we supply durable and high-performance pleated polypropylene filter cartridges suitable for demanding industrial filtration applications across India.',
-    detailedSpecs: 'Our pleated polypropylene filter cartridges are widely used in water treatment plants, pharmaceuticals, chemicals, food & beverage processing, and dust collector systems. The advanced pleated filter cartridge design ensures better particle retention and longer operational life compared to standard depth filters.\n\nRecognized among reliable cartridge filter manufacturers in India, we focus on quality manufacturing, competitive pricing, and timely supply across India.',
+    detailedSpecs: 'Our pleated polypropylene filter cartridges are widely used in water treatment plants, pharmaceuticals, chemicals, food & beverage processing, and dust collector systems. The advanced pleated filter cartridge design ensures better particle retention and longer operational life compared to standard depth filters.',
     metaTitle: 'PP Pleated Filter Cartridge Manufacturer & Supplier in Ahmedabad, India',
     metaDescription: 'Leading PP pleated filter cartridge manufacturer in Ahmedabad, India. We supply high-quality pleated polypropylene filter cartridges for industrial filtration applications.',
     metaKeywords: 'pp pleated filter cartridge, pleated polypropylene filter cartridges, polypropylene filter media, pleated filter cartridge manufacturer, 5 micron pp filter, Cartridge filter manufacturers in India, Pleated filter cartridge dust collector, filter cartridge manufacturers in ahmedabad, micron cartridge filter manufacturers in india, pleated dust collection cartridges',
@@ -357,19 +357,24 @@ export const products: Record<string, ProductDetail[]> = {
   
   // Housing
   'bag-filter-housing': [{ 
-    name: 'Bag Filter Housing', 
-    application: 'High-volume liquid clarification and bulk filtration', 
+    name: 'Industrial Bag Filter Housing Manufacturer in Ahmedabad, India', 
+    application: 'Industrial liquid filtration and water treatment systems', 
     imageId: 'product-bag-housing-1',
     imageIds: ['product-bag-housing-1'],
-    description: 'Our Bag Filter Housings are engineered for high-performance liquid filtration across diverse industrial applications. Designed for durability and ease of maintenance, these housings provide a reliable solution for bulk filtration and clarification. Available in various sizes and materials to suit specific flow rates and chemical compatibility requirements.',
+    description: 'Our Industrial Bag Filter Housing is designed for efficient liquid filtration in demanding industrial environments. Manufactured using high-grade stainless steel, the stainless steel bag filter housing ensures durability, corrosion resistance, and long service life.\n\nAs a trusted industrial bag filter housing manufacturer in Ahmedabad, India, we supply reliable filtration systems including single bag filter housing, 2 bag filter, and 4 bag filter housing suitable for water and process filtration applications.',
+    detailedSpecs: 'Our industrial bag filter systems are widely used in water treatment, chemicals, pharmaceuticals, food & beverage, and other industrial filtration applications. The stainless bag filter housing is engineered to provide consistent filtration performance and easy operation in high-flow environments.\n\nRecognized among reliable industrial bag filter housing manufacturers in India, we ensure precision manufacturing, competitive pricing, and timely delivery across India.',
     features: [
-      'Robust construction in SS 304, SS 316, or Carbon Steel',
-      'High dirt-holding capacity for extended operation',
-      'Easy-to-open swing bolt or V-clamp closures for quick bag replacement',
-      'Positive bag sealing to prevent bypass',
-      'Suitable for high flow rates with low pressure drop',
-      'Corrosion-resistant exterior finish'
+      'Heavy-duty stainless steel bag filter housing',
+      'Available in single bag, 2 bag and 4 bag configurations',
+      'Size 2 bag filter housing options available',
+      'High flow rate with low pressure drop',
+      'Easy bag replacement and maintenance',
+      'Suitable for water bag filter housing applications',
+      'Corrosion-resistant and long-lasting construction'
     ],
+    metaTitle: 'Industrial Bag Filter Housing Manufacturer & Supplier in Ahmedabad, India',
+    metaDescription: 'Leading industrial bag filter housing manufacturer in Ahmedabad, India. We supply stainless steel single, 2 bag and 4 bag filter housing for water and industrial filtration.',
+    metaKeywords: 'bag filter housing, stainless steel bag filter housing, bag filter housing manufacturer, industrial bag filter, single bag filter housing, 2 bag filter, 4 bag filter, 4 bag filter housing, single bag filter housing, size 2 bag filter housing, water bag filter housing, industrial bag filter housing, stainless bag filter housing, bag filter housing supplier',
     specifications: {
       'Housing Material': 'SS 304 / SS 316 / SS 316L',
       'Design Pressure': 'Up to 10 Bar (Standard)',
