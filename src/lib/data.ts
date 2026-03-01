@@ -59,7 +59,7 @@ export const productCategories: Category[] = [
     name: 'Filter Cartridge',
     slug: 'filter-cartridge-manufacturer',
     pageH1: 'Filter Cartridge Manufacturer & Supplier in Ahmedabad, India',
-    description: 'We are a leading filter cartridge manufacturer in Ahmedabad, India, providing high-performance filtration solutions for various industrial applications. Our range includes premium quality filter cartridges, cartridge filter housing, and customized filtration systems designed for durability and efficiency.',
+    description: `We are a leading filter cartridge manufacturer in Ahmedabad, India, providing high-performance filtration solutions for various industrial applications. Our range includes premium quality filter cartridges, cartridge filter housing, and customized filtration systems designed for durability and efficiency.`,
     metaTitle: 'Filter Cartridge Manufacturer in Ahmedabad, India | Industrial Cartridge Filter Supplier',
     metaDescription: 'Trusted filter cartridge manufacturer and supplier in Ahmedabad, India offering industrial cartridge filters and filter housing solutions for multiple industries across India.',
     metaKeywords: 'filter cartridge, filter cartridge supplier, filter cartridge manufacturer, filter cartridge manufacturer in ahmedabad, filter cartridge manufacturer in India, filter cartridge supplier in ahmedabad, filter cartridge supplier in India, cartridge filter manufacturers in india, cartridge filter housing manufacturer',
@@ -76,7 +76,7 @@ export const productCategories: Category[] = [
     name: 'Housing',
     slug: 'filter-housing-manufacturer',
     pageH1: 'Filter Housing Manufacturer & Supplier in Ahmedabad, India',
-    description: 'We are a leading filter housing manufacturer in Ahmedabad, India, offering high-quality and durable filtration housing solutions for various industrial applications. Our filter housing systems are designed to ensure efficient filtration performance, long service life, and easy maintenance.',
+    description: `We are a leading filter housing manufacturer in Ahmedabad, India, offering high-quality and durable filtration housing solutions for various industrial applications. Our filter housing systems are designed to ensure efficient filtration performance, long service life, and easy maintenance.`,
     metaTitle: 'Filter Housing Manufacturer in Ahmedabad, India | Bag & Cartridge Filter Housing Supplier',
     metaDescription: 'Leading filter housing manufacturer and supplier in Ahmedabad, India offering bag filter housing, cartridge filter housing, duplex and multi-bag filter housing for industrial applications.',
     metaKeywords: 'filter housing, filter housing manufacturer, filter housing supplier, bag filter housing, code 7 filter housing, catridge filter housing, strainer housing filter, housing strainer, vent filter housing, duplex filter housing, duplex bag filter housing, Multi-Bag Filter Housing, Multi-Cartridge Filter Housing',
@@ -95,7 +95,7 @@ export const productCategories: Category[] = [
     name: 'Strainer',
     slug: 'industrial-strainer-filters',
     pageH1: 'Industrial Strainer Filter Manufacturer & Supplier in Ahmedabad, India',
-    description: 'We are a leading industrial strainer filter manufacturer in Ahmedabad, India, offering reliable and high-performance filtration solutions for various industrial applications.',
+    description: `We are a leading industrial strainer filter manufacturer in Ahmedabad, India, offering reliable and high-performance filtration solutions for various industrial applications.`,
     metaTitle: 'Industrial Strainer Filter Manufacturer in Ahmedabad, India | Stainless Steel Strainer Supplier',
     metaDescription: 'Leading industrial strainer filter manufacturer in Ahmedabad, India. We supply stainless steel basket, conical, taper and pleated strainer filters across India.',
     metaKeywords: 'Industrial Strainer Filter, strainer filter manufacturer in india, strainer filter supplier in india, strainer filter manufacturer in ahmedabad, stainless steel filter, industrial filtration, Basket Strainers filter, Taper Basket Strainers, Conical Strainers filter, Pleated Strainers filter, stainless steel filter',
@@ -111,7 +111,7 @@ export const productCategories: Category[] = [
     name: 'Vessels',
     slug: 'industrial-vessels-manufacturer',
     pageH1: 'Industrial Vessels Manufacturer & Supplier in Ahmedabad, India',
-    description: 'We are a leading industrial vessels manufacturer in Ahmedabad, India, offering high-quality and durable stainless steel vessel solutions for various industrial applications.',
+    description: `We are a leading industrial vessels manufacturer in Ahmedabad, India, offering high-quality and durable stainless steel vessel solutions for various industrial applications.`,
     metaTitle: 'Industrial Vessels Manufacturer in Ahmedabad, India | Stainless Steel Pressure Vessel Supplier',
     metaDescription: 'Leading industrial vessels manufacturer in Ahmedabad, India. We supply stainless steel pressure vessels, mixing tanks, fermentation tanks and water storage tanks across India.',
     metaKeywords: 'industrial vessels manufacturer, pressure vessels manufacturers, steel vessels, stainless steel vessel, stainless water storage tank, stainless steel mixing tanks, stainless steel pressure vessel, chemical mixing tank with agitator, stainless steel fermentation tanks, stainless steel mixing tank with agitator',
@@ -726,9 +726,27 @@ As a trusted manufacturer in India, we offer competitive RO water tank price and
     ]
   }],
   'ss-pendants': [{ 
-    name: 'SS pendants', 
-    application: 'Sanitary support systems for industrial equipment and piping', 
+    name: `SS Pendants Manufacturer & Supplier in India`, 
+    application: `Industrial and utility applications requiring durable stainless steel components`, 
     imageId: 'product-ss-pendants',
+    description: `Vviok Industry manufactures premium-quality SS Pendants designed for industrial and utility applications requiring durable stainless steel components. Fabricated using high-grade stainless steel, our pendants ensure strength, corrosion resistance, and long service life even in demanding environments.
+
+As a reliable SS pendants manufacturer in India, we supply precision-engineered stainless steel pendants suitable for various industrial installations and structural requirements.`,
+    features: [
+      'High-grade stainless steel pendant construction',
+      'Durable and corrosion-resistant finish',
+      'Precision engineered for industrial use',
+      'Strong and long-lasting stainless pendant design',
+      'Custom sizes and specifications available',
+      'Easy installation and low maintenance',
+      'Reliable performance in harsh environments'
+    ],
+    detailedSpecs: `Vviok Industry supplies SS pendants widely used in industrial plants, process units, and structural applications. Our pendant stainless steel products are manufactured under strict quality standards to ensure durability and structural integrity.
+
+Recognized as a dependable SS pendants supplier in India, Vviok Industry offers competitive pricing, custom fabrication options, and timely delivery across India.`,
+    metaTitle: `SS Pendants Manufacturer in India | Stainless Steel Pendant Supplier | Vviok Industry`,
+    metaDescription: `Vviok Industry is a trusted SS pendants manufacturer in India supplying high-quality stainless steel pendants for industrial applications.`,
+    metaKeywords: `ss pendants, stainless steel pendant, pendant stainless steel, stainless pendant, ss pendants manufacturer, ss pendants supplier`,
     faqs: [
       { question: 'Are these pendants suitable for cleanrooms?', answer: 'Yes, our ss pendants are designed for use in pharmaceutical cleanrooms where hygiene and ease of cleaning are mandatory.' }
     ]
