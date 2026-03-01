@@ -119,7 +119,7 @@ export const productCategories: Category[] = [
     subcategories: [
       { name: 'Storage Tank', slug: 'storage-tank-supplier' },
       { name: 'Pressure vessel', slug: 'pressure-vessel-supplier-india' },
-      { name: 'Air reciver tank', slug: 'air-reciver-tank' },
+      { name: 'Air receiver tank', slug: 'air-receiver-tank-supplier-india' },
       { name: 'Purified water storage tank', slug: 'purified-water-storage-tank' },
       { name: 'SS pendants', slug: 'ss-pendants' },
     ]
@@ -673,10 +673,28 @@ Recognized as a dependable pressure vessel supplier in India, Vviok Industry ens
       { question: 'Do your pressure vessels meet asme standards?', answer: 'Yes, we design and manufacture all pressure vessels according to asme section viii division 1 standards.' }
     ]
   }],
-  'air-reciver-tank': [{ 
-    name: 'Air reciver tank', 
+  'air-receiver-tank-supplier-india': [{ 
+    name: 'Industrial Air Receiver Tank Manufacturer & Supplier in India', 
     application: 'Compressed air storage and pressure stabilization for industrial systems', 
     imageId: '/uploads/Air receiver tank manufacturer supplier in india -vviok industry.jpeg',
+    description: `Vviok Industry manufactures high-quality Air Receiver Tanks designed to store compressed air safely and efficiently in industrial systems. Built with robust steel construction and engineered to withstand high pressure, our tanks ensure stable airflow and improved compressor performance.
+
+As a trusted air receiver tank manufacturer in India, we supply vertical air tanks and horizontal air compressor tanks suitable for various industrial applications.`,
+    features: [
+      'Heavy-duty air receiver tank construction',
+      'Available as vertical air tank and horizontal air receiver tank',
+      'Suitable for vertical air compressor tank systems',
+      'Designed for high pressure compressed air storage',
+      'Corrosion-resistant and long service life',
+      'Precision welded and tested for safety',
+      'Easy installation and low maintenance'
+    ],
+    detailedSpecs: `Vviok Industry supplies air receiver tanks widely used in manufacturing units, automotive industries, power plants, and process industries. Our vertical and horizontal air compressor tanks are engineered to regulate air pressure, reduce compressor load, and enhance system efficiency.
+
+Recognized as one of the reliable air receiver tank manufacturers in India, Vviok Industry ensures quality compliance, competitive pricing, and timely delivery across India.`,
+    metaTitle: 'Air Receiver Tank Manufacturer in India | Vertical & Horizontal Air Tanks | Vviok Industry',
+    metaDescription: 'Vviok Industry is a leading air receiver tank manufacturer in India supplying vertical and horizontal air compressor tanks for industrial applications.',
+    metaKeywords: 'Air receiver tank, air receiver tank manufacturer, air receiver tank supplier, air receiver tank manufacturers in india, air reciver tank, vertical air tank, vertical air compressor tank, horizontal air compressor tank, horizontal air receiver tank',
     faqs: [
       { question: 'Why is an air receiver tank necessary?', answer: 'It acts as a reservoir to buffer pressure surges from the compressor and helps cool the air, allowing moisture to drop out.' }
     ]
