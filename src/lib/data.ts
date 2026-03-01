@@ -117,7 +117,7 @@ export const productCategories: Category[] = [
     metaKeywords: 'industrial vessels manufacturer, pressure vessels manufacturers, steel vessels, stainless steel vessel, stainless water storage tank, stainless steel mixing tanks, stainless steel pressure vessel, chemical mixing tank with agitator, stainless steel fermentation tanks, stainless steel mixing tank with agitator',
     imageId: 'product-custom-filter',
     subcategories: [
-      { name: 'Storage Tank', slug: 'storage-tank' },
+      { name: 'Storage Tank', slug: 'storage-tank-supplier' },
       { name: 'Pressure vessel', slug: 'pressure-vessel' },
       { name: 'Air reciver tank', slug: 'air-reciver-tank' },
       { name: 'Purified water storage tank', slug: 'purified-water-storage-tank' },
@@ -621,10 +621,28 @@ Recognized as a dependable industrial pleated strainer manufacturer in India, Vv
       { question: 'What are the benefits of pleating a strainer?', answer: 'Pleating increases the surface area significantly, which lowers the initial pressure drop and increases the dirt holding capacity.' }
     ]
   }],
-  'storage-tank': [{ 
-    name: 'Storage Tank', 
+  'storage-tank-supplier': [{ 
+    name: 'Industrial Storage Tank Manufacturer in Ahmedabad, India', 
     application: 'Industrial liquid storage and containment for chemical and process industries', 
     imageId: '/uploads/Storage Tank Manufacturer -Vviok industry.png',
+    description: `Vviok Industry manufactures high-quality Industrial Storage Tanks designed for safe and efficient storage of water, chemicals, and industrial liquids. Built using premium-grade stainless steel and durable metal construction, our storage tanks ensure strength, corrosion resistance, and long service life.
+
+As a trusted storage tank manufacturer in Ahmedabad, India, we supply reliable and customized liquid storage solutions for various industrial applications.`,
+    features: [
+      'Heavy-duty stainless steel storage tank construction',
+      'Suitable for water storage tanks and chemical storage tank applications',
+      'Available as bulk liquid storage tanks',
+      'Corrosion-resistant and leak-proof design',
+      'Custom water tanks as per industrial requirements',
+      'Strong structural support and long service life',
+      'Easy installation and maintenance'
+    ],
+    detailedSpecs: `Vviok Industry supplies industrial liquid storage tanks widely used in chemicals, pharmaceuticals, food & beverage, oil & gas, water treatment, and power generation industries. Our stainless steel liquid storage tanks and stainless steel chemical storage tanks are engineered for safety, durability, and efficient storage performance.
+
+Recognized as a dependable storage tank supplier in India, Vviok Industry offers competitive steel water tank price and timely delivery across India.`,
+    metaTitle: 'Industrial Storage Tank Manufacturer & Supplier in Ahmedabad, India',
+    metaDescription: 'Vviok Industry is a leading industrial storage tank manufacturer in Ahmedabad, India supplying stainless steel water and chemical storage tanks.',
+    metaKeywords: 'storage tank, industrial storage tank, storage tank manufacturer, storage tank supplier, water storage tanks, steel water tanks, industrial liquid storage tanks, steel water tank price, bulk liquid storage tanks, stainless steel liquid storage tanks, custom water tanks, chemical storage tank, bulk chemical storage tanks, stainless steel storage tank, metal water tank, stainless steel chemical storage tank',
     faqs: [
       { question: 'What is the maximum capacity you can manufacture?', answer: 'We can manufacture custom storage tanks up to 50,000 liters depending on site requirements.' }
     ]
