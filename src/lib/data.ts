@@ -86,7 +86,7 @@ export const productCategories: Category[] = [
       { name: 'Catridge Filter Housing', slug: 'catridge-filter-housing-supplier' },
       { name: 'Strainer Filter Housing', slug: 'industrial-strainer-filter-housing-supplier' },
       { name: 'Vent Filter Housing', slug: 'vent-filter-housing-supplier' },
-      { name: 'Duplex Filter Housing', slug: 'duplex-filter-housing' },
+      { name: 'Duplex Filter Housing', slug: 'duplex-filter-housing-supplier' },
       { name: 'Multi-Bag Filter Housing', slug: 'multi-bag-filter-housing' },
       { name: 'Multi-Cartridge Filter Housing', slug: 'multi-cartridge-housing' },
     ]
@@ -404,10 +404,25 @@ export const products: Record<string, ProductDetail[]> = {
       { question: 'Why is ss 316l preferred for vent housings?', answer: 'Ss 316l offers superior corrosion resistance and is the standard for high-purity pharmaceutical applications.' }
     ]
   }],
-  'duplex-filter-housing': [{ 
-    name: 'Duplex Filter Housing', 
-    application: 'Continuous flow filtration with zero downtime for maintenance', 
+  'duplex-filter-housing-supplier': [{ 
+    name: 'Duplex Filter Housing Manufacturer in Ahmedabad, India', 
+    application: 'Continuous filtration without process interruption', 
     imageId: 'product-duplex-housing-1',
+    imageIds: ['product-duplex-housing-1', 'product-duplex-housing-2'],
+    description: 'Vviok Industry manufactures high-performance Duplex Filter Housings designed for continuous filtration without process interruption. Engineered for durability and efficiency, our duplex filter housing systems allow one unit to operate while the other is under maintenance.\n\nAs a trusted duplex filter housing manufacturer in Ahmedabad, India, we supply robust filtration solutions including duplex oil filter housing and duplex bag filter housing for demanding industrial applications.',
+    features: [
+      'Heavy-duty duplex stainless steel construction',
+      'Continuous filtration without shutdown',
+      'Available as duplex bag filter housing',
+      'Suitable for oil and liquid filtration systems',
+      'Customizable duplex filter mesh size options',
+      'Easy changeover mechanism',
+      'Long service life and low maintenance'
+    ],
+    detailedSpecs: 'Vviok Industry designs duplex filter systems based on the efficient duplex filter working principle, ensuring uninterrupted flow and reliable performance. Our systems are widely used in oil filtration, chemical processing, water treatment, and industrial fluid handling applications.\n\nRecognized among dependable duplex filter manufacturers in India, we focus on precision engineering, competitive duplex filter housing price, and timely supply across India. We also manufacture duplex basket strainer systems tailored to specific industrial requirements.',
+    metaTitle: 'Duplex Filter Housing Manufacturer & Supplier in Ahmedabad, India',
+    metaDescription: 'Vviok Industry is a leading duplex filter housing manufacturer in Ahmedabad, India supplying duplex bag filter housing and duplex oil filter systems.',
+    metaKeywords: 'Duplex Filter Housings, duplex bag filter, duplex filter assembly, duplex oil filter housing, duplex bag filter housing, duplex strainers manufacturers, hydac duplex filter assembly, Duplex filter working principle, Duplex filter housing price, Duplex filter mesh size, duplex filter manufacturers in india, duplex stainless steel suppliers in india, duplex basket strainer manufacturer in india',
     faqs: [
       { question: 'How does the switch-over mechanism work?', answer: 'A lever or gear-operated valve redirects the flow from the dirty housing to the clean housing instantly.' }
     ]
