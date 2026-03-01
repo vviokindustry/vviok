@@ -85,7 +85,7 @@ export const productCategories: Category[] = [
       { name: 'Bag Filter Housing', slug: 'bag-filter-housing' },
       { name: 'Catridge Filter Housing', slug: 'catridge-filter-housing-supplier' },
       { name: 'Strainer Filter Housing', slug: 'industrial-strainer-filter-housing-supplier' },
-      { name: 'Vent Filter Housing', slug: 'vent-filter-housing' },
+      { name: 'Vent Filter Housing', slug: 'vent-filter-housing-supplier' },
       { name: 'Duplex Filter Housing', slug: 'duplex-filter-housing' },
       { name: 'Multi-Bag Filter Housing', slug: 'multi-bag-filter-housing' },
       { name: 'Multi-Cartridge Filter Housing', slug: 'multi-cartridge-housing' },
@@ -381,11 +381,25 @@ export const products: Record<string, ProductDetail[]> = {
       { question: 'What is the benefit of a quick-opening cover?', answer: 'It reduces downtime significantly during cleaning cycles, allowing for rapid basket removal.' }
     ]
   }],
-  'vent-filter-housing': [{ 
-    name: 'Vent Filter Housing', 
+  'vent-filter-housing-supplier': [{ 
+    name: 'Vent Filter Housing Manufacturer in India', 
     application: 'Sterile air and gas filtration for storage tank venting', 
     imageId: 'product-vent-housing-1',
     imageIds: ['product-vent-housing-1', 'product-vent-housing-2', 'product-vent-housing-3', 'product-vent-housing-4'],
+    description: 'Vviok Industry manufactures high-quality Vent Filter Housing designed to protect storage tanks and process systems from contamination. Built using premium stainless steel, our stainless steel vent filter housing ensures durability, corrosion resistance, and hygienic performance.\n\nAs a trusted vent filter housing manufacturer in Ahmedabad, we provide reliable solutions for pharmaceutical, chemical, and water system applications where controlled air filtration is essential.',
+    features: [
+      'High-grade stainless steel vent filter housing',
+      'Suitable for pharmaceutical vent filter applications',
+      'Available in 0.2 micron vent filter options',
+      'Designed for effective air and gas filtration',
+      'Corrosion-resistant and hygienic construction',
+      'Easy installation and maintenance',
+      'Custom sizes available as per requirement'
+    ],
+    detailedSpecs: 'Vviok Industry supplies vent filters for water systems, holding tanks, and industrial process equipment. Our vent filter housing ensures proper air exchange while preventing contamination, following the correct vent filter working principle for safe operation. These systems are widely used in pharmaceuticals, chemical processing, and sanitary applications including Sanigard holding tank vent filter setups.\n\nRecognized as a reliable filter manufacturer in Ahmedabad, Vviok Industry focuses on precision engineering, competitive pricing, and timely delivery across India.',
+    metaTitle: 'Vent Filter Housing Manufacturer & Supplier in Ahmedabad, India',
+    metaDescription: 'Vviok Industry is a leading vent filter housing manufacturer in Ahmedabad, India supplying stainless steel vent filters for pharmaceutical and water systems.',
+    metaKeywords: 'Vent Filter Housing, duct filter housing, tank vent filter housing, stainless steel vent filter housing, Vent filter housing manufacturer, Vent filter pharmaceutical, Vent filter use, Vent Filter 0.2 Micron, Filter Cartridge manufacturers in ahmedabad, Filter manufacturer in Ahmedabad, Vent Filter in water system, vent filter working principle, 0.2 micron vent filter, sanigard holding tank vent filter',
     faqs: [
       { question: 'Why is ss 316l preferred for vent housings?', answer: 'Ss 316l offers superior corrosion resistance and is the standard for high-purity pharmaceutical applications.' }
     ]
