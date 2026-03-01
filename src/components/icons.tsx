@@ -20,7 +20,7 @@ export function BrandIcon({ className, ...props }: HTMLAttributes<HTMLDivElement
   return (
     <div className={cn('relative h-10 w-10', className)} {...props}>
       <Image
-        src="/uploads/vviok industry icon.png"
+        src="/uploads/vviokicon.png"
         alt="VVIOK Industry Icon"
         fill
         className="object-contain"

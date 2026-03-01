@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     'VVIOK Industry is a leading manufacturer, supplier, and exporter of high-quality industrial filtration products in India, serving a global market.',
   icons: {
     icon: [
-      { url: '/uploads/vviokicon.png?v=1', type: 'image/png' },
+      { url: '/uploads/vviokicon.png?v=2', type: 'image/png' },
     ],
-    shortcut: ['/uploads/vviokicon.png?v=1'],
+    shortcut: ['/uploads/vviokicon.png?v=2'],
     apple: [
-      { url: '/uploads/vviokicon.png?v=1', sizes: '180x180', type: 'image/png' },
+      { url: '/uploads/vviokicon.png?v=2', sizes: '180x180', type: 'image/png' },
     ],
   },
 };
@@ -30,9 +30,9 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
         {/* Force favicon override with manual link tags and cache-busting */}
-        <link rel="icon" href="/uploads/vviokicon.png?v=1" type="image/png" sizes="any" />
-        <link rel="shortcut icon" href="/uploads/vviokicon.png?v=1" type="image/png" />
-        <link rel="apple-touch-icon" href="/uploads/vviokicon.png?v=1" />
+        <link rel="icon" href="/uploads/vviokicon.png?v=2" type="image/png" sizes="any" />
+        <link rel="shortcut icon" href="/uploads/vviokicon.png?v=2" type="image/png" />
+        <link rel="apple-touch-icon" href="/uploads/vviokicon.png?v=2" />
         
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
