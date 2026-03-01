@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Menu, Mail, Phone, ChevronDown, ChevronRight } from 'lucide-react';
+import { Menu, Mail, Phone, ChevronDown, ChevronRight, FileDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
@@ -34,6 +34,8 @@ const navLinks = [
   { href: '/export', label: 'Export' },
   { href: '/contact', label: 'Contacts' },
 ];
+
+const CATALOGUE_URL = "https://drive.google.com/file/d/12SZC10C38IpeflCg2HSzGHwId6wPhiIO/view?usp=sharing";
 
 export function Header() {
   const pathname = usePathname();
@@ -166,6 +168,14 @@ export function Header() {
             {mounted ? renderNav() : <div className="hidden lg:flex items-center space-x-8 px-4 h-16 text-[13px] font-bold text-slate-400">Loading...</div>}
           </div>
 
+          <div className="hidden lg:flex items-center">
+            <Button asChild className="bg-primary hover:bg-primary/90 text-white font-black uppercase tracking-[0.1em] text-[10px] rounded-xl px-6 h-10 shadow-sm transition-all hover:scale-105">
+              <a href={CATALOGUE_URL} target="_blank" rel="noopener noreferrer">
+                <FileDown className="mr-2 h-4 w-4" /> Download Catalogue
+              </a>
+            </Button>
+          </div>
+
           <div className="flex lg:hidden items-center gap-4">
             <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild>
@@ -229,6 +239,11 @@ export function Header() {
                   </Accordion>
                 </div>
                 <div className="p-6 border-t bg-slate-50 space-y-4">
+                  <Button asChild className="w-full bg-primary font-bold uppercase tracking-widest text-[10px] rounded-xl h-12">
+                    <a href={CATALOGUE_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                      <FileDown className="mr-2 h-4 w-4" /> Download Catalogue
+                    </a>
+                  </Button>
                   <div className="flex items-center gap-3 text-sm font-bold">
                     <Phone className="h-4 w-4 text-primary" />
                     <a href="tel:+919106472588">+91 91064 72588</a>

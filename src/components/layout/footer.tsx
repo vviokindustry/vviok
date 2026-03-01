@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Logo, WhatsappIcon } from '@/components/icons';
-import { Mail, MapPin, Phone, Twitter, Facebook, Linkedin, Instagram, ArrowRight, Settings } from 'lucide-react';
+import { Mail, MapPin, Phone, Twitter, Facebook, Linkedin, Instagram, ArrowRight, Settings, FileDown } from 'lucide-react';
 
 const companyLinks = [
   { href: '/about', label: 'About VVIOK' },
@@ -10,8 +10,10 @@ const companyLinks = [
   { href: '/export', label: 'Export Global' },
 ];
 
+const CATALOGUE_URL = "https://drive.google.com/file/d/12SZC10C38IpeflCg2HSzGHwId6wPhiIO/view?usp=sharing";
+
 const resourceLinks = [
-  { href: '/contact', label: 'Get a Quote' },
+  { href: CATALOGUE_URL, label: 'Download Catalogue', external: true },
   { href: '/admin/media', label: 'Media Manager' },
   { href: '/contact', label: 'Contact Us' },
 ];
@@ -70,10 +72,17 @@ export function Footer() {
             <ul className="space-y-4">
               {resourceLinks.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="group flex items-center text-sm hover:text-white transition-colors">
-                    <ArrowRight className="h-3 w-3 mr-2 text-[#ffc107] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
-                    {link.label}
-                  </Link>
+                  {link.external ? (
+                     <a href={link.href} target="_blank" rel="noopener noreferrer" className="group flex items-center text-sm hover:text-white transition-colors">
+                      <ArrowRight className="h-3 w-3 mr-2 text-[#ffc107] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link href={link.href} className="group flex items-center text-sm hover:text-white transition-colors">
+                      <ArrowRight className="h-3 w-3 mr-2 text-[#ffc107] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
+                      {link.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
