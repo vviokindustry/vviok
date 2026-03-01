@@ -101,7 +101,7 @@ export const productCategories: Category[] = [
     metaKeywords: 'Industrial Strainer Filter, strainer filter manufacturer in india, strainer filter supplier in india, strainer filter manufacturer in ahmedabad, stainless steel filter, industrial filtration, Basket Strainers filter, Taper Basket Strainers, Conical Strainers filter, Pleated Strainers filter, stainless steel filter',
     imageId: 'product-industrial-filter',
     subcategories: [
-      { name: 'Basket Strainers', slug: 'basket-strainers' },
+      { name: 'Basket Strainers', slug: 'basket-strainer-manufacturer' },
       { name: 'Taper Basket Strainers', slug: 'taper-basket-strainers' },
       { name: 'Conical Strainers', slug: 'conical-strainers' },
       { name: 'Pleated Strainers', slug: 'pleated-strainers' },
@@ -229,7 +229,7 @@ export const products: Record<string, ProductDetail[]> = {
     metaKeywords: 'pp pleated filter cartridge, pleated polypropylene filter cartridges, polypropylene filter media, pleated filter cartridge manufacturer, 5 micron pp filter, Cartridge filter manufacturers in India, Pleated filter cartridge dust collector, filter cartridge manufacturers in ahmedabad, micron cartridge filter manufacturers in india, pleated dust collection cartridges',
     features: [
       'High surface area for high flow rates and long life',
-      'Absolute and Nominal micron ratings available',
+      ' Absolute and Nominal micron ratings available',
       'All-polypropylene construction for chemical resistance',
       'Fixed pore structure prevents unloading of contaminants',
       'Low pressure drop ensures efficient operation',
@@ -331,7 +331,7 @@ export const products: Record<string, ProductDetail[]> = {
     metaDescription: 'Leading industrial bag filter housing manufacturer in Ahmedabad, India. We supply stainless steel single, 2 bag and 4 bag filter housing for water and industrial filtration.',
     metaKeywords: 'bag filter housing, stainless steel bag filter housing, bag filter housing manufacturer, industrial bag filter, single bag filter housing, 2 bag filter, 4 bag filter, 4 bag filter housing, single bag filter housing, size 2 bag filter housing, water bag filter housing, industrial bag filter housing, stainless bag filter housing, bag filter housing supplier',
     faqs: [
-      { question: 'What materials are available for bag filter housings?', answer: 'We primarily manufacture them in ss 304, ss 316, and ss 316l, but custom carbon steel options are also available.' },
+      { question: 'What is the materials are available for bag filter housings?', answer: 'We primarily manufacture them in ss 304, ss 316, and ss 316l, but custom carbon steel options are also available.' },
       { question: 'How do i choose the right size?', answer: 'Size selection depends on your required flow rate and the volume of contaminants in your process fluid.' }
     ]
   }],
@@ -471,10 +471,24 @@ export const products: Record<string, ProductDetail[]> = {
       { question: 'Are these compatible with high-flow cartridges?', answer: 'Yes, our housings can be customized to fit specific high-flow cartridge formats.' }
     ]
   }],
-  'basket-strainers': [{ 
-    name: 'Basket Strainers', 
+  'basket-strainer-manufacturer': [{ 
+    name: 'Industrial Basket Strainer Manufacturer in Ahmedabad, India', 
     application: 'Removing large particulates and debris from liquid process streams', 
     imageId: 'product-vent-filter-1',
+    description: 'Vviok Industry manufactures high-performance Industrial Basket Strainers designed to remove solid particles from liquid pipelines and protect pumps, valves, and process equipment. Made from premium stainless steel, our stainless steel basket strainer ensures durability, corrosion resistance, and long service life.\n\nAs a trusted basket strainer manufacturer in Ahmedabad, India, we supply efficient and reliable basket type strainer filters for various industrial applications.',
+    features: [
+      'Heavy-duty stainless steel basket strainer construction',
+      'Available in vertical basket strainer design',
+      'Efficient removal of debris and solid particles',
+      'Easy cleaning and maintenance',
+      'Strong and leak-proof housing structure',
+      'Suitable for water, oil, and process filtration',
+      'Long operational life with low maintenance'
+    ],
+    detailedSpecs: 'Vviok Industry supplies industrial basket strainers widely used in chemicals, pharmaceuticals, oil & gas, water treatment, food & beverage, and power generation industries. Our basket strainer filter systems are engineered for consistent filtration performance and equipment protection.\n\nRecognized among reliable basket strainer manufacturers in India, we focus on precision manufacturing, competitive pricing, and timely delivery across India.',
+    metaTitle: 'Industrial Basket Strainer Manufacturer & Supplier in Ahmedabad, India',
+    metaDescription: 'Vviok Industry is a leading industrial basket strainer manufacturer in Ahmedabad, India supplying stainless steel vertical and basket type strainer filters.',
+    metaKeywords: 'basket strainers, basket strainer filter, industrial basket strainers, basket strainer manufacturer, basket strainer supplier, basket type strainer manufacturer, pool strainer basket, stainless steel basket strainer, stainless steel strainer basket, basket type strainer, vertical basket strainer, basket strainer manufacturers in india',
     faqs: [
       { question: 'What is the standard mesh size for basket strainers?', answer: 'Standard mesh ranges from 20 to 400 mesh, but we can provide custom perforated screens for larger debris.' }
     ]
