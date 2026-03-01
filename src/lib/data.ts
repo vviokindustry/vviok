@@ -216,7 +216,9 @@ As a trusted PP spun filter cartridge manufacturer in Ahmedabad, India, we suppl
     faqs: [
       { question: 'What is the lifespan of a pp spun filter cartridge?', answer: 'The lifespan typically ranges from 3 to 6 months depending on the water quality and usage volume.' },
       { question: 'Are these cartridges compatible with standard housings?', answer: 'Yes, our pp spun cartridges are designed to fit most standard industrial and domestic filter housings.' },
-      { question: 'Can these filters be cleaned and reused?', answer: 'Pp spun filters are depth filters designed for single use to ensure maximum hygiene and filtration efficiency.' }
+      { question: 'Can these filters be cleaned and reused?', answer: 'Pp spun filters are depth filters designed for single use to ensure maximum hygiene and filtration efficiency.' },
+      { question: 'What micron ratings are available for PP Spun filters?', answer: 'We manufacture them in 1, 5, 10, 25, and 50 micron ratings to suit different filtration needs.' },
+      { question: 'Are these filters chemical resistant?', answer: 'Yes, being made of 100% polypropylene, they offer excellent resistance to most acids, bases, and organic solvents.' }
     ]
   }],
   'pp-pleated-filter-cartridge-supplier': [{ 
@@ -243,7 +245,10 @@ Recognized among reliable cartridge filter manufacturers in India, we focus on q
     ],
     faqs: [
       { question: 'What is the difference between nominal and absolute ratings?', answer: 'Absolute ratings guarantee the removal of particles at the specified size with 99.9% efficiency, whereas nominal ratings represent a general efficiency level.' },
-      { question: 'Are these filters suitable for chemical processing?', answer: 'Yes, the all-polypropylene construction provides excellent resistance to a wide range of chemicals and solvents.' }
+      { question: 'Are these filters suitable for chemical processing?', answer: 'Yes, the all-polypropylene construction provides excellent resistance to a wide range of chemicals and solvents.' },
+      { question: 'How much more surface area does a pleated filter have compared to a spun filter?', answer: 'A pleated filter can have 5 to 10 times more surface area than a standard spun cartridge of the same size.' },
+      { question: 'Can these cartridges be steam sterilized?', answer: 'Yes, we offer specific versions that can withstand autoclave or steam-in-place (SIP) sterilization cycles.' },
+      { question: 'What end-cap configurations do you provide?', answer: 'We provide various end-caps including DOE (Double Open End), Code 7, Code 3, and Code 8 (222/226 O-rings).' }
     ]
   }],
   'ptfe-pleated-filter-cartridge-supplier': [{ 
@@ -271,7 +276,10 @@ Recognized among leading filter cartridge manufacturers in India, we focus on qu
     metaKeywords: 'ptfe pleated filter cartridge, Ptfe pleated filter cartridge price, PTFE Filter Cartridge, ptfe membrane filter cartridge, teflon cartridge filter, Pleated filter cartridge dust collector, Cartridge filter manufacturers in India, filter cartridge manufacturers in india',
     faqs: [
       { question: 'Can ptfe filters handle sterile air filtration?', answer: 'Yes, their hydrophobic nature makes them excellent for sterile air and gas venting applications.' },
-      { question: 'What chemicals are these filters resistant to?', answer: 'They are resistant to almost all strong acids, bases, and organic solvents.' }
+      { question: 'What chemicals are these filters resistant to?', answer: 'They are resistant to almost all strong acids, bases, and organic solvents.' },
+      { question: 'What is the maximum operating temperature for PTFE cartridges?', answer: 'They can typically operate at temperatures up to 150°C (300°F) in continuous service.' },
+      { question: 'Are these filters hydrophobic or hydrophilic?', answer: 'Standard PTFE is naturally hydrophobic (repels water), but we can provide hydrophilic versions for liquid filtration if required.' },
+      { question: 'What are the main applications in the pharmaceutical industry?', answer: 'They are primarily used for sterile tank venting, compressed air filtration, and solvent clarification.' }
     ]
   }],
   'ss-wire-mesh-cartridge': [{ 
@@ -299,7 +307,10 @@ Recognized among reliable SS wire mesh cartridge manufacturers in India, we ensu
     metaKeywords: 'ss wire mesh cartridge, stainless steel filter mesh, stainless steel mesh filter cartridge, 5 micron stainless steel mesh Filter, 100 micron stainless steel Mesh filter, Ss wire mesh cartridge manufacturer, SS wire Mesh filter, wire mesh filter cartridge, 400 micron stainless steel mesh',
     faqs: [
       { question: 'How do i clean an ss wire mesh cartridge?', answer: 'These can be cleaned using backwashing, ultrasonic cleaning, or chemical cleaning depending on the contaminant.' },
-      { question: 'What is the maximum operating temperature?', answer: 'Our ss cartridges can withstand temperatures up to 300°c depending on the seal material used.' }
+      { question: 'What is the maximum operating temperature?', answer: 'Our ss cartridges can withstand temperatures up to 300°c depending on the seal material used.' },
+      { question: 'What grades of stainless steel do you use?', answer: 'We primarily use SS 304, SS 316, and SS 316L for maximum corrosion resistance.' },
+      { question: 'Can these cartridges be used for steam filtration?', answer: 'Yes, their high-temperature resistance makes them ideal for filtering industrial steam.' },
+      { question: 'Do you offer pleated wire mesh cartridges?', answer: 'Yes, we manufacture pleated versions to provide a larger surface area and longer service intervals.' }
     ]
   }],
   'ss-sintered-powder-cartridge': [{ 
@@ -327,7 +338,10 @@ Recognized among reliable sintered powder filter cartridge manufacturers in Indi
     metaKeywords: 'ss sintered powder cartridge, sintered powder filter cartridge, stainless steel sintered powder filter cartridges, Sintered Filter manufacturer in India, Ss sintered powder cartridge sizes, sintered ss filter cartridges, ss sintered filter cartridge',
     faqs: [
       { question: 'What is sintering?', answer: 'Sintering is a process of compacting and forming a solid mass of material by heat or pressure without melting it to the point of liquefaction.' },
-      { question: 'Are these suitable for high-pressure gas filtration?', answer: 'Yes, they are specifically engineered for high-pressure environments and critical gas filtration.' }
+      { question: 'Are these suitable for high-pressure gas filtration?', answer: 'Yes, they are specifically engineered for high-pressure environments and critical gas filtration.' },
+      { question: 'What is the filtration accuracy of sintered powder cartridges?', answer: 'They offer very high precision, typically ranging from 0.5 micron to 100 microns.' },
+      { question: 'Can these be used for polymer filtration?', answer: 'Yes, their high mechanical strength makes them suitable for viscous polymer melt filtration.' },
+      { question: 'How do you clean these cartridges?', answer: 'Cleaning can be done via ultrasonic baths, high-temperature furnace cleaning (for organics), or chemical solvents.' }
     ]
   }],
   'bag-filter-housing': [{ 
@@ -354,7 +368,10 @@ Recognized among reliable industrial bag filter housing manufacturers in India, 
     metaKeywords: 'bag filter housing, stainless steel bag filter housing, bag filter housing manufacturer, industrial bag filter, single bag filter housing, 2 bag filter, 4 bag filter, 4 bag filter housing, single bag filter housing, size 2 bag filter housing, water bag filter housing, industrial bag filter housing, stainless bag filter housing, bag filter housing supplier',
     faqs: [
       { question: 'What is the materials are available for bag filter housings?', answer: 'We primarily manufacture them in ss 304, ss 316, and ss 316l, but custom carbon steel options are also available.' },
-      { question: 'How do i choose the right size?', answer: 'Size selection depends on your required flow rate and the volume of contaminants in your process fluid.' }
+      { question: 'How do i choose the right size?', answer: 'Size selection depends on your required flow rate and the volume of contaminants in your process fluid.' },
+      { question: 'What is the difference between a top-entry and side-entry housing?', answer: 'Top-entry provides a 360-degree seal for absolute filtration, while side-entry is a more economical choice for general filtration.' },
+      { question: 'Do you provide quick-opening bolt covers?', answer: 'Yes, we offer eye-bolt closures for fast bag changeover without special tools.' },
+      { question: 'Can these housings handle high temperatures?', answer: 'Yes, with appropriate high-temp gaskets (like Viton), they can operate at elevated industrial temperatures.' }
     ]
   }],
   'catridge-filter-housing-supplier': [{ 
@@ -381,7 +398,11 @@ Recognized among reliable cartridge filter housing manufacturers in India, we fo
     metaDescription: 'Leading cartridge filter housing manufacturer in Ahmedabad, India. We supply stainless steel industrial and sanitary cartridge filter housing solutions.',
     metaKeywords: 'industrial cartridge filter housing, cartridge filter housing, cartridge filter housing manufacturer, cartridge filter housing supplier, stainless steel cartridge filter housing, stainless steel cartridge filter, sanitary filter housing, cartridge filter stainless steel',
     faqs: [
-      { question: 'Can these housings handle sanitary applications?', answer: 'Yes, we offer electropolished finishes and tri-clover connections specifically for pharmaceutical and food-grade environments.' }
+      { question: 'Can these housings handle sanitary applications?', answer: 'Yes, we offer electropolished finishes and tri-clover connections specifically for pharmaceutical and food-grade environments.' },
+      { question: 'How many cartridges can a multi-round housing hold?', answer: 'We manufacture housings that can hold from 1 to 100+ cartridges depending on the flow requirement.' },
+      { question: 'What is the standard pressure rating for your housings?', answer: 'Our standard housings are rated for 150 PSI (10 bar), but we can design for higher pressures if needed.' },
+      { question: 'Do you provide heating jackets for the housings?', answer: 'Yes, we can provide steam or electric heating jackets for applications involving viscous fluids.' },
+      { question: 'What types of connections are available?', answer: 'We provide NPT/BSP threads, ANSI/DIN flanges, and sanitary TC (Tri-Clamp) connections.' }
     ]
   }],
   'industrial-strainer-filter-housing-supplier': [{ 
@@ -408,7 +429,11 @@ Recognized among reliable strainer filter housing manufacturers in India, we foc
     metaDescription: 'Leading strainer filter housing manufacturer in Ahmedabad, India. We supply water filter strainers, Y strainer mesh and suction strainers for pumps.',
     metaKeywords: 'strainer filter housing, strainer housing, housing strainer, Strainer filter housing manufacturers, Strainer filter mesh size, Strainer Filter for Water Tank, Strainer Filter for pumps, Water Filter Strainer, pool pump strainer housing, y strainer filter mesh, water pump strainer, suction strainer for pump, strainer micron size, water strainer mesh size',
     faqs: [
-      { question: 'What is the benefit of a quick-opening cover?', answer: 'It reduces downtime significantly during cleaning cycles, allowing for rapid basket removal.' }
+      { question: 'What is the benefit of a quick-opening cover?', answer: 'It reduces downtime significantly during cleaning cycles, allowing for rapid basket removal.' },
+      { question: 'What is the difference between a Y-strainer and a Basket Strainer?', answer: 'Y-strainers are typically for smaller debris and high pressure, while basket strainers have more dirt-holding capacity and are easier to clean.' },
+      { question: 'Can you provide custom mesh sizes for the strainer?', answer: 'Yes, we can provide anything from coarse 20 mesh to very fine 400 mesh linings.' },
+      { question: 'Is it possible to monitor the pressure drop across the strainer?', answer: 'Yes, we can provide differential pressure gauge ports to alert when cleaning is required.' },
+      { question: 'What materials do you use for gaskets?', answer: 'We offer EPDM, Nitrile, Viton, and PTFE depending on the chemical compatibility required.' }
     ]
   }],
   'vent-filter-housing-supplier': [{ 
@@ -435,7 +460,11 @@ Recognized as a reliable filter manufacturer in Ahmedabad, Vviok Industry focuse
     metaDescription: 'Vviok Industry is a leading vent filter housing manufacturer in Ahmedabad, India supplying stainless steel vent filters for pharmaceutical and water systems.',
     metaKeywords: 'Vent Filter Housing, duct filter housing, tank vent filter housing, stainless steel vent filter housing, Vent filter housing manufacturer, Vent filter pharmaceutical, Vent filter use, Vent Filter 0.2 Micron, Filter Cartridge manufacturers in ahmedabad, Filter manufacturer in Ahmedabad, Vent Filter in water system, vent filter working principle, 0.2 micron vent filter, sanigard holding tank vent filter',
     faqs: [
-      { question: 'Why is ss 316l preferred for vent housings?', answer: 'Ss 316l offers superior corrosion resistance and is the standard for high-purity pharmaceutical applications.' }
+      { question: 'Why is ss 316l preferred for vent housings?', answer: 'Ss 316l offers superior corrosion resistance and is the standard for high-purity pharmaceutical applications.' },
+      { question: 'How do I prevent condensation in the vent filter?', answer: 'We can provide optional electrical heating jackets to keep the housing warm and prevent moisture buildup.' },
+      { question: 'What is the flow rate of a typical vent filter?', answer: 'The flow rate is calculated based on the tank fill/empty rate to ensure no vacuum or overpressure occurs.' },
+      { question: 'How often should the vent filter element be replaced?', answer: 'In sterile applications, it is usually replaced every 6 to 12 months or if a high pressure drop is detected.' },
+      { question: 'Are your vent housings suitable for outdoor installation?', answer: 'Yes, they are designed with weather-resistant finishes and rain hoods for external tank mounting.' }
     ]
   }],
   'duplex-filter-housing-supplier': [{ 
@@ -462,7 +491,11 @@ Recognized among dependable duplex filter manufacturers in India, we focus on pr
     metaDescription: 'Vviok Industry is a leading duplex filter housing manufacturer in Ahmedabad, India supplying duplex bag filter housing and duplex oil filter systems.',
     metaKeywords: 'Duplex Filter Housings, duplex bag filter, duplex filter assembly, duplex oil filter housing, duplex bag filter housing, duplex strainers manufacturers, hydac duplex filter assembly, Duplex filter working principle, Duplex filter housing price, Duplex filter mesh size, duplex filter manufacturers in india, duplex stainless steel suppliers in india, duplex basket strainer manufacturer in india',
     faqs: [
-      { question: 'How does the switch-over mechanism work?', answer: 'A lever or gear-operated valve redirects the flow from the dirty housing to the clean housing instantly.' }
+      { question: 'How does the switch-over mechanism work?', answer: 'A lever or gear-operated valve redirects the flow from the dirty housing to the clean housing instantly.' },
+      { question: 'Is it possible to automate the switch-over?', answer: 'Yes, we can provide motorized or pneumatic actuators linked to differential pressure sensors for automated changeover.' },
+      { question: 'What are the main advantages over a single filter?', answer: 'The primary advantage is zero downtime; you never need to stop the production line to clean or replace a filter.' },
+      { question: 'Do you provide safety interlocks?', answer: 'Yes, we can provide interlocks to prevent both housings from being closed at the same time.' },
+      { question: 'Can these handle high viscosity oils?', answer: 'Absolutely, they are commonly used in lubrication and hydraulic systems for high-viscosity industrial oils.' }
     ]
   }],
   'industrial-multi-bag-filter-housing': [{ 
@@ -488,7 +521,11 @@ Our multi bag filter housing in India is engineered for durability and smooth op
     metaDescription: 'Vviok Industry is a leading multi bag filter housing manufacturer in Ahmedabad, India supplying stainless steel industrial multi bag filtration systems.',
     metaKeywords: 'multi bag filter housing, multi bag filter housing manufacturer, multi bag filter housing supplier, multi bag filter housing in india, Duplex filter working principle, Duplex filter housing price, stainless steel multi bag filter housing, Industrial Stainless Steel Bag Filter Housings',
     faqs: [
-      { question: 'What is a davit arm closure?', answer: 'It is a mechanical arm that helps lift and swing away the heavy lid of a multi-bag housing with minimal effort.' }
+      { question: 'What is a davit arm closure?', answer: 'It is a mechanical arm that helps lift and swing away the heavy lid of a multi-bag housing with minimal effort.' },
+      { question: 'How many bags can your housings hold?', answer: 'We manufacture housings ranging from 2-bag units up to large 24-bag units for extreme flow rates.' },
+      { question: 'What is the maximum flow rate capacity?', answer: 'Capacity can reach up to 1000 m³/hr depending on the number of bags and pipe size.' },
+      { question: 'Do you offer a high-pressure range for multi-bag filters?', answer: 'Yes, we can design custom multi-bag housings rated for up to 300 PSI or more.' },
+      { question: 'Are the filter baskets included?', answer: 'Yes, all our multi-bag housings come with heavy-duty perforated stainless steel support baskets.' }
     ]
   }],
   'multi-cartridge-filter-housing': [{ 
@@ -514,7 +551,11 @@ Recognized among reliable cartridge filter housing manufacturers in India, we fo
     metaDescription: 'Vviok Industry is a leading multi cartridge filter housing manufacturer in Ahmedabad, India supplying stainless steel sanitary and industrial cartridge housing systems.',
     metaKeywords: 'multi cartridge filter housing, multi cartridge, multi cartridge filter, stainless steel multi cartridge filter housing, cartridge filter housing, stainless steel cartridge filter, sanitary cartridge filter housing',
     faqs: [
-      { question: 'Are these compatible with high-flow cartridges?', answer: 'Yes, our housings can be customized to fit specific high-flow cartridge formats.' }
+      { question: 'Are these compatible with high-flow cartridges?', answer: 'Yes, our housings can be customized to fit specific high-flow cartridge formats.' },
+      { question: 'What is the benefit of a swing-bolt closure?', answer: 'It allows for quick and easy access to the cartridges without the need for special tools or removing many small bolts.' },
+      { question: 'Can you manufacture the housing for 20-inch, 30-inch, or 40-inch cartridges?', answer: 'Yes, we manufacture housings for all standard industrial cartridge lengths.' },
+      { question: 'Do you provide internal polishing for sanitary applications?', answer: 'Yes, we can provide internal polishing up to 0.4 Ra for pharmaceutical-grade applications.' },
+      { question: 'What is the lead time for custom multi-round housings?', answer: 'Standard custom units typically take 2-4 weeks, depending on complexity and material availability.' }
     ]
   }],
   'basket-strainer-manufacturer': [{ 
@@ -540,7 +581,11 @@ Recognized among reliable basket strainer manufacturers in India, we focus on pr
     metaDescription: 'Vviok Industry is a leading industrial basket strainer manufacturer in Ahmedabad, India supplying stainless steel vertical and basket type strainer filters.',
     metaKeywords: 'basket strainers, basket strainer filter, industrial basket strainers, basket strainer manufacturer, basket strainer supplier, basket type strainer manufacturer, pool strainer basket, stainless steel basket strainer, stainless steel strainer basket, basket type strainer, vertical basket strainer, basket strainer manufacturers in india',
     faqs: [
-      { question: 'What is the standard mesh size for basket strainers?', answer: 'Standard mesh ranges from 20 to 400 mesh, but we can provide custom perforated screens for larger debris.' }
+      { question: 'What is the standard mesh size for basket strainers?', answer: 'Standard mesh ranges from 20 to 400 mesh, but we can provide custom perforated screens for larger debris.' },
+      { question: 'What is the difference between a simplex and duplex basket strainer?', answer: 'A simplex strainer requires the flow to stop for cleaning, while a duplex allows continuous operation.' },
+      { question: 'Can these strainers be used for high-viscosity fluids?', answer: 'Yes, we design them with larger internal volumes to maintain flow even with thick liquids.' },
+      { question: 'Are the gaskets replaceable?', answer: 'Yes, we provide standard replaceable gaskets in various materials to suit your application.' },
+      { question: 'Do you provide flanged connections as per ANSI standards?', answer: 'Yes, we can provide ANSI, DIN, JIS, or any other standard flange connections.' }
     ]
   }],
   'taper-basket-strainer-manufacturer': [{ 
@@ -566,7 +611,11 @@ Recognized as a reliable strainer manufacturer in India, Vviok Industry focuses 
     metaDescription: 'Vviok Industry is a leading taper basket strainer manufacturer in Ahmedabad, India supplying heavy-duty industrial pipeline filter strainers.',
     metaKeywords: 'taper basket strainer, Taper basket strainer sizes, Taper basket strainer heavy duty, industrial taper basket strainer, pipeline filter, strainer manufacturer, strainer manufacturer in ahmedabad, strainer manufacturer in india',
     faqs: [
-      { question: 'Why use a tapered design?', answer: 'A tapered design allows for better flow dynamics and easier retrieval of the basket from the housing in vertical installations.' }
+      { question: 'Why use a tapered design?', answer: 'A tapered design allows for better flow dynamics and easier retrieval of the basket from the housing in vertical installations.' },
+      { question: 'Are these strainers suitable for startup debris?', answer: 'Yes, they are often used during plant commissioning to protect delicate downstream equipment from construction waste.' },
+      { question: 'What is the typical lead time for custom taper strainers?', answer: 'Most custom taper strainers are shipped within 10-15 business days.' },
+      { question: 'Can you provide the strainer with a drain plug?', answer: 'Yes, we can include drain and vent plugs for easier maintenance and system depressurization.' },
+      { question: 'What is the maximum pressure these can withstand?', answer: 'Our standard designs go up to 600 PSI, but higher ratings can be engineered upon request.' }
     ]
   }],
   'conical-strainer-manufacturer': [{ 
@@ -592,7 +641,11 @@ Recognized among dependable conical strainer manufacturers in India, Vviok Indus
     metaDescription: 'Vviok Industry is a leading conical strainer manufacturer in Ahmedabad, India supplying stainless steel cone shaped and temporary cone strainers.',
     metaKeywords: 'conical strainer, strainer conical, conical strainer manufacturers, conical strainer big size, conical strainer price, conical strainer supplier, conical metal strainer, cone shaped strainer, stainless steel cone strainer, conical sieve strainer, conical mesh strainer, temporary cone strainer, chinois conical strainer',
     faqs: [
-      { question: 'When should i use a conical strainer?', answer: 'They are typically used during plant startup to capture welding slag or other construction debris.' }
+      { question: 'When should i use a conical strainer?', answer: 'They are typically used during plant startup to capture welding slag or other construction debris.' },
+      { question: 'Do you offer flat-top or truncated cones?', answer: 'Yes, we manufacture both pointed (cone) and flat-top (truncated) versions depending on space constraints.' },
+      { question: 'In which direction should the cone point?', answer: 'Generally, the cone points upstream to collect debris, but it can point downstream if flow area is more critical.' },
+      { question: 'What materials do you use for conical strainers?', answer: 'We use SS 304, SS 316, and SS 316L, and for specific needs, Monel or Inconel.' },
+      { question: 'Are these designed for permanent installation?', answer: 'They are usually temporary but can be used permanently if the debris load is low and periodic cleaning is scheduled.' }
     ]
   }],
   'pleated-strainer-manufacturer': [{ 
@@ -618,7 +671,11 @@ Recognized as a dependable industrial pleated strainer manufacturer in India, Vv
     metaDescription: 'Vviok Industry is a leading industrial pleated strainer manufacturer in Ahmedabad, India supplying high-efficiency pleated strainers for water and process filtration.',
     metaKeywords: 'Pleated Strainers, industrial Pleated Strainer, industrial process filtration, strainer for water systems, multiple pleated strainer, Pleated strainer for water, Pleated strainer price, Pleated strainer sizes, Industrial pleated strainer manufacturer, Industrial pleated strainer price',
     faqs: [
-      { question: 'What are the benefits of pleating a strainer?', answer: 'Pleating increases the surface area significantly, which lowers the initial pressure drop and increases the dirt holding capacity.' }
+      { question: 'What are the benefits of pleating a strainer?', answer: 'Pleating increases the surface area significantly, which lowers the initial pressure drop and increases the dirt holding capacity.' },
+      { question: 'Are these strainers suitable for high-viscosity fluids?', answer: 'Yes, the increased surface area helps maintain flow rates even with thick industrial liquids.' },
+      { question: 'Can these strainers be cleaned and reused?', answer: 'Yes, they are designed to be cleaned multiple times via backwashing or ultrasonic methods.' },
+      { question: 'What micron ratings are available for pleated strainers?', answer: 'We offer precision mesh linings from 25 micron up to 800 microns.' },
+      { question: 'Do you provide center support for the pleated element?', answer: 'Yes, all our pleated elements include a strong internal core to prevent collapsing under high differential pressure.' }
     ]
   }],
   'storage-tank-supplier': [{ 
@@ -644,7 +701,11 @@ Recognized as a dependable storage tank supplier in India, Vviok Industry offers
     metaDescription: 'Vviok Industry is a leading industrial storage tank manufacturer in Ahmedabad, India supplying stainless steel water and chemical storage tanks.',
     metaKeywords: 'storage tank, industrial storage tank, storage tank manufacturer, storage tank supplier, water storage tanks, steel water tanks, industrial liquid storage tanks, steel water tank price, bulk liquid storage tanks, stainless steel liquid storage tanks, custom water tanks, chemical storage tank, bulk chemical storage tanks, stainless steel storage tank, metal water tank, stainless steel chemical storage tank',
     faqs: [
-      { question: 'What is the maximum capacity you can manufacture?', answer: 'We can manufacture custom storage tanks up to 50,000 liters depending on site requirements.' }
+      { question: 'What is the maximum capacity you can manufacture?', answer: 'We can manufacture custom storage tanks up to 50,000 liters depending on site requirements.' },
+      { question: 'Do you provide jacketed tanks for heating/cooling?', answer: 'Yes, we offer limpet coils, dimple jackets, and plain jackets for temperature control.' },
+      { question: 'What interior finishes do you provide?', answer: 'We offer finishes ranging from industrial matt to high-gloss mirror finish and electropolishing.' },
+      { question: 'Can you install an agitator or mixer in the tank?', answer: 'Yes, we can design the top dish to support various types of mixers and agitators.' },
+      { question: 'What certifications do your tanks come with?', answer: 'We provide material test certificates (MTC), hydro-test reports, and DP test reports for all our tanks.' }
     ]
   }],
   'pressure-vessel-supplier-india': [{ 
@@ -670,7 +731,11 @@ Recognized as a dependable pressure vessel supplier in India, Vviok Industry ens
     metaDescription: 'Vviok Industry is a leading pressure vessel manufacturer in India supplying stainless steel, high pressure and custom pressure vessels for industrial applications.',
     metaKeywords: 'pressure vessel, pressure vessel manufacturer, pressure vessel supplier, pressure vessel in india, stainless steel pressure vessel, high pressure vessel, custom pressure vessels, water pressure vessel, stainless steel pressure vessel manufacturer, high pressure reactor, stainless steel pressure tank, high pressure reactor vessel, pressure vessel manufacturer in india, pressure vessel manufacturer in gujarat',
     faqs: [
-      { question: 'Do your pressure vessels meet asme standards?', answer: 'Yes, we design and manufacture all pressure vessels according to asme section viii division 1 standards.' }
+      { question: 'Do your pressure vessels meet asme standards?', answer: 'Yes, we design and manufacture all pressure vessels according to asme section viii division 1 standards.' },
+      { question: 'What kind of pressure testing do you perform?', answer: 'We conduct rigorous Hydro-testing at 1.5 times the design pressure to ensure zero leakage and structural integrity.' },
+      { question: 'Can you manufacture high-pressure reactors?', answer: 'Yes, we specialize in high-pressure reactors with customized internal heating or cooling coils.' },
+      { question: 'What safety features are included?', answer: 'Every vessel is equipped with ports for safety valves, pressure gauges, and burst discs as required by safety codes.' },
+      { question: 'What is the maximum pressure rating you can engineer?', answer: 'We can engineer vessels for pressures up to 100 bar, depending on the material and dimensions.' }
     ]
   }],
   'air-receiver-tank-supplier-india': [{ 
@@ -696,7 +761,11 @@ Recognized as one of the reliable air receiver tank manufacturers in India, Vvio
     metaDescription: 'Vviok Industry is a leading air receiver tank manufacturer in India supplying vertical and horizontal air compressor tanks for industrial applications.',
     metaKeywords: 'Air receiver tank, air receiver tank manufacturer, air receiver tank supplier, air receiver tank manufacturers in india, air reciver tank, vertical air tank, vertical air compressor tank, horizontal air compressor tank, horizontal air receiver tank',
     faqs: [
-      { question: 'Why is an air receiver tank necessary?', answer: 'It acts as a reservoir to buffer pressure surges from the compressor and helps cool the air, allowing moisture to drop out.' }
+      { question: 'Why is an air receiver tank necessary?', answer: 'It acts as a reservoir to buffer pressure surges from the compressor and helps cool the air, allowing moisture to drop out.' },
+      { question: 'Do you offer tanks with internal coating?', answer: 'Yes, we provide internal epoxy coating to prevent corrosion and ensure clean air output.' },
+      { question: 'What is the difference between vertical and horizontal tanks?', answer: 'Vertical tanks save floor space, while horizontal tanks are easier to mount under low ceilings or integrate with modular compressor packages.' },
+      { question: 'Are these tanks inspected by third-party agencies?', answer: 'We can arrange for inspections by agencies like TUV, Bureau Veritas, or Lloyd\'s Register upon request.' },
+      { question: 'What is the recommended maintenance for an air tank?', answer: 'Daily draining of moisture and annual safety valve inspections are recommended to ensure long-term safe operation.' }
     ]
   }],
   'purified-water-storage-tank': [{ 
@@ -722,7 +791,11 @@ As a trusted manufacturer in India, we offer competitive RO water tank price and
     metaDescription: 'Vviok Industry is a trusted purified water storage tank manufacturer in India supplying stainless steel RO tanks and 1000L water storage tanks.',
     metaKeywords: 'purified water storage tank, ro water tank price, ro stainless steel tank, stainless steel ro tank, 1000l water storage tank, water storage tank 1000 ltr price, water storage tank manufacturer, water storage tank supplier, water storage tank in india',
     faqs: [
-      { question: 'What prevents contamination in purified water tanks?', answer: 'We use sanitary vents, sterile overflow systems, and high-grade ss 316l with electropolished surfaces to prevent bio-film buildup.' }
+      { question: 'What prevents contamination in purified water tanks?', answer: 'We use sanitary vents, sterile overflow systems, and high-grade ss 316l with electropolished surfaces to prevent bio-film buildup.' },
+      { question: 'What is the advantage of using SS 316L for purified water?', answer: 'SS 316L has superior corrosion resistance and is the global standard for pharmaceutical grade water systems to ensure no metal leaching.' },
+      { question: 'Do you provide a spray ball for internal cleaning?', answer: 'Yes, we provide static or rotary spray balls for automated Cleaning-In-Place (CIP) systems.' },
+      { question: 'Is the tank designed with a conical bottom?', answer: 'Yes, we design with a conical or torispherical bottom to ensure 100% drainage and no "dead legs".' },
+      { question: 'What sensors can be integrated into the tank?', answer: 'We can provide ports for level sensors, temperature probes, and conductivity meters.' }
     ]
   }],
   'ss-pendants': [{ 
@@ -748,7 +821,11 @@ Recognized as a dependable SS pendants supplier in India, Vviok Industry offers 
     metaDescription: `Vviok Industry is a trusted SS pendants manufacturer in India supplying high-quality stainless steel pendants for industrial applications.`,
     metaKeywords: `ss pendants, stainless steel pendant, pendant stainless steel, stainless pendant, ss pendants manufacturer, ss pendants supplier`,
     faqs: [
-      { question: 'Are these pendants suitable for cleanrooms?', answer: 'Yes, our ss pendants are designed for use in pharmaceutical cleanrooms where hygiene and ease of cleaning are mandatory.' }
+      { question: 'Are these pendants suitable for cleanrooms?', answer: 'Yes, our ss pendants are designed for use in pharmaceutical cleanrooms where hygiene and ease of cleaning are mandatory.' },
+      { question: 'What grades of stainless steel are available for pendants?', answer: 'We primarily offer them in SS 304 and SS 316 grades.' },
+      { question: 'Can you provide custom lengths?', answer: 'Yes, we can fabricate pendants to any specified length to suit your ceiling height and equipment needs.' },
+      { question: 'How are they mounted?', answer: 'They come with heavy-duty base plates for secure ceiling or wall mounting.' },
+      { question: 'Do they support electrical conduits?', answer: 'Yes, the hollow design allows for easy and clean routing of electrical wires and utility lines.' }
     ]
   }],
 };
