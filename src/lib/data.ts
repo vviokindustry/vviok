@@ -279,7 +279,7 @@ export const products: Record<string, ProductDetail[]> = {
       'Strong mechanical strength and long service life',
       'Suitable for industrial and process filtration'
     ],
-    detailedSpecs: 'Our stainless steel mesh filter cartridge is widely used in chemical processing, pharmaceuticals, food & beverage, oil & gas, and water treatment industries. The SS wire mesh cartridge provides consistent filtration accuracy and durability in demanding environments.\n\nRecognized among reliable SS wire mesh cartridge manufacturers in India, we ensure strict quality control, competitive pricing, and timely delivery across India.',
+    detailedSpecs: 'Our stainless steel mesh filter cartridge is widely used in chemical processing, pharmaceuticals, food & beverage, oil & gas, and water treatment industries. The SS wire mesh cartridge provides consistent filtration accuracy and durability in demanding environments.',
     metaTitle: 'SS Wire Mesh Cartridge Manufacturer & Supplier in Ahmedabad, India',
     metaDescription: 'Leading SS wire mesh cartridge manufacturer in Ahmedabad, India. We supply stainless steel mesh filter cartridges in 5 micron, 100 micron and custom sizes.',
     metaKeywords: 'ss wire mesh cartridge, stainless steel filter mesh, stainless steel mesh filter cartridge, 5 micron stainless steel mesh Filter, 100 micron stainless steel Mesh filter, Ss wire mesh cartridge manufacturer, SS wire Mesh filter, wire mesh filter cartridge, 400 micron stainless steel mesh',
@@ -303,7 +303,7 @@ export const products: Record<string, ProductDetail[]> = {
       'Suitable for high-performance industrial filtration',
       'Long operational service life'
     ],
-    detailedSpecs: 'Our sintered SS filter cartridges are widely used in chemical processing, pharmaceuticals, oil & gas, food processing, and water treatment industries. The SS sintered filter cartridge offers consistent filtration accuracy and mechanical strength in harsh operating conditions.\n\nRecognized among reliable sintered powder filter cartridge manufacturers in India, we focus on quality manufacturing, competitive pricing, and timely supply across India.',
+    detailedSpecs: 'Our sintered SS filter cartridges are widely used in chemical processing, pharmaceuticals, oil & gas, food processing, and water treatment industries. The SS sintered filter cartridge offers consistent filtration accuracy and mechanical strength in harsh operating conditions.',
     metaTitle: 'SS Sintered Powder Cartridge Manufacturer & Supplier in Ahmedabad, India',
     metaDescription: 'Leading SS sintered powder cartridge manufacturer in Ahmedabad, India. We supply durable sintered stainless steel filter cartridges for industrial filtration applications.',
     metaKeywords: 'ss sintered powder cartridge, sintered powder filter cartridge, stainless steel sintered powder filter cartridges, Sintered Filter manufacturer in India, Ss sintered powder cartridge sizes, sintered ss filter cartridges, ss sintered filter cartridge',
@@ -326,7 +326,7 @@ export const products: Record<string, ProductDetail[]> = {
       'Suitable for water bag filter housing applications',
       'Corrosion-resistant and long-lasting construction'
     ],
-    detailedSpecs: 'Our industrial bag filter systems are widely used in water treatment, chemicals, pharmaceuticals, food & beverage, and other industrial filtration applications. The stainless bag filter housing is engineered to provide consistent filtration performance and easy operation in high-flow environments.\n\nRecognized among reliable industrial bag filter housing manufacturers in India, we ensure precision manufacturing, competitive pricing, and timely delivery across India.',
+    detailedSpecs: 'Our industrial bag filter systems are widely used in water treatment, chemicals, pharmaceuticals, food & beverage, and other industrial filtration applications. The stainless bag filter housing is engineered to provide consistent filtration performance and easy operation in high-flow environments.',
     metaTitle: 'Industrial Bag Filter Housing Manufacturer & Supplier in Ahmedabad, India',
     metaDescription: 'Leading industrial bag filter housing manufacturer in Ahmedabad, India. We supply stainless steel single, 2 bag and 4 bag filter housing for water and industrial filtration.',
     metaKeywords: 'bag filter housing, stainless steel bag filter housing, bag filter housing manufacturer, industrial bag filter, single bag filter housing, 2 bag filter, 4 bag filter, 4 bag filter housing, single bag filter housing, size 2 bag filter housing, water bag filter housing, industrial bag filter housing, stainless bag filter housing, bag filter housing supplier',
@@ -350,7 +350,7 @@ export const products: Record<string, ProductDetail[]> = {
       'Compatible with various stainless steel cartridge filters',
       'Long operational life with low maintenance'
     ],
-    detailedSpecs: 'Our cartridge filter stainless steel housing systems are widely used in pharmaceuticals, chemicals, food & beverage, water treatment, and other industrial filtration processes. Designed for consistent performance, our industrial cartridge filter housing ensures effective particle removal and smooth system operation.\n\nRecognized among reliable cartridge filter housing manufacturers in India, we focus on precision manufacturing, competitive pricing, and timely delivery across India.',
+    detailedSpecs: 'Our cartridge filter stainless steel housing systems are widely used in pharmaceuticals, chemicals, food & beverage, water treatment, and other industrial filtration processes. Designed for consistent performance, our industrial cartridge filter housing ensures effective particle removal and smooth system operation.',
     metaTitle: 'Industrial Cartridge Filter Housing Manufacturer & Supplier in Ahmedabad, India',
     metaDescription: 'Leading cartridge filter housing manufacturer in Ahmedabad, India. We supply stainless steel industrial and sanitary cartridge filter housing solutions.',
     metaKeywords: 'industrial cartridge filter housing, cartridge filter housing, cartridge filter housing manufacturer, cartridge filter housing supplier, stainless steel cartridge filter housing, stainless steel cartridge filter, sanitary filter housing, cartridge filter stainless steel',
@@ -373,7 +373,7 @@ export const products: Record<string, ProductDetail[]> = {
       'Corrosion-resistant and durable design',
       'Easy maintenance and cleaning'
     ],
-    detailedSpecs: 'Our strainer filter for pumps and water filtration systems is widely used in water treatment plants, chemical industries, agriculture, and industrial process lines. The water strainer mesh size can be customized according to filtration requirements, ensuring effective removal of debris and solid particles.\n\nRecognized among reliable strainer filter housing manufacturers in India, we focus on precision engineering, competitive pricing, and timely delivery across India.',
+    detailedSpecs: 'Our strainer filter for pumps and water filtration systems is widely used in water treatment plants, chemical industries, agriculture, and industrial process lines. The water strainer mesh size can be customized according to filtration requirements, ensuring effective removal of debris and solid particles.',
     metaTitle: 'Strainer Filter Housing Manufacturer & Supplier in Ahmedabad, India',
     metaDescription: 'Leading strainer filter housing manufacturer in Ahmedabad, India. We supply water filter strainers, Y strainer mesh and suction strainers for pumps.',
     metaKeywords: 'strainer filter housing, strainer housing, housing strainer, Strainer filter housing manufacturers, Strainer filter mesh size, Strainer Filter for Water Tank, Strainer Filter for pumps, Water Filter Strainer, pool pump strainer housing, y strainer filter mesh, water pump strainer, suction strainer for pump, strainer micron size, water strainer mesh size',
@@ -396,7 +396,7 @@ export const products: Record<string, ProductDetail[]> = {
       'Easy installation and maintenance',
       'Custom sizes available as per requirement'
     ],
-    detailedSpecs: 'Vviok Industry supplies vent filters for water systems, holding tanks, and industrial process equipment. Our vent filter housing ensures proper air exchange while preventing contamination, following the correct vent filter working principle for safe operation. These systems are widely used in pharmaceuticals, chemical processing, and sanitary applications including Sanigard holding tank vent filter setups. \n\nRecognized as a reliable filter manufacturer in Ahmedabad, Vviok Industry focuses on precision engineering, competitive pricing, and timely delivery across India.',
+    detailedSpecs: 'Vviok Industry supplies vent filters for water systems, holding tanks, and industrial process equipment. Our vent filter housing ensures proper air exchange while preventing contamination, following the correct vent filter working principle for safe operation. These systems are widely used in pharmaceuticals, chemical processing, and sanitary applications including Sanigard holding tank vent filter setups.',
     metaTitle: 'Vent Filter Housing Manufacturer & Supplier in Ahmedabad, India',
     metaDescription: 'Vviok Industry is a leading vent filter housing manufacturer in Ahmedabad, India supplying stainless steel vent filters for pharmaceutical and water systems.',
     metaKeywords: 'Vent Filter Housing, duct filter housing, tank vent filter housing, stainless steel vent filter housing, Vent filter housing manufacturer, Vent filter pharmaceutical, Vent filter use, Vent Filter 0.2 Micron, Filter Cartridge manufacturers in ahmedabad, Filter manufacturer in Ahmedabad, Vent Filter in water system, vent filter working principle, 0.2 micron vent filter, sanigard holding tank vent filter',
@@ -419,7 +419,7 @@ export const products: Record<string, ProductDetail[]> = {
       'Easy changeover mechanism',
       'Long service life and low maintenance'
     ],
-    detailedSpecs: 'Vviok Industry designs duplex filter systems based on the efficient duplex filter working principle, ensuring uninterrupted flow and reliable performance. Our systems are widely used in oil filtration, chemical processing, water treatment, and industrial fluid handling applications.\n\nRecognized among dependable duplex filter manufacturers in India, we focus on precision engineering, competitive duplex filter housing price, and timely supply across India. We also manufacture duplex basket strainer systems tailored to specific industrial requirements.',
+    detailedSpecs: 'Vviok Industry designs duplex filter systems based on the efficient duplex filter working principle, ensuring uninterrupted flow and reliable performance. Our systems are widely used in oil filtration, chemical processing, water treatment, and industrial fluid handling applications.',
     metaTitle: 'Duplex Filter Housing Manufacturer & Supplier in Ahmedabad, India',
     metaDescription: 'Vviok Industry is a leading duplex filter housing manufacturer in Ahmedabad, India supplying duplex bag filter housing and duplex oil filter systems.',
     metaKeywords: 'Duplex Filter Housings, duplex bag filter, duplex filter assembly, duplex oil filter housing, duplex bag filter housing, duplex strainers manufacturers, hydac duplex filter assembly, Duplex filter working principle, Duplex filter housing price, Duplex filter mesh size, duplex filter manufacturers in india, duplex stainless steel suppliers in india, duplex basket strainer manufacturer in india',
@@ -428,7 +428,7 @@ export const products: Record<string, ProductDetail[]> = {
     ]
   }],
   'industrial-multi-bag-filter-housing': [{ 
-    name: 'Multi Bag Filter Housing Manufacturer in Ahmedabad, India | Vviok Industry', 
+    name: 'Multi Bag Filter Housing Manufacturer in Ahmedabad, India', 
     application: 'Large-scale high-volume liquid clarification for industrial processes', 
     imageId: 'product-multi-bag-1',
     description: 'Vviok Industry manufactures high-performance Multi Bag Filter Housing systems designed for high-flow and heavy-duty industrial filtration applications. Built using premium-grade stainless steel, our stainless steel multi bag filter housing ensures durability, corrosion resistance, and long operational life.\n\nAs a trusted multi bag filter housing manufacturer in Ahmedabad, India, we provide reliable and cost-effective filtration solutions suitable for large-scale liquid processing systems.',
