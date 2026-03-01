@@ -8,10 +8,17 @@ import {
   Mountain,
   Lightbulb,
   Award,
+  HelpCircle,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { productCategories, industries, whyChooseUs } from '@/lib/data';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -19,6 +26,29 @@ export const metadata: Metadata = {
   description: 'Vviok Industry is a leading manufacturer and supplier of industrial filtration products in Ahmedabad, India offering filter cartridges, filter housing and strainer filters.',
   keywords: 'industrial filtration products, filter cartridge manufacturer, filter housing manufacturer, strainer filter manufacturer, industrial filters supplier in india, filter manufacturer in Ahmedabad, industrial filters manufacturer in india, industrial water treatment equipment, industrial water filtration system, industrial liquid filtration systems, industrial water filtration equipment',
 };
+
+const companyFaqs = [
+  {
+    question: "What types of industrial filtration products does VVIOK Industry manufacture?",
+    answer: "VVIOK Industry specializes in a wide range of high-performance products including Filter Cartridges (PP Spun, Pleated, PTFE, SS Mesh), Industrial Filter Housings (Bag, Cartridge, Duplex, Multi-bag), Industrial Strainers (Basket, Conical, Taper), and Stainless Steel Storage Tanks & Pressure Vessels."
+  },
+  {
+    question: "Does VVIOK Industry provide customized filtration solutions?",
+    answer: "Yes, we provide total filtration solutions. Our expert engineering team, with over 20 years of experience, can design and manufacture bespoke systems tailored to your specific service temperature, pressure, flow rate, and fluid compatibility requirements."
+  },
+  {
+    question: "Are VVIOK Industry products compliant with international standards?",
+    answer: "Absolutely. All our products are manufactured to meet high-quality engineering standards, including adherence to ASME and CE guidelines. We maintain rigorous in-house quality performance testing and ISO 9001:2015 compliant management systems."
+  },
+  {
+    question: "Which industries do you primarily serve?",
+    answer: "We serve a diverse range of sectors globally, including Water Treatment, Chemical Processing, Pharmaceuticals, Food & Beverage, Oil & Gas, and General Manufacturing industries requiring precision filtration."
+  },
+  {
+    question: "How can I get a technical consultation or a quote?",
+    answer: "You can reach out to us via our Contact page, email us at vviokindustry2021@gmail.com, or directly call/WhatsApp us at +91 91064 72588. Our technical team is ready to assist you based on your specific industrial parameters."
+  }
+];
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
@@ -28,9 +58,6 @@ export default function Home() {
   const cat2Img = PlaceHolderImages.find(img => img.id === 'product-cartridge-housing-1');
   const cat3Img = PlaceHolderImages.find(img => img.id === 'product-strainer-housing-1');
   const cat4Img = PlaceHolderImages.find(img => img.id === 'product-purified-water-tank');
-
-  const brandBlue = '#0284c7';
-  const brandGreen = '#a5be1d';
 
   return (
     <div className="flex flex-col">
@@ -305,6 +332,36 @@ export default function Home() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Company FAQ Section */}
+      <section className="py-20 bg-slate-50 border-t">
+        <div className="container max-w-4xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center justify-center p-3 rounded-2xl bg-primary/10 text-primary mb-4">
+              <HelpCircle className="h-8 w-8" />
+            </div>
+            <h2 className="font-headline text-3xl md:text-4xl font-black text-slate-900 uppercase tracking-tighter">
+              Company Frequently Asked Questions
+            </h2>
+            <p className="mt-4 text-slate-500 font-medium">Common inquiries about VVIOK Industry and our operations.</p>
+          </div>
+
+          <div className="bg-white p-8 md:p-12 rounded-[3rem] border-2 border-slate-100 shadow-xl shadow-slate-200/50">
+            <Accordion type="single" collapsible className="w-full">
+              {companyFaqs.map((faq, index) => (
+                <AccordionItem key={index} value={`company-faq-${index}`} className="border-b border-slate-100 last:border-0 py-2">
+                  <AccordionTrigger className="text-left font-black tracking-tight text-slate-900 hover:text-primary transition-colors py-4 uppercase text-sm md:text-base">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-slate-600 text-base leading-relaxed font-medium pb-6">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>
