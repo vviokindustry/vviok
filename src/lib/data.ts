@@ -103,7 +103,7 @@ export const productCategories: Category[] = [
     subcategories: [
       { name: 'Basket Strainers', slug: 'basket-strainer-manufacturer' },
       { name: 'Taper Basket Strainers', slug: 'taper-basket-strainer-manufacturer' },
-      { name: 'Conical Strainers', slug: 'conical-strainers' },
+      { name: 'Conical Strainers', slug: 'conical-strainer-manufacturer' },
       { name: 'Pleated Strainers', slug: 'pleated-strainers' },
     ]
   },
@@ -569,10 +569,28 @@ Recognized as a reliable strainer manufacturer in India, Vviok Industry focuses 
       { question: 'Why use a tapered design?', answer: 'A tapered design allows for better flow dynamics and easier retrieval of the basket from the housing in vertical installations.' }
     ]
   }],
-  'conical-strainers': [{ 
-    name: 'Conical Strainers', 
-    application: 'Temporary or permanent protection for pumps, valves, and other equipment', 
+  'conical-strainer-manufacturer': [{ 
+    name: 'Conical Strainer Manufacturer in Ahmedabad, India', 
+    application: 'Temporary and permanent filtration in pipeline systems', 
     imageId: 'product-conical-strainer',
+    description: `Vviok Industry manufactures high-quality Conical Strainers designed for temporary and permanent filtration in pipeline systems. Also known as cone shaped strainers, these filtration components are ideal for removing debris during system startup and maintenance operations.
+
+As a trusted conical strainer manufacturer in Ahmedabad, India, we supply durable stainless steel cone strainers engineered for efficient performance and long service life in industrial applications.`,
+    features: [
+      'Premium stainless steel cone strainer construction',
+      'Suitable as temporary cone strainer for pipelines',
+      'Available in various conical strainer sizes including big size options',
+      'Strong and corrosion-resistant design',
+      'Easy installation and removal',
+      'High dirt-holding capacity',
+      'Custom conical mesh strainer options available'
+    ],
+    detailedSpecs: `Vviok Industry supplies conical metal strainers widely used in chemicals, pharmaceuticals, oil & gas, water treatment, food processing, and power generation industries. Our conical sieve strainer and conical mesh strainer solutions are engineered for reliable filtration and equipment protection.
+
+Recognized among dependable conical strainer manufacturers in India, Vviok Industry focuses on precision manufacturing, competitive conical strainer price, and timely supply across India.`,
+    metaTitle: 'Conical Strainer Manufacturer & Supplier in Ahmedabad, India',
+    metaDescription: 'Vviok Industry is a leading conical strainer manufacturer in Ahmedabad, India supplying stainless steel cone shaped and temporary cone strainers.',
+    metaKeywords: 'conical strainer, strainer conical, conical strainer manufacturers, conical strainer big size, conical strainer price, conical strainer supplier, conical metal strainer, cone shaped strainer, stainless steel cone strainer, conical sieve strainer, conical mesh strainer, temporary cone strainer, chinois conical strainer',
     faqs: [
       { question: 'When should i use a conical strainer?', answer: 'They are typically used during plant startup to capture welding slag or other construction debris.' }
     ]
