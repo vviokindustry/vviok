@@ -700,9 +700,27 @@ Recognized as one of the reliable air receiver tank manufacturers in India, Vvio
     ]
   }],
   'purified-water-storage-tank': [{ 
-    name: 'Purified water storage tank', 
+    name: 'Purified Water Storage Tank Manufacturer & Supplier in India', 
     application: 'Sterile water storage for pharmaceutical and food processing', 
     imageId: 'product-purified-water-tank',
+    description: `Vviok Industry manufactures high-quality Purified Water Storage Tanks specially designed for safe storage of RO and treated water in industrial and commercial applications. Fabricated using premium-grade stainless steel, our tanks ensure hygienic storage, corrosion resistance, and long service life.
+
+As a reliable stainless steel RO tank manufacturer in India, we offer durable and precision-engineered purified water storage tanks suitable for pharmaceutical, food, and water treatment industries.`,
+    features: [
+      'High-grade stainless steel RO tank construction',
+      'Suitable for purified water and RO water storage',
+      'Available in 1000L water storage tank capacity and other sizes',
+      'Hygienic, corrosion-resistant interior surface',
+      'Leak-proof and durable structure',
+      'Easy cleaning and low maintenance',
+      'Custom capacity options available'
+    ],
+    detailedSpecs: `Vviok Industry supplies stainless steel purified water storage tanks widely used in pharmaceutical plants, hospitals, food processing units, and water treatment systems. Our stainless steel RO tanks are designed to maintain water purity and prevent contamination.
+
+As a trusted manufacturer in India, we offer competitive RO water tank price and 1000 ltr water storage tank price with timely delivery and strict quality standards.`,
+    metaTitle: 'Purified Water Storage Tank Manufacturer in India | Stainless Steel RO Tank | Vviok Industry',
+    metaDescription: 'Vviok Industry is a trusted purified water storage tank manufacturer in India supplying stainless steel RO tanks and 1000L water storage tanks.',
+    metaKeywords: 'purified water storage tank, ro water tank price, ro stainless steel tank, stainless steel ro tank, 1000l water storage tank, water storage tank 1000 ltr price, water storage tank manufacturer, water storage tank supplier, water storage tank in india',
     faqs: [
       { question: 'What prevents contamination in purified water tanks?', answer: 'We use sanitary vents, sterile overflow systems, and high-grade ss 316l with electropolished surfaces to prevent bio-film buildup.' }
     ]
