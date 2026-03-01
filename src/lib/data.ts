@@ -118,7 +118,7 @@ export const productCategories: Category[] = [
     imageId: 'product-custom-filter',
     subcategories: [
       { name: 'Storage Tank', slug: 'storage-tank-supplier' },
-      { name: 'Pressure vessel', slug: 'pressure-vessel' },
+      { name: 'Pressure vessel', slug: 'pressure-vessel-supplier-india' },
       { name: 'Air reciver tank', slug: 'air-reciver-tank' },
       { name: 'Purified water storage tank', slug: 'purified-water-storage-tank' },
       { name: 'SS pendants', slug: 'ss-pendants' },
@@ -647,10 +647,28 @@ Recognized as a dependable storage tank supplier in India, Vviok Industry offers
       { question: 'What is the maximum capacity you can manufacture?', answer: 'We can manufacture custom storage tanks up to 50,000 liters depending on site requirements.' }
     ]
   }],
-  'pressure-vessel': [{ 
-    name: 'Pressure vessel', 
-    application: 'Safe processing and storage of liquids and gases under high pressure', 
+  'pressure-vessel-supplier-india': [{ 
+    name: 'Industrial Pressure Vessel Manufacturer & Supplier in India', 
+    application: 'Safe operation under high pressure and demanding industrial conditions', 
     imageId: '/uploads/pressure tank.jpeg',
+    description: `Vviok Industry manufactures high-performance Pressure Vessels designed for safe operation under high pressure and demanding industrial conditions. Built using premium-grade stainless steel and precision engineering standards, our vessels ensure strength, durability, and operational safety.
+
+As a trusted stainless steel pressure vessel manufacturer in India, we provide high pressure vessels and custom pressure vessels suitable for various industrial process requirements.`,
+    features: [
+      'Heavy-duty stainless steel pressure vessel construction',
+      'Designed for high pressure vessel applications',
+      'Available as custom pressure vessels',
+      'Suitable for water pressure vessel systems',
+      'Precision engineered for industrial safety standards',
+      'Corrosion-resistant and long service life',
+      'Reliable performance in critical operations'
+    ],
+    detailedSpecs: `Vviok Industry supplies pressure vessels widely used in chemical processing, pharmaceuticals, oil & gas, water treatment, and power generation industries. Our product range includes high pressure reactor vessels and stainless steel pressure tanks designed to withstand extreme pressure conditions.
+
+Recognized as a dependable pressure vessel supplier in India, Vviok Industry ensures strict quality control, competitive pricing, and timely nationwide delivery.`,
+    metaTitle: 'Pressure Vessel Manufacturer in India | Stainless Steel Pressure Vessel | Vviok Industry',
+    metaDescription: 'Vviok Industry is a leading pressure vessel manufacturer in India supplying stainless steel, high pressure and custom pressure vessels for industrial applications.',
+    metaKeywords: 'pressure vessel, pressure vessel manufacturer, pressure vessel supplier, pressure vessel in india, stainless steel pressure vessel, high pressure vessel, custom pressure vessels, water pressure vessel, stainless steel pressure vessel manufacturer, high pressure reactor, stainless steel pressure tank, high pressure reactor vessel, pressure vessel manufacturer in india, pressure vessel manufacturer in gujarat',
     faqs: [
       { question: 'Do your pressure vessels meet asme standards?', answer: 'Yes, we design and manufacture all pressure vessels according to asme section viii division 1 standards.' }
     ]
