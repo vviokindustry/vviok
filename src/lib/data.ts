@@ -87,7 +87,7 @@ export const productCategories: Category[] = [
       { name: 'Strainer Filter Housing', slug: 'industrial-strainer-filter-housing-supplier' },
       { name: 'Vent Filter Housing', slug: 'vent-filter-housing-supplier' },
       { name: 'Duplex Filter Housing', slug: 'duplex-filter-housing-supplier' },
-      { name: 'Multi-Bag Filter Housing', slug: 'multi-bag-filter-housing' },
+      { name: 'Multi-Bag Filter Housing', slug: 'industrial-multi-bag-filter-housing' },
       { name: 'Multi-Cartridge Filter Housing', slug: 'multi-cartridge-housing' },
     ]
   },
@@ -396,7 +396,7 @@ export const products: Record<string, ProductDetail[]> = {
       'Easy installation and maintenance',
       'Custom sizes available as per requirement'
     ],
-    detailedSpecs: 'Vviok Industry supplies vent filters for water systems, holding tanks, and industrial process equipment. Our vent filter housing ensures proper air exchange while preventing contamination, following the correct vent filter working principle for safe operation. These systems are widely used in pharmaceuticals, chemical processing, and sanitary applications including Sanigard holding tank vent filter setups.\n\nRecognized as a reliable filter manufacturer in Ahmedabad, Vviok Industry focuses on precision engineering, competitive pricing, and timely delivery across India.',
+    detailedSpecs: 'Vviok Industry supplies vent filters for water systems, holding tanks, and industrial process equipment. Our vent filter housing ensures proper air exchange while preventing contamination, following the correct vent filter working principle for safe operation. These systems are widely used in pharmaceuticals, chemical processing, and sanitary applications including Sanigard holding tank vent filter setups. \n\nRecognized as a reliable filter manufacturer in Ahmedabad, Vviok Industry focuses on precision engineering, competitive pricing, and timely delivery across India.',
     metaTitle: 'Vent Filter Housing Manufacturer & Supplier in Ahmedabad, India',
     metaDescription: 'Vviok Industry is a leading vent filter housing manufacturer in Ahmedabad, India supplying stainless steel vent filters for pharmaceutical and water systems.',
     metaKeywords: 'Vent Filter Housing, duct filter housing, tank vent filter housing, stainless steel vent filter housing, Vent filter housing manufacturer, Vent filter pharmaceutical, Vent filter use, Vent Filter 0.2 Micron, Filter Cartridge manufacturers in ahmedabad, Filter manufacturer in Ahmedabad, Vent Filter in water system, vent filter working principle, 0.2 micron vent filter, sanigard holding tank vent filter',
@@ -427,10 +427,24 @@ export const products: Record<string, ProductDetail[]> = {
       { question: 'How does the switch-over mechanism work?', answer: 'A lever or gear-operated valve redirects the flow from the dirty housing to the clean housing instantly.' }
     ]
   }],
-  'multi-bag-filter-housing': [{ 
-    name: 'Multi-Bag Filter Housing', 
+  'industrial-multi-bag-filter-housing': [{ 
+    name: 'Multi Bag Filter Housing Manufacturer in Ahmedabad, India | Vviok Industry', 
     application: 'Large-scale high-volume liquid clarification for industrial processes', 
     imageId: 'product-multi-bag-1',
+    description: 'Vviok Industry manufactures high-performance Multi Bag Filter Housing systems designed for high-flow and heavy-duty industrial filtration applications. Built using premium-grade stainless steel, our stainless steel multi bag filter housing ensures durability, corrosion resistance, and long operational life.\n\nAs a trusted multi bag filter housing manufacturer in Ahmedabad, India, we provide reliable and cost-effective filtration solutions suitable for large-scale liquid processing systems.',
+    features: [
+      'Heavy-duty stainless steel multi bag filter housing',
+      'Designed for high flow rate applications',
+      'Available in multiple bag capacity configurations',
+      'Easy bag replacement and maintenance',
+      'Strong sealing system to prevent leakage',
+      'Corrosion-resistant industrial construction',
+      'Long service life with low maintenance'
+    ],
+    detailedSpecs: 'Vviok Industry supplies industrial stainless steel bag filter housings that ensure efficient particle removal and consistent filtration performance. They are widely used in industries such as chemicals, pharmaceuticals, oil & gas, water treatment, food & beverage, and power generation.\n\nOur multi bag filter housing in India is engineered for durability and smooth operation, making it ideal for demanding industrial environments. Recognized among reliable multi bag filter housing manufacturers and suppliers in India, we focus on precision manufacturing, competitive pricing, and timely delivery across India.',
+    metaTitle: 'Multi Bag Filter Housing Manufacturer & Supplier in Ahmedabad, India',
+    metaDescription: 'Vviok Industry is a leading multi bag filter housing manufacturer in Ahmedabad, India supplying stainless steel industrial multi bag filtration systems.',
+    metaKeywords: 'multi bag filter housing, multi bag filter housing manufacturer, multi bag filter housing supplier, multi bag filter housing in india, Duplex filter working principle, Duplex filter housing price, stainless steel multi bag filter housing, Industrial Stainless Steel Bag Filter Housings',
     faqs: [
       { question: 'What is a davit arm closure?', answer: 'It is a mechanical arm that helps lift and swing away the heavy lid of a multi-bag housing with minimal effort.' }
     ]
