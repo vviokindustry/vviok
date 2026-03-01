@@ -104,7 +104,7 @@ export const productCategories: Category[] = [
       { name: 'Basket Strainers', slug: 'basket-strainer-manufacturer' },
       { name: 'Taper Basket Strainers', slug: 'taper-basket-strainer-manufacturer' },
       { name: 'Conical Strainers', slug: 'conical-strainer-manufacturer' },
-      { name: 'Pleated Strainers', slug: 'pleated-strainers' },
+      { name: 'Pleated Strainers', slug: 'pleated-strainer-manufacturer' },
     ]
   },
   {
@@ -595,10 +595,28 @@ Recognized among dependable conical strainer manufacturers in India, Vviok Indus
       { question: 'When should i use a conical strainer?', answer: 'They are typically used during plant startup to capture welding slag or other construction debris.' }
     ]
   }],
-  'pleated-strainers': [{ 
-    name: 'Pleated Strainers', 
+  'pleated-strainer-manufacturer': [{ 
+    name: 'Industrial Pleated Strainer Manufacturer in Ahmedabad, India', 
     application: 'Increased surface area for extended service life in critical filtration tasks', 
     imageId: 'product-pleated-strainer',
+    description: `Vviok Industry manufactures high-performance Pleated Strainers designed for efficient removal of suspended particles in industrial pipeline systems. The pleated structure provides increased filtration surface area, ensuring better flow rate and improved dirt-holding capacity.
+
+As a trusted industrial pleated strainer manufacturer in Ahmedabad, India, we supply durable and precision-engineered pleated strainers suitable for water and industrial process filtration applications.`,
+    features: [
+      'Advanced pleated strainer design for higher filtration area',
+      'Suitable as pleated strainer for water systems',
+      'Available in multiple pleated strainer sizes',
+      'High dirt-holding capacity',
+      'Durable and corrosion-resistant construction',
+      'Easy installation and maintenance',
+      'Consistent filtration performance'
+    ],
+    detailedSpecs: `Vviok Industry supplies industrial pleated strainers widely used in chemicals, pharmaceuticals, oil & gas, water treatment, food & beverage, and power generation industries. Our pleated strainers are engineered to provide reliable performance and protect downstream equipment from solid contaminants.
+
+Recognized as a dependable industrial pleated strainer manufacturer in India, Vviok Industry offers competitive pleated strainer price and timely delivery across India.`,
+    metaTitle: 'Industrial Pleated Strainer Manufacturer & Supplier in Ahmedabad, India',
+    metaDescription: 'Vviok Industry is a leading industrial pleated strainer manufacturer in Ahmedabad, India supplying high-efficiency pleated strainers for water and process filtration.',
+    metaKeywords: 'Pleated Strainers, industrial Pleated Strainer, industrial process filtration, strainer for water systems, multiple pleated strainer, Pleated strainer for water, Pleated strainer price, Pleated strainer sizes, Industrial pleated strainer manufacturer, Industrial pleated strainer price',
     faqs: [
       { question: 'What are the benefits of pleating a strainer?', answer: 'Pleating increases the surface area significantly, which lowers the initial pressure drop and increases the dirt holding capacity.' }
     ]
