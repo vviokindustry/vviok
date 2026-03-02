@@ -10,12 +10,11 @@ const companyLinks = [
   { href: '/export', label: 'Export Global' },
 ];
 
-const CATALOGUE_URL = "https://drive.google.com/file/d/12SZC10C38IpeflCg2HSzGHwId6wPhiIO/view?usp=sharing";
-
-const resourceLinks = [
-  { href: CATALOGUE_URL, label: 'Download Catalogue', external: true },
-  { href: '/admin/media', label: 'Media Manager' },
-  { href: '/contact', label: 'Contact Us' },
+const categoryLinks = [
+  { href: '/products/filter-cartridge-manufacturer', label: 'Filter Cartridge' },
+  { href: '/products/filter-housing-manufacturer', label: 'Filter Housing' },
+  { href: '/products/industrial-strainer-filters', label: 'Industrial Strainer' },
+  { href: '/products/industrial-vessels-manufacturer', label: 'Industrial Vessels' },
 ];
 
 export function Footer() {
@@ -76,25 +75,18 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Quick Support Column */}
+          {/* Product Categories Column */}
           <div>
             <h3 className="text-white font-headline font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-[#ffc107] pl-3">
-              Resources
+              Our Products
             </h3>
             <ul className="space-y-4">
-              {resourceLinks.map((link) => (
+              {categoryLinks.map((link) => (
                 <li key={link.label}>
-                  {link.external ? (
-                     <a href={link.href} target="_blank" rel="noopener noreferrer" className="group flex items-center text-sm hover:text-white transition-colors">
-                      <ArrowRight className="h-3 w-3 mr-2 text-[#ffc107] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
-                      {link.label}
-                    </a>
-                  ) : (
-                    <Link href={link.href} className="group flex items-center text-sm hover:text-white transition-colors">
-                      <ArrowRight className="h-3 w-3 mr-2 text-[#ffc107] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
-                      {link.label}
-                    </Link>
-                  )}
+                  <Link href={link.href} className="group flex items-center text-sm hover:text-white transition-colors">
+                    <ArrowRight className="h-3 w-3 mr-2 text-[#ffc107] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
+                    {link.label}
+                  </Link>
                 </li>
               ))}
             </ul>
