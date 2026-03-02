@@ -5,6 +5,7 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { WhatsAppFab } from '@/components/whatsapp-fab';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.vviokindustry.in'),
@@ -36,6 +37,20 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        {/* Google Analytics Tag */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GC26EJYP10"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-GC26EJYP10');
+          `}
+        </Script>
+
         {/* Google Site Verification */}
         <meta name="google-site-verification" content="nscCigG5Ub7D8EXkDWr9OIDvsp3X90AepDixohVRwYU" />
         
