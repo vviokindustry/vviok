@@ -61,7 +61,7 @@ export default function ManufacturingQualityPage() {
         </div>
       </section>
 
-      {/* Quality Control */}
+      {/* Quality Control - Boosts Trustworthiness */}
       <section className="py-16 md:py-24 bg-primary/5">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">

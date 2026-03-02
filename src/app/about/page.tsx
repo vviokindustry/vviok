@@ -70,7 +70,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Intro Section - SEO Optimized */}
+      {/* Intro Section - SEO & EEAT Optimized */}
       <section className="py-16">
         <div className="container relative">
           <div className="bg-white p-8 md:p-12 shadow-xl rounded-sm border-l-8 border-primary relative z-10">
@@ -98,7 +98,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Technical Parameters Section */}
+      {/* Technical Parameters Section - Demonstrates Expertise */}
       <section className="py-12 bg-white border-y">
         <div className="container">
           <div className="max-w-4xl mx-auto bg-slate-50 p-8 md:p-12 rounded-sm border shadow-sm">
