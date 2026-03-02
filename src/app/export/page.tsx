@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -5,13 +6,14 @@ import { Globe, Package, ShieldCheck, Ship } from 'lucide-react';
 
 export default function ExportPage() {
   const exportImage = PlaceHolderImages.find((img) => img.id === 'export-logistics');
+  const pageTitle = "Global Export Capabilities";
 
   return (
     <div>
       {/* Page Header */}
       <section className="bg-primary/5 py-12 md:py-20 text-center">
         <div className="container">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">Global Export Capabilities</h1>
+          <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">{pageTitle}</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
             Delivering Indian manufacturing excellence to the world with reliable logistics and unwavering quality assurance.
           </p>
@@ -24,7 +26,7 @@ export default function ExportPage() {
           <div className="aspect-w-16 aspect-h-7 rounded-lg overflow-hidden shadow-lg">
             <Image
               src={exportImage.imageUrl}
-              alt={exportImage.description}
+              alt={pageTitle}
               width={1200}
               height={525}
               className="object-cover"

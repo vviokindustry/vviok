@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -53,13 +54,14 @@ const impactFactors = [
 
 export default function AboutPage() {
   const aboutImage = PlaceHolderImages.find((img) => img.id === 'about-us-manufacturing');
+  const pageTitle = "About VVIOK Industry";
 
   return (
     <div className="bg-slate-50 min-h-screen">
       {/* Page Header */}
       <section className="bg-white py-12 border-b">
         <div className="container text-center">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold text-slate-900">About VVIOK Industry</h1>
+          <h1 className="font-headline text-4xl md:text-5xl font-bold text-slate-900">{pageTitle}</h1>
           <p className="mt-2 text-muted-foreground flex items-center justify-center gap-2">
             <span>Home</span>
             <span>&raquo;</span>
@@ -197,7 +199,7 @@ export default function AboutPage() {
               <div className="aspect-w-16 aspect-h-10 rounded-sm overflow-hidden shadow-2xl">
                 <Image
                   src={aboutImage.imageUrl}
-                  alt="VVIOK Industry Manufacturing Facility"
+                  alt={pageTitle}
                   width={800}
                   height={500}
                   className="object-cover"

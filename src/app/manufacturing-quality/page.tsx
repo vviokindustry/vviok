@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CheckCircle } from 'lucide-react';
@@ -15,13 +16,14 @@ export default function ManufacturingQualityPage() {
   const manufacturingImage = PlaceHolderImages.find((img) => img.id === 'manufacturing-process');
   const qualityImage = PlaceHolderImages.find((img) => img.id === 'quality-control');
   const testingImage = PlaceHolderImages.find((img) => img.id === 'testing-facilities');
+  const pageTitle = "Manufacturing & Quality";
 
   return (
     <div>
       {/* Page Header */}
       <section className="bg-primary/5 py-12 md:py-20 text-center">
         <div className="container">
-          <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">Manufacturing &amp; Quality</h1>
+          <h1 className="font-headline text-4xl md:text-5xl font-bold text-primary">{pageTitle}</h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
             Our commitment to excellence is forged in our state-of-the-art manufacturing facilities and rigorous quality control protocols.
           </p>
@@ -47,7 +49,7 @@ export default function ManufacturingQualityPage() {
               <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={manufacturingImage.imageUrl}
-                  alt={manufacturingImage.description}
+                  alt={`${pageTitle} - Manufacturing Process`}
                   width={800}
                   height={600}
                   className="object-cover"
@@ -67,7 +69,7 @@ export default function ManufacturingQualityPage() {
               <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden shadow-lg md:order-last">
                 <Image
                   src={qualityImage.imageUrl}
-                  alt={qualityImage.description}
+                  alt={`${pageTitle} - Quality Control`}
                   width={800}
                   height={600}
                   className="object-cover"
@@ -110,7 +112,7 @@ export default function ManufacturingQualityPage() {
               <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={testingImage.imageUrl}
-                  alt={testingImage.description}
+                  alt={`${pageTitle} - Testing Facilities`}
                   width={800}
                   height={600}
                   className="object-cover"
