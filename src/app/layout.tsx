@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: 'VVIOK Industry - Filtration Products Manufacturer & Exporter',
   description:
     'VVIOK Industry is a leading manufacturer, supplier, and exporter of high-quality industrial filtration products in India, serving a global market.',
+  verification: {
+    google: 'nscCigG5Ub7D8EXkDWr9OIDvsp3X90AepDixohVRwYU',
+  },
   alternates: {
     canonical: '/',
   },
@@ -33,6 +36,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        {/* Google Site Verification */}
+        <meta name="google-site-verification" content="nscCigG5Ub7D8EXkDWr9OIDvsp3X90AepDixohVRwYU" />
+        
         {/* Force favicon override with manual link tags and cache-busting */}
         <link rel="icon" href="/uploads/vviokicon.png?v=2" type="image/png" sizes="any" />
         <link rel="shortcut icon" href="/uploads/vviokicon.png?v=2" type="image/png" />
