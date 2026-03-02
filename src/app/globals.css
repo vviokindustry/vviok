@@ -54,9 +54,9 @@
 }
 
 .font-headline {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-inter), sans-serif;
 }
 
 .font-body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: var(--font-pt-sans), sans-serif;
 }

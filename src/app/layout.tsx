@@ -6,6 +6,20 @@ import { Footer } from '@/components/layout/footer';
 import { Toaster } from '@/components/ui/toaster';
 import { WhatsAppFab } from '@/components/whatsapp-fab';
 import Script from 'next/script';
+import { Inter, PT_Sans } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+const ptSans = PT_Sans({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-pt-sans',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.vviokindustry.in'),
@@ -35,7 +49,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+    <html lang="en" className={cn('scroll-smooth', inter.variable, ptSans.variable)} suppressHydrationWarning>
       <head>
         {/* Google Analytics Tag */}
         <Script
@@ -51,20 +65,14 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Google Site Verification */}
-        <meta name="google-site-verification" content="nscCigG5Ub7D8EXkDWr9OIDvsp3X90AepDixohVRwYU" />
+        {/* Resource Pre-loading for Performance */}
+        <link rel="dns-prefetch" href="https://drive.google.com" />
+        <link rel="preconnect" href="https://drive.google.com" crossOrigin="anonymous" />
         
         {/* Force favicon override with manual link tags and cache-busting */}
         <link rel="icon" href="/uploads/vviokicon.png?v=2" type="image/png" sizes="any" />
         <link rel="shortcut icon" href="/uploads/vviokicon.png?v=2" type="image/png" />
         <link rel="apple-touch-icon" href="/uploads/vviokicon.png?v=2" />
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=PT+Sans:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body className={cn('font-body antialiased')} suppressHydrationWarning>
         <div className="flex min-h-screen flex-col">

@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -124,6 +123,7 @@ export default function Home() {
               src={heroImage.imageUrl}
               alt={pageTitle}
               fill
+              sizes="(max-width: 768px) 100vw, 100vw"
               className="object-cover"
               priority
             />
@@ -263,7 +263,7 @@ export default function Home() {
             <div className="lg:col-span-2 lg:row-span-2 rounded-[3rem] bg-slate-950 p-10 md:p-14 flex flex-col justify-between group relative overflow-hidden text-white shadow-2xl">
               {cat1Img && (
                 <div className="absolute inset-0 z-0 opacity-30 transition-transform duration-1000 group-hover:scale-110 blur-sm">
-                  <Image src={cat1Img.imageUrl} alt="Filter Cartridge Manufacturer" fill className="object-cover grayscale" />
+                  <Image src={cat1Img.imageUrl} alt="Filter Cartridge Manufacturer" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover grayscale" />
                 </div>
               )}
               <div className="relative z-10">
@@ -284,7 +284,7 @@ export default function Home() {
             <div className={`lg:col-span-2 rounded-[3rem] bg-[#a5be1d] p-10 flex flex-col justify-between group relative overflow-hidden text-white shadow-xl`}>
               {cat2Img && (
                 <div className="absolute inset-0 z-0 opacity-40 transition-transform duration-1000 group-hover:scale-110 blur-[1px]">
-                  <Image src={cat2Img.imageUrl} alt="Industrial Filter Housing Manufacturer" fill className="object-cover" />
+                  <Image src={cat2Img.imageUrl} alt="Industrial Filter Housing Manufacturer" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
                 </div>
               )}
               <div className="flex justify-between items-start relative z-10">
@@ -302,7 +302,7 @@ export default function Home() {
             <div className="rounded-[3rem] bg-[#ffc107] p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl text-slate-900">
               {cat3Img && (
                 <div className="absolute inset-0 z-0 opacity-80 transition-transform duration-1000 group-hover:scale-110">
-                  <Image src={cat3Img.imageUrl} alt="Industrial Strainer Filter Manufacturer" fill className="object-cover" />
+                  <Image src={cat3Img.imageUrl} alt="Industrial Strainer Filter Manufacturer" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover" />
                 </div>
               )}
               <h3 className="text-2xl font-black uppercase tracking-tighter leading-none relative z-10">
@@ -317,7 +317,7 @@ export default function Home() {
             <div className={`rounded-[3rem] bg-[#a5be1d] p-10 flex flex-col justify-between group relative overflow-hidden transition-all duration-500 shadow-xl text-white`}>
               {cat4Img && (
                 <div className="absolute inset-0 z-0 opacity-80 transition-transform duration-1000 group-hover:scale-110">
-                  <Image src={cat4Img.imageUrl} alt="Industrial Vessels & Tanks Manufacturer" fill className="object-cover" />
+                  <Image src={cat4Img.imageUrl} alt="Industrial Vessels & Tanks Manufacturer" fill sizes="(max-width: 768px) 100vw, 25vw" className="object-cover" />
                 </div>
               )}
               <h3 className="text-2xl font-black uppercase tracking-tighter leading-none relative z-10">
