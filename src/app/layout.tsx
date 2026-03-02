@@ -7,9 +7,13 @@ import { Toaster } from '@/components/ui/toaster';
 import { WhatsAppFab } from '@/components/whatsapp-fab';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.vviokindustry.in'),
   title: 'VVIOK Industry - Filtration Products Manufacturer & Exporter',
   description:
     'VVIOK Industry is a leading manufacturer, supplier, and exporter of high-quality industrial filtration products in India, serving a global market.',
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: [
       { url: '/uploads/vviokicon.png?v=2', type: 'image/png' },

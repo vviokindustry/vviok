@@ -20,6 +20,9 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
     title: currentCategory.metaTitle || `${currentCategory.name} - VVIOK Industry`,
     description: currentCategory.metaDescription || currentCategory.description,
     keywords: currentCategory.metaKeywords,
+    alternates: {
+      canonical: `/products/${currentCategory.slug}`,
+    },
   };
 }
 
