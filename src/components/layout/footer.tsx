@@ -32,17 +32,29 @@ export function Footer() {
               VVIOK Industry is a global leader in high-precision industrial filtration and storage solutions, committed to engineering excellence and reliable performance.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300">
+              <a 
+                href="https://www.facebook.com/p/VVIOK-Industry-61566349642536/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300"
+                aria-label="Facebook"
+              >
                 <Facebook className="h-5 w-5" />
-              </Link>
+              </a>
+              <a 
+                href="https://www.instagram.com/vviok.industry" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
               <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300">
                 <Twitter className="h-5 w-5" />
               </Link>
               <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300">
                 <Linkedin className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300">
-                <Instagram className="h-5 w-5" />
               </Link>
             </div>
           </div>
