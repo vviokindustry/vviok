@@ -65,8 +65,90 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
 
   const relatedSubcategories = currentCategory.subcategories?.filter(sub => sub.slug !== subcategory) || [];
 
+  // Product Schema
+  const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": product.name,
+    "image": galleryImages.map(img => `https://www.vviokindustry.in${img.imageUrl}`),
+    "description": product.description,
+    "brand": {
+      "@type": "Brand",
+      "name": "VVIOK Industry"
+    },
+    "category": currentCategory.name,
+    "sku": product.name.replace(/\s+/g, '-').toLowerCase(),
+    "offers": {
+      "@type": "Offer",
+      "url": `https://www.vviokindustry.in/products/${category}/${subcategory}`,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
+  // FAQ Schema
+  const faqSchema = product.faqs ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": product.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  } : null;
+
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.vviokindustry.in"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Products",
+        "item": "https://www.vviokindustry.in/products"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": currentCategory.name,
+        "item": `https://www.vviokindustry.in/products/${currentCategory.slug}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": currentSubcategory.name,
+        "item": `https://www.vviokindustry.in/products/${currentCategory.slug}/${currentSubcategory.slug}`
+      }
+    ]
+  };
+
   return (
     <div className="bg-white min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
       <div className="bg-slate-50 border-b">
         <div className="container py-4 flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground overflow-x-auto whitespace-nowrap">
           <Link href="/" className="hover:text-primary flex items-center gap-2 transition-colors">

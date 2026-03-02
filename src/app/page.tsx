@@ -62,8 +62,59 @@ export default function Home() {
 
   const pageTitle = "Industrial Filtration Products Manufacturer in Ahmedabad, India | Vviok Industry";
 
+  // Organization Schema
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "VVIOK Industry",
+    "url": "https://www.vviokindustry.in",
+    "logo": "https://www.vviokindustry.in/uploads/Vviok%20industry%20logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-91064-72588",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": ["en", "hi", "gu"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "45, Pushkar Cottage, Near Ramol Toll Plaza",
+      "addressLocality": "Ahmedabad",
+      "addressRegion": "Gujarat",
+      "postalCode": "382415",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.facebook.com/p/VVIOK-Industry-61566349642536/",
+      "https://www.instagram.com/vviok.industry"
+    ]
+  };
+
+  // FAQ Schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": companyFaqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <div className="flex flex-col">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* Hero Section */}
       <section className="relative min-h-[600px] w-full flex flex-col justify-center items-center text-center text-white overflow-visible">
         {/* Background Image */}

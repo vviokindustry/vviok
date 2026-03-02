@@ -1,3 +1,4 @@
+
 import { products, productCategories } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
@@ -39,8 +40,39 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
   const subItems = currentCategory.subcategories || [];
   const displayProducts = products[category] || products[currentCategory.slug] || [];
 
+  // Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.vviokindustry.in"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Products",
+        "item": "https://www.vviokindustry.in/products"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": currentCategory.name,
+        "item": `https://www.vviokindustry.in/products/${currentCategory.slug}`
+      }
+    ]
+  };
+
   return (
     <div className="bg-white min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      
       {/* Breadcrumbs */}
       <div className="bg-slate-50 border-b">
         <div className="container py-3 flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground overflow-x-auto whitespace-nowrap">
