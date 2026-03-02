@@ -68,24 +68,61 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
 
   const relatedSubcategories = currentCategory.subcategories?.filter(sub => sub.slug !== subcategory) || [];
 
-  // Product Schema
+  // Robust Product Schema to fix Rich Results errors
   const productSchema = {
     "@context": "https://schema.org/",
     "@type": "Product",
     "name": product.name,
-    "image": galleryImages.map(img => `https://www.vviokindustry.in${img.imageUrl}`),
+    "image": galleryImages.map(img => img.imageUrl.startsWith('http') ? img.imageUrl : `https://www.vviokindustry.in${img.imageUrl}`),
     "description": product.description,
+    "sku": product.name.replace(/\s+/g, '-').toLowerCase(),
+    "mpn": product.name.replace(/\s+/g, '-').toLowerCase(),
     "brand": {
       "@type": "Brand",
       "name": "VVIOK Industry"
     },
-    "category": currentCategory.name,
-    "sku": product.name.replace(/\s+/g, '-').toLowerCase(),
     "offers": {
       "@type": "Offer",
       "url": `https://www.vviokindustry.in/products/${category}/${subcategory}`,
       "priceCurrency": "INR",
-      "availability": "https://schema.org/InStock"
+      "price": "0", // 0 indicates "Price on Request" for Google
+      "priceValidUntil": "2030-01-01",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock",
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "IN",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 7,
+        "returnMethod": "https://schema.org/ReturnByMail"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "INR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "IN"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 1,
+            "maxValue": 3,
+            "unitCode": "DAY"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 3,
+            "maxValue": 7,
+            "unitCode": "DAY"
+          }
+        }
+      }
     }
   };
 
