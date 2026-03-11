@@ -1,4 +1,3 @@
-
 'use server';
 
 import { z } from 'zod';
@@ -16,22 +15,22 @@ export async function submitContactForm(values: z.infer<typeof contactFormSchema
   try {
     const { name, email, company, message } = values;
 
-    // Accessing the API key directly from process.env
+    // Accessing the API key from environment variables
     const apiKey = process.env.RESEND_API_KEY;
 
     if (!apiKey) {
       console.error('RESEND_API_KEY is not defined in the environment.');
       return { 
         success: false, 
-        message: 'Server configuration error: Resend API Key is missing. Please ensure it is set in the environment variables.' 
+        message: 'Server configuration error: Resend API Key is missing in .env file.' 
       };
     }
 
-    // Initialize Resend inside the action
+    // Initialize Resend with the provided key
     const resend = new Resend(apiKey);
 
     // Attempt to send the email
-    // IMPORTANT: On Resend Free Tier, you can only send to the email you signed up with (likely sales.vviok@gmail.com).
+    // IMPORTANT: On Resend Free Tier, you can only send to the email you signed up with.
     const { data, error } = await resend.emails.send({
       from: 'VVIOK Website <onboarding@resend.dev>',
       to: ['sales.vviok@gmail.com'],
@@ -70,17 +69,17 @@ export async function submitContactForm(values: z.infer<typeof contactFormSchema
     });
 
     if (error) {
-      console.error('Resend API Error details:', error);
+      console.error('Resend API Error:', error);
       return { 
         success: false, 
-        message: `Email sending failed: ${error.message}. Please check your Resend dashboard.` 
+        message: `Resend API Error: ${error.message}` 
       };
     }
 
     return { success: true, message: 'Thank you! Your inquiry has been sent to our sales team.' };
   } catch (err: any) {
     console.error('Server Action Error:', err);
-    return { success: false, message: 'A system error occurred. Please try again later.' };
+    return { success: false, message: err.message || 'A system error occurred while processing your request.' };
   }
 }
 
