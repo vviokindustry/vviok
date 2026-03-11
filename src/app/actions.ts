@@ -1,3 +1,4 @@
+
 'use server';
 
 import { z } from 'zod';
@@ -5,32 +6,29 @@ import { analyzeAndSuggestSEO, type SEOInput } from '@/ai/flows/seo-content-enha
 import { Resend } from 'resend';
 
 const contactFormSchema = z.object({
-  name: z.string(),
-  email: z.string().email(),
+  name: z.string().min(2, "Name is required"),
+  email: z.string().email("Invalid email address"),
   company: z.string().optional(),
-  message: z.string(),
+  message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
 export async function submitContactForm(values: z.infer<typeof contactFormSchema>) {
   try {
     const { name, email, company, message } = values;
 
-    // Accessing the API key from environment variables
-    const apiKey = process.env.RESEND_API_KEY;
+    // Hardcoded API Key as a fallback to ensure it works on custom domains
+    const apiKey = process.env.RESEND_API_KEY || 're_KWw5KbaL_8z68wvuHTR93LMyBExwU5iyh';
 
     if (!apiKey) {
-      console.error('re_KWw5KbaL_8z68wvuHTR93LMyBExwU5iyh');
       return { 
         success: false, 
-        message: 'Server configuration error: Resend API Key is missing in .env file.' 
+        message: 'Server configuration error: API Key is missing.' 
       };
     }
 
-    // Initialize Resend with the provided key
     const resend = new Resend(apiKey);
 
-    // Attempt to send the email
-    // IMPORTANT: On Resend Free Tier, you can only send to the email you signed up with.
+    // Sending to your official email
     const { data, error } = await resend.emails.send({
       from: 'VVIOK Website <onboarding@resend.dev>',
       to: ['sales.vviok@gmail.com'],
@@ -72,14 +70,14 @@ export async function submitContactForm(values: z.infer<typeof contactFormSchema
       console.error('Resend API Error:', error);
       return { 
         success: false, 
-        message: `Resend API Error: ${error.message}` 
+        message: `Delivery failed: ${error.message}` 
       };
     }
 
     return { success: true, message: 'Thank you! Your inquiry has been sent to our sales team.' };
   } catch (err: any) {
     console.error('Server Action Error:', err);
-    return { success: false, message: err.message || 'A system error occurred while processing your request.' };
+    return { success: false, message: 'A system error occurred. Please try again later.' };
   }
 }
 
