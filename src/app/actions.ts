@@ -18,17 +18,17 @@ export async function submitContactForm(values: z.infer<typeof contactFormSchema
   try {
     const { name, email, company, message } = values;
 
-    if (!process.env.RESEND_API_KEY) {
-      console.error('RESEND_API_KEY is missing');
-      return { success: false, message: 'Server error: API Key missing. Please check .env file.' };
+    if (!process.env.RESEND_API_KEY || process.env.RESEND_API_KEY.includes('YOUR_')) {
+      return { success: false, message: 'Server configuration error: Resend API Key is missing or invalid.' };
     }
 
     // Attempt to send the email
-    // IMPORTANT: On the Resend free tier, you can only send to your own registered email.
-    // If sales.vviok@gmail.com is not your Resend account email, this might fail unless domain is verified.
-    const response = await resend.emails.send({
+    // IMPORTANT: On Resend Free Tier, you can only send to the email you signed up with.
+    // If sales.vviok@gmail.com is NOT your account email, you MUST verify your domain in Resend.
+    const { data, error } = await resend.emails.send({
       from: 'VVIOK Website <onboarding@resend.dev>',
       to: ['sales.vviok@gmail.com'],
+      replyTo: email,
       subject: `New Lead: Business Inquiry from ${name}`,
       html: `
         <div style="font-family: sans-serif; color: #333; max-width: 600px; margin: auto; border: 1px solid #eee; padding: 20px; border-radius: 10px;">
@@ -62,18 +62,18 @@ export async function submitContactForm(values: z.infer<typeof contactFormSchema
       `,
     });
 
-    if (response.error) {
-      console.error('Resend Error:', response.error);
+    if (error) {
+      console.error('Resend API Error:', error);
       return { 
         success: false, 
-        message: response.error.message || 'Failed to send email. Ensure your Resend account is active.' 
+        message: `Resend Error: ${error.message}` 
       };
     }
 
     return { success: true, message: 'Thank you! Your inquiry has been sent to our sales team.' };
-  } catch (error: any) {
-    console.error('Unexpected error in submitContactForm:', error);
-    return { success: false, message: error.message || 'An unexpected error occurred.' };
+  } catch (err: any) {
+    console.error('Server Action Error:', err);
+    return { success: false, message: err.message || 'A system error occurred while processing your request.' };
   }
 }
 

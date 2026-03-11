@@ -43,11 +43,11 @@ export default function ContactPage() {
           description: result.message,
         });
       }
-    } catch (error) {
+    } catch (error: any) {
       toast({
         variant: 'destructive',
-        title: 'Error',
-        description: 'An unexpected error occurred while sending the form.',
+        title: 'Network Error',
+        description: 'Could not connect to the server. Please check your internet and try again.',
       });
     }
   }
