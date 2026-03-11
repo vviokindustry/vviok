@@ -1,3 +1,4 @@
+
 'use server';
 
 import { z } from 'zod';
@@ -19,9 +20,10 @@ export async function submitContactForm(values: z.infer<typeof contactFormSchema
     const apiKey = process.env.RESEND_API_KEY;
 
     if (!apiKey) {
+      console.error('RESEND_API_KEY is not defined in the environment.');
       return { 
         success: false, 
-        message: 'Server configuration error: Resend API Key is missing in .env file.' 
+        message: 'Server configuration error: Resend API Key is missing. Please ensure it is set in the environment variables.' 
       };
     }
 
@@ -29,7 +31,7 @@ export async function submitContactForm(values: z.infer<typeof contactFormSchema
     const resend = new Resend(apiKey);
 
     // Attempt to send the email
-    // IMPORTANT: On Resend Free Tier, you can only send to the email you signed up with.
+    // IMPORTANT: On Resend Free Tier, you can only send to the email you signed up with (likely sales.vviok@gmail.com).
     const { data, error } = await resend.emails.send({
       from: 'VVIOK Website <onboarding@resend.dev>',
       to: ['sales.vviok@gmail.com'],
@@ -68,17 +70,17 @@ export async function submitContactForm(values: z.infer<typeof contactFormSchema
     });
 
     if (error) {
-      console.error('Resend API Error:', error);
+      console.error('Resend API Error details:', error);
       return { 
         success: false, 
-        message: `Resend API Error: ${error.message}` 
+        message: `Email sending failed: ${error.message}. Please check your Resend dashboard.` 
       };
     }
 
     return { success: true, message: 'Thank you! Your inquiry has been sent to our sales team.' };
   } catch (err: any) {
     console.error('Server Action Error:', err);
-    return { success: false, message: err.message || 'A system error occurred while processing your request.' };
+    return { success: false, message: 'A system error occurred. Please try again later.' };
   }
 }
 
