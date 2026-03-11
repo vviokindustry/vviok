@@ -4,9 +4,6 @@ import { z } from 'zod';
 import { analyzeAndSuggestSEO, type SEOInput } from '@/ai/flows/seo-content-enhancement';
 import { Resend } from 'resend';
 
-// Initialize Resend with the API key from environment variables
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const contactFormSchema = z.object({
   name: z.string(),
   email: z.string().email(),
@@ -18,9 +15,14 @@ export async function submitContactForm(values: z.infer<typeof contactFormSchema
   try {
     const { name, email, company, message } = values;
 
-    if (!process.env.RESEND_API_KEY || process.env.RESEND_API_KEY.includes('YOUR_')) {
-      return { success: false, message: 'Server configuration error: Resend API Key is missing or invalid.' };
+    const apiKey = process.env.RESEND_API_KEY;
+
+    if (!apiKey || apiKey.includes('YOUR_')) {
+      return { success: false, message: 'Server configuration error: Resend API Key is missing.' };
     }
+
+    // Initialize Resend inside the action to prevent module-level errors
+    const resend = new Resend(apiKey);
 
     // Attempt to send the email
     // IMPORTANT: On Resend Free Tier, you can only send to the email you signed up with.

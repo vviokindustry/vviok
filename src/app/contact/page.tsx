@@ -44,10 +44,11 @@ export default function ContactPage() {
         });
       }
     } catch (error: any) {
+      console.error('Form submission catch error:', error);
       toast({
         variant: 'destructive',
-        title: 'Network Error',
-        description: 'Could not connect to the server. Please check your internet and try again.',
+        title: 'Error',
+        description: error.message || 'An unexpected error occurred. Please try again.',
       });
     }
   }
