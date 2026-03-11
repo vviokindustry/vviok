@@ -19,7 +19,7 @@ export async function submitContactForm(values: z.infer<typeof contactFormSchema
     const apiKey = process.env.RESEND_API_KEY;
 
     if (!apiKey) {
-      console.error('RESEND_API_KEY is not defined in the environment.');
+      console.error('re_KWw5KbaL_8z68wvuHTR93LMyBExwU5iyh');
       return { 
         success: false, 
         message: 'Server configuration error: Resend API Key is missing in .env file.' 
