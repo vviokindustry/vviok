@@ -4,6 +4,7 @@ import { z } from 'zod';
 import { analyzeAndSuggestSEO, type SEOInput } from '@/ai/flows/seo-content-enhancement';
 import { Resend } from 'resend';
 
+// Use environment variable for security. If not set, it will log an error.
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const contactFormSchema = z.object({
@@ -15,39 +16,60 @@ const contactFormSchema = z.object({
 
 export async function submitContactForm(values: z.infer<typeof contactFormSchema>) {
   try {
-    console.log('New contact form submission:', values);
-
     const { name, email, company, message } = values;
+
+    if (!process.env.RESEND_API_KEY) {
+      console.error('Missing RESEND_API_KEY in environment variables');
+      // For the prototype to work during development even without the key:
+      console.log('Lead details (No API Key set):', values);
+    }
 
     // Send email via Resend
     const { data, error } = await resend.emails.send({
-      from: 'VVIOK Inquiry <onboarding@resend.dev>', // Resend standard sender for testing
+      from: 'VVIOK Website <onboarding@resend.dev>', // Replace with your verified domain email later
       to: ['sales.vviok@gmail.com'],
-      subject: `New Business Inquiry from ${name}`,
+      subject: `New Lead: Business Inquiry from ${name}`,
       html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Company:</strong> ${company || 'Not Provided'}</p>
-        <p><strong>Message:</strong></p>
-        <div style="padding: 15px; background-color: #f4f4f4; border-radius: 5px;">
-          ${message.replace(/\n/g, '<br/>')}
+        <div style="font-family: sans-serif; color: #333; max-width: 600px; margin: auto; border: 1px solid #eee; padding: 20px; border-radius: 10px;">
+          <h2 style="color: #a5be1d; border-bottom: 2px solid #a5be1d; padding-bottom: 10px;">New Business Inquiry</h2>
+          <p style="font-size: 16px;">You have received a new lead from the VVIOK Industry website.</p>
+          
+          <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+            <tr>
+              <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold;">Name:</td>
+              <td style="padding: 10px; border-bottom: 1px solid #eee;">${name}</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold;">Email:</td>
+              <td style="padding: 10px; border-bottom: 1px solid #eee;"><a href="mailto:${email}">${email}</a></td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; border-bottom: 1px solid #eee; font-weight: bold;">Company:</td>
+              <td style="padding: 10px; border-bottom: 1px solid #eee;">${company || 'Not Provided'}</td>
+            </tr>
+          </table>
+
+          <div style="margin-top: 20px; padding: 15px; background-color: #f9f9f9; border-radius: 5px; border-left: 4px solid #a5be1d;">
+            <p style="font-weight: bold; margin-bottom: 5px;">Message:</p>
+            <p style="margin: 0; line-height: 1.6;">${message.replace(/\n/g, '<br/>')}</p>
+          </div>
+
+          <p style="font-size: 12px; color: #999; margin-top: 30px; text-align: center;">
+            This email was sent automatically from the VVIOK Industry contact form.
+          </p>
         </div>
-        <hr/>
-        <p style="font-size: 12px; color: #666;">This inquiry was sent from the VVIOK Industry website contact form.</p>
       `,
     });
 
     if (error) {
       console.error('Resend Error:', error);
-      // Even if Resend fails (e.g. missing API key), we still have the console log for safety during prototype
-      return { success: false, message: 'Could not send email. Please check API configuration.' };
+      return { success: false, message: 'Failed to send email. Please ensure RESEND_API_KEY is configured.' };
     }
 
-    return { success: true, message: 'Thank you! Your inquiry has been sent to sales.vviok@gmail.com' };
+    return { success: true, message: 'Thank you! Your inquiry has been sent to our sales team.' };
   } catch (error) {
     console.error('Error submitting contact form:', error);
-    return { success: false, message: 'Failed to submit form. Please try again later.' };
+    return { success: false, message: 'An unexpected error occurred. Please try again later.' };
   }
 }
 
