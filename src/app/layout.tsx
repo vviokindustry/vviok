@@ -34,11 +34,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/uploads/vviokicon.png?v=10', type: 'image/png' },
+      { url: '/uploads/vviokicon.png?v=12', type: 'image/png' },
     ],
-    shortcut: '/uploads/vviokicon.png?v=10',
+    shortcut: '/uploads/vviokicon.png?v=12',
     apple: [
-      { url: '/uploads/vviokicon.png?v=10', sizes: '180x180', type: 'image/png' },
+      { url: '/uploads/vviokicon.png?v=12', sizes: '180x180', type: 'image/png' },
     ],
   },
 };
@@ -51,10 +51,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn('scroll-smooth', inter.variable, ptSans.variable)} suppressHydrationWarning>
       <head>
-        {/* Explicit Icon Tags to bypass aggressive caching */}
-        <link rel="icon" href="/uploads/vviokicon.png?v=10" type="image/png" />
-        <link rel="shortcut icon" href="/uploads/vviokicon.png?v=10" type="image/png" />
-        <link rel="apple-touch-icon" href="/uploads/vviokicon.png?v=10" />
+        {/* Aggressive Icon tags to ensure the Firebase logo is replaced */}
+        <link rel="icon" href="/uploads/vviokicon.png?v=12" type="image/png" />
+        <link rel="shortcut icon" href="/uploads/vviokicon.png?v=12" type="image/png" />
+        <link rel="apple-touch-icon" href="/uploads/vviokicon.png?v=12" />
+        <link rel="icon" sizes="32x32" href="/uploads/vviokicon.png?v=12" />
+        <link rel="icon" sizes="16x16" href="/uploads/vviokicon.png?v=12" />
 
         {/* Google Analytics Tag */}
         <Script
