@@ -34,11 +34,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/uploads/vviokicon.png?v=2', type: 'image/png' },
+      { url: '/uploads/vviokicon.png?v=4', type: 'image/png' },
     ],
-    shortcut: ['/uploads/vviokicon.png?v=2'],
+    shortcut: '/uploads/vviokicon.png?v=4',
     apple: [
-      { url: '/uploads/vviokicon.png?v=2', sizes: '180x180', type: 'image/png' },
+      { url: '/uploads/vviokicon.png?v=4', sizes: '180x180', type: 'image/png' },
     ],
   },
 };
@@ -70,9 +70,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://drive.google.com" crossOrigin="anonymous" />
         
         {/* Force favicon override with manual link tags and cache-busting */}
-        <link rel="icon" href="/uploads/vviokicon.png?v=2" type="image/png" sizes="any" />
-        <link rel="shortcut icon" href="/uploads/vviokicon.png?v=2" type="image/png" />
-        <link rel="apple-touch-icon" href="/uploads/vviokicon.png?v=2" />
+        <link rel="icon" href="/uploads/vviokicon.png?v=4" type="image/png" sizes="any" />
+        <link rel="shortcut icon" href="/uploads/vviokicon.png?v=4" type="image/png" />
+        <link rel="apple-touch-icon" href="/uploads/vviokicon.png?v=4" />
       </head>
       <body className={cn('font-body antialiased')} suppressHydrationWarning>
         <div className="flex min-h-screen flex-col">
