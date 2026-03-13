@@ -34,11 +34,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/uploads/vviokicon.png?v=5', type: 'image/png' },
+      { url: '/uploads/vviokicon.png?v=10', type: 'image/png' },
     ],
-    shortcut: '/uploads/vviokicon.png?v=5',
+    shortcut: '/uploads/vviokicon.png?v=10',
     apple: [
-      { url: '/uploads/vviokicon.png?v=5', sizes: '180x180', type: 'image/png' },
+      { url: '/uploads/vviokicon.png?v=10', sizes: '180x180', type: 'image/png' },
     ],
   },
 };
@@ -51,6 +51,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn('scroll-smooth', inter.variable, ptSans.variable)} suppressHydrationWarning>
       <head>
+        {/* Explicit Icon Tags to bypass aggressive caching */}
+        <link rel="icon" href="/uploads/vviokicon.png?v=10" type="image/png" />
+        <link rel="shortcut icon" href="/uploads/vviokicon.png?v=10" type="image/png" />
+        <link rel="apple-touch-icon" href="/uploads/vviokicon.png?v=10" />
+
         {/* Google Analytics Tag */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-GC26EJYP10"
