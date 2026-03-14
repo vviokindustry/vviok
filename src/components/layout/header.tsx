@@ -1,6 +1,7 @@
+
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { Menu, Mail, Phone, ChevronDown, ChevronRight, FileDown } from 'lucide-react';
@@ -43,10 +44,28 @@ export function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     setMounted(true);
+    return () => {
+      if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
+    };
   }, []);
+
+  const handleMouseEnter = () => {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+      closeTimeoutRef.current = null;
+    }
+    setIsProductsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    closeTimeoutRef.current = setTimeout(() => {
+      setIsProductsOpen(false);
+    }, 150);
+  };
 
   const renderNav = () => (
     <nav className="hidden items-center lg:flex">
@@ -55,8 +74,8 @@ export function Header() {
           <div 
             key={link.label}
             className="relative"
-            onMouseEnter={() => setIsProductsOpen(true)}
-            onMouseLeave={() => setIsProductsOpen(false)}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
             <DropdownMenu open={isProductsOpen} onOpenChange={setIsProductsOpen}>
               <DropdownMenuTrigger asChild>
@@ -77,7 +96,8 @@ export function Header() {
                 align="start" 
                 sideOffset={0}
                 className="w-[300px] p-0 shadow-2xl border-t-[3px] border-primary rounded-none animate-in fade-in zoom-in-95 duration-200"
-                onMouseEnter={() => setIsProductsOpen(true)}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 <div className="flex flex-col py-3 bg-white">
                   {link.categories.map((cat) => (
@@ -96,6 +116,8 @@ export function Header() {
                         <DropdownMenuSubContent 
                           sideOffset={2}
                           className="w-[350px] p-0 border-none shadow-2xl bg-white rounded-none min-h-full py-6 px-8 border-l-2 border-primary/10 animate-in slide-in-from-left-2 duration-200"
+                          onMouseEnter={handleMouseEnter}
+                          onMouseLeave={handleMouseLeave}
                         >
                           <div className="flex flex-col space-y-4">
                             {cat.subcategories?.map((sub) => (
