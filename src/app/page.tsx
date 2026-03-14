@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -61,77 +62,7 @@ export default function Home() {
 
   const pageTitle = "Industrial Filtration Products Manufacturer in Ahmedabad, India | Vviok Industry";
 
-  // Organization Schema
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "VVIOK Industry",
-    "url": "https://www.vviokindustry.in",
-    "logo": "https://www.vviokindustry.in/uploads/Vviok%20industry%20logo.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-91064-72588",
-      "contactType": "customer service",
-      "areaServed": "IN",
-      "availableLanguage": ["en", "hi", "gu"]
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "45, Pushkar Cottage, Near Ramol Toll Plaza",
-      "addressLocality": "Ahmedabad",
-      "addressRegion": "Gujarat",
-      "postalCode": "382415",
-      "addressCountry": "IN"
-    },
-    "sameAs": [
-      "https://www.facebook.com/p/VVIOK-Industry-61566349642536/",
-      "https://www.instagram.com/vviok.industry"
-    ]
-  };
-
-  // Local Business Schema
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "VVIOK Industry",
-    "image": "https://www.vviokindustry.in/uploads/Vviok%20industry%20logo.png",
-    "@id": "https://www.vviokindustry.in",
-    "url": "https://www.vviokindustry.in",
-    "telephone": "+91-91064-72588",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "45, Pushkar Cottage, Near Ramol Toll Plaza",
-      "addressLocality": "Ahmedabad",
-      "addressRegion": "Gujarat",
-      "postalCode": "382415",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 22.9806,
-      "longitude": 72.6738
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "09:00",
-      "closes": "19:00"
-    },
-    "sameAs": [
-      "https://www.facebook.com/p/VVIOK-Industry-61566349642536/",
-      "https://www.instagram.com/vviok.industry"
-    ]
-  };
-
-  // FAQ Schema
+  // FAQ Schema (Global Organization & LocalBusiness moved to layout)
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -147,14 +78,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
