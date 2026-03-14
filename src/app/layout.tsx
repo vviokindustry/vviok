@@ -35,11 +35,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/uploads/vviokicon.png?v=12', type: 'image/png' },
+      { url: '/uploads/vviokicon.png?v=15', type: 'image/png' },
     ],
-    shortcut: '/uploads/vviokicon.png?v=12',
+    shortcut: '/uploads/vviokicon.png?v=15',
     apple: [
-      { url: '/uploads/vviokicon.png?v=12', sizes: '180x180', type: 'image/png' },
+      { url: '/uploads/vviokicon.png?v=15', sizes: '180x180', type: 'image/png' },
     ],
   },
 };
@@ -121,11 +121,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn('scroll-smooth', inter.variable, ptSans.variable)} suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/uploads/vviokicon.png?v=12" type="image/png" />
-        <link rel="shortcut icon" href="/uploads/vviokicon.png?v=12" type="image/png" />
-        <link rel="apple-touch-icon" href="/uploads/vviokicon.png?v=12" />
-        <link rel="icon" sizes="32x32" href="/uploads/vviokicon.png?v=12" />
-        <link rel="icon" sizes="16x16" href="/uploads/vviokicon.png?v=12" />
+        {/* Force custom icon with higher versioning to bypass cache */}
+        <link rel="icon" href="/uploads/vviokicon.png?v=15" type="image/png" />
+        <link rel="shortcut icon" href="/uploads/vviokicon.png?v=15" type="image/png" />
+        <link rel="apple-touch-icon" href="/uploads/vviokicon.png?v=15" />
+        <link rel="icon" sizes="32x32" href="/uploads/vviokicon.png?v=15" />
+        <link rel="icon" sizes="16x16" href="/uploads/vviokicon.png?v=15" />
 
         {/* Global Schemas */}
         <script
