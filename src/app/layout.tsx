@@ -22,8 +22,8 @@ const ptSans = PT_Sans({
   variable: '--font-pt-sans',
 });
 
-// New direct link for the Google Drive icon
-const NEW_ICON_URL = "https://drive.google.com/uc?export=view&id=18FDh4yH--rrRWfa6X6k1_6yk90gR2OD-";
+// Using the requested local path for the favicon
+const ICON_URL = "/uploads/favicon.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.vviokindustry.in'),
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   icons: {
-    icon: NEW_ICON_URL,
-    shortcut: NEW_ICON_URL,
-    apple: NEW_ICON_URL,
+    icon: ICON_URL,
+    shortcut: ICON_URL,
+    apple: ICON_URL,
   },
 };
 
@@ -124,10 +124,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn('scroll-smooth', inter.variable, ptSans.variable)} suppressHydrationWarning>
       <head>
-        {/* Force custom icon from Google Drive and override any other favicons */}
-        <link rel="icon" href={NEW_ICON_URL} sizes="any" />
-        <link rel="apple-touch-icon" href={NEW_ICON_URL} />
-        <link rel="shortcut icon" href={NEW_ICON_URL} />
+        {/* Essential icon links to override defaults */}
+        <link rel="icon" href={ICON_URL} />
+        <link rel="apple-touch-icon" href={ICON_URL} />
 
         {/* Global Schemas */}
         <script
@@ -152,9 +151,6 @@ export default function RootLayout({
             gtag('config', 'G-GC26EJYP10');
           `}
         </Script>
-
-        <link rel="dns-prefetch" href="https://drive.google.com" />
-        <link rel="preconnect" href="https://drive.google.com" crossOrigin="anonymous" />
       </head>
       <body className={cn('font-body antialiased')} suppressHydrationWarning>
         <div className="flex min-h-screen flex-col">
