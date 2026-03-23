@@ -49,12 +49,24 @@ export function Footer() {
               >
                 <Instagram className="h-5 w-5" />
               </a>
-              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300">
+              <a 
+                href="https://x.com/VviokIndustry" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300"
+                aria-label="Twitter"
+              >
                 <Twitter className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300">
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/vviok-industry-industrial-filtration-stainless-steel-equipment-manufacturer" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300"
+                aria-label="LinkedIn"
+              >
                 <Linkedin className="h-5 w-5" />
-              </Link>
+              </a>
             </div>
           </div>
 
