@@ -34,13 +34,9 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   icons: {
-    icon: [
-      { url: '/uploads/vviokicon.png?v=15', type: 'image/png' },
-    ],
+    icon: '/uploads/vviokicon.png?v=15',
     shortcut: '/uploads/vviokicon.png?v=15',
-    apple: [
-      { url: '/uploads/vviokicon.png?v=15', sizes: '180x180', type: 'image/png' },
-    ],
+    apple: '/uploads/vviokicon.png?v=15',
   },
 };
 
@@ -121,12 +117,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn('scroll-smooth', inter.variable, ptSans.variable)} suppressHydrationWarning>
       <head>
-        {/* Force custom icon with higher versioning to bypass cache */}
-        <link rel="icon" href="/uploads/vviokicon.png?v=15" type="image/png" />
-        <link rel="shortcut icon" href="/uploads/vviokicon.png?v=15" type="image/png" />
+        {/* Force custom icon exclusively and override fallback favicon.ico */}
+        <link rel="icon" href="/uploads/vviokicon.png?v=15" sizes="any" />
         <link rel="apple-touch-icon" href="/uploads/vviokicon.png?v=15" />
-        <link rel="icon" sizes="32x32" href="/uploads/vviokicon.png?v=15" />
-        <link rel="icon" sizes="16x16" href="/uploads/vviokicon.png?v=15" />
 
         {/* Global Schemas */}
         <script
