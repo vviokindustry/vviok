@@ -22,6 +22,9 @@ const ptSans = PT_Sans({
   variable: '--font-pt-sans',
 });
 
+// New direct link for the Google Drive icon
+const NEW_ICON_URL = "https://drive.google.com/uc?export=view&id=18FDh4yH--rrRWfa6X6k1_6yk90gR2OD-";
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.vviokindustry.in'),
   title: 'VVIOK Industry - Filtration Products Manufacturer & Exporter',
@@ -34,9 +37,9 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   icons: {
-    icon: '/uploads/vviokicon.png?v=15',
-    shortcut: '/uploads/vviokicon.png?v=15',
-    apple: '/uploads/vviokicon.png?v=15',
+    icon: NEW_ICON_URL,
+    shortcut: NEW_ICON_URL,
+    apple: NEW_ICON_URL,
   },
 };
 
@@ -64,7 +67,9 @@ const organizationSchema = {
   },
   "sameAs": [
     "https://www.facebook.com/p/VVIOK-Industry-61566349642536/",
-    "https://www.instagram.com/vviok.industry"
+    "https://www.instagram.com/vviok.industry",
+    "https://x.com/VviokIndustry",
+    "https://www.linkedin.com/company/vviok-industry-industrial-filtration-stainless-steel-equipment-manufacturer"
   ]
 };
 
@@ -105,7 +110,9 @@ const localBusinessSchema = {
   },
   "sameAs": [
     "https://www.facebook.com/p/VVIOK-Industry-61566349642536/",
-    "https://www.instagram.com/vviok.industry"
+    "https://www.instagram.com/vviok.industry",
+    "https://x.com/VviokIndustry",
+    "https://www.linkedin.com/company/vviok-industry-industrial-filtration-stainless-steel-equipment-manufacturer"
   ]
 };
 
@@ -117,9 +124,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn('scroll-smooth', inter.variable, ptSans.variable)} suppressHydrationWarning>
       <head>
-        {/* Force custom icon exclusively and override fallback favicon.ico */}
-        <link rel="icon" href="/uploads/vviokicon.png?v=15" sizes="any" />
-        <link rel="apple-touch-icon" href="/uploads/vviokicon.png?v=15" />
+        {/* Force custom icon from Google Drive and override any other favicons */}
+        <link rel="icon" href={NEW_ICON_URL} sizes="any" />
+        <link rel="apple-touch-icon" href={NEW_ICON_URL} />
+        <link rel="shortcut icon" href={NEW_ICON_URL} />
 
         {/* Global Schemas */}
         <script
