@@ -128,6 +128,9 @@ export default function RootLayout({
         <link rel="icon" href={ICON_URL} />
         <link rel="apple-touch-icon" href={ICON_URL} />
 
+        {/* Pinterest Domain Verification */}
+        <meta name="p:domain_verify" content="58896636f0e0d8da3b4e4a8924d46e37"/>
+
         {/* Global Schemas */}
         <script
           type="application/ld+json"
