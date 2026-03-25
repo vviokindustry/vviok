@@ -197,8 +197,8 @@ export const products: Record<string, ProductDetail[]> = {
   'pp-spun-filter-cartridge-supplier': [{ 
     name: 'PP Spun Filter Cartridge Manufacturer & Supplier in India', 
     application: 'Sediment and particulate removal, pre-filtration for RO systems', 
-    imageId: 'product-pp-spun-1',
-    imageIds: ['product-pp-spun-1', 'product-pp-spun-2'],
+    imageId: '/uploads/PP Spun Filter Cartridge Manufacturer in Ahmedabad.png',
+    imageIds: ['/uploads/PP Spun Filter Cartridge Manufacturer in Ahmedabad.png'],
     description: `Our PP Spun Filter Cartridge is manufactured using 100% high-grade polypropylene to deliver superior depth filtration and long service life. Designed for effective sediment and particulate removal, these spun polypropylene filter cartridges provide high dirt-holding capacity with low pressure drop.
 
 As a trusted PP spun filter cartridge manufacturer in Ahmedabad, India, we supply reliable and cost-effective filtration solutions suitable for industrial and commercial water treatment applications.`,
