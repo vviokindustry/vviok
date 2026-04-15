@@ -42,6 +42,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/products/:category/:subcategory',
+        destination: '/products/:subcategory',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -123,7 +123,7 @@ export function Header() {
                             {cat.subcategories?.map((sub) => (
                               <DropdownMenuItem key={sub.slug} asChild className="p-0 focus:bg-transparent">
                                 <Link 
-                                  href={`/products/${cat.slug}/${sub.slug}`} 
+                                  href={`/products/${sub.slug}`} 
                                   className="font-headline text-slate-600 hover:text-primary font-bold text-[12px] transition-all cursor-pointer flex items-center gap-3 group"
                                   onClick={() => setIsProductsOpen(false)}
                                 >
@@ -233,7 +233,7 @@ export function Header() {
                                     {cat.subcategories?.map((sub) => (
                                       <Link 
                                         key={sub.slug} 
-                                        href={`/products/${cat.slug}/${sub.slug}`}
+                                        href={`/products/${sub.slug}`}
                                         className="font-headline text-sm text-slate-600 hover:text-primary transition-colors"
                                         onClick={() => setMobileMenuOpen(false)}
                                       >

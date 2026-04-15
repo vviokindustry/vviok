@@ -1,3 +1,4 @@
+
 import { MetadataRoute } from 'next';
 import { productCategories } from '@/lib/data';
 
@@ -28,10 +29,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Dynamic subcategory routes
+  // Dynamic subcategory routes (New Flat Structure)
   const subcategoryRoutes = productCategories.flatMap((cat) => 
     (cat.subcategories || []).map((sub) => ({
-      url: `${baseUrl}/products/${cat.slug}/${sub.slug}`,
+      url: `${baseUrl}/products/${sub.slug}`,
       lastModified: new Date(),
       changeFrequency: 'weekly' as const,
       priority: 0.6,
