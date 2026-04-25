@@ -131,6 +131,9 @@ export default function RootLayout({
         {/* Pinterest Domain Verification */}
         <meta name="p:domain_verify" content="58896636f0e0d8da3b4e4a8924d46e37"/>
 
+        {/* Bing Webmaster Verification */}
+        <meta name="msvalidate.01" content="D75D8D4F6BB6203BE66B57E666DCF429" />
+
         {/* Global Schemas */}
         <script
           type="application/ld+json"
