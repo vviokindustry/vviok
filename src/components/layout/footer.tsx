@@ -148,7 +148,10 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium uppercase tracking-widest text-slate-500">
-          <p>&copy; {new Date().getFullYear()} VVIOK Industry. All rights reserved.</p>
+          <div className="flex flex-col gap-1">
+            <p>&copy; {new Date().getFullYear()} VVIOK Industry. All rights reserved.</p>
+            <p>Developed by <a href="https://www.vibratseo.in/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors font-bold">Vibrat SEO</a></p>
+          </div>
           <div className="flex gap-8">
             <Link href="/admin/media" className="hover:text-white transition-colors flex items-center gap-1">
               <Settings className="h-3 w-3" /> Admin
