@@ -162,7 +162,7 @@ export function Header() {
   );
 
   return (
-    <div className="w-full">
+    <div className="sticky top-0 z-50 w-full">
       {/* Top Contact Bar */}
       <div className="bg-[#a5be1d] text-white py-1.5 text-[12px] font-bold hidden md:block">
         <div className="container flex justify-between items-center px-4 mx-auto">
@@ -178,7 +178,7 @@ export function Header() {
       </div>
 
       {/* Main Header */}
-      <header className="sticky top-0 z-50 w-full border-b bg-white">
+      <header className="w-full border-b bg-white">
         <div className="container flex h-16 items-center justify-between px-4 mx-auto">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
