@@ -10,6 +10,8 @@ import {
   Lightbulb,
   Award,
   HelpCircle,
+  ShieldCheck,
+  CheckCircle,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -31,23 +33,23 @@ export const metadata: Metadata = {
 const companyFaqs = [
   {
     question: "What types of industrial filtration products does VVIOK Industry manufacture?",
-    answer: "VVIOK Industry specializes in a wide range of high-performance products including Filter Cartridges (PP Spun, Pleated, PTFE, SS Mesh), Industrial Filter Housings (Bag, Cartridge, Duplex, Multi-bag), Industrial Strainers (Basket, Conical, Taper), and Stainless Steel Storage Tanks & Pressure Vessels."
+    answer: "VVIOK Industry specializes in a wide range of high-performance products including Filter Cartridges (PP Spun, Pleated, PTFE, SS Mesh, Sintered), Industrial Filter Housings (Bag, Cartridge, Duplex, Multi-bag, Vent), Industrial Strainers (Basket, Conical, Taper, Pleated), and Stainless Steel Storage Tanks & Pressure Vessels. Every product is engineered to manage high pressure and flow rates while ensuring 100% bypass-free filtration."
   },
   {
     question: "Does VVIOK Industry provide customized filtration solutions?",
-    answer: "Yes, we provide total filtration solutions. Our expert engineering team, with over 20 years of experience, can design and manufacture bespoke systems tailored to your specific service temperature, pressure, flow rate, and fluid compatibility requirements."
+    answer: "Yes, we provide total filtration solutions. Our expert engineering team, with over 20 years of experience, can design and manufacture bespoke systems tailored to your specific service temperature, pressure, flow rate, and fluid compatibility requirements. We collaborate closely with your technical team to ensure the system integrates perfectly into your existing process flow."
   },
   {
     question: "Are VVIOK Industry products compliant with international standards?",
-    answer: "Absolutely. All our products are manufactured to meet high-quality engineering standards, including adherence to ASME and CE guidelines. We maintain rigorous in-house quality performance testing and ISO 9001:2015 compliant management systems."
+    answer: "Absolutely. All our products are manufactured to meet high-quality engineering standards, including adherence to ASME and CE guidelines. We maintain rigorous in-house quality performance testing and ISO 9001:2015 compliant management systems. We also provide full documentation like material test certificates (MTC) and hydro-test reports for every vessel and housing we manufacture."
   },
   {
     question: "Which industries do you primarily serve?",
-    answer: "We serve a diverse range of sectors globally, including Water Treatment, Chemical Processing, Pharmaceuticals, Food & Beverage, Oil & Gas, and General Manufacturing industries requiring precision filtration."
+    answer: "We serve a diverse range of sectors globally, including Water Treatment, Chemical Processing, Pharmaceuticals, Food & Beverage, Oil & Gas, and General Manufacturing. Our products are specially designed to handle aggressive chemicals, sterile air requirements, and high-volume industrial fluid clarification."
   },
   {
     question: "How can I get a technical consultation or a quote?",
-    answer: "You can reach out to us via our Contact page, email us at vviokindustry2021@gmail.com, or directly call/WhatsApp us at +91 91064 72588. Our technical team is ready to assist you based on your specific industrial parameters."
+    answer: "You can reach out to us via our Contact page, email us at vviokindustry2021@gmail.com, or directly call/WhatsApp us at +91 91064 72588. Our technical team is ready to assist you by analyzing your specific industrial parameters and recommending the most efficient filtration solution for your needs."
   }
 ];
 
@@ -160,7 +162,7 @@ export default function Home() {
                 <span className="text-slate-900">OUR</span> <span className={`text-[#0284c7]`}>MISSION</span>
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
-                To be the leading provider of innovative, high-quality filtration solutions that improve efficiency.
+                To be the leading global provider of innovative, high-quality filtration solutions that improve efficiency and protect process integrity.
               </p>
               <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-24 w-[1px] bg-slate-100"></div>
             </div>
@@ -177,7 +179,7 @@ export default function Home() {
                 <span className="text-slate-900">OUR</span> <span className={`text-[#a5be1d]`}>VISION</span>
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
-                To design, develop, and manufacture high-quality filtration systems that meet the diverse needs of our customers.
+                To design, develop, and manufacture advanced filtration systems that meet the evolving needs of our global customers through engineering excellence.
               </p>
               <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 h-24 w-[1px] bg-slate-100"></div>
             </div>
@@ -194,7 +196,7 @@ export default function Home() {
                 <span className="text-slate-900">INDUSTRIES</span> <span className="text-[#ffc107]">WE SERVE</span> <ArrowRight className="h-8 w-8 md:h-10 md:w-10 text-[#ffc107]" />
               </h3>
               <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-sm mx-auto font-medium">
-                Providing specialized filtration solutions to meet the unique challenges of diverse industrial sectors globally.
+                Providing specialized filtration solutions to meet the unique challenges of diverse industrial sectors globally with unwavering reliability.
               </p>
             </div>
 
@@ -202,17 +204,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Welcome Section */}
+      {/* Welcome Section - Content Expansion for SEO */}
       <section className="py-20 md:py-24 bg-slate-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className={`font-headline text-3xl md:text-5xl font-black text-[#a5be1d] mb-10 uppercase tracking-tight`}>
             Expert Filtration Manufacturing Excellence
           </h2>
-          <p className="text-slate-500 text-base md:text-lg max-w-5xl mx-auto leading-relaxed font-medium">
-            VVIOK Industry stands as India's premier expert in industrial filtration solutions. Based in Ahmedabad, we engineer state-of-the-art 
-            filter housings, cartridges, and storage tanks that strictly adhere to ASME and CE standards. Our systems are trusted by 
-            pharmaceutical, chemical, and food processing leaders across the globe.
-          </p>
+          <div className="max-w-5xl mx-auto space-y-6">
+            <p className="text-slate-500 text-base md:text-lg leading-relaxed font-medium">
+              VVIOK Industry stands as India's premier expert in industrial filtration solutions. Based in Ahmedabad, we engineer state-of-the-art 
+              filter housings, cartridges, and storage tanks that strictly adhere to ASME and CE standards. Our systems are trusted by 
+              pharmaceutical, chemical, and food processing leaders across the globe. We leverage a qualified team of engineers with 15-23 years of specialized experience to provide total filtration solutions to global markets.
+            </p>
+            <p className="text-slate-500 text-base md:text-lg leading-relaxed font-medium">
+              Our commitment to quality transcends borders. International clients can expect products manufactured to global standards (ISO, CE), 
+              third-party inspection services available upon request, full traceability of materials, and comprehensive after-sales technical support. 
+              We prioritize long-term cost-efficiency in micron filtration, offering economical engineering solutions without compromising on performance. 
+              Our media offers industry-leading reproducibility, ranging from Nominal to Absolute Beta 1000 ratings for critical applications.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -239,7 +249,7 @@ export default function Home() {
                 <h3 className="text-4xl md:text-6xl font-black uppercase leading-[0.85] tracking-tighter">
                   Filter<br/><span className={`text-[#a5be1d]`}>Cartridge</span>
                 </h3>
-                <p className="mt-8 text-slate-300 text-sm md:text-base max-w-xs font-medium leading-relaxed">Precision engineered for high-purity liquid and gas processing.</p>
+                <p className="mt-8 text-slate-300 text-sm md:text-base max-w-xs font-medium leading-relaxed">Precision engineered for high-purity liquid and gas processing with absolute micron ratings.</p>
               </div>
               <Button asChild className={`relative z-10 bg-[#a5be1d] hover:bg-[#94ab1a] text-white rounded-2xl px-10 h-14 font-black uppercase text-[11px] tracking-widest w-fit mt-10`}>
                 <Link href={`/products/${productCategories[0].slug}`}>
@@ -299,6 +309,54 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Industrial Expertise Section - NEW for SEO Content Volume */}
+      <section className="py-24 bg-slate-900 text-white overflow-hidden">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <h2 className="font-headline text-3xl md:text-5xl font-black uppercase tracking-tighter leading-tight text-[#a5be1d]">
+                Engineering Superiority in Industrial Filtration
+              </h2>
+              <div className="space-y-6 text-slate-400 text-lg font-medium leading-relaxed">
+                <p>
+                  At VVIOK Industry, our engineering excellence is forged in our state-of-the-art manufacturing facilities and rigorous quality control protocols. We combine cutting-edge technology with expert craftsmanship to optimize precision, scalability, and efficiency. From raw material sourcing to final assembly, every step is meticulously controlled to produce filtration products that meet the highest standards of performance and reliability.
+                </p>
+                <p>
+                  Our manufacturing infrastructure is designed to deliver reliability and precision. We adhere to stringent quality management systems to ensure that every filter and tank leaving our facility meets international performance standards, including ASME and CE Standard Compliance. We operate advanced in-house testing facilities to validate product performance against international standards, ensuring our products are ready for deployment in regulated industries worldwide.
+                </p>
+              </div>
+              <div className="grid sm:grid-cols-2 gap-6 pt-8 border-t border-slate-800">
+                <div className="flex items-start gap-4">
+                  <ShieldCheck className="h-8 w-8 text-[#a5be1d] shrink-0" />
+                  <div>
+                    <h4 className="font-bold text-white uppercase tracking-wider text-sm mb-2">ISO 9001:2015</h4>
+                    <p className="text-xs text-slate-500 font-medium">Certified Quality Management Systems for every manufacturing process.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <CheckCircle className="h-8 w-8 text-[#a5be1d] shrink-0" />
+                  <div>
+                    <h4 className="font-bold text-white uppercase tracking-wider text-sm mb-2">ASME Standards</h4>
+                    <p className="text-xs text-slate-500 font-medium">Compliance with international pressure vessel and housing standards.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="relative aspect-square lg:aspect-auto lg:h-[600px] rounded-[3rem] overflow-hidden border-4 border-slate-800">
+               {cat1Img && (
+                  <Image 
+                    src={cat1Img.imageUrl} 
+                    alt="Industrial Filtration Manufacturing" 
+                    fill 
+                    className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                  />
+               )}
+               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Industries Served */}
       <section className="py-20 bg-[#0f172a] text-white">
         <div className="container mx-auto px-4">
@@ -307,7 +365,7 @@ export default function Home() {
               Industries Served by Our Experts <ArrowRight className="h-6 w-6" />
             </h2>
             <p className="text-base text-white max-w-2xl mx-auto font-medium">
-              We provide critical filtration solutions to diverse industrial sectors globally, focusing on safety and reliability.
+              We provide critical filtration solutions to diverse industrial sectors globally, focusing on safety, reliability, and technical precision.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
@@ -331,7 +389,7 @@ export default function Home() {
               The VVIOK Advantage
             </h2>
             <p className="text-slate-500 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-medium">
-              Why leading industrial partners trust VVIOK for their critical filtration and storage needs.
+              Why leading industrial partners trust VVIOK for their critical filtration and storage needs. Our legacy is built on trust, engineering expertise, and quality results.
             </p>
           </div>
 
@@ -368,7 +426,7 @@ export default function Home() {
             <h2 className="font-headline text-3xl md:text-4xl font-black text-slate-900 uppercase tracking-tighter">
               Industrial Expertise: Frequently Asked Questions
             </h2>
-            <p className="mt-4 text-slate-500 font-medium">Common technical inquiries answered by our engineering team.</p>
+            <p className="mt-4 text-slate-500 font-medium">Common technical inquiries answered by our senior engineering team to help you make informed decisions.</p>
           </div>
 
           <div className="bg-white p-8 md:p-12 rounded-[3rem] border-2 border-slate-100 shadow-xl shadow-slate-200/50">

@@ -4,7 +4,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import Link from 'next/link';
+import Link from 'link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { ChevronRight, Home, Package, Share2, CheckCircle2, ArrowRight, HelpCircle } from 'lucide-react';
@@ -217,7 +217,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
               <div className="space-y-8">
                 <div className="prose prose-slate max-w-none">
                   <div className="text-slate-600 text-lg md:text-xl leading-relaxed font-medium whitespace-pre-wrap">
-                    {product.description || `High-performance industrial solution designed for ${product.application.toLowerCase()}.`}
+                    {product.description || `High-performance industrial solution designed for ${product.application.toLowerCase()}. Our products are manufactured to ensure maximum efficiency and process protection.`}
                   </div>
                 </div>
 
@@ -259,7 +259,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                 <TabsContent value="description" className="mt-0 outline-none">
                   <div className="max-w-4xl space-y-8">
                     <div className="text-slate-600 text-lg font-medium leading-relaxed whitespace-pre-wrap">
-                      {product.detailedSpecs || `The ${product.name} is the pinnacle of engineering for ${product.application.toLowerCase()}.`}
+                      {product.detailedSpecs || `The ${product.name} is the pinnacle of engineering for ${product.application.toLowerCase()}. We focus on every technical detail to ensure that our equipment performs consistently under heavy industrial use. Our fabrication process emphasizes durability and precise control over technical parameters.`}
                     </div>
                   </div>
                 </TabsContent>
@@ -304,7 +304,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                 <h2 className="font-headline text-3xl md:text-4xl font-bold text-slate-900 tracking-tighter">
                   Frequently Asked Questions
                 </h2>
-                <p className="mt-4 text-slate-500 font-medium">Find answers to common questions about our {product.name}.</p>
+                <p className="mt-4 text-slate-500 font-medium">Find answers to common questions about our {product.name} from our technical team.</p>
               </div>
 
               <div className="bg-white p-8 md:p-12 rounded-[3rem] border-2 border-slate-100 shadow-xl shadow-slate-200/50">
@@ -344,7 +344,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                 const image = resolveImageSource(imageId, PlaceHolderImages);
                 
                 return (
-                  <Link key={sub.slug} href={`/products/${currentCategory.slug}/${sub.slug}`} className="group">
+                  <Link key={sub.slug} href={`/products/${sub.slug}`} className="group">
                     <Card className="h-full border-2 border-slate-100 shadow-lg shadow-slate-200/50 hover:border-primary/50 transition-all duration-500 p-8 rounded-[2.5rem] bg-white overflow-hidden">
                       <div className="aspect-square relative w-full mb-6 flex items-center justify-center p-4 bg-slate-50 rounded-[1.5rem] group-hover:bg-white transition-colors">
                         <Image 
