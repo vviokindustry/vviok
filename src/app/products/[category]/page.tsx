@@ -183,6 +183,7 @@ export default async function SlugPage({ params }: { params: Promise<{ category:
 
     const relatedSubcategories = parentCategory?.subcategories?.filter(sub => sub.slug !== slug) || [];
 
+    // Enhanced Product Schema for GEO
     const productSchema = {
       "@context": "https://schema.org/",
       "@type": "Product",
@@ -190,13 +191,21 @@ export default async function SlugPage({ params }: { params: Promise<{ category:
       "image": galleryImages.map(img => img.imageUrl.startsWith('http') ? img.imageUrl : `https://www.vviokindustry.in${img.imageUrl}`),
       "description": product.description,
       "sku": product.name.replace(/\s+/g, '-').toLowerCase(),
+      "mpn": product.name.replace(/\s+/g, '-').toLowerCase(),
       "brand": { "@type": "Brand", "name": "VVIOK Industry" },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "VVIOK Industry",
+        "address": "Ahmedabad, Gujarat, India"
+      },
+      "material": product.specifications?.['Material of Construction'] || "Stainless Steel",
       "offers": {
         "@type": "Offer",
         "url": `https://www.vviokindustry.in/products/${slug}`,
         "priceCurrency": "INR",
         "price": "0",
-        "availability": "https://schema.org/InStock"
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
       }
     };
 
@@ -211,10 +220,25 @@ export default async function SlugPage({ params }: { params: Promise<{ category:
       ]
     };
 
+    // FAQ Schema for GEO
+    const faqSchema = product.faqs ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": product.faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    } : null;
+
     return (
       <div className="bg-white min-h-screen">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+        {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
         <div className="bg-slate-50 border-b">
           <div className="container py-4 flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground overflow-x-auto whitespace-nowrap">

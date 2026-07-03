@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.vviokindustry.in'),
   title: 'VVIOK Industry - Filtration Products Manufacturer & Exporter',
   description:
-    'VVIOK Industry is a leading manufacturer, supplier, and exporter of high-quality industrial filtration products in India, serving a global market.',
+    'VVIOK Industry is a leading manufacturer, supplier, and exporter of high-quality industrial filtration products in India, serving a global market with precision engineering.',
   verification: {
     google: 'nscCigG5Ub7D8EXkDWr9OIDvsp3X90AepDixohVRwYU',
   },
@@ -43,18 +43,26 @@ export const metadata: Metadata = {
   },
 };
 
-// Global Schema Definitions
+// Global Schema Definitions Enhanced for GEO
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "VVIOK Industry",
   "url": "https://www.vviokindustry.in",
   "logo": "https://www.vviokindustry.in/uploads/Vviok%20industry%20logo.png",
+  "description": "VVIOK Industry is a premier manufacturer and exporter of industrial filtration solutions, specializing in stainless steel filter housings, cartridges, and pressure vessels.",
+  "knowsAbout": [
+    "Industrial Filtration Systems",
+    "Stainless Steel Filter Housing Manufacturing",
+    "Microfiltration Engineering",
+    "Pressure Vessel Fabrication",
+    "Water Treatment Technology"
+  ],
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+91-91064-72588",
     "contactType": "customer service",
-    "areaServed": "IN",
+    "areaServed": "Global",
     "availableLanguage": ["en", "hi", "gu"]
   },
   "address": {

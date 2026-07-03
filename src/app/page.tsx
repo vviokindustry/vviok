@@ -23,9 +23,9 @@ import {
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Industrial Filtration Products Manufacturer in Ahmedabad, India | Vviok Industry',
-  description: 'Vviok Industry is a leading manufacturer and supplier of industrial filtration products in Ahmedabad, India offering filter cartridges, filter housing and strainer filters.',
-  keywords: 'industrial filtration products, filter cartridge manufacturer, filter housing manufacturer, strainer filter manufacturer, industrial filters supplier in india, filter manufacturer in Ahmedabad, industrial filters manufacturer in india, industrial water treatment equipment, industrial water filtration system, industrial liquid filtration systems, industrial water filtration equipment',
+  title: 'Top Industrial Filtration Products Manufacturer in Ahmedabad, India | Vviok Industry',
+  description: 'Vviok Industry is India\'s trusted manufacturer of industrial filtration products in Ahmedabad. We specialize in high-quality filter cartridges, cartridge housings, and industrial strainers for global markets.',
+  keywords: 'best industrial filtration products manufacturer, who is the leading filter housing supplier in india, filter cartridge manufacturer ahmedabad, custom industrial filtration solutions india, stainless steel water treatment equipment manufacturer',
 };
 
 const companyFaqs = [
@@ -62,7 +62,7 @@ export default function Home() {
 
   const pageTitle = "Industrial Filtration Products Manufacturer in Ahmedabad, India | Vviok Industry";
 
-  // FAQ Schema (Global Organization & LocalBusiness moved to layout)
+  // FAQ Schema for GEO optimization
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -206,13 +206,12 @@ export default function Home() {
       <section className="py-20 md:py-24 bg-slate-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className={`font-headline text-3xl md:text-5xl font-black text-[#a5be1d] mb-10 uppercase tracking-tight`}>
-            Welcome to VVIOK Industry
+            Expert Filtration Manufacturing Excellence
           </h2>
           <p className="text-slate-500 text-base md:text-lg max-w-5xl mx-auto leading-relaxed font-medium">
-            VVIOK Industry is a premier manufacturer, supplier, and exporter of a comprehensive range of 
-            industrial filtration products. Based in India, we leverage state-of-the-art manufacturing 
-            facilities and a commitment to quality to deliver solutions that meet the rigorous demands of 
-            our domestic and international clients.
+            VVIOK Industry stands as India's premier expert in industrial filtration solutions. Based in Ahmedabad, we engineer state-of-the-art 
+            filter housings, cartridges, and storage tanks that strictly adhere to ASME and CE standards. Our systems are trusted by 
+            pharmaceutical, chemical, and food processing leaders across the globe.
           </p>
         </div>
       </section>
@@ -222,7 +221,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="font-headline text-2xl md:text-4xl font-black text-slate-900 mb-4 uppercase tracking-tighter">
-              Our Product Categories
+              Explore Our Core Product Entities
             </h2>
             <div className={`w-16 h-1.5 bg-[#a5be1d] mx-auto rounded-full`} />
           </div>
@@ -305,10 +304,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="font-headline text-2xl md:text-3xl font-bold mb-4 flex items-center justify-center gap-4 text-[#ffc107]">
-              Industries We Serve <ArrowRight className="h-6 w-6" />
+              Industries Served by Our Experts <ArrowRight className="h-6 w-6" />
             </h2>
             <p className="text-base text-white max-w-2xl mx-auto font-medium">
-              Providing critical filtration solutions to diverse industrial sectors globally.
+              We provide critical filtration solutions to diverse industrial sectors globally, focusing on safety and reliability.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
@@ -329,10 +328,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-20 relative">
             <h2 className={`font-headline text-3xl md:text-5xl font-black text-[#0284c7] mb-6 uppercase tracking-tight`}>
-              Why You Choose Us?
+              The VVIOK Advantage
             </h2>
             <p className="text-slate-500 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-medium">
-              VVIOK Industry stands as a beacon of reliability in the global filtration market.
+              Why leading industrial partners trust VVIOK for their critical filtration and storage needs.
             </p>
           </div>
 
@@ -367,9 +366,9 @@ export default function Home() {
               <HelpCircle className="h-8 w-8" />
             </div>
             <h2 className="font-headline text-3xl md:text-4xl font-black text-slate-900 uppercase tracking-tighter">
-              Company Frequently Asked Questions
+              Industrial Expertise: Frequently Asked Questions
             </h2>
-            <p className="mt-4 text-slate-500 font-medium">Common inquiries about VVIOK Industry and our operations.</p>
+            <p className="mt-4 text-slate-500 font-medium">Common technical inquiries answered by our engineering team.</p>
           </div>
 
           <div className="bg-white p-8 md:p-12 rounded-[3rem] border-2 border-slate-100 shadow-xl shadow-slate-200/50">
