@@ -4,7 +4,7 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import Link from 'link';
+import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { ChevronRight, Home, Package, Share2, CheckCircle2, ArrowRight, HelpCircle } from 'lucide-react';
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
     description: product.metaDescription || product.description,
     keywords: product.metaKeywords,
     alternates: {
-      canonical: `/products/${category}/${subcategory}`,
+      canonical: `/products/${subcategory}`,
     },
   };
 }
@@ -83,7 +83,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
     },
     "offers": {
       "@type": "Offer",
-      "url": `https://www.vviokindustry.in/products/${category}/${subcategory}`,
+      "url": `https://www.vviokindustry.in/products/${subcategory}`,
       "priceCurrency": "INR",
       "price": "0", // 0 indicates "Price on Request" for Google
       "priceValidUntil": "2030-01-01",
@@ -167,7 +167,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
         "@type": "ListItem",
         "position": 4,
         "name": currentSubcategory.name,
-        "item": `https://www.vviokindustry.in/products/${currentCategory.slug}/${currentSubcategory.slug}`
+        "item": `https://www.vviokindustry.in/products/${currentSubcategory.slug}`
       }
     ]
   };

@@ -162,7 +162,7 @@ export function Header() {
   );
 
   return (
-    <div className="sticky top-0 z-50 w-full">
+    <div className="sticky top-0 z-50 w-full shadow-md">
       {/* Top Contact Bar */}
       <div className="bg-[#a5be1d] text-white py-1.5 text-[12px] font-bold hidden md:block">
         <div className="container flex justify-between items-center px-4 mx-auto">
