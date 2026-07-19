@@ -15,9 +15,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import type { Metadata } from 'next';
 
 export async function generateMetadata({ params }: { params: Promise<{ category: string; subcategory: string }> }): Promise<Metadata> {
-  const { category, subcategory } = await params;
-  const currentCategory = productCategories.find(cat => cat.slug === category);
-  const currentSubcategory = currentCategory?.subcategories?.find(sub => sub.slug === subcategory);
+  const resolvedParams = await params;
+  const { subcategory } = resolvedParams;
   const subcategoryProducts = products[subcategory] || [];
   const product = subcategoryProducts[0];
 
@@ -46,7 +45,8 @@ export async function generateStaticParams() {
 }
 
 export default async function SubcategoryPage({ params }: { params: Promise<{ category: string; subcategory: string }> }) {
-  const { category, subcategory } = await params;
+  const resolvedParams = await params;
+  const { category, subcategory } = resolvedParams;
   const currentCategory = productCategories.find(cat => cat.slug === category);
   const currentSubcategory = currentCategory?.subcategories?.find(sub => sub.slug === subcategory);
   

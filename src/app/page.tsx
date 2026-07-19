@@ -340,13 +340,13 @@ export default function Home() {
                 Engineering Superiority in Industrial Filtration
               </h2>
               <div className="space-y-6 text-white text-lg font-medium leading-relaxed">
-                <p>
+                <p className="text-white">
                   At VVIOK Industry, our engineering excellence is forged in our state-of-the-art manufacturing facilities and rigorous quality control protocols. We combine cutting-edge technology with expert craftsmanship to optimize precision, scalability, and efficiency. From raw material sourcing to final assembly, every step is meticulously controlled to produce filtration products that meet the highest standards of performance and reliability.
                 </p>
-                <p>
+                <p className="text-white">
                   Our manufacturing infrastructure is designed to deliver reliability and precision. We adhere to stringent quality management systems to ensure that every filter and tank leaving our facility meets international performance standards, including ASME and CE Standard Compliance. We operate advanced in-house testing facilities to validate product performance against international standards, ensuring our products are ready for deployment in regulated industries worldwide.
                 </p>
-                <p>
+                <p className="text-white">
                   We understand the critical nature of industrial processes, which is why we offer comprehensive technical support and consultation. Our engineers work directly with your team to solve complex filtration challenges, ensuring that your operations remain safe, efficient, and compliant with global environmental and safety standards.
                 </p>
               </div>
