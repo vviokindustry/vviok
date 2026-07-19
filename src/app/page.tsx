@@ -55,6 +55,7 @@ const companyFaqs = [
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
+  const manufacturingImage = PlaceHolderImages.find((img) => img.id === 'about-us-manufacturing');
 
   // Specific images for category backgrounds
   const cat1Img = PlaceHolderImages.find(img => img.id === 'product-pp-spun-1');
@@ -104,7 +105,7 @@ export default function Home() {
           </div>
         )}
 
-        {/* SEO H1 Header - Fixed Error */}
+        {/* SEO H1 Header */}
         <div className="relative z-10 max-w-5xl mx-auto">
           <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.95] mb-6">
             Top Industrial <span className="text-[#a5be1d]">Filtration Products</span> Manufacturer in India
@@ -330,7 +331,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Industrial Expertise Section - NEW for SEO Content Volume */}
+      {/* Industrial Expertise Section - Expanded with White Text for Visibility */}
       <section className="py-24 bg-slate-900 text-white overflow-hidden">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -338,7 +339,7 @@ export default function Home() {
               <h2 className="font-headline text-3xl md:text-5xl font-black uppercase tracking-tighter leading-tight text-[#a5be1d]">
                 Engineering Superiority in Industrial Filtration
               </h2>
-              <div className="space-y-6 text-slate-400 text-lg font-medium leading-relaxed">
+              <div className="space-y-6 text-white text-lg font-medium leading-relaxed">
                 <p>
                   At VVIOK Industry, our engineering excellence is forged in our state-of-the-art manufacturing facilities and rigorous quality control protocols. We combine cutting-edge technology with expert craftsmanship to optimize precision, scalability, and efficiency. From raw material sourcing to final assembly, every step is meticulously controlled to produce filtration products that meet the highest standards of performance and reliability.
                 </p>
@@ -354,28 +355,29 @@ export default function Home() {
                   <ShieldCheck className="h-8 w-8 text-[#a5be1d] shrink-0" />
                   <div>
                     <h4 className="font-bold text-white uppercase tracking-wider text-sm mb-2">ISO 9001:2015</h4>
-                    <p className="text-xs text-slate-500 font-medium">Certified Quality Management Systems for every manufacturing process and product line.</p>
+                    <p className="text-xs text-slate-200 font-medium">Certified Quality Management Systems for every manufacturing process and product line.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <CheckCircle className="h-8 w-8 text-[#a5be1d] shrink-0" />
                   <div>
                     <h4 className="font-bold text-white uppercase tracking-wider text-sm mb-2">ASME Standards</h4>
-                    <p className="text-xs text-slate-500 font-medium">Compliance with international pressure vessel and housing standards for high-pressure safety.</p>
+                    <p className="text-xs text-slate-200 font-medium">Compliance with international pressure vessel and housing standards for high-pressure safety.</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="relative aspect-square lg:aspect-auto lg:h-[600px] rounded-[3rem] overflow-hidden border-4 border-slate-800">
-               {cat1Img && (
+            <div className="relative aspect-square lg:aspect-auto lg:h-[600px] rounded-[3rem] overflow-hidden border-4 border-slate-800 shadow-2xl">
+               {manufacturingImage && (
                   <Image 
-                    src={cat1Img.imageUrl} 
-                    alt="Industrial Filtration Manufacturing" 
+                    src={manufacturingImage.imageUrl} 
+                    alt="Industrial Filtration Manufacturing Expertise" 
                     fill 
-                    className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                    className="object-cover"
+                    data-ai-hint="manufacturing plant"
                   />
                )}
-               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
+               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60" />
             </div>
           </div>
         </div>
