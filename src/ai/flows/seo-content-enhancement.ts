@@ -38,6 +38,26 @@ const prompt = ai.definePrompt({
   name: 'seoContentEnhancementPrompt',
   input: {schema: SEOInputSchema},
   output: {schema: SEOOutputSchema},
+  config: {
+    safetySettings: [
+      {
+        category: 'HARM_CATEGORY_HATE_SPEECH',
+        threshold: 'BLOCK_NONE',
+      },
+      {
+        category: 'HARM_CATEGORY_DANGEROUS_CONTENT',
+        threshold: 'BLOCK_NONE',
+      },
+      {
+        category: 'HARM_CATEGORY_HARASSMENT',
+        threshold: 'BLOCK_NONE',
+      },
+      {
+        category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT',
+        threshold: 'BLOCK_NONE',
+      },
+    ],
+  },
   prompt: `You are an SEO expert. Analyze the provided page content and suggest improvements based on the target keywords.
 
 Page Content: {{{pageContent}}}

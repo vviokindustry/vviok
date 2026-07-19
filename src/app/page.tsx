@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -332,21 +331,21 @@ export default function Home() {
       </section>
 
       {/* Industrial Expertise Section - Expanded with White Text for Visibility */}
-      <section className="py-24 bg-slate-900 text-white overflow-hidden">
+      <section className="py-24 bg-slate-950 text-slate-50 overflow-hidden">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <h2 className="font-headline text-3xl md:text-5xl font-black uppercase tracking-tighter leading-tight text-[#a5be1d]">
                 Engineering Superiority in Industrial Filtration
               </h2>
-              <div className="space-y-6 text-white text-lg font-medium leading-relaxed">
-                <p className="text-white">
+              <div className="space-y-6 text-slate-50 text-lg font-medium leading-relaxed">
+                <p className="text-slate-50">
                   At VVIOK Industry, our engineering excellence is forged in our state-of-the-art manufacturing facilities and rigorous quality control protocols. We combine cutting-edge technology with expert craftsmanship to optimize precision, scalability, and efficiency. From raw material sourcing to final assembly, every step is meticulously controlled to produce filtration products that meet the highest standards of performance and reliability.
                 </p>
-                <p className="text-white">
+                <p className="text-slate-50">
                   Our manufacturing infrastructure is designed to deliver reliability and precision. We adhere to stringent quality management systems to ensure that every filter and tank leaving our facility meets international performance standards, including ASME and CE Standard Compliance. We operate advanced in-house testing facilities to validate product performance against international standards, ensuring our products are ready for deployment in regulated industries worldwide.
                 </p>
-                <p className="text-white">
+                <p className="text-slate-50">
                   We understand the critical nature of industrial processes, which is why we offer comprehensive technical support and consultation. Our engineers work directly with your team to solve complex filtration challenges, ensuring that your operations remain safe, efficient, and compliant with global environmental and safety standards.
                 </p>
               </div>
@@ -354,14 +353,14 @@ export default function Home() {
                 <div className="flex items-start gap-4">
                   <ShieldCheck className="h-8 w-8 text-[#a5be1d] shrink-0" />
                   <div>
-                    <h4 className="font-bold text-white uppercase tracking-wider text-sm mb-2">ISO 9001:2015</h4>
+                    <h4 className="font-bold text-slate-50 uppercase tracking-wider text-sm mb-2">ISO 9001:2015</h4>
                     <p className="text-xs text-slate-200 font-medium">Certified Quality Management Systems for every manufacturing process and product line.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <CheckCircle className="h-8 w-8 text-[#a5be1d] shrink-0" />
                   <div>
-                    <h4 className="font-bold text-white uppercase tracking-wider text-sm mb-2">ASME Standards</h4>
+                    <h4 className="font-bold text-slate-50 uppercase tracking-wider text-sm mb-2">ASME Standards</h4>
                     <p className="text-xs text-slate-200 font-medium">Compliance with international pressure vessel and housing standards for high-pressure safety.</p>
                   </div>
                 </div>

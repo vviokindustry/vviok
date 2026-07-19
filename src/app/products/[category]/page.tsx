@@ -1,4 +1,3 @@
-
 import { products, productCategories } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card } from '@/components/ui/card';
@@ -7,17 +6,20 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { ChevronRight, Home, Package, Share2, CheckCircle2, ArrowRight, HelpCircle } from 'lucide-react';
+import { ChevronRight, Home, Package, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
 import { resolveImageSource } from '@/lib/utils';
 import { ProductImageGallery } from '@/components/product-image-gallery';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import type { Metadata } from 'next';
 
-export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
+type Props = {
+  params: Promise<{ category: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category: slug } = await params;
   
-  // Check if it's a category
   const currentCategory = productCategories.find(cat => cat.slug === slug);
   if (currentCategory) {
     return {
@@ -30,7 +32,6 @@ export async function generateMetadata({ params }: { params: Promise<{ category:
     };
   }
 
-  // Check if it's a subcategory (product)
   const product = products[slug]?.[0];
   if (product) {
     return {
@@ -58,28 +59,16 @@ export async function generateStaticParams() {
   return [...categoryParams, ...subcategoryParams];
 }
 
-export default async function SlugPage({ params }: { params: Promise<{ category: string }> }) {
+export default async function SlugPage({ params }: Props) {
   const { category: slug } = await params;
   
-  // 1. Handle Category View
   const currentCategory = productCategories.find(cat => cat.slug === slug);
   if (currentCategory) {
     const subItems = currentCategory.subcategories || [];
     const displayProducts = products[slug] || [];
 
-    const breadcrumbSchema = {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.vviokindustry.in" },
-        { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.vviokindustry.in/products" },
-        { "@type": "ListItem", "position": 3, "name": currentCategory.name, "item": `https://www.vviokindustry.in/products/${currentCategory.slug}` }
-      ]
-    };
-
     return (
       <div className="bg-white min-h-screen">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
         <div className="bg-slate-50 border-b">
           <div className="container py-3 flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground overflow-x-auto whitespace-nowrap">
             <Link href="/" className="hover:text-primary flex items-center gap-2 transition-colors">
@@ -172,7 +161,6 @@ export default async function SlugPage({ params }: { params: Promise<{ category:
     );
   }
 
-  // 2. Handle Subcategory (Product) View
   const product = products[slug]?.[0];
   if (product) {
     const parentCategory = productCategories.find(cat => cat.subcategories?.some(sub => sub.slug === slug));
@@ -183,63 +171,8 @@ export default async function SlugPage({ params }: { params: Promise<{ category:
 
     const relatedSubcategories = parentCategory?.subcategories?.filter(sub => sub.slug !== slug) || [];
 
-    // Enhanced Product Schema for GEO
-    const productSchema = {
-      "@context": "https://schema.org/",
-      "@type": "Product",
-      "name": product.name,
-      "image": galleryImages.map(img => img.imageUrl.startsWith('http') ? img.imageUrl : `https://www.vviokindustry.in${img.imageUrl}`),
-      "description": product.description,
-      "sku": product.name.replace(/\s+/g, '-').toLowerCase(),
-      "mpn": product.name.replace(/\s+/g, '-').toLowerCase(),
-      "brand": { "@type": "Brand", "name": "VVIOK Industry" },
-      "manufacturer": {
-        "@type": "Organization",
-        "name": "VVIOK Industry",
-        "address": "Ahmedabad, Gujarat, India"
-      },
-      "material": product.specifications?.['Material of Construction'] || "Stainless Steel",
-      "offers": {
-        "@type": "Offer",
-        "url": `https://www.vviokindustry.in/products/${slug}`,
-        "priceCurrency": "INR",
-        "price": "0",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition"
-      }
-    };
-
-    const breadcrumbSchema = {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.vviokindustry.in" },
-        { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://www.vviokindustry.in/products" },
-        ...(parentCategory ? [{ "@type": "ListItem", "position": 3, "name": parentCategory.name, "item": `https://www.vviokindustry.in/products/${parentCategory.slug}` }] : []),
-        { "@type": "ListItem", "position": 4, "name": product.name, "item": `https://www.vviokindustry.in/products/${slug}` }
-      ]
-    };
-
-    // FAQ Schema for GEO
-    const faqSchema = product.faqs ? {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": product.faqs.map(faq => ({
-        "@type": "Question",
-        "name": faq.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.answer
-        }
-      }))
-    } : null;
-
     return (
       <div className="bg-white min-h-screen">
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-        {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
-
         <div className="bg-slate-50 border-b">
           <div className="container py-4 flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground overflow-x-auto whitespace-nowrap">
             <Link href="/" className="hover:text-primary flex items-center gap-2 transition-colors">

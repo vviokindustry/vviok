@@ -1,4 +1,3 @@
-
 import {
   Factory,
   CheckCircle,
@@ -197,8 +196,8 @@ export const products: Record<string, ProductDetail[]> = {
   'pp-spun-filter-cartridge-supplier': [{ 
     name: 'PP Spun Filter Cartridge Manufacturer & Supplier in India', 
     application: 'Sediment and particulate removal, pre-filtration for RO systems', 
-    imageId: '/uploads/PP Spun Filter Cartridge Manufacturer in Ahmedabad.png',
-    imageIds: ['/uploads/PP Spun Filter Cartridge Manufacturer in Ahmedabad.png'],
+    imageId: '/uploads/PP%20Spun%20Filter%20Cartridge%20Manufacturer%20in%20Ahmedabad.png',
+    imageIds: ['/uploads/PP%20Spun%20Filter%20Cartridge%20Manufacturer%20in%20Ahmedabad.png'],
     description: `Our PP Spun Filter Cartridge is manufactured using 100% high-grade polypropylene to deliver superior depth filtration and long service life. Designed for effective sediment and particulate removal, these spun polypropylene filter cartridges provide high dirt-holding capacity with low pressure drop. As a trusted PP spun filter cartridge manufacturer in Ahmedabad, India, we supply reliable and cost-effective filtration solutions suitable for industrial and commercial water treatment applications.
 
 The melt-blown manufacturing process ensures a multi-layered structure that captures particles of various sizes throughout the depth of the cartridge. This results in a filter that doesn't just block surface contaminants but uses the entire filter body for particle retention, significantly extending the replacement intervals and protecting sensitive downstream equipment.`,
@@ -231,7 +230,7 @@ The technical specifications include a high void volume which leads to lower ini
     imageIds: ['product-pp-pleated-1', 'product-pp-pleated-2'],
     description: `Our PP Pleated Filter Cartridge is manufactured using high-quality polypropylene filter media to deliver superior surface filtration efficiency and extended service life. The pleated design provides a larger filtration area, ensuring high flow rates with low pressure drop. As a trusted pleated filter cartridge manufacturer in Ahmedabad, India, we supply durable and high-performance pleated polypropylene filter cartridges suitable for demanding industrial filtration applications across India.
 
-These cartridges are ideal for processes where high precision and high flow rates are simultaneously required. The pleated structure significantly increases the effective filtration area compared to standard cylindrical filters, which means fewer filter changes and less downtime for your operations.`,
+These cartridges are ideal for processes where high precision and high flow rates are simultaneously required. The pleated structure significantly increases the effective filtration area compared to standard depth filters, which means fewer filter changes and less downtime for your operations.`,
     detailedSpecs: `Our pleated polypropylene filter cartridges are widely used in water treatment plants, pharmaceuticals, chemicals, food & beverage processing, and dust collector systems. The advanced pleated filter cartridge design ensures better particle retention and longer operational life compared to standard depth filters.
 
 We utilize a fixed pore structure which ensures that particles are not released even under fluctuating pressure conditions. The cartridges are constructed using thermal welding techniques, eliminating the need for adhesives and ensuring maximum chemical compatibility. They are available in absolute and nominal ratings, allowing for precise control over the filtration quality. The robust core and outer cage provide high mechanical strength, allowing the filter to withstand significant differential pressures.`,
@@ -594,7 +593,7 @@ The technical specifications include heavy-duty cast or fabricated bodies with f
   'taper-basket-strainer-manufacturer': [{ 
     name: 'Taper Basket Strainer Manufacturer in Ahmedabad, India', 
     application: 'Efficient removal of solid particles from pipeline systems and equipment protection', 
-    imageId: '/uploads/SS Basket.jpg',
+    imageId: '/uploads/SS%20Basket.jpg',
     description: `Vviok Industry manufactures high-quality Taper Basket Strainers designed for efficient removal of solid particles from pipeline systems. Engineered for durability and reliable performance, our industrial taper basket strainer ensures smooth flow and protection of pumps, valves, and other critical equipment. As a trusted strainer manufacturer in Ahmedabad, India, we supply heavy-duty and precision-engineered taper basket strainers suitable for various industrial filtration applications.
 
 The tapered design is particularly effective for vertical installations where it helps in gravity-assisted collection of debris. Its unique shape allows for easy removal of the basket, even when it is full of heavy contaminants.`,
@@ -684,7 +683,7 @@ Technically, these strainers consist of a pleated wire mesh or perforated sheet 
   'storage-tank-supplier': [{ 
     name: 'Industrial Storage Tank Manufacturer in Ahmedabad, India', 
     application: 'Industrial liquid storage and containment for chemical and process industries', 
-    imageId: '/uploads/Storage Tank Manufacturer -Vviok industry.png',
+    imageId: '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png',
     description: `Vviok Industry manufactures high-quality Industrial Storage Tanks designed for safe and efficient storage of water, chemicals, and industrial liquids. Built using premium-grade stainless steel and durable metal construction, our storage tanks ensure strength, corrosion resistance, and long service life. As a trusted storage tank manufacturer in Ahmedabad, India, we supply reliable and customized liquid storage solutions for various industrial applications.
 
 Our tanks are engineered for a lifetime of service. We focus on structural integrity and superior finish, ensuring that your valuable fluids are stored without risk of contamination or leakage.`,
@@ -706,7 +705,7 @@ The technical design features various dish styles, including torispherical, hemi
     faqs: [
       { question: 'What is the maximum capacity you can build?', answer: 'We can manufacture custom storage tanks up to 50,000 liters. Larger tanks can be fabricated on-site if required.' },
       { question: 'Do you provide jacketed tanks?', answer: 'Yes, we offer limpet coils, dimple jackets, and plain jackets for efficient heating or cooling.' },
-      { question: 'What interior finishes are available?', answer: 'We offer finishes from industrial matt to high-gloss mirror finish and electropolishing for pharma use.' },
+      { question: 'What interior finishes are available?', answer: 'We offer finishes from industrial many to high-gloss mirror finish and electropolishing for pharma use.' },
       { question: 'Can you install an agitator?', answer: 'Yes, we can design the top dish with reinforced mounts to support various mixers and agitators.' },
       { question: 'What certifications are provided?', answer: 'We provide material test certificates (MTC), hydro-test reports, DP test reports, and weld mapping for all tanks.' }
     ]
@@ -714,7 +713,7 @@ The technical design features various dish styles, including torispherical, hemi
   'pressure-vessel-supplier-india': [{ 
     name: 'Industrial Pressure Vessel Manufacturer & Supplier in India', 
     application: 'Safe operation under high pressure and demanding industrial conditions', 
-    imageId: '/uploads/pressure tank.jpeg',
+    imageId: '/uploads/pressure%20tank.jpeg',
     description: `Vviok Industry manufactures high-performance Pressure Vessels designed for safe operation under high pressure and demanding industrial conditions. Built using premium-grade stainless steel and precision engineering standards, our vessels ensure strength, durability, and operational safety. As a trusted stainless steel pressure vessel manufacturer in India, we provide high pressure vessels and custom pressure vessels suitable for various industrial process requirements.
 
 Safety is our top priority when it comes to pressure vessels. Our engineering team follows international codes to ensure that every vessel can handle its design pressure with a significant safety margin, protecting your personnel and your plant.`,
@@ -744,7 +743,7 @@ Technically, our vessels are designed and manufactured in accordance with ASME S
   'air-receiver-tank-supplier-india': [{ 
     name: 'Industrial Air Receiver Tank Manufacturer & Supplier in India', 
     application: 'Compressed air storage and pressure stabilization for industrial systems', 
-    imageId: '/uploads/Air receiver tank manufacturer supplier in india -vviok industry.jpeg',
+    imageId: '/uploads/Air%20receiver%20tank%20manufacturer%20supplier%20in%20india%20-vviok%20industry.jpeg',
     description: `Vviok Industry manufactures high-quality Air Receiver Tanks designed to store compressed air safely and efficiently in industrial systems. Built with robust steel construction and engineered to withstand high pressure, our tanks ensure stable airflow and improved compressor performance. As a trusted air receiver tank manufacturer in India, we supply vertical air tanks and horizontal air compressor tanks suitable for various industrial applications.
 
 An air receiver tank is vital for any compressed air system. It acts as a buffer, preventing the compressor from frequent cycling and ensuring a steady supply of air for your tools and machinery, even during peak demand periods.`,
