@@ -104,7 +104,7 @@ export default function Home() {
           </div>
         )}
 
-        {/* SEO H1 Header */}
+        {/* SEO H1 Header - Essential for SEO scores */}
         <div className="relative z-10 max-w-5xl mx-auto">
           <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.95] mb-6">
             Top Industrial <span className="text-[#a5be1d]">Filtration Products</span> Manufacturer in India
@@ -222,26 +222,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Welcome Section - Content Expansion for SEO */}
+      {/* Welcome Section - Content Expansion for SEO (Fixes Thin Content) */}
       <section className="py-20 md:py-24 bg-slate-50">
         <div className="container mx-auto px-4 text-center">
           <h2 className="font-headline text-3xl md:text-5xl font-black text-[#a5be1d] mb-10 uppercase tracking-tight">
             Expert Filtration Manufacturing Excellence
           </h2>
-          <div className="max-w-5xl mx-auto space-y-8">
+          <div className="max-w-5xl mx-auto space-y-8 text-left">
             <p className="text-slate-600 text-base md:text-lg leading-relaxed font-medium">
               VVIOK Industry stands as India's premier expert in industrial filtration solutions. Based in Ahmedabad, we engineer state-of-the-art 
               filter housings, cartridges, and storage tanks that strictly adhere to ASME and CE standards. Our systems are trusted by 
-              pharmaceutical, chemical, and food processing leaders across the globe. We leverage a qualified team of engineers with 15-23 years of specialized experience to provide total filtration solutions to global markets.
+              pharmaceutical, chemical, and food processing leaders across the globe. We leverage a qualified team of engineers with 15-23 years of specialized experience to provide total filtration solutions to global markets. Our technical depth allows us to address complex challenges in fluid clarification, sterile air venting, and aggressive chemical processing.
             </p>
             <p className="text-slate-600 text-base md:text-lg leading-relaxed font-medium">
               Our commitment to quality transcends borders. International clients can expect products manufactured to global standards (ISO, CE), 
               third-party inspection services available upon request, full traceability of materials, and comprehensive after-sales technical support. 
               We prioritize long-term cost-efficiency in micron filtration, offering economical engineering solutions without compromising on performance. 
-              Our media offers industry-leading reproducibility, ranging from Nominal to Absolute Beta 1000 ratings for critical applications.
+              Our media offers industry-leading reproducibility, ranging from Nominal to Absolute Beta 1000 ratings for critical applications. Every component we manufacture undergoes rigorous pressure testing and dimensional verification to ensure seamless integration into your facility.
             </p>
             <p className="text-slate-600 text-base md:text-lg leading-relaxed font-medium">
-              We specialize in stainless steel equipment fabrication, ensuring that every weld and finish meets the highest hygiene and durability standards. Our product range includes high-pressure vessels, mixing tanks, and specialized air receiver tanks that are vital for modern manufacturing infrastructures. By combining advanced technology with traditional craftsmanship, we deliver products that outperform expectations in longevity and efficiency.
+              We specialize in stainless steel equipment fabrication, ensuring that every weld and finish meets the highest hygiene and durability standards. Our product range includes high-pressure vessels, mixing tanks, and specialized air receiver tanks that are vital for modern manufacturing infrastructures. By combining advanced technology with traditional craftsmanship, we deliver products that outperform expectations in longevity and efficiency. Our engineering facility in Ahmedabad is equipped with precision machinery to handle both standard and custom orders with equal expertise.
             </p>
           </div>
         </div>
@@ -330,38 +330,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Industrial Expertise Section - Expanded with White Text for Visibility */}
-      <section className="py-24 bg-slate-950 text-slate-50 overflow-hidden">
+      {/* Industrial Expertise Section - Expanded with PURE WHITE Text for Visibility */}
+      <section className="py-24 bg-slate-950 text-white overflow-hidden">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <h2 className="font-headline text-3xl md:text-5xl font-black uppercase tracking-tighter leading-tight text-[#a5be1d]">
                 Engineering Superiority in Industrial Filtration
               </h2>
-              <div className="space-y-6 text-slate-50 text-lg font-medium leading-relaxed">
-                <p className="text-slate-50">
-                  At VVIOK Industry, our engineering excellence is forged in our state-of-the-art manufacturing facilities and rigorous quality control protocols. We combine cutting-edge technology with expert craftsmanship to optimize precision, scalability, and efficiency. From raw material sourcing to final assembly, every step is meticulously controlled to produce filtration products that meet the highest standards of performance and reliability.
+              <div className="space-y-6 text-white text-lg font-medium leading-relaxed">
+                <p>
+                  At VVIOK Industry, our engineering excellence is forged in our state-of-the-art manufacturing facilities and rigorous quality control protocols. We combine cutting-edge technology with expert craftsmanship to optimize precision, scalability, and efficiency. From raw material sourcing to final assembly, every step is meticulously controlled to produce filtration products that meet the highest standards of performance and reliability. Our dedication to innovation ensures we stay ahead of global industry trends.
                 </p>
-                <p className="text-slate-50">
-                  Our manufacturing infrastructure is designed to deliver reliability and precision. We adhere to stringent quality management systems to ensure that every filter and tank leaving our facility meets international performance standards, including ASME and CE Standard Compliance. We operate advanced in-house testing facilities to validate product performance against international standards, ensuring our products are ready for deployment in regulated industries worldwide.
+                <p>
+                  Our manufacturing infrastructure is designed to deliver reliability and precision. We adhere to stringent quality management systems to ensure that every filter and tank leaving our facility meets international performance standards, including ASME and CE Standard Compliance. We operate advanced in-house testing facilities to validate product performance against international standards, ensuring our products are ready for deployment in regulated industries worldwide. We provide full documentation including material test certificates (MTC) for all pressure vessels.
                 </p>
-                <p className="text-slate-50">
-                  We understand the critical nature of industrial processes, which is why we offer comprehensive technical support and consultation. Our engineers work directly with your team to solve complex filtration challenges, ensuring that your operations remain safe, efficient, and compliant with global environmental and safety standards.
+                <p>
+                  We understand the critical nature of industrial processes, which is why we offer comprehensive technical support and consultation. Our engineers work directly with your team to solve complex filtration challenges, ensuring that your operations remain safe, efficient, and compliant with global environmental and safety standards. Whether it's selecting the right micron rating for a new pharmaceutical line or designing a high-capacity multi-bag housing for wastewater treatment, we provide the expertise needed for success.
                 </p>
               </div>
               <div className="grid sm:grid-cols-2 gap-6 pt-8 border-t border-slate-800">
                 <div className="flex items-start gap-4">
                   <ShieldCheck className="h-8 w-8 text-[#a5be1d] shrink-0" />
                   <div>
-                    <h4 className="font-bold text-slate-50 uppercase tracking-wider text-sm mb-2">ISO 9001:2015</h4>
-                    <p className="text-xs text-slate-200 font-medium">Certified Quality Management Systems for every manufacturing process and product line.</p>
+                    <h4 className="font-bold text-white uppercase tracking-wider text-sm mb-2">ISO 9001:2015</h4>
+                    <p className="text-xs text-slate-300 font-medium">Certified Quality Management Systems for every manufacturing process and product line ensuring consistency.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <CheckCircle className="h-8 w-8 text-[#a5be1d] shrink-0" />
                   <div>
-                    <h4 className="font-bold text-slate-50 uppercase tracking-wider text-sm mb-2">ASME Standards</h4>
-                    <p className="text-xs text-slate-200 font-medium">Compliance with international pressure vessel and housing standards for high-pressure safety.</p>
+                    <h4 className="font-bold text-white uppercase tracking-wider text-sm mb-2">ASME Standards</h4>
+                    <p className="text-xs text-slate-300 font-medium">Compliance with international pressure vessel and housing standards for high-pressure safety and durability.</p>
                   </div>
                 </div>
               </div>
@@ -390,7 +390,7 @@ export default function Home() {
               Industries Served by Our Experts <ArrowRight className="h-6 w-6" />
             </h2>
             <p className="text-base text-white max-w-3xl mx-auto font-medium leading-relaxed">
-              We provide critical filtration solutions to diverse industrial sectors globally, focusing on safety, reliability, and technical precision for pharmaceuticals, chemicals, food, and energy.
+              We provide critical filtration solutions to diverse industrial sectors globally, focusing on safety, reliability, and technical precision for pharmaceuticals, chemicals, food, and energy. Our systems are designed to improve yield and protect expensive downstream machinery.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
@@ -414,7 +414,7 @@ export default function Home() {
               The VVIOK Advantage
             </h2>
             <p className="text-slate-500 text-base md:text-lg max-w-4xl mx-auto leading-relaxed font-medium">
-              Why leading industrial partners trust VVIOK for their critical filtration and storage needs. Our legacy is built on trust, engineering expertise, and quality results that withstand the test of time and high-pressure industrial use.
+              Why leading industrial partners trust VVIOK for their critical filtration and storage needs. Our legacy is built on trust, engineering expertise, and quality results that withstand the test of time and high-pressure industrial use. We combine speed with precision to meet tight project deadlines.
             </p>
           </div>
 
@@ -473,3 +473,4 @@ export default function Home() {
     </div>
   );
 }
+
