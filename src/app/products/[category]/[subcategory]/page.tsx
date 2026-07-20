@@ -15,8 +15,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import type { Metadata } from 'next';
 
 export async function generateMetadata({ params }: { params: Promise<{ category: string; subcategory: string }> }): Promise<Metadata> {
-  const resolvedParams = await params;
-  const { subcategory } = resolvedParams;
+  const { subcategory } = await params;
   const subcategoryProducts = products[subcategory] || [];
   const product = subcategoryProducts[0];
 
@@ -68,127 +67,8 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
 
   const relatedSubcategories = currentCategory.subcategories?.filter(sub => sub.slug !== subcategory) || [];
 
-  // Robust Product Schema to fix Rich Results errors
-  const productSchema = {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    "name": product.name,
-    "image": galleryImages.map(img => img.imageUrl.startsWith('http') ? img.imageUrl : `https://www.vviokindustry.in${img.imageUrl}`),
-    "description": product.description,
-    "sku": product.name.replace(/\s+/g, '-').toLowerCase(),
-    "mpn": product.name.replace(/\s+/g, '-').toLowerCase(),
-    "brand": {
-      "@type": "Brand",
-      "name": "VVIOK Industry"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": `https://www.vviokindustry.in/products/${subcategory}`,
-      "priceCurrency": "INR",
-      "price": "0", // 0 indicates "Price on Request" for Google
-      "priceValidUntil": "2030-01-01",
-      "itemCondition": "https://schema.org/NewCondition",
-      "availability": "https://schema.org/InStock",
-      "hasMerchantReturnPolicy": {
-        "@type": "MerchantReturnPolicy",
-        "applicableCountry": "IN",
-        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        "merchantReturnDays": 7,
-        "returnMethod": "https://schema.org/ReturnByMail"
-      },
-      "shippingDetails": {
-        "@type": "OfferShippingDetails",
-        "shippingRate": {
-          "@type": "MonetaryAmount",
-          "value": "0",
-          "currency": "INR"
-        },
-        "shippingDestination": {
-          "@type": "DefinedRegion",
-          "addressCountry": "IN"
-        },
-        "deliveryTime": {
-          "@type": "ShippingDeliveryTime",
-          "handlingTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 1,
-            "maxValue": 3,
-            "unitCode": "DAY"
-          },
-          "transitTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 3,
-            "maxValue": 7,
-            "unitCode": "DAY"
-          }
-        }
-      }
-    }
-  };
-
-  // FAQ Schema
-  const faqSchema = product.faqs ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": product.faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  } : null;
-
-  // Breadcrumb Schema
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.vviokindustry.in"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Products",
-        "item": "https://www.vviokindustry.in/products"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": currentCategory.name,
-        "item": `https://www.vviokindustry.in/products/${currentCategory.slug}`
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "name": currentSubcategory.name,
-        "item": `https://www.vviokindustry.in/products/${currentSubcategory.slug}`
-      }
-    ]
-  };
-
   return (
     <div className="bg-white min-h-screen">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
-      />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      )}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-
       <div className="bg-slate-50 border-b">
         <div className="container py-4 flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground overflow-x-auto whitespace-nowrap">
           <Link href="/" className="hover:text-primary flex items-center gap-2 transition-colors">
@@ -217,7 +97,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
               <div className="space-y-8">
                 <div className="prose prose-slate max-w-none">
                   <div className="text-slate-600 text-lg md:text-xl leading-relaxed font-medium whitespace-pre-wrap">
-                    {product.description || `High-performance industrial solution designed for ${product.application.toLowerCase()}. Our products are manufactured to ensure maximum efficiency and process protection.`}
+                    {product.description}
                   </div>
                 </div>
 
@@ -259,7 +139,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                 <TabsContent value="description" className="mt-0 outline-none">
                   <div className="max-w-4xl space-y-8">
                     <div className="text-slate-600 text-lg font-medium leading-relaxed whitespace-pre-wrap">
-                      {product.detailedSpecs || `The ${product.name} is the pinnacle of engineering for ${product.application.toLowerCase()}. We focus on every technical detail to ensure that our equipment performs consistently under heavy industrial use. Our fabrication process emphasizes durability and precise control over technical parameters.`}
+                      {product.detailedSpecs}
                     </div>
                   </div>
                 </TabsContent>
@@ -326,7 +206,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
         </section>
       )}
 
-      {/* Internal Linking Section - Related Products in same category */}
+      {/* Related Products Section */}
       {relatedSubcategories.length > 0 && (
         <section className="py-20 bg-white border-t">
           <div className="container">
@@ -371,24 +251,6 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
           </div>
         </section>
       )}
-
-      {/* Cross-Category Internal Linking */}
-      <section className="py-20 bg-slate-50 border-t">
-        <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="font-headline text-2xl font-black text-slate-900 tracking-tight mb-8">
-              Discover Our Full Product Range
-            </h2>
-            <div className="flex flex-wrap justify-center gap-4">
-              {productCategories.filter(cat => cat.slug !== category).map((cat) => (
-                <Button key={cat.slug} asChild variant="outline" className="rounded-xl font-bold uppercase tracking-widest text-[11px] h-12 px-8 border-slate-200 hover:border-primary hover:text-primary bg-white">
-                  <Link href={`/products/${cat.slug}`}>{cat.name}</Link>
-                </Button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
