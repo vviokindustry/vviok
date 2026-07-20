@@ -55,7 +55,7 @@ const companyFaqs = [
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
-  const manufacturingImage = PlaceHolderImages.find((img) => img.id === 'about-us-manufacturing');
+  const expertiseImage = PlaceHolderImages.find((img) => img.id === 'product-industrial-filter');
 
   // Specific images for category backgrounds
   const cat1Img = PlaceHolderImages.find(img => img.id === 'product-pp-spun-1');
@@ -340,13 +340,13 @@ export default function Home() {
                 Engineering Superiority in Industrial Filtration
               </h2>
               <div className="space-y-6 text-white text-lg font-medium leading-relaxed">
-                <p>
+                <p className="text-white">
                   At VVIOK Industry, our engineering excellence is forged in our state-of-the-art manufacturing facilities and rigorous quality control protocols. We combine cutting-edge technology with expert craftsmanship to optimize precision, scalability, and efficiency. From raw material sourcing to final assembly, every step is meticulously controlled to produce filtration products that meet the highest standards of performance and reliability. Our dedication to innovation ensures we stay ahead of global industry trends.
                 </p>
-                <p>
+                <p className="text-white">
                   Our manufacturing infrastructure is designed to deliver reliability and precision. We adhere to stringent quality management systems to ensure that every filter and tank leaving our facility meets international performance standards, including ASME and CE Standard Compliance. We operate advanced in-house testing facilities to validate product performance against international standards, ensuring our products are ready for deployment in regulated industries worldwide. We provide full documentation including material test certificates (MTC) for all pressure vessels.
                 </p>
-                <p>
+                <p className="text-white">
                   We understand the critical nature of industrial processes, which is why we offer comprehensive technical support and consultation. Our engineers work directly with your team to solve complex filtration challenges, ensuring that your operations remain safe, efficient, and compliant with global environmental and safety standards. Whether it's selecting the right micron rating for a new pharmaceutical line or designing a high-capacity multi-bag housing for wastewater treatment, we provide the expertise needed for success.
                 </p>
               </div>
@@ -368,13 +368,13 @@ export default function Home() {
               </div>
             </div>
             <div className="relative aspect-square lg:aspect-auto lg:h-[600px] rounded-[3rem] overflow-hidden border-4 border-slate-800 shadow-2xl">
-               {manufacturingImage && (
+               {expertiseImage && (
                   <Image 
-                    src={manufacturingImage.imageUrl} 
-                    alt="Industrial Filtration Manufacturing Expertise" 
+                    src={expertiseImage.imageUrl} 
+                    alt="Industrial Filtration Product Showcase" 
                     fill 
                     className="object-cover"
-                    data-ai-hint="manufacturing plant"
+                    data-ai-hint="industrial filter"
                   />
                )}
                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60" />
