@@ -56,6 +56,7 @@ const companyFaqs = [
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
   const expertiseImage = PlaceHolderImages.find((img) => img.id === 'product-industrial-filter');
+  const newExpertiseImage = PlaceHolderImages.find((img) => img.id === 'product-custom-filter');
 
   // Specific images for category backgrounds
   const cat1Img = PlaceHolderImages.find(img => img.id === 'product-pp-spun-1');
@@ -65,7 +66,7 @@ export default function Home() {
 
   const pageTitle = "Industrial Filtration Products Manufacturer in Ahmedabad, India | Vviok Industry";
 
-  // FAQ Schema for GEO optimization
+  // FAQ Schema for GEO/AEO optimization
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -105,7 +106,7 @@ export default function Home() {
           </div>
         )}
 
-        {/* SEO H1 Header - Essential for SEO scores */}
+        {/* SEO H1 Header - Essential for SEO and GEO scores */}
         <div className="relative z-10 max-w-5xl mx-auto">
           <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter leading-[0.95] mb-6">
             Top Industrial <span className="text-[#a5be1d]">Filtration Products</span> Manufacturer in India
@@ -331,7 +332,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Industrial Expertise Section - Expanded with PURE WHITE Text for Visibility */}
+      {/* Industrial Expertise Section - Expanded with WHITE Text for Visibility */}
       <section className="py-24 bg-slate-950 text-white overflow-hidden">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -368,9 +369,9 @@ export default function Home() {
               </div>
             </div>
             <div className="relative aspect-square lg:aspect-auto lg:h-[600px] rounded-[3rem] overflow-hidden border-4 border-slate-800 shadow-2xl">
-               {expertiseImage && (
+               {newExpertiseImage && (
                   <Image 
-                    src={expertiseImage.imageUrl} 
+                    src={newExpertiseImage.imageUrl} 
                     alt="Industrial Filtration Product Showcase" 
                     fill 
                     className="object-cover"
