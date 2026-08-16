@@ -229,7 +229,7 @@ Our engineering team provides full technical documentation, including pressure t
 
 export const products: Record<string, ProductDetail[]> = {
   'pp-pleated-filter-cartridge-supplier': [generateProductDetails('PP Pleated Filter Cartridge', 'Filter Cartridge', 'product-pp-pleated-1', ['product-pp-pleated-1', 'product-pp-pleated-2'])],
-  'pp-spun-filter-cartridge-supplier': [generateProductDetails('PP Spun Filter Cartridge', 'Filter Cartridge', 'product-pp-spun-1', ['product-pp-spun-1', 'product-pp-spun-2'])],
+  'pp-spun-filter-cartridge-supplier': [generateProductDetails('PP Spun Filter Cartridge', 'Filter Cartridge', '/uploads/PP%20Spun%20Filter%20Cartridge%20Manufacturer%20in%20Ahmedabad.png', ['/uploads/PP%20Spun%20Filter%20Cartridge%20Manufacturer%20in%20Ahmedabad.png'])],
   'ptfe-pleated-filter-cartridge-supplier': [generateProductDetails('PTFE Pleated Filter Cartridge', 'Filter Cartridge', 'product-ptfe-pleated-1', ['product-ptfe-pleated-1', 'product-ptfe-pleated-2'])],
   'ss-sintered-powder-cartridge': [generateProductDetails('SS Sintered Powder Cartridge', 'Filter Cartridge', 'product-ss-sintered-1', ['product-ss-sintered-1', 'product-ss-sintered-2', 'product-ss-sintered-3'])],
   'ss-wire-mesh-cartridge': [generateProductDetails('SS Wire Mesh Cartridge', 'Filter Cartridge', 'product-ss-wire-mesh-1', ['product-ss-wire-mesh-1', 'product-ss-wire-mesh-2'])],
