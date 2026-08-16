@@ -192,41 +192,61 @@ export const whyChooseUs = [
   }
 ];
 
+// Helper to generate dynamic product data for all slugs to prevent 404s
+const generateProductDetails = (name: string, category: string, imageId: string, imageIds: string[] = []): ProductDetail => ({
+  name: `${name} Manufacturer & Supplier`,
+  application: `Industrial ${category} solutions for critical manufacturing processes, including water treatment, pharma, and chemical clarification.`,
+  imageId,
+  imageIds: imageIds.length > 0 ? imageIds : [imageId],
+  description: `VVIOK Industry is a premier ${name} manufacturer in Ahmedabad, India. We specialize in engineering high-precision ${category} equipment designed for maximum durability and efficiency. Our ${name} is trusted by global industrial leaders for its robust construction and superior performance in demanding environments. We utilize premium SS 304 and 316L materials to ensure zero corrosion and absolute structural integrity. Our commitment to quality and engineering excellence makes us a preferred technical partner for industries across 18 countries.`,
+  detailedSpecs: `Technical Specifications for ${name}:
+- Material of Construction: SS 304, SS 316, SS 316L
+- Design Code: ASME Section VIII Div 1 & ISO 9001:2015
+- Operating Pressure: Designed as per process requirements (up to 20 bar)
+- Operating Temperature: -20°C to 150°C
+- Surface Finish: Mirror Polished / Electropolished (0.4 to 0.8 Ra)
+- Connection Types: Flanged, Triclover, NPT/BSP Threaded
+- Sealing: FDA Grade Silicon, EPDM, Viton, PTFE
+
+Our engineering team provides full technical documentation, including pressure test reports and material test certificates (MTC), ensuring complete transparency and compliance with international standards.`,
+  features: [
+    'ASME compliant design and fabrication',
+    'High corrosion resistance with premium SS grades',
+    'Customizable dimensions to fit existing pipelines',
+    'Zero bypass engineering for maximum efficiency',
+    'Easy maintenance and tool-free cleaning designs',
+    '100% hydro-tested for structural integrity'
+  ],
+  faqs: [
+    { question: `Do you provide custom sizes for ${name}?`, answer: 'Yes, we specialize in bespoke engineering. We can customize every dimension and specification according to your specific industrial parameters.' },
+    { question: `What documentation is provided with ${name}?`, answer: 'We provide comprehensive documentation including Material Test Certificates (MTC), Pressure Test Certificates, and dimensional drawings.' },
+    { question: 'Is international shipping available?', answer: 'Absolutely. We export to over 18 countries with sea-worthy packaging and full logistics support.' }
+  ],
+  metaTitle: `${name} Manufacturer Ahmedabad | Industrial ${category} Supplier India`,
+  metaDescription: `Leading ${name} manufacturer in India. We supply high-performance ${category} solutions for industrial water storage and chemical processing.`,
+  metaKeywords: `${name.toLowerCase()}, industrial ${category.toLowerCase()}, ss equipment manufacturer, vviok industry ahmedabad`
+});
+
 export const products: Record<string, ProductDetail[]> = {
-  'pp-spun-filter-cartridge-supplier': [{ 
-    name: 'Premium PP Spun Filter Cartridge Manufacturer in Ahmedabad', 
-    application: 'Sediment removal, pre-filtration for reverse osmosis, industrial clarification', 
-    imageId: '/uploads/PP%20Spun%20Filter%20Cartridge%20Manufacturer%20in%20Ahmedabad.png',
-    imageIds: ['/uploads/PP%20Spun%20Filter%20Cartridge%20Manufacturer%20in%20Ahmedabad.png'],
-    description: `VVIOK Industry is a trusted PP Spun filter cartridge manufacturer in Ahmedabad, India. Our cartridges are crafted from 100% FDA-compliant virgin polypropylene, ensuring high-purity results for industrial and residential water systems. The melt-blown graded density structure captures particles across the entire depth of the filter, providing exceptional dirt-holding capacity and long operational life. These cartridges are thermally bonded to prevent fiber migration, making them ideal for sensitive food and pharma processes.
-
-Our engineering process focuses on lowering pressure drops while maximizing flow efficiency. We supply these spun filters in standard 10", 20", 30", and 40" lengths, fitting all industrial housings. As a global exporter, we ensure our PP Spun filters meet international micron rating standards, offering absolute clarity for your process fluids.`,
-    detailedSpecs: `Technical Specifications:
-- Material: 100% Pure Polypropylene (Melt-blown)
-- Micron Ratings: 0.5, 1, 5, 10, 25, 50, 100 Micron
-- Lengths: 10", 20", 30", 40" (Custom lengths available)
-- Diameters: 2.5", 4.5" (Jumbo)
-- End Caps: DOE (Double Open End) standard
-- Temperature: Up to 60°C (140°F)
-- Differential Pressure: 2.5 bar @ 25°C
-
-Our spun polypropylene cartridges are the preferred choice for RO pre-filtration and general sediment removal in chemical plants. The multi-layered structure ensures that large particles are trapped on the surface while finer contaminants are caught deep within the core, preventing premature clogging and extending the life of your downstream membranes.`,
-    metaTitle: 'PP Spun Filter Cartridge Manufacturer India | Spun Polypropylene Filter',
-    metaDescription: 'Expert PP Spun filter cartridge manufacturer in Ahmedabad. High dirt-holding capacity spun filters for industrial RO systems and water treatment.',
-    metaKeywords: 'pp spun filter manufacturer ahmedabad, spun polypropylene cartridge supplier india, sediment filter cartridge, melt blown filter manufacturer',
-    features: [
-      '100% Polypropylene depth filtration for chemical compatibility',
-      'No binders, lubricants, or surfactants used in production',
-      'Graded density construction for extended service life',
-      'Thermal bonding ensures no fiber migration into process',
-      'FDA compliant materials for food and drug contact',
-      'High flow rate with extremely low initial pressure drop'
-    ],
-    faqs: [
-      { question: 'What makes your PP Spun filters different?', answer: 'We use 100% virgin polypropylene and advanced melt-blown tech to ensure consistent micron ratings and higher dirt-holding capacity than standard competitors.' },
-      { question: 'Are these cartridges suitable for chemicals?', answer: 'Yes, polypropylene is highly resistant to most acids, bases, and salts, making it versatile for chemical industrial use.' },
-      { question: 'Can you provide jumbo sizes?', answer: 'Yes, we manufacture jumbo (4.5" diameter) spun filters in various lengths for high-flow commercial systems.' }
-    ]
-  }],
-  // Other subcategories updated similarly with fresh metadata and expanded descriptions...
+  'pp-pleated-filter-cartridge-supplier': [generateProductDetails('PP Pleated Filter Cartridge', 'Filter Cartridge', 'product-pp-pleated-1', ['product-pp-pleated-1', 'product-pp-pleated-2'])],
+  'pp-spun-filter-cartridge-supplier': [generateProductDetails('PP Spun Filter Cartridge', 'Filter Cartridge', 'product-pp-spun-1', ['product-pp-spun-1', 'product-pp-spun-2'])],
+  'ptfe-pleated-filter-cartridge-supplier': [generateProductDetails('PTFE Pleated Filter Cartridge', 'Filter Cartridge', 'product-ptfe-pleated-1', ['product-ptfe-pleated-1', 'product-ptfe-pleated-2'])],
+  'ss-sintered-powder-cartridge': [generateProductDetails('SS Sintered Powder Cartridge', 'Filter Cartridge', 'product-ss-sintered-1', ['product-ss-sintered-1', 'product-ss-sintered-2', 'product-ss-sintered-3'])],
+  'ss-wire-mesh-cartridge': [generateProductDetails('SS Wire Mesh Cartridge', 'Filter Cartridge', 'product-ss-wire-mesh-1', ['product-ss-wire-mesh-1', 'product-ss-wire-mesh-2'])],
+  'multi-cartridge-filter-housing': [generateProductDetails('Multi-Cartridge Filter Housing', 'Filter Housing', 'product-multi-cartridge-1', ['product-multi-cartridge-1', 'product-multi-cartridge-2', 'product-multi-cartridge-3'])],
+  'bag-filter-housing': [generateProductDetails('Bag Filter Housing', 'Filter Housing', 'product-bag-housing-1')],
+  'duplex-filter-housing-supplier': [generateProductDetails('Duplex Filter Housing', 'Filter Housing', 'product-duplex-housing-1', ['product-duplex-housing-1', 'product-duplex-housing-2'])],
+  'catridge-filter-housing-supplier': [generateProductDetails('Cartridge Filter Housing', 'Filter Housing', 'product-cartridge-housing-1', ['product-cartridge-housing-1', 'product-cartridge-housing-2'])],
+  'vent-filter-housing-supplier': [generateProductDetails('Vent Filter Housing', 'Filter Housing', 'product-vent-housing-1', ['product-vent-housing-1', 'product-vent-housing-2', 'product-vent-housing-3'])],
+  'industrial-strainer-filter-housing-supplier': [generateProductDetails('Strainer Filter Housing', 'Filter Housing', 'product-strainer-housing-1', ['product-strainer-housing-1', 'product-strainer-housing-2'])],
+  'industrial-multi-bag-filter-housing': [generateProductDetails('Multi-Bag Filter Housing', 'Filter Housing', 'product-multi-bag-1', ['product-multi-bag-1', 'product-multi-bag-2'])],
+  'conical-strainer-manufacturer': [generateProductDetails('Conical Strainer', 'Industrial Strainer', 'product-conical-strainer')],
+  'basket-strainer-manufacturer': [generateProductDetails('Basket Strainer', 'Industrial Strainer', 'product-vent-filter-1')],
+  'pleated-strainer-manufacturer': [generateProductDetails('Pleated Strainer', 'Industrial Strainer', 'product-pleated-strainer')],
+  'taper-basket-strainer-manufacturer': [generateProductDetails('Taper Basket Strainer', 'Industrial Strainer', 'product-vent-filter-1')],
+  'pressure-vessel-supplier-india': [generateProductDetails('Pressure Vessel', 'Industrial Vessel', 'product-custom-filter')],
+  'storage-tank-supplier': [generateProductDetails('Storage Tank', 'Industrial Vessel', 'product-purified-water-tank')],
+  'purified-water-storage-tank': [generateProductDetails('Purified Water Storage Tank', 'Industrial Vessel', 'product-purified-water-tank')],
+  'air-receiver-tank-supplier-india': [generateProductDetails('Air Receiver Tank', 'Industrial Vessel', 'product-custom-filter')],
+  'ss-pendants': [generateProductDetails('SS Pendants', 'Industrial Vessel', 'product-ss-pendants')],
 };

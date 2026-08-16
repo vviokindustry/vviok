@@ -89,6 +89,8 @@ export default async function SlugPage({ params }: Props) {
               </h1>
               <div className="text-sm md:text-base text-slate-500 mt-4 font-medium max-w-5xl whitespace-pre-wrap leading-relaxed">
                 {currentCategory.description}
+                <br /><br />
+                VVIOK Industry stands as a beacon of engineering integrity in the industrial filtration landscape. Our Ahmedabad-based manufacturing unit is specialized in the fabrication of high-precision stainless steel filtration housings and cartridges. We prioritize the needs of global markets, ensuring that every product we export adheres to the most stringent international quality benchmarks, including ASME and ISO certifications.
               </div>
             </div>
 
@@ -130,7 +132,7 @@ export default async function SlugPage({ params }: Props) {
                 displayProducts.map((product) => {
                   const image = resolveImageSource(product.imageId, PlaceHolderImages);
                   return (
-                    <Link key={product.name} href="/contact" className="group">
+                    <Link key={product.name} href={`/products/${slug}`} className="group">
                       <Card className="relative h-full border-2 border-slate-100 shadow-xl shadow-slate-200/50 hover:border-primary/50 transition-all duration-500 flex flex-col items-center p-8 rounded-[3rem] bg-white overflow-hidden">
                         <div className="aspect-square relative w-full mb-8 flex items-center justify-center p-6 bg-slate-50 rounded-[2.5rem] group-hover:bg-white transition-colors duration-500">
                           {image && (
@@ -235,12 +237,16 @@ export default async function SlugPage({ params }: Props) {
                       <div className="rounded-[1.5rem] shadow-xl border-2 border-slate-100 overflow-hidden bg-white">
                         <Table>
                           <TableBody>
-                            {product.specifications && Object.entries(product.specifications).map(([key, value]) => (
+                            {product.specifications ? Object.entries(product.specifications).map(([key, value]) => (
                               <TableRow key={key} className="hover:bg-slate-50 border-slate-100 transition-colors">
                                 <TableCell className="font-black text-slate-900 bg-slate-50/50 w-2/5 py-4 px-6 text-[10px] uppercase tracking-widest border-r">{key}</TableCell>
                                 <TableCell className="text-slate-700 py-4 px-6 text-base font-bold">{value}</TableCell>
                               </TableRow>
-                            ))}
+                            )) : (
+                              <TableRow>
+                                <TableCell colSpan={2} className="text-center py-8 text-slate-400">Standard industrial specifications apply. Please contact our engineering team for a detailed data sheet.</TableCell>
+                              </TableRow>
+                            )}
                           </TableBody>
                         </Table>
                       </div>
@@ -253,7 +259,7 @@ export default async function SlugPage({ params }: Props) {
             {product.faqs && (
               <section className="py-20 bg-slate-50 -mx-4 md:-mx-8 lg:-mx-16 px-4 md:px-8 lg:px-16 mt-20">
                 <div className="max-w-3xl mx-auto">
-                  <h2 className="font-headline text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+                  <h2 className="font-headline text-3xl font-bold text-center mb-12 uppercase tracking-tighter">Technical FAQs</h2>
                   <Accordion type="single" collapsible className="w-full bg-white p-8 rounded-[3rem] border shadow-xl">
                     {product.faqs.map((faq, index) => (
                       <AccordionItem key={index} value={`faq-${index}`} className="border-b last:border-0">
@@ -268,7 +274,7 @@ export default async function SlugPage({ params }: Props) {
 
             {relatedSubcategories.length > 0 && (
               <section className="py-20 border-t mt-20">
-                <h2 className="font-headline text-3xl font-bold text-center mb-12">Related Solutions</h2>
+                <h2 className="font-headline text-3xl font-bold text-center mb-12 uppercase tracking-tighter">Related Solutions</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                   {relatedSubcategories.map((sub) => {
                     const subP = products[sub.slug]?.[0];
@@ -279,7 +285,7 @@ export default async function SlugPage({ params }: Props) {
                           <div className="aspect-square relative w-full mb-6 bg-slate-50 rounded-[1.5rem] p-4 flex items-center justify-center">
                             <Image src={img.imageUrl} alt={sub.name} width={200} height={200} className="object-contain group-hover:scale-110 transition-transform" />
                           </div>
-                          <h3 className="font-headline text-lg font-black uppercase">{sub.name}</h3>
+                          <h3 className="font-headline text-lg font-black uppercase tracking-tight">{sub.name}</h3>
                           <div className="mt-4 flex items-center gap-2 text-primary font-black uppercase text-[9px] opacity-0 group-hover:opacity-100 transition-opacity">
                             View Details <ArrowRight className="h-3 w-3" />
                           </div>

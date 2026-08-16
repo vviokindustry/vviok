@@ -1,4 +1,3 @@
-
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
@@ -42,15 +41,6 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
-  },
-  async redirects() {
-    return [
-      {
-        source: '/products/:category/:subcategory',
-        destination: '/products/:subcategory',
-        permanent: true,
-      },
-    ];
   },
 };
 
