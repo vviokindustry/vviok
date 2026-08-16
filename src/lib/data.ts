@@ -247,6 +247,6 @@ export const products: Record<string, ProductDetail[]> = {
   'pressure-vessel-supplier-india': [generateProductDetails('Pressure Vessel', 'Industrial Vessel', '/uploads/pressure%20tank.jpeg')],
   'storage-tank-supplier': [generateProductDetails('Storage Tank', 'Industrial Vessel', 'product-purified-water-tank')],
   'purified-water-storage-tank': [generateProductDetails('Purified Water Storage Tank', 'Industrial Vessel', 'product-purified-water-tank')],
-  'air-receiver-tank-supplier-india': [generateProductDetails('Air Receiver Tank', 'Industrial Vessel', 'product-custom-filter')],
+  'air-receiver-tank-supplier-india': [generateProductDetails('Air Receiver Tank', 'Industrial Vessel', '/uploads/Air%20receiver%20tank%20manufacturer%20supplier%20in%20india%20-vviok%20industry.jpeg')],
   'ss-pendants': [generateProductDetails('SS Pendants', 'Industrial Vessel', 'product-ss-pendants')],
 };
