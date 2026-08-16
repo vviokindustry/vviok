@@ -134,8 +134,8 @@ export default function Home() {
               <p className="text-lg text-slate-600 font-medium leading-relaxed">
                 We utilize premium SS 304, 316, and 316L grades to ensure our products withstand the most aggressive industrial environments. Our state-of-the-art facility is equipped for high-precision welding, mirror-polishing, and rigorous hydro-testing. We don't just sell products; we deliver engineering integrity that protects your downstream assets and optimizes operational yield.
               </p>
-              <div className="pt-6 text-white">
-                <Button asChild variant="link" className="text-primary font-black uppercase tracking-widest p-0 text-base">
+              <div className="pt-6">
+                <Button asChild variant="link" className="text-primary font-black uppercase tracking-widest p-0 text-base hover:text-primary/80">
                   <Link href="/about">Learn More About Our Journey <ArrowRight className="ml-2 h-5 w-5" /></Link>
                 </Button>
               </div>
@@ -144,22 +144,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Engineering Superiority Section Updated */}
+      {/* Engineering Superiority Section with White Text Fixed */}
       <section className="py-24 bg-slate-950 text-white overflow-hidden">
         <div className="container">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div className="space-y-10">
               <h2 className="font-headline text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter leading-tight text-primary">
-                Engineering Superiority in Filtration
+                Engineering Superiority in Industrial Filtration
               </h2>
               <div className="space-y-8 text-lg font-medium leading-relaxed">
-                <p className="text-white">
+                <p className="text-white opacity-100">
                   Our manufacturing excellence is forged in state-of-the-art facilities where precision craftsmanship meets advanced technology. We prioritize the structural integrity of every weld, ensuring that our housings and vessels perform flawlessly under extreme industrial pressures.
                 </p>
-                <p className="text-white">
+                <p className="text-white opacity-100">
                   From raw material sourcing of premium SS 316L to final dimensional verification, every step of our process is strictly monitored under our ISO quality management system. We understand that in critical processes like pharmaceutical manufacturing or chemical synthesis, even the smallest bypass can lead to significant losses.
                 </p>
-                <p className="text-white">
+                <p className="text-white opacity-100">
                   VVIOK Industry is not just a supplier; we are your technical partner in fluid clarification. We provide comprehensive documentation, including MTC and pressure test certifications, ensuring total transparency and trust for our global partners.
                 </p>
               </div>
