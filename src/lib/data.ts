@@ -244,7 +244,7 @@ export const products: Record<string, ProductDetail[]> = {
   'basket-strainer-manufacturer': [generateProductDetails('Basket Strainer', 'Industrial Strainer', 'product-vent-filter-1')],
   'pleated-strainer-manufacturer': [generateProductDetails('Pleated Strainer', 'Industrial Strainer', 'product-pleated-strainer')],
   'taper-basket-strainer-manufacturer': [generateProductDetails('Taper Basket Strainer', 'Industrial Strainer', 'product-vent-filter-1')],
-  'pressure-vessel-supplier-india': [generateProductDetails('Pressure Vessel', 'Industrial Vessel', 'product-custom-filter')],
+  'pressure-vessel-supplier-india': [generateProductDetails('Pressure Vessel', 'Industrial Vessel', 'product-purified-water-tank')],
   'storage-tank-supplier': [generateProductDetails('Storage Tank', 'Industrial Vessel', 'product-purified-water-tank')],
   'purified-water-storage-tank': [generateProductDetails('Purified Water Storage Tank', 'Industrial Vessel', 'product-purified-water-tank')],
   'air-receiver-tank-supplier-india': [generateProductDetails('Air Receiver Tank', 'Industrial Vessel', 'product-custom-filter')],
