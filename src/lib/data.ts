@@ -245,7 +245,7 @@ export const products: Record<string, ProductDetail[]> = {
   'pleated-strainer-manufacturer': [generateProductDetails('Pleated Strainer', 'Industrial Strainer', 'product-pleated-strainer')],
   'taper-basket-strainer-manufacturer': [generateProductDetails('Taper Basket Strainer', 'Industrial Strainer', 'product-vent-filter-1')],
   'pressure-vessel-supplier-india': [generateProductDetails('Pressure Vessel', 'Industrial Vessel', '/uploads/pressure%20tank.jpeg')],
-  'storage-tank-supplier': [generateProductDetails('Storage Tank', 'Industrial Vessel', 'product-purified-water-tank')],
+  'storage-tank-supplier': [generateProductDetails('Storage Tank', 'Industrial Vessel', '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png', ['/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png'])],
   'purified-water-storage-tank': [generateProductDetails('Purified Water Storage Tank', 'Industrial Vessel', 'product-purified-water-tank')],
   'air-receiver-tank-supplier-india': [generateProductDetails('Air Receiver Tank', 'Industrial Vessel', '/uploads/Air%20receiver%20tank%20manufacturer%20supplier%20in%20india%20-vviok%20industry.jpeg')],
   'ss-pendants': [generateProductDetails('SS Pendants', 'Industrial Vessel', 'product-ss-pendants')],
