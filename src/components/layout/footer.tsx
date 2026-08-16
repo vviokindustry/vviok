@@ -1,85 +1,54 @@
+
 import Link from 'next/link';
 import { Logo, WhatsappIcon } from '@/components/icons';
-import { Mail, MapPin, Phone, Twitter, Facebook, Linkedin, Instagram, ArrowRight, Settings, FileDown } from 'lucide-react';
+import { Mail, MapPin, Phone, Twitter, Facebook, Linkedin, Instagram, ArrowRight, Settings } from 'lucide-react';
 
 const companyLinks = [
-  { href: '/about', label: 'About VVIOK' },
-  { href: '/products', label: 'Product Catalog' },
-  { href: '/industries', label: 'Industries Served' },
   { href: '/manufacturing-quality', label: 'Quality Standards' },
+  { href: '/industries', label: 'Industries Served' },
+  { href: '/products', label: 'Product Catalog' },
   { href: '/export', label: 'Export Global' },
+  { href: '/about', label: 'About VVIOK' },
 ];
 
 const categoryLinks = [
-  { href: '/products/filter-cartridge-manufacturer', label: 'Filter Cartridge' },
   { href: '/products/filter-housing-manufacturer', label: 'Filter Housing' },
-  { href: '/products/industrial-strainer-filters', label: 'Industrial Strainer' },
+  { href: '/products/filter-cartridge-manufacturer', label: 'Filter Cartridge' },
   { href: '/products/industrial-vessels-manufacturer', label: 'Industrial Vessels' },
+  { href: '/products/industrial-strainer-filters', label: 'Industrial Strainer' },
 ];
 
 export function Footer() {
   return (
     <footer className="bg-slate-950 text-slate-300">
-      <div className="container mx-auto px-4 pt-16 pb-8">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-4 md:grid-cols-2">
+      <div className="container mx-auto px-4 pt-20 pb-10">
+        <div className="grid grid-cols-1 gap-16 lg:grid-cols-4 md:grid-cols-2">
           {/* Brand Column */}
-          <div className="space-y-6">
-            <div className="bg-white p-2 rounded-sm inline-block">
-              <Logo className="w-52" />
+          <div className="space-y-8">
+            <div className="bg-white p-3 rounded-md inline-block">
+              <Logo className="w-56" />
             </div>
-            <p className="text-sm leading-relaxed max-w-xs text-slate-200">
-              VVIOK Industry is a global leader in high-precision industrial filtration and storage solutions, committed to engineering excellence and reliable performance.
+            <p className="text-base leading-relaxed text-slate-400 font-medium">
+              VVIOK Industry is a premier global hub for high-precision industrial filtration and SS equipment, delivering engineering excellence for critical manufacturing sectors.
             </p>
-            <div className="flex space-x-4">
-              <a 
-                href="https://www.facebook.com/p/VVIOK-Industry-61566349642536/" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://www.instagram.com/vviok.industry" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://x.com/VviokIndustry" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300"
-                aria-label="Twitter"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://www.linkedin.com/company/vviok-industry-industrial-filtration-stainless-steel-equipment-manufacturer" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="h-10 w-10 rounded-full bg-slate-900 flex items-center justify-center hover:bg-[#ffc107] hover:text-slate-950 transition-colors duration-300"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-5 w-5" />
-              </a>
+            <div className="flex space-x-5">
+              <a href="https://www.facebook.com/p/VVIOK-Industry" className="h-11 w-11 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><Facebook className="h-5 w-5" /></a>
+              <a href="https://www.instagram.com/vviok.industry" className="h-11 w-11 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><Instagram className="h-5 w-5" /></a>
+              <a href="https://x.com/VviokIndustry" className="h-11 w-11 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><Twitter className="h-5 w-5" /></a>
+              <a href="https://www.linkedin.com/company/vviok-industry" className="h-11 w-11 rounded-full bg-slate-900 flex items-center justify-center hover:bg-primary hover:text-white transition-all"><Linkedin className="h-5 w-5" /></a>
             </div>
           </div>
 
-          {/* Navigation Column */}
+          {/* Navigation Column Shuffled */}
           <div>
-            <h3 className="text-white font-headline font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-[#ffc107] pl-3">
-              Company
+            <h3 className="text-white font-headline font-bold uppercase tracking-[0.2em] text-xs mb-8 border-l-4 border-primary pl-4">
+              Resources
             </h3>
-            <ul className="space-y-4">
+            <ul className="space-y-5">
               {companyLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="group flex items-center text-sm hover:text-white transition-colors">
-                    <ArrowRight className="h-3 w-3 mr-2 text-[#ffc107] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
+                  <Link href={link.href} className="group flex items-center text-sm font-bold hover:text-white transition-colors">
+                    <ArrowRight className="h-3.5 w-3.5 mr-2 text-primary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
                     {link.label}
                   </Link>
                 </li>
@@ -87,16 +56,16 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Product Categories Column */}
+          {/* Solutions Column Shuffled */}
           <div>
-            <h3 className="text-white font-headline font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-[#ffc107] pl-3">
-              Our Products
+            <h3 className="text-white font-headline font-bold uppercase tracking-[0.2em] text-xs mb-8 border-l-4 border-primary pl-4">
+              Solutions
             </h3>
-            <ul className="space-y-4">
+            <ul className="space-y-5">
               {categoryLinks.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="group flex items-center text-sm hover:text-white transition-colors">
-                    <ArrowRight className="h-3 w-3 mr-2 text-[#ffc107] opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
+                  <Link href={link.href} className="group flex items-center text-sm font-bold hover:text-white transition-colors">
+                    <ArrowRight className="h-3.5 w-3.5 mr-2 text-primary opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0" />
                     {link.label}
                   </Link>
                 </li>
@@ -106,57 +75,39 @@ export function Footer() {
 
           {/* Contact Column */}
           <div>
-            <h3 className="text-white font-headline font-bold uppercase tracking-widest text-sm mb-6 border-l-4 border-[#ffc107] pl-3">
-              Contact Info
+            <h3 className="text-white font-headline font-bold uppercase tracking-[0.2em] text-xs mb-8 border-l-4 border-primary pl-4">
+              Global Support
             </h3>
-            <ul className="space-y-5">
+            <ul className="space-y-6">
               <li className="flex items-start gap-4">
-                <div className="mt-1 h-8 w-8 rounded bg-slate-900 flex items-center justify-center shrink-0">
-                  <MapPin className="h-4 w-4 text-[#ffc107]" />
-                </div>
-                <span className="text-sm">
-                  45, Pushkar Cottage, Near Ramol Toll Plaza, Ahmedabad - 382415, Gujarat, India
-                </span>
+                <MapPin className="h-5 w-5 text-primary shrink-0 mt-1" />
+                <span className="text-sm font-medium">45, Pushkar Cottage, Near Ramol Toll Plaza, Ahmedabad - 382415, Gujarat, India</span>
               </li>
               <li className="flex items-center gap-4">
-                <div className="h-8 w-8 rounded bg-slate-900 flex items-center justify-center shrink-0">
-                  <Mail className="h-4 w-4 text-[#ffc107]" />
-                </div>
-                <a href="mailto:vviokindustry2021@gmail.com" className="text-sm hover:text-white transition-colors">
-                  vviokindustry2021@gmail.com
-                </a>
+                <Mail className="h-5 w-5 text-primary shrink-0" />
+                <a href="mailto:vviokindustry2021@gmail.com" className="text-sm font-bold hover:text-white">vviokindustry2021@gmail.com</a>
               </li>
               <li className="flex items-center gap-4">
-                <div className="h-8 w-8 rounded bg-slate-900 flex items-center justify-center shrink-0">
-                  <Phone className="h-4 w-4 text-[#ffc107]" />
-                </div>
-                <a href="tel:+919106472588" className="text-sm hover:text-white transition-colors font-bold">
-                  +91 91064 72588
-                </a>
+                <Phone className="h-5 w-5 text-primary shrink-0" />
+                <a href="tel:+919106472588" className="text-sm font-black hover:text-white">+91 91064 72588</a>
               </li>
               <li className="flex items-center gap-4">
-                <div className="h-8 w-8 rounded bg-slate-900 flex items-center justify-center shrink-0">
-                  <WhatsappIcon className="h-4 w-4 text-[#ffc107] fill-current" />
-                </div>
-                <a href="https://wa.me/919106472588" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors font-bold">
-                  WhatsApp Support
-                </a>
+                <WhatsappIcon className="h-5 w-5 text-primary shrink-0 fill-current" />
+                <a href="https://wa.me/919106472588" className="text-sm font-black hover:text-white">WhatsApp 24/7</a>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-16 pt-8 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium uppercase tracking-widest text-slate-500">
-          <div className="flex flex-col gap-1">
-            <p>&copy; {new Date().getFullYear()} VVIOK Industry. All rights reserved.</p>
-            <p>Developed by <a href="https://www.vibratseo.in/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors font-bold">Vibrat SEO</a></p>
+        {/* Bottom Credits with dofollow link */}
+        <div className="mt-20 pt-10 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">
+          <div className="flex flex-col gap-2 text-center md:text-left">
+            <p>&copy; {new Date().getFullYear()} VVIOK Industry. Engineering Purity.</p>
+            <p>SEO & Strategy by <a href="https://www.vibratseo.in/" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-primary transition-colors font-black">Vibrat SEO</a></p>
           </div>
-          <div className="flex gap-8">
-            <Link href="/admin/media" className="hover:text-white transition-colors flex items-center gap-1">
-              <Settings className="h-3 w-3" /> Admin
-            </Link>
-            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+          <div className="flex gap-10">
+            <Link href="/admin/media" className="hover:text-white transition-colors flex items-center gap-2"><Settings className="h-3 w-3" /> System Admin</Link>
+            <Link href="#" className="hover:text-white transition-colors">Compliance Policy</Link>
           </div>
         </div>
       </div>

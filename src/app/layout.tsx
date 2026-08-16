@@ -22,14 +22,13 @@ const ptSans = PT_Sans({
   variable: '--font-pt-sans',
 });
 
-// Using the requested local path for the favicon
 const ICON_URL = "/uploads/favicon.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.vviokindustry.in'),
-  title: 'VVIOK Industry - Filtration Products Manufacturer & Exporter',
+  title: 'VVIOK Industry | Global Industrial Filtration & SS Equipment Manufacturer',
   description:
-    'VVIOK Industry is a leading manufacturer, supplier, and exporter of high-quality industrial filtration products in India, serving a global market with precision engineering.',
+    'VVIOK Industry is India\'s trusted manufacturer of industrial filtration products, specializing in SS housings, cartridges, and pressure vessels for global markets since 2021.',
   verification: {
     google: 'nscCigG5Ub7D8EXkDWr9OIDvsp3X90AepDixohVRwYU',
   },
@@ -43,25 +42,24 @@ export const metadata: Metadata = {
   },
 };
 
-// Global Schema Definitions Enhanced for GEO/AEO
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "VVIOK Industry",
   "url": "https://www.vviokindustry.in",
   "logo": "https://www.vviokindustry.in/uploads/Vviok%20industry%20logo.png",
-  "description": "VVIOK Industry is a premier manufacturer and exporter of industrial filtration solutions, specializing in stainless steel filter housings, cartridges, and pressure vessels.",
+  "description": "Premier manufacturer and global exporter of high-precision industrial filtration solutions, including stainless steel filter housings, micro-filtration cartridges, and ASME pressure vessels.",
   "knowsAbout": [
-    "Industrial Filtration Systems",
-    "Stainless Steel Filter Housing Manufacturing",
-    "Microfiltration Engineering",
-    "Pressure Vessel Fabrication",
-    "Water Treatment Technology"
+    "Industrial Micro-Filtration Engineering",
+    "Stainless Steel Pressure Vessel Manufacturing",
+    "Sterile Air Venting Technology",
+    "Chemical Resistant Filter Housing",
+    "High-Flow Bag Filtration Systems"
   ],
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+91-91064-72588",
-    "contactType": "customer service",
+    "contactType": "technical support",
     "areaServed": "Global",
     "availableLanguage": ["en", "hi", "gu"]
   },
@@ -84,12 +82,12 @@ const organizationSchema = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "VVIOK Industry",
+  "name": "VVIOK Industry Ahmedabad",
   "image": "https://www.vviokindustry.in/uploads/Vviok%20industry%20logo.png",
   "@id": "https://www.vviokindustry.in",
   "url": "https://www.vviokindustry.in",
   "telephone": "+91-91064-72588",
-  "priceRange": "$$",
+  "priceRange": "$$$",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "45, Pushkar Cottage, Near Ramol Toll Plaza",
@@ -105,23 +103,10 @@ const localBusinessSchema = {
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday"
-    ],
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     "opens": "09:00",
     "closes": "19:00"
-  },
-  "sameAs": [
-    "https://www.facebook.com/p/VVIOK-Industry-61566349642536/",
-    "https://www.instagram.com/vviok.industry",
-    "https://x.com/VviokIndustry",
-    "https://www.linkedin.com/company/vviok-industry-industrial-filtration-stainless-steel-equipment-manufacturer"
-  ]
+  }
 };
 
 export default function RootLayout({
@@ -132,17 +117,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn('scroll-smooth', inter.variable, ptSans.variable)} suppressHydrationWarning>
       <head>
-        {/* Essential icon links to override defaults */}
         <link rel="icon" href={ICON_URL} />
         <link rel="apple-touch-icon" href={ICON_URL} />
-
-        {/* Pinterest Domain Verification */}
         <meta name="p:domain_verify" content="58896636f0e0d8da3b4e4a8924d46e37"/>
-        
-        {/* Bing Webmaster Verification */}
         <meta name="msvalidate.01" content="D75D8D4F6BB6203BE66B57E666DCF429" />
-
-        {/* Global Schemas */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -151,8 +129,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
-
-        {/* Google Analytics Tag */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-GC26EJYP10"
           strategy="afterInteractive"
