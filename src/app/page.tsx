@@ -97,18 +97,18 @@ export default function Home() {
           </div>
         )}
 
-        <div className="relative z-10 max-w-5xl mx-auto">
-          <h1 className="font-headline text-4xl md:text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-[0.9] mb-8">
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <h1 className="font-headline text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-tight mb-6">
             Top Industrial <span className="text-[#a5be1d]">Filtration Products</span> Manufacturer in India
           </h1>
-          <p className="text-xl md:text-2xl text-slate-100 font-bold max-w-3xl mx-auto mb-12 uppercase tracking-widest leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-slate-100 font-medium max-w-2xl mx-auto mb-10 leading-relaxed">
             India's Premier Manufacturer of SS Housings, Cartridges & Pressure Vessels. Trusted Globally Since 2021.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button asChild size="lg" className="bg-[#a5be1d] hover:bg-[#94ab1a] text-white font-black uppercase tracking-widest rounded-2xl px-12 h-20 shadow-2xl">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-[#a5be1d] hover:bg-[#94ab1a] text-white font-black uppercase tracking-widest rounded-xl px-8 h-14 shadow-xl">
               <Link href="/products">View Catalog</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="bg-white/5 hover:bg-white/10 text-white border-white/30 backdrop-blur-xl font-black uppercase tracking-widest rounded-2xl px-12 h-20">
+            <Button asChild variant="outline" size="lg" className="bg-white/10 hover:bg-white/20 text-white border-white/30 backdrop-blur-md font-black uppercase tracking-widest rounded-xl px-8 h-14">
               <Link href="/contact">Get Expert Quote</Link>
             </Button>
           </div>
