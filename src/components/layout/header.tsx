@@ -9,16 +9,6 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
 import { Logo } from '@/components/icons';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-  DropdownMenuSub,
-  DropdownMenuSubTrigger,
-  DropdownMenuSubContent,
-  DropdownMenuPortal,
-} from '@/components/ui/dropdown-menu';
 import { productCategories } from '@/lib/data';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
@@ -44,6 +34,7 @@ export function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [isProductsOpen, setIsProductsOpen] = useState(false);
+  const [activeCategorySlug, setActiveCategorySlug] = useState<string>(productCategories[0]?.slug || '');
   const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
@@ -64,8 +55,10 @@ export function Header() {
   const handleMouseLeave = () => {
     closeTimeoutRef.current = setTimeout(() => {
       setIsProductsOpen(false);
-    }, 150);
+    }, 250);
   };
+
+  const activeCategory = productCategories.find(c => c.slug === activeCategorySlug) || productCategories[0];
 
   const renderNav = () => (
     <nav className="hidden items-center lg:flex">
@@ -77,69 +70,122 @@ export function Header() {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <DropdownMenu open={isProductsOpen} onOpenChange={setIsProductsOpen}>
-              <DropdownMenuTrigger asChild>
-                <button 
-                  className={cn(
-                    'font-headline flex items-center gap-1 text-[13px] font-extrabold uppercase tracking-widest transition-colors hover:text-primary outline-none focus:ring-0 px-4 h-16',
-                    pathname.startsWith(link.href) ? 'text-primary' : 'text-slate-800'
-                  )}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setIsProductsOpen(!isProductsOpen);
-                  }}
-                >
-                  {link.label} <ChevronDown className={cn("h-4 w-4 transition-transform", isProductsOpen && "rotate-180")} />
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent 
-                align="start" 
-                sideOffset={0}
-                className="w-[300px] p-0 shadow-2xl border-t-[3px] border-primary rounded-none animate-in fade-in zoom-in-95 duration-200"
+            <Link
+              href={link.href}
+              className={cn(
+                'font-headline flex items-center gap-1.5 text-[13px] font-extrabold uppercase tracking-widest transition-colors hover:text-primary outline-none px-4 h-16 relative group',
+                pathname.startsWith(link.href) || isProductsOpen ? 'text-primary' : 'text-slate-800'
+              )}
+              onClick={() => setIsProductsOpen(false)}
+            >
+              {link.label}
+              <ChevronDown className={cn("h-4 w-4 transition-transform duration-200", isProductsOpen && "rotate-180")} />
+              <span className={cn(
+                "absolute bottom-0 left-4 right-4 h-[3px] bg-primary transition-transform duration-300 origin-left scale-x-0 group-hover:scale-x-100",
+                (pathname.startsWith(link.href) || isProductsOpen) && "scale-x-100"
+              )}></span>
+            </Link>
+
+            {/* Stable Products Mega Dropdown */}
+            {isProductsOpen && (
+              <div 
+                className="absolute top-full left-0 w-[720px] bg-white shadow-2xl border-t-[3px] border-primary rounded-b-2xl border-x border-b border-slate-100 z-50 overflow-hidden animate-in fade-in slide-in-from-top-1 duration-150"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
-                <div className="flex flex-col py-3 bg-white">
-                  {link.categories.map((cat) => (
-                    <DropdownMenuSub key={cat.slug}>
-                      <DropdownMenuSubTrigger 
-                        className="flex items-center justify-between py-4 px-6 hover:bg-slate-50 data-[state=open]:text-primary text-slate-700 font-black text-[12px] cursor-pointer group outline-none uppercase tracking-widest border-b border-slate-50 last:border-0"
-                        onClick={() => {
-                          router.push(`/products/${cat.slug}`);
-                          setIsProductsOpen(false);
-                        }}
-                      >
-                        <span className="font-headline">{cat.name}</span>
-                        <ChevronRight className="h-4 w-4 text-slate-300 group-data-[state=open]:text-primary transition-transform group-hover:translate-x-1" />
-                      </DropdownMenuSubTrigger>
-                      <DropdownMenuPortal>
-                        <DropdownMenuSubContent 
-                          sideOffset={2}
-                          className="w-[350px] p-0 border-none shadow-2xl bg-white rounded-none min-h-full py-6 px-8 border-l-2 border-primary/10 animate-in slide-in-from-left-2 duration-200"
-                          onMouseEnter={handleMouseEnter}
-                          onMouseLeave={handleMouseLeave}
+                <div className="grid grid-cols-12 min-h-[380px]">
+                  {/* Left Column: Categories */}
+                  <div className="col-span-5 bg-slate-50/80 border-r border-slate-100 py-3">
+                    <div className="px-4 py-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
+                      Product Categories
+                    </div>
+                    <div className="space-y-1 px-2">
+                      {link.categories.map((cat) => (
+                        <div
+                          key={cat.slug}
+                          onMouseEnter={() => setActiveCategorySlug(cat.slug)}
+                          onClick={() => {
+                            router.push(`/products/${cat.slug}`);
+                            setIsProductsOpen(false);
+                          }}
+                          className={cn(
+                            "flex items-center justify-between px-3.5 py-3 rounded-xl cursor-pointer transition-all text-[12px] font-bold uppercase tracking-wider",
+                            activeCategorySlug === cat.slug
+                              ? "bg-white text-primary shadow-sm font-black border border-slate-100"
+                              : "text-slate-700 hover:bg-slate-100/70 hover:text-primary"
+                          )}
                         >
-                          <div className="flex flex-col space-y-4">
-                            {cat.subcategories?.map((sub) => (
-                              <DropdownMenuItem key={sub.slug} asChild className="p-0 focus:bg-transparent">
-                                <Link 
-                                  href={`/products/${sub.slug}`} 
-                                  className="font-headline text-slate-600 hover:text-primary font-bold text-[12px] transition-all cursor-pointer flex items-center gap-3 group"
-                                  onClick={() => setIsProductsOpen(false)}
-                                >
-                                  <span className="h-1.5 w-1.5 rounded-full bg-slate-300 group-hover:bg-primary transition-colors"></span>
-                                  <span>{sub.name}</span>
-                                </Link>
-                              </DropdownMenuItem>
-                            ))}
-                          </div>
-                        </DropdownMenuSubContent>
-                      </DropdownMenuPortal>
-                    </DropdownMenuSub>
-                  ))}
+                          <span className="font-headline truncate">{cat.name}</span>
+                          <ChevronRight className={cn(
+                            "h-4 w-4 transition-transform",
+                            activeCategorySlug === cat.slug ? "text-primary translate-x-0.5" : "text-slate-300 opacity-60"
+                          )} />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Right Column: Subcategories of selected Category */}
+                  <div className="col-span-7 p-6 bg-white flex flex-col justify-between">
+                    <div>
+                      <div className="flex items-center justify-between pb-4 mb-4 border-b border-slate-100">
+                        <div>
+                          <span className="text-[10px] font-black uppercase tracking-[0.2em] text-primary">Technical Series</span>
+                          <h4 className="font-headline text-base font-black text-slate-900 uppercase tracking-tight mt-0.5">
+                            {activeCategory.name}
+                          </h4>
+                        </div>
+                        <Link
+                          href={`/products/${activeCategory.slug}`}
+                          onClick={() => setIsProductsOpen(false)}
+                          className="text-[11px] font-bold text-primary hover:underline uppercase tracking-wider flex items-center gap-1"
+                        >
+                          View All <ChevronRight className="h-3 w-3" />
+                        </Link>
+                      </div>
+
+                      {activeCategory.subcategories && activeCategory.subcategories.length > 0 ? (
+                        <div className="grid grid-cols-1 gap-2">
+                          {activeCategory.subcategories.map((sub) => (
+                            <Link
+                              key={sub.slug}
+                              href={`/products/${sub.slug}`}
+                              onClick={() => setIsProductsOpen(false)}
+                              className="group flex items-center gap-3 p-2.5 rounded-lg hover:bg-slate-50 text-slate-700 hover:text-primary transition-colors"
+                            >
+                              <span className="h-2 w-2 rounded-full bg-slate-300 group-hover:bg-primary transition-colors shrink-0" />
+                              <span className="font-headline text-[13px] font-bold tracking-tight">
+                                {sub.name}
+                              </span>
+                            </Link>
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="py-8 text-center text-slate-400 text-sm">
+                          <p>Direct product series.</p>
+                          <Button asChild size="sm" className="mt-3 bg-primary text-white rounded-lg text-xs font-bold uppercase">
+                            <Link href={`/products/${activeCategory.slug}`} onClick={() => setIsProductsOpen(false)}>
+                              Browse {activeCategory.name}
+                            </Link>
+                          </Button>
+                        </div>
+                      )}
+                    </div>
+
+                    <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+                      <span>Custom fabrication available upon request</span>
+                      <Link 
+                        href="/contact" 
+                        onClick={() => setIsProductsOpen(false)}
+                        className="font-bold text-primary hover:underline"
+                      >
+                        Contact Sales &rarr;
+                      </Link>
+                    </div>
+                  </div>
                 </div>
-              </DropdownMenuContent>
-            </DropdownMenu>
+              </div>
+            )}
           </div>
         ) : (
           <Link
