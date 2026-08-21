@@ -1,0 +1,6 @@
+{
+  "name": "VVIOK Industry",
+  "description": "Industrial filtration products, SS filter housings, cartridges, and pressure vessels catalog and management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
