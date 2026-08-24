@@ -16,13 +16,14 @@ export async function submitContactForm(values: z.infer<typeof contactFormSchema
   try {
     const { name, email, company, message } = values;
 
-    const apiKey = process.env.RESEND_API_KEY;
+    // Check environment variable or fallback to provided API Key
+    const apiKey = process.env.RESEND_API_KEY || 're_KWw5KbaL_8z68wvuHTR93LMyBExwU5iyh';
 
     if (apiKey) {
       try {
         const resend = new Resend(apiKey);
 
-        const { error } = await resend.emails.send({
+        const { data, error } = await resend.emails.send({
           from: 'VVIOK Website <onboarding@resend.dev>',
           to: ['sales.vviok@gmail.com'],
           replyTo: email,
@@ -61,13 +62,12 @@ export async function submitContactForm(values: z.infer<typeof contactFormSchema
 
         if (error) {
           console.error('Resend delivery error:', error);
-          // If Resend API key is rejected, log and proceed with received notification
+        } else {
+          console.log('Email sent successfully:', data);
         }
       } catch (emailErr) {
         console.error('Failed to send email via Resend:', emailErr);
       }
-    } else {
-      console.log('Inquiry received (RESEND_API_KEY not configured in env):', { name, email, company, message });
     }
 
     return { 
