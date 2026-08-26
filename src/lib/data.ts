@@ -255,8 +255,8 @@ export const products: Record<string, ProductDetail[]> = {
     name: 'Chemical Storage Tank',
     pageH1: 'Chemical Storage Tank manufacturer',
     application: 'Heavy-duty containment and safe storage for corrosive acids, alkalis, industrial solvents, and bulk liquid chemicals.',
-    imageId: '/uploads/chemical-storage-tank-manufacturer.png',
-    imageIds: ['/uploads/chemical-storage-tank-manufacturer.png', '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png', '/uploads/pressure%20tank.jpeg'],
+    imageId: 'product-chemical-storage-tank',
+    imageIds: ['product-chemical-storage-tank', '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png', '/uploads/pressure%20tank.jpeg'],
     description: `VVIOK Industry is a premier Chemical Storage Tank manufacturer and Supplier in india, delivering world-class liquid storage and process containment systems for chemical, pharmaceutical, petrochemical, agrochemical, and water treatment industries. As a reputable acid storage tank manufacturer and custom vessel engineering specialist, we design and fabricate high-integrity tanks engineered to withstand high temperatures, aggressive chemical corrosion, hydrostatic stress, and extreme operating pressures.
 
 Whether your facility requires a compact 100 gallon chemical tank for precision batch dosing and pilot plants, or high-capacity bulk chemical storage tanks exceeding 50,000 liters for heavy industrial processing, our custom-engineered vessels deliver unmatched structural stability, safety, and longevity. 
@@ -340,8 +340,8 @@ Our product portfolio covers heavy-duty Stainless Steel (SS 304, SS 316, SS 316L
     name: 'Oil Storage Tank',
     pageH1: 'Oil Storage Tank manufacturer',
     application: 'Heavy-duty storage and safe bulk containment for fuel oil, diesel, crude oil, lubricating oils, edible oils, and petrochemical liquids.',
-    imageId: '/uploads/oil-storage-tank-manufacturer.png',
-    imageIds: ['/uploads/oil-storage-tank-manufacturer.png', '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png', '/uploads/pressure%20tank.jpeg'],
+    imageId: 'product-oil-storage-tank',
+    imageIds: ['product-oil-storage-tank', '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png', '/uploads/pressure%20tank.jpeg'],
     description: `VVIOK Industry is a distinguished Oil Storage Tank manufacturer and Supplier in india, delivering state-of-the-art liquid containment systems for petroleum refineries, edible oil refineries, power stations, automotive manufacturing, and chemical processing facilities. Recognized among the premier oil storage tank manufacturers in india, our engineering facility designs and manufactures robust atmospheric, pressurized, and underground oil storage tanks engineered to meet stringent safety, environmental, and thermal containment demands.
 
 As one of the most reliable oil tank manufacturers and certified oil tank suppliers, we provide custom-built containment solutions ranging from factory-assembled skid tanks to monumental bulk oil storage tanks exceeding 500,000 liters. Whether your installation requires heavy fuel oil (HFO) storage with steam heating coils, diesel generator day tanks, hydraulic fluid reservoirs, or sanitary grade stainless steel vessels for edible vegetable oils, our vessels deliver unmatched longevity and structural integrity.
