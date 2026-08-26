@@ -254,13 +254,13 @@ export const products: Record<string, ProductDetail[]> = {
     name: 'Chemical Storage Tank',
     pageH1: 'Chemical Storage Tank manufacturer',
     application: 'Heavy-duty containment and safe storage for corrosive acids, alkalis, industrial solvents, and bulk liquid chemicals.',
-    imageId: '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png',
-    imageIds: ['/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png', '/uploads/pressure%20tank.jpeg'],
-    description: `VVIOK Industry is a premier **Chemical Storage Tank manufacturer and Supplier in india**, delivering world-class liquid storage and process containment systems for chemical, pharmaceutical, petrochemical, agrochemical, and water treatment industries. As a reputable **acid storage tank manufacturer** and custom vessel engineering specialist, we design and fabricate high-integrity tanks engineered to withstand high temperatures, aggressive chemical corrosion, hydrostatic stress, and extreme operating pressures.
+    imageId: '/uploads/chemical-storage-tank-manufacturer.png',
+    imageIds: ['/uploads/chemical-storage-tank-manufacturer.png', '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png', '/uploads/pressure%20tank.jpeg'],
+    description: `VVIOK Industry is a premier Chemical Storage Tank manufacturer and Supplier in india, delivering world-class liquid storage and process containment systems for chemical, pharmaceutical, petrochemical, agrochemical, and water treatment industries. As a reputable acid storage tank manufacturer and custom vessel engineering specialist, we design and fabricate high-integrity tanks engineered to withstand high temperatures, aggressive chemical corrosion, hydrostatic stress, and extreme operating pressures.
 
-Whether your facility requires a compact **100 gallon chemical tank** for precision batch dosing and pilot plants, or high-capacity **bulk chemical storage tanks** exceeding 50,000 liters for heavy industrial processing, our custom-engineered vessels deliver unmatched structural stability, safety, and longevity. 
+Whether your facility requires a compact 100 gallon chemical tank for precision batch dosing and pilot plants, or high-capacity bulk chemical storage tanks exceeding 50,000 liters for heavy industrial processing, our custom-engineered vessels deliver unmatched structural stability, safety, and longevity. 
 
-Our product portfolio covers heavy-duty Stainless Steel (SS 304, SS 316, SS 316L, Duplex Steel) and high-density polymer structures like **hdpe chemical storage tank manufacturer** solutions for non-metallic acid compatibility. To ensure secondary containment and zero hazard leakage in sensitive manufacturing environments, we specialize in certified **double wall chemical tanks** equipped with leak detection annular spaces, level transmitters, vent scrubbers, and pressure relief assemblies. Every tank is built strictly conforming to ASME Section VIII, ASTM D1998, BS EN 14015, and ISO 9001:2015 quality standards.`,
+Our product portfolio covers heavy-duty Stainless Steel (SS 304, SS 316, SS 316L, Duplex Steel) and high-density polymer structures like hdpe chemical storage tank manufacturer solutions for non-metallic acid compatibility. To ensure secondary containment and zero hazard leakage in sensitive manufacturing environments, we specialize in certified double wall chemical tanks equipped with leak detection annular spaces, level transmitters, vent scrubbers, and pressure relief assemblies. Every tank is built strictly conforming to ASME Section VIII, ASTM D1998, BS EN 14015, and ISO 9001:2015 quality standards.`,
     detailedSpecs: `Comprehensive Engineering Specifications for Chemical Storage Tanks:
 
 1. Design Standards & Compliance:
