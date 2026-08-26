@@ -173,8 +173,48 @@ export default async function SlugPage({ params }: Props) {
 
     const relatedSubcategories = parentCategory?.subcategories?.filter(sub => sub.slug !== slug) || [];
 
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'Product',
+          name: product.pageH1 || product.name,
+          description: product.metaDescription || product.description,
+          image: galleryImages.map(img => img.imageUrl),
+          brand: {
+            '@type': 'Brand',
+            name: 'VVIOK Industry'
+          },
+          offers: {
+            '@type': 'AggregateOffer',
+            priceCurrency: 'INR',
+            availability: 'https://schema.org/InStock',
+            priceSpecification: {
+              '@type': 'PriceSpecification',
+              priceCurrency: 'INR'
+            }
+          }
+        },
+        ...(product.faqs && product.faqs.length > 0 ? [{
+          '@type': 'FAQPage',
+          mainEntity: product.faqs.map(f => ({
+            '@type': 'Question',
+            name: f.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: f.answer
+            }
+          }))
+        }] : [])
+      ]
+    };
+
     return (
       <div className="bg-white min-h-screen">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <div className="bg-slate-50 border-b">
           <div className="container py-4 flex items-center gap-3 text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground overflow-x-auto whitespace-nowrap">
             <Link href="/" className="hover:text-primary flex items-center gap-2 transition-colors">
@@ -199,7 +239,9 @@ export default async function SlugPage({ params }: Props) {
               <ProductImageGallery images={galleryImages} alt={product.name} />
               <div className="flex flex-col">
                 <span className="text-primary font-black uppercase tracking-[0.3em] text-[10px] mb-4">Industrial Grade Excellence</span>
-                <h1 className="font-headline text-3xl md:text-5xl font-bold text-slate-900 leading-[1.1] mb-8 tracking-tighter">{product.name}</h1>
+                <h1 className="font-headline text-3xl md:text-5xl font-bold text-slate-900 leading-[1.1] mb-8 tracking-tighter">
+                  {product.pageH1 || product.name}
+                </h1>
                 <div className="prose prose-slate max-w-none">
                   <div className="text-slate-600 text-lg md:text-xl leading-relaxed font-medium whitespace-pre-wrap">{product.description}</div>
                 </div>

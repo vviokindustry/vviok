@@ -41,6 +41,7 @@ export interface FAQ {
 
 export interface ProductDetail {
   name: string;
+  pageH1?: string;
   application: string;
   imageId: string;
   imageIds?: string[];
@@ -121,6 +122,7 @@ export const productCategories: Category[] = [
       { name: 'Storage Tank', slug: 'storage-tank-supplier' },
       { name: 'Purified water storage tank', slug: 'purified-water-storage-tank' },
       { name: 'Air receiver tank', slug: 'air-receiver-tank-supplier-india' },
+      { name: 'Chemical Storage Tank', slug: 'chemical-storage-tank-manufacturer-india' },
       { name: 'SS pendants', slug: 'ss-pendants' },
     ]
   }
@@ -248,5 +250,90 @@ export const products: Record<string, ProductDetail[]> = {
   'storage-tank-supplier': [generateProductDetails('Storage Tank', 'Industrial Vessel', '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png', ['/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png'])],
   'purified-water-storage-tank': [generateProductDetails('Purified Water Storage Tank', 'Industrial Vessel', 'product-purified-water-tank')],
   'air-receiver-tank-supplier-india': [generateProductDetails('Air Receiver Tank', 'Industrial Vessel', '/uploads/Air%20receiver%20tank%20manufacturer%20supplier%20in%20india%20-vviok%20industry.jpeg')],
+  'chemical-storage-tank-manufacturer-india': [{
+    name: 'Chemical Storage Tank',
+    pageH1: 'Chemical Storage Tank manufacturer',
+    application: 'Heavy-duty containment and safe storage for corrosive acids, alkalis, industrial solvents, and bulk liquid chemicals.',
+    imageId: '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png',
+    imageIds: ['/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png', '/uploads/pressure%20tank.jpeg'],
+    description: `VVIOK Industry is a premier **Chemical Storage Tank manufacturer and Supplier in india**, delivering world-class liquid storage and process containment systems for chemical, pharmaceutical, petrochemical, agrochemical, and water treatment industries. As a reputable **acid storage tank manufacturer** and custom vessel engineering specialist, we design and fabricate high-integrity tanks engineered to withstand high temperatures, aggressive chemical corrosion, hydrostatic stress, and extreme operating pressures.
+
+Whether your facility requires a compact **100 gallon chemical tank** for precision batch dosing and pilot plants, or high-capacity **bulk chemical storage tanks** exceeding 50,000 liters for heavy industrial processing, our custom-engineered vessels deliver unmatched structural stability, safety, and longevity. 
+
+Our product portfolio covers heavy-duty Stainless Steel (SS 304, SS 316, SS 316L, Duplex Steel) and high-density polymer structures like **hdpe chemical storage tank manufacturer** solutions for non-metallic acid compatibility. To ensure secondary containment and zero hazard leakage in sensitive manufacturing environments, we specialize in certified **double wall chemical tanks** equipped with leak detection annular spaces, level transmitters, vent scrubbers, and pressure relief assemblies. Every tank is built strictly conforming to ASME Section VIII, ASTM D1998, BS EN 14015, and ISO 9001:2015 quality standards.`,
+    detailedSpecs: `Comprehensive Engineering Specifications for Chemical Storage Tanks:
+
+1. Design Standards & Compliance:
+- ASME Section VIII Div 1, API 650, BS 4994, ASTM D1998, Good Manufacturing Practice (GMP) compliant.
+
+2. Material Grades & Construction:
+- Stainless Steel: SS 304, SS 304L, SS 316, SS 316L, SS 316Ti, Duplex Stainless Steel 2205.
+- Non-Metallic & Thermoplastics: High-Density Polyethylene (HDPE), Polypropylene (PP), FRP / GRP lined, PTFE / PFA lined for extreme acid resistance.
+- Configuration Options: Vertical cylindrical, horizontal cylindrical, flat bottom, dished bottom, conical bottom, skid-mounted dosing units.
+
+3. Capacity & Size Range:
+- Standard Range: 100 Gallon chemical tank (approx 380 Liters) to 50,000+ Gallons (200,000 Liters) bulk chemical storage tanks.
+- Wall Thickness: 4 mm to 25 mm based on specific gravity of stored chemical and structural FEA analysis.
+
+4. Containment & Safety Types:
+- Single Wall Atmospheric Storage Tanks
+- Double Wall Chemical Tanks (Self-bunded with 110% secondary containment)
+- Jacketed / Limpet Coil Reaction and Temperature-Controlled Storage Tanks
+- Insulated and Cladded vessels for temperature preservation.
+
+5. Surface Treatment & Internal Finishes:
+- Mirror Polished / Electro-polished finish (Ra < 0.4 µm) for sanitary applications.
+- Acid Pickling and Passivation according to ASTM A380 standards.
+- Anti-corrosive chemical barrier coatings.
+
+6. Standard Accessories & Instrumentation:
+- Heavy-duty top manway with viton / PTFE chemical-resistant gaskets.
+- Flanged inlet/outlet nozzles (ANSI 150# / 300# / DIN / Tri-Clamp).
+- Level indicators (Magnetic level gauge, ultrasonic level transmitter, radar sensors).
+- Pressure relief valve (PRV), flame arrestor, breather vent with scrubber connection.
+- Lifting lugs, earthing bosses, anchor chairs, and ladder with safety cage.`,
+    features: [
+      'ASME Section VIII & API 650 compliant engineering',
+      'Engineered for aggressive acids, alkalis, solvents, and hazardous liquids',
+      'Available in SS 316L, SS 304, Duplex, and HDPE/PP materials',
+      'Advanced double wall chemical tanks for 100% secondary containment and leak prevention',
+      'From 100 gallon chemical tank dosing systems to 50,000+ gallon bulk chemical storage tanks',
+      'Precision welded with 100% radiographic / dye-penetrant testing and hydrostatic testing',
+      'Corrosion-resistant pickling & passivation finish for maximum operational lifespan',
+      'Complete documentation including Material Test Certificates (MTC) and Hydro-test reports'
+    ],
+    specifications: {
+      'Storage Capacity': '100 Gallon (380 L) to 50,000+ Gallons (200,000 Liters)',
+      'Material of Construction': 'SS 304, SS 316, SS 316L, Duplex 2205, HDPE / PP',
+      'Tank Configuration': 'Vertical Cylindrical / Horizontal / Conical Bottom',
+      'Design Pressure': 'Atmospheric up to 10 Bar (Custom pressure designs)',
+      'Operating Temperature': '-40°C to +200°C (depending on material & lining)',
+      'Containment Options': 'Single Wall / Double Wall (Bunded) with Leak Detection',
+      'Compatible Media': 'Sulfuric Acid, Hydrochloric Acid, Nitric Acid, Caustic Soda, Solvents, Effluents',
+      'Surface Finishing': 'Internal mirror polish / electropolish Ra < 0.4µm, External pickled & passivated',
+      'Testing & Certification': '100% Hydrostatic Test, Dye Penetrant (DP), Radiography, ASME / ISO 9001'
+    },
+    faqs: [
+      {
+        question: 'What materials are best suited for acid and hazardous chemical storage tanks?',
+        answer: 'For concentrated acids and harsh industrial solvents, high-grade Stainless Steel (SS 316L, Duplex 2205) or lined thermoplastics (HDPE, PP, PTFE) are recommended. As an experienced acid storage tank manufacturer, VVIOK Industry evaluates your chemical concentration, operating temperature, and pressure to select the most cost-effective and corrosion-resistant material.'
+      },
+      {
+        question: 'What are the safety advantages of double wall chemical tanks?',
+        answer: 'Double wall chemical tanks feature an inner tank for chemical containment and an outer tank providing 110% secondary containment. This prevents hazardous spills, protects ground water, complies with environmental EPA regulations, and allows continuous interstitial monitoring for early leak detection without interrupting operations.'
+      },
+      {
+        question: 'Can you fabricate custom 100 gallon chemical tanks for dosing systems?',
+        answer: 'Yes! We manufacture precision 100 gallon chemical tanks and custom batch dosing tanks equipped with mixer mountings, calibration scales, level gauges, and chemical metering pump connections tailored to water treatment and chemical dosing skids.'
+      },
+      {
+        question: 'Do you manufacture large bulk chemical storage tanks for industrial plants?',
+        answer: 'Yes, VVIOK Industry manufactures bulk chemical storage tanks up to 200,000 liters. We provide complete turnkey fabrication including structural reinforcement, cat ladders, handrails, agitation nozzles, and export-compliant sea-worthy packaging.'
+      }
+    ],
+    metaTitle: 'Chemical Storage Tank manufacturer and Supplier in india',
+    metaDescription: 'VVIOK Industry is a trusted Chemical Storage Tank Manufacturer & Supplier in India, offering high-quality storage tanks designed for safe and reliable handling of various chemicals and industrial liquids.',
+    metaKeywords: 'chemical storage tank manufacturer, chemical storage tank manufacturer and supplier in india, 100 gallon chemical tank, double wall chemical tanks, bulk chemical storage tanks, acid storage tank manufacturer, hdpe chemical storage tank manufacturer, ss chemical tank india'
+  }],
   'ss-pendants': [generateProductDetails('SS Pendants', 'Industrial Vessel', 'product-ss-pendants')],
 };
