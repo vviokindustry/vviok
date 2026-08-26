@@ -25,6 +25,7 @@ export function ProductImageGallery({ images, alt }: ProductImageGalleryProps) {
           height={800}
           className="object-contain transition-transform duration-700 group-hover:scale-110"
           priority
+          referrerPolicy="no-referrer"
         />
       </div>
 
@@ -43,7 +44,8 @@ export function ProductImageGallery({ images, alt }: ProductImageGalleryProps) {
               src={img.imageUrl} 
               alt={`${alt} thumbnail ${idx + 1}`} 
               fill 
-              className="object-contain p-2" 
+              className="object-contain p-2"
+              referrerPolicy="no-referrer" 
             />
           </button>
         ))}

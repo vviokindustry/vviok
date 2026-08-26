@@ -299,6 +299,18 @@
       "description": "SS Pendants - Sanitary support systems.",
       "imageUrl": "https://drive.google.com/uc?export=view&id=1wr2QU_z4fCthpqLYHASokWeqppuHNKkN",
       "imageHint": "ss pendants"
+    },
+    {
+      "id": "product-chemical-storage-tank",
+      "description": "Chemical storage tank for industrial acids, solvents, and chemicals.",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1UhdQwdQWl6Df_GpLp4h5WwsQNe7mgfiG",
+      "imageHint": "chemical tank"
+    },
+    {
+      "id": "product-oil-storage-tank",
+      "description": "Oil storage tank for petroleum, diesel, and industrial oils.",
+      "imageUrl": "https://drive.google.com/uc?export=view&id=1s26h_6vCq8TKYPzCpCQGWepGelmvjNA9",
+      "imageHint": "oil tank"
     }
   ]
 }

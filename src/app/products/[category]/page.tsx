@@ -112,6 +112,7 @@ export default async function SlugPage({ params }: Props) {
                               width={400}
                               height={400}
                               className="object-contain transition-transform duration-700 group-hover:scale-110"
+                              referrerPolicy="no-referrer"
                             />
                           )}
                         </div>
@@ -142,6 +143,7 @@ export default async function SlugPage({ params }: Props) {
                               width={400}
                               height={400}
                               className="object-contain transition-transform duration-700 group-hover:scale-110"
+                              referrerPolicy="no-referrer"
                             />
                           )}
                         </div>
@@ -325,7 +327,14 @@ export default async function SlugPage({ params }: Props) {
                       <Link key={sub.slug} href={`/products/${sub.slug}`} className="group">
                         <Card className="h-full border-2 border-slate-100 shadow-lg hover:border-primary/50 transition-all p-8 rounded-[2.5rem] flex flex-col items-center text-center">
                           <div className="aspect-square relative w-full mb-6 bg-slate-50 rounded-[1.5rem] p-4 flex items-center justify-center">
-                            <Image src={img.imageUrl} alt={sub.name} width={200} height={200} className="object-contain group-hover:scale-110 transition-transform" />
+                            <Image 
+                              src={img.imageUrl} 
+                              alt={sub.name} 
+                              width={200} 
+                              height={200} 
+                              className="object-contain group-hover:scale-110 transition-transform"
+                              referrerPolicy="no-referrer" 
+                            />
                           </div>
                           <h3 className="font-headline text-lg font-black uppercase tracking-tight">{sub.name}</h3>
                           <div className="mt-4 flex items-center gap-2 text-primary font-black uppercase text-[9px] opacity-0 group-hover:opacity-100 transition-opacity">

@@ -273,6 +273,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                           width={250} 
                           height={250} 
                           className="object-contain transition-transform duration-500 group-hover:scale-110"
+                          referrerPolicy="no-referrer"
                         />
                       </div>
                       <div className="text-center">

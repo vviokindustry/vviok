@@ -36,6 +36,7 @@ export default function ProductsPage() {
                           fill
                           className="object-cover transition-transform duration-500 group-hover:scale-110"
                           data-ai-hint={image.imageHint}
+                          referrerPolicy="no-referrer"
                         />
                       )}
                     </div>
