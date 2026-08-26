@@ -123,6 +123,7 @@ export const productCategories: Category[] = [
       { name: 'Purified water storage tank', slug: 'purified-water-storage-tank' },
       { name: 'Air receiver tank', slug: 'air-receiver-tank-supplier-india' },
       { name: 'Chemical Storage Tank', slug: 'chemical-storage-tank-manufacturer-india' },
+      { name: 'Oil Storage Tank', slug: 'oil-storage-tank-manufacturer-india' },
       { name: 'SS pendants', slug: 'ss-pendants' },
     ]
   }
@@ -334,6 +335,90 @@ Our product portfolio covers heavy-duty Stainless Steel (SS 304, SS 316, SS 316L
     metaTitle: 'Chemical Storage Tank manufacturer and Supplier in india',
     metaDescription: 'VVIOK Industry is a trusted Chemical Storage Tank Manufacturer & Supplier in India, offering high-quality storage tanks designed for safe and reliable handling of various chemicals and industrial liquids.',
     metaKeywords: 'chemical storage tank manufacturer, chemical storage tank manufacturer and supplier in india, 100 gallon chemical tank, double wall chemical tanks, bulk chemical storage tanks, acid storage tank manufacturer, hdpe chemical storage tank manufacturer, ss chemical tank india'
+  }],
+  'oil-storage-tank-manufacturer-india': [{
+    name: 'Oil Storage Tank',
+    pageH1: 'Oil Storage Tank manufacturer',
+    application: 'Heavy-duty storage and safe bulk containment for fuel oil, diesel, crude oil, lubricating oils, edible oils, and petrochemical liquids.',
+    imageId: '/uploads/oil-storage-tank-manufacturer.png',
+    imageIds: ['/uploads/oil-storage-tank-manufacturer.png', '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png', '/uploads/pressure%20tank.jpeg'],
+    description: `VVIOK Industry is a distinguished Oil Storage Tank manufacturer and Supplier in india, delivering state-of-the-art liquid containment systems for petroleum refineries, edible oil refineries, power stations, automotive manufacturing, and chemical processing facilities. Recognized among the premier oil storage tank manufacturers in india, our engineering facility designs and manufactures robust atmospheric, pressurized, and underground oil storage tanks engineered to meet stringent safety, environmental, and thermal containment demands.
+
+As one of the most reliable oil tank manufacturers and certified oil tank suppliers, we provide custom-built containment solutions ranging from factory-assembled skid tanks to monumental bulk oil storage tanks exceeding 500,000 liters. Whether your installation requires heavy fuel oil (HFO) storage with steam heating coils, diesel generator day tanks, hydraulic fluid reservoirs, or sanitary grade stainless steel vessels for edible vegetable oils, our vessels deliver unmatched longevity and structural integrity.
+
+When choosing an industrial oil storage tank in india, partnering with established oil tank manufacturers in india guarantees compliance with rigorous international design codes such as API 650, API 620, UL 142, and ASME Section VIII. Our tanks feature precision submerged arc welding, specialized anti-corrosive epoxy internal linings, flame arrestors, breather valves, and double-wall self-bunded safety containment to eliminate spill hazards and ensure compliance with environmental and fire safety regulations.`,
+    detailedSpecs: `Comprehensive Engineering Specifications for Industrial Oil Storage Tanks:
+
+1. Design Codes & Engineering Standards:
+- API 650 (Welded Tanks for Oil Storage), API 620 (Low-Pressure Storage Tanks), API 653, ASME Section VIII Div 1, UL 142 (Steel Aboveground Tanks for Flammable and Combustible Liquids), IS 803 / IS 2825.
+
+2. Materials of Construction (MOC):
+- Carbon Steel / Mild Steel: IS 2062 Grade B, ASTM A36, ASTM A516 Grade 70 (for pressure and temperature resistance).
+- Stainless Steel: SS 304, SS 304L, SS 316, SS 316L (for high-purity edible oils, biodiesel, and corrosive petrochemical blends).
+- Lining & Coatings: Food-grade epoxy lining, coal tar epoxy, polyurethane external protective coatings.
+
+3. Capacity & Structural Configurations:
+- Capacity Range: 500 Liters to 500,000+ Liters (Bulk oil storage tanks).
+- Orientations: Vertical Cylindrical with flat/conical bottom, Horizontal Cylindrical with saddle supports, Underground double-wall tanks.
+- Roof Types: Self-supporting conical roof, dome roof, floating roof (internal/external for volatile vapor minimization).
+
+4. Heating, Insulation & Thermal Systems:
+- Internal steam heating coils (SS / Carbon Steel seamless schedule pipes) for high-viscosity furnace oil and bitumen.
+- Electric immersion heating bundles with digital thermostatic control panels.
+- Mineral wool / Rockwool insulation with aluminum or SS 304 weather-proof cladding.
+
+5. Safety, Venting & Fire Protection Accessories:
+- Free vents and pressure-vacuum relief valves (PVRV) with integrated flame arrestors.
+- Double-wall interstitial leak detection sensors and annular space monitoring.
+- Foam pourer systems, fire water cooling ring headers, and earthing bosses for static discharge protection.
+
+6. Inspection, Testing & Quality Assurance:
+- 100% Radiographic Testing (RT) and Ultrasonic Testing (UT) on shell and weld seams.
+- Hydrostatic leak testing, pneumatic pressure testing, and vacuum box testing on bottom plates.
+- Third-party inspection (TUV, BVQI, DNV, SGS) and comprehensive Material Test Certificates (MTC).`,
+    features: [
+      'Engineered in accordance with API 650, API 620, and ASME Section VIII standards',
+      'Available from leading oil storage tank manufacturers in india with complete turnkey fabrication',
+      'Wide capacity range from modular fuel tanks to massive bulk oil storage tanks up to 500,000+ Liters',
+      'Manufactured in IS 2062 Carbon Steel, ASTM A516 Gr 70, and sanitary SS 304/316 Stainless Steel',
+      'Integrated internal steam/thermal heating coils for viscous oils, bitumen, and furnace fuel',
+      'Double-wall bunded containment configurations for 110% leak protection and environmental safety',
+      'High-performance anti-corrosive external epoxy coatings and specialized internal tank linings',
+      'Equipped with flame arrestors, breather valves, radar level transmitters, and safety ladder cages'
+    ],
+    specifications: {
+      'Capacity Range': '500 Liters up to 500,000+ Liters (Custom bulk capacities)',
+      'Design Standards': 'API 650, API 620, UL 142, ASME Section VIII, IS 803',
+      'Material of Construction': 'Carbon Steel (IS 2062 / ASTM A36 / A516 Gr 70), SS 304, SS 316L',
+      'Orientation': 'Vertical Cylindrical / Horizontal Saddle Mounted / Underground',
+      'Heating System Options': 'Internal Steam Heating Coil / Electric Immersion Heater / Thermal Oil Coil',
+      'Containment Type': 'Single Wall / Double Wall (Self-Bunded) with Leak Detection',
+      'Operating Temperature': '-20°C to +250°C (depending on heating and insulation)',
+      'Design Pressure': 'Atmospheric to 5 Bar (Pressurized fuel storage vessels)',
+      'Applicable Media': 'Furnace Oil, Diesel (HSD), LDO, Crude Oil, Transformer Oil, Edible Oils, Hydraulic Oils',
+      'Testing & Certification': 'Hydrostatic Testing, Radiographic Examination, Vacuum Box Test, Dye Penetrant'
+    },
+    faqs: [
+      {
+        question: 'What materials and standards are used by oil storage tank manufacturers in india?',
+        answer: 'Reputable oil storage tank manufacturers in india use high-tensile carbon steel (ASTM A36, IS 2062) or stainless steel (SS 304, SS 316L) conforming to API 650, API 620, UL 142, and ASME Section VIII codes to ensure structural safety, leak-proof welding, and long operating lifespans.'
+      },
+      {
+        question: 'Why are heating coils required in bulk oil storage tanks?',
+        answer: 'High-viscosity oils such as furnace oil, heavy fuel oil (HFO), and crude oil solidify or become difficult to pump at lower ambient temperatures. Installing internal steam heating coils or electric immersion bundles maintains optimum fluid viscosity for smooth pumping and plant operations.'
+      },
+      {
+        question: 'What are the safety advantages of double-wall oil tanks from certified oil tank suppliers?',
+        answer: 'Double-wall oil storage tanks feature an outer secondary containment that holds up to 110% of the inner tank capacity. This prevents environmental soil contamination, minimizes fire hazards, complies with EPA/Pollution Control Board norms, and features continuous leak-monitoring sensors.'
+      },
+      {
+        question: 'Do you fabricate customized oil storage tanks in india for edible oils and food processing?',
+        answer: 'Yes, VVIOK Industry is one of the premier oil tank manufacturers in india fabricating sanitary grade SS 304 and SS 316L tanks with internal mirror finishes (Ra < 0.4 µm), CIP cleaning nozzles, and nitrogen blanketing for refined edible oils, palm oil, and food-grade liquids.'
+      }
+    ],
+    metaTitle: 'Oil Storage Tank manufacturer and Supplier in india',
+    metaDescription: 'VVIOK Industry is a trusted Oil Storage Tank Manufacturer & Supplier in India, offering high-quality storage tanks designed for safe and reliable handling of various chemicals and industrial liquids.',
+    metaKeywords: 'oil storage tank manufacturer, bulk oil storage tanks, oil tank suppliers, oil tank manufacturers, oil storage tank manufacturers in india, oil tank manufacturers in india, oil storage tank in india, industrial oil tanks, fuel storage tank india'
   }],
   'ss-pendants': [generateProductDetails('SS Pendants', 'Industrial Vessel', 'product-ss-pendants')],
 };
