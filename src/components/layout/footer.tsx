@@ -85,7 +85,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-4">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <a href="mailto:vviokindustry2021@gmail.com" className="text-sm font-bold hover:text-white">vviokindustry2021@gmail.com</a>
+                <a href="mailto:sales.vviok@gmail.com" className="text-sm font-bold hover:text-white">sales.vviok@gmail.com</a>
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="h-5 w-5 text-primary shrink-0" />

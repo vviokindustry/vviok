@@ -217,7 +217,7 @@ export function Header() {
               <Phone className="h-3.5 w-3.5 text-yellow-400" /> Office: <a href="tel:+919106472588" className="hover:text-yellow-400 transition-colors">+91 91064 72588</a>
             </span>
             <span className="flex items-center gap-2">
-              <Mail className="h-3.5 w-3.5 text-yellow-400" /> Email: <a href="mailto:vviokindustry2021@gmail.com" className="hover:text-yellow-400 transition-colors">vviokindustry2021@gmail.com</a>
+              <Mail className="h-3.5 w-3.5 text-yellow-400" /> Email: <a href="mailto:sales.vviok@gmail.com" className="hover:text-yellow-400 transition-colors">sales.vviok@gmail.com</a>
             </span>
           </div>
         </div>
