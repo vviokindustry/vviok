@@ -11,6 +11,7 @@ import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
 import { resolveImageSource } from '@/lib/utils';
 import { ProductImageGallery } from '@/components/product-image-gallery';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { FormattedText } from '@/components/formatted-text';
 import type { Metadata } from 'next';
 
 type Props = {
@@ -36,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (product) {
     return {
       title: product.metaTitle || `${product.name} - VVIOK Industry`,
-      description: product.metaDescription || product.description,
+      description: (product.metaDescription || product.description)?.replace(/\*\*/g, ''),
       keywords: product.metaKeywords,
       alternates: {
         canonical: `/products/${slug}`,
@@ -186,7 +187,7 @@ export default async function SlugPage({ params }: Props) {
         {
           '@type': 'Product',
           name: product.pageH1 || product.name,
-          description: product.metaDescription || product.description,
+          description: (product.metaDescription || product.description)?.replace(/\*\*/g, ''),
           image: schemaImages,
           sku: `VVIOK-${slug}`,
           mpn: `VVIOK-${slug}`,
@@ -237,10 +238,10 @@ export default async function SlugPage({ params }: Props) {
           '@type': 'FAQPage',
           mainEntity: product.faqs.map(f => ({
             '@type': 'Question',
-            name: f.question,
+            name: f.question.replace(/\*\*/g, ''),
             acceptedAnswer: {
               '@type': 'Answer',
-              text: f.answer
+              text: f.answer.replace(/\*\*/g, '')
             }
           }))
         }] : [])
@@ -281,7 +282,9 @@ export default async function SlugPage({ params }: Props) {
                   {product.pageH1 || product.name}
                 </h1>
                 <div className="prose prose-slate max-w-none">
-                  <div className="text-slate-600 text-lg md:text-xl leading-relaxed font-medium whitespace-pre-wrap">{product.description}</div>
+                  <div className="text-slate-600 text-lg md:text-xl leading-relaxed font-medium whitespace-pre-wrap">
+                    <FormattedText text={product.description} />
+                  </div>
                 </div>
                 {product.features && (
                   <div className="space-y-3 pt-8 border-t mt-8">
@@ -289,7 +292,7 @@ export default async function SlugPage({ params }: Props) {
                     {product.features.map((feature, idx) => (
                       <div key={idx} className="flex items-start gap-3 text-base md:text-lg text-slate-700 font-bold">
                         <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                        <span>{feature}</span>
+                        <span><FormattedText text={feature} /></span>
                       </div>
                     ))}
                   </div>
@@ -310,7 +313,9 @@ export default async function SlugPage({ params }: Props) {
                 </TabsList>
                 <div className="py-12">
                   <TabsContent value="description" className="mt-0 outline-none">
-                    <div className="text-slate-600 text-lg font-medium leading-relaxed whitespace-pre-wrap">{product.detailedSpecs}</div>
+                    <div className="text-slate-600 text-lg font-medium leading-relaxed whitespace-pre-wrap">
+                      <FormattedText text={product.detailedSpecs} />
+                    </div>
                   </TabsContent>
                   <TabsContent value="info" className="mt-0 outline-none">
                     <div className="max-w-4xl">
@@ -320,7 +325,9 @@ export default async function SlugPage({ params }: Props) {
                             {product.specifications ? Object.entries(product.specifications).map(([key, value]) => (
                               <TableRow key={key} className="hover:bg-slate-50 border-slate-100 transition-colors">
                                 <TableCell className="font-black text-slate-900 bg-slate-50/50 w-2/5 py-4 px-6 text-[10px] uppercase tracking-widest border-r">{key}</TableCell>
-                                <TableCell className="text-slate-700 py-4 px-6 text-base font-bold">{value}</TableCell>
+                                <TableCell className="text-slate-700 py-4 px-6 text-base font-bold">
+                                  <FormattedText text={value} />
+                                </TableCell>
                               </TableRow>
                             )) : (
                               <TableRow>
@@ -343,8 +350,12 @@ export default async function SlugPage({ params }: Props) {
                   <Accordion type="single" collapsible className="w-full bg-white p-8 rounded-[3rem] border shadow-xl">
                     {product.faqs.map((faq, index) => (
                       <AccordionItem key={index} value={`faq-${index}`} className="border-b last:border-0">
-                        <AccordionTrigger className="text-left font-black tracking-tight text-slate-900">{faq.question}</AccordionTrigger>
-                        <AccordionContent className="text-slate-600 text-base font-medium">{faq.answer}</AccordionContent>
+                        <AccordionTrigger className="text-left font-black tracking-tight text-slate-900">
+                          <FormattedText text={faq.question} />
+                        </AccordionTrigger>
+                        <AccordionContent className="text-slate-600 text-base font-medium">
+                          <FormattedText text={faq.answer} />
+                        </AccordionContent>
                       </AccordionItem>
                     ))}
                   </Accordion>

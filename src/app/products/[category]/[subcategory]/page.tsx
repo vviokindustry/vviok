@@ -12,6 +12,7 @@ import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table';
 import { resolveImageSource } from '@/lib/utils';
 import { ProductImageGallery } from '@/components/product-image-gallery';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { FormattedText } from '@/components/formatted-text';
 import type { Metadata } from 'next';
 
 export async function generateMetadata({ params }: { params: Promise<{ category: string; subcategory: string }> }): Promise<Metadata> {
@@ -129,10 +130,10 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
         '@type': 'FAQPage',
         mainEntity: product.faqs.map(f => ({
           '@type': 'Question',
-          name: f.question,
+          name: f.question.replace(/\*\*/g, ''),
           acceptedAnswer: {
             '@type': 'Answer',
-            text: f.answer
+            text: f.answer.replace(/\*\*/g, '')
           }
         }))
       }] : [])
@@ -173,7 +174,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
               <div className="space-y-8">
                 <div className="prose prose-slate max-w-none">
                   <div className="text-slate-600 text-lg md:text-xl leading-relaxed font-medium whitespace-pre-wrap">
-                    {product.description}
+                    <FormattedText text={product.description} />
                   </div>
                 </div>
 
@@ -184,7 +185,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                       {product.features.map((feature, idx) => (
                         <div key={idx} className="flex items-start gap-3 text-base md:text-lg text-slate-700 font-bold">
                           <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span>{feature}</span>
+                          <span><FormattedText text={feature} /></span>
                         </div>
                       ))}
                     </div>
@@ -215,7 +216,7 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                 <TabsContent value="description" className="mt-0 outline-none">
                   <div className="max-w-4xl space-y-8">
                     <div className="text-slate-600 text-lg font-medium leading-relaxed whitespace-pre-wrap">
-                      {product.detailedSpecs}
+                      <FormattedText text={product.detailedSpecs} />
                     </div>
                   </div>
                 </TabsContent>
@@ -229,7 +230,9 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                             Object.entries(product.specifications).map(([key, value]) => (
                               <TableRow key={key} className="hover:bg-slate-50 border-slate-100 transition-colors">
                                 <TableCell className="font-black text-slate-900 bg-slate-50/50 w-2/5 py-4 px-6 text-[10px] uppercase tracking-widest border-r">{key}</TableCell>
-                                <TableCell className="text-slate-700 py-4 px-6 text-base font-bold">{value}</TableCell>
+                                <TableCell className="text-slate-700 py-4 px-6 text-base font-bold">
+                                  <FormattedText text={value} />
+                                </TableCell>
                               </TableRow>
                             ))
                           ) : (
@@ -268,10 +271,10 @@ export default async function SubcategoryPage({ params }: { params: Promise<{ ca
                   {product.faqs.map((faq, index) => (
                     <AccordionItem key={index} value={`faq-${index}`} className="border-b border-slate-100 last:border-0 py-2">
                       <AccordionTrigger className="text-left font-black tracking-tight text-slate-900 hover:text-primary transition-colors py-4">
-                        {faq.question}
+                        <FormattedText text={faq.question} />
                       </AccordionTrigger>
                       <AccordionContent className="text-slate-600 text-base leading-relaxed font-medium pb-6">
-                        {faq.answer}
+                        <FormattedText text={faq.answer} />
                       </AccordionContent>
                     </AccordionItem>
                   ))}
