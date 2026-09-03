@@ -237,12 +237,110 @@ export const products: Record<string, ProductDetail[]> = {
   'ss-sintered-powder-cartridge': [generateProductDetails('SS Sintered Powder Cartridge', 'Filter Cartridge', 'product-ss-sintered-1', ['product-ss-sintered-1', 'product-ss-sintered-2', 'product-ss-sintered-3'])],
   'ss-wire-mesh-cartridge': [generateProductDetails('SS Wire Mesh Cartridge', 'Filter Cartridge', 'product-ss-wire-mesh-1', ['product-ss-wire-mesh-1', 'product-ss-wire-mesh-2'])],
   'multi-cartridge-filter-housing': [generateProductDetails('Multi-Cartridge Filter Housing', 'Filter Housing', 'product-multi-cartridge-1', ['product-multi-cartridge-1', 'product-multi-cartridge-2', 'product-multi-cartridge-3'])],
-  'bag-filter-housing': [generateProductDetails('Bag Filter Housing', 'Filter Housing', 'product-bag-housing-1')],
+  'bag-filter-housing': [{
+    name: 'Bag Filter Housing',
+    pageH1: 'Bag Filter Housing Manufacturer & Supplier in India',
+    application: 'Precision liquid-solid clarification, high-flow chemical process filtration, and industrial water treatment systems.',
+    imageId: '/uploads/Bag%20Filter%20Housing%20manufacturer%20supplier%20in%20india.png',
+    imageIds: [
+      '/uploads/Bag%20Filter%20Housing%20manufacturer%20supplier%20in%20india.png',
+      '/uploads/Multi-Bag%20Filter%20Housing%20manufacturer%20supplier%20in%20India%20vviok%20industry.png',
+      '/uploads/Multi-Bag%20Filter%20Housing%20manufacturer%20supplier%20in%20ahmedabad%20vviok%20industry.png',
+      'product-bag-housing-1'
+    ],
+    description: `VVIOK Industry is an established, premier bag filter housing manufacturer and trusted bag filter housing supplier in India, delivering world-class liquid filtration and process clarification systems to chemical, pharmaceutical, petrochemical, water treatment, agrochemical, and food processing plants worldwide. Engineered for high flow capacity, minimal pressure drop, and exceptional dirt-holding efficiency, our precision-fabricated stainless steel bag filter housing assemblies ensure 100% bypass-free separation, protecting downstream process equipment and guaranteeing strict compliance with international manufacturing quality benchmarks.
+
+As a renowned industrial bag filter housing manufacturer, we engineer and fabricate an extensive portfolio of filtration vessels, ranging from compact single bag filter housing models for pilot plants and localized batch processes to heavy-duty multi bag filter housing assemblies built for high-volume industrial pipelines. When process applications require higher flow capacity and extended filtration cycles, our multi-basket series provides unmatched operational flexibility. We manufacture modular single-basket units as well as multi-basket vessels, including precision-engineered 2 bag filter housing setups for continuous medium-capacity flows and heavy-duty 4 bag filter housing vessels engineered for heavy solid-loading streams up to 160 m³/hr and higher without interrupting line pressure. For high-throughput industrial complexes, our multi bag filter housing line extends up to 12-bag and 24-bag vessels tailored to client specifications.
+
+Every industrial bag filter vessel designed by VVIOK Industry is manufactured in strict compliance with ASME Section VIII Division 1, PED 2014/68/EU, and ISO 9001:2015 engineering standards. Manufactured from certified SS 304, SS 316, SS 316L, or specialty alloys like Duplex Stainless Steel, our stainless steel bag filter housing systems offer superior mechanical strength and outstanding resistance against corrosive chemicals, hot process fluids, and volatile solvents. Each unit features internal precision-machined bag seats, heavy-duty stainless steel perforated retainer baskets, top hold-down compression rings, and quick-opening eye-bolt or davit-arm cover lifting mechanisms for rapid, tool-less bag changeovers that drastically reduce operational downtime.
+
+As a dedicated bag filter housing supplier to global markets across more than 18 countries, VVIOK Industry caters to versatile filtration requirements across micron ratings from 0.5 to 1000 microns. Whether you need a standard Size 1 or Size 2 single bag filter housing for fine chemical clarification, a duplex continuous-duty system, or a high-capacity 2 bag filter housing or 4 bag filter housing skid with differential pressure transmitters, automated valves, and sanitary tri-clamp or flanged connections, we deliver tailor-made engineering. Our multi bag filter housing systems are extensively utilized in solvent filtration, pre-RO water treatment, resin processing, paints, coatings, edible oil refining, and industrial effluent recycling.
+
+Every industrial bag filter housing manufactured at our advanced Ahmedabad production facility undergoes rigorous quality assurance, including 100% hydrostatic testing up to 1.5 times design pressure, dye-penetrant examination, pneumatic leak checks, and optional third-party inspection (TUV, BVQI, SGS). By partnering with VVIOK Industry—a top-tier bag filter housing manufacturer and bag filter housing supplier—you receive guaranteed filtration efficiency, turnkey technical support, complete Material Test Certificates (MTC), and export-compliant sea-worthy packaging.`,
+    detailedSpecs: `Comprehensive Engineering Specifications for Industrial Bag Filter Housings:
+
+1. Design Codes & Compliance Standards:
+- ASME Section VIII Div 1 (Boiler and Pressure Vessel Code), EN 13445, PED 2014/68/EU, Good Manufacturing Practice (GMP) compliant, ISO 9001:2015 quality standards.
+
+2. Vessel Types & Structural Configurations:
+- Single Bag Filter Housing: Standard Size 1 (Ø 7" x 17" L), Size 2 (Ø 7" x 32" L), Size 3 (Ø 4" x 9" L), and Size 4 (Ø 4" x 15" L).
+- 2 Bag Filter Housing: Dual-basket vessel handling flow rates up to 80 m³/hr, ideal for continuous medium process pipelines.
+- 4 Bag Filter Housing: Four-basket vessel accommodating up to 160 m³/hr with optimized hydraulic flow distribution.
+- Multi Bag Filter Housing: High-flow multi-basket configurations holding 6, 8, 12, and up to 24 bags for heavy chemical and water clarification up to 1,000+ m³/hr.
+
+3. Materials of Construction (MOC):
+- Stainless Steel: SS 304, SS 304L, SS 316, SS 316L, and Duplex Stainless Steel 2205.
+- Carbon Steel: IS 2062 Grade B / ASTM A106 with corrosion-resistant industrial epoxy coatings.
+
+4. Flow, Pressure & Operating Limits:
+- Design Pressure: 6 Bar, 10 Bar, 16 Bar, up to 25 Bar (ASME stamped on request).
+- Operating Temperature: -20°C to +200°C (depending on gasket selection).
+- Flow Capacity: 5 m³/hr (Single Bag) to 1,000+ m³/hr (Multi-Bag assemblies).
+
+5. Internal Baskets & Sealing Systems:
+- Restrainer Baskets: Heavy-duty perforated stainless steel 316 sheet with optional inner wire mesh liner.
+- Sealing: Positive hold-down spring mechanism ensuring 360-degree axial pressure and zero fluid bypass.
+- Gaskets: Food-grade Silicone, EPDM, Viton (FKM), Nitrile, and PTFE encapsulated.
+
+6. Closures, Connections & Cover Lift Aids:
+- Cover Closure: High-strength swing eye bolts with brass/SS hex nuts, clamp closure for sanitary lines.
+- Cover Lifting Mechanism: Davit arm with handwheel, counterbalanced spring-assist hinge, or hydraulic lifter for multi-bag covers.
+- Nozzle Connections: ANSI B16.5 150# / 300# Flanged, DIN, BSP/NPT threaded, or Tri-Clamp ferrules.
+- Accessories: Differential pressure gauges (DPG), top air vent valve, bottom drain port, and adjustable heavy-duty support legs.`,
+    features: [
+      'Engineered by leading bag filter housing manufacturer with ASME Section VIII compliance',
+      'Available in single bag filter housing, 2 bag filter housing, 4 bag filter housing, and multi bag filter housing units',
+      'Fabricated from high-grade stainless steel (SS 304, SS 316, SS 316L, and Duplex Steel)',
+      '100% bypass-free positive bag hold-down seal mechanism for micron ratings from 0.5 to 1000 µm',
+      'Quick-opening swing bolt and davit arm cover mechanism for fast, tool-free bag replacement',
+      'Equipped with heavy-gauge stainless steel perforated internal support baskets',
+      'Mirror polished sanitary finishes (Ra < 0.4 µm) or industrial acid-pickled and passivated surfaces',
+      '100% hydro-tested to 1.5x design pressure with complete Material Test Certificates (MTC)'
+    ],
+    specifications: {
+      'Housing Configurations': 'Single Bag Housing (Size 1-4), 2 Bag Filter Housing, 4 Bag Filter Housing, Multi-Bag (up to 24 Bags)',
+      'Material of Construction (MOC)': 'SS 304, SS 304L, SS 316, SS 316L, Duplex 2205, Carbon Steel',
+      'Operating Flow Rate': '5 m³/hr to 1,000+ m³/hr (custom engineered)',
+      'Design Pressure Rating': 'Standard 10 Bar / 16 Bar (Custom up to 25 Bar ASME)',
+      'Design Temperature Range': '-20°C to +200°C (depending on elastomer material)',
+      'Filter Bag Compatibility': 'Size 1 (7"x17"), Size 2 (7"x32"), Size 3 (4"x9"), Size 4 (4"x15")',
+      'Micron Retention Rating': '0.5 Micron to 1000 Microns',
+      'Cover Lifting System': 'Davit Arm, Spring Assisted Hinge, or Hydraulic Lift Mechanism',
+      'Inlet / Outlet Connections': '1" to 12" ANSI 150# / 300# Flanged, DIN, BSP/NPT, Tri-Clamp',
+      'Surface Finishing': 'Internal Mirror Polish (Ra < 0.4 µm), External Pickled & Passivated / Bead Blasted',
+      'Testing & Certification': '100% Hydrostatic Test, Dye Penetrant Test, Radiography, ASME / ISO 9001:2015'
+    },
+    faqs: [
+      {
+        question: 'What is the difference between single bag filter housing and multi bag filter housing?',
+        answer: 'A single bag filter housing accommodates one filter bag and is ideal for low-to-medium flow rates (up to 40 m³/hr) in batch processing or compact installations. A multi bag filter housing houses multiple filter bags (such as 2 bag filter housing, 4 bag filter housing, up to 24 bags) in a single vessel, handling high continuous flow rates up to 1,000+ m³/hr with extended service intervals and higher solid-holding capacity.'
+      },
+      {
+        question: 'Why choose a stainless steel bag filter housing over plastic or carbon steel vessels?',
+        answer: 'A stainless steel bag filter housing (fabricated from SS 304 or SS 316L) provides superior mechanical strength, high temperature tolerance up to 200°C, and exceptional resistance against corrosive chemicals, solvents, and acidic streams. In addition, stainless steel can be sanitary polished (Ra < 0.4 µm) to prevent bacterial growth in pharmaceutical, food, and high-purity water applications.'
+      },
+      {
+        question: 'When should our plant install a 2 bag filter housing or 4 bag filter housing?',
+        answer: 'A 2 bag filter housing is the optimal choice when process flow exceeds the capacity of a single bag (typically 40 to 80 m³/hr) or when you want longer cycle times between filter replacements. A 4 bag filter housing is designed for high-capacity industrial lines (80 to 160 m³/hr) with heavy dirt loading, ensuring uninterrupted filtration, lower pressure drops, and balanced fluid distribution.'
+      },
+      {
+        question: 'How does VVIOK Industry ensure zero bypass in industrial bag filter systems?',
+        answer: 'As an experienced bag filter housing manufacturer, we design our vessels with precision-machined internal bag collars and heavy-duty mechanical hold-down spring assemblies. When the vessel cover is clamped down, the hold-down ring applies uniform 360-degree axial pressure on the filter bag top ring, eliminating bypass even during pressure surges.'
+      },
+      {
+        question: 'What quality testing and documentation are supplied with each bag filter housing?',
+        answer: 'Every bag filter housing is 100% hydrostatically tested at 1.5 times the design working pressure and inspected for weld integrity via dye-penetrant testing. As a certified bag filter housing supplier, VVIOK Industry provides comprehensive documentation packages including Material Test Certificates (EN 10204 3.1 MTC), hydrostatic test certificates, dimensional drawings, and operation manuals.'
+      }
+    ],
+    metaTitle: 'Bag Filter Housing Manufacturer & Supplier in India | SS Multi & Single Bag Filters',
+    metaDescription: 'Leading bag filter housing manufacturer and supplier in India. We manufacture stainless steel bag filter housing, single bag, 2 bag, 4 bag, and multi bag filter housing systems.',
+    metaKeywords: 'bag filter housing manufacturer, bag filter housing supplier, stainless steel bag filter housing, multi bag filter housing, industrial bag filter, single bag filter housing, 4 bag filter housing, 2 bag filter housing, bag filter housing india'
+  }],
   'duplex-filter-housing-supplier': [generateProductDetails('Duplex Filter Housing', 'Filter Housing', 'product-duplex-housing-1', ['product-duplex-housing-1', 'product-duplex-housing-2'])],
   'catridge-filter-housing-supplier': [generateProductDetails('Cartridge Filter Housing', 'Filter Housing', 'product-cartridge-housing-1', ['product-cartridge-housing-1', 'product-cartridge-housing-2'])],
   'vent-filter-housing-supplier': [generateProductDetails('Vent Filter Housing', 'Filter Housing', 'product-vent-housing-1', ['product-vent-housing-1', 'product-vent-housing-2', 'product-vent-housing-3'])],
   'industrial-strainer-filter-housing-supplier': [generateProductDetails('Strainer Filter Housing', 'Filter Housing', 'product-strainer-housing-1', ['product-strainer-housing-1', 'product-strainer-housing-2'])],
-  'industrial-multi-bag-filter-housing': [generateProductDetails('Multi-Bag Filter Housing', 'Filter Housing', 'product-multi-bag-1', ['product-multi-bag-1', 'product-multi-bag-2'])],
+  'industrial-multi-bag-filter-housing': [generateProductDetails('Multi-Bag Filter Housing', 'Filter Housing', '/uploads/Multi-Bag%20Filter%20Housing%20manufacturer%20supplier%20in%20India%20vviok%20industry.png', ['/uploads/Multi-Bag%20Filter%20Housing%20manufacturer%20supplier%20in%20India%20vviok%20industry.png', '/uploads/Multi-Bag%20Filter%20Housing%20manufacturer%20supplier%20in%20ahmedabad%20vviok%20industry.png'])],
   'conical-strainer-manufacturer': [generateProductDetails('Conical Strainer', 'Industrial Strainer', 'product-conical-strainer')],
   'basket-strainer-manufacturer': [generateProductDetails('Basket Strainer', 'Industrial Strainer', 'product-vent-filter-1')],
   'pleated-strainer-manufacturer': [generateProductDetails('Pleated Strainer', 'Industrial Strainer', 'product-pleated-strainer')],
