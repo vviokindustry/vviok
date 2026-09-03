@@ -43,6 +43,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/products/storage-tank-supplier',
+        destination: '/products/liquid-storage-tank-supplier-india',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

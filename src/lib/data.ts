@@ -119,7 +119,7 @@ export const productCategories: Category[] = [
     imageId: 'product-custom-filter',
     subcategories: [
       { name: 'Pressure vessel', slug: 'pressure-vessel-supplier-india' },
-      { name: 'Storage Tank', slug: 'storage-tank-supplier' },
+      { name: 'Liquid Storage Tank', slug: 'liquid-storage-tank-supplier-india' },
       { name: 'Purified water storage tank', slug: 'purified-water-storage-tank' },
       { name: 'Air receiver tank', slug: 'air-receiver-tank-supplier-india' },
       { name: 'Chemical Storage Tank', slug: 'chemical-storage-tank-manufacturer-india' },
@@ -446,7 +446,105 @@ As a dedicated **pressure vessel supplier** to leading engineering conglomerates
     metaDescription: 'Premier pressure vessel manufacturer and supplier in India. Specialized in ASME pressure vessel fabrication, stainless steel pressure vessels, and high pressure vessels.',
     metaKeywords: 'pressure vessel manufacturer, pressure vessel supplier, pressure vessel fabrication, stainless steel pressure vessel manufacturers, high pressure vessel manufacturers, composite pressure vessel manufacturers, industrial pressure vessel ahmedabad'
   }],
-  'storage-tank-supplier': [generateProductDetails('Storage Tank', 'Industrial Vessel', '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png', ['/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png'])],
+  'liquid-storage-tank-supplier-india': [{
+    name: 'Liquid Storage Tank',
+    pageH1: 'Liquid Storage Tank Manufacturer, Supplier & SS Tank Fabrication in India',
+    application: 'Hygienic and industrial bulk liquid containment, process fluid storage, chemical solutions, water treatment, dairy, and beverage processing.',
+    imageId: '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png',
+    imageIds: [
+      '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png',
+      '/uploads/pressure%20tank.jpeg',
+      '/uploads/chemical-storage-tank-manufacturer.png'
+    ],
+    description: `VVIOK Industry is a trusted **liquid storage tank manufacturer** and prominent **liquid storage tank supplier** in India, delivering precision-engineered liquid containment solutions for chemical, pharmaceutical, dairy, food processing, water treatment, and petrochemical industries worldwide. Engineered for heavy industrial duty, our liquid storage vessels deliver zero-leakage durability, superior structural integrity, and long-lasting resistance against hydrostatic stress and environmental corrosion.
+
+As recognized **stainless steel storage tank manufacturers**, we fabricate high-performance vertical and horizontal tanks utilizing certified SS 304, SS 304L, SS 316, and SS 316L grades. Each stainless steel vessel is designed in strict compliance with ASME, API 650, and Good Manufacturing Practice (GMP) standards. For pharmaceutical, biotechnology, and food-grade applications, our tanks feature sanitary internal mirror-polishing (Ra < 0.4 µm), crevice-free seamless orbital welding, CIP/SIP spray ball mechanisms, and sterile vent filtration to prevent bacterial contamination and maintain ultimate batch purity.
+
+Distinguished among leading **ss tank manufacturers**, VVIOK Industry provides custom-engineered capacities from 500 liters up to 100,000+ liters. Our manufacturing capability includes atmospheric storage tanks, dimple-jacketed heating and cooling tanks, limpet-coil vessels, agitated blending tanks, and insulated bulk storage silos. While on-site welded vessels form our core specialty, industrial liquid storage requirements often compare welded tanks with modular systems from **bolted steel tank manufacturers**. Unlike bolted designs that rely on internal elastomer gaskets which can degrade when exposed to aggressive industrial fluids or high temperatures, our 100% welded stainless steel vessels guarantee permanent leak-proof performance, superior structural rigidity, and zero maintenance downtime over decades of continuous operation.
+
+As a reliable **liquid storage tank supplier** with exports to over 18 countries, VVIOK Industry subjects every vessel to exhaustive quality assurance protocols. Every tank undergoes 100% hydrostatic fill pressure testing, dye-penetrant examination (DPI), pneumatic leak detection, and complete material traceability supported by EN 10204 3.1 Material Test Certificates (MTC) and third-party inspection agencies.`,
+    detailedSpecs: `Engineering Specifications for Industrial Liquid Storage Tanks:
+
+1. Design Codes & Engineering Standards:
+- Standards: API 650 (Welded Steel Tanks for Oil/Liquid Storage), ASME Section VIII Div 1, and IS 803.
+- Sanitary Compliance: cGMP, US-FDA sanitary guidelines, and EHEDG design principles for food & pharma.
+- Seismic & Wind Loading: Designed for plant-specific seismic zones and high wind velocity compliance.
+
+2. Tank Configurations & Geometries:
+- Vertical Cylindrical Tanks: Conical top, flat/sloped bottom, or dished ends with structural leg, skirt, or lug supports.
+- Horizontal Cylindrical Tanks: Saddle-supported vessels engineered for indoor clearances and skid systems.
+- Jacketed & Insulated Tanks: Dimple jacket or half-pipe limpet coil for steam heating/chilled water cooling with glass wool or PUF insulation and outer SS cladding.
+- Agitated Mixing Tanks: Top-entry mechanical agitators, propeller/turbine mixers, and baffle plates for liquid-liquid or liquid-solid blending.
+
+3. Materials of Construction (MOC):
+- Stainless Steel Grades: AISI SS 304, SS 304L, SS 316, SS 316L, and SS 321.
+- High-Alloy Metals: Duplex 2205 (UNS S32205) and Super Duplex stainless steel for saline or acidic media.
+- Structural Steel: IS 2062 Grade B, SA 516 Gr 70 for external structural supports and saddles.
+
+4. Capacity & Dimensional Range:
+- Standard Capacities: 500 Liters up to 100,000+ Liters (Custom volumetric engineering).
+- Shell Thickness: 3 mm up to 25 mm based on finite element hydrostatic load calculations.
+- Operating Pressure: Atmospheric storage to low-pressure containment (-0.5 bar vacuum to +5 bar gauge).
+
+5. Standard Fittings & Nozzle Connections:
+- Top/Side Manway: Quick-opening davit arm manhole (400 mm - 600 mm diameter) with EPDM, Silicon, or PTFE gasket.
+- Clean-In-Place (CIP): 360-degree rotary spray ball nozzles for sterile automated washing.
+- Instrumentation Ports: Radar / ultrasonic level transmitter nozzles, RTD temperature sensor thermowell, and pressure relief valve (PRV).
+- Sanitary Connections: SMS, DIN, Tri-Clamp, and ANSI B16.5 flanged process connections.
+
+6. Non-Destructive Examination & Certification:
+- 100% Hydrostatic fill leak testing held for 24 hours.
+- Dye-Penetrant Examination (DPT) on circumferential and longitudinal welds.
+- Weld radiography / ultrasonic examination where mandated by design codes.
+- Complete documentation: EN 10204 3.1 Material Test Certificates (MTC) and Third-Party Inspection (TUV, SGS, BVQI) compliance.`,
+    features: [
+      'Precision engineering by a certified **liquid storage tank manufacturer** adhering to API 650 and ASME standards',
+      'High-grade metallurgy by experienced **stainless steel storage tank manufacturers** using SS 304, SS 316L, and Duplex alloys',
+      'Versatile manufacturing by trusted **ss tank manufacturers** with capacities from 500 Liters to 100,000+ Liters',
+      'Permanent leak-proof welded integrity offering superior durability over modular **bolted steel tank manufacturers**',
+      'Hygienic mirror polish (Ra < 0.4 µm) with orbital welding and CIP/SIP rotary spray systems for pharma and food duty',
+      'Configurable with dimple heating/cooling jackets, limpet coils, and polyurethane (PUF) insulation cladding',
+      '100% hydrostatically tested and dye-penetrant verified for zero-defect leak resistance',
+      'Export-ready **liquid storage tank supplier** delivering to 18+ countries with EN 10204 3.1 MTC certification'
+    ],
+    specifications: {
+      'Storage Capacity': '500 Liters to 100,000+ Liters (Custom Diameters & Heights)',
+      'Design Standards': 'API 650, ASME Section VIII Div 1, IS 803, Good Manufacturing Practice (GMP)',
+      'Material of Construction': 'SS 304, SS 304L, SS 316, SS 316L, Duplex 2205, Carbon Steel',
+      'Tank Orientation': 'Vertical Cylindrical (Leg / Skirt Supported) or Horizontal (Saddle Supported)',
+      'Thermal Options': 'Single Skin, Dimple Jacketed, Half-Pipe Limpet Coil, PUF / Rockwool Insulated',
+      'Agitation & Mixing': 'Optional Top-Mounted Geared Agitators (Anchor, Turbine, Propeller)',
+      'Surface Finish': 'Internal Sanitary Mirror Polish (Ra < 0.4 µm / Electropolish), External Satin / 2B Finish',
+      'Testing & QA': '100% Hydrostatic Water Test (24 hrs), Dye Penetrant Testing (DPT), Radiography (RT)',
+      'Nozzles & Fittings': 'ANSI 150# Flanges, Tri-Clamp Ferrule, Side/Top Manway (400-600mm), CIP Rotary Spray Balls'
+    },
+    faqs: [
+      {
+        question: 'What capacities and designs do you provide as a liquid storage tank manufacturer?',
+        answer: 'As a custom **liquid storage tank manufacturer**, VVIOK Industry designs and fabricates vertical and horizontal tanks ranging from 500 liters to over 100,000 liters. Our designs include atmospheric storage, dimple-jacketed heating/cooling vessels, limpet-coil reactors, and insulated tanks for chemical, pharma, and food sectors.'
+      },
+      {
+        question: 'Why choose ss tank manufacturers over modular bolted steel tank manufacturers?',
+        answer: 'While **bolted steel tank manufacturers** offer sectional modular panels joined by elastomer seals, specialized **ss tank manufacturers** like VVIOK Industry deliver 100% welded stainless steel vessels. Welded SS tanks eliminate gasket degradation, eliminate leak pathways for aggressive liquids, withstand higher temperatures, and require practically zero maintenance.'
+      },
+      {
+        question: 'What makes your solutions unique among stainless steel storage tank manufacturers?',
+        answer: 'As specialized **stainless steel storage tank manufacturers**, we utilize certified SS 304 and SS 316L materials with precision orbital welding and internal sanitary polishing down to Ra < 0.4 µm. Combined with CIP/SIP automated washing nozzles and sterile air breathers, our tanks prevent microbial build-up in high-purity processes.'
+      },
+      {
+        question: 'Can your liquid storage tanks be fitted with thermal jackets and agitators?',
+        answer: 'Yes, our engineering team manufactures liquid storage tanks with laser-welded dimple jackets or half-pipe limpet coils for heating and cooling using steam, chilled water, or thermic fluids, paired with custom-designed top-entry mechanical mixers and high-density insulation.'
+      },
+      {
+        question: 'What documentation and testing do you provide as an international liquid storage tank supplier?',
+        answer: 'As an established **liquid storage tank supplier**, every vessel delivered by VVIOK Industry includes a complete QA dossier featuring EN 10204 3.1 Material Test Certificates (MTC), 24-hour hydrostatic test reports, weld NDT inspections, and third-party inspection certifications from TUV, SGS, or Bureau Veritas.'
+      }
+    ],
+    metaTitle: 'Liquid Storage Tank Manufacturer & Supplier India | SS Storage Tank',
+    metaDescription: 'Leading liquid storage tank manufacturer and supplier in India. Specialized in stainless steel storage tanks, ASME & API 650 ss tank fabrication.',
+    metaKeywords: 'liquid storage tank manufacturer, liquid storage tank supplier, stainless steel storage tank manufacturers, ss tank manufacturers, bolted steel tank manufacturers, ss storage tank ahmedabad india'
+  }],
+  'storage-tank-supplier': [generateProductDetails('Liquid Storage Tank', 'Industrial Vessel', '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png', ['/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png'])],
   'purified-water-storage-tank': [generateProductDetails('Purified Water Storage Tank', 'Industrial Vessel', 'product-purified-water-tank')],
   'air-receiver-tank-supplier-india': [generateProductDetails('Air Receiver Tank', 'Industrial Vessel', '/uploads/Air%20receiver%20tank%20manufacturer%20supplier%20in%20india%20-vviok%20industry.jpeg')],
   'chemical-storage-tank-manufacturer-india': [{
