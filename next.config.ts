@@ -50,6 +50,11 @@ const nextConfig: NextConfig = {
         destination: '/products/liquid-storage-tank-supplier-india',
         permanent: true,
       },
+      {
+        source: '/products/ss-pendants',
+        destination: '/products/stainless-steel-pendant-manufacturer',
+        permanent: true,
+      },
     ];
   },
 };

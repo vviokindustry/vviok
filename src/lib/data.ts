@@ -124,7 +124,7 @@ export const productCategories: Category[] = [
       { name: 'Air receiver tank', slug: 'air-receiver-tank-supplier-india' },
       { name: 'Chemical Storage Tank', slug: 'chemical-storage-tank-manufacturer-india' },
       { name: 'Oil Storage Tank', slug: 'oil-storage-tank-manufacturer-india' },
-      { name: 'SS pendants', slug: 'ss-pendants' },
+      { name: 'Stainless Steel Pendants', slug: 'stainless-steel-pendant-manufacturer' },
     ]
   }
 ];
@@ -906,5 +906,101 @@ When choosing an industrial oil storage tank in india, partnering with establish
     metaDescription: 'VVIOK Industry is a trusted Oil Storage Tank Manufacturer & Supplier in India, offering high-quality storage tanks designed for safe and reliable handling of various chemicals and industrial liquids.',
     metaKeywords: 'oil storage tank manufacturer, bulk oil storage tanks, oil tank suppliers, oil tank manufacturers, oil storage tank manufacturers in india, oil tank manufacturers in india, oil storage tank in india, industrial oil tanks, fuel storage tank india'
   }],
-  'ss-pendants': [generateProductDetails('SS Pendants', 'Industrial Vessel', 'product-ss-pendants')],
+  'stainless-steel-pendant-manufacturer': [{
+    name: 'Stainless Steel Utility Pendant',
+    pageH1: 'Stainless Steel Pendant Manufacturer & Cleanroom Utility Systems Supplier in India',
+    application: 'Overhead cleanroom distribution of pneumatic lines, process gases, purified water, electrical power, and data communication for pharmaceutical, biotech, and sterile processing suites.',
+    imageId: '/uploads/stainless-steel-pendant-manufacturer.png',
+    imageIds: [
+      '/uploads/stainless-steel-pendant-manufacturer.png',
+      '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png',
+      '/uploads/pressure%20tank.jpeg'
+    ],
+    description: `VVIOK Industry is an established, premier **stainless steel pendant manufacturer** in India, engineering high-grade sanitary cleanroom utility management systems for pharmaceutical manufacturing plants, biotechnology laboratories, sterile filling suites, and healthcare facilities worldwide. In strictly regulated Grade A and Grade B cleanroom environments, routing vital process utilities across floors creates severe contamination risks, trip hazards, and cleaning obstructions. Our **Pharmaceutical Stainless Steel Utility Pendants** resolve these operational challenges by providing streamlined overhead distribution for pneumatic lines, process gases, purified fluids, cleanroom electrical power, and data communication directly to process equipment and workbenches.
+
+As a distinguished **stainless steel pendant supplier**, we design and fabricate each pendant column using certified AISI 304 and AISI 316L stainless steel. Engineered in compliance with cGMP, ISO 14644 cleanroom standards, and US-FDA hygiene guidelines, our pendants feature crevice-free seamless construction with mirror-polished or satin electro-polished finishes (Ra < 0.4 µm). This ultra-smooth, non-shedding exterior withstands aggressive daily sanitization protocols, including direct wipes with Isopropyl Alcohol (IPA), sporicidal disinfectants, and Vaporized Hydrogen Peroxide (VHP) bio-decontamination, without surface pitting or microbial entrapment.
+
+Recognized as an agile **custom stainless steel pendant manufacturer**, VVIOK Industry builds bespoke utility configurations tailored to precise cleanroom layouts and process skid heights. Whether your facility requires rigid ceiling-mounted drop pendants, single or double articulated swing-arm arms with 330-degree rotation, or ergonomic motorized height-adjustable systems, we engineer internal segregation chambers to isolate electrical wiring from high-pressure gas and liquid lines. Each pendant is fitted with flush-mounted IP65/IP66 electrical receptacles, gas quick-connect couplers, and sterile tri-clamp process terminations.
+
+Furthermore, our streamlined aerodynamic profiles are designed to minimize turbulence under ceiling HEPA fan filter units (FFUs), preserving cleanroom laminar airflow. Every unit undergoes rigorous factory acceptance testing (FAT), pneumatic line helium leak testing, electrical insulation and earth bonding verification, and complete material traceability supported by EN 10204 3.1 Material Test Certificates (MTC) and DQ/IQ validation documentation.`,
+    detailedSpecs: `Comprehensive Engineering Specifications for Cleanroom Stainless Steel Utility Pendants:
+
+1. Regulatory Standards & Cleanroom Compliance:
+- Cleanroom Classification: ISO 14644-1 Class 5 to Class 8 (Grade A, B, C, D Cleanrooms).
+- Good Manufacturing Practices: cGMP, US-FDA 21 CFR Part 211, and EHEDG hygienic guidelines.
+- Ingress Protection: IP65 / IP66 rated flush service panels resistant to high-pressure sanitizing washdowns.
+
+2. Materials of Construction (MOC):
+- Column & Structural Enclosure: High-grade AISI Stainless Steel 304, 304L, or 316L (heavy gauge 2.0 mm to 3.0 mm sheet).
+- Internal Tubing: Seamless SS 316L electro-polished tubing for clean gases (compressed air, N2, O2, vacuum, WFI).
+- Gaskets & Seals: FDA-approved USP Class VI medical-grade silicone seals for zero particle shedding.
+
+3. Surface Treatment & Finish:
+- Surface Roughness: Internal & external mirror polish or sanitary satin electro-polish to Ra < 0.4 µm (15 µ-in).
+- Passivation: ASTM A967 chemical pickling and passivation treatment to eliminate free iron and prevent surface oxidation.
+- Cleanability: Crevice-free, radiused corners, flush-mounted bezels with no exposed screw threads or dirt traps.
+
+4. Structural Formats & Mounting Options:
+- Fixed Ceiling Pendants: Rigid vertical square or round cylindrical columns suspended from structural ceiling trusses with sanitary ceiling escutcheon plates.
+- Articulated Swing-Arm Pendants: Single or dual horizontal swivel arms providing smooth 330° rotation with friction brakes and internal stops.
+- Motorized Telescopic Pendants: Electric motorized height adjustability with ergonomic pendant control pendant for operator convenience.
+
+5. Integrated Cleanroom Utilities:
+- Pneumatic & Gas Services: Quick-release stainless steel couplings (Rectus / Festo / Parker standard) for compressed air, nitrogen (N2), carbon dioxide (CO2), and process vacuum.
+- Pure Water / Process Fluids: 0.5" - 1.0" Sanitary Tri-Clamp ferrule connections for Purified Water (PW) or Water for Injection (WFI).
+- Electrical Sockets: Industrial cleanroom-grade flameproof / weatherproof IP65-IP66 sockets (110V, 230V, 415V 3-phase) with spring-loaded silicone sealing covers.
+- Data & Monitoring: RJ45 Cat6 Ethernet ports, USB, emergency stop buttons, and digital pressure/vacuum gauges.
+
+6. Testing, Quality Assurance & Documentation:
+- Helium leak testing and hydrostatic/pneumatic pressure testing on all integrated fluid lines.
+- Dielectric insulation resistance and high-voltage earth continuity testing for electrical safety.
+- Complete QA dossier: EN 10204 3.1 Material Test Certificates (MTC), surface roughness Ra reports, and FAT / SAT documentation.`,
+    features: [
+      'Precision engineering by an accredited **stainless steel pendant manufacturer** adhering to cGMP and ISO 14644 norms',
+      'Advanced **Pharmaceutical Stainless Steel Utility Pendants** eliminating floor hazards and promoting unidirectional cleanroom airflow',
+      'Certified **stainless steel pendant supplier** utilizing premium AISI 304 and AISI 316L with Ra < 0.4 µm electro-polishing',
+      'Experienced **custom stainless steel pendant manufacturer** delivering fixed, articulated swing-arm, and motorized height options',
+      'Complete internal physical segregation separating high-voltage electrical conduits from gas and liquid process lines',
+      'Flush-mounted IP65 / IP66 electrical receptacles, gas quick-connect couplers, and sanitary tri-clamp fluid nozzles',
+      'Fully resistant to daily chemical washdowns with Isopropyl Alcohol (IPA), sporicide agents, and VHP bio-decontamination',
+      '100% factory leak-tested and electrically certified with EN 10204 3.1 Material Test Certificates (MTC)'
+    ],
+    specifications: {
+      'Product Name': 'Pharmaceutical Stainless Steel Cleanroom Utility Pendant',
+      'Design Compliance': 'cGMP, ISO 14644-1 (Grade A/B/C/D), US-FDA 21 CFR, IP65/IP66',
+      'Material of Construction (MOC)': 'AISI SS 304, SS 304L, SS 316, SS 316L (2.0 mm - 3.0 mm thickness)',
+      'Surface Finish': 'Sanitary Electro-polished Mirror / Satin Finish (Ra < 0.4 µm to 0.8 µm)',
+      'Mounting Styles': 'Rigid Ceiling Drop Column, Single/Double Articulated Swing-Arm (330°), Motorized Telescopic',
+      'Electrical Services': 'Cleanroom IP65/IP66 Sockets (110V, 230V, 415V 3-Phase), Flameproof Ex-d Options, RJ45 Data',
+      'Pneumatic & Gas Services': 'Quick Couplers for Compressed Air, Nitrogen (N2), Oxygen (O2), Carbon Dioxide (CO2), Vacuum',
+      'Fluid Services': 'Sanitary Tri-Clamp (TC) Ferrule Connections for Purified Water (PW), WFI, Clean Steam',
+      'Quality Testing': 'Pneumatic Pressure Leak Test, Dielectric Insulation & Earth Continuity Test, Ra Profilometer'
+    },
+    faqs: [
+      {
+        question: 'What are Pharmaceutical Stainless Steel Utility Pendants and why are they used in cleanrooms?',
+        answer: 'Our **Pharmaceutical Stainless Steel Utility Pendants** are overhead ceiling-suspended or articulated service columns engineered to supply power, clean gases, vacuum, and process fluids directly to workstations, skids, and biosafety cabinets. By eliminating floor-level cords and tubing, they prevent tripping hazards, enhance airflow patterns, and ensure strict compliance with cGMP and ISO 14644 cleanroom cleanliness standards.'
+      },
+      {
+        question: 'What capabilities distinguish VVIOK Industry as a leading stainless steel pendant manufacturer?',
+        answer: 'As a dedicated **stainless steel pendant manufacturer**, VVIOK Industry designs high-integrity SS 304 and SS 316L columns featuring crevice-free seamless welding and mirror/electropolished surface finishes (Ra < 0.4 µm). Our pendants are engineered to withstand rigorous cleaning with isopropyl alcohol (IPA) and vaporized hydrogen peroxide (VHP) without surface corrosion or particle shedding.'
+      },
+      {
+        question: 'How does a custom stainless steel pendant manufacturer tailor units for specific cleanroom setups?',
+        answer: 'As an experienced **custom stainless steel pendant manufacturer**, we tailor every unit to match specific ceiling heights, cleanroom classifications, and utility requirements. Options include fixed drop columns, single/double articulated swing arms with 330° rotation, motorized vertical elevation, segregated internal cable ducts, and customized faceplate arrangements.'
+      },
+      {
+        question: 'What utilities can be integrated into a cleanroom utility pendant by a stainless steel pendant supplier?',
+        answer: 'As a comprehensive **stainless steel pendant supplier**, we integrate clean compressed air, nitrogen (N2), pure steam, vacuum ports, sanitary purified water (WFI/PW) quick couplings, flameproof or IP65/IP66 electrical sockets (110V/230V/415V), RJ45 data connectors, and analog/digital pressure transmitters.'
+      },
+      {
+        question: 'What quality testing and documentation are provided with every stainless steel pendant?',
+        answer: 'Each pendant manufactured by VVIOK Industry undergoes stringent factory acceptance testing (FAT), dielectric insulation and earth bonding tests, pneumatic helium/pressure leak tests on gas lines, and full surface profilometer measurements. Complete documentation packages include EN 10204 3.1 Material Test Certificates (MTC) and DQ/IQ validation support.'
+      }
+    ],
+    metaTitle: 'Stainless Steel Pendant Manufacturer & Supplier | Cleanroom Utility Pendants',
+    metaDescription: 'Leading stainless steel pendant manufacturer in India. Specializing in custom pharmaceutical stainless steel utility pendants, cleanroom service columns, and SS pendants.',
+    metaKeywords: 'stainless steel pendant manufacturer, stainless steel pendant supplier, custom stainless steel pendant manufacturer, Pharmaceutical Stainless Steel Utility Pendants, cleanroom utility pendant, ss pendant ahmedabad india'
+  }],
+  'ss-pendants': [generateProductDetails('Stainless Steel Pendant', 'Utility Equipment', '/uploads/stainless-steel-pendant-manufacturer.png', ['/uploads/stainless-steel-pendant-manufacturer.png'])],
 };
