@@ -641,7 +641,102 @@ Our standardized and custom configurations are engineered for seamless operation
     metaDescription: 'Leading purified water storage tank manufacturer in India. Specializing in sanitary stainless steel water tanks, 1000 & 5000 gallon vertical SS tanks, and large water tanks.',
     metaKeywords: 'purified water storage tank, filtered water storage tank, large water tank, metal water tank, fuel storage tanks, 1000 gallon water tank, 5000 Gallon Vertical SS Tank, stainless steel water tank, vviok industry'
   }],
-  'air-receiver-tank-supplier-india': [generateProductDetails('Air Receiver Tank', 'Industrial Vessel', '/uploads/Air%20receiver%20tank%20manufacturer%20supplier%20in%20india%20-vviok%20industry.jpeg')],
+  'air-receiver-tank-supplier-india': [{
+    name: 'Air Receiver Tank',
+    pageH1: 'Air Receiver Tank Manufacturer, Supplier & Industrial Pressure Vessel Fabrication in India',
+    application: 'Pressure dampening, pulsation absorption, moisture condensation separation, and air buffer storage for rotary screw and reciprocating compressor systems.',
+    imageId: '/uploads/Air%20receiver%20tank%20manufacturer%20supplier%20in%20india%20-vviok%20industry.jpeg',
+    imageIds: [
+      '/uploads/Air%20receiver%20tank%20manufacturer%20supplier%20in%20india%20-vviok%20industry.jpeg',
+      '/uploads/pressure%20tank.jpeg',
+      '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png'
+    ],
+    description: `VVIOK Industry is a premier **air receiver tank manufacturer in india**, engineering high-integrity pressure vessels designed to optimize compressed air systems across pharmaceutical, textile, automotive, chemical, and heavy manufacturing sectors. In modern industrial automation, an air receiver plays a vital role as a dampening buffer between dynamic pneumatic demand and air compressors. Engineered to ASME Section VIII Division 1 and IS 2825 codes, each vessel stabilizes distribution line pressure, prevents compressor short-cycling, and significantly reduces energy consumption and mechanical wear on compressor motors.
+
+As a specialized **air tank manufacturer**, we engineer both heavy-duty carbon steel and sanitary stainless steel vessels (SS 304 and SS 316L) capable of sustaining continuous working pressures from 7 bar up to 40+ bar. In industrial compressed air circuits, an air receiver acts as an effective primary stage for moisture separation; as warm compressed air enters the expanded volume of the vessel, the velocity drops, allowing suspended water droplets, oil mist, and condensate to coalesce and drain out prior to reaching downstream desiccant dryers or micro-filters.
+
+While horizontal orientations are available for compressor-mounted skid packages, our flagship **vertical air receivers** remain the industry standard across industrial plant rooms due to their compact footprint, superior structural stability, and optimal gravity condensation drainage. As a trusted **air receiver tank supplier**, VVIOK Industry delivers standard capacities from 250 liters up to 20,000+ liters, custom-built to match rotary screw, reciprocating, and centrifugal compressor ratings.
+
+Whether your facility requires an auxiliary **compressor tank** to buffer high-draw pneumatic machinery or a rugged, certified **compressed air tank** for round-the-clock heavy manufacturing, our vessels are manufactured with 100% radiographic weld testing, ultrasonic thickness gauging, and hydrostatic pressure testing at 1.5 times the design working pressure. Backed by PESO, CE, and ASME compliance, VVIOK Industry supplies export-quality air receivers to clients across India and in more than 18 countries worldwide.`,
+    detailedSpecs: `Comprehensive Engineering Specifications for Industrial Air Receiver Vessels:
+
+1. Design Codes & Safety Compliance:
+- Pressure Vessel Standards: ASME Boiler and Pressure Vessel Code Section VIII Division 1 (Design & Fabrication).
+- Indian Standard: IS 2825 (Code for Unfired Pressure Vessels) & PESO (SMPV Rules) statutory approval.
+- International Conformity: European Pressure Equipment Directive (PED 2014/68/EU) & EN 286-1.
+
+2. Materials of Construction (MOC):
+- Carbon Steel: SA 516 Grade 70 (Boiler Quality Plate for high tensile strength) or IS 2062 Grade B.
+- Stainless Steel: AISI SS 304, SS 304L, SS 316, and SS 316L for hygienic, pharma cleanroom, or coastal environments.
+- Fasteners & Gaskets: High-tensile B7/2H stud bolts and CAF / Non-Asbestos / PTFE flange gaskets.
+
+3. Pressure Ratings & Dimensional Capacity:
+- Volumetric Range: 250 Liters up to 20,000+ Liters (Custom volume calculations based on compressor CFM).
+- Operating Pressures: 7 bar, 10 bar, 16 bar, 25 bar, up to 40+ bar (High-Pressure Series).
+- Shell & Head Thickness: 6 mm to 25 mm based on finite element ASME membrane stress calculations.
+
+4. Vessel Geometry & Orientation:
+- Vertical Cylindrical: Supported on heavy structural pipe legs with base plates or cylindrical rolled skirt.
+- Horizontal Cylindrical: Saddle-supported vessels with lifting lugs and anchor bolt slots.
+- Dished Heads: 2:1 Ellipsoidal or Torispherical dished ends formed by cold spinning and stress relieved.
+
+5. Surface Treatment & Protective Coating:
+- Internal Preparation: Thorough solvent cleaning and anti-corrosive epoxy primer (optional internal lining).
+- External Coating: Grit blasting to SA 2.5 standard, followed by zinc phosphate primer and heavy-duty polyurethane (PU) finish coat in RAL safety industrial colors.
+
+6. Standard Nozzle Schedule & Safety Mountings:
+- Inlet & Outlet Ports: Flanged connections (ANSI 150# / 300#) or BSP/NPT female threaded couplings.
+- Safety Relief Valve (SRV): High-capacity ASME certified spring-loaded safety valve factory set at design pressure.
+- Pressure Gauge: Glycerin-filled dial pressure gauge with syphon tube and isolation needle cock.
+- Condensate Drain: Auto-drain valve (electronic timer controlled or zero-air-loss float drain) and manual bypass ball valve.
+- Inspection Openings: Handhole (100x150 mm) or elliptical/round manway (400 mm - 500 mm ID) for periodic internal vessel inspection.`,
+    features: [
+      'Heavy-duty design by a certified **air receiver tank manufacturer in india** complying with ASME Sec VIII Div 1 & IS 2825',
+      'Optimized space-saving **vertical air receivers** engineered for superior gravity condensate drainage',
+      'High-pressure rated **compressed air tank** systems designed for working pressures from 7 bar up to 40+ bar',
+      'Reliable energy-saving **compressor tank** buffer preventing rotary screw and reciprocating compressor short-cycling',
+      'Custom metallurgy by an experienced **air tank manufacturer** utilizing SA 516 Gr 70, IS 2062, SS 304, and SS 316L',
+      'Global **air receiver tank supplier** exporting to 18+ countries with PESO and third-party inspection certifications',
+      'Equipped with ASME calibrated safety relief valves (SRV), pressure gauges, and electronic auto-drain assemblies',
+      '100% hydrostatically pressure tested at 1.5x design pressure and non-destructively weld inspected'
+    ],
+    specifications: {
+      'Storage Capacity': '250 Liters to 20,000+ Liters (Custom volumetric engineering)',
+      'Design Standards': 'ASME Section VIII Div 1, IS 2825, EN 286, PESO (SMPV Rules)',
+      'Design Working Pressure': '7 bar, 10 bar, 16 bar, 25 bar, up to 40 bar (Custom high pressure)',
+      'Hydrostatic Test Pressure': '1.5 x Design Working Pressure (Held for duration of inspection)',
+      'Orientation': 'Vertical Cylindrical (Leg / Skirt Supported) or Horizontal (Saddle Supported)',
+      'Material of Construction (MOC)': 'Carbon Steel (SA 516 Gr 70, IS 2062 Gr B) / Stainless Steel (SS 304, SS 316L)',
+      'Corrosion Protection': 'Internal Epoxy Priming (optional), External High-Gloss Polyurethane (PU) Coating',
+      'Standard Accessories': 'Safety Relief Valve (SRV), Dial Pressure Gauge, Auto-Drain Valve, Inspection Handhole / Manway',
+      'Testing & Certification': '100% Hydrostatic Test, Dye Penetrant Testing (DPT), Ultrasonic / Radiography Testing (RT)'
+    },
+    faqs: [
+      {
+        question: 'What is the primary role of an air receiver in an industrial pneumatic network?',
+        answer: 'An air receiver acts as a pressure buffer between the compressor and pneumatic machinery. It dampens pressure pulsations, stabilizes plant-wide line pressure, separates condensation moisture via velocity reduction, and supplies sudden high-volume air demands without causing compressor short-cycling or motor overheating.'
+      },
+      {
+        question: 'Why are vertical air receivers favored over horizontal configurations?',
+        answer: 'Our **vertical air receivers** are favored across industrial plants primarily because they occupy a significantly smaller floor footprint and promote superior gravity condensation drop-out. Moisture and oil mist settle naturally at the bottom dished end, where an automated drain valve can discharge them cleanly without contaminating downstream air lines.'
+      },
+      {
+        question: 'What pressure ratings and capacities are supplied by an air tank manufacturer like VVIOK Industry?',
+        answer: 'As a versatile **air tank manufacturer**, VVIOK Industry fabricates tanks ranging from 250 liters to 20,000+ liters with pressure ratings of 7 bar, 10 bar, 16 bar, and heavy-duty high-pressure designs up to 40+ bar, engineered in high-tensile carbon steel (SA 516 Gr 70) and stainless steel grades.'
+      },
+      {
+        question: 'How do you determine the correct size of a compressor tank for an air compressor system?',
+        answer: 'A properly sized **compressor tank** typically holds between 10% to 20% of the compressor’s total CFM flow rating (rule of thumb: approximately 3 to 5 gallons of receiver capacity per CFM of compressor output). This buffer volume prevents frequent compressor loading/unloading cycles and prolongs equipment lifespan.'
+      },
+      {
+        question: 'What safety certifications and testing does a trusted air receiver tank supplier provide?',
+        answer: 'As an accredited **air receiver tank supplier**, every vessel manufactured by VVIOK Industry is subjected to 100% hydrostatic testing at 1.5 times the maximum allowable working pressure (MAWP). Tanks are delivered with comprehensive documentation, including ASME / IS 2825 compliance reports, PESO approval dossiers, and third-party inspection certifications from agencies like TUV, SGS, and BVQI.'
+      }
+    ],
+    metaTitle: 'Air Receiver Tank Manufacturer in India | Vertical Air Receivers Supplier',
+    metaDescription: 'Leading air receiver tank manufacturer in India. Fabricating vertical air receivers, compressor tanks, and ASME certified compressed air tanks from 250L to 20,000L.',
+    metaKeywords: 'air receiver tank manufacturer in india, vertical air receivers, compressor tank, air receiver tank supplier, air tank manufacturer, compressed air tank, vviok industry'
+  }],
   'chemical-storage-tank-manufacturer-india': [{
     name: 'Chemical Storage Tank',
     pageH1: 'Chemical Storage Tank manufacturer',
