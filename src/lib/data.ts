@@ -545,7 +545,102 @@ As a reliable **liquid storage tank supplier** with exports to over 18 countries
     metaKeywords: 'liquid storage tank manufacturer, liquid storage tank supplier, stainless steel storage tank manufacturers, ss tank manufacturers, bolted steel tank manufacturers, ss storage tank ahmedabad india'
   }],
   'storage-tank-supplier': [generateProductDetails('Liquid Storage Tank', 'Industrial Vessel', '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png', ['/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png'])],
-  'purified-water-storage-tank': [generateProductDetails('Purified Water Storage Tank', 'Industrial Vessel', 'product-purified-water-tank')],
+  'purified-water-storage-tank': [{
+    name: 'Purified Water Storage Tank',
+    pageH1: 'Purified Water Storage Tank Manufacturer, Supplier & Sanitary SS Vessel Fabrication',
+    application: 'Sanitary storage and distribution of USP-grade Purified Water (PW), Water for Injection (WFI), RO permeate, and pharmaceutical process water.',
+    imageId: '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png',
+    imageIds: [
+      '/uploads/Storage%20Tank%20Manufacturer%20-Vviok%20industry.png',
+      '/uploads/pressure%20tank.jpeg',
+      '/uploads/Air%20receiver%20tank%20manufacturer%20supplier%20in%20india%20-vviok%20industry.jpeg'
+    ],
+    description: `VVIOK Industry is an established, premier engineering specialist manufacturing high-purity sanitary process vessels, delivering world-class **purified water storage tank** solutions for pharmaceutical, biotechnology, healthcare, cosmetic, and food processing facilities across India and global markets. In sterile production environments, maintaining the microbiological and chemical purity of Purified Water (PW) and Water for Injection (WFI) demands zero-compromise engineering. Our vessels are manufactured in strict compliance with cGMP, US-FDA, and ASME BPE (Bioprocessing Equipment) standards to ensure total prevention of biofilm development, microbial proliferation, and particulate contamination.
+
+Whether your facility requires a closed-loop post-filtration buffer or a dedicated **filtered water storage tank** to store reverse osmosis (RO) permeate and deionized water, our sanitary storage systems are built to sustain continuous recirculation at ambient or elevated temperatures (65°C–80°C). Fabricated from certified austenitic alloys like AISI 316L for all product contact parts, each **stainless steel water tank** features an internal surface finish mechanically polished and electro-polished to Ra < 0.4 µm, completely free of crevices, dead-legs, or rough weld seams that could harbor bacteria.
+
+For applications requiring substantial reserve volumes, VVIOK Industry engineers custom industrial **large water tank** solutions with capacities ranging from 500 liters up to 100,000+ liters. Unlike plastic or polymer containers that risk chemical leaching, UV degradation, and bacterial adherence, choosing a heavy-duty **metal water tank** provides structural rigidity, heat sterilization compatibility, and decades of reliable service life. In addition to high-purity water systems, our heavy industrial fabrication works also deliver rugged ASME-compliant storage vessels, chemical tanks, and industrial **fuel storage tanks** for plant utility infrastructure.
+
+Our standardized and custom configurations are engineered for seamless operational integration. For medium-scale modular skids and pilot production lines, we provide our popular **1000 gallon water tank** model, designed with compact footprints and integrated clean-in-place (CIP) and steam-in-place (SIP) spray assemblies. For high-volume manufacturing facilities, our flagship **5000 Gallon Vertical SS Tank** offers high-capacity storage with sanitary dished ends, conical or torispherical bottom drain transitions, load cell mounting lugs, and automated sterile vent filtration assemblies. Every vessel is hydrostatically tested, passivated, and delivered with complete EN 10204 3.1 Material Test Certificates (MTC) and validation dossiers.`,
+    detailedSpecs: `Comprehensive Engineering Specifications for Sanitary Water Storage Tanks:
+
+1. Design Standards & Regulatory Compliance:
+- Biopharmaceutical Standards: ASME BPE (Bioprocessing Equipment) current edition.
+- Pressure & Vessel Codes: ASME Boiler and Pressure Vessel Code Section VIII Division 1 & IS 2825.
+- Regulatory Guidelines: US-FDA 21 CFR, cGMP, WHO-GMP, and European Pharmacopoeia (EP).
+
+2. Materials of Construction (MOC):
+- Product Contact Surfaces: AISI Stainless Steel 316L (low carbon, high molybdenum for maximum pitting resistance).
+- Non-Contact Surfaces & Jackets: AISI Stainless Steel 304 / 304L.
+- Gaskets & Elastomers: USP Class VI compliant FDA-grade Silicone, EPDM, or PTFE.
+
+3. Surface Finish & Passivation:
+- Internal Contact Finish: Mirror Polished & Electro-polished to Ra < 0.4 µm (15 µ-in) with comprehensive profilometer certification.
+- External Finish: Scotch-Brite / Satin Matt finish to Ra < 0.8 µm.
+- Chemical Treatment: Complete chemical pickling and passivation as per ASTM A380 / A967 with riboflavin testing verification.
+
+4. Vessel Geometry & Sanitary Drainage:
+- Top Closure: Torispherical dished end or shallow ellipsoidal head.
+- Bottom Drain: Sloped bottom, conical transition, or 2:1 ellipsoidal head with zero-dead-leg sanitary diaphragm flush bottom valve.
+- Drainability: Designed for complete gravity self-drainage without pooling.
+
+5. Thermal Control & Insulation:
+- Jacketing Options: Laser-welded dimple jacket or half-pipe limpet coil for steam sanitization or chilled water cooling.
+- Insulation: Chloride-free mineral wool or polyurethane foam (PUF) insulation.
+- Cladding: Fully welded, hermetically sealed SS 304 weather-proof outer jacket.
+
+6. Sanitary Fittings & Instrumentation Ports:
+- Clean-In-Place (CIP): 360° rotary spray ball nozzles for complete, shadow-free coverage.
+- Vent System: Sterile 0.2 µm hydrophobic PTFE air vent filter with electric heating jacket to prevent condensation blockage.
+- Instrumentation: Level radar/capacitance transmitter port, RTD temperature sensor thermowell, sanitary pressure gauge, and burst disc / relief valve.
+- Manway: Quick-release sanitary round manway (400 mm - 500 mm ID) with sight glass and LED illumination lamp.`,
+    features: [
+      'High-purity **purified water storage tank** compliant with ASME BPE, cGMP, and US-FDA biopharma guidelines',
+      'Sanitary **filtered water storage tank** engineered for RO permeate, demineralized water, and WFI loops',
+      'Heavy-duty **stainless steel water tank** fabricated with SS 316L contact surfaces and Ra < 0.4 µm electropolish',
+      'High-capacity **large water tank** options ranging from 500 Liters to 100,000+ Liters (up to 25,000 Gallons)',
+      'Rigid, fire-safe, and non-leaching **metal water tank** construction outperforming plastic containers',
+      'Multi-disciplinary engineering plant also fabricating process vessels, chemical tanks, and utility **fuel storage tanks**',
+      'Compact and efficient **1000 gallon water tank** configurations for batch dosing and pilot facilities',
+      'Heavy-duty **5000 Gallon Vertical SS Tank** featuring dished heads, 360° CIP/SIP spray balls, and sterile 0.2 µm vent filtration'
+    ],
+    specifications: {
+      'Storage Capacity': '500 Liters to 100,000+ Liters (Including 1,000 & 5,000 Gallon standard models)',
+      'Material of Construction (MOC)': 'SS 316L (Product Contact Parts), SS 304 / 304L (Non-Contact & Outer Cladding)',
+      'Internal Surface Finish': 'Electro-polished Ra < 0.4 µm (Sanitary Mirror Finish, No Dead Legs)',
+      'External Surface Finish': 'Satin Matt / Mirror / Scotch-Brite Finish (Ra < 0.8 µm)',
+      'Design Standards': 'ASME BPE, ASME Section VIII Div 1, cGMP, US-FDA, IS 2825',
+      'Thermal Options': 'Plain, Dimple Jacketed, Half-Pipe Limpet, PUF / Rockwool Insulated with SS Cladding',
+      'Sterilization & Cleaning': 'Integrated CIP / SIP 360° Rotary Spray Ball, Sterile 0.2 µm Hydrophobic Vent Filter',
+      'Nozzles & Connections': 'Sanitary Tri-Clamp (TC) Ferrule Connections (ASME BPE Standard), DIN / SMS',
+      'Testing & Quality Assurance': '100% Hydrostatic Test, Dye-Penetrant Examination (DPI), Boroscopic Weld Inspection'
+    },
+    faqs: [
+      {
+        question: 'What makes a purified water storage tank essential for pharmaceutical and sanitary industries?',
+        answer: 'A certified **purified water storage tank** is critical for preventing bacterial growth, endotoxin buildup, and biofilm formation. With internal electropolishing to Ra < 0.4 µm, orbital welded piping, and sterile vent filtration, these vessels ensure that USP-grade purified water and WFI retain their chemical and microbial integrity throughout storage and recirculation.'
+      },
+      {
+        question: 'How does a filtered water storage tank maintain water quality over time?',
+        answer: 'A sanitary **filtered water storage tank** maintains water purity by operating in continuous recirculation loops, often kept at self-sanitizing temperatures (65°C to 80°C) or protected by nitrogen blanketing and 0.2 µm hydrophobic vent filters. This prevents airborne particulates and microbial contaminants from degrading RO permeate or demineralized water.'
+      },
+      {
+        question: 'Why should plants choose a metal water tank or stainless steel water tank over plastic storage?',
+        answer: 'Unlike polyethylene or FRP tanks, a **stainless steel water tank** or industrial **metal water tank** does not leach plasticizers, chemicals, or micro-particles into high-purity water. Moreover, metal vessels can withstand high-temperature sanitization (SIP / hot water sanitization), vacuum conditions, and high structural pressures without risk of degradation.'
+      },
+      {
+        question: 'What standard sizes are available, such as a 1000 gallon water tank or 5000 Gallon Vertical SS Tank?',
+        answer: 'We manufacture custom volumetric sizes as well as standardized models, including the popular **1000 gallon water tank** (approx. 3,785 Liters) for pilot or modular plants, and the **5000 Gallon Vertical SS Tank** (approx. 18,925 Liters) with dished ends, skirt or leg mountings, and level transmitter ports for large-scale production facilities.'
+      },
+      {
+        question: 'Does VVIOK Industry manufacture other industrial vessels like fuel storage tanks?',
+        answer: 'Yes. While our sanitary division focuses on high-purity pharmaceutical water and food storage, VVIOK Industry’s heavy engineering facility also fabricates carbon steel and alloy industrial process vessels, chemical storage tanks, and robust **fuel storage tanks** engineered to API and ASME standards for industrial utility backup systems.'
+      }
+    ],
+    metaTitle: 'Purified Water Storage Tank Manufacturer | Stainless Steel Water Tank India',
+    metaDescription: 'Leading purified water storage tank manufacturer in India. Specializing in sanitary stainless steel water tanks, 1000 & 5000 gallon vertical SS tanks, and large water tanks.',
+    metaKeywords: 'purified water storage tank, filtered water storage tank, large water tank, metal water tank, fuel storage tanks, 1000 gallon water tank, 5000 Gallon Vertical SS Tank, stainless steel water tank, vviok industry'
+  }],
   'air-receiver-tank-supplier-india': [generateProductDetails('Air Receiver Tank', 'Industrial Vessel', '/uploads/Air%20receiver%20tank%20manufacturer%20supplier%20in%20india%20-vviok%20industry.jpeg')],
   'chemical-storage-tank-manufacturer-india': [{
     name: 'Chemical Storage Tank',
