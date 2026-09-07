@@ -55,6 +55,16 @@ const nextConfig: NextConfig = {
         destination: '/products/stainless-steel-pendant-manufacturer',
         permanent: true,
       },
+      {
+        source: '/products/pleated-strainer-manufacturer',
+        destination: '/products/pleated-filter-element',
+        permanent: true,
+      },
+      {
+        source: '/products/conical-strainer-manufacturer',
+        destination: '/products/ss-conical-strainer-manufacturer',
+        permanent: true,
+      },
     ];
   },
 };
