@@ -65,6 +65,11 @@ const nextConfig: NextConfig = {
         destination: '/products/ss-conical-strainer-manufacturer',
         permanent: true,
       },
+      {
+        source: '/products/basket-strainer-manufacturer',
+        destination: '/products/stainless-steel-basket-strainer-manufacturer',
+        permanent: true,
+      },
     ];
   },
 };

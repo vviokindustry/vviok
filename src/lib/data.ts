@@ -103,7 +103,7 @@ export const productCategories: Category[] = [
     imageId: 'product-vent-filter-1',
     subcategories: [
       { name: 'SS Conical Strainers', slug: 'ss-conical-strainer-manufacturer' },
-      { name: 'Basket Strainers', slug: 'basket-strainer-manufacturer' },
+      { name: 'Stainless Steel Basket Strainers', slug: 'stainless-steel-basket-strainer-manufacturer' },
       { name: 'Pleated Filter Element', slug: 'pleated-filter-element' },
       { name: 'Taper Basket Strainers', slug: 'taper-basket-strainer-manufacturer' },
     ]
@@ -439,7 +439,105 @@ To meet diverse plant layouts, we fabricate each **conical type strainer** in st
     metaKeywords: 'ss conical strainer, stainless steel conical strainer, conical filter strainer, conical metal strainer, stainless steel cone strainer, conical sieve strainer, conical mesh strainer, conical cocktail strainer, conical type strainer, large conical strainer'
   }],
   'conical-strainer-manufacturer': [generateProductDetails('SS Conical Strainer', 'Industrial Strainer', '/uploads/conical-strainer-manufacturer.png', ['/uploads/conical-strainer-manufacturer.png'])],
-  'basket-strainer-manufacturer': [generateProductDetails('Basket Strainer', 'Industrial Strainer', 'product-vent-filter-1')],
+  'stainless-steel-basket-strainer-manufacturer': [{
+    name: 'Stainless Steel Basket Strainer',
+    pageH1: 'Stainless Steel Basket Strainer Manufacturer, Industrial SS Basket Filter & Duplex Strainer Supplier in India',
+    application: 'Heavy-duty pipeline equipment protection, cooling tower water filtration, chemical transfer lines, oil & gas pipeline straining, and pharmaceutical fluid clarification.',
+    imageId: '/uploads/Basket%20Strainers%20manufacturer%20supplier%20in%20ahmedabad%20india%20vviok%20industry.png',
+    imageIds: [
+      '/uploads/Basket%20Strainers%20manufacturer%20supplier%20in%20ahmedabad%20india%20vviok%20industry.png',
+      '/uploads/SS%20Basket.jpg',
+      '/uploads/Duplex%20Filter%20Housing%20manufacturer%20supplier%20in%20ahmedabad%20vviok%20industry.png',
+      '/uploads/Strainer%20Filter%20Housing%20manufacturer%20supplier%20in%20india.png'
+    ],
+    description: `VVIOK Industry is an established, high-precision **basket strainer manufacturer** and engineering enterprise based in Ahmedabad, India. Designed for heavy-duty pipeline protection, our simplex and multi-basket systems prevent catastrophic damage to expensive downstream pumps, valves, heat exchangers, flow meters, and spray nozzles by intercepting pipeline scale, particulate debris, and suspended solids. As an ISO 9001:2015 certified **basket strainer supplier**, we design robust filtration assemblies engineered in full compliance with ASME Section VIII Division 1 and ASME B16.34 standards, delivering reliable fluid clarification across chemical processing, oil & gas, pharmaceuticals, marine, and power generation sectors.
+
+Recognized among premier **basket filter manufacturers**, we build each filtration vessel and internal assembly using certified materials, including carbon steel, AISI 304, AISI 316, and AISI 316L stainless steel, as well as Duplex and Hastelloy for highly corrosive or saline fluids. At the heart of each unit is a heavy-duty **stainless steel strainer basket industrial** grade screen, constructed with a thick perforated metal backing plate lined with high-precision wire mesh down to 20 microns. Whether you require a standard **ss basket strainer** for water utility lines or an electro-polished **stainless steel basket strainer** for sanitary pharmaceutical operations, our baskets feature top lifting handles, machined sealing rings, and heavy-gauge handles for rapid, tool-free maintenance.
+
+To ensure continuous, zero-downtime operation in critical process lines, VVIOK Industry is an industry-leading **duplex basket strainer manufacturer**. Our duplex configurations incorporate dual filtration chambers interconnected via an integrated 3-way or 4-way diverter ball valve or equalizing butterfly valves. When one chamber fills with particulate, operators can switch fluid flow to the parallel chamber without pausing production, allowing safe basket servicing. This continuous-flow capability makes our assemblies the preferred choice for continuous cooling towers, boiler feed lines, fuel oil handling, and petrochemical transfer loops.
+
+As a specialized **basket type strainer manufacturer**, we provide standard ANSI 150#, 300#, and 600# flanged connections in sizes from 1 inch up to 48+ inches. Furthermore, every **stainless steel basket filter** is engineered with a generous open area ratio—providing 400% to 600% greater free straining area than the connecting pipe cross-section to minimize differential pressure drop (ΔP). Each strainer undergoes comprehensive hydrostatic pressure testing, radiographic weld inspection, and comes backed by EN 10204 3.1 Material Test Certificates (MTC) and quality dossiers.`,
+    detailedSpecs: `Comprehensive Engineering Specifications for Industrial Basket Strainers & Filters:
+
+1. Design Standards & Structural Compliance:
+- Pressure Vessel Codes: ASME Boiler and Pressure Vessel Code Section VIII Division 1 guidelines and ASME B16.34 (Valves Flanged, Threaded and Welding End).
+- Flange Standards: ASME B16.5 (1/2" to 24") and ASME B16.47 Series A/B (26" to 48"), DIN / EN 1092-1 flanges.
+- Quality System: ISO 9001:2015 certified design, welding, and quality management protocols.
+
+2. Materials of Construction (MOC):
+- Strainer Housing Body: Cast Carbon Steel (ASTM A216 WCB), Fabricated Carbon Steel (IS 2062 Gr. B), Austenitic Stainless Steel AISI 304, SS 304L, SS 316, SS 316L, 904L, Duplex Stainless Steel 2205, Super Duplex 2507, Hastelloy C-276.
+- Internal Strainer Basket: Heavy-gauge AISI 304 / SS 316 sheet with staggered round perforations (1 mm to 6 mm) lined with precision Dutch weave or plain weave wire mesh (20 to 500 mesh / 25 µm).
+- Bolting & Fasteners: ASTM A193 B7 / A194 2H for carbon steel; ASTM A193 B8 / A194 Gr. 8 for stainless steel systems.
+- O-Rings & Gaskets: Spiral wound SS 316 with graphite filler, PTFE, Viton (FKM), EPDM, or Buna-N.
+
+3. Sizing & Pressure Ratings:
+- Nominal Pipe Diameter: 1" NB to 48" NB (DN25 to DN1200, custom larger sizes available upon request).
+- Pressure Rating Classes: ANSI Class 150#, Class 300#, Class 600# (PN10, PN16, PN25, PN40, PN64).
+- End Connections: Raised Face Flanged (RF), Flat Face (FF), Ring Type Joint (RTJ), Butt Weld (BW).
+
+4. Hydraulic Performance & Flow Capacity:
+- Open Area Ratio: 4:1 to 6:1 (400% to 600% free straining screen area relative to nominal pipe cross-section) minimizing initial pressure drop (ΔP < 0.1 bar).
+- Flow Rates: 5 m³/hr to 2500+ m³/hr depending on housing diameter, basket mesh rating, and liquid viscosity.
+- Drain & Vent Ports: NPT/flanged drain connection at vessel base and air vent at top cover for safe depressurization.
+
+5. Quick-Access Cover Mechanisms:
+- Davit Arm Lifting Assembly: Ergonomic mechanical handwheel davit for effortless top cover lifting on large sizes (6" NB and above).
+- Quick-Opening Swing Bolt / Eyebolt Closures: Rapid tool-free basket servicing without removing loose hardware.
+- Traditional Bolted Flange: High-integrity closure for high-pressure and critical lethal chemical services.
+
+6. Testing, Inspection & Documentation:
+- 100% Hydrostatic shell pressure test at 1.5 times maximum allowable working pressure (MAWP).
+- Pneumatic seat and seal leak testing at 6 bar.
+- Non-Destructive Testing (NDT): Radiography (RT), Dye Penetrant Testing (DPT), and Ultrasonic Testing (UT) of pressure boundary welds.
+- Full QA Dossier: EN 10204 3.1 Material Test Certificates (MTC), hydrostatic test charts, and dimensional inspection reports.`,
+    features: [
+      'Precision fabrication by a leading **basket strainer manufacturer** compliant with ASME Section VIII and ASME B16.34 standards',
+      'Trusted **basket strainer supplier** providing simplex and multi-basket configurations from 1" NB up to 48" NB',
+      'Engineered by top **basket filter manufacturers** using certified carbon steel, SS 304, SS 316, SS 316L, and Duplex alloys',
+      'Heavy-duty **stainless steel strainer basket industrial** design with perforated sheet backing and precision wire mesh lining (down to 20 microns)',
+      'Corrosion-resistant **ss basket strainer** and electro-polished **stainless steel basket strainer** for sanitary and chemical duties',
+      'Zero-downtime dual chamber design from a premier **duplex basket strainer manufacturer** with synchronized diverter valves',
+      'Custom fluid dynamics from an expert **basket type strainer manufacturer** ensuring low pressure drop (ΔP)',
+      'High-capacity **stainless steel basket filter** delivering 400% to 600% open screen area relative to pipe cross-section'
+    ],
+    specifications: {
+      'Product Type': 'Simplex & Duplex Industrial Basket Strainer / Basket Filter',
+      'Nominal Pipe Size (NPS)': '1" NB to 48" NB (DN25 to DN1200, Custom Fabricated Sizes)',
+      'Pressure Ratings': 'Class 150#, 300#, 600# (PN10, PN16, PN25, PN40, PN64)',
+      'End Connections': 'Flanged (ANSI B16.5 RF/FF/RTJ), Butt Weld, Socket Weld',
+      'Housing Material (MOC)': 'Carbon Steel (WCB), AISI SS 304, SS 304L, SS 316, SS 316L, Duplex 2205',
+      'Basket Material & Media': 'SS 304 / SS 316 Heavy Perforated Sheet with Wire Mesh (20 to 500 Mesh)',
+      'Open Area Ratio': '400% to 600% free straining area relative to pipe cross-section',
+      'Cover Mechanism': 'Quick-Opening Davit Assembly, Swing Bolt Closure, or Bolted Flanged Cover',
+      'Testing & Documentation': '100% Hydrostatic Test (1.5x WP), Dye Penetrant Test, EN 10204 3.1 MTC'
+    },
+    faqs: [
+      {
+        question: 'What is the primary function of an industrial basket strainer and how does it protect pipeline equipment?',
+        answer: 'An industrial **basket strainer** is an inline closed filtration vessel containing a removable perforated or mesh-lined basket. As fluid flows into the basket from top to bottom, solid particulates are collected within the basket interior. This prevents debris from reaching downstream pumps, valves, heat exchangers, and sensitive instrumentation, protecting them from abrasion, clogging, and mechanical damage.'
+      },
+      {
+        question: 'Why choose VVIOK Industry as your basket strainer manufacturer and basket strainer supplier?',
+        answer: 'As an ISO 9001:2015 certified **basket strainer manufacturer** and dependable **basket strainer supplier**, VVIOK Industry fabricates custom simplex and duplex strainers adhering to ASME Section VIII Div 1 standards. We offer complete metallurgical flexibility (SS 304, SS 316L, Duplex, Hastelloy), precision CNC machining, 400% to 600% open area ratios, and complete EN 10204 3.1 certification for critical chemical, pharmaceutical, and oil & gas facilities.'
+      },
+      {
+        question: 'What makes a duplex basket strainer manufacturer essential for continuous manufacturing processes?',
+        answer: 'A certified **duplex basket strainer manufacturer** designs systems with two identical filtration chambers connected by a central diverter valve. When one basket requires cleaning, the operator diverts flow to the standby chamber without stopping pipeline flow or shutting down pumps. This provides 24/7 continuous operation for cooling water loops, fuel oil systems, and chemical lines.'
+      },
+      {
+        question: 'What are the structural features of a stainless steel strainer basket industrial assembly?',
+        answer: 'A **stainless steel strainer basket industrial** assembly features a heavy-gauge perforated outer cylinder (1 mm to 6 mm hole size) that provides high structural rigidity against line collapse pressure, lined internally or externally with a fine wire mesh (20 to 500 mesh). It includes a machined top sealing rim to prevent fluid bypass, and heavy lifting bail handles for ergonomic removal.'
+      },
+      {
+        question: 'How does a stainless steel basket filter achieve minimal pressure drop across high-viscosity pipelines?',
+        answer: 'A high-performance **stainless steel basket filter** or **ss basket strainer** is engineered with an oversized housing diameter and deep basket geometry that yields a free straining area of 4 to 6 times the pipe\'s internal cross-sectional area. This expanded surface area dramatically reduces fluid velocity through the screen, minimizing initial pressure loss (ΔP) and extending operating time between cleaning cycles.'
+      }
+    ],
+    metaTitle: 'Stainless Steel Basket Strainer Manufacturer | SS Basket Filter India',
+    metaDescription: 'Leading stainless steel basket strainer manufacturer in India. Fabricating industrial SS basket strainers, duplex basket strainers, and stainless steel basket filters.',
+    metaKeywords: 'basket strainer manufacturer, basket strainer supplier, basket filter manufacturers, duplex basket strainer manufacturer, basket type strainer manufacturer, ss basket strainer, stainless steel basket strainer, stainless steel strainer basket industrial, stainless steel basket filter'
+  }],
+  'basket-strainer-manufacturer': [generateProductDetails('Stainless Steel Basket Strainer', 'Industrial Strainer', '/uploads/Basket%20Strainers%20manufacturer%20supplier%20in%20ahmedabad%20india%20vviok%20industry.png', ['/uploads/Basket%20Strainers%20manufacturer%20supplier%20in%20ahmedabad%20india%20vviok%20industry.png'])],
   'pleated-filter-element': [{
     name: 'Pleated Filter Element',
     pageH1: 'Pleated Filter Element Manufacturer & Industrial Strainer Company in India',
