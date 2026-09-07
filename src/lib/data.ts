@@ -112,10 +112,16 @@ export const productCategories: Category[] = [
     name: 'Industrial Vessels',
     slug: 'industrial-vessels-manufacturer',
     pageH1: 'Expert Industrial Vessels Manufacturer in Ahmedabad, India',
-    description: `We are a leading manufacturer of stainless steel industrial vessels, specializing in pressure vessels, air receivers, and water storage tanks. Based in Ahmedabad, our facility leverages precision welding and engineering to meet ASME and ISO standards. Our vessels are trusted for sterile water storage in pharmaceuticals and high-pressure chemical reactions. We focus on hygienic design, durability, and absolute safety, providing custom solutions that integrate seamlessly into complex industrial infrastructures globally.`,
-    metaTitle: 'Industrial Vessels Manufacturer India | SS Pressure Vessel & Storage Tanks',
-    metaDescription: 'Leading industrial vessels manufacturer in Ahmedabad. Supplying SS pressure vessels, RO water storage tanks, and air receiver tanks worldwide.',
-    metaKeywords: 'industrial vessels manufacturer india, pressure vessel supplier ahmedabad, ss storage tank manufacturer, ro water tank supplier, air receiver tank manufacturer',
+    description: `VVIOK Industry is a premier **pressure vessel manufacturer in ahmedabad**, engineering high-integrity process equipment for critical industrial infrastructures across India and international markets. Recognized as a distinguished **steel vessels manufacturing company**, our state-of-the-art facility delivers robust solutions for oil & gas, chemical processing, pharmaceutical, water treatment, and power generation sectors.
+
+Operating as an ISO 9001:2015 certified **storage vessels manufacturer** and dependable **storage vessel supplier**, we design and fabricate horizontal and vertical process storage units engineered to resist extreme operating pressures, vacuum conditions, and aggressive corrosive media. From atmospheric liquid chemical reservoirs to high-pressure **steel fab air receivers**, our storage equipment maintains sterile purity and long-term mechanical reliability.
+
+Our manufacturing competence encompasses heavy-gauge plate rolling, precision automated submerged-arc welding, and specialized dish end pressing. As an advanced **hemispherical head manufacturer**, we produce precision-formed hemispherical, torispherical, and ellipsoidal heads that distribute hydraulic stress uniformly across pressure boundaries.
+
+With extensive engineering capabilities in the custom **fabrication of tanks & pressure vessels**, we build each system in strict compliance with ASME Section VIII Division 1, ASME B16.5, and IS 2825 standards. Utilizing premium austenitic stainless steel grades (SS 304, SS 316, SS 316L, 904L), Duplex alloys, and certified carbon steels, every vessel undergoes rigorous non-destructive examination (NDT), 100% hydrostatic testing at 1.5 times design pressure, and is supplied with comprehensive EN 10204 3.1 Material Test Certificates (MTC).`,
+    metaTitle: 'Expert Industrial Vessels Manufacturer in Ahmedabad, India | Storage Vessels & Tanks',
+    metaDescription: 'Premier industrial vessels & pressure vessel manufacturer in Ahmedabad. Supplying custom storage vessels, steel fab air receivers, hemispherical heads, and tanks.',
+    metaKeywords: 'pressure vessel manufacturer in ahmedabad, storage vessels manufacturer, storage vessel supplier, steel fab air receivers, hemispherical head manufacturer, fabrication of tanks & pressure vessels, steel vessels manufacturing company',
     imageId: 'product-custom-filter',
     subcategories: [
       { name: 'Pressure vessel', slug: 'pressure-vessel-supplier-india' },
@@ -636,7 +642,102 @@ Whether your process demands custom-dimensioned filter cartridges for high-visco
     metaKeywords: 'Pleated Filter Element, industrial strainer manufacturer, strainer company, filter strainer manufacturer, self cleaning strainer company, acme strainers, pleated strainer ahmedabad india'
   }],
   'pleated-strainer-manufacturer': [generateProductDetails('Pleated Strainer', 'Industrial Strainer', '/uploads/pleated-filter-element.png', ['/uploads/pleated-filter-element.png'])],
-  'taper-basket-strainer-manufacturer': [generateProductDetails('Taper Basket Strainer', 'Industrial Strainer', 'product-vent-filter-1')],
+  'taper-basket-strainer-manufacturer': [{
+    name: 'Taper Basket Strainer',
+    pageH1: 'Taper Basket Strainer Manufacturer, Fabricated SS Tapered Strainer Supplier in India',
+    application: 'Pipeline debris capture, industrial pump suction protection, high-viscosity fluid straining, chemical loop filtration, and cooling water intake clarification.',
+    imageId: '/uploads/SS%20Basket.jpg',
+    imageIds: [
+      '/uploads/SS%20Basket.jpg',
+      '/uploads/Basket%20Strainers%20manufacturer%20supplier%20in%20ahmedabad%20india%20vviok%20industry.png',
+      '/uploads/conical-strainer-manufacturer.png',
+      '/uploads/Strainer%20Filter%20Housing%20manufacturer%20supplier%20in%20india.png'
+    ],
+    description: `VVIOK Industry is an established, premier industrial filtration equipment manufacturer based in Ahmedabad, Gujarat, celebrated for engineering the **Best tapered basket strainer in india**. In heavy-duty fluid handling systems, pipeline strainers must deliver high dirt-holding capacity while allowing quick basket removal and minimal pressure drop. Engineered with a specialized angled profile, our high-precision **Tapered Basket Strainer** assemblies provide smoother internal fluid velocity transition and faster sediment settling than conventional straight cylinders, safeguarding downstream pumps, compressors, valves, and flow meters across chemical, petrochemical, oil & gas, pharmaceutical, and water treatment installations.
+
+At the core of every assembly is a precision-engineered **stainless strainer basket**, constructed from certified AISI 304, AISI 316, or AISI 316L austenitic stainless steels, as well as Duplex and Hastelloy alloys for severe corrosive applications. The unique tapered basket geometry ensures self-centering during installation and effortless extraction from the housing during maintenance shutdowns. Engineered to endure severe operating conditions, each **Tapered basket strainer heavy duty** model combines a thick perforated metal backing cage (1 mm to 6 mm perforations) lined with durable Dutch weave or square wire mesh down to 20 microns (600 mesh), preventing basket deformation under differential pressures (ΔP) up to 10 bar.
+
+As a certified designer and fabricator compliant with ASME Section VIII Division 1 and ASME B16.34 codes, VVIOK Industry specializes in custom **fabricated basket strainers** designed for both simplex and duplex pipeline installations. Unlike mass-produced cast units that are restricted by rigid mold dimensions, our fabricated vessels can be tailor-engineered with custom nozzle elevations, offset inlet/outlet ports, davit-arm quick-opening covers, and internal support rings. This fabrication flexibility allows us to offer the **Best tapered basket strainer** configurations tailored to exact client piping layouts with zero compromise on structural reliability.
+
+To meet diverse plant throughput requirements, our standard **Tapered basket strainer sizes** range from 1 inch NB up to 48+ inches NB (DN25 to DN1200) with pressure ratings spanning ANSI Class 150#, 300#, and 600# in raised-face (RF), flat-face (FF), and ring type joint (RTJ) flanged connections. Every unit delivers an extraordinary 4:1 to 6:1 free straining open area ratio relative to the nominal pipe diameter. Each unit undergoes 100% hydrostatic shell pressure testing, radiographic weld inspection, and dye-penetrant checks, accompanied by complete EN 10204 3.1 Material Test Certificates (MTC).`,
+    detailedSpecs: `Comprehensive Engineering Specifications for Industrial Tapered Basket Strainers:
+
+1. Design Standards & Dimensional Compliance:
+- Design Codes: ASME Boiler and Pressure Vessel Code Section VIII Division 1, ASME B16.34 (Valves Flanged, Threaded and Welding End), MSS-SP 81.
+- Flange Standards: ASME B16.5 (1/2" to 24") and ASME B16.47 Series A/B (26" to 48"), DIN / EN 1092-1.
+- Open Straining Area: 400% to 600% (4:1 to 6:1 free open area ratio relative to nominal pipe cross-section).
+
+2. Materials of Construction (MOC):
+- Housing Shell: Heavy-wall Carbon Steel (ASTM A106 Gr. B / IS 2062), Austenitic Stainless Steel AISI 304, 304L, 316, 316L, 904L, Duplex 2205, Super Duplex 2507, Hastelloy C-276.
+- Internal Strainer Basket: Heavy-duty tapered stainless steel basket with perforated sheet (1.0 mm to 6.0 mm round perforations) lined with precision woven Dutch weave wire mesh (20 to 500 mesh / 25 µm).
+- Flanges & Hardware: High-tensile ASTM A193 B7/B8 bolting with spiral wound SS 316 / PTFE / Viton gaskets.
+
+3. Sizing & Pressure Ratings:
+- Standard Pipe Sizes: 1" NB to 48" NB (DN25 to DN1200, with custom engineering for oversized lines up to 60").
+- Pressure Classes: ANSI Class 150#, Class 300#, Class 600# (PN10, PN16, PN25, PN40, PN64).
+- End Connections: Raised Face (RF), Flat Face (FF), Ring Type Joint (RTJ), or Butt-Weld ends.
+
+4. Hydraulic Performance & Flow Characteristics:
+- Tapered Geometry Advantage: Self-aligning seating with lower turbulence; debris settles efficiently towards the tapered bottom while preserving upper peripheral flow area.
+- Flow Rates: 5 m³/hr to 2800+ m³/hr with low differential pressure loss (ΔP < 0.1 bar).
+- Quick Servicing: Tapered angle prevents basket binding or sticking during withdrawal even after prolonged on-stream service with sticky or viscous fluids.
+
+5. Closure Types & Ergonomics:
+- Davit Arm Lifting Assembly: Mechanical handwheel davit for effortless top cover swinging on 6" NB and larger units.
+- Quick-Opening Swing Eyebolts: Fast, tool-free access for rapid basket cleaning.
+- Bolted Flanged Cover: Heavy-duty closure for high-pressure lethal chemical applications.
+
+6. Testing, Quality & Documentation:
+- 100% Hydrostatic shell pressure test at 1.5 times design working pressure.
+- Radiographic and Dye-Penetrant Examination of longitudinal and circumferential welds.
+- Documentation Pack: EN 10204 3.1 Material Test Certificates (MTC), hydrostatic test charts, NDT reports, and GA drawings.`,
+    features: [
+      'High-performance **Tapered Basket Strainer** engineered for minimal pressure drop and high particulate retention',
+      'Recognized as the **Best tapered basket strainer in india** manufactured to ASME Section VIII and ASME B16.34 codes',
+      'Precision-fabricated **stainless strainer basket** featuring heavy perforated sheet backing and wire mesh down to 20 microns',
+      'Rugged **Tapered basket strainer heavy duty** construction designed to withstand differential collapse pressure up to 10 bar',
+      'Fully customized **fabricated basket strainers** offering flexible nozzle orientations, davit covers, and zero-downtime duplex layouts',
+      'Widest range of **Tapered basket strainer sizes** from 1" NB to 48" NB (DN25 to DN1200) for low and high-flow pipelines',
+      'Award-winning design ensuring you receive the **Best tapered basket strainer** with 4:1 to 6:1 open area ratio',
+      'Certified metallurgy in SS 304, SS 316L, Duplex 2205, and Hastelloy with EN 10204 3.1 MTC inspection'
+    ],
+    specifications: {
+      'Product Type': 'Tapered Basket Strainer / Fabricated Basket Strainer',
+      'Nominal Pipe Size (NPS)': '1" NB to 48" NB (DN25 to DN1200, Custom Sizes Available)',
+      'Pressure Ratings': 'ANSI Class 150#, 300#, 600# & PN10 to PN64',
+      'End Connections': 'Flanged (ASME B16.5 / B16.47 RF, FF, RTJ), Butt Weld',
+      'Housing Material (MOC)': 'Stainless Steel (SS 304, 304L, 316, 316L, 904L), Carbon Steel (IS 2062 / WCB), Duplex 2205',
+      'Basket Material & Media': 'Heavy Perforated SS 304 / SS 316 Sheet with Wire Mesh (20 to 500 Mesh / 25 µm)',
+      'Open Area Ratio': '400% to 600% (4:1 to 6:1 relative to pipe cross-section)',
+      'Cover Mechanism': 'Swing Bolt Quick-Opening, Davit Arm Lift Assembly, or Bolted Cover',
+      'Quality & Compliance': 'ASME Section VIII Div 1, ASME B16.34, 100% Hydrostatic Tested, EN 10204 3.1 MTC'
+    },
+    faqs: [
+      {
+        question: 'What is a Tapered Basket Strainer and what are its key engineering advantages?',
+        answer: 'A **Tapered Basket Strainer** is an inline pipeline filtration unit featuring a basket screen with an angled, tapered conical profile rather than straight cylindrical walls. This taper promotes smooth laminar fluid entry, encourages solids to collect at the bottom apex without blocking the upper straining surface, and ensures easy, stick-free removal of the basket during maintenance even in viscous or resinous liquid services.'
+      },
+      {
+        question: 'Why choose VVIOK Industry for the Best tapered basket strainer in india?',
+        answer: 'As the trusted manufacturer for the **Best tapered basket strainer in india**, VVIOK Industry delivers ASME Section VIII certified engineering, 100% pressure-tested vessels, high-grade austenitic stainless steel metallurgy (SS 304, SS 316L, Duplex), and custom-engineered open area ratios up to 600%, ensuring maximum dirt holding and minimal pressure drop.'
+      },
+      {
+        question: 'What are the structural features of a Tapered basket strainer heavy duty model?',
+        answer: 'A **Tapered basket strainer heavy duty** model is fabricated with a reinforced outer perforated stainless steel sheet (1 mm to 6 mm thickness) backed by longitudinal stiffeners and a fine wire mesh liner. This construction prevents screen collapse under sudden pressure surges or high differential pressures up to 10 bar (150 psi).'
+      },
+      {
+        question: 'How do custom fabricated basket strainers differ from standard cast strainers?',
+        answer: 'Unlike mass-produced cast units with fixed geometry, custom **fabricated basket strainers** offer complete design freedom: customized inlet/outlet centerlines, angled or offset nozzles, floor mounting legs or lugs, specialized cover mechanisms like davit arms or swing bolts, and custom MOC combinations matching client specifications exactly.'
+      },
+      {
+        question: 'What Tapered basket strainer sizes and mesh ratings are available?',
+        answer: 'Our standard **Tapered basket strainer sizes** range from 1" NB to 48" NB (DN25 to DN1200) with filtration ratings spanning coarse 1/4" perforations down to 20 microns (600 mesh) inside our high-precision **stainless strainer basket** inserts.'
+      }
+    ],
+    metaTitle: 'Tapered Basket Strainer Manufacturer | Fabricated Basket Strainers India',
+    metaDescription: 'Leading tapered basket strainer manufacturer in India. Offering fabricated basket strainers, stainless strainer baskets, heavy duty tapered basket strainers, and all sizes.',
+    metaKeywords: 'Tapered Basket Strainer, stainless strainer basket, Tapered basket strainer heavy duty, fabricated basket strainers, Best tapered basket strainer, Tapered basket strainer sizes, Best tapered basket strainer in india'
+  }],
   'pressure-vessel-supplier-india': [{
     name: 'Pressure Vessel',
     pageH1: 'Pressure Vessel Manufacturer, Supplier & Custom Fabrication in India',

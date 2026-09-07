@@ -88,10 +88,8 @@ export default async function SlugPage({ params }: Props) {
               <h1 className="font-headline text-xl md:text-2xl font-black text-slate-900 tracking-tighter leading-tight">
                 {currentCategory.pageH1 || currentCategory.name}
               </h1>
-              <div className="text-sm md:text-base text-slate-500 mt-4 font-medium max-w-5xl whitespace-pre-wrap leading-relaxed">
-                {currentCategory.description}
-                <br /><br />
-                VVIOK Industry stands as a beacon of engineering integrity in the industrial filtration landscape. Our Ahmedabad-based manufacturing unit is specialized in the fabrication of high-precision stainless steel filtration housings and cartridges. We prioritize the needs of global markets, ensuring that every product we export adheres to the most stringent international quality benchmarks, including ASME and ISO certifications.
+              <div className="text-sm md:text-base text-slate-600 mt-4 font-medium max-w-5xl whitespace-pre-wrap leading-relaxed">
+                <FormattedText text={currentCategory.description} />
               </div>
             </div>
 
