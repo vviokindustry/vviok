@@ -69,7 +69,7 @@ export const productCategories: Category[] = [
       { name: 'PP Pleated Filter Cartridge', slug: 'pp-pleated-filter-cartridge-supplier' },
       { name: 'PP Spun Filter Cartridge', slug: 'pp-spun-filter-cartridge-supplier' },
       { name: 'PTFE Pleated Filter Cartridge', slug: 'ptfe-pleated-filter-cartridge-supplier' },
-      { name: 'SS Sintered Powder Cartridge', slug: 'ss-sintered-powder-cartridge' },
+      { name: 'SS Sintered Filter Cartridge', slug: 'ss-sintered-filter-cartridge-manufacturer' },
       { name: 'SS Wire Mesh Cartridge', slug: 'ss-wire-mesh-cartridge' },
     ]
   },
@@ -516,7 +516,200 @@ Every **teflon cartridge filter** produced at our cleanroom facility undergoes 1
     metaDescription: 'Leading SS PTFE filter cartridges manufacturer in India. Fabricating absolute-rated PTFE pleated membrane filter cartridges, Teflon filters & nylon pleated filters.',
     metaKeywords: 'ptfe pleated filter cartridge, ptfe membrane filter cartridge, nylon pleated filter cartridge, teflon cartridge filter, ss ptfe filter cartridges manufacturer, ptfe filter supplier india'
   }],
-  'ss-sintered-powder-cartridge': [generateProductDetails('SS Sintered Powder Cartridge', 'Filter Cartridge', 'product-ss-sintered-1', ['product-ss-sintered-1', 'product-ss-sintered-2', 'product-ss-sintered-3'])],
+  'ss-sintered-filter-cartridge-manufacturer': [{
+    name: 'SS Sintered Filter Cartridge',
+    pageH1: 'SS Sintered Filter Cartridge Manufacturer, Sintered Metal Powder Cartridges Supplier in India',
+    application: 'High-temperature gas filtration, corrosive chemical processing, steam filtration, catalyst recovery, pharmaceutical sterile venting, and cryogenic fluid clarification.',
+    imageId: 'product-ss-sintered-1',
+    imageIds: [
+      'product-ss-sintered-1',
+      'product-ss-sintered-2',
+      'product-ss-sintered-3'
+    ],
+    description: `VVIOK Industry is a premier **ss sintered filter cartridge manufacturer** based in Ahmedabad, Gujarat, specializing in high-precision porous metal separation technologies for harsh industrial environments. Engineered by compacting and sintering spherical or irregular stainless steel micro-powders under vacuum and high temperature, each **ss sintered filter cartridge** forms a rigid, self-supporting porous matrix with uniform pore distribution. This metallurgy eliminates fiber shedding, media migration, and mechanical deformation under extreme hydraulic pressures up to 30 bar and continuous operating temperatures reaching 600°C.
+
+As a dedicated **sintered filter supplier**, we manufacture each **sintered powder filter cartridge** using certified AISI 316L and 304 stainless steel alloys (as well as Hastelloy, Inconel, and Monel upon custom engineering request). The unique depth filtration tortuosity of our **sintered metal filter cartridge** elements provides exceptional particle capture efficiency, high dirt-holding capacity, and outstanding resistance to aggressive acids, caustic solutions, and thermal shock. They are widely specified for catalyst recovery in chemical synthesis, steam filtration in food processing, sterile gas venting in pharmaceuticals, and high-pressure fluid clarification in oil and gas refineries.
+
+Furthermore, our reusable **sintered ss filter cartridges** deliver significant lifecycle cost savings, as they can be repeatedly regenerated through ultrasonic cleaning, chemical solvent backwashing, or high-pressure reverse gas pulsing without loss of retention integrity. Available in micron ratings from 0.2 µm to 100 µm with standard Double Open End (DOE) or sanitary Code 7 (226 bayonet) fittings, VVIOK Industry delivers customized high-purity filtration solutions globally.`,
+    detailedSpecs: `Comprehensive Engineering Specifications for SS Sintered Powder Filter Cartridges:
+
+1. Metallurgy & Powder Sintering Process:
+• Base Alloy: Certified AISI 316L (standard) / AISI 304 / Hastelloy C-276 / Inconel 600 / Monel 400
+• Manufacturing Process: Isostatic powder compacting and high-vacuum thermal diffusion sintering (zero binders or adhesives)
+• Structure: Rigid, self-supporting cylindrical porous matrix with high mechanical tensile strength
+• Media Migration: 100% zero fiber shedding or particle release across continuous pulsating flows
+
+2. Filtration Performance & Micron Retention:
+• Nominal & Absolute Ratings: 0.2 µm, 0.5 µm, 1 µm, 2 µm, 5 µm, 10 µm, 20 µm, 50 µm, and 100 µm
+• Porosity Range: 35% to 50% open pore volume ensuring high permeability and low initial pressure drop (ΔP)
+• Filtration Mechanism: Graded tortuous pore path depth filtration combined with surface cake retention
+
+3. Temperature & Pressure Parameters:
+• Maximum Continuous Operating Temperature: -200°C (cryogenic) to 600°C in oxidizing atmospheres (up to 800°C in inert/reducing gas)
+• Maximum Forward Differential Collapse Pressure: Up to 30 bar (435 psi)
+• Recommended Change-out / Regeneration Differential Pressure (ΔP): 1.5 to 2.0 bar (22 to 29 psi)
+• Backwash & Pulse Jet Pressure: Safe for reverse backpulse cleaning up to 5 bar
+
+4. Dimensions & End Connection Fittings:
+• Standard Outer Diameters (OD): 38 mm, 50 mm, 60 mm, 65 mm (custom diameters from 10 mm to 150 mm on request)
+• Standard Lengths: 5" (127 mm), 10" (254 mm), 20" (508 mm), 30" (762 mm), 40" (1016 mm) (seamless welded up to 50")
+• End Adapters: Double Open End (DOE) flat cut; Single Open End (SOE) Code 7 (226 bayonet with 2 locking tabs & spear), Code 3 (222 O-ring with flat cap), Code 8 (222 with spear); Threaded fittings (1/2" NPT, 3/4" BSP, M20, M30)
+• Sealing Gaskets: High-temperature Viton (FKM), PTFE, Silicone, EPDM, or all-metal copper/SS crush rings
+
+5. Regeneration & Cleaning Protocols:
+• Ultrasonic Cleaning: Alkaline or acid sonic immersion bath for dissolved contaminant dispersion
+• Chemical Solvent Backwash: Flushing with 2-5% nitric acid, caustic soda, or organic solvent solutions
+• Thermal Bake-Out: High-temperature pyrolytic oxidation for carbonaceous or organic contaminant removal`,
+    features: [
+      'Engineered by a leading **ss sintered filter cartridge manufacturer** utilizing 100% pure AISI 316L/304 stainless steel powders',
+      'Robust **ss sintered filter cartridge** design withstanding temperatures up to 600°C and differential pressures up to 30 bar',
+      'Diffusion-sintered **sintered powder filter cartridge** structure ensuring zero fiber shedding, channeling, or media migration',
+      'Versatile **sintered metal filter cartridge** elements providing high chemical resistance against aggressive acids and caustics',
+      'Fully cleanable and reusable **sintered ss filter cartridges** supporting ultrasonic, chemical, and reverse backwash regeneration',
+      'Trusted **sintered filter supplier** offering precise micron ratings from 0.2 µm to 100 µm with custom end connections',
+      'Ideal for demanding catalyst recovery, steam filtration, sterile gas venting, and corrosive chemical clarification'
+    ],
+    specifications: {
+      'Material of Construction (MOC)': 'AISI 316L Stainless Steel (Standard), 304, Hastelloy C-276, Inconel',
+      'Manufacturing Method': 'Isostatic Compacting & Vacuum Thermal Diffusion Sintering',
+      'Micron Ratings': '0.2, 0.5, 1, 2, 5, 10, 20, 50, 100 Micron',
+      'Porosity Range': '35% to 50% Interconnected Pore Matrix',
+      'Max Operating Temperature': '-200°C to 600°C (Inert atmosphere up to 800°C)',
+      'Max Differential Collapse Pressure': 'Up to 30 bar (435 psi)',
+      'Recommended Cleaning ΔP': '1.5 to 2.0 bar (22 to 29 psi)',
+      'Standard Lengths': '10", 20", 30", 40" (Custom lengths up to 50")',
+      'Outer Diameter (OD)': 'Standard 60 mm (2.36") | Custom 38 mm to 150 mm',
+      'End Fitting Options': 'DOE, Code 7 (226/Bayonet), Code 3 (222/Flat), Threaded BSP/NPT',
+      'Regeneration Compatibility': 'Ultrasonic bath, chemical solvent flushing, back-pulsing & thermal burnout',
+      'Quality Compliance': 'ISO 9001:2015, EN 10204 3.1 Material Test Certificate'
+    },
+    faqs: [
+      {
+        question: 'What makes VVIOK Industry a premier ss sintered filter cartridge manufacturer in India?',
+        answer: 'As a certified **ss sintered filter cartridge manufacturer**, VVIOK Industry combines metallurgical precision with vacuum thermal diffusion sintering. We use controlled grain-size AISI 316L powders without chemical binders, creating seamless, crack-free cartridges with exact pore geometry, superior mechanical rigidity, and complete batch traceability.'
+      },
+      {
+        question: 'How does an ss sintered filter cartridge withstand extreme industrial conditions?',
+        answer: 'An **ss sintered filter cartridge** is produced through solid-state diffusion bonding where stainless steel particles fuse at atomic contact points under extreme vacuum heat. This yields a single, rigid metallic matrix that does not deform, tear, or shed under thermal shocks up to 600°C and differential pressures exceeding 25 bar.'
+      },
+      {
+        question: 'What advantages does a sintered powder filter cartridge offer over wire mesh or pleated elements?',
+        answer: 'A **sintered powder filter cartridge** provides three-dimensional tortuous depth filtration rather than single-layer surface sieving. It captures fine colloidal and sub-micron fines deep within its interconnected pores, provides high mechanical collapse resistance, and prevents particle unloading even during severe pressure surges.'
+      },
+      {
+        question: 'Can a sintered metal filter cartridge be cleaned and reused repeatedly?',
+        answer: 'Yes. Unlike disposable polymeric cartridges, a **sintered metal filter cartridge** is engineered for hundreds of cleaning cycles. It can be backflushed with high-pressure clean gas/liquid, treated in ultrasonic cleaning tanks with mild acid/alkali solutions, or thermally oxidized in a furnace to remove organic polymers without degrading pore morphology.'
+      },
+      {
+        question: 'Why choose reusable sintered ss filter cartridges for catalyst recovery and steam filtration?',
+        answer: 'Using **sintered ss filter cartridges** in catalyst recovery loops and culinary steam lines prevents the loss of expensive precious metal catalysts (like palladium or platinum) and eliminates particulate rust/scale in steam lines, delivering high throughput and rapid return on investment.'
+      },
+      {
+        question: 'How can I source custom-engineered elements from a reliable sintered filter supplier?',
+        answer: 'As a premier **sintered filter supplier**, VVIOK Industry designs and manufactures customized cartridges with specific micron ratings, specialized alloy compositions (Hastelloy, Monel), threaded BSP/NPT adapters, or sanitary Code 7 / Code 3 configurations tailored to your exact housing dimensions and operating parameters.'
+      }
+    ],
+    metaTitle: 'SS Sintered Filter Cartridge Manufacturer | Sintered Metal Filter Supplier India',
+    metaDescription: 'Leading SS sintered filter cartridge manufacturer in India. Fabricating high-temperature AISI 316L sintered metal powder filter cartridges, porous stainless steel filters.',
+    metaKeywords: 'ss sintered filter cartridge manufacturer, ss sintered filter cartridge, sintered powder filter cartridge, sintered metal filter cartridge, sintered ss filter cartridges, sintered filter supplier, porous stainless steel filter cartridge'
+  }],
+  'ss-sintered-powder-cartridge': [{
+    name: 'SS Sintered Filter Cartridge',
+    pageH1: 'SS Sintered Filter Cartridge Manufacturer, Sintered Metal Powder Cartridges Supplier in India',
+    application: 'High-temperature gas filtration, corrosive chemical processing, steam filtration, catalyst recovery, pharmaceutical sterile venting, and cryogenic fluid clarification.',
+    imageId: 'product-ss-sintered-1',
+    imageIds: [
+      'product-ss-sintered-1',
+      'product-ss-sintered-2',
+      'product-ss-sintered-3'
+    ],
+    description: `VVIOK Industry is a premier **ss sintered filter cartridge manufacturer** based in Ahmedabad, Gujarat, specializing in high-precision porous metal separation technologies for harsh industrial environments. Engineered by compacting and sintering spherical or irregular stainless steel micro-powders under vacuum and high temperature, each **ss sintered filter cartridge** forms a rigid, self-supporting porous matrix with uniform pore distribution. This metallurgy eliminates fiber shedding, media migration, and mechanical deformation under extreme hydraulic pressures up to 30 bar and continuous operating temperatures reaching 600°C.
+
+As a dedicated **sintered filter supplier**, we manufacture each **sintered powder filter cartridge** using certified AISI 316L and 304 stainless steel alloys (as well as Hastelloy, Inconel, and Monel upon custom engineering request). The unique depth filtration tortuosity of our **sintered metal filter cartridge** elements provides exceptional particle capture efficiency, high dirt-holding capacity, and outstanding resistance to aggressive acids, caustic solutions, and thermal shock. They are widely specified for catalyst recovery in chemical synthesis, steam filtration in food processing, sterile gas venting in pharmaceuticals, and high-pressure fluid clarification in oil and gas refineries.
+
+Furthermore, our reusable **sintered ss filter cartridges** deliver significant lifecycle cost savings, as they can be repeatedly regenerated through ultrasonic cleaning, chemical solvent backwashing, or high-pressure reverse gas pulsing without loss of retention integrity. Available in micron ratings from 0.2 µm to 100 µm with standard Double Open End (DOE) or sanitary Code 7 (226 bayonet) fittings, VVIOK Industry delivers customized high-purity filtration solutions globally.`,
+    detailedSpecs: `Comprehensive Engineering Specifications for SS Sintered Powder Filter Cartridges:
+
+1. Metallurgy & Powder Sintering Process:
+• Base Alloy: Certified AISI 316L (standard) / AISI 304 / Hastelloy C-276 / Inconel 600 / Monel 400
+• Manufacturing Process: Isostatic powder compacting and high-vacuum thermal diffusion sintering (zero binders or adhesives)
+• Structure: Rigid, self-supporting cylindrical porous matrix with high mechanical tensile strength
+• Media Migration: 100% zero fiber shedding or particle release across continuous pulsating flows
+
+2. Filtration Performance & Micron Retention:
+• Nominal & Absolute Ratings: 0.2 µm, 0.5 µm, 1 µm, 2 µm, 5 µm, 10 µm, 20 µm, 50 µm, and 100 µm
+• Porosity Range: 35% to 50% open pore volume ensuring high permeability and low initial pressure drop (ΔP)
+• Filtration Mechanism: Graded tortuous pore path depth filtration combined with surface cake retention
+
+3. Temperature & Pressure Parameters:
+• Maximum Continuous Operating Temperature: -200°C (cryogenic) to 600°C in oxidizing atmospheres (up to 800°C in inert/reducing gas)
+• Maximum Forward Differential Collapse Pressure: Up to 30 bar (435 psi)
+• Recommended Change-out / Regeneration Differential Pressure (ΔP): 1.5 to 2.0 bar (22 to 29 psi)
+• Backwash & Pulse Jet Pressure: Safe for reverse backpulse cleaning up to 5 bar
+
+4. Dimensions & End Connection Fittings:
+• Standard Outer Diameters (OD): 38 mm, 50 mm, 60 mm, 65 mm (custom diameters from 10 mm to 150 mm on request)
+• Standard Lengths: 5" (127 mm), 10" (254 mm), 20" (508 mm), 30" (762 mm), 40" (1016 mm) (seamless welded up to 50")
+• End Adapters: Double Open End (DOE) flat cut; Single Open End (SOE) Code 7 (226 bayonet with 2 locking tabs & spear), Code 3 (222 O-ring with flat cap), Code 8 (222 with spear); Threaded fittings (1/2" NPT, 3/4" BSP, M20, M30)
+• Sealing Gaskets: High-temperature Viton (FKM), PTFE, Silicone, EPDM, or all-metal copper/SS crush rings
+
+5. Regeneration & Cleaning Protocols:
+• Ultrasonic Cleaning: Alkaline or acid sonic immersion bath for dissolved contaminant dispersion
+• Chemical Solvent Backwash: Flushing with 2-5% nitric acid, caustic soda, or organic solvent solutions
+• Thermal Bake-Out: High-temperature pyrolytic oxidation for carbonaceous or organic contaminant removal`,
+    features: [
+      'Engineered by a leading **ss sintered filter cartridge manufacturer** utilizing 100% pure AISI 316L/304 stainless steel powders',
+      'Robust **ss sintered filter cartridge** design withstanding temperatures up to 600°C and differential pressures up to 30 bar',
+      'Diffusion-sintered **sintered powder filter cartridge** structure ensuring zero fiber shedding, channeling, or media migration',
+      'Versatile **sintered metal filter cartridge** elements providing high chemical resistance against aggressive acids and caustics',
+      'Fully cleanable and reusable **sintered ss filter cartridges** supporting ultrasonic, chemical, and reverse backwash regeneration',
+      'Trusted **sintered filter supplier** offering precise micron ratings from 0.2 µm to 100 µm with custom end connections',
+      'Ideal for demanding catalyst recovery, steam filtration, sterile gas venting, and corrosive chemical clarification'
+    ],
+    specifications: {
+      'Material of Construction (MOC)': 'AISI 316L Stainless Steel (Standard), 304, Hastelloy C-276, Inconel',
+      'Manufacturing Method': 'Isostatic Compacting & Vacuum Thermal Diffusion Sintering',
+      'Micron Ratings': '0.2, 0.5, 1, 2, 5, 10, 20, 50, 100 Micron',
+      'Porosity Range': '35% to 50% Interconnected Pore Matrix',
+      'Max Operating Temperature': '-200°C to 600°C (Inert atmosphere up to 800°C)',
+      'Max Differential Collapse Pressure': 'Up to 30 bar (435 psi)',
+      'Recommended Cleaning ΔP': '1.5 to 2.0 bar (22 to 29 psi)',
+      'Standard Lengths': '10", 20", 30", 40" (Custom lengths up to 50")',
+      'Outer Diameter (OD)': 'Standard 60 mm (2.36") | Custom 38 mm to 150 mm',
+      'End Fitting Options': 'DOE, Code 7 (226/Bayonet), Code 3 (222/Flat), Threaded BSP/NPT',
+      'Regeneration Compatibility': 'Ultrasonic bath, chemical solvent flushing, back-pulsing & thermal burnout',
+      'Quality Compliance': 'ISO 9001:2015, EN 10204 3.1 Material Test Certificate'
+    },
+    faqs: [
+      {
+        question: 'What makes VVIOK Industry a premier ss sintered filter cartridge manufacturer in India?',
+        answer: 'As a certified **ss sintered filter cartridge manufacturer**, VVIOK Industry combines metallurgical precision with vacuum thermal diffusion sintering. We use controlled grain-size AISI 316L powders without chemical binders, creating seamless, crack-free cartridges with exact pore geometry, superior mechanical rigidity, and complete batch traceability.'
+      },
+      {
+        question: 'How does an ss sintered filter cartridge withstand extreme industrial conditions?',
+        answer: 'An **ss sintered filter cartridge** is produced through solid-state diffusion bonding where stainless steel particles fuse at atomic contact points under extreme vacuum heat. This yields a single, rigid metallic matrix that does not deform, tear, or shed under thermal shocks up to 600°C and differential pressures exceeding 25 bar.'
+      },
+      {
+        question: 'What advantages does a sintered powder filter cartridge offer over wire mesh or pleated elements?',
+        answer: 'A **sintered powder filter cartridge** provides three-dimensional tortuous depth filtration rather than single-layer surface sieving. It captures fine colloidal and sub-micron fines deep within its interconnected pores, provides high mechanical collapse resistance, and prevents particle unloading even during severe pressure surges.'
+      },
+      {
+        question: 'Can a sintered metal filter cartridge be cleaned and reused repeatedly?',
+        answer: 'Yes. Unlike disposable polymeric cartridges, a **sintered metal filter cartridge** is engineered for hundreds of cleaning cycles. It can be backflushed with high-pressure clean gas/liquid, treated in ultrasonic cleaning tanks with mild acid/alkali solutions, or thermally oxidized in a furnace to remove organic polymers without degrading pore morphology.'
+      },
+      {
+        question: 'Why choose reusable sintered ss filter cartridges for catalyst recovery and steam filtration?',
+        answer: 'Using **sintered ss filter cartridges** in catalyst recovery loops and culinary steam lines prevents the loss of expensive precious metal catalysts (like palladium or platinum) and eliminates particulate rust/scale in steam lines, delivering high throughput and rapid return on investment.'
+      },
+      {
+        question: 'How can I source custom-engineered elements from a reliable sintered filter supplier?',
+        answer: 'As a premier **sintered filter supplier**, VVIOK Industry designs and manufactures customized cartridges with specific micron ratings, specialized alloy compositions (Hastelloy, Monel), threaded BSP/NPT adapters, or sanitary Code 7 / Code 3 configurations tailored to your exact housing dimensions and operating parameters.'
+      }
+    ],
+    metaTitle: 'SS Sintered Filter Cartridge Manufacturer | Sintered Metal Filter Supplier India',
+    metaDescription: 'Leading SS sintered filter cartridge manufacturer in India. Fabricating high-temperature AISI 316L sintered metal powder filter cartridges, porous stainless steel filters.',
+    metaKeywords: 'ss sintered filter cartridge manufacturer, ss sintered filter cartridge, sintered powder filter cartridge, sintered metal filter cartridge, sintered ss filter cartridges, sintered filter supplier, porous stainless steel filter cartridge'
+  }],
   'ss-wire-mesh-cartridge': [generateProductDetails('SS Wire Mesh Cartridge', 'Filter Cartridge', 'product-ss-wire-mesh-1', ['product-ss-wire-mesh-1', 'product-ss-wire-mesh-2'])],
   'multi-cartridge-filter-housing': [generateProductDetails('Multi-Cartridge Filter Housing', 'Filter Housing', 'product-multi-cartridge-1', ['product-multi-cartridge-1', 'product-multi-cartridge-2', 'product-multi-cartridge-3'])],
   'bag-filter-housing': [{

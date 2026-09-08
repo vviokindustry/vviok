@@ -46,6 +46,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/products/ss-sintered-powder-cartridge',
+        destination: '/products/ss-sintered-filter-cartridge-manufacturer',
+        permanent: true,
+      },
+      {
         source: '/products/storage-tank-supplier',
         destination: '/products/liquid-storage-tank-supplier-india',
         permanent: true,
