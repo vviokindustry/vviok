@@ -70,7 +70,7 @@ export const productCategories: Category[] = [
       { name: 'PP Spun Filter Cartridge', slug: 'pp-spun-filter-cartridge-supplier' },
       { name: 'PTFE Pleated Filter Cartridge', slug: 'ptfe-pleated-filter-cartridge-supplier' },
       { name: 'SS Sintered Filter Cartridge', slug: 'ss-sintered-filter-cartridge-manufacturer' },
-      { name: 'SS Wire Mesh Cartridge', slug: 'ss-wire-mesh-cartridge' },
+      { name: 'SS Wire Mesh Cartridge', slug: 'stainless-steel-wire-mesh-filter-cartridge' },
     ]
   },
   {
@@ -710,7 +710,196 @@ Furthermore, our reusable **sintered ss filter cartridges** deliver significant 
     metaDescription: 'Leading SS sintered filter cartridge manufacturer in India. Fabricating high-temperature AISI 316L sintered metal powder filter cartridges, porous stainless steel filters.',
     metaKeywords: 'ss sintered filter cartridge manufacturer, ss sintered filter cartridge, sintered powder filter cartridge, sintered metal filter cartridge, sintered ss filter cartridges, sintered filter supplier, porous stainless steel filter cartridge'
   }],
-  'ss-wire-mesh-cartridge': [generateProductDetails('SS Wire Mesh Cartridge', 'Filter Cartridge', 'product-ss-wire-mesh-1', ['product-ss-wire-mesh-1', 'product-ss-wire-mesh-2'])],
+  'stainless-steel-wire-mesh-filter-cartridge': [{
+    name: 'SS Wire Mesh Cartridge',
+    pageH1: 'Stainless Steel Wire Mesh Filter Cartridge Manufacturer, SS Mesh Filter Elements Supplier India',
+    application: 'High-viscosity polymer and resin filtration, steam filtration, hydraulic oil clarification, aggressive solvent purification, chemical processing, and food & beverage processing.',
+    imageId: 'product-ss-wire-mesh-1',
+    imageIds: [
+      'product-ss-wire-mesh-1',
+      'product-ss-wire-mesh-2'
+    ],
+    description: `VVIOK Industry is a premier manufacturer of high-precision industrial filtration systems in Ahmedabad, Gujarat, specializing in the design and fabrication of heavy-duty **Stainless Steel Wire Mesh Filter Cartridge** solutions. Precision-woven from certified AISI 304, 316, and 316L stainless steel alloys, each **stainless steel mesh filter cartridge** provides reliable surface and depth filtration across high-temperature fluids, polymer melts, hydraulic oils, corrosive chemicals, and culinary steam lines. Built without chemical adhesives, binders, or plasticizers, our all-welded metallic construction ensures zero media migration and complete chemical inertness under operating temperatures exceeding 300°C.
+
+Whether engineered as a pleated high-surface area configuration or a robust cylindrical sleeve with perforated inner core support, each **wiremesh filter cartridge** delivers high flow rates with remarkably low initial pressure drop. Available in plain square weave, twilled weave, and Dutch twilled weaves down to 1 micron, our versatile **stainless steel filter cartridge** assemblies effectively capture particulate contaminants while offering exceptional collapse resistance up to 25 bar.
+
+Beyond single-use disposable media, investing in an industrial **stainless steel filter element** guarantees substantial operational longevity. Every washable **metal filter element** produced at our facility can be repeatedly regenerated via ultrasonic bath cavitation, chemical solvent cleaning, or high-pressure reverse liquid and gas backflushing without compromising pore geometry. Supported by standard Double Open End (DOE) or sanitary Code 7 (226 bayonet) connections, VVIOK Industry supplies globally certified wire mesh filtration solutions tailored to your exact industrial specifications.`,
+    detailedSpecs: `Comprehensive Engineering Specifications for Stainless Steel Wire Mesh Filter Cartridges:
+
+1. Metallurgy, Weave Types & Construction:
+• Filter Media Alloys: Certified AISI 304, AISI 316, and AISI 316L Stainless Steel (Optional Monel, Inconel, and Hastelloy on request)
+• Weave Geometries: Plain Square Weave (10 µm to 500 µm), Twilled Weave, Plain Dutch Weave (10 µm to 100 µm), and Twilled Dutch Weave (1 µm to 25 µm)
+• Fabrication Method: TIG / Plasma all-welded seam longitudinal bonding; 100% free of resins, adhesives, glues, or lead solders
+• Element Geometries: Pleated construction (for up to 300% expanded surface filtration area) or heavy-gauge Cylindrical Wrap on perforated SS center core
+
+2. Retention Ratings & Hydraulic Performance:
+• Micron Retention Range: 1 µm, 2 µm, 5 µm, 10 µm, 20 µm, 25 µm, 40 µm, 50 µm, 75 µm, 100 µm, 150 µm, 250 µm, and up to 500 µm
+• Filtration Surface Area: 0.15 m² per 10" (Cylindrical) / 0.45 m² to 0.65 m² per 10" (Pleated configuration)
+• Flow Rates: Ultra-low differential pressure drop (ΔP < 0.1 bar initial across clean liquid service) with superior high-flow permeability
+
+3. Temperature & Pressure Limits:
+• Continuous Operating Temperature: Up to 300°C with standard elastomeric seals; up to 500°C with copper/metal crush gasket configurations
+• Maximum Differential Collapse Pressure: Up to 25 bar (360 psi) for supported cylindrical/pleated elements; heavy-duty reinforced cores up to 50 bar
+• Recommended Regeneration Cleaning ΔP: 1.2 to 1.8 bar (17 to 26 psi)
+
+4. Dimensions & End Connection Fittings:
+• Standard Lengths: 5" (127 mm), 10" (254 mm), 20" (508 mm), 30" (762 mm), 40" (1016 mm) (Custom lengths up to 60" seamless welded)
+• Standard Outer Diameters (OD): 60 mm (2.36"), 65 mm (2.5"), and large-format 150 mm (6") high-flow elements
+• End Cap Adapters: Double Open End (DOE) flat with flat gaskets; Single Open End (SOE) Code 7 (226 bayonet with 2 locking tabs & fin/spear), Code 3 (222 O-ring with flat closed cap), Code 8 (222 with spear); Threaded male/female fittings (1/2" NPT, 3/4" BSP, 1" NPT, M20, M30)
+• Gasket & O-Ring Options: Viton (FKM), PTFE, Silicone, EPDM, Nitrile (Buna-N), and pure copper crush rings for high-temperature service
+
+5. Cleaning & Regeneration Protocols:
+• Backwash Regeneration: Forward/reverse fluid or high-pressure gas backflushing
+• Ultrasonic Agitation: Immersion in hot alkaline or acid ultrasonic baths to loosen lodged particulate
+• Chemical Soaking: Compatible with caustic soda, nitric acid, phosphoric acid, and aggressive industrial organic solvents`,
+    features: [
+      'Precision-engineered **Stainless Steel Wire Mesh Filter Cartridge** manufactured from premium AISI 316L/304 stainless steel',
+      'Available in pleated or cylindrical formats, each **stainless steel mesh filter cartridge** provides up to 300% greater filtration area',
+      'Heavy-duty **wiremesh filter cartridge** withstanding operating temperatures up to 300°C and differential pressures up to 25 bar',
+      'All-welded **stainless steel filter cartridge** construction eliminating glues, binders, and media shedding in critical applications',
+      'Washable and regenerable **stainless steel filter element** delivering low lifecycle costs through repeated ultrasonic or backwash cleaning',
+      'Robust **metal filter element** architecture providing exact aperture geometry from 1 µm to 500 µm across plain and Dutch weaves',
+      'Broad adapter selection including DOE, Code 7 (226 Bayonet), Code 3 (222 Flat), and threaded BSP/NPT fittings'
+    ],
+    specifications: {
+      'Material of Construction (MOC)': 'AISI 304, AISI 316, AISI 316L Stainless Steel (Special alloys on request)',
+      'Weave Configurations': 'Plain Square Weave, Twilled Weave, Plain Dutch, Twilled Dutch Weave',
+      'Element Construction': 'Pleated High-Surface Area or Heavy Cylindrical Perforated Core',
+      'Micron Ratings': '1, 2, 5, 10, 20, 25, 40, 50, 75, 100, 150, 250, 500 µm',
+      'Max Operating Temperature': 'Up to 300°C (Elastomer seals) / Up to 500°C (All-metal seals)',
+      'Max Differential Collapse Pressure': '25 bar (360 psi) standard / Up to 50 bar high-pressure core',
+      'Standard Lengths': '10", 20", 30", 40" (Custom lengths 5" to 60" available)',
+      'Outer Diameter (OD)': '60 mm (2.36"), 65 mm (2.5"), Custom diameters up to 150 mm',
+      'End Adapter Configurations': 'DOE Flat, Code 7 (226 Bayonet), Code 3 (222 Flat), Code 8, Threaded NPT/BSP',
+      'Gasket / O-Ring Materials': 'Viton (FKM), PTFE, Food-Grade Silicone, EPDM, Copper crush rings',
+      'Regeneration Methods': 'Ultrasonic cleaning bath, chemical solvent soak, reverse fluid backwash',
+      'Quality Compliance': 'ISO 9001:2015, EN 10204 3.1 Material Test Certification'
+    },
+    faqs: [
+      {
+        question: 'What are the key advantages of a Stainless Steel Wire Mesh Filter Cartridge over polymer filters?',
+        answer: 'A **Stainless Steel Wire Mesh Filter Cartridge** provides superior mechanical strength, broad chemical compatibility, and exceptional thermal resistance up to 300°C–500°C. Unlike disposable polypropylene or spun filters, it will not melt, swell, or unload particulate during pressure spikes, and its 100% all-welded metallic design completely eliminates fiber migration.'
+      },
+      {
+        question: 'How do pleated and cylindrical stainless steel mesh filter cartridge designs differ?',
+        answer: 'A cylindrical **stainless steel mesh filter cartridge** provides a smooth, easily cleanable outer surface ideal for high-viscosity resins and heavy slurry filtration. A pleated mesh cartridge folds the wire cloth accordion-style, increasing effective filtration surface area by up to 3 to 4 times, which dramatically lowers differential pressure and extends on-stream cycle times in high-flow applications.'
+      },
+      {
+        question: 'What micron ratings are achievable with a precision wiremesh filter cartridge?',
+        answer: 'Our **wiremesh filter cartridge** range covers absolute and nominal ratings from 1 micron up to 500 microns. For ultra-fine ratings between 1 µm and 25 µm, specialized Twilled Dutch weaves provide tortuous micro-openings, while Plain Square and Plain Dutch weaves are utilized for ratings from 25 µm to 500 µm for coarse particulate straining.'
+      },
+      {
+        question: 'How should an industrial stainless steel filter cartridge be cleaned and reused?',
+        answer: 'A **stainless steel filter cartridge** can be cleaned repeatedly using multiple methods: reverse liquid or gas backwashing for loose surface cake removal, immersion in an ultrasonic bath with mild acid/alkaline detergent for deep pore clearing, or chemical solvent soaking to dissolve stubborn polymers, returning the cartridge close to its initial clean pressure drop.'
+      },
+      {
+        question: 'What applications benefit most from a stainless steel filter element?',
+        answer: 'A **stainless steel filter element** is extensively deployed in culinary steam filtration, polymer and resin melt extrusion, hydraulic fluid circuits, turbine lubricant loops, cryogenic liquefied gases, aggressive chemical reagent clarification, and catalyst trapping where polymeric cartridges fail.'
+      },
+      {
+        question: 'Why choose VVIOK Industry for your metal filter element requirements in India?',
+        answer: 'VVIOK Industry manufactures every **metal filter element** under strict ISO 9001:2015 clean fabrication protocols in Ahmedabad, Gujarat. We provide certified AISI 316L materials with full MTC test certificates, custom adapter engineering (Code 7, Code 3, threaded), and guaranteed dimensional precision for seamless integration into all standard industrial filter housings.'
+      }
+    ],
+    metaTitle: 'Stainless Steel Wire Mesh Filter Cartridge Manufacturer | SS Mesh Filter Supplier',
+    metaDescription: 'Leading Stainless Steel Wire Mesh Filter Cartridge manufacturer in India. Fabricating AISI 316L/304 pleated & cylindrical wire mesh filter cartridges & metal filter elements.',
+    metaKeywords: 'Stainless Steel Wire Mesh Filter Cartridge, stainless steel mesh filter cartridge, wiremesh filter cartridge, stainless steel filter cartridge, stainless steel filter element, metal filter element, ss mesh filter supplier india'
+  }],
+  'ss-wire-mesh-cartridge': [{
+    name: 'SS Wire Mesh Cartridge',
+    pageH1: 'Stainless Steel Wire Mesh Filter Cartridge Manufacturer, SS Mesh Filter Elements Supplier India',
+    application: 'High-viscosity polymer and resin filtration, steam filtration, hydraulic oil clarification, aggressive solvent purification, chemical processing, and food & beverage processing.',
+    imageId: 'product-ss-wire-mesh-1',
+    imageIds: [
+      'product-ss-wire-mesh-1',
+      'product-ss-wire-mesh-2'
+    ],
+    description: `VVIOK Industry is a premier manufacturer of high-precision industrial filtration systems in Ahmedabad, Gujarat, specializing in the design and fabrication of heavy-duty **Stainless Steel Wire Mesh Filter Cartridge** solutions. Precision-woven from certified AISI 304, 316, and 316L stainless steel alloys, each **stainless steel mesh filter cartridge** provides reliable surface and depth filtration across high-temperature fluids, polymer melts, hydraulic oils, corrosive chemicals, and culinary steam lines. Built without chemical adhesives, binders, or plasticizers, our all-welded metallic construction ensures zero media migration and complete chemical inertness under operating temperatures exceeding 300°C.
+
+Whether engineered as a pleated high-surface area configuration or a robust cylindrical sleeve with perforated inner core support, each **wiremesh filter cartridge** delivers high flow rates with remarkably low initial pressure drop. Available in plain square weave, twilled weave, and Dutch twilled weaves down to 1 micron, our versatile **stainless steel filter cartridge** assemblies effectively capture particulate contaminants while offering exceptional collapse resistance up to 25 bar.
+
+Beyond single-use disposable media, investing in an industrial **stainless steel filter element** guarantees substantial operational longevity. Every washable **metal filter element** produced at our facility can be repeatedly regenerated via ultrasonic bath cavitation, chemical solvent cleaning, or high-pressure reverse liquid and gas backflushing without compromising pore geometry. Supported by standard Double Open End (DOE) or sanitary Code 7 (226 bayonet) connections, VVIOK Industry supplies globally certified wire mesh filtration solutions tailored to your exact industrial specifications.`,
+    detailedSpecs: `Comprehensive Engineering Specifications for Stainless Steel Wire Mesh Filter Cartridges:
+
+1. Metallurgy, Weave Types & Construction:
+• Filter Media Alloys: Certified AISI 304, AISI 316, and AISI 316L Stainless Steel (Optional Monel, Inconel, and Hastelloy on request)
+• Weave Geometries: Plain Square Weave (10 µm to 500 µm), Twilled Weave, Plain Dutch Weave (10 µm to 100 µm), and Twilled Dutch Weave (1 µm to 25 µm)
+• Fabrication Method: TIG / Plasma all-welded seam longitudinal bonding; 100% free of resins, adhesives, glues, or lead solders
+• Element Geometries: Pleated construction (for up to 300% expanded surface filtration area) or heavy-gauge Cylindrical Wrap on perforated SS center core
+
+2. Retention Ratings & Hydraulic Performance:
+• Micron Retention Range: 1 µm, 2 µm, 5 µm, 10 µm, 20 µm, 25 µm, 40 µm, 50 µm, 75 µm, 100 µm, 150 µm, 250 µm, and up to 500 µm
+• Filtration Surface Area: 0.15 m² per 10" (Cylindrical) / 0.45 m² to 0.65 m² per 10" (Pleated configuration)
+• Flow Rates: Ultra-low differential pressure drop (ΔP < 0.1 bar initial across clean liquid service) with superior high-flow permeability
+
+3. Temperature & Pressure Limits:
+• Continuous Operating Temperature: Up to 300°C with standard elastomeric seals; up to 500°C with copper/metal crush gasket configurations
+• Maximum Differential Collapse Pressure: Up to 25 bar (360 psi) for supported cylindrical/pleated elements; heavy-duty reinforced cores up to 50 bar
+• Recommended Regeneration Cleaning ΔP: 1.2 to 1.8 bar (17 to 26 psi)
+
+4. Dimensions & End Connection Fittings:
+• Standard Lengths: 5" (127 mm), 10" (254 mm), 20" (508 mm), 30" (762 mm), 40" (1016 mm) (Custom lengths up to 60" seamless welded)
+• Standard Outer Diameters (OD): 60 mm (2.36"), 65 mm (2.5"), and large-format 150 mm (6") high-flow elements
+• End Cap Adapters: Double Open End (DOE) flat with flat gaskets; Single Open End (SOE) Code 7 (226 bayonet with 2 locking tabs & fin/spear), Code 3 (222 O-ring with flat closed cap), Code 8 (222 with spear); Threaded male/female fittings (1/2" NPT, 3/4" BSP, 1" NPT, M20, M30)
+• Gasket & O-Ring Options: Viton (FKM), PTFE, Silicone, EPDM, Nitrile (Buna-N), and pure copper crush rings for high-temperature service
+
+5. Cleaning & Regeneration Protocols:
+• Backwash Regeneration: Forward/reverse fluid or high-pressure gas backflushing
+• Ultrasonic Agitation: Immersion in hot alkaline or acid ultrasonic baths to loosen lodged particulate
+• Chemical Soaking: Compatible with caustic soda, nitric acid, phosphoric acid, and aggressive industrial organic solvents`,
+    features: [
+      'Precision-engineered **Stainless Steel Wire Mesh Filter Cartridge** manufactured from premium AISI 316L/304 stainless steel',
+      'Available in pleated or cylindrical formats, each **stainless steel mesh filter cartridge** provides up to 300% greater filtration area',
+      'Heavy-duty **wiremesh filter cartridge** withstanding operating temperatures up to 300°C and differential pressures up to 25 bar',
+      'All-welded **stainless steel filter cartridge** construction eliminating glues, binders, and media shedding in critical applications',
+      'Washable and regenerable **stainless steel filter element** delivering low lifecycle costs through repeated ultrasonic or backwash cleaning',
+      'Robust **metal filter element** architecture providing exact aperture geometry from 1 µm to 500 µm across plain and Dutch weaves',
+      'Broad adapter selection including DOE, Code 7 (226 Bayonet), Code 3 (222 Flat), and threaded BSP/NPT fittings'
+    ],
+    specifications: {
+      'Material of Construction (MOC)': 'AISI 304, AISI 316, AISI 316L Stainless Steel (Special alloys on request)',
+      'Weave Configurations': 'Plain Square Weave, Twilled Weave, Plain Dutch, Twilled Dutch Weave',
+      'Element Construction': 'Pleated High-Surface Area or Heavy Cylindrical Perforated Core',
+      'Micron Ratings': '1, 2, 5, 10, 20, 25, 40, 50, 75, 100, 150, 250, 500 µm',
+      'Max Operating Temperature': 'Up to 300°C (Elastomer seals) / Up to 500°C (All-metal seals)',
+      'Max Differential Collapse Pressure': '25 bar (360 psi) standard / Up to 50 bar high-pressure core',
+      'Standard Lengths': '10", 20", 30", 40" (Custom lengths 5" to 60" available)',
+      'Outer Diameter (OD)': '60 mm (2.36"), 65 mm (2.5"), Custom diameters up to 150 mm',
+      'End Adapter Configurations': 'DOE Flat, Code 7 (226 Bayonet), Code 3 (222 Flat), Code 8, Threaded NPT/BSP',
+      'Gasket / O-Ring Materials': 'Viton (FKM), PTFE, Food-Grade Silicone, EPDM, Copper crush rings',
+      'Regeneration Methods': 'Ultrasonic cleaning bath, chemical solvent soak, reverse fluid backwash',
+      'Quality Compliance': 'ISO 9001:2015, EN 10204 3.1 Material Test Certification'
+    },
+    faqs: [
+      {
+        question: 'What are the key advantages of a Stainless Steel Wire Mesh Filter Cartridge over polymer filters?',
+        answer: 'A **Stainless Steel Wire Mesh Filter Cartridge** provides superior mechanical strength, broad chemical compatibility, and exceptional thermal resistance up to 300°C–500°C. Unlike disposable polypropylene or spun filters, it will not melt, swell, or unload particulate during pressure spikes, and its 100% all-welded metallic design completely eliminates fiber migration.'
+      },
+      {
+        question: 'How do pleated and cylindrical stainless steel mesh filter cartridge designs differ?',
+        answer: 'A cylindrical **stainless steel mesh filter cartridge** provides a smooth, easily cleanable outer surface ideal for high-viscosity resins and heavy slurry filtration. A pleated mesh cartridge folds the wire cloth accordion-style, increasing effective filtration surface area by up to 3 to 4 times, which dramatically lowers differential pressure and extends on-stream cycle times in high-flow applications.'
+      },
+      {
+        question: 'What micron ratings are achievable with a precision wiremesh filter cartridge?',
+        answer: 'Our **wiremesh filter cartridge** range covers absolute and nominal ratings from 1 micron up to 500 microns. For ultra-fine ratings between 1 µm and 25 µm, specialized Twilled Dutch weaves provide tortuous micro-openings, while Plain Square and Plain Dutch weaves are utilized for ratings from 25 µm to 500 µm for coarse particulate straining.'
+      },
+      {
+        question: 'How should an industrial stainless steel filter cartridge be cleaned and reused?',
+        answer: 'A **stainless steel filter cartridge** can be cleaned repeatedly using multiple methods: reverse liquid or gas backwashing for loose surface cake removal, immersion in an ultrasonic bath with mild acid/alkaline detergent for deep pore clearing, or chemical solvent soaking to dissolve stubborn polymers, returning the cartridge close to its initial clean pressure drop.'
+      },
+      {
+        question: 'What applications benefit most from a stainless steel filter element?',
+        answer: 'A **stainless steel filter element** is extensively deployed in culinary steam filtration, polymer and resin melt extrusion, hydraulic fluid circuits, turbine lubricant loops, cryogenic liquefied gases, aggressive chemical reagent clarification, and catalyst trapping where polymeric cartridges fail.'
+      },
+      {
+        question: 'Why choose VVIOK Industry for your metal filter element requirements in India?',
+        answer: 'VVIOK Industry manufactures every **metal filter element** under strict ISO 9001:2015 clean fabrication protocols in Ahmedabad, Gujarat. We provide certified AISI 316L materials with full MTC test certificates, custom adapter engineering (Code 7, Code 3, threaded), and guaranteed dimensional precision for seamless integration into all standard industrial filter housings.'
+      }
+    ],
+    metaTitle: 'Stainless Steel Wire Mesh Filter Cartridge Manufacturer | SS Mesh Filter Supplier',
+    metaDescription: 'Leading Stainless Steel Wire Mesh Filter Cartridge manufacturer in India. Fabricating AISI 316L/304 pleated & cylindrical wire mesh filter cartridges & metal filter elements.',
+    metaKeywords: 'Stainless Steel Wire Mesh Filter Cartridge, stainless steel mesh filter cartridge, wiremesh filter cartridge, stainless steel filter cartridge, stainless steel filter element, metal filter element, ss mesh filter supplier india'
+  }],
   'multi-cartridge-filter-housing': [generateProductDetails('Multi-Cartridge Filter Housing', 'Filter Housing', 'product-multi-cartridge-1', ['product-multi-cartridge-1', 'product-multi-cartridge-2', 'product-multi-cartridge-3'])],
   'bag-filter-housing': [{
     name: 'Bag Filter Housing',

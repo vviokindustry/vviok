@@ -46,6 +46,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/products/ss-wire-mesh-cartridge',
+        destination: '/products/stainless-steel-wire-mesh-filter-cartridge',
+        permanent: true,
+      },
+      {
         source: '/products/ss-sintered-powder-cartridge',
         destination: '/products/ss-sintered-filter-cartridge-manufacturer',
         permanent: true,
