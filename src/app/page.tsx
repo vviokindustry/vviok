@@ -87,13 +87,15 @@ export default function Home() {
           <div className="absolute inset-0 z-0">
             <Image
               src={heroImage.imageUrl}
-              alt="Industrial Filtration Excellence"
+              alt="Top Industrial Filtration Products Manufacturer in India - VVIOK Industry"
               fill
+              sizes="100vw"
+              quality={90}
               className="object-cover"
               priority
             />
             <div className="absolute inset-0 bg-black/50" />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-900/30" />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-slate-900/40" />
           </div>
         )}
 
